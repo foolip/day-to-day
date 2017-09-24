@@ -1,0 +1,45 @@
+<!doctype html>
+<meta charset=utf-8>
+<link rel="stylesheet" href="style.css">
+
+<h1>specs &middot; tests &middot; day-to-day</h1>
+
+<script src="common.js"></script>
+
+<p>This collection of green boxes represents activity in specs and their
+corresponding test suites over the past <span id="weeks"></span> weeks.
+Green in both rows is good. A test a day keeps the bugs away.</p>
+<script>document.getElementById('weeks').textContent = NUM_WEEKS</script>
+
+<p>Sort by
+<select class="sortby">
+ <option>name</option>
+ <option>spec commits</option>
+ <option>test commits</option>
+ <option selected>days active</option>
+</select></p>
+
+<!--
+<p><label><input type="checkbox">Highlight isolated spec activity</label></p>
+<script>
+document.querySelector('input').addEventListener('change', event => {
+  if (event.target.checked) {
+    document.documentElement.classList.add('highlight')
+  } else {
+    document.documentElement.classList.remove('highlight')
+  }
+})
+</script>
+-->
+
+<div class="tables"></div>
+<div class="overlay" hidden>
+<p class="date"></p>
+<p>spec changes</p>
+<ol class="spec changes"></ol>
+<p>test changes</p>
+<ol class="test changes"></ol>
+</div>
+<script src="activity.js"></script>
+
+<p class=footer>testing rocks &middot; source on <a href="https://github.com/foolip/day-to-day">GitHub</a></p>

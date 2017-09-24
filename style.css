@@ -1,0 +1,84 @@
+:root {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  width: 700px;
+}
+h1 {
+  font-size: 24px;
+  margin: 1em 0;
+  text-align: center;
+}
+p {
+  margin: 12px 0;
+}
+a {
+  color: hsl(90, 60%, 35%);
+}
+div.tables {
+  margin: 24px 0;
+}
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  margin: 5px 0;
+}
+caption {
+  font-size: 15px;
+  text-align: left;
+}
+caption span {
+  color: gray;
+  float: right;
+  font-size: 14px;
+}
+td {
+  background: #eee;
+  border: 2px solid white;
+  cursor: pointer;
+  height: 10px;
+  padding: 0;
+  width: 10px;
+}
+td.activity {
+  background: hsl(90, 60%, 70%);
+}
+:root.highlight td.highlight {
+  background: hsl(270, 60%, 60%);
+}
+.overlay {
+  background: white;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  font-size: 14px;
+  height: 350px;
+  overflow: hidden;
+  padding: 8px;
+  position: absolute;
+  width: 385px;
+}
+.overlay p {
+  color: gray;
+  font-weight: bold;
+  margin: 0;
+}
+.overlay .date {
+  float: right;
+}
+.overlay ol {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 1em 1em;
+}
+.overlay li {
+  display:block;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 100px;
+}
+.footer {
+  color: gray;
+  font-size: 14px;
+  margin-bottom: 385px;
+  text-align: center;
+}
