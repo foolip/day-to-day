@@ -4,6 +4,8 @@ function getCommits(url) {
   return fetch(url)
     .then(response => response.text())
     .then(log => {
+      if (log == '')
+        return []
       return log.trim().split('\n').map(line => {
         const [hash, date, subject] = line.split('\t')
         return {
