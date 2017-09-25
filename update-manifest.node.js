@@ -69,8 +69,8 @@ function processRef(group, info) {
       return
 
     return {
+      id: 'webrtc-pc',
       name: info.title.replace(/:.*/, '').trim(),
-      shortname: 'webrtc-pc',
       specrepo: 'w3c/webrtc-pc',
       testpath: 'webrtc',
     }
@@ -86,19 +86,19 @@ function processRef(group, info) {
         !url.hostname.endsWith('.spec.whatwg.org'))
       return
 
-    const shortname = url.hostname.split('.')[0]
+    const id = url.hostname.split('.')[0]
 
-    if (shortname == 'infra')
+    if (id == 'infra')
       return
 
     // https://github.com/tobie/specref/pull/391
-    if (shortname == 'mediasession')
+    if (id == 'mediasession')
       return
 
     return {
+      id: id,
       name: info.title.replace(/ Standard$/, ''),
-      shortname: shortname,
-      specrepo: 'whatwg/' + shortname,
+      specrepo: 'whatwg/' + id,
     }
   }
 

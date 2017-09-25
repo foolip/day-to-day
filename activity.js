@@ -100,7 +100,7 @@ function populateActivity(activity, kind, url) {
   })
 }
 
-function getActivity(shortname) {
+function getActivity(id) {
   const days = pastDays(Date.now(), NUM_DAYS)
   console.assert(days.length == NUM_DAYS)
   const activity = {}
@@ -108,8 +108,8 @@ function getActivity(shortname) {
     activity[day] = {}
   }
   return Promise.all([
-    populateActivity(activity, 'specCommits', `data/${shortname}.spec.log`),
-    populateActivity(activity, 'testCommits', `data/${shortname}.test.log`)
+    populateActivity(activity, 'specCommits', `data/${id}.spec.log`),
+    populateActivity(activity, 'testCommits', `data/${id}.test.log`)
   ]).then(() => {
     // find and mark days with spec activity but no test activity nearby
     for (let i = GRACE_DAYS; i < NUM_DAYS - GRACE_DAYS; i++) {
@@ -232,7 +232,7 @@ fetch('manifest.json')
       const summary = caption.appendChild(document.createElement('span'))
 
       promises.push(
-        getActivity(entry.shortname)
+        getActivity(entry.id)
           .then(activity => {
             populateTable(table, summary, activity)
             // the activity data is needed for the overlay

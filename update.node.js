@@ -46,6 +46,6 @@ const since = new Date(Date.now() - (common.NUM_DAYS + 1) * 24 * 3600 * 1000).to
 for (const entry of manifest) {
   const specLog = getLog(entry.specrepo, since, { path: entry.specpath })
   const testLog = getLog(entry.testrepo, since, { path: entry.testpath })
-  fs.writeFileSync(`${DATA_DIR}/${entry.shortname}.spec.log`, specLog)
-  fs.writeFileSync(`${DATA_DIR}/${entry.shortname}.test.log`, testLog)
+  fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
+  fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
 }
