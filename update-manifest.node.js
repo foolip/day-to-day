@@ -64,16 +64,27 @@ function processRef(group, info) {
     if (!HOSTNAMES.some(hostname => url.hostname == hostname))
       return
 
-    // TODO: handle everything else!
-    if (url.href != 'https://w3c.github.io/webrtc-pc/')
-      return
+    if (url.hostname.endsWith('.github.io')) {
+      const id = url.pathname.split('/')[1]
+      const match = url.pathname.match(/^\/([^/]*)\/?(.*)/)
 
-    return {
-      id: 'webrtc-pc',
-      name: info.title.replace(/:.*/, '').trim(),
-      specrepo: 'w3c/webrtc-pc',
-      testpath: 'webrtc',
+      if (match[2]) {
+        // TODO: handle https://w3c.github.io/webdriver/webdriver-spec.html
+        return
+      }
+
+      if (id != 'webrtc-pc')
+        return
+
+      return {
+        id: id,
+        name: info.title,
+        specrepo: `${url.hostname.split('.')[0]}/${match[1]}`,
+      }
     }
+
+    // TODO: handle everything else!
+    return
   }
 
   case 'whatwg': {
