@@ -102,10 +102,6 @@ function processRef(group, info) {
     if (id == 'infra')
       return
 
-    // https://github.com/tobie/specref/pull/391
-    if (id == 'mediasession')
-      return
-
     return {
       id: id,
       name: info.title.replace(/ Standard$/, ''),
