@@ -1,41 +1,9 @@
-'use strict'
-
-// FIXME
-const NUM_DAYS = 7 * 8
-const GRACE_DAYS = 1
-
-function parseManifest(json) {
-  const manifest = JSON.parse(json)
-
-  for (const entry of manifest) {
-    console.assert(entry.name && entry.specrepo)
-
-    if (!entry.specrepo.startsWith('https://'))
-      entry.specrepo = 'https://github.com/' + entry.specrepo
-
-    if (!entry.shortname)
-      entry.shortname = entry.name.toLowerCase()
-
-    if (!entry.testrepo)
-      entry.testrepo = 'https://github.com/w3c/web-platform-tests'
-    else if (entry.testrepo.startsWith('https://'))
-      entry.testrepo = 'https://github.com/' + entry.testrepo
-
-    if (!entry.testrepo)
-      entry.testrepo = 'w3c/web-platform-tests'
-
-    if (!entry.testpath)
-      entry.testpath = entry.shortname
-  }
-
-  return manifest
-}
-
 const fs = require('fs')
 const execSync = require('child_process').execSync
+const common = require('./common.js')
 
-const manifest = parseManifest(fs.readFileSync('manifest.json'))
-const since = new Date(Date.now() - (NUM_DAYS + 1) * 24 * 3600 * 1000).toISOString()
+const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
+const since = new Date(Date.now() - (common.NUM_DAYS + 1) * 24 * 3600 * 1000).toISOString()
 
 function getLog(repo, since, options) {
   let cmd = `git log --no-merges --since="${since}" --date=iso-strict --pretty="%h %cd %s"`
