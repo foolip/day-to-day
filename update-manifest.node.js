@@ -113,6 +113,14 @@ function processRef(group, info) {
 Promise.all(biblio.map(processGroup))
   .then(manifests => {
     const manifest = [].concat(...manifests)
+
+    // overwrite some manifest entries (O^2 is fast enough)
+    const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
+    for (const fix of manifestFixes) {
+      const entry = manifest.find(e => e.id == fix.id)
+      Object.assign(entry, fix)
+    }
+
     manifest.sort((a, b) => common.compareStrings(a.name, b.name))
     console.log('Writing manifest.json')
     fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
