@@ -32,4 +32,14 @@
     return manifest
   }
 
+  exports.compareStrings = (a, b) => {
+    const lowerA = a.toLowerCase(),
+          lowerB = b.toLowerCase()
+    if (lowerA < lowerB)
+      return -1
+    if (lowerA > lowerB)
+      return 1
+    return 0
+  }
+
 })(this.exports ? exports : this)

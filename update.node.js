@@ -1,6 +1,9 @@
+'use strict'
+
+const common = require('./common.js')
+
 const fs = require('fs')
 const execSync = require('child_process').execSync
-const common = require('./common.js')
 
 const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
 const since = new Date(Date.now() - (common.NUM_DAYS + 1) * 24 * 3600 * 1000).toISOString()

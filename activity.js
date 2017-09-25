@@ -137,7 +137,7 @@ sortSelector.addEventListener('change', event => {
   // observation: this is a different kind of table sorting
   const tables = [].slice.call(tableContainer.childNodes)
   const key = {
-    'name': table => table._manifest.name.toLowerCase(),
+    'name': table => table._manifest.name,
     'days active': table => -(table._anyActiveDays),
     'spec commits': table => -table._specCommitCount,
     'test commits': table => -table._testCommitCount,
@@ -148,7 +148,7 @@ sortSelector.addEventListener('change', event => {
         bKey = key(b)
     if (typeof aKey == 'number' && typeof bKey == 'number')
       return aKey - bKey
-    return String(aKey).localeCompare(bKey)
+    return compareStrings(aKey, bKey)
   })
   tableContainer.append(...tables)
 })
