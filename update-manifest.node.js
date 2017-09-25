@@ -8,6 +8,45 @@ const URL = require('url').URL
 
 const biblio = ['w3c', 'whatwg', 'wicg']
 
+// specref names to drop on the floor
+const blocklist = [
+  'COWL',
+  'CSP2',
+  'activitypub',
+  'annotation-model',
+  'annotation-vocab',
+  'charmod-norm',
+  'clreq',
+  'dom41',
+  'dpub-latinreq',
+  'elreq',
+  'html-aam-1.0',
+  'html-aria',
+  'html52',
+  'ilreq',
+  'international-specs',
+  'intersection-observer',
+  'klreq',
+  'ltli',
+  'microdata',
+  'mobile-accessibility-mapping',
+  'personalization-semantics-1.0',
+  'pointerlock',
+  'resource-timing-1',
+  'typography',
+  'uievents-code',
+  'uievents-key',
+  'using-aria',
+  'verifiable-claims-data-model',
+  'wai-aria-practices-1.1',
+  'webpayments-http-api',
+  'webpayments-http-messages',
+  'webstorage',
+  'wot-architecture',
+  'wot-scripting-api',
+  'wot-thing-description',
+]
+
 function processGroup(group) {
   const url = `https://github.com/tobie/specref/raw/master/refs/${group}.json`
 
@@ -21,6 +60,8 @@ function processRefs(group, refs) {
   const manifest = []
 
   for (const name in refs) {
+    if (blocklist.includes(name))
+      continue
     const info = refs[name]
     const entry = processRef(group, refs[name])
     if (entry)
@@ -73,12 +114,13 @@ function processRef(group, info) {
         return
       }
 
-      if (id != 'webrtc-pc')
-        return
-
       return {
         id: id,
-        name: info.title,
+        name: info.title
+          .replace(/:.*/, '')
+          .replace(/ Level \d+$/, '')
+          .replace(/ \d+(\.\d+)?$/, '')
+          .replace(/ API$/, ''),
         specrepo: `${url.hostname.split('.')[0]}/${match[1]}`,
       }
     }
@@ -104,7 +146,9 @@ function processRef(group, info) {
 
     return {
       id: id,
-      name: info.title.replace(/ Standard$/, ''),
+      name: info.title
+        .replace(/ Standard$/, '')
+        .replace(/ API$/, ''),
       specrepo: 'whatwg/' + id,
     }
   }
@@ -121,14 +165,29 @@ Promise.all(biblio.map(processGroup))
   .then(manifests => {
     const manifest = [].concat(...manifests)
 
-    // overwrite some manifest entries (O^2 is fast enough)
-    const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
-    for (const fix of manifestFixes) {
-      const entry = manifest.find(e => e.id == fix.id)
-      Object.assign(entry, fix)
+    function uniqueMap(prop) {
+      const map = new Map
+      for (const entry of manifest) {
+        if (map.has(entry[prop]))
+          throw `duplicate ${prop}: ${entry[prop]}`
+        map.set(entry[prop], entry)
+      }
+      return map
     }
 
+    const idMap = uniqueMap('id')
+
+    const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
+    for (const fix of manifestFixes) {
+      Object.assign(idMap.get(fix.id), fix)
+    }
+
+    // check that names are unique, ignore returned map
+    uniqueMap('name')
+
+    // sort the manifest in the same way as the client would
     manifest.sort((a, b) => common.compareStrings(a.name, b.name))
+
     console.log('Writing manifest.json')
     fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
   })
