@@ -75,11 +75,6 @@ function populateTable(table, activity) {
   return table
 }
 
-const pre = document.createElement('pre')
-function popup(message) {
-  pre.textContent = message
-}
-
 function populateActivity(activity, kind, url) {
   return getCommits(url).then(commits => {
     for (const commit of commits) {
@@ -95,8 +90,9 @@ function populateActivity(activity, kind, url) {
 }
 
 function getActivity(id) {
-  const days = pastDays(Date.now(), NUM_DAYS)
+  const days = pastDays(new Date(metaDate).valueOf(), NUM_DAYS)
   console.assert(days.length == NUM_DAYS)
+  console.assert(days[NUM_DAYS-1] == metaDate)
   const activity = {}
   for (const day of days) {
     activity[day] = {}
@@ -122,6 +118,7 @@ function getActivity(id) {
   })
 }
 
+const metaDate = document.querySelector('meta[name]').content
 const sortSelector = document.querySelector('select.sortby')
 const tableContainer = document.querySelector('main')
 

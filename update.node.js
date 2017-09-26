@@ -2,6 +2,7 @@
 
 const DATA_DIR = 'data'
 const REPO_CACHE_DIR = 'cache'
+const DAY = 24 * 3600 * 1000
 
 const common = require('./common.js')
 
@@ -19,9 +20,8 @@ function cloneOrUpdate(url) {
   return dir
 }
 
-function getLog(url, since, options) {
-
-  let cmd = `git log --no-merges --since="${since}" --date=iso-strict --pretty="%h %cd %s"`
+function getLog(url, since, until, options) {
+  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=iso-strict --pretty="%h %cd %s"`
   if (options.path)
     cmd += ` -- ${options.path}`
 
@@ -40,12 +40,24 @@ function getLog(url, since, options) {
   return log
 }
 
-const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
-const since = new Date(Date.now() - (common.NUM_DAYS + 1) * 24 * 3600 * 1000).toISOString()
+function update() {
+  const now = Date.now()
+  const today = now - (now % DAY)
+  const since = new Date(today - (common.NUM_DAYS + common.GRACE_DAYS) * DAY).toISOString()
+  const until = new Date(today).toISOString()
 
-for (const entry of manifest) {
-  const specLog = getLog(entry.specrepo, since, { path: entry.specpath })
-  const testLog = getLog(entry.testrepo, since, { path: entry.testpath })
-  fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
-  fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
+  const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
+  for (const entry of manifest) {
+    const specLog = getLog(entry.specrepo, since, until, { path: entry.specpath })
+    const testLog = getLog(entry.testrepo, since, until, { path: entry.testpath })
+    fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
+    fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
+  }
+
+  // update the date <meta> in the index.html with the last date to show
+  let html = fs.readFileSync('index.html').toString()
+  html = html.replace(/\d{4}-\d{2}-\d{2}/, new Date(today - DAY).toISOString().substr(0, 10))
+  fs.writeFileSync('index.html', html)
 }
+
+update()
