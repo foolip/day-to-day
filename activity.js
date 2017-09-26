@@ -130,10 +130,6 @@ function getActivity(id) {
 
 const sortSelector = document.querySelector('select.sortby')
 const tableContainer = document.querySelector('div.tables')
-const overlay = document.querySelector('div.overlay')
-const overlayDate = overlay.querySelector('.date')
-const overlaySpecChanges = overlay.querySelector('.spec.changes')
-const overlayTestChanges = overlay.querySelector('.test.changes')
 
 sortSelector.addEventListener('change', event => {
   // observation: this is a different kind of table sorting
@@ -155,68 +151,6 @@ sortSelector.addEventListener('change', event => {
   tableContainer.append(...tables)
 })
 
-document.addEventListener('mousemove', event => {
-  if (overlay._locked)
-    return
-
-  const date = event.target._date
-  if (!date) {
-    overlay.hidden = true
-    return
-  }
-
-  const table = event.target.parentNode.parentNode.parentNode
-  console.assert(table.localName == 'table')
-
-  const manifest = table._manifest
-  console.assert(manifest)
-  const activity = table._activity
-  console.assert(activity)
-  const entry = activity[date]
-  console.assert(entry)
-
-  overlayDate.textContent = date
-
-  // remove all child nodes
-  overlaySpecChanges.textContent = overlayTestChanges.textContent = ''
-
-  if (entry.specCommits) {
-    for (const commit of entry.specCommits) {
-      const li = document.createElement('li')
-      const a = li.appendChild(document.createElement('a'))
-      a.textContent = commit.subject
-      a.href = `${manifest.specrepo}/commit/${commit.hash}`
-      overlaySpecChanges.appendChild(li)
-    }
-  }
-
-  if (entry.testCommits) {
-    for (const commit of entry.testCommits) {
-      const li = document.createElement('li')
-      const a = li.appendChild(document.createElement('a'))
-      a.textContent = commit.subject
-      a.href = `${manifest.testrepo}/commit/${commit.hash}`
-      overlayTestChanges.appendChild(li)
-    }
-  }
-
-  const rect = table.getBoundingClientRect()
-  overlay.style.left = (rect.left + 144) + 'px'
-  overlay.style.top = (rect.bottom - 1) + 'px'
-  overlay.hidden = false
-})
-
-// clicking a cell will lock the overlay open,
-// clicking anywhere other will hide it.
-document.addEventListener('click', event => {
-  if (event.target.localName == 'td' && !overlay.hidden) {
-    overlay._locked = true
-  } else {
-    overlay.hidden = true
-    overlay._locked = false
-  }
-})
-
 fetch('manifest.json')
   .then(response => response.text())
   .then(json => {
@@ -235,8 +169,6 @@ fetch('manifest.json')
         getActivity(entry.id)
           .then(activity => {
             populateTable(table, summary, activity)
-            // the activity data is needed for the overlay
-            table._activity = activity
           }))
 
       tableContainer.appendChild(table)
@@ -246,6 +178,5 @@ fetch('manifest.json')
     Promise.all(promises).then(() => {
       sortSelector.dispatchEvent(new Event('change'))
       tableContainer.hidden = false
-      overlay.appendChild(pre)
     })
   })
