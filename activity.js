@@ -162,7 +162,9 @@ fetch('manifest.json')
       // save the individual manifest entry on the table for later
       table._manifest = entry
       const caption = table.createCaption()
-      caption.textContent = entry.name + ' '
+      const a = caption.appendChild(document.createElement('a'))
+      a.textContent = entry.name
+      a.href = entry.href
       const summary = caption.appendChild(document.createElement('span'))
 
       promises.push(

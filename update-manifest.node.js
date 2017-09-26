@@ -121,6 +121,7 @@ function processRef(group, info) {
           .replace(/ Level \d+$/, '')
           .replace(/ \d+(\.\d+)?$/, '')
           .replace(/ API$/, ''),
+        href: url.href,
         specrepo: `${url.hostname.split('.')[0]}/${match[1]}`,
       }
     }
@@ -149,6 +150,7 @@ function processRef(group, info) {
       name: info.title
         .replace(/ Standard$/, '')
         .replace(/ API$/, ''),
+      href: url.href,
       specrepo: 'whatwg/' + id,
     }
   }
