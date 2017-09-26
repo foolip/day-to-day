@@ -1,7 +1,9 @@
 'use strict'
 
+const FETCH_OPTIONS = { cache: 'no-store' }
+
 function getCommits(url) {
-  return fetch(url)
+  return fetch(url, FETCH_OPTIONS)
     .then(response => response.text())
     .then(log => {
       if (log == '')
@@ -151,7 +153,7 @@ sortSelector.addEventListener('change', event => {
   tableContainer.append(...tables)
 })
 
-fetch('manifest.json')
+fetch('manifest.json', FETCH_OPTIONS)
   .then(response => response.text())
   .then(json => {
     const manifest = parseManifest(json)
