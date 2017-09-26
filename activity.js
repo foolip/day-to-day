@@ -60,8 +60,8 @@ function populateTable(table, activity) {
       testActiveDays++
     }
 
-    if (entry.highlight)
-      specCell.classList.add('highlight')
+    if (entry.isolated)
+      specCell.classList.add('isolated')
   }
 
   const spans = table.querySelectorAll('span')
@@ -110,10 +110,10 @@ function getActivity(id) {
     // find and mark days with spec activity but no test activity nearby
     for (let i = GRACE_DAYS; i < NUM_DAYS - GRACE_DAYS; i++) {
       if (activity[days[i]].specCommits) {
-        activity[days[i]].highlight = true
+        activity[days[i]].isolated = true
         for (let j = i - GRACE_DAYS; j <= i + GRACE_DAYS; j++) {
           if (activity[days[j]].testCommits) {
-            activity[days[i]].highlight = false
+            activity[days[i]].isolated = false
             break
           }
         }

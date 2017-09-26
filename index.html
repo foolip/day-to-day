@@ -12,27 +12,26 @@
  Green in both rows is good. A test a day keeps the bugs away.</p>
  <script>document.getElementById('weeks').textContent = NUM_WEEKS</script>
 
- <p>Sort by
- <select class="sortby">
-  <option>name</option>
-  <option>spec activity</option>
-  <option>test activity</option>
-  <option selected>total activity</option>
- </select></p>
+ <p>
+  Sort by
+  <select class="sortby">
+   <option>name</option>
+   <option>spec activity</option>
+   <option>test activity</option>
+   <option selected>total activity</option>
+  </select>
+  <label><input type="checkbox"> Highlight isolated spec activity</label>
+  <script>
+  document.querySelector('input').addEventListener('change', event => {
+    if (event.target.checked) {
+      document.body.classList.add('highlight')
+    } else {
+      document.body.classList.remove('highlight')
+    }
+  })
+  </script>
+ </p>
 </header>
-
-<!--
-<p><label><input type="checkbox">Highlight isolated spec activity</label></p>
-<script>
-document.querySelector('input').addEventListener('change', event => {
-  if (event.target.checked) {
-    document.documentElement.classList.add('highlight')
-  } else {
-    document.documentElement.classList.remove('highlight')
-  }
-})
-</script>
--->
 
 <main>
  <!-- this template (and this comment) will be removed, all child nodes will be
