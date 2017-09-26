@@ -150,7 +150,11 @@ sortSelector.addEventListener('change', event => {
       return aKey - bKey
     return compareStrings(aKey, bKey)
   })
-  tableContainer.append(...tables)
+  // Edge 15 does not support append():
+  // tableContainer.append(...tables)
+  tableContainer.textContent = ''
+  for (const table of tables)
+    tableContainer.appendChild(table)
 })
 
 fetch('manifest.json', FETCH_OPTIONS)
