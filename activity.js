@@ -70,7 +70,7 @@ function populateTable(table, summary, activity) {
       specCell.classList.add('highlight')
   }
 
-  summary.textContent = `${specCommitCount} spec \u00B7 ${testCommitCount} test \u00B7 ${anyActiveDays} days`
+  summary.textContent = `${specActiveDays} + ${testActiveDays} = ${specActiveDays + testActiveDays}`
   const count = commits => commits ? commits.length : 0
   table._specCommitCount = specCommitCount
   table._specActiveDays = specActiveDays
@@ -140,9 +140,9 @@ sortSelector.addEventListener('change', event => {
   const tables = [].slice.call(tableContainer.childNodes)
   const key = {
     'name': table => table._manifest.name,
-    'days active': table => -(table._anyActiveDays),
-    'spec commits': table => -table._specCommitCount,
-    'test commits': table => -table._testCommitCount,
+    'total activity': table => -(table._specActiveDays + table._testActiveDays),
+    'spec activity': table => -table._specActiveDays,
+    'test activity': table => -table._testActiveDays,
   }[event.target.value]
   console.assert(key)
   tables.sort((a, b) => {
