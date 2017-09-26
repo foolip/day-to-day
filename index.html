@@ -1,23 +1,25 @@
 <!doctype html>
 <meta charset=utf-8>
+<title>day-to-day</title>
 <link rel="stylesheet" href="style.css">
-
-<h1>specs &middot; tests &middot; day-to-day</h1>
-
 <script src="common.js"></script>
 
-<p>This collection of green boxes represents activity in specs and their
-corresponding test suites over the past <span id="weeks"></span> weeks.
-Green in both rows is good. A test a day keeps the bugs away.</p>
-<script>document.getElementById('weeks').textContent = NUM_WEEKS</script>
+<header>
+ <h1>specs &middot; tests &middot; day-to-day</h1>
 
-<p>Sort by
-<select class="sortby">
- <option>name</option>
- <option selected>total activity</option>
- <option>spec activity</option>
- <option>test activity</option>
-</select></p>
+ <p>This collection of green boxes represents activity in specs and their
+ corresponding test suites over the past <span id="weeks"></span> weeks.
+ Green in both rows is good. A test a day keeps the bugs away.</p>
+ <script>document.getElementById('weeks').textContent = NUM_WEEKS</script>
+
+ <p>Sort by
+ <select class="sortby">
+  <option>name</option>
+  <option>spec activity</option>
+  <option>test activity</option>
+  <option selected>total activity</option>
+ </select></p>
+</header>
 
 <!--
 <p><label><input type="checkbox">Highlight isolated spec activity</label></p>
@@ -32,7 +34,20 @@ document.querySelector('input').addEventListener('change', event => {
 </script>
 -->
 
-<div class="tables"></div>
+<main>
+ <!-- this template (and this comment) will be removed, all child nodes will be
+      tables created from the template. -->
+ <template>
+  <table>
+   <caption><a>Name</a><div><span class="spec">1</span> + <span class="test">1</span> = <span class="total">2</span></div></caption>
+  </table>
+ </template>
+</main>
+
 <script src="activity.js"></script>
 
-<p class=footer>testing rocks &middot; source on <a href="https://github.com/foolip/day-to-day">GitHub</a></p>
+<footer>
+ testing rocks
+ &middot;
+ source on <a href="https://github.com/foolip/day-to-day">GitHub</a>
+</footer>

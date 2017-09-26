@@ -36,15 +36,12 @@ function colorFromCommits(commits) {
   return `hsl(90, 60%, ${value}%)`
 }
 
-function populateTable(table, summary, activity) {
+function populateTable(table, activity) {
   const specRow = table.insertRow()
   const testRow = table.insertRow()
 
-  let specCommitCount = 0,
-      specActiveDays = 0,
-      testCommitCount = 0,
-      testActiveDays = 0,
-      anyActiveDays = 0
+  let specActiveDays = 0,
+      testActiveDays = 0
 
   for (const date in activity) {
     const entry = activity[date]
@@ -54,31 +51,28 @@ function populateTable(table, summary, activity) {
     specCell._date = testCell._date = date
 
     if (entry.specCommits) {
-      specCommitCount += entry.specCommits.length
       specActiveDays++
       specCell.style.background = colorFromCommits(entry.specCommits)
     }
 
     if (entry.testCommits) {
-      testCommitCount += entry.testCommits.length
       testCell.style.background = colorFromCommits(entry.testCommits)
       testActiveDays++
     }
-
-    if (entry.specCommits || entry.testCommits)
-      anyActiveDays++
 
     if (entry.highlight)
       specCell.classList.add('highlight')
   }
 
-  summary.textContent = `${specActiveDays} + ${testActiveDays} = ${specActiveDays + testActiveDays}`
-  const count = commits => commits ? commits.length : 0
-  table._specCommitCount = specCommitCount
+  const spans = table.querySelectorAll('span')
+  console.assert(spans.length == 3)
+  spans[0].firstChild.data = specActiveDays
+  spans[1].firstChild.data = testActiveDays
+  spans[2].firstChild.data = specActiveDays + testActiveDays
+
+  // also store active days for easy sorting
   table._specActiveDays = specActiveDays
-  table._testCommitCount = testCommitCount
   table._testActiveDays = testActiveDays
-  table._anyActiveDays = anyActiveDays
 
   return table
 }
@@ -131,25 +125,32 @@ function getActivity(id) {
 }
 
 const sortSelector = document.querySelector('select.sortby')
-const tableContainer = document.querySelector('div.tables')
+const tableContainer = document.querySelector('main')
 
 sortSelector.addEventListener('change', event => {
-  // observation: this is a different kind of table sorting
-  const tables = [].slice.call(tableContainer.childNodes)
+  const mode = event.target.value
   const key = {
-    'name': table => table._manifest.name,
     'total activity': table => -(table._specActiveDays + table._testActiveDays),
     'spec activity': table => -table._specActiveDays,
     'test activity': table => -table._testActiveDays,
-  }[event.target.value]
-  console.assert(key)
+  }[mode]
+
+  const tables = [].slice.call(tableContainer.childNodes)
   tables.sort((a, b) => {
-    let aKey = key(a),
-        bKey = key(b)
-    if (typeof aKey == 'number' && typeof bKey == 'number')
-      return aKey - bKey
-    return compareStrings(aKey, bKey)
+    if (key) {
+      const aKey = key(a),
+            bKey = key(b)
+      console.assert(typeof aKey ==  'number' && typeof bKey == 'number')
+      if (aKey != bKey)
+        return aKey - bKey
+      // break numeric ties by falling back to the name
+    }
+    return compareStrings(a._name, b._name)
   })
+
+  // set a class to style the sort key
+  tableContainer.className = `sort-${mode.split(' ')[0]}`
+
   // Edge 15 does not support append():
   // tableContainer.append(...tables)
   tableContainer.textContent = ''
@@ -157,26 +158,30 @@ sortSelector.addEventListener('change', event => {
     tableContainer.appendChild(table)
 })
 
+document.body.classList.add('loading')
+
 fetch('manifest.json', FETCH_OPTIONS)
   .then(response => response.text())
   .then(json => {
     const manifest = parseManifest(json)
     const promises = []
 
+    const template = document.querySelector('template')
+    tableContainer.textContent = ''
+
     for (const entry of manifest) {
-      const table = document.createElement('table')
-      // save the individual manifest entry on the table for later
-      table._manifest = entry
-      const caption = table.createCaption()
-      const a = caption.appendChild(document.createElement('a'))
+      const table = template.content.cloneNode(true).children[0]
+      const a = table.querySelector('a')
       a.textContent = entry.name
       a.href = entry.href
-      const summary = caption.appendChild(document.createElement('span'))
+
+      // also store the name for easy sorting
+      table._name = entry.name
 
       promises.push(
         getActivity(entry.id)
           .then(activity => {
-            populateTable(table, summary, activity)
+            populateTable(table, activity)
           }))
 
       tableContainer.appendChild(table)
@@ -185,6 +190,6 @@ fetch('manifest.json', FETCH_OPTIONS)
     // once all tables are populated, sort and show them
     Promise.all(promises).then(() => {
       sortSelector.dispatchEvent(new Event('change'))
-      tableContainer.hidden = false
+      document.body.classList.remove('loading')
     })
   })
