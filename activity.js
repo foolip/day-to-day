@@ -24,7 +24,7 @@ function pastDays(fromWhen, numDays) {
     const date = then.toISOString().substr(0, 10)
     days.push(date)
   }
-  return days
+  return Object.freeze(days)
 }
 
 function colorFromCommits(commits) {
@@ -89,10 +89,7 @@ function populateActivity(activity, kind, url) {
   })
 }
 
-function getActivity(id) {
-  const days = pastDays(new Date(metaDate).valueOf(), NUM_DAYS)
-  console.assert(days.length == NUM_DAYS)
-  console.assert(days[NUM_DAYS-1] == metaDate)
+function getActivity(id, days) {
   const activity = {}
   for (const day of days) {
     activity[day] = {}
@@ -118,19 +115,14 @@ function getActivity(id) {
   })
 }
 
-const metaDate = document.querySelector('meta[name]').content
-const sortSelector = document.querySelector('select.sortby')
-const tableContainer = document.querySelector('main')
-
-sortSelector.addEventListener('change', event => {
-  const mode = event.target.value
+function sortTables(container, mode) {
   const key = {
     'total activity': table => -(table._specActiveDays + table._testActiveDays),
     'spec activity': table => -table._specActiveDays,
     'test activity': table => -table._testActiveDays,
   }[mode]
 
-  const tables = [].slice.call(tableContainer.childNodes)
+  const tables = [].slice.call(container.childNodes)
   tables.sort((a, b) => {
     if (key) {
       const aKey = key(a),
@@ -144,47 +136,62 @@ sortSelector.addEventListener('change', event => {
   })
 
   // set a class to style the sort key
-  tableContainer.className = `sort-${mode.split(' ')[0]}`
+  container.className = `sort-${mode.split(' ')[0]}`
 
   // Edge 15 does not support append():
-  // tableContainer.append(...tables)
-  tableContainer.textContent = ''
+  // container.append(...tables)
+  container.textContent = ''
   for (const table of tables)
-    tableContainer.appendChild(table)
-})
+    container.appendChild(table)
+}
 
-document.body.classList.add('loading')
+function main() {
+  document.body.classList.add('loading')
 
-fetch('manifest.json')
-  .then(response => response.text())
-  .then(json => {
-    const manifest = parseManifest(json)
-    const promises = []
+  const lastDay = document.querySelector('meta[name]').content
+  const days = pastDays(new Date(lastDay).valueOf(), NUM_DAYS)
+  console.assert(days.length == NUM_DAYS)
+  console.assert(days[NUM_DAYS-1] == lastDay)
 
-    const template = document.querySelector('template')
-    tableContainer.textContent = ''
+  fetch('manifest.json')
+    .then(response => response.text())
+    .then(json => {
+      const container = document.querySelector('main')
+      const template = document.querySelector('template')
+      container.textContent = ''
 
-    for (const entry of manifest) {
-      const table = template.content.cloneNode(true).children[0]
-      const a = table.querySelector('a')
-      a.textContent = entry.name
-      a.href = entry.href
+      const promises = []
 
-      // also store the name for easy sorting
-      table._name = entry.name
+      const manifest = parseManifest(json)
+      for (const entry of manifest) {
+        const table = template.content.cloneNode(true).children[0]
+        const a = table.querySelector('a')
+        a.textContent = entry.name
+        a.href = entry.href
 
-      promises.push(
-        getActivity(entry.id)
-          .then(activity => {
-            populateTable(table, activity)
-          }))
+        // also store the name for easy sorting
+        table._name = entry.name
 
-      tableContainer.appendChild(table)
-    }
+        promises.push(
+          getActivity(entry.id, days)
+            .then(activity => {
+              populateTable(table, activity)
+            }))
 
-    // once all tables are populated, sort and show them
-    Promise.all(promises).then(() => {
-      sortSelector.dispatchEvent(new Event('change'))
-      document.body.classList.remove('loading')
+        container.appendChild(table)
+      }
+
+      // once all tables are populated, sort and show them
+      Promise.all(promises).then(() => {
+        const select = document.querySelector('select.sortby')
+        select.addEventListener('change', event => {
+          sortTables(container, event.target.value)
+        })
+        select.dispatchEvent(new Event('change'))
+
+        document.body.classList.remove('loading')
+      })
     })
-  })
+}
+
+main()
