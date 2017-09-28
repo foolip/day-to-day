@@ -6,12 +6,15 @@ const fs = require('fs')
 const fetch = require('node-fetch')
 const URL = require('url').URL
 
-const biblio = ['w3c', 'whatwg', 'wicg']
+const biblio = ['biblio', 'w3c', 'whatwg', 'wicg']
 
 // specref names to drop on the floor
 const blocklist = [
+  'API-DESIGN-PRINCIPLES',
   'COWL',
   'CSP2',
+  'GraphQL',
+  'HTML-EXTENSIONS',
   'activitypub',
   'annotation-model',
   'annotation-vocab',
@@ -76,7 +79,38 @@ function processRef(group, info) {
   if (!info.href || !info.title)
     return
 
+  function entryFromGitHubIO(url) {
+    const id = url.pathname.split('/')[1]
+    const match = url.pathname.match(/^\/([^/]*)\/?(.*)/)
+
+    if (match[2]) {
+      // TODO: handle https://w3c.github.io/webdriver/webdriver-spec.html
+      return
+    }
+
+    return {
+      id: id,
+      name: info.title
+        .replace(/:.*/, '')
+        .replace(/ Level \d+$/, '')
+        .replace(/ \d+(\.\d+)?$/, '')
+        .replace(/ Specification$/, '')
+        .replace(/ API$/, ''),
+      href: url.href,
+        specrepo: `${url.hostname.split('.')[0]}/${match[1]}`,
+    }
+  }
+
   switch (group) {
+  case 'biblio': {
+    const url = new URL(info.href)
+    if (url.hostname.endsWith('.github.io'))
+      return entryFromGitHubIO(url)
+
+    // TODO: handle more interesting things, like WebGL
+    return
+  }
+
   case 'w3c': {
     // ignore everything that isn't maintained
     if (!info.edDraft)
@@ -105,26 +139,8 @@ function processRef(group, info) {
     if (!HOSTNAMES.some(hostname => url.hostname == hostname))
       return
 
-    if (url.hostname.endsWith('.github.io')) {
-      const id = url.pathname.split('/')[1]
-      const match = url.pathname.match(/^\/([^/]*)\/?(.*)/)
-
-      if (match[2]) {
-        // TODO: handle https://w3c.github.io/webdriver/webdriver-spec.html
-        return
-      }
-
-      return {
-        id: id,
-        name: info.title
-          .replace(/:.*/, '')
-          .replace(/ Level \d+$/, '')
-          .replace(/ \d+(\.\d+)?$/, '')
-          .replace(/ API$/, ''),
-        href: url.href,
-        specrepo: `${url.hostname.split('.')[0]}/${match[1]}`,
-      }
-    }
+    if (url.hostname.endsWith('.github.io'))
+      return entryFromGitHubIO(url)
 
     // TODO: handle everything else!
     return
