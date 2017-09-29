@@ -84,6 +84,7 @@ const blocklist = [
   'webpayments-http-api',
   'webpayments-http-messages',
   'webstorage',
+  'websub',
   'widgets-apis',
   'wot-architecture',
   'wot-scripting-api',
