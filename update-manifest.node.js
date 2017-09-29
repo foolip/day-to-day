@@ -56,6 +56,7 @@ const blocklist = [
   'klreq',
   'low-vision-needs',
   'ltli',
+  'matrix',
   'microdata',
   'mobile-accessibility-mapping',
   'odrl-model',
@@ -123,6 +124,8 @@ function processRef(group, info) {
     return
 
   function entryFromGitHubIO(url) {
+    console.assert(url.hostname.endsWith('.github.io'))
+
     const id = url.pathname.split('/')[1]
 
     return {
@@ -135,6 +138,28 @@ function processRef(group, info) {
         .replace(/ API$/, ''),
       href: url.href,
       specrepo: `${url.hostname.split('.')[0]}/${id}`,
+    }
+  }
+
+  function entryFromDraftsOrg(url) {
+    console.assert(url.hostname == 'drafts.fxtf.org')
+
+    const org = url.hostname.split('.')[1]
+    const match = /^\/(.*)\/$/.exec(url.pathname)
+    let id = match[1]
+    console.assert(!id.includes('/'))
+    // no versions thanks
+    id = id.replace(/-\d$/, '')
+    url.pathname = `/${id}/`
+
+    return {
+      id: id,
+      name: info.title
+        .replace(/ Level \d+$/, '')
+        .replace(/ Module$/, ''),
+      href: url.href,
+      specrepo: `w3c/${org}-drafts`,
+      specpath: id,
     }
   }
 
@@ -178,6 +203,9 @@ function processRef(group, info) {
 
     if (url.hostname.endsWith('.github.io'))
       return entryFromGitHubIO(url)
+
+    if (url.hostname.endsWith('drafts.fxtf.org'))
+      return entryFromDraftsOrg(url)
 
     // TODO: handle everything else!
     return
