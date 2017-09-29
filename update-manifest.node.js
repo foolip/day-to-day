@@ -206,9 +206,12 @@ function processRef(group, info) {
     }
   }
 
-  case 'wicg':
-    // TODO: handle it
-    return
+  case 'wicg': {
+    const url = new URL(info.href)
+    console.assert(url.hostname.endsWith('.github.io'))
+    return entryFromGitHubIO(url)
+  }
+
   }
 
   throw `Unknown group: ${group}`
