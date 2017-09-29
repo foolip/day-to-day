@@ -13,8 +13,10 @@ const blocklist = [
   'API-DESIGN-PRINCIPLES',
   'COWL',
   'CSP2',
+  'DIFFERENCES',
   'GraphQL',
   'HTML-EXTENSIONS',
+  'INFRA',
   'UISecurity',
   'WCAG21',
   'accname-aam-1.1',
@@ -187,14 +189,13 @@ function processRef(group, info) {
 
     const url = new URL(info.href)
 
-    if (!url.hostname.endsWith('.idea.whatwg.org') &&
-        !url.hostname.endsWith('.spec.whatwg.org'))
-      return
+    if (url.hostname == 'whatwg.github.io')
+      return entryFromGitHubIO(url)
+
+    console.assert(url.hostname.endsWith('.idea.whatwg.org') ||
+                   url.hostname.endsWith('.spec.whatwg.org'))
 
     const id = url.hostname.split('.')[0]
-
-    if (id == 'infra')
-      return
 
     return {
       id: id,
