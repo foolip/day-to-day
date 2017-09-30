@@ -162,7 +162,9 @@ function processRef(group, info) {
         .replace(/ Module$/, ''),
       href: url.href,
       specrepo: `w3c/${org}-drafts`,
-      specpath: id,
+      // Note: mediaqueries-5 has the highest level on 2017-09-30
+      specpath: `${id} ${id}-1 ${id}-2 ${id}-3 ${id}-4 ${id}-5`,
+      testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 css/${id}-4 css/${id}-5`,
     }
   }
 
