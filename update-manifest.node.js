@@ -185,7 +185,14 @@ function processRef(group, info) {
     if (info.status == 'NOTE')
       return
 
-    const url = new URL(info.edDraft)
+    let url = info.edDraft
+
+    // working around https://github.com/tobie/specref/issues/389
+    const OLD_FXTF_PREFIX = 'http://dev.w3.org/fxtf/'
+    if (url.startsWith(OLD_FXTF_PREFIX))
+      url = 'https://drafts.fxtf.org/' + url.substr(OLD_FXTF_PREFIX.length)
+
+    url = new URL(url)
 
     const HOSTNAMES = [
       'drafts.css-houdini.org',
