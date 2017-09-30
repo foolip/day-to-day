@@ -173,6 +173,31 @@ function processRef(group, info) {
     }
   }
 
+  function entryFromSvgwgOrg(url) {
+    console.assert(url.hostname == 'svgwg.org')
+
+    const entry = {
+      id: undefined, // just for the order
+      name: info.title,
+      href: url.href,
+      specrepo: 'w3c/svgwg',
+    }
+
+    if (url.pathname == '/svg2-draft/') {
+      entry.id = 'svg',
+      entry.name = 'SVG'
+      entry.specpath = 'master'
+    } else {
+      console.assert(url.pathname.startsWith('/specs/')  &&
+                     url.pathname.endsWith('/'))
+      const id = url.pathname.split('/')[2]
+      entry.id = `svg-${id}`
+      entry.specpath = `specs/${id}`
+    }
+
+    return entry
+  }
+
   switch (group) {
   case 'biblio': {
     const url = new URL(info.href)
@@ -194,10 +219,8 @@ function processRef(group, info) {
 
     // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
     const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/'
-    if (url.startsWith(OLD_CSS_PREFIX)) {
+    if (url.startsWith(OLD_CSS_PREFIX))
       url = 'https://drafts.csswg.org/' + url.substr(OLD_CSS_PREFIX.length)
-      console.log(url)
-    }
 
     url = new URL(url)
 
@@ -219,8 +242,8 @@ function processRef(group, info) {
     if (url.hostname.startsWith('drafts.'))
       return entryFromDraftsOrg(url)
 
-    // TODO: handle everything else!
-    return
+    console.assert(url.hostname == 'svgwg.org')
+    return entryFromSvgwgOrg(url)
   }
 
   case 'whatwg': {
