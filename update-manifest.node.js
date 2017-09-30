@@ -32,6 +32,7 @@ const blocklist = [
   'coga-user-research',
   'core-aam-1.1',
   'csp-embedded-enforcement',
+  'css-overflow-3',
   'csv2json',
   'csv2rdf',
   'custom-elements',
@@ -142,7 +143,9 @@ function processRef(group, info) {
   }
 
   function entryFromDraftsOrg(url) {
-    console.assert(url.hostname == 'drafts.fxtf.org')
+    console.assert(url.hostname == 'drafts.css-houdini.org' ||
+                   url.hostname == 'drafts.csswg.org' ||
+                   url.hostname == 'drafts.fxtf.org')
 
     const org = url.hostname.split('.')[1]
     const match = /^\/(.*)\/$/.exec(url.pathname)
@@ -204,7 +207,7 @@ function processRef(group, info) {
     if (url.hostname.endsWith('.github.io'))
       return entryFromGitHubIO(url)
 
-    if (url.hostname.endsWith('drafts.fxtf.org'))
+    if (url.hostname.startsWith('drafts.'))
       return entryFromDraftsOrg(url)
 
     // TODO: handle everything else!
