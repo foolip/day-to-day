@@ -32,7 +32,11 @@ const blocklist = [
   'coga-user-research',
   'core-aam-1.1',
   'csp-embedded-enforcement',
+  'css-cascade-3',
+  'css-fonts-3',
   'css-overflow-3',
+  'css-text-3',
+  'css-ui-3',
   'csv2json',
   'csv2rdf',
   'custom-elements',
@@ -67,6 +71,7 @@ const blocklist = [
   'poe-ucr',
   'pointerlock',
   'resource-timing-1',
+  'selectors-nonelement-1',
   'shacl',
   'shadow-dom',
   'svg-aam-1.0',
@@ -152,7 +157,7 @@ function processRef(group, info) {
     let id = match[1]
     console.assert(!id.includes('/'))
     // no versions thanks
-    id = id.replace(/-\d$/, '')
+    id = id.replace('css3', 'css').replace(/-\d$/, '')
     url.pathname = `/${id}/`
 
     return {
@@ -187,10 +192,12 @@ function processRef(group, info) {
 
     let url = info.edDraft
 
-    // working around https://github.com/tobie/specref/issues/389
-    const OLD_FXTF_PREFIX = 'http://dev.w3.org/fxtf/'
-    if (url.startsWith(OLD_FXTF_PREFIX))
-      url = 'https://drafts.fxtf.org/' + url.substr(OLD_FXTF_PREFIX.length)
+    // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
+    const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/'
+    if (url.startsWith(OLD_CSS_PREFIX)) {
+      url = 'https://drafts.csswg.org/' + url.substr(OLD_CSS_PREFIX.length)
+      console.log(url)
+    }
 
     url = new URL(url)
 
