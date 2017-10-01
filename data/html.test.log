@@ -2,17 +2,25 @@
 4efe9f5bfe	2017-09-29	Get rid of /common/vendor-prefix.js
 0f1ee41f0a	2017-09-28	Upstream LayoutTests/html/dialog/dialog-autofocus* to WPT.
 d4ccae09e1	2017-09-28	Fix template content check in host-including inclusive ancestor algorithm
+8580382116	2017-09-28	Clean up last-event-id.py
 ce22571620	2017-09-26	Regression fix: Unbreak html/dom/interfaces.html (#7493)
 a06364aebe	2017-09-26	img-decodes: Rework image decodes to align with the reworded spec.
 df7076c3bf	2017-09-26	[ES6 modules] Add virtual test suite which run w/ dynamic imports enabled
+b992a43bb8	2017-09-26	Refactor wpt/2dcontext/drawing-images-to-the-canvas/ layout tests:
 b47289f19c	2017-09-24	Link to all HTML-related tests from html/README.md
 6667388df6	2017-09-22	<form> submission checks
 055df5106d	2017-09-22	Disconnected <a> should not navigate
 870a989cf3	2017-09-22	[ES6 modules] WPT: dynamically imported modules from valid nonce should eval
 5df9c562a1	2017-09-20	[ES6 modules] WPT: Add basic dynamic import test case
+faf9eefdce	2017-09-19	Update tests within websockets/ to comply with new toplevel data: URI navigation policy. r=jgraham,valentin
 cf6f221472	2017-09-19	Add manual web-platform-tests for Drag Data Store status,
+a4c37d9dab	2017-09-14	Change expectation for unexpected WebSocket protocol (#7257)
 f6559de481	2017-09-14	registerContentHandler() and several friends are removed
 65880c6c18	2017-09-14	Expand type="" tests for <script> and <style>
+d4819d609b	2017-09-14	Change expectation for WebSocket case-only sub-protocol mismatch (#7259)
+37e98c9109	2017-09-13	Some fixes to make workers/worker-performance.worker.js a little more robust
+7b551cc0de	2017-09-13	bindings: Expose an indexed property descriptor handler for named properties.
+ed60961706	2017-09-12	Add more innerText getter tests
 751932b7b8	2017-09-11	Remove zcorpan from OWNERS files
 8c6b622227	2017-09-09	MIME type handling of canPlayType()
 b6d42d0174	2017-09-08	Add more test cases for document.all
@@ -23,30 +31,45 @@ b27b3a5c23	2017-09-05	Add additional tests for dialog.showModal()
 208fa49afa	2017-09-05	<applet> is hardly a thing now
 7646c258ee	2017-09-04	Fix idle-callbacks/callback-suspended for non-bfcache browsers. (#7248)
 0923cbd500	2017-09-01	Changing <style> element's type attribute should reflect in CSS.
+c9c39eb0ba	2017-09-01	Don't generate the spec when ISOFSCREENCANVAS
+0b8440f452	2017-09-01	Fix lint errors
+4477a74318	2017-09-01	Update and trim down scripts in /2dcontext/tools
 4807cdef64	2017-09-01	Update :in-range/:out-of-range style when input type changes.
 e9cfceed91	2017-09-01	Update :indeterminate style when input type changes.
 6f42bd52ab	2017-09-01	Update :checked style when input type changes.
+12dd602c7b	2017-08-31	Add wpt tests for not copying sessionstorage into noopener windows,
 f75cde25c6	2017-08-31	wpt test cases to ensure 'data:' iframe is forbidden to access its contentDocument.
 bb6e2867dd	2017-08-31	Improve module loader mochitests and re-enable failing WPT tests
+27838c0248	2017-08-31	Move long imagebitmap/ test into 2dcontext/imagebitmap/
+7ddf0cc055	2017-08-30	Allow some resource timing entries to be 0 for security reasons
+8a06f81b40	2017-08-30	Test the global performance object in workers
 2a52656b20	2017-08-30	Merge html/user-interaction/ to html/editing/. (#7045)
 b063cf4802	2017-08-29	Changing <style> element's media attribute should reflect is CSS.
+506ace067c	2017-08-28	Fix and cleanup error handling in createImageBitmap
 ab95958792	2017-08-28	HTML: Test that data: URL is supported in <track src>
 bdb8b1b112	2017-08-25	A detached History should throw SecurityError when accessed.
+8c9da1f36e	2017-08-23	[webvtt] Update WebVTT tests for [Exposed=Window]
 982e84958a	2017-08-22	Test reflection of <template> and <slot>
 8d5503e681	2017-08-22	Fix incorrect marquee scrollDelay test (#6966)
 2b6abec96b	2017-08-22	Add html/README.md. (#6964)
 27c3a48ec6	2017-08-22	Update reflection tests
+2da2d51ae3	2017-08-22	Fix OffscreenCanvas resizing behavior
 a574530634	2017-08-21	Fix check for throwing in reflection original harness
 8a491bf308	2017-08-20	RIP forceSpellCheck (whatwg/html#2904) (#6943)
 64bfe4edf6	2017-08-20	<a>, <area>, and <link> must have an active document check (#5758)
+2b6ba002f7	2017-08-17	Respect color correct rendering mode in canvas 2D
+81231fc743	2017-08-17	Revert "Respect color correct rendering mode in canvas for layout tests"
 1e93140138	2017-08-17	HTML: form association
+db8d76368e	2017-08-17	Respect color correct rendering mode in canvas for layout tests
 2ffd5823f4	2017-08-17	Refine the tests for scrolling to fragid according to the revised algorithm
 66ea9f054b	2017-08-16	Make a copy of passed-in ScriptOrigin in V8ScriptRunner::ThrowException
+5dcbb269d8	2017-08-16	EventSource: do not allow lastEventId creation when the id contains U+0000 (#6584)
 2d9a6d617f	2017-08-16	Add test for form.elements with elements in a shadow tree
 ed85e75d43	2017-08-16	Make MessageEvent#ports a non-nullable FrozenArray.
 8f6f344e73	2017-08-15	Add tests for replacement enabled and hashchange
 271f260db0	2017-08-14	Move image-decodes/ to html/.../decode/
 8a65f52198	2017-08-11	Drop support for createEvent("ErrorEvent"/"PopStateEvent");
+ef0ecfa071	2017-08-11	To make data-url.html pass.
 cc1aa1bb83	2017-08-10	Fix broken test Document.currentScript.html
 8ac2404d54	2017-08-10	Add a couple of tests that img delays the load event (#5509)
 5a764bbeda	2017-08-09	HTTP Refresh header
