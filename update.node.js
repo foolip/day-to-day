@@ -50,11 +50,9 @@ const TODO_WPT_DIRS = new Set([
   'background-fetch',
   'cookies',
   'core-aam',
-  'css-backgrounds', // id is css-background
   'css/CSS1',
   'css/WOFF2',
   'css/css-animations-1',
-  'css/css-backgrounds-3', // id is css-background
   'css/css-block-3',
   'css/css-conditional-3',
   'css/css-multicol-1',

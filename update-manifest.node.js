@@ -157,7 +157,14 @@ function processRef(group, info) {
     let id = match[1]
     console.assert(!id.includes('/'))
     // no versions thanks
-    id = id.replace('css3', 'css').replace(/-\d$/, '')
+    if (id.startsWith('css3')) {
+      if (id == 'css3-background')
+        id = 'css-backgrounds' // plural
+      else
+        id = id.replace('css3', 'css')
+    } else {
+      id = id.replace(/-\d$/, '')
+    }
     url.pathname = `/${id}/`
 
     return {
