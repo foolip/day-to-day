@@ -236,8 +236,15 @@ function processRef(group, info) {
     if (!HOSTNAMES.some(hostname => url.hostname == hostname))
       return
 
-    if (url.hostname.endsWith('.github.io'))
-      return entryFromGitHubIO(url)
+    if (url.hostname.endsWith('.github.io')) {
+      const entry = entryFromGitHubIO(url)
+
+      // the webappsec prefix isn't used in the wpt dirname
+      if (entry.id.startsWith('webappsec-'))
+        entry.testpath = entry.id.substr(10)
+
+      return entry
+    }
 
     if (url.hostname.startsWith('drafts.'))
       return entryFromDraftsOrg(url)
