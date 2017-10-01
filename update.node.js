@@ -20,6 +20,28 @@ function cloneOrUpdate(url) {
   return dir
 }
 
+// dirs with no tests
+const IGNORE_WPT_DIRS = new Set(['tools'])
+
+// dirs that should be claimed
+const TODO_WPT_DIRS = new Set(['WebIDL'])
+
+function getWptDirs() {
+  const dir = `${REPO_CACHE_DIR}/github.com/w3c/web-platform-tests`
+  const cmd = 'find * -maxdepth 0 -type d -print0; find css/* -maxdepth 0 -type d -print0'
+  const dirs = execSync(cmd, { cwd: dir }).toString().split('\0').filter(dir => {
+    if (dir == '')
+      return false
+    if (IGNORE_WPT_DIRS.has(dir))
+      return false
+    if (TODO_WPT_DIRS.has(dir))
+      return false
+    return true
+  })
+  dirs.sort()
+  return new Set(dirs)
+}
+
 function getLog(url, since, until, options) {
   let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=iso-strict --pretty="%h %cd %s"`
   if (options.path)
@@ -46,18 +68,35 @@ function update() {
   const since = new Date(today - (common.NUM_DAYS + common.GRACE_DAYS) * DAY).toISOString()
   const until = new Date(today).toISOString()
 
+  // set of all dirs in wpt that are used by some entry
+  const usedWptDirs = new Set
+
   const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
   for (const entry of manifest) {
     const specLog = getLog(entry.specrepo, since, until, { path: entry.specpath })
     const testLog = getLog(entry.testrepo, since, until, { path: entry.testpath })
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
+
+    if (entry.testrepo.includes('web-platform-tests')) {
+      entry.testpath.split(' ').forEach(dir => {
+        // it doesn't matter that some of these directories don't exist
+        usedWptDirs.add(dir)
+      })
+    }
   }
 
   // update the date <meta> in the index.html with the last date to show
   let html = fs.readFileSync('index.html').toString()
   html = html.replace(/\d{4}-\d{2}-\d{2}/, new Date(today - DAY).toISOString().substr(0, 10))
   fs.writeFileSync('index.html', html)
+
+  // report which wpt dirs don't have a corresponding entry
+  //console.log(usedWptDirs)
+  for (const dir of getWptDirs()) {
+    if (!usedWptDirs.has(dir))
+      console.warn(`${dir} is not claimed by any spec`)
+  }
 }
 
 update()
