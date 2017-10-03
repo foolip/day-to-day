@@ -74,7 +74,6 @@ const TODO_WPT_DIRS = new Set([
   'input-events',
   'js', // should be merged with test262
   'keyboard-lock',
-  'longtask-timing',
   'mathml',
   'media-capabilities',
   'netinfo',
@@ -117,7 +116,6 @@ const TODO_SPEC_IDS = new Set([
   'figures',
   'fill-stroke',
   'loader',
-  'longtasks',
   'manifest',
   'mediacapture-depth',
   'mediacapture-screen-share',
