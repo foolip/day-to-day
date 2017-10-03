@@ -214,7 +214,7 @@ function update() {
       })
 
       if (!TODO_SPEC_IDS.has(entry.id) && !entryDirs.some(dir => realWptDirs.has(dir)))
-        console.info(`${entry.id} spec does not any wpt dirs (${entry.testpath} checked)`)
+        console.info(`${entry.id} spec does not have any wpt dirs (${entry.testpath} checked)`)
     }
   }
 
