@@ -72,7 +72,6 @@ const TODO_WPT_DIRS = new Set([
   'html-longdesc',
   'http', // IETF spec
   'input-events',
-  'intersection-observer',
   'js', // should be merged with test262
   'keyboard-lock',
   'longtask-timing',

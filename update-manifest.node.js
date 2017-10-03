@@ -57,7 +57,6 @@ const blocklist = [
   'indie-ui-context',
   'indie-ui-events',
   'international-specs',
-  'intersection-observer',
   'klreq',
   'low-vision-needs',
   'ltli',
