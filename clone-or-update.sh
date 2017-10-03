@@ -6,10 +6,10 @@ DIR="$2"
 if [ ! -e "$DIR" ]; then
     # clone
     mkdir -p "$DIR"
-    git clone "$URL" "$DIR"
+    git clone -q "$URL" "$DIR"
 else
     # update
     cd "$DIR"
-    git fetch
+    git fetch -q
     git checkout -q origin/HEAD
 fi

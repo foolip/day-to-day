@@ -10,12 +10,18 @@ const fs = require('fs')
 const execSync = require('child_process').execSync
 
 // clones or updates a repo, returns its directory name
-function cloneOrUpdate(url) {
+function cloneOrUpdate(url, repoCache) {
   if (!url.startsWith('https://'))
     throw 'Use a https:// repo URL!'
 
+  if (repoCache.has(url))
+    return repoCache.get(url)
+
   const dir = `${REPO_CACHE_DIR}/${url.substr(8)}`
+  console.log(`Updating ${url}`)
   execSync(`sh clone-or-update.sh "${url}" "${dir}"`, {stdio:[0,1,2]})
+
+  repoCache.set(url, dir)
 
   return dir
 }
@@ -156,12 +162,10 @@ function getWptDirs() {
   return new Set(dirs)
 }
 
-function getLog(url, since, until, options) {
+function getLog(dir, since, until, options) {
   let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=iso-strict --pretty="%h %cd %s"`
   if (options.path)
     cmd += ` -- ${options.path}`
-
-  const dir = cloneOrUpdate(url)
 
   const lines = execSync(cmd, { cwd: dir }).toString().split('\n')
   let log = ''
@@ -189,9 +193,17 @@ function update() {
   const usedWptDirs = new Set
 
   const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
+
+  // a url->dir map to avoid updating the same repo twice
+  const repoCache = new Map
+
   for (const entry of manifest) {
-    const specLog = getLog(entry.specrepo, since, until, { path: entry.specpath })
-    const testLog = getLog(entry.testrepo, since, until, { path: entry.testpath })
+    const specDir = cloneOrUpdate(entry.specrepo, repoCache)
+    const testDir = cloneOrUpdate(entry.testrepo, repoCache)
+
+    const specLog = getLog(specDir, since, until, { path: entry.specpath })
+    const testLog = getLog(testDir, since, until, { path: entry.testpath })
+
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
 
