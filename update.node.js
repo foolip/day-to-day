@@ -48,12 +48,12 @@ const IGNORE_WPT_DIRS = new Set([
 
 // dirs that need some kind of action
 const TODO_WPT_DIRS = new Set([
-  'WebIDL',
+  'WebIDL', // https://heycam.github.io/webidl/
   'annotation-model',
   'annotation-protocol',
   'annotation-vocab',
   'apng',
-  'background-fetch',
+  'background-fetch', // https://wicg.github.io/background-fetch/
   'cookies',
   'core-aam',
   'css/CSS1',
@@ -65,30 +65,31 @@ const TODO_WPT_DIRS = new Set([
   'dpub-aam',
   'dpub-aria',
   'editing',
+  'entries-api', // https://wicg.github.io/entries-api/
   'ext-xhtml-pubid',
-  'geolocation-API',
+  'geolocation-API', // https://www.w3.org/TR/geolocation-API/
   'html-imports',
   'html-longdesc',
   'http', // IETF spec
-  'input-events',
+  'input-events', // https://w3c.github.io/input-events/
   'js', // should be merged with test262
-  'keyboard-lock',
+  'keyboard-lock', // https://w3c.github.io/keyboard-lock/
   'mathml',
   'old-tests',
-  'orientation-event',
+  'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
   'progress-events',
-  'resize-observer',
-  'scroll-anchoring',
-  'speech-api',
-  'staticrange',
+  'resize-observer', // https://wicg.github.io/ResizeObserver/
+  'scroll-anchoring', // https://drafts.csswg.org/css-scroll-anchoring/
+  'speech-api', // https://w3c.github.io/speech-api/webspeechapi.html
+  'staticrange', // https://w3c.github.io/staticrange/
   'svg-aam',
-  'trusted-types',
+  'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport',
   'wai-aria',
   'wasm',
-  'web-nfc',
+  'web-nfc', // https://w3c.github.io/web-nfc/
   'webgl',
-  'webvr',
+  'webvr', // https://w3c.github.io/webvr/
   'x-frame-options',
 ])
 
