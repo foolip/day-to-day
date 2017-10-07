@@ -130,8 +130,7 @@ const TODO_SPEC_IDS = new Set([
   'webrtc-stats',
 ])
 
-function getWptDirs() {
-  const dir = `${REPO_CACHE_DIR}/github.com/w3c/web-platform-tests`
+function getWptDirs(dir) {
   const cmd = 'find * -maxdepth 0 -type d -print0; find css/* -maxdepth 0 -type d -print0'
   const dirs = execSync(cmd, { cwd: dir }).toString().split('\0').filter(dir => {
     if (dir == '')
@@ -170,16 +169,17 @@ function update() {
   const since = new Date(today - (common.NUM_DAYS + common.GRACE_DAYS) * DAY).toISOString()
   const until = new Date(today).toISOString()
 
+  // a url->dir map to avoid updating the same repo twice
+  const repoCache = new Map
+
   // set of all dirs that (currently) really exist in wpt
-  const realWptDirs = getWptDirs()
+  const wptDir = cloneOrUpdate('https://github.com/w3c/web-platform-tests', repoCache)
+  const realWptDirs = getWptDirs(wptDir)
 
   // set of all dirs in wpt that are used by some entry
   const usedWptDirs = new Set
 
   const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
-
-  // a url->dir map to avoid updating the same repo twice
-  const repoCache = new Map
 
   for (const entry of manifest) {
     const specDir = cloneOrUpdate(entry.specrepo, repoCache)
