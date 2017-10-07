@@ -1,3 +1,10 @@
+293176b	2017-10-05	Add dfn for tones
+97eaca3	2017-10-03	Cleanup
+5745f08	2017-10-03	Duration, InterToneGap and CanInsertDTMF internal slots of RTCDTMFSender
+23dc398	2017-10-03	Add note
+50f7d0a	2017-10-03	Use
+e999a18	2017-10-03	createDataChannel: Run 'update negotiation needed flag' steps on the main loop
+e692132	2017-10-03	createDataChannel: Queue a task to update negotiation needed state
 19827c9	2017-10-02	Added dated version v20171002
 8f80575	2017-10-02	Editorial: Update change log
 9bc2856	2017-09-28	Link to promise terminology
@@ -19,8 +26,10 @@ f6ba8f9	2017-09-14	Updated according to the September 13 VI decision.
 6161320	2017-09-14	Codec params don't have "name" in WebRTC 1.0, they have "mimeType".
 793a974	2017-09-14	Change payload type fields to octet.
 3d5e807	2017-09-13	Revert "Adding `remoteTrackId` attribute to represent SDP-signaled track ID."
+e134f86	2017-09-13	Added "recommended"
 dac3d35	2017-09-13	Add Promise terms to Terminology section
 3610317	2017-09-13	Add note that null candidate is for legacy compatibility
+dacd6c3	2017-09-13	Address Peter's comments
 787b7f8	2017-09-12	connectionstate: add missing "one"
 20e3445	2017-09-12	Ensure that "track" events fire before the SRD promise resolves. (#1519)
 8d1fbf4	2017-09-11	Select sent codec via "codecPayloadType" field rather than reordering.
@@ -51,6 +60,7 @@ ec481e2	2017-09-06	Annotate all interfaces with Exposed extended attribute
 f171248	2017-08-30	Add a section summarizing different ICE candidate events.
 1e6ed2a	2017-08-29	Ensure the same ordering as for the "addTrack/createOffer" case.
 021fff5	2017-08-29	Formalize how createOffer interacts with identity providers.
+3eff78c	2017-08-27	Change "recommended" to "supported"
 5ba6c78	2017-08-25	Fix closing </ol>
 9cf9e30	2017-08-25	Clarify what exactly are offer and answer descriptions
 6ebdd8b	2017-08-25	Clarify which session description to check for if negotiation is needed
@@ -70,6 +80,7 @@ e7be671	2017-08-24	Update mandatory to implement stats fields to sync with webrt
 f4d5abf	2017-08-24	Fix reference to validating assertion result in requesting assertions
 67c38db	2017-08-23	A -> An
 7d0e7ab	2017-08-23	A RTCPeerConnection -> An RTCPeerConnection
+7141d25	2017-08-23	What algorithms the browser supports
 30871db	2017-08-23	Removed "entire"
 66f712c	2017-08-23	markup fixes
 0a69a98	2017-08-23	Clarify the meaning of session description sdp need not match
@@ -96,14 +107,3 @@ a7efdbe	2017-08-17	respec.js version 16.0
 ff641f0	2017-08-17	When DTMF can be sent
 58b46c2	2017-08-17	No rollback in "stable" state
 8c322e2	2017-08-16	change ResourceInUse to OperationError
-b0ac6f1	2017-08-10	Remove duplicate info on method parameters
-cf07291	2017-08-10	Fixing typo
-d8c5547	2017-08-09	Remove SSRCs from RTCRtpEncodingParameters.
-453ba4f	2017-08-09	Adding defaults for RTCRtpEncodingParameters.active and priority
-90dc6b8	2017-08-09	Ignore RTCDataChannelInit.id if "negotiated" is false.
-33f9e41	2017-08-09	Define what an "associated" transceiver is.
-b01e887	2017-08-09	Clarify that ICE states should be "new" if there are no transports.
-abdf3e5	2017-08-09	Update paragraph that introduces senders/receivers/transceivers.
-684caa0	2017-08-09	Reference [[Direction]] internal slot from addTrack/removeTrack.
-27f1ecf	2017-08-09	Specify how data channel priority enum is initialized from priority int
-96338fe	2017-08-09	Making getParameters/setParameters matching logic more deterministic.
