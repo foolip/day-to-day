@@ -235,7 +235,7 @@ function processRef(group, info) {
       'drafts.css-houdini.org',
       'drafts.csswg.org',
       'drafts.fxtf.org',
-      'svgwg.org', // TODO: handle path component
+      'svgwg.org',
       'w3c.github.io',
       'webaudio.github.io',
     ]
