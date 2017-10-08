@@ -28,7 +28,6 @@ function cloneOrUpdate(url, repoCache) {
 
 // dirs with no tests
 const IGNORE_WPT_DIRS = new Set([
-  'assumptions',
   'common',
   'conformance-checkers',
   'css', // tests are in subdirs
