@@ -111,7 +111,6 @@ const TODO_SPEC_IDS = new Set([
   'css-will-change',
   'figures',
   'fill-stroke',
-  'loader',
   'manifest',
   'mediacapture-depth',
   'mediacapture-screen-share',

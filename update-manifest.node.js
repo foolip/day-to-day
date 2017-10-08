@@ -17,6 +17,7 @@ const blocklist = [
   'GraphQL',
   'HTML-EXTENSIONS',
   'INFRA',
+  'LOADER',
   'UISecurity',
   'WCAG21',
   'accname-aam-1.1',
@@ -264,9 +265,6 @@ function processRef(group, info) {
       return
 
     const url = new URL(info.href)
-
-    if (url.hostname == 'whatwg.github.io')
-      return entryFromGitHubIO(url)
 
     console.assert(url.hostname.endsWith('.idea.whatwg.org') ||
                    url.hostname.endsWith('.spec.whatwg.org'))
