@@ -119,7 +119,6 @@ const TODO_SPEC_IDS = new Set([
   'payment-method-manifest',
   'permissions',
   'push-api',
-  'requestidlecallback',
   'resource-hints',
   'svg-integration',
   'svg-markers',
