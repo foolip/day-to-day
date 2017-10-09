@@ -68,22 +68,17 @@ const TODO_WPT_DIRS = new Set([
   'html-imports',
   'html-longdesc',
   'http', // IETF spec
-  'input-events', // https://w3c.github.io/input-events/
   'js', // should be merged with test262
-  'keyboard-lock', // https://w3c.github.io/keyboard-lock/
   'mathml',
   'old-tests',
   'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
   'progress-events',
   'scroll-anchoring', // https://drafts.csswg.org/css-scroll-anchoring/
-  'speech-api', // https://w3c.github.io/speech-api/webspeechapi.html
-  'staticrange', // https://w3c.github.io/staticrange/
   'svg-aam',
   'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport',
   'wai-aria',
   'wasm',
-  'web-nfc', // https://w3c.github.io/web-nfc/
   'webgl',
   'webvr', // https://w3c.github.io/webvr/
   'x-frame-options',

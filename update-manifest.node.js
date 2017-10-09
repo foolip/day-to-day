@@ -294,7 +294,8 @@ function processRef(group, info) {
 
 Promise.all(biblio.map(processGroup))
   .then(manifests => {
-    const manifest = [].concat(...manifests)
+    const manifestBase = JSON.parse(fs.readFileSync('manifest-manual.json'))
+    const manifest = [].concat(manifestBase, ...manifests)
 
     function uniqueMap(prop) {
       const map = new Map
