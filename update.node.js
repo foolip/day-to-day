@@ -52,7 +52,6 @@ const TODO_WPT_DIRS = new Set([
   'annotation-protocol',
   'annotation-vocab',
   'apng',
-  'background-fetch', // https://wicg.github.io/background-fetch/
   'cookies',
   'core-aam',
   'css/CSS1',
@@ -64,7 +63,6 @@ const TODO_WPT_DIRS = new Set([
   'dpub-aam',
   'dpub-aria',
   'editing',
-  'entries-api', // https://wicg.github.io/entries-api/
   'ext-xhtml-pubid',
   'geolocation-API', // https://www.w3.org/TR/geolocation-API/
   'html-imports',
@@ -77,7 +75,6 @@ const TODO_WPT_DIRS = new Set([
   'old-tests',
   'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
   'progress-events',
-  'resize-observer', // https://wicg.github.io/ResizeObserver/
   'scroll-anchoring', // https://drafts.csswg.org/css-scroll-anchoring/
   'speech-api', // https://w3c.github.io/speech-api/webspeechapi.html
   'staticrange', // https://w3c.github.io/staticrange/
