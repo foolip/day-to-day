@@ -78,8 +78,8 @@ const TODO_WPT_DIRS = new Set([
   'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport',
   'wai-aria',
-  'wasm',
-  'webgl',
+  'wasm', // https://github.com/WebAssembly/spec/issues/529
+  'webgl', // https://github.com/w3c/web-platform-tests/issues/5927
   'x-frame-options',
 ])
 
