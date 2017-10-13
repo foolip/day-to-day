@@ -70,7 +70,7 @@ const TODO_WPT_DIRS = new Set([
   'mathml', // https://www.w3.org/TR/MathML/
   'old-tests',
   'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
-  'scroll-anchoring', // https://drafts.csswg.org/css-scroll-anchoring/
+  'scroll-anchoring', // https://github.com/w3c/web-platform-tests/issues/7765
   'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
   'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport', // https://github.com/w3c/web-platform-tests/issues/7749
