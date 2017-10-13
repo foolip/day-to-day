@@ -62,7 +62,6 @@ const TODO_WPT_DIRS = new Set([
   'dpub-aam', // https://w3c.github.io/aria/dpub-aam/dpub-aam.html
   'dpub-aria', // http://w3c.github.io/aria/aria/dpub.html
   'editing',
-  'ext-xhtml-pubid', // https://www.w3.org/TR/xhtml-pubid/
   'geolocation-API', // https://www.w3.org/TR/geolocation-API/
   'html-imports', // https://w3c.github.io/webcomponents/spec/imports/
   'html-longdesc', // https://www.w3.org/TR/html-longdesc/
