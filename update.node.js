@@ -47,39 +47,39 @@ const IGNORE_WPT_DIRS = new Set([
 
 // dirs that need some kind of action
 const TODO_WPT_DIRS = new Set([
-  'annotation-model',
-  'annotation-protocol',
-  'annotation-vocab',
-  'apng',
-  'cookies',
-  'core-aam',
-  'css/CSS1',
-  'css/WOFF2',
-  'css/css-block-3',
+  'annotation-model', // https://www.w3.org/TR/annotation-model/
+  'annotation-protocol', // https://www.w3.org/TR/annotation-protocol/
+  'annotation-vocab', // https://www.w3.org/TR/annotation-vocab/
+  'apng', // https://wiki.mozilla.org/APNG_Specification
+  'cookies', // https://github.com/w3c/web-platform-tests/pull/7531#issuecomment-333397939
+  'core-aam', // https://w3c.github.io/aria/core-aam/core-aam.html
+  'css/CSS1', // https://www.w3.org/TR/CSS1/
+  'css/WOFF2', // https://dev.w3.org/webfonts/WOFF2/spec/
+  'css/css-block-3', // https://github.com/w3c/web-platform-tests/issues/7652
   'css/vendor-imports',
   'css/work-in-progress',
-  'domxpath',
-  'dpub-aam',
-  'dpub-aria',
+  'domxpath', // https://www.w3.org/TR/xpath/
+  'dpub-aam', // https://w3c.github.io/aria/dpub-aam/dpub-aam.html
+  'dpub-aria', // http://w3c.github.io/aria/aria/dpub.html
   'editing',
-  'ext-xhtml-pubid',
+  'ext-xhtml-pubid', // https://www.w3.org/TR/xhtml-pubid/
   'geolocation-API', // https://www.w3.org/TR/geolocation-API/
-  'html-imports',
-  'html-longdesc',
-  'http', // IETF spec
+  'html-imports', // https://w3c.github.io/webcomponents/spec/imports/
+  'html-longdesc', // https://www.w3.org/TR/html-longdesc/
+  'http', // https://tools.ietf.org/html/rfc7230
   'js', // https://github.com/w3c/web-platform-tests/issues/6462
-  'mathml',
+  'mathml', // https://www.w3.org/TR/MathML/
   'old-tests',
   'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
-  'progress-events',
+  'progress-events', // https://www.w3.org/TR/progress-events/
   'scroll-anchoring', // https://drafts.csswg.org/css-scroll-anchoring/
-  'svg-aam',
+  'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
   'trusted-types', // https://github.com/mikewest/trusted-types
-  'viewport',
-  'wai-aria',
+  'viewport', // https://github.com/w3c/web-platform-tests/issues/7749
+  'wai-aria', // http://w3c.github.io/aria/aria/aria.html
   'wasm', // https://github.com/WebAssembly/spec/issues/529
   'webgl', // https://github.com/w3c/web-platform-tests/issues/5927
-  'x-frame-options',
+  'x-frame-options', // https://tools.ietf.org/html/rfc7034
 ])
 
 // spec ids for which no tests exist
