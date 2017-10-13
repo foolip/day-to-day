@@ -1,3 +1,46 @@
+c1716b0394	2017-10-12	Fix an infinite-loop case in MessagePort.cpp
+d0656820f7	2017-10-12	Update manifest and move files
+dc2c1f224c	2017-10-12	ChildrenOnly -> ChildrenOnly(Option<QualName>)
+c21ec7d3d0	2017-10-12	Properly fail in video_008.html
+1f3902dd2a	2017-10-12	Properly fail in readyState_during_playing.html
+6ab14efd6f	2017-10-12	Properly fail in readyState_during_loadedmetadata.html
+1754851612	2017-10-12	Properly fail in readyState_during_loadeddata.html
+e21a323a16	2017-10-12	Properly fail in readyState_during_canplaythrough.html
+62218ab665	2017-10-12	Properly fail in readyState_during_canplay.html
+761c7c567d	2017-10-12	Properly fail in autoplay.html
+7d834a98a9	2017-10-12	Properly fail in paused_false_during_play.html
+ce24bc63f4	2017-10-12	Properly fail in load-events-networkState.html
+b205aab098	2017-10-12	Properly fail in autoplay-overrides-preload.html
+a8c0622301	2017-10-12	Properly fail on error event in event_timeupdate_noautoplay.html
+64b314ba31	2017-10-12	Properly fail in event_progress_noautoplay.html
+248b2c8e13	2017-10-12	Properly fail in event_playing.html
+a8c56f4ae9	2017-10-12	Properly fail in event_play.html
+81b7bbc0c2	2017-10-12	Properly fail in event_pause.html
+5aef21210b	2017-10-12	Properly fail in event_order_loadedmetadata_loadeddata.html
+1c0fd7519a	2017-10-12	Properly fail in event_order_canplay_playing.html
+fec5182d30	2017-10-12	Properly fail in event_order_canplay_canplaythrough.html
+67741132fd	2017-10-12	Properly fail in event_loadedmetadata.html
+fb453e7b17	2017-10-12	Properly use test() in networkState_during_progress.html
+e286017ef1	2017-10-12	Properly use test() in event_order_loadstart_progress.html
+14b354c7e4	2017-10-12	Properly use test() in event_progress.html
+8ac2bd1507	2017-10-12	Properly fail in event_loadedmetadata_noautoplay.html
+d692776893	2017-10-12	Properly fail in event_loadeddata_noautoplay.html
+6f725ee9b1	2017-10-12	Fix some shortcomings in event_loadeddata.html
+cee8eb57fa	2017-10-12	Properly fail in event_canplaythrough_noautoplay.html
+0f66a1ca5a	2017-10-12	Properly fail in event_canplaythrough.html
+931f59c840	2017-10-12	Properly fail in event_canplay_noautoplay.html
+f741b95510	2017-10-12	Properly fail in event_canplay.html
+dfa68a1573	2017-10-12	Properly fail in /html/semantics/embedded-content/media-elements/error-codes/error.html
+d023cdb4f4	2017-10-12	Properly fail in audio_loop_base.html
+c55850dc0c	2017-10-12	Make networkState_during_progress.html deterministic (fixes servo/servo#17954)
+37c50a18aa	2017-10-12	Make event_order_loadstart_progress.htm deterministic (fixes servo/servo#18289)
+913f658264	2017-10-12	Make event_progress.html deterministic (fixes servo/servo#18427)
+c65f1e04e3	2017-10-12	"javascript:" urls: move test to correct location
+de14d68a7a	2017-10-12	Added exception-handling to worker wpt tests.
+74d1512104	2017-10-12	WPT: Check for error type rather than message which can be different across browsers
+3a4d67676d	2017-10-11	Replace tabs with spaces in html/editing/dnd/ (#7654)
+d2b88340ff	2017-10-11	[ES6 modules] update run-a-module-script algorithm and fix import() error crash
+ea1e3f95b5	2017-10-11	[ES6 modules] HRIM may return errored module until V8 forgets instantiation errors
 881052cae5	2017-10-09	Fix usemap-casing test to fit in 800x600
 99fe907532	2017-10-09	Moved over browsing context name tests into their appropriated directory
 e3c513e9ef	2017-10-07	Refer to a file that exists in no-transferring SAB test
@@ -86,8 +129,3 @@ a574530634	2017-08-21	Fix check for throwing in reflection original harness
 1e93140138	2017-08-17	HTML: form association
 db8d76368e	2017-08-17	Respect color correct rendering mode in canvas for layout tests
 2ffd5823f4	2017-08-17	Refine the tests for scrolling to fragid according to the revised algorithm
-66ea9f054b	2017-08-16	Make a copy of passed-in ScriptOrigin in V8ScriptRunner::ThrowException
-5dcbb269d8	2017-08-16	EventSource: do not allow lastEventId creation when the id contains U+0000 (#6584)
-2d9a6d617f	2017-08-16	Add test for form.elements with elements in a shadow tree
-ed85e75d43	2017-08-16	Make MessageEvent#ports a non-nullable FrozenArray.
-8f6f344e73	2017-08-15	Add tests for replacement enabled and hashchange

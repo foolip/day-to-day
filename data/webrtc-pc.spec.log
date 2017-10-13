@@ -1,4 +1,18 @@
+5577890	2017-10-12	Add missing ]
+6b32f38	2017-10-12	Use getting language
+c63eeed	2017-10-12	Simplify onstatechange event
+fa8ec12	2017-10-12	Add a bit more background on the states
+b4f6eae	2017-10-12	Add definition of the SctpTransportState internal slot
 c5eb099	2017-10-08	Add missing /li
+b5b8c81	2017-10-08	Fix respec errors
+23ae8fb	2017-10-05	Add ReadyState dfn
+3fc8a44	2017-10-05	Convert to use of ReadyState slot
+efb7ad9	2017-10-05	Add onstatechange EventHandler
+bdb93dc	2017-10-05	pc.close() should close Data Channels and SctpTransports
+7cc3729	2017-10-05	Remove pc.close changes
+bf5ffc5	2017-10-05	Cleanup of SctpTransportState definitions
+a653aed	2017-10-05	Add SctpTransportState
+abaf918	2017-10-05	pc.close() should close Data Channels and SctpTransports
 293176b	2017-10-05	Add dfn for tones
 97eaca3	2017-10-03	Cleanup
 5745f08	2017-10-03	Duration, InterToneGap and CanInsertDTMF internal slots of RTCDTMFSender
@@ -6,6 +20,7 @@ c5eb099	2017-10-08	Add missing /li
 50f7d0a	2017-10-03	Use
 e999a18	2017-10-03	createDataChannel: Run 'update negotiation needed flag' steps on the main loop
 e692132	2017-10-03	createDataChannel: Queue a task to update negotiation needed state
+69819c2	2017-10-02	setParameters: Use separate errors for hardware encoder error and encoder not being available
 19827c9	2017-10-02	Added dated version v20171002
 8f80575	2017-10-02	Editorial: Update change log
 9bc2856	2017-09-28	Link to promise terminology
@@ -92,6 +107,7 @@ f5a2a9f	2017-08-23	Add note that IdP must treat contents as opaque
 f798246	2017-08-22	Fix typo in CSS
 2d424aa	2017-08-22	Added dated version v20170822
 4b744d7	2017-08-22	Editorial: Manually add default toJSON description (remove when automated)
+d863e68	2017-08-21	Update to reference RFC 3986.
 cbd6c57	2017-08-21	Editorial: Update change log
 1eb447f	2017-08-19	s/outboundrtp/outbound-rtp
 9f0c4c9	2017-08-18	Fix capitalization
@@ -101,10 +117,10 @@ a578d21	2017-08-18	Remove internal slot initialization
 da3b29a	2017-08-18	Add internal slot
 af88e79	2017-08-17	getCapabilities behavior with an unsupported value of kind
 b148800	2017-08-17	Type checking for selectorArg in getStats is unnecessary
+5c3f6b3	2017-08-17	protocol can only contain ASCII
 945b618	2017-08-17	Revert to "known good" respec
 c44d5bf	2017-08-17	Update to respec.js version 16.0
 d67a2af	2017-08-17	Clarify canInsertDTMF
 a7efdbe	2017-08-17	respec.js version 16.0
 ff641f0	2017-08-17	When DTMF can be sent
 58b46c2	2017-08-17	No rollback in "stable" state
-8c322e2	2017-08-16	change ResourceInUse to OperationError
