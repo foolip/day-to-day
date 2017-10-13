@@ -80,7 +80,6 @@ const TODO_WPT_DIRS = new Set([
   'wai-aria',
   'wasm',
   'webgl',
-  'webvr', // https://w3c.github.io/webvr/
   'x-frame-options',
 ])
 
