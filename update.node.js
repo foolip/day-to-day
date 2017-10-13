@@ -47,7 +47,6 @@ const IGNORE_WPT_DIRS = new Set([
 
 // dirs that need some kind of action
 const TODO_WPT_DIRS = new Set([
-  'WebIDL', // https://heycam.github.io/webidl/
   'annotation-model',
   'annotation-protocol',
   'annotation-vocab',
@@ -68,7 +67,7 @@ const TODO_WPT_DIRS = new Set([
   'html-imports',
   'html-longdesc',
   'http', // IETF spec
-  'js', // should be merged with test262
+  'js', // https://github.com/w3c/web-platform-tests/issues/6462
   'mathml',
   'old-tests',
   'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
