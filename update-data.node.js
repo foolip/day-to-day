@@ -132,17 +132,21 @@ function getWptDirs(dir) {
 }
 
 function getLog(dir, since, until, options) {
-  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=iso-strict --pretty="%h %cd %s"`
+  // --date=short-local combined with TZ=UTC gets us the UTC date.
+  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=short-local --pretty="%h %cd %s"`
   if (options.path)
     cmd += ` -- ${options.path}`
 
-  const lines = execSync(cmd, { cwd: dir }).toString().split('\n')
+  const lines = execSync(cmd, {
+    cwd: dir,
+    env: { 'TZ': 'UTC' },
+  }).toString().split('\n')
   let log = ''
   for (const line of lines) {
     if (line == '')
       continue
     const parts = line.split(/\s+/)
-    const tabLine = `${parts[0]}\t${new Date(parts[1]).toISOString().substr(0, 10)}\t${parts.splice(2).join(' ')}`
+    const tabLine = `${parts[0]}\t${parts[1]}\t${parts.splice(2).join(' ')}`
     console.assert(tabLine.split('\t').length == 3)
     log += tabLine + '\n'
   }
