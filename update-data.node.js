@@ -153,25 +153,25 @@ function getLog(dir, since, until, options) {
   return log
 }
 
-function parseManifest(json) {
-  const manifest = JSON.parse(json)
+function getSpecRepo(entry) {
+  let repo = entry.specrepo
 
-  for (const entry of manifest) {
-    console.assert(entry.id && entry.name && entry.specrepo)
+  if (repo.startsWith('https://'))
+    return repo
 
-    if (!entry.specrepo.startsWith('https://'))
-      entry.specrepo = 'https://github.com/' + entry.specrepo
+  return 'https://github.com/' + repo
+}
 
-    if (!entry.testrepo)
-      entry.testrepo = 'https://github.com/w3c/web-platform-tests'
-    else if (!entry.testrepo.startsWith('https://'))
-      entry.testrepo = 'https://github.com/' + entry.testrepo
+function getTestRepo(entry) {
+  let repo = entry.testrepo
 
-    if (!entry.testpath)
-      entry.testpath = entry.id
-  }
+  if (!repo)
+    return 'https://github.com/w3c/web-platform-tests'
 
-  return manifest
+  if (repo.startsWith('https://'))
+    return repo
+
+  return 'https://github.com/' + repo
 }
 
 function update() {
@@ -190,26 +190,34 @@ function update() {
   // set of all dirs in wpt that are used by some entry
   const usedWptDirs = new Set
 
-  const manifest = parseManifest(fs.readFileSync('manifest.json'))
+  const manifest = JSON.parse(fs.readFileSync('manifest.json'))
 
   for (const entry of manifest) {
-    const specDir = cloneOrUpdate(entry.specrepo, repoCache)
-    const testDir = cloneOrUpdate(entry.testrepo, repoCache)
+    console.assert(entry.id && entry.name && entry.specrepo)
 
-    const specLog = getLog(specDir, since, until, { path: entry.specpath })
-    const testLog = getLog(testDir, since, until, { path: entry.testpath })
+    const specRepo = getSpecRepo(entry)
+    const testRepo = getTestRepo(entry)
+
+    const specDir = cloneOrUpdate(specRepo, repoCache)
+    const testDir = cloneOrUpdate(testRepo, repoCache)
+
+    const specPath = entry.specpath
+    const testPath = entry.testpath || entry.id
+
+    const specLog = getLog(specDir, since, until, { path: specPath })
+    const testLog = getLog(testDir, since, until, { path: testPath })
 
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
     fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
 
-    if (entry.testrepo.includes('web-platform-tests')) {
-      const entryDirs = entry.testpath.split(' ')
+    if (testRepo.includes('web-platform-tests')) {
+      const entryDirs = testPath.split(' ')
       entryDirs.forEach(dir => {
         usedWptDirs.add(dir)
       })
 
       if (!TODO_SPEC_IDS.has(entry.id) && !entryDirs.some(dir => realWptDirs.has(dir)))
-        console.info(`${entry.id} spec does not have any wpt dirs (${entry.testpath} checked)`)
+        console.info(`${entry.id} spec does not have any wpt dirs (${testPath} checked)`)
     }
   }
 
