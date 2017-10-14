@@ -153,6 +153,27 @@ function getLog(dir, since, until, options) {
   return log
 }
 
+function parseManifest(json) {
+  const manifest = JSON.parse(json)
+
+  for (const entry of manifest) {
+    console.assert(entry.id && entry.name && entry.specrepo)
+
+    if (!entry.specrepo.startsWith('https://'))
+      entry.specrepo = 'https://github.com/' + entry.specrepo
+
+    if (!entry.testrepo)
+      entry.testrepo = 'https://github.com/w3c/web-platform-tests'
+    else if (!entry.testrepo.startsWith('https://'))
+      entry.testrepo = 'https://github.com/' + entry.testrepo
+
+    if (!entry.testpath)
+      entry.testpath = entry.id
+  }
+
+  return manifest
+}
+
 function update() {
   const now = Date.now()
   const today = now - (now % DAY)
@@ -169,7 +190,7 @@ function update() {
   // set of all dirs in wpt that are used by some entry
   const usedWptDirs = new Set
 
-  const manifest = common.parseManifest(fs.readFileSync('manifest.json'))
+  const manifest = parseManifest(fs.readFileSync('manifest.json'))
 
   for (const entry of manifest) {
     const specDir = cloneOrUpdate(entry.specrepo, repoCache)

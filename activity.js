@@ -162,7 +162,7 @@ function main() {
 
       const promises = []
 
-      const manifest = parseManifest(json)
+      const manifest = JSON.parse(json)
       for (const entry of manifest) {
         const table = template.content.cloneNode(true).children[0]
         const a = table.querySelector('a')
