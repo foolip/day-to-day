@@ -1,22 +1,5 @@
 'use strict'
 
-function getCommits(url) {
-  return fetch(url)
-    .then(response => response.text())
-    .then(log => {
-      if (log == '')
-        return []
-      return log.trim().split('\n').map(line => {
-        const [hash, date, subject] = line.split('\t')
-        return {
-          hash: hash,
-          date: date.substr(0, 10),
-          subject: subject
-        }
-      })
-    })
-}
-
 function pastDays(fromWhen, numDays) {
   const days = []
   for (let i = numDays - 1; i >= 0; i--) {
@@ -27,37 +10,67 @@ function pastDays(fromWhen, numDays) {
   return Object.freeze(days)
 }
 
-function colorFromCommits(commits) {
+function commitFromLine(line) {
+  const parts = line.split(' ')
+  return {
+    date: parts[0],
+    hash: parts[1],
+    subject: parts.splice(2).join(' ')
+  }
+}
+
+// turn an array of log lines into a date -> commit count map
+function activityFromLog(log) {
+  const activity = {}
+
+  for (const line of log) {
+    const date = commitFromLine(line).date
+    if (date in activity)
+      activity[date]++
+    else
+      activity[date] = 1
+  }
+
+  return activity
+}
+
+function colorFromCommitCount(count) {
+  console.assert(count > 0)
   // use lightness 64% for 1 commit and 32% for 5+ commits
-  console.assert(commits.length)
-  const value = Math.max(64 - (commits.length - 1) * 8, 32)
+  const value = Math.max(64 - (count - 1) * 8, 32)
   return `hsl(90, 60%, ${value}%)`
 }
 
-function populateTable(table, activity) {
+function populateTable(table, days, entry) {
   const specRow = table.insertRow()
   const testRow = table.insertRow()
 
-  let specActiveDays = 0,
-      testActiveDays = 0
+  // maps between dates and commit counts
+  const specActivity = activityFromLog(entry.speclog)
+  const testActivity = activityFromLog(entry.testlog)
 
-  for (const date in activity) {
-    const entry = activity[date]
+  // the logs may have more days, so these aren't the same as
+  // Object.keys(*Activity).length
+  let specActiveDays = 0
+  let testActiveDays = 0
+
+  for (const date of days) {
     const specCell = specRow.insertCell()
     const testCell = testRow.insertCell()
 
     specCell._date = testCell._date = date
 
-    if (entry.specCommits) {
+    if (date in specActivity) {
       specActiveDays++
-      specCell.style.background = colorFromCommits(entry.specCommits)
+      specCell.style.background = colorFromCommitCount(specActivity[date])
     }
 
-    if (entry.testCommits) {
-      testCell.style.background = colorFromCommits(entry.testCommits)
+    if (date in testActivity) {
       testActiveDays++
+      testCell.style.background = colorFromCommitCount(testActivity[date])
     }
   }
+
 
   const spans = table.querySelectorAll('span')
   console.assert(spans.length == 3)
@@ -70,31 +83,6 @@ function populateTable(table, activity) {
   table._testActiveDays = testActiveDays
 
   return table
-}
-
-function populateActivity(activity, kind, url) {
-  return getCommits(url).then(commits => {
-    for (const commit of commits) {
-      if (!(commit.date in activity))
-        continue
-      const entry = activity[commit.date]
-      if (!entry[kind])
-        entry[kind] = [commit]
-      else
-        entry[kind].push(commit)
-    }
-  })
-}
-
-function getActivity(id, days) {
-  const activity = {}
-  for (const day of days) {
-    activity[day] = {}
-  }
-  return Promise.all([
-    populateActivity(activity, 'specCommits', `data/${id}.spec.log`),
-    populateActivity(activity, 'testCommits', `data/${id}.test.log`)
-  ]).then(() => activity)
 }
 
 function sortTables(container, mode) {
@@ -135,14 +123,12 @@ function main() {
   console.assert(days.length == NUM_DAYS)
   console.assert(days[NUM_DAYS-1] == lastDay)
 
-  fetch('manifest.json')
+  fetch('data.json')
     .then(response => response.text())
     .then(json => {
       const container = document.querySelector('main')
       const template = document.querySelector('template')
       container.textContent = ''
-
-      const promises = []
 
       const manifest = JSON.parse(json)
       for (const entry of manifest) {
@@ -151,28 +137,22 @@ function main() {
         a.textContent = entry.name
         a.href = entry.href
 
-        // also store the name for easy sorting
+        // store the name for easy sorting
         table._name = entry.name
 
-        promises.push(
-          getActivity(entry.id, days)
-            .then(activity => {
-              populateTable(table, activity)
-            }))
+        populateTable(table, days, entry)
 
         container.appendChild(table)
       }
 
-      // once all tables are populated, sort and show them
-      Promise.all(promises).then(() => {
-        const select = document.querySelector('select.sortby')
-        select.addEventListener('change', event => {
-          sortTables(container, event.target.value)
-        })
-        select.dispatchEvent(new Event('change'))
-
-        document.body.classList.remove('loading')
+      // sort and show the table
+      const select = document.querySelector('select.sortby')
+      select.addEventListener('change', event => {
+        sortTables(container, event.target.value)
       })
+      select.dispatchEvent(new Event('change'))
+
+      document.body.classList.remove('loading')
     })
 }
 

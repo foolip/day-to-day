@@ -1,6 +1,5 @@
 'use strict'
 
-const DATA_DIR = 'data'
 const REPO_CACHE_DIR = 'cache'
 const DAY = 24 * 3600 * 1000
 
@@ -133,24 +132,16 @@ function getWptDirs(dir) {
 
 function getLog(dir, since, until, options) {
   // --date=short-local combined with TZ=UTC gets us the UTC date.
-  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=short-local --pretty="%h %cd %s"`
+  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=short-local --pretty="%cd %h %s"`
   if (options.path)
     cmd += ` -- ${options.path}`
 
-  const lines = execSync(cmd, {
+  const stdout = execSync(cmd, {
     cwd: dir,
     env: { 'TZ': 'UTC' },
-  }).toString().split('\n')
-  let log = ''
-  for (const line of lines) {
-    if (line == '')
-      continue
-    const parts = line.split(/\s+/)
-    const tabLine = `${parts[0]}\t${parts[1]}\t${parts.splice(2).join(' ')}`
-    console.assert(tabLine.split('\t').length == 3)
-    log += tabLine + '\n'
-  }
-  return log
+  }).toString()
+
+  return stdout.split('\n').filter(line => line != '')
 }
 
 function getSpecRepo(entry) {
@@ -207,8 +198,8 @@ function update() {
     const specLog = getLog(specDir, since, until, { path: specPath })
     const testLog = getLog(testDir, since, until, { path: testPath })
 
-    fs.writeFileSync(`${DATA_DIR}/${entry.id}.spec.log`, specLog)
-    fs.writeFileSync(`${DATA_DIR}/${entry.id}.test.log`, testLog)
+    entry.speclog = specLog
+    entry.testlog = testLog
 
     if (testRepo.includes('web-platform-tests')) {
       const entryDirs = testPath.split(' ')
@@ -232,6 +223,9 @@ function update() {
     if (!usedWptDirs.has(dir))
       console.warn(`${dir} dir is not claimed by any spec`)
   }
+
+  console.log('Writing data.json')
+  fs.writeFileSync('data.json', JSON.stringify(manifest, null, '  ') + '\n')
 }
 
 update()
