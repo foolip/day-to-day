@@ -57,9 +57,6 @@ function populateTable(table, activity) {
       testCell.style.background = colorFromCommits(entry.testCommits)
       testActiveDays++
     }
-
-    if (entry.isolated)
-      specCell.classList.add('isolated')
   }
 
   const spans = table.querySelectorAll('span')
@@ -97,22 +94,7 @@ function getActivity(id, days) {
   return Promise.all([
     populateActivity(activity, 'specCommits', `data/${id}.spec.log`),
     populateActivity(activity, 'testCommits', `data/${id}.test.log`)
-  ]).then(() => {
-    // find and mark days with spec activity but no test activity nearby
-    for (let i = GRACE_DAYS; i < NUM_DAYS - GRACE_DAYS; i++) {
-      if (activity[days[i]].specCommits) {
-        activity[days[i]].isolated = true
-        for (let j = i - GRACE_DAYS; j <= i + GRACE_DAYS; j++) {
-          if (activity[days[j]].testCommits) {
-            activity[days[i]].isolated = false
-            break
-          }
-        }
-      }
-    }
-
-    return activity
-  })
+  ]).then(() => activity)
 }
 
 function sortTables(container, mode) {
