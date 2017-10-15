@@ -68,7 +68,6 @@ const TODO_WPT_DIRS = new Set([
   'js', // https://github.com/w3c/web-platform-tests/issues/6462
   'mathml', // https://www.w3.org/TR/MathML/
   'old-tests',
-  'orientation-event', // https://w3c.github.io/deviceorientation/spec-source-orientation.html
   'scroll-anchoring', // https://github.com/w3c/web-platform-tests/issues/7765
   'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
   'trusted-types', // https://github.com/mikewest/trusted-types
@@ -95,6 +94,7 @@ const TODO_SPEC_IDS = new Set([
   'css-scroll-snap',
   'css-sizing',
   'css-will-change',
+  'execCommand',
   'figures',
   'fill-stroke',
   'manifest',
