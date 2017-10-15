@@ -223,17 +223,15 @@
     "name": "Content Security Policy",
     "href": "https://w3c.github.io/webappsec-csp/",
     "specrepo": "w3c/webappsec-csp",
-    "testpath": "content-security-policy",
+    "testpath": "content-security-policy ':(exclude)content-security-policy/embedded-enforcement'",
+    "specpath": "index.src.html",
     "speclog": [
-      "2017-10-12 646e3af Rebuild HTML.",
       "2017-10-12 c349176 Fix linking errors to 'script-like' and 'applet'.",
       "2017-10-12 25cea6c Adds WorkletGlobalScope as a concept to CSP. (#205)",
       "2017-10-12 5c18373 Slight correction of host matching description (#251)",
       "2017-10-09 22219e1 Fixed ambigous grammar (#250)",
       "2017-10-09 6638ad4 Replace Request.type based logic with Request.destination (#231)",
-      "2017-09-24 39faa1b Editorial: Fix minor typos in non-normative Note (#240)",
-      "2017-09-13 3a0195d Embedded: Dumb typo.",
-      "2017-09-11 6b0476d Ask for web-platform-tests in CONTRIBUTING.md (#230)"
+      "2017-09-24 39faa1b Editorial: Fix minor typos in non-normative Note (#240)"
     ],
     "testlog": [
       "2017-10-13 0420d43e86 Remove executable bit from files that definitely aren't (#7756)",
@@ -243,6 +241,18 @@
       "2017-09-05 208fa49afa <applet> is hardly a thing now",
       "2017-08-25 82fc92e123 CSP now prevents opening javascript url windows when they're not allowed"
     ]
+  },
+  {
+    "id": "webappsec-csp-embedded",
+    "name": "Content Security Policy: Embedded Enforcement",
+    "href": "https://w3c.github.io/webappsec-csp/embedded/",
+    "specrepo": "w3c/webappsec-csp",
+    "specpath": "embedded",
+    "testpath": "content-security-policy/embedded-enforcement",
+    "speclog": [
+      "2017-09-13 3a0195d Embedded: Dumb typo."
+    ],
+    "testlog": []
   },
   {
     "id": "requestidlecallback",

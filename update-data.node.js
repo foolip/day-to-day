@@ -112,6 +112,7 @@ const TODO_SPEC_IDS = new Set([
   'svg-strokes',
   'wake-lock',
   'web-midi-api',
+  'webappsec-csp-embedded', // in content-security-policy/embedded-enforcement
   'webrtc-stats',
 ])
 

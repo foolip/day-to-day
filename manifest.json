@@ -87,7 +87,16 @@
     "name": "Content Security Policy",
     "href": "https://w3c.github.io/webappsec-csp/",
     "specrepo": "w3c/webappsec-csp",
-    "testpath": "content-security-policy"
+    "testpath": "content-security-policy ':(exclude)content-security-policy/embedded-enforcement'",
+    "specpath": "index.src.html"
+  },
+  {
+    "id": "webappsec-csp-embedded",
+    "name": "Content Security Policy: Embedded Enforcement",
+    "href": "https://w3c.github.io/webappsec-csp/embedded/",
+    "specrepo": "w3c/webappsec-csp",
+    "specpath": "embedded",
+    "testpath": "content-security-policy/embedded-enforcement"
   },
   {
     "id": "requestidlecallback",

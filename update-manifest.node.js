@@ -32,7 +32,7 @@ const blocklist = [
   'clreq',
   'coga-user-research',
   'core-aam-1.1',
-  'csp-embedded-enforcement',
+  'csp-embedded-enforcement', // in manifest-manual.json
   'css-cascade-3',
   'css-fonts-3',
   'css-overflow-3',
