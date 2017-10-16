@@ -52,6 +52,7 @@ const TODO_WPT_DIRS = new Set([
   'apng', // https://wiki.mozilla.org/APNG_Specification
   'cookies', // https://github.com/w3c/web-platform-tests/pull/7531#issuecomment-333397939
   'core-aam', // https://w3c.github.io/aria/core-aam/core-aam.html
+  'css-scroll-anchoring', // https://github.com/w3c/web-platform-tests/issues/7765
   'css/CSS1', // https://www.w3.org/TR/CSS1/
   'css/WOFF2', // https://dev.w3.org/webfonts/WOFF2/spec/
   'css/css-block-3', // https://github.com/w3c/web-platform-tests/issues/7652
@@ -68,7 +69,6 @@ const TODO_WPT_DIRS = new Set([
   'js', // https://github.com/w3c/web-platform-tests/issues/6462
   'mathml', // https://www.w3.org/TR/MathML/
   'old-tests',
-  'scroll-anchoring', // https://github.com/w3c/web-platform-tests/issues/7765
   'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
   'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport', // https://github.com/w3c/web-platform-tests/issues/7749
@@ -81,8 +81,13 @@ const TODO_WPT_DIRS = new Set([
 // spec ids for which no tests exist
 const TODO_SPEC_IDS = new Set([
   'BackgroundSync',
+  'InputDeviceCapabilities',
+  'animation-worklet',
+  'aom',
   'books',
   'browserext',
+  'budget-api',
+  'cors-rfc1918',
   'css-contain',
   'css-content',
   'css-device-adapt',
@@ -97,15 +102,20 @@ const TODO_SPEC_IDS = new Set([
   'execCommand',
   'figures',
   'fill-stroke',
+  'geolocation-sensor',
   'manifest',
   'mediacapture-depth',
   'mediacapture-screen-share',
   'mimesniff',
+  'mst-content-hint',
   'native-messaging',
   'payment-method-manifest',
   'permissions',
   'push-api',
   'resource-hints',
+  'scroll-animations',
+  'scroll-boundary-behavior',
+  'shape-detection-api',
   'svg-integration',
   'svg-markers',
   'svg-paths',

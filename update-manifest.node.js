@@ -139,6 +139,7 @@ function processRef(group, info) {
       name: info.title
         .replace(/:.*/, '')
         .replace(/ Level \d+$/, '')
+        .replace(/ Module$/, '')
         .replace(/ \d+(\.\d+)?$/, '')
         .replace(/ Specification$/, '')
         .replace(/ API$/, ''),

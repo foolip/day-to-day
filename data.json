@@ -1,5 +1,17 @@
 [
   {
+    "id": "shape-detection-api",
+    "name": "Accelerated Shape Detection in Images",
+    "href": "https://wicg.github.io/shape-detection-api/",
+    "specrepo": "wicg/shape-detection-api",
+    "speclog": [
+      "2017-09-05 416d949 Make Text Detection section non-normative, rewrite it as informative, and refer to the Latin-1 for recognised characters (#36)",
+      "2017-09-05 93d214b cleanup ordering of items in the FaceDetector section",
+      "2017-09-05 23785c1 Added |cornerPoints| to DetectedText (#31)"
+    ],
+    "testlog": []
+  },
+  {
     "id": "accelerometer",
     "name": "Accelerometer",
     "href": "https://w3c.github.io/accelerometer/",
@@ -13,6 +25,16 @@
     "testlog": [
       "2017-09-13 059cd64ba0 Generic Sensor: Optimize IDL tests (#7334)"
     ]
+  },
+  {
+    "id": "aom",
+    "name": "Accessibility Object Model",
+    "href": "https://wicg.github.io/aom/spec/",
+    "specrepo": "wicg/aom",
+    "speclog": [
+      "2017-09-29 eeff83e Csun paper (#90)"
+    ],
+    "testlog": []
   },
   {
     "id": "ambient-light",
@@ -270,6 +292,14 @@
     ]
   },
   {
+    "id": "cors-rfc1918",
+    "name": "CORS and RFC1918",
+    "href": "https://wicg.github.io/cors-rfc1918/",
+    "specrepo": "wicg/cors-rfc1918",
+    "speclog": [],
+    "testlog": []
+  },
+  {
     "id": "webappsec-credential-management",
     "name": "Credential Management",
     "href": "https://w3c.github.io/webappsec-credential-management/",
@@ -299,6 +329,14 @@
       "2017-09-01 4fc75f4788 Avoid visual comparisons with lang=\"ja-jp\" (#6926)",
       "2017-08-31 1ef4ab4582 Flag the in-flow frames of kids of various wrapper frames during frame construction, so we know to restyle the wrapper frames."
     ]
+  },
+  {
+    "id": "animation-worklet",
+    "name": "CSS Animation Worklet",
+    "href": "https://wicg.github.io/animation-worklet/",
+    "specrepo": "wicg/animation-worklet",
+    "speclog": [],
+    "testlog": []
   },
   {
     "id": "css-animations",
@@ -1050,6 +1088,27 @@
     "testlog": [
       "2017-08-28 74d07bcb8e Support ::before and ::after pseudo elements after ::slotted."
     ]
+  },
+  {
+    "id": "scroll-boundary-behavior",
+    "name": "CSS Scroll Boundary Behavior",
+    "href": "https://wicg.github.io/scroll-boundary-behavior/",
+    "specrepo": "wicg/scroll-boundary-behavior",
+    "speclog": [
+      "2017-10-12 e5528a6 Specify Repository metadata",
+      "2017-09-11 465f39e Shorthand syntax when -x and -y values distinct",
+      "2017-09-11 582b8ce Computed value as specified for longhands",
+      "2017-09-08 42c4cd2 Update example wording to address feedback",
+      "2017-09-07 71e7f80 Add id for security privacy section",
+      "2017-09-07 5203200 Add motivating examples",
+      "2017-09-07 bca0bfc Fix link issues",
+      "2017-09-07 1f07f4e Clarify that contain prevents navigation.",
+      "2017-09-07 c45d685 Remove old file",
+      "2017-09-07 e276343 Add security privacy section to the spec",
+      "2017-09-06 3f91871 Anwser security privacy questionnare",
+      "2017-09-06 838ff7e Update  README title and add link to specification"
+    ],
+    "testlog": []
   },
   {
     "id": "css-scroll-snap",
@@ -2125,6 +2184,14 @@
     ]
   },
   {
+    "id": "InputDeviceCapabilities",
+    "name": "Input Device Capabilities",
+    "href": "https://wicg.github.io/InputDeviceCapabilities/",
+    "specrepo": "wicg/InputDeviceCapabilities",
+    "speclog": [],
+    "testlog": []
+  },
+  {
     "id": "input-events",
     "name": "Input Events",
     "href": "https://w3c.github.io/input-events/",
@@ -2342,6 +2409,14 @@
       "2017-09-12 5b8d73a Fire the start event immediately upon start() call (#135)",
       "2017-09-11 e6b106c Annotate interfaces with Exposed extended attribute (#136)"
     ],
+    "testlog": []
+  },
+  {
+    "id": "mst-content-hint",
+    "name": "MediaStreamTrack Content Hints",
+    "href": "https://wicg.github.io/mst-content-hint/",
+    "specrepo": "wicg/mst-content-hint",
+    "speclog": [],
     "testlog": []
   },
   {
@@ -2846,6 +2921,22 @@
     "testlog": []
   },
   {
+    "id": "scroll-animations",
+    "name": "Scroll-linked Animations",
+    "href": "https://wicg.github.io/scroll-animations/",
+    "specrepo": "wicg/scroll-animations",
+    "speclog": [
+      "2017-09-21 ad5405a Bikeshed update for 'Extend CSS scroll-direction production to match the WebIDL enum' [ci skip]",
+      "2017-09-21 89ce6c7 Extend CSS scroll-direction production to match the WebIDL enum",
+      "2017-09-21 1daeaa0 Bikeshed update for 'Try again to fix travis' [ci skip]",
+      "2017-09-21 014825b Try again to fix travis",
+      "2017-09-21 7e140b2 Try to fix travis",
+      "2017-09-21 f5eadd5 Minor spelling / grammar tweaks",
+      "2017-09-21 5f0ec5e Ignore generated Overview.html"
+    ],
+    "testlog": []
+  },
+  {
     "id": "webappsec-secure-contexts",
     "name": "Secure Contexts",
     "href": "https://w3c.github.io/webappsec-secure-contexts/",
@@ -3230,6 +3321,7 @@
     "specrepo": "webaudio/web-audio-api",
     "testpath": "webaudio",
     "speclog": [
+      "2017-10-13 f9a4666 Fix #1419: Fix up #dom linkes introduced in #1287",
       "2017-10-13 81690f6 PI -> Math.PI in various JS algorithm specs",
       "2017-10-13 751dd49 Remove confusing misuse of “mutually perpendicular” in AudioListener ctor args. Make variable naming in spatialization algorithm consistent with attribute names. Add a case to detect linearly dependent forward/up listener vectors in spatialization algorithm. Fix assorted typos in Listener/Panner descriptions.",
       "2017-10-11 9215fc9 Addresses feedback from joe",
@@ -3239,8 +3331,11 @@
       "2017-10-09 525f99e Fix #1411: Adjust table styling for node and param tables",
       "2017-10-09 b9047c4 Tidy",
       "2017-10-09 d1ebb73 Fix #1406: Add channel interpretation constraints",
+      "2017-10-09 4126851 Tidy",
       "2017-10-09 6af470b Linkify more loop stuff in AudioBufferSourceNode",
+      "2017-10-09 5787822 Fix up merge.",
       "2017-10-06 0b04d8b Run tidy",
+      "2017-10-06 39b2882 Fix #1363: Link to Oscillator computed frequency",
       "2017-10-06 f26138c Reimplement in a possibly nicer way.",
       "2017-10-06 697f710 Ignore .support directory",
       "2017-10-06 a0d5d01 Don't add dfn for duration.",
@@ -3255,6 +3350,7 @@
       "2017-10-06 7c777d1 Removing .support files and acknowledgement edit",
       "2017-10-06 22f11b2 Fix #1385 AnalyserNode.channelCount should probably be 2",
       "2017-10-05 dfda775 Fix #1392: Fix typo in AudioNodeOptions description",
+      "2017-10-04 742f0e8 Fix #1378: Define computedPlaybackRate compound parameter",
       "2017-10-04 cc86945 Fix #1348: Remove default constructor for AudioContext",
       "2017-10-04 b7fbf75 Changed export to just the objects.",
       "2017-10-04 6689d89 Remove old png version",
@@ -3654,6 +3750,14 @@
     "href": "https://webbluetoothcg.github.io/web-bluetooth/",
     "specrepo": "webbluetoothcg/web-bluetooth",
     "testpath": "bluetooth",
+    "speclog": [],
+    "testlog": []
+  },
+  {
+    "id": "budget-api",
+    "name": "Web Budget",
+    "href": "https://wicg.github.io/budget-api/",
+    "specrepo": "wicg/budget-api",
     "speclog": [],
     "testlog": []
   },
