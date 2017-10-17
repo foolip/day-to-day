@@ -17,6 +17,7 @@
     "href": "https://w3c.github.io/accelerometer/",
     "specrepo": "w3c/accelerometer",
     "speclog": [
+      "2017-10-16 d735d6a Add SecureContext extended attribute (#27)",
       "2017-09-25 06a5f58 Use value getter operation and fix attribute types (#25)",
       "2017-09-25 5a814e4 Add security-questionnaire.md for Accelerometer sensor",
       "2017-09-21 4d598d6 Define Accelerometer sensor type, clarify latest reading",
@@ -32,6 +33,7 @@
     "href": "https://wicg.github.io/aom/spec/",
     "specrepo": "wicg/aom",
     "speclog": [
+      "2017-10-16 a44bbc6 Link AOM overrides ARIA discussion (#92)",
       "2017-09-29 eeff83e Csun paper (#90)"
     ],
     "testlog": []
@@ -42,6 +44,8 @@
     "href": "https://w3c.github.io/ambient-light/",
     "specrepo": "w3c/ambient-light",
     "speclog": [
+      "2017-10-16 b7adc08 Add more examples and use Permission API",
+      "2017-10-16 56c6caf Add SecureContext extended attribute",
       "2017-09-25 064914f Use value getter operation and fix illuminance attribute type",
       "2017-09-22 ea5f417 Add security and privacy questionnaire for Ambient Light Sensor",
       "2017-09-21 a50121b Remove reporting mode to align with the Generic Sensor API changes",
@@ -63,6 +67,7 @@
     "specrepo": "w3c/mediacapture-output",
     "testpath": "audio-output",
     "speclog": [
+      "2017-10-16 580b54f Associate repo with WebRTC WG only",
       "2017-09-21 3c3c5f9 Switch to spec owned by a single group",
       "2017-08-30 d38ff26 Harmonize in-line references using ReSpec data-cite mechanism",
       "2017-08-25 33eda03 Address review comments",
@@ -188,6 +193,8 @@
     "href": "https://w3c.github.io/clipboard-apis/",
     "specrepo": "w3c/clipboard-apis",
     "speclog": [
+      "2017-10-16 b6bf11a Fix #45 - drag data store mode should be read-only for paste",
+      "2017-10-16 3d40902 Update use cases, abstract and intro. Rename to Clipboard Event API",
       "2017-10-12 fa63edd Update section on Permissions API Integration",
       "2017-10-05 3fc0391 Fix Grisha's email address",
       "2017-09-29 3f18e3d set up auto deployment",
@@ -567,7 +574,9 @@
       "2017-10-11 b66764804 THE GREAT NUMBERING - put all specs into numbered directories, per WG resolution, and use Shepherd to set which level is currently shown for the unleveled url.",
       "2017-09-22 d5cec19a0 [css-contain][css-display] Move \"becoming a FC\" back to css-contain"
     ],
-    "testlog": []
+    "testlog": [
+      "2017-10-16 65214b123c Properly remove display: contents pseudo-frames."
+    ]
   },
   {
     "id": "css-exclusions",
@@ -875,8 +884,7 @@
       "2017-09-27 f8420b0de [css-multicol] Reword part of change section",
       "2017-09-27 c42b3c197 Added July 1016 resolution to change the floor to a required amount, using agreed wording",
       "2017-09-27 b2b312acf Added September 2013 edits to changes list in spec",
-      "2017-09-27 3499bb9c2 Adding to the changes section past edits not documented as changes.",
-      "2017-08-20 e39bad2bc Updated DoC for multicol based on search of historial issues"
+      "2017-09-27 3499bb9c2 Adding to the changes section past edits not documented as changes."
     ],
     "testlog": [
       "2017-09-25 5b857bf79e Fix #5501: multicol test linking to self as reference"
@@ -909,6 +917,7 @@
       "2017-09-14 a38885d10 [cssom][cssom-view] Update editors"
     ],
     "testlog": [
+      "2017-10-16 f5aed69bef Correctly test CSSStyleRule.style.",
       "2017-10-12 5a2d977dd6 Implement CSSStyleRule.selectorText.",
       "2017-10-12 1b16ae1090 Force HTMLStyleElement to create a new CSSStyleSheet when re-parsing.",
       "2017-10-11 6c01ffda2c Remove rune-opera from OWNERS file.",
@@ -1242,6 +1251,7 @@
     "specpath": "css-text-decor css-text-decor-1 css-text-decor-2 css-text-decor-3 css-text-decor-4 css-text-decor-5",
     "testpath": "css-text-decor css/css-text-decor css/css-text-decor-1 css/css-text-decor-2 css/css-text-decor-3 css/css-text-decor-4 css/css-text-decor-5",
     "speclog": [
+      "2017-10-16 7fc1ba88a [css-text-decor-4] Bikeshed fix",
       "2017-10-11 b66764804 THE GREAT NUMBERING - put all specs into numbered directories, per WG resolution, and use Shepherd to set which level is currently shown for the unleveled url.",
       "2017-10-07 e9366a501 Bikeshed fixes",
       "2017-10-04 d10a05c02 Fix a bunch of markup oddities that cause bikeshed to misbehave",
@@ -1303,6 +1313,10 @@
     "specpath": "css-typed-om css-typed-om-1 css-typed-om-2 css-typed-om-3 css-typed-om-4 css-typed-om-5",
     "testpath": "css-typed-om css/css-typed-om css/css-typed-om-1 css/css-typed-om-2 css/css-typed-om-3 css/css-typed-om-4 css/css-typed-om-5",
     "speclog": [
+      "2017-10-16 a7ea95d Track issue 482",
+      "2017-10-16 d25b875 clean up CSSNumericValue.equals and remove assumption in last step. (#452)",
+      "2017-10-16 c3826b7 Remove issue 310",
+      "2017-10-16 923dc53 Change null to empty list",
       "2017-08-29 8b5cd48 Remove extraneous comment that also happened to have a fatal error.",
       "2017-08-29 716efd2 Whitespace fixes.",
       "2017-08-29 1e63771 Correct numbers.",
@@ -1399,6 +1413,9 @@
       "2017-09-06 d10397757 [css-scroll-anchoring] Fix linking errors, and export terms that are needed."
     ],
     "testlog": [
+      "2017-10-16 839be7e303 Fix several bugs related to scrolling",
+      "2017-10-16 41c3e61446 Correct the behavior of Element.scrollIntoView to match the draft spec and pass web platform tests; r=annevk,bkelly",
+      "2017-10-16 b27a73a7d9 Make sure offset* is computed correctly on absolutely positioned kids of relatively positioned elements with scrolllframes and borders.",
       "2017-09-15 1a3f7f64c0 [cssom][cssom-view] Update IDL tests for CSSOM and CSSOM View",
       "2017-09-13 542142b834 Upstream scroll-boundary-behavior.html to wpt test.",
       "2017-09-11 4f74ec7edc CSSOM View: scrollIntoView tests for changed defaults of ScrollIntoViewOptions",
@@ -1456,6 +1473,7 @@
       "2017-10-11 8a9669d Adds Exposed to relevant interfaces."
     ],
     "testlog": [
+      "2017-10-16 df7f896686 Update domparsing spec links to not point at WHATWG",
       "2017-10-06 58a36b6395 XMLSerializer: Fix existence check of xmlns=\"\"."
     ]
   },
@@ -1504,6 +1522,8 @@
     "testrepo": "tc39/test262",
     "testpath": "test ':(exclude)test/intl402'",
     "speclog": [
+      "2017-10-16 aa16347 Normative: access the `.next` method only once (#1021)",
+      "2017-10-16 45890a3 Editorial: remove uses of 'fresh'",
       "2017-10-13 a231ff2 Editorial: Delete \"new\" in \"throw a new *SyntaxError* exception\"",
       "2017-10-13 026ab0a Editorial: Add \"is *true*\" to a couple If-conditions",
       "2017-10-13 a71e620 Editorial: _ownDesc_ can be *undefined* in OrdinarySetWithOwnDescriptor",
@@ -1547,6 +1567,14 @@
       "2017-08-22 aab1ea3 Editorial: Add type attribute to emu-grammar elements"
     ],
     "testlog": [
+      "2017-10-16 5b721a23b bitwise-not tests for BigInt (#1277)",
+      "2017-10-16 609869638 [BigInt] arithmetic tests",
+      "2017-10-16 d36a1777b Test for proper handling of incomplete hex escapes (#1274)",
+      "2017-10-16 9e3ff9a23 arguments object, non-strict immutable name binding fixup (#1278)",
+      "2017-10-16 a9092bdbd [BigInt] ToPrimitive called without hint for equality",
+      "2017-10-16 11cd9e4c3 [BigInt] typeof",
+      "2017-10-16 0d44bc821 [BigInt] constructor, name, length properties",
+      "2017-10-16 5d4c667b2 test/language/literals/regexp/*: early error test fixups (#1276)",
       "2017-10-13 e6df79231 Update RegExp named capture tests for spec change (#1270)",
       "2017-10-12 0b5c39cf9 BigInt unary minus tests (#1269)",
       "2017-10-12 b77af3aa0 Update tests for BigInt.prototype.toString",
@@ -1689,6 +1717,7 @@
     "specrepo": "whatwg/fetch",
     "testpath": "fetch cors",
     "speclog": [
+      "2017-10-16 978cf9a Add domintro box for the Request class",
       "2017-10-14 d84658e Clarify that credentials includes HTTP authentication",
       "2017-10-10 34027b6 Reference correct RFC for The WebSocket Protocol",
       "2017-10-05 d095af0 Use Infra for JSON parsing",
@@ -1859,6 +1888,7 @@
       "2017-08-24 f15d394 Fix #253: Stop using incumbent settings object"
     ],
     "testlog": [
+      "2017-10-16 e35365e753 Update Generic Sensor IDL tests; test event constructor (#7763)",
       "2017-09-13 059cd64ba0 Generic Sensor: Optimize IDL tests (#7334)"
     ]
   },
@@ -1868,6 +1898,7 @@
     "href": "https://wicg.github.io/geolocation-sensor/",
     "specrepo": "wicg/geolocation-sensor",
     "speclog": [
+      "2017-10-16 961dfa3 Fix #8: Add [SecureContext]",
       "2017-10-09 4f16e8f Update README",
       "2017-10-09 d42d2a8 Migrate open issues to GitHub",
       "2017-10-09 1d939e5 Adding baseline w3c.json",
@@ -1914,6 +1945,7 @@
     "href": "https://w3c.github.io/gyroscope/",
     "specrepo": "w3c/gyroscope",
     "speclog": [
+      "2017-10-16 04bf717 Add [SecureContext]",
       "2017-09-22 e18d4dd Add security and privacy questionnaire",
       "2017-09-21 32c15a4 Update attributes description",
       "2017-09-21 cde7415 Define Gyroscope sensor type, clarify latest reading",
@@ -1945,6 +1977,8 @@
     "specrepo": "whatwg/html",
     "testpath": "html 2dcontext custom-elements eventsource imagebitmap-renderingcontext innerText offscreen-canvas shadow-dom webmessaging websockets webstorage workers",
     "speclog": [
+      "2017-10-16 2b8a4752 Fix ordering of custom element upgrade steps",
+      "2017-10-16 bae35b1a Clarify that specification text usually starts on the event loop",
       "2017-10-13 165101a9 Fix module script error handling, again",
       "2017-10-11 eb17128c Meta: export \"custom elements\" and window.open()",
       "2017-10-10 315f4950 Fix typo in a canvas example",
@@ -2013,10 +2047,12 @@
       "2017-08-22 5a6fef58 Make U+0000 a parse error in bogus comment and bogus DOCTYPE states",
       "2017-08-22 d967dc01 Limit crossOrigin reflection to only known values",
       "2017-08-22 d2c2d4e0 Meta: export Document's onreadystatechange",
-      "2017-08-21 b9b9d60f Remove <applet>",
-      "2017-08-20 d0154579 Meta: export event handler <dfn>s"
+      "2017-08-21 b9b9d60f Remove <applet>"
     ],
     "testlog": [
+      "2017-10-16 aa9cc112d4 Return false from nsHtml5String::LowerCaseStartsWithASCII when this string is shorter than the literal.",
+      "2017-10-16 8088f1844a <iframe> 'sandbox' tokens are ASCII case-insensitive",
+      "2017-10-16 59ef1299c3 [ES6 modules] ScriptFetchOptions should be kept by both variants of Script",
       "2017-10-14 fe2af6199c Fix typo in <meta charset> - uft-8 -> utf-8",
       "2017-10-13 0420d43e86 Remove executable bit from files that definitely aren't (#7756)",
       "2017-10-13 770bad1295 Move Microsoft's manual dragdrop tests into html/editing/dnd (#7683)",
@@ -2143,9 +2179,7 @@
       "2017-08-22 2b6abec96b Add html/README.md. (#6964)",
       "2017-08-22 27c3a48ec6 Update reflection tests",
       "2017-08-22 2da2d51ae3 Fix OffscreenCanvas resizing behavior",
-      "2017-08-21 a574530634 Fix check for throwing in reflection original harness",
-      "2017-08-20 8a491bf308 RIP forceSpellCheck (whatwg/html#2904) (#6943)",
-      "2017-08-20 64bfe4edf6 <a>, <area>, and <link> must have an active document check (#5758)"
+      "2017-08-21 a574530634 Fix check for throwing in reflection original harness"
     ]
   },
   {
@@ -2178,6 +2212,7 @@
       "2017-09-25 7f31b0d Support annotated types in IDBFactory and IDBObjectStore (fixes #216)"
     ],
     "testlog": [
+      "2017-10-16 86f5c22282 Migrate DOMError to DOMExtension in FileReader, IndexedDB, DOMRequest and so on,",
       "2017-10-11 34938ace1c IndexedDB: Tests for [SameObject] assertions in spec WebIDL",
       "2017-09-22 79b10e653a Indexed DB Test: Don't test buffer's length after detaching",
       "2017-09-21 2d402762d4 Indexed DB web-platform-test: Make mutated variable non-const"
@@ -2188,7 +2223,9 @@
     "name": "Input Device Capabilities",
     "href": "https://wicg.github.io/InputDeviceCapabilities/",
     "specrepo": "wicg/InputDeviceCapabilities",
-    "speclog": [],
+    "speclog": [
+      "2017-10-16 3e82c17 Add spaces to title: Input Device Capabilities (#29)"
+    ],
     "testlog": []
   },
   {
@@ -2287,6 +2324,7 @@
     "href": "https://w3c.github.io/magnetometer/",
     "specrepo": "w3c/magnetometer",
     "speclog": [
+      "2017-10-16 2d4a3cc Add [SecureContext]",
       "2017-10-05 4c11c30 Fix #1: Expand Security and Privacy Considerations",
       "2017-09-25 21b30b8 Use value getter operation and use double as attribute type",
       "2017-09-22 0d391ae Add security and privacy questionnaire for Magnetometer",
@@ -2312,6 +2350,7 @@
     "specrepo": "w3c/mediacapture-main",
     "testpath": "mediacapture-streams",
     "speclog": [
+      "2017-10-16 7cbdb1c Associate repo with WebRTC WG only",
       "2017-09-22 494babc Make the document WebRTC WG only",
       "2017-09-15 f708bbe Add promise terminology",
       "2017-09-06 4dbe0ec Add missing [Exposed] extended attribute on InputDeviceInfo",
@@ -2338,6 +2377,7 @@
     "href": "https://w3c.github.io/mediacapture-depth/",
     "specrepo": "w3c/mediacapture-depth",
     "speclog": [
+      "2017-10-16 73940e9 Associate repo with WebRTC WG only",
       "2017-09-22 b729463 Adapt metadata to switch of the media capture tf to WebRTC WG only"
     ],
     "testlog": []
@@ -2348,6 +2388,7 @@
     "href": "https://w3c.github.io/mediacapture-fromelement/",
     "specrepo": "w3c/mediacapture-fromelement",
     "speclog": [
+      "2017-10-16 4f07085 Associate repo with WebRTC WG only",
       "2017-09-22 d583afb Adapt metadata to switch of the media capture tf to WebRTC WG only",
       "2017-09-06 dfa7642 Annotate interface with Exposed extended attribute (#64)"
     ],
@@ -2395,6 +2436,7 @@
     "href": "https://w3c.github.io/mediacapture-image/",
     "specrepo": "w3c/mediacapture-image",
     "speclog": [
+      "2017-10-16 5d6ea0a Associate repo with WebRTC WG only",
       "2017-09-06 d7ab311 Add normative reference to gUM (#195)",
       "2017-09-06 b73c999 Annotate interfaces with Exposed extended attribute (#196)"
     ],
@@ -2406,6 +2448,7 @@
     "href": "https://w3c.github.io/mediacapture-record/",
     "specrepo": "w3c/mediacapture-record",
     "speclog": [
+      "2017-10-16 bb7755b Associate repo with WebRTC WG only",
       "2017-09-12 5b8d73a Fire the start event immediately upon start() call (#135)",
       "2017-09-11 e6b106c Annotate interfaces with Exposed extended attribute (#136)"
     ],
@@ -2501,6 +2544,7 @@
     "href": "https://w3c.github.io/orientation-sensor/",
     "specrepo": "w3c/orientation-sensor",
     "speclog": [
+      "2017-10-16 a00e62e Add [SecureContext]",
       "2017-10-13 1eb6841 Add permissions check code examples",
       "2017-10-13 211c283 use secure links",
       "2017-09-22 b5c7143 Add  security and privacy questionnaire for Orientation Sensor",
@@ -2791,6 +2835,7 @@
     "href": "https://w3c.github.io/proximity/",
     "specrepo": "w3c/proximity",
     "speclog": [
+      "2017-10-16 b4a62ea Add [SecureContext]",
       "2017-09-25 b204353 Use getter operation for latest reading",
       "2017-09-25 25206d2 Align with Generic Sensor API current state - sensor reading change event name is onreading",
       "2017-09-22 f7bcdb5 Add security and privacy questionnaire for Proximity sensor",
@@ -2845,6 +2890,7 @@
     "href": "https://w3c.github.io/remote-playback/",
     "specrepo": "w3c/remote-playback",
     "speclog": [
+      "2017-10-16 5484e45 Fix broken reference to \"Monitoring\" algorithm",
       "2017-10-13 88e42c2 Apply suggested change to secure contexts text.",
       "2017-10-13 dcfd5b8 'Potentially secure' is now 'potentially trustworthy origin'",
       "2017-10-13 8a4e2f1 Mention behaviour on Secure Contexts (fixes 107).",
@@ -2908,6 +2954,7 @@
     "href": "https://w3c.github.io/mediacapture-screen-share/",
     "specrepo": "w3c/mediacapture-screen-share",
     "speclog": [
+      "2017-10-16 0b004e3 Associate repo with WebRTC WG only",
       "2017-09-22 6c13085 Adapt metadata to switch of the media capture tf to WebRTC WG only"
     ],
     "testlog": []
@@ -2971,6 +3018,8 @@
       "2017-08-23 af7e634bc [css-scoping][selectors] Per WG resolution, define that tree-abiding pseudos are allowed after ::slotted(). Fixes #1747."
     ],
     "testlog": [
+      "2017-10-16 238e9855c3 Silence lint warnings from Gecko upstream. (#7850)",
+      "2017-10-16 bf040c140a Fix handling of type changes that affect validity state to properly notify state changes.",
       "2017-10-12 0669753e92 Add wpt for :scope pseudo-class"
     ]
   },
@@ -3005,6 +3054,8 @@
       "2017-08-25 d7f9ac6 Adding PR previews"
     ],
     "testlog": [
+      "2017-10-16 b2a98e8d94 P3 Update resource-timing.https.html and performance-timeline.https.html WPT tests and expectations.",
+      "2017-10-16 ed385985c0 P2 Add a WPT test case verifying ServiceWorkerContainer.ready works when the registration is resurrected.",
       "2017-10-13 025b987042 Add responding with a Service Worker generated redirect response tests.",
       "2017-10-12 8cb4c86cd5 Revise fetch-event-redirect.https.html",
       "2017-10-11 ea0dc05a90 service worker: Use promise_test in fetch-request-xhr.https.html",
@@ -3048,6 +3099,7 @@
     "href": "https://streams.spec.whatwg.org/",
     "specrepo": "whatwg/streams",
     "speclog": [
+      "2017-10-16 a4de424 Meta: Use pr-preview to preview pull requests",
       "2017-10-12 5242775 Meta: make local-watch.js more robust (#841)",
       "2017-10-12 20f9c64 Add \"controller\" local to TransformStream constructor",
       "2017-10-11 0fbbca4 Fix note about tricky [[closeRequested]] vs. [[state]] situation",
@@ -3278,6 +3330,33 @@
       "2017-08-23 cd6775e Use [Exposed] consistently"
     ],
     "testlog": [
+      "2017-10-16 e9abd16fd0 Update the simple iteration progress calculation to match recent changes to the Web Animations specification;",
+      "2017-10-16 793361b909 Add tests for simple iteration progress and current iteration when the playback rate is negative;",
+      "2017-10-16 a0736470be Extend assert_computed_timing_for_each_phase to accommodate negative playback rates;",
+      "2017-10-16 3f1f755fe6 Factor out common code from simple-iteration-progress.html and current-iteration.html;",
+      "2017-10-16 b53893bee2 Tidy up simple-iteration-progress.html and current-iteration.html somewhat;",
+      "2017-10-16 9aef9784d5 Consistently use arrow syntax for functions in processing-a-keyframes-argument-*.html tests;",
+      "2017-10-16 f3feccc0f5 Rename copy-contructor.html to copy-constructor.html in two places in wpt for web-animations;",
+      "2017-10-16 a2b7714662 Add tests for error handling when parsing the 'easing' property on keyframes;",
+      "2017-10-16 ce3a10eeb8 Update test descriptions in processing-a-keyframes-argument-002.html;",
+      "2017-10-16 f17cc496d7 Use KeyframeEffect constructor in processing-a-keyframes-argument-002.html;",
+      "2017-10-16 be7a53b5ed Move ease parsing tests to easing-tests.js;",
+      "2017-10-16 0b1d7c5da0 Tidy up processing-a-keyframes-argument-002.html;",
+      "2017-10-16 13364d69bc Move tests for easing values on keyframes to processing-a-keyframes-argument-002.html;",
+      "2017-10-16 0106e1b4b6 Rename processing-a-keyframes-argument.html to have a 001 extension;",
+      "2017-10-16 dedfddce33 Merge gInvalidEasingInKeyframeSequenceTests with gInvalidEasings;",
+      "2017-10-16 ffee39bbb2 Consistently use spaces in object notation;",
+      "2017-10-16 e224648de5 Update various test descriptions to make them testable statements;",
+      "2017-10-16 d7a759adf3 Tidy up test for property access order somewhat;",
+      "2017-10-16 d0f8636284 Move test for accessing keyframe property order to processing-a-keyframes-argument.html;",
+      "2017-10-16 10c6d2fe97 Update some test descriptions;",
+      "2017-10-16 65e08a5d14 Drop invalid test for offsets;",
+      "2017-10-16 d41d880618 Use template strings in processing-a-keyframes-argument.html;",
+      "2017-10-16 966d149cdc Use for...of instead of forEach for several tests in processing-a-keyframes-argument.html;",
+      "2017-10-16 0e7559ca01 Use ES6 let/const in processing-a-keyframes-argument.html;",
+      "2017-10-16 7c25ecb076 Consistently use KeyframeEffect constructor for testing in processing-a-keyframes-argument.html;",
+      "2017-10-16 fce2031d37 Fix title in processing-a-keyframes-argument.html test;",
+      "2017-10-16 bbbf11c448 add wpt test for fallback discrete type of transform animation. r=boris,hiro",
       "2017-10-12 4d16912cf8 Fix discrete-animation.html to not use synonymous values",
       "2017-09-19 54eb8bf66c Rewrite handling of CSSPseudoElements to improve readability.",
       "2017-09-19 58a953ac91 Add test into w-p-t.",
@@ -3327,12 +3406,15 @@
       "2017-10-11 9215fc9 Addresses feedback from joe",
       "2017-10-11 f9099cd Fix #1416: Fix typos in PeriodicWave Constructor",
       "2017-10-09 9ac7cfc Fix #1404: Fix link to mixing equations",
+      "2017-10-09 4908394 Slightly simplify definition again.",
       "2017-10-09 da2e469 Fix #1396: Add AudioWorkletNode default properties",
       "2017-10-09 525f99e Fix #1411: Adjust table styling for node and param tables",
       "2017-10-09 b9047c4 Tidy",
       "2017-10-09 d1ebb73 Fix #1406: Add channel interpretation constraints",
       "2017-10-09 4126851 Tidy",
       "2017-10-09 6af470b Linkify more loop stuff in AudioBufferSourceNode",
+      "2017-10-09 3baee2c Slightly simplify definition",
+      "2017-10-09 48c809b Fix #1379: AudioParam rates for AudioListener",
       "2017-10-09 5787822 Fix up merge.",
       "2017-10-06 0b04d8b Run tidy",
       "2017-10-06 39b2882 Fix #1363: Link to Oscillator computed frequency",
@@ -3676,6 +3758,9 @@
     "href": "https://w3c.github.io/webauthn/",
     "specrepo": "w3c/webauthn",
     "speclog": [
+      "2017-10-16 b9575ef Fix #561",
+      "2017-10-16 ee174c2 Remove attributes from partial interface definition",
+      "2017-10-16 a748279 Fix #569 - Add Exposed to all WebIDL interfaces",
       "2017-10-12 4bb24bf Link \"extension identifier\" as requested in #602",
       "2017-10-12 6563f22 Also update bikshed-include to fix the double-Abstract problem",
       "2017-10-12 1b4c244 Update to newest bikeshed state",
@@ -3779,6 +3864,9 @@
     "specrepo": "heycam/webidl",
     "testpath": "WebIDL",
     "speclog": [
+      "2017-10-16 90efe5b Editorial: ack Tim Ruffles",
+      "2017-10-16 ad163c5 Fix #461 - clarify applicability of overload resolution (#462)",
+      "2017-10-16 6673a82 Editorial: punctuation",
       "2017-10-12 c3e67b3 Editorial: Add note about SyntaxError DOMException (#459)",
       "2017-10-11 fa6f37f Link grammar elements in the grammar index to one another",
       "2017-10-11 45e8173 Add support for interface mixins",
@@ -3805,8 +3893,7 @@
       "2017-08-24 02d4503 Update SessionManager example (#421)"
     ],
     "testlog": [
-      "2017-09-13 b803cc3743 Remove some odd old files (#7311)",
-      "2017-08-20 05d5d1d17d Test IDLs defined in WebIDL using idlharness (#6875)"
+      "2017-09-13 b803cc3743 Remove some odd old files (#7311)"
     ]
   },
   {
@@ -3966,6 +4053,15 @@
       "2017-08-21 83dbc1e maximize window: make maximization steps a definition"
     ],
     "testlog": [
+      "2017-10-16 471b377f5a Fix cookie creation via Marionette using IP address",
+      "2017-10-16 51a6e1b452 Align WebDriver:DeleteCookie with specification.",
+      "2017-10-16 7330eed66b Rename wdspec cookies test to match command name.",
+      "2017-10-16 8a8fe488d7 Add test for stale frame element.",
+      "2017-10-16 9b27685dce Add support helper for generating inline <iframe> elements.",
+      "2017-10-16 ae362ca3a3 Move Get Active Element test to the tests directory.",
+      "2017-10-16 4fa024016c Add cookie domain field to WebDriver:AddCookie",
+      "2017-10-16 f67c0f8ff4 Split wdspec session creation tests for intermittent timeouts,",
+      "2017-10-16 fc9fca188e Add JSON serialization tests for all three types of browsing context",
       "2017-10-13 f0cd4b5e1c webdriver. add test serializing WindowProxy object (#7769)",
       "2017-10-04 8acc73f8f8 Introduce NavigatorAutomationInformation interface",
       "2017-10-03 af086ce7da Add Jon Kereliuk to webdriver/OWNERS",
@@ -4232,6 +4328,7 @@
       "2017-08-22 30dab2c Use [Exposed] consistently"
     ],
     "testlog": [
+      "2017-10-16 d3af74f371 Added font properties tests for ::cue-region and ::cue-region()",
       "2017-09-11 751932b7b8 Remove zcorpan from OWNERS files",
       "2017-09-04 3c01711d2b Support all of HTML's character entities in WebVTT",
       "2017-08-28 f2c77206b2 Test that removed WebVTT APIs are not supported",
@@ -4269,6 +4366,7 @@
       "2017-08-30 7e332a5 Meta: require Trusty as the Travis dist"
     ],
     "testlog": [
+      "2017-10-16 27be72090f add web platform tests coverage for what status/statusText/readyState should be in various abort() edge cases; r=annevk,baku",
       "2017-10-14 89aab34ec6 Add SyncXHR as an experimental policy-controlled feature",
       "2017-10-13 63fc3cdadc Merge progress-events into XMLHttpRequest (#7754)",
       "2017-10-13 0420d43e86 Remove executable bit from files that definitely aren't (#7756)",
@@ -4307,8 +4405,7 @@
       "2017-08-30 467fba65a1 Porting access-control-basic-non-simple-deny-cached to WPT",
       "2017-08-30 19450861f2 Porting access-control-preflight-request-header-lowercase to WPT",
       "2017-08-25 450f5164a9 Porting access-control-preflight-credential-sync from LayoutTest to WPT",
-      "2017-08-23 1874e2b5e4 Porting access-control-basic-post-success-no-content-type to WPT",
-      "2017-08-20 9730ed3c71 XMLHttpRequest: data URL HEAD request should still result in empty body (#6923)"
+      "2017-08-23 1874e2b5e4 Porting access-control-basic-post-success-no-content-type to WPT"
     ]
   }
 ]
