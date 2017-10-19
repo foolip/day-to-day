@@ -168,6 +168,12 @@ function processRef(group, info) {
     }
     url.pathname = `/${id}/`
 
+    const testpolicy = {
+      // TODO: https://github.com/w3c/css-houdini-drafts/pull/493
+      'drafts.csswg.org': 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
+      'drafts.fxtf.org': 'https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md',
+    }[url.hostname]
+
     return {
       id: id,
       name: info.title
@@ -178,6 +184,7 @@ function processRef(group, info) {
       // Note: mediaqueries-5 has the highest level on 2017-09-30
       specpath: `${id} ${id}-1 ${id}-2 ${id}-3 ${id}-4 ${id}-5`,
       testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 css/${id}-4 css/${id}-5`,
+      testpolicy: testpolicy,
     }
   }
 
@@ -189,6 +196,7 @@ function processRef(group, info) {
       name: info.title,
       href: url.href,
       specrepo: 'w3c/svgwg',
+      testpolicy: 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
     }
 
     if (url.pathname == '/svg2-draft/') {
@@ -252,6 +260,12 @@ function processRef(group, info) {
       if (entry.id.startsWith('webappsec-'))
         entry.testpath = entry.id.substr(10)
 
+      // the Web Performance WG has a testing policy
+      if (info.deliveredBy &&
+          info.deliveredBy.includes('https://www.w3.org/webperf/')) {
+        entry.testpolicy = 'https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md'
+      }
+
       return entry
     }
 
@@ -280,6 +294,7 @@ function processRef(group, info) {
         .replace(/ API$/, ''),
       href: url.href,
       specrepo: 'whatwg/' + id,
+      testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
     }
   }
 
@@ -322,6 +337,7 @@ Promise.all(biblio.map(processGroup))
     // sort the manifest in the same way as the client would
     manifest.sort((a, b) => common.compareStrings(a.name, b.name))
 
+    // done
     console.log('Writing manifest.json')
     fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
   })

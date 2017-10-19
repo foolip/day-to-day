@@ -156,6 +156,14 @@ function getLog(dir, since, until, options) {
   return stdout.split('\n').filter(line => line != '')
 }
 
+function getTestPolicy(dir) {
+  const cmd = `sh find-test-policy.sh "${dir}"`
+  const matches = execSync(cmd)
+        .toString().split('\n').filter(line => line != '')
+  if (matches.length == 1)
+    return matches[0]
+}
+
 function getSpecRepo(entry) {
   let repo = entry.specrepo
 
@@ -219,6 +227,13 @@ function update() {
     if (TODO_SPEC_IDS.has(entry.id))
       continue
 
+    if (!entry.testpolicy) {
+      // look for a testing policy (anywhere in the repo, ignore specPath)
+      const testPolicy = getTestPolicy(specDir)
+      if (testPolicy)
+        entry.testpolicy = `https://github.com/${entry.specrepo}/blob/HEAD/${testPolicy}`
+    }
+
     if (testRepo.includes('web-platform-tests')) {
       const entryDirs = testPath.split(' ')
       entryDirs.forEach(dir => {
@@ -245,6 +260,16 @@ function update() {
     console.log('Specs without tests (in wpt):')
     for (const entry of specsWithoutWptDirs)
       console.log(`  ${entry.name} <${entry.href}>`)
+  }
+
+  const specsWithoutTestPolicy = manifest.filter(entry => {
+    return !entry.testpolicy && !TODO_SPEC_IDS.has(entry.id)
+  })
+  if (specsWithoutTestPolicy.length) {
+    console.log('Specs with no (known) testing policy:')
+    specsWithoutTestPolicy.forEach(entry => {
+      console.log(`  ${entry.name} <${entry.href}>`)
+    })
   }
 
   const wptDirsWithoutSpec = Array.from(realWptDirs)
