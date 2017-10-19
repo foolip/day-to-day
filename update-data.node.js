@@ -25,21 +25,25 @@ function cloneOrUpdate(url, repoCache) {
   return dir
 }
 
-// dirs with no tests
+// dirs with no tests / old tests
 const IGNORE_WPT_DIRS = new Set([
   'common',
   'conformance-checkers',
   'css', // tests are in subdirs
+  'css/CSS1', // https://www.w3.org/TR/CSS1/
   'css/fonts',
   'css/reference',
   'css/support',
   'css/tools',
+  'css/vendor-imports',
+  'css/work-in-progress',
   'docs',
   'fonts',
   'images',
   'infrastructure',
   'interfaces',
   'media',
+  'old-tests',
   'resources',
   'tools',
 ])
@@ -53,11 +57,8 @@ const TODO_WPT_DIRS = new Set([
   'cookies', // https://github.com/w3c/web-platform-tests/pull/7531#issuecomment-333397939
   'core-aam', // https://w3c.github.io/aria/core-aam/core-aam.html
   'css-scroll-anchoring', // https://github.com/w3c/web-platform-tests/issues/7765
-  'css/CSS1', // https://www.w3.org/TR/CSS1/
   'css/WOFF2', // https://dev.w3.org/webfonts/WOFF2/spec/
   'css/css-block-3', // https://github.com/w3c/web-platform-tests/issues/7652
-  'css/vendor-imports',
-  'css/work-in-progress',
   'domxpath', // https://www.w3.org/TR/xpath/
   'dpub-aam', // https://w3c.github.io/aria/dpub-aam/dpub-aam.html
   'dpub-aria', // http://w3c.github.io/aria/aria/dpub.html
@@ -68,7 +69,6 @@ const TODO_WPT_DIRS = new Set([
   'http', // https://tools.ietf.org/html/rfc7230
   'js', // https://github.com/w3c/web-platform-tests/issues/6462
   'mathml', // https://www.w3.org/TR/MathML/
-  'old-tests',
   'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
   'trusted-types', // https://github.com/mikewest/trusted-types
   'viewport', // https://github.com/w3c/web-platform-tests/issues/7749
@@ -193,6 +193,9 @@ function update() {
   // set of all dirs in wpt that are used by some entry
   const usedWptDirs = new Set
 
+  // list of specs (entries) for which no tests are found in wpt
+  const specsWithoutWptDirs = []
+
   const manifest = JSON.parse(fs.readFileSync('manifest.json'))
 
   for (const entry of manifest) {
@@ -213,14 +216,17 @@ function update() {
     entry.speclog = specLog
     entry.testlog = testLog
 
+    if (TODO_SPEC_IDS.has(entry.id))
+      continue
+
     if (testRepo.includes('web-platform-tests')) {
       const entryDirs = testPath.split(' ')
       entryDirs.forEach(dir => {
         usedWptDirs.add(dir)
       })
 
-      if (!TODO_SPEC_IDS.has(entry.id) && !entryDirs.some(dir => realWptDirs.has(dir)))
-        console.info(`${entry.id} spec does not have any wpt dirs (${testPath} checked)`)
+      if (!entryDirs.some(dir => realWptDirs.has(dir)))
+        specsWithoutWptDirs.push(entry)
     }
   }
 
@@ -229,15 +235,25 @@ function update() {
   html = html.replace(/\d{4}-\d{2}-\d{2}/, new Date(today - DAY).toISOString().substr(0, 10))
   fs.writeFileSync('index.html', html)
 
-
-  // report which wpt dirs don't have a corresponding entry
-  for (const dir of realWptDirs) {
-    if (!usedWptDirs.has(dir))
-      console.warn(`${dir} dir is not claimed by any spec`)
-  }
-
+  // done
   console.log('Writing data.json')
   fs.writeFileSync('data.json', JSON.stringify(manifest, null, '  ') + '\n')
+
+  // report on missing things
+
+  if (specsWithoutWptDirs.length) {
+    console.log('Specs without tests (in wpt):')
+    for (const entry of specsWithoutWptDirs)
+      console.log(`  ${entry.name} <${entry.href}>`)
+  }
+
+  const wptDirsWithoutSpec = Array.from(realWptDirs)
+        .filter(dir => !usedWptDirs.has(dir))
+  if (wptDirsWithoutSpec.length) {
+    console.log('Directories (in wpt) without spec:')
+    for (const dir of wptDirsWithoutSpec)
+      console.log(`  ${dir}`)
+  }
 }
 
 update()
