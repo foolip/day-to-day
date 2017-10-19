@@ -99,6 +99,7 @@ const TODO_SPEC_IDS = new Set([
   'css-scroll-snap',
   'css-sizing',
   'css-will-change',
+  'dnt',
   'execCommand',
   'figures',
   'fill-stroke',
