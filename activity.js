@@ -58,17 +58,24 @@ function populateTable(table, days, entry) {
     const specCell = specRow.insertCell()
     const testCell = testRow.insertCell()
 
-    specCell._date = testCell._date = date
+    const specChanges = specActivity[date] || 0
+    const testChanges = testActivity[date] || 0
 
-    if (date in specActivity) {
+    if (specChanges) {
       specActiveDays++
-      specCell.style.background = colorFromCommitCount(specActivity[date])
+      specCell.style.background = colorFromCommitCount(specChanges)
     }
 
-    if (date in testActivity) {
+    if (testChanges) {
       testActiveDays++
-      testCell.style.background = colorFromCommitCount(testActivity[date])
+      testCell.style.background = colorFromCommitCount(testChanges)
     }
+
+    // put summary information in title attribute
+    // TODO: nice popups on hover; click to shows commits
+    const s = count => count == 1 ? '' : 's'
+    specCell.title = `${date} (${specChanges} spec change${s(specChanges)})`
+    testCell.title = `${date} (${testChanges} test change${s(testChanges)})`
   }
 
 
