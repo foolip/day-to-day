@@ -55,8 +55,7 @@
       "2017-09-21 a50121b Remove reporting mode to align with the Generic Sensor API changes",
       "2017-09-21 8cfcd37 Define 'Ambient Light Sensor' sensor type",
       "2017-09-06 b0d9b35 Use [Exposed=Window]",
-      "2017-08-29 23a6455 Fix #37: Add cross-origin leaks, hijacking browsing history",
-      "2017-08-24 127bc74 Revert \"Note cross-origin in potential privacy risks\""
+      "2017-08-29 23a6455 Fix #37: Add cross-origin leaks, hijacking browsing history"
     ],
     "testlog": [
       "2017-10-18 c9d5acecc1 [AmbientLight]Modify parameter to string type (#7877)",
@@ -79,8 +78,7 @@
     ],
     "testlog": [
       "2017-08-25 51dfda0136 Add manual test to test proper authorizing and rendering of audio via setSinkId",
-      "2017-08-25 0743f8400c Test behavior of setSinkId (not including actual audio rendering)",
-      "2017-08-24 93645658c9 Add basic IDL test for audio-output spec"
+      "2017-08-25 0743f8400c Test behavior of setSinkId (not including actual audio rendering)"
     ]
   },
   {
@@ -274,6 +272,11 @@
       "2017-09-24 39faa1b Editorial: Fix minor typos in non-normative Note (#240)"
     ],
     "testlog": [
+      "2017-10-20 9acb9b580f Revert \"Fourth step of many to porting blink CSP tests to WPT\"",
+      "2017-10-20 a1c0107a1e Fourth step of many to porting blink CSP tests to WPT",
+      "2017-10-20 d8f68e0af0 Third step of many to porting blink CSP tests to WPT",
+      "2017-10-20 8243e5308d Second step of many to porting blink CSP tests to WPT",
+      "2017-10-20 517bc937e7 First step of many to porting blink CSP tests to WPT",
       "2017-10-13 0420d43e86 Remove executable bit from files that definitely aren't (#7756)",
       "2017-10-05 6439a72ba7 Added tests for 'unsafe-hashed-attributes'",
       "2017-10-04 054537b4fd Get rid of 'testRunner' in wpt/content-security-policy/",
@@ -451,9 +454,7 @@
     "href": "https://books.idea.whatwg.org/",
     "specrepo": "whatwg/books",
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-    "speclog": [
-      "2017-08-24 c3063af Deploy to /var/www using a deploy user"
-    ],
+    "speclog": [],
     "testlog": []
   },
   {
@@ -622,9 +623,7 @@
     "href": "https://figures.idea.whatwg.org/",
     "specrepo": "whatwg/figures",
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-    "speclog": [
-      "2017-08-24 52a33f0 Deploy to /var/www using a deploy user"
-    ],
+    "speclog": [],
     "testlog": []
   },
   {
@@ -686,6 +685,7 @@
       "2017-09-06 dde6400d0 [css-grid][css-flexbox] s/Implied/Automatic/ in title to avoid confusion. Fixes #1780"
     ],
     "testlog": [
+      "2017-10-20 74148296ef Add argument to checkLayout() so it doesn't call done() always",
       "2017-10-18 6a15dc94ff Remove unused argument outputContainer from checkLayout() method",
       "2017-10-13 0420d43e86 Remove executable bit from files that definitely aren't (#7756)"
     ]
@@ -798,6 +798,8 @@
       "2017-09-06 dde6400d0 [css-grid][css-flexbox] s/Implied/Automatic/ in title to avoid confusion. Fixes #1780"
     ],
     "testlog": [
+      "2017-10-20 091233ac1b [css-grid] Take into account min size constrains for stretching auto tracks",
+      "2017-10-20 74148296ef Add argument to checkLayout() so it doesn't call done() always",
       "2017-10-18 6a15dc94ff Remove unused argument outputContainer from checkLayout() method",
       "2017-09-21 53008fece7 [css-grid] fit-content() tracks shouldn't stretch",
       "2017-09-21 4f7b86086c [css-grid] Upstream tests related to absolute positioning",
@@ -1275,6 +1277,7 @@
       "2017-08-30 6fb26f1ee [css-tables] clarify diagram; fix #1689"
     ],
     "testlog": [
+      "2017-10-20 74148296ef Add argument to checkLayout() so it doesn't call done() always",
       "2017-10-18 6a15dc94ff Remove unused argument outputContainer from checkLayout() method",
       "2017-10-03 8b8d0a5cf5 Fix MISSING-LINK in css-tables-3",
       "2017-10-03 a1d9fd702e Fix SUPPORT-WRONG-DIR in css-tables-3",
@@ -1282,8 +1285,7 @@
       "2017-10-03 a5f3396ffb Get rid of tab indent in css-tables-3",
       "2017-10-03 e9f1f1f49b Move table tests out of css/work-in-progress",
       "2017-09-01 4dbfc1265a [css-tables] Minor cleanup in width distribution",
-      "2017-08-31 994ef2af5c [css-tables] Collect UMA for layout change",
-      "2017-08-24 e45b910077 Visibility:collapse for table columns"
+      "2017-08-31 994ef2af5c [css-tables] Collect UMA for layout change"
     ]
   },
   {
@@ -1525,8 +1527,7 @@
       "2017-09-06 c954432 Add [Exposed=Window] to MutationObserver",
       "2017-08-31 da7b3ec Add [Exposed] to DOMTokenList",
       "2017-08-31 a45f2f1 Meta: fix copypasta in `make deploy` dependency",
-      "2017-08-27 39001dd Meta: require Trusty as the Travis dist",
-      "2017-08-24 48c4b4a Also unset the active flag when an exception is thrown"
+      "2017-08-27 39001dd Meta: require Trusty as the Travis dist"
     ],
     "testlog": [
       "2017-10-12 bf0a7f667c added tests for empty values in prefix, suffix and substring selectors",
@@ -1597,6 +1598,7 @@
     "testrepo": "tc39/test262",
     "testpath": "test ':(exclude)test/intl402'",
     "speclog": [
+      "2017-10-20 d898df2 Normative: Early errors for RegExp literals (#984)",
       "2017-10-16 aa16347 Normative: access the `.next` method only once (#1021)",
       "2017-10-16 45890a3 Editorial: remove uses of 'fresh'",
       "2017-10-13 a231ff2 Editorial: Delete \"new\" in \"throw a new *SyntaxError* exception\"",
@@ -1636,8 +1638,7 @@
       "2017-09-07 54a0c8c Editorial: Add a few well-known intrinsic objects (#993)",
       "2017-08-31 9bbc31c Editorial: Remove out-of-date sentence about execution contexts (#986)",
       "2017-08-29 7fa0bb2 Editorial: Call SpeciesConstructor in TypedArray constructor to reduce indirections (#844)",
-      "2017-08-28 549cf46 Editorial: further clarify note on return statement",
-      "2017-08-24 4b9e906 Normative: restore mistakenly deleted TV of TemplateCharacter alternative"
+      "2017-08-28 549cf46 Editorial: further clarify note on return statement"
     ],
     "testlog": [
       "2017-10-19 c05138b44 Modify $262.uncallableAndIsHTMLDDA() to $262.IsHTMLDDA (#1305)",
@@ -1723,9 +1724,7 @@
       "2017-08-30 8924aef73 Update decl-fun.js",
       "2017-08-30 3760b802c Typo in test/language/statements/labeled/continue.js",
       "2017-08-25 7765873c3 Refactor tests for the BigInt construtor",
-      "2017-08-25 bb9fc8110 Add tests for invalid BigInt MVs",
-      "2017-08-24 37beb3652 add BigInt tests",
-      "2017-08-24 a7ccd3042 Generate tests"
+      "2017-08-25 bb9fc8110 Add tests for invalid BigInt MVs"
     ]
   },
   {
@@ -1921,6 +1920,7 @@
     "specrepo": "w3c/sensors",
     "testpath": "generic-sensor",
     "speclog": [
+      "2017-10-20 20a51dd CHANGELOG fix",
       "2017-10-18 998cf79 Add CHANGELOG",
       "2017-10-18 400e8a3 Bump Previous Version metadata",
       "2017-10-18 499a2fb Make markup valid",
@@ -1982,9 +1982,7 @@
       "2017-08-30 9bd9a8e Fix #261: Rename Error -> onerror in state diagram",
       "2017-08-25 ce67aeb Improvements for use cases document (#256)",
       "2017-08-25 b64b58e Fix a couple of algorithms with their use of variables",
-      "2017-08-25 f5408d7 Use proper reference in [HTML] for task queue",
-      "2017-08-24 ce749a5 Add categorization of security and privacy threats",
-      "2017-08-24 f15d394 Fix #253: Stop using incumbent settings object"
+      "2017-08-25 f5408d7 Use proper reference in [HTML] for task queue"
     ],
     "testlog": [
       "2017-10-18 5136eac922 Add [SecureContext] IDL attribute to sensor interfaces",
@@ -2082,6 +2080,9 @@
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
     "testpath": "html 2dcontext custom-elements eventsource imagebitmap-renderingcontext innerText offscreen-canvas shadow-dom webmessaging websockets webstorage workers",
     "speclog": [
+      "2017-10-20 c5019ae7 Clarify custom element reaction arguments passed",
+      "2017-10-20 129b9024 Correct affiliation for zcorpan",
+      "2017-10-20 fde99312 Meta: disambiguate focus() and blur() for Window and HTMLElement",
       "2017-10-17 7f052f23 Editorial: mark \"subdfn\"s in some places where they were missing",
       "2017-10-16 2b8a4752 Fix ordering of custom element upgrade steps",
       "2017-10-16 bae35b1a Clarify that specification text usually starts on the event loop",
@@ -2145,8 +2146,7 @@
       "2017-08-29 cdc5273b Editorial: the auxclick event has moved specifications",
       "2017-08-29 0edc164e Use DOMMatrix2DInit dictionary in 2d canvas setTransform()/addPath()",
       "2017-08-28 5f59b7a7 Fetch removes type in favor of just destination",
-      "2017-08-28 05d0ae71 Editorial: Clarify what happens to U+0000 chars",
-      "2017-08-24 bf139cb8 Regression fix: only repeat a single step"
+      "2017-08-28 05d0ae71 Editorial: Clarify what happens to U+0000 chars"
     ],
     "testlog": [
       "2017-10-18 c12f91014a Set relatedTarget to null if target is null in DispatchEventPostProcess",
@@ -2356,8 +2356,7 @@
       "2017-08-28 92ce826 Fix spec link in README",
       "2017-08-28 306998d Update implementation status for Firefox",
       "2017-08-28 510fa96 Release polyfill version 0.4.1",
-      "2017-08-28 33d6248 Fire intersection events on isIntersecting changes",
-      "2017-08-24 109f26c Apply Edge isIntersecting polyfill to global IntersectionObserverEntry"
+      "2017-08-28 33d6248 Fire intersection events on isIntersecting changes"
     ],
     "testlog": [
       "2017-08-31 e8d533c159 Intermittent intersection-observer/timestamp.html) Make testing for expected time origins more reliable."
@@ -2449,6 +2448,7 @@
     "specrepo": "w3c/mediacapture-main",
     "testpath": "mediacapture-streams",
     "speclog": [
+      "2017-10-20 835a771 Upgrade to NodeJS 8 (respec 1.7 uses async/await)",
       "2017-10-16 7cbdb1c Associate repo with WebRTC WG only",
       "2017-10-07 07a8483 Throw on getUserMedia in non-fully active documents.",
       "2017-10-07 4d078ed Move originIdentifier out of in-parallel steps.",
@@ -2462,6 +2462,7 @@
       "2017-08-25 a16cbd3 Editorial: Fix change log date typo in dated snapshot"
     ],
     "testlog": [
+      "2017-10-20 5726fd82d2 Add @eric-carlson to mediacapture-streams/OWNERS",
       "2017-10-19 a7dc4c5ba0 Update OWNERS",
       "2017-10-19 4cc078df84 Removing sub prefix",
       "2017-10-14 a735581107 Computing cross origin URL with get_host_info",
@@ -2508,8 +2509,7 @@
       "2017-09-15 c2541c830 [css-animations][css-conditional][css-font-loading][cssom-view][cssom][mediaqueries] IDL: Use [Exposed] consistently",
       "2017-09-05 c41d531c5 [mediaqueries] Post publication status changes",
       "2017-09-05 258f562aa [mediaqueries] Fix affiliation",
-      "2017-08-27 008f9deef [css-mediaqueres] Fix example",
-      "2017-08-24 13f77de6e [mediaqueries-5] Fix specificity problem in example"
+      "2017-08-27 008f9deef [css-mediaqueres] Fix example"
     ],
     "testlog": [
       "2017-09-26 016ed94809 Fix bad reference paths in css/mediaqueries-3 (#7464)"
@@ -2581,6 +2581,8 @@
     "specrepo": "w3c/webappsec-mixed-content",
     "testpath": "mixed-content",
     "speclog": [
+      "2017-10-20 2ff8068 Cleaning up 'optionally-blockable'.",
+      "2017-10-20 025b6c3 Remove outdated note regarding passthrough requests.",
       "2017-08-28 f052b81 Replace request type with destination"
     ],
     "testlog": []
@@ -2791,8 +2793,7 @@
       "2017-09-01 8307698 Editorial: Less pull centric (#599)",
       "2017-08-31 658f807 Validate PMIs in supportedMethods (#581)",
       "2017-08-25 63c479a editorial: redundant conformance requirement",
-      "2017-08-25 a13ff05 editorial: fixup xrefs in Dependencies section",
-      "2017-08-24 77e4f33 editorial: ucase SHOULD in normative text"
+      "2017-08-25 a13ff05 editorial: fixup xrefs in Dependencies section"
     ],
     "testlog": [
       "2017-10-04 ff8a47d24c PaymentAddress organization name. (#7558)",
@@ -2957,6 +2958,7 @@
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
     "testpath": "quirks-mode",
     "speclog": [
+      "2017-10-20 16eb567 Correct affiliation for zcorpan",
       "2017-08-29 07e55b2 Meta: use https for dbaron.org (it redirects)",
       "2017-08-29 99f42cf Meta: require Trusty as the Travis dist"
     ],
@@ -2997,8 +2999,7 @@
       "2017-08-25 49605b2 Adjust text to avoid using RFC2119 terms altogether in informative notes",
       "2017-08-25 951b074 Address editorial comments",
       "2017-08-25 9f19b24 Adjust notes to clarify informative/normative intent",
-      "2017-08-25 623b2b2 Add i18n-related informative notes about locale passing between devices",
-      "2017-08-24 136e3cf Fix #70: Note srclang hint to address i18n comment"
+      "2017-08-25 623b2b2 Add i18n-related informative notes about locale passing between devices"
     ],
     "testlog": []
   },
@@ -3136,8 +3137,7 @@
       "2017-10-06 945e977 Exclude PerformanceServerTiming objects for resources that fail the \"timing allow check\" algorithm",
       "2017-09-20 1cd2d68 fix typo (#34)",
       "2017-09-02 7e195cd address w3ctag review feedback (#31)",
-      "2017-08-28 5585544 fix typo (#30)",
-      "2017-08-24 37bc239 update ABNF"
+      "2017-08-28 5585544 fix typo (#30)"
     ],
     "testlog": [
       "2017-08-25 fbe4ac7f9c Server Timing - duplicate names WPT"
@@ -3369,8 +3369,7 @@
       "2017-08-30 cbd686b diffs from last CR to August 30 candidate",
       "2017-08-30 e20101c oops, last commit removed a line by mistake",
       "2017-08-30 cd762bb require script domain match domain scope for site-specific exceptions and match target domains for web-wide exceptions (#58); change empty target array default to script domain (#59); make confirm API match requirements on store (#57)",
-      "2017-08-25 902a4bf TPE compromise version",
-      "2017-08-24 186709f New file to show suggested same-party aware API"
+      "2017-08-25 902a4bf TPE compromise version"
     ],
     "testlog": []
   },
@@ -3474,6 +3473,7 @@
       "2017-08-25 6b8e710 Fix calculation of hold time at end of async pause task"
     ],
     "testlog": [
+      "2017-10-20 c2d0053cfa Use assert_times_equal to compare 'progress' in effect-tests.js (#7903)",
       "2017-10-16 e9abd16fd0 Update the simple iteration progress calculation to match recent changes to the Web Animations specification;",
       "2017-10-16 793361b909 Add tests for simple iteration progress and current iteration when the playback rate is negative;",
       "2017-10-16 a0736470be Extend assert_computed_timing_for_each_phase to accommodate negative playback rates;",
@@ -3895,6 +3895,10 @@
     "href": "https://w3c.github.io/webauthn/",
     "specrepo": "w3c/webauthn",
     "speclog": [
+      "2017-10-20 83da7ff Last minute nitfixes",
+      "2017-10-20 df88d55 Address @AngeloKai's comments about lifetimeTimer",
+      "2017-10-20 7bc3a3e Address @AngeloKai's comments",
+      "2017-10-20 6e0716f Fix #574 - Change language for Create and Get to support hotplugging",
       "2017-10-19 01aa320 clarified the ECDAA signing procedure. Close #591 (#641)",
       "2017-10-19 f1f5495 fixup algs contd 3 (#498)",
       "2017-10-18 b8c6027 Fix #624 - Change PublicKeyCredential.clientExtensionResults to an operation",
@@ -4032,9 +4036,7 @@
       "2017-09-04 fe807e4 Link to ES for \"array index\" (#427)",
       "2017-09-01 98476ce Editorial: correctly reference ES bindings section on constants (#431)",
       "2017-08-30 93dc13d Add [LegacyNamespace] to allow defining an interface in a namespace (#425)",
-      "2017-08-30 b0d3b75 Editorial: fix incorrect sentence about dictionaries (#424)",
-      "2017-08-24 f869be8 Editorial: Improve advisements for legacy APIs (#416)",
-      "2017-08-24 02d4503 Update SessionManager example (#421)"
+      "2017-08-30 b0d3b75 Editorial: fix incorrect sentence about dictionaries (#424)"
     ],
     "testlog": [
       "2017-09-13 b803cc3743 Remove some odd old files (#7311)"
@@ -4085,6 +4087,8 @@
     "testrepo": "WebAssembly/spec",
     "testpath": "test",
     "speclog": [
+      "2017-10-20 9efed9e [spec] Support reading and writing empty table entries (#587)",
+      "2017-10-20 0f96f03 [spec] Document `make publish` in README",
       "2017-10-19 d9cfaf2 Mention suggested MIME type in Binary Format | Conventions (#589)",
       "2017-10-17 8fa1e6b [spec] Add note regarding authorative role of standard dependencies (#582)",
       "2017-10-10 087c4a2 [spec] Fix typo",
@@ -4097,8 +4101,7 @@
       "2017-08-31 39bc304 [spec] Fix typo in Overview (#557)",
       "2017-08-31 96dee7e [spec] Add note re set_global (#556)",
       "2017-08-30 ff8e581 Include reserved byte in call_indirect encoding (#555)",
-      "2017-08-29 b10577f [spec] Specify name mapping for cvtop (#551)",
-      "2017-08-24 ec00e5e [spec] Fix typo in local name subsection production (#547)"
+      "2017-08-29 b10577f [spec] Specify name mapping for cvtop (#551)"
     ],
     "testlog": [
       "2017-10-13 b3c6413 Add tests for invalid UTF-8 encoding in the text format (#474)",
@@ -4106,8 +4109,7 @@
       "2017-09-26 a5d90cb [interpreter] Editorial changes to match spec more closely (#569)",
       "2017-08-31 4f1d311 Harness-module-builder: Do not spread potentially big arrays as function parameters (#552)",
       "2017-08-29 048e291 [test] Add tests for unreachable br_if (#553)",
-      "2017-08-28 9b84654 Fix decoding of f64 binary values (#544)",
-      "2017-08-24 8572832 Fix invalid module names in test (#549)"
+      "2017-08-28 9b84654 Fix decoding of f64 binary values (#544)"
     ]
   },
   {
@@ -4174,9 +4176,7 @@
       "2017-08-29 060475a executing script: validation fixes",
       "2017-08-29 0282367 use modern function calling techniques (#1050)",
       "2017-08-25 01195aa capabilities: make note about platform names less confusing (#1048)",
-      "2017-08-25 e750df2 navigation: put navigation steps in the right place (#1041)",
-      "2017-08-24 86d19b4 Unknown command is a 404, not a 501",
-      "2017-08-24 d678562 Status Codes: mark not found resources as 404 (#1043)"
+      "2017-08-25 e750df2 navigation: put navigation steps in the right place (#1041)"
     ],
     "testlog": [
       "2017-10-19 1b77ee88d9 Valid session caps (#7901)",
@@ -4250,9 +4250,7 @@
       "2017-09-21 59397500 Fix a note related with TIMEOUT_IGNORED in WebGL2 spec. (#2517)",
       "2017-08-30 bd5f4ae9 Add diff spec for signed normalized vertex attributes in WebGL 1.0. (#2486)"
     ],
-    "testlog": [
-      "2017-08-24 9024c571 Allow array length() method to be called on arbitrary expressions (#2493)"
-    ]
+    "testlog": []
   },
   {
     "id": "webrtc-pc",
@@ -4261,6 +4259,7 @@
     "specrepo": "w3c/webrtc-pc",
     "testpath": "webrtc",
     "speclog": [
+      "2017-10-20 b9c512c upgrade to Node 8 (respec 1.7 now uses async/await)",
       "2017-10-12 a212628 Note that creating a transceiver doesn't create the transport objects.",
       "2017-10-12 ee51c91 Add onstatechange event to SctpTransport Event table",
       "2017-10-12 5577890 Add missing ]",
@@ -4346,23 +4345,10 @@
       "2017-08-27 3eff78c Change \"recommended\" to \"supported\"",
       "2017-08-25 5ba6c78 Fix closing </ol>",
       "2017-08-25 9cf9e30 Clarify what exactly are offer and answer descriptions",
-      "2017-08-25 6ebdd8b Clarify which session description to check for if negotiation is needed",
-      "2017-08-24 e70dc31 Remove conflict",
-      "2017-08-24 f5c3b74 Incorporate Taylor's comments",
-      "2017-08-24 1be6828 replace \"a RTCsomething\" with \"an RTCsomething\"",
-      "2017-08-24 96b0beb Remove stray \"",
-      "2017-08-24 754a8c2 Add sdpFmtpLine as require field in RTCCodecStats",
-      "2017-08-24 89aeed6 Improve wording about how the user agent decode contents",
-      "2017-08-24 64f7ffc Reference rtcweb-data-channel for RTCPriorityType enum.",
-      "2017-08-24 0907154 Throw if a DataChannel, negotiated by the script, lacks id",
-      "2017-08-24 2b885bb Make fields in RTCStats required",
-      "2017-08-24 927e896 SLD/SRD: Check if transceiver is stopped before setting currentDirection",
-      "2017-08-24 55d8546 Clarify how SDP can be modified",
-      "2017-08-24 6137d09 Fix typo and improve wordings",
-      "2017-08-24 e7be671 Update mandatory to implement stats fields to sync with webrtc-stats",
-      "2017-08-24 f4d5abf Fix reference to validating assertion result in requesting assertions"
+      "2017-08-25 6ebdd8b Clarify which session description to check for if negotiation is needed"
     ],
     "testlog": [
+      "2017-10-20 c07a244cee Revert \"WPT tests for setRemoteDescription for adding and removing tracks.\"",
       "2017-10-19 b8d5628e75 WPT tests for setRemoteDescription for adding and removing tracks.",
       "2017-10-18 b952881825 Rename external/wpt/webrtc/interfaces.html to interfaces.https.html.",
       "2017-10-17 7d504a2b31 WPT webrtc/getstats test: Allow 0 and 1 datachannels",
@@ -4378,8 +4364,7 @@
       "2017-08-31 adb61760ae Fix setRemoteDescription test to accept offer from same connection",
       "2017-08-31 4b1563d80c same issue in another file",
       "2017-08-31 6cb9707d39 Fixed verification on initial SDP offer",
-      "2017-08-30 24ab44c2ff RTCTrackEvent: fix typo naming event => trackEvent. Fixes gh-7056",
-      "2017-08-24 cf65b42e38 setup onnegotiationneeded before checking it"
+      "2017-08-30 24ab44c2ff RTCTrackEvent: fix typo naming event => trackEvent. Fixes gh-7056"
     ]
   },
   {
@@ -4415,6 +4400,8 @@
     "href": "https://w3c.github.io/webvr/",
     "specrepo": "w3c/webvr",
     "speclog": [
+      "2017-10-20 e0b0aba isExternal -> external",
+      "2017-10-20 a8b98ba Refactor getDevices into requestDevice (#289)",
       "2017-10-17 5a2f39f Remove all [EnforceRange] annotations",
       "2017-10-13 26d1812 Remove 'Deprecated API' label from WebVR 1.1 spec text. Fixes #288",
       "2017-09-08 28aedb9 Added section about `stage` emulation (#283)",
