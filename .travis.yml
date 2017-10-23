@@ -1,0 +1,24 @@
+language: node_js
+node_js: stable
+install:
+  - npm install node-fetch
+script:
+  - node update-manifest.node.js
+  - node update-data.node.js
+  - mkdir out
+  - cp activity.js common.js data.json index.html style.css out/
+after_success:
+  - openssl aes-256-cbc -K $encrypted_b4940861cf48_key -iv $encrypted_b4940861cf48_iv -in deploy_key.enc -out deploy_key -d
+  - chmod 0600 deploy_key
+  - eval "$(ssh-agent -s)"
+  - ssh-add deploy_key
+  - git clone --branch gh-pages git@github.com:foolip/day-to-day.git deploy
+  - rm deploy/*
+  - cp out/* deploy/
+  - cd deploy
+  - git config user.email "bot@foolip.org"
+  - git config user.name "Automat af Grönlåda"
+  - git add -A
+  - git commit -m "Deploy from $TRAVIS_COMMIT" -m "https://travis-ci.org/foolip/day-to-day/builds/$TRAVIS_BUILD_ID"
+  - git show
+  - git push
