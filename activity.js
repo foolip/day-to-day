@@ -78,7 +78,6 @@ function populateTable(table, days, entry) {
     testCell.title = `${date} (${testChanges} test change${s(testChanges)})`
   }
 
-
   const spans = table.querySelectorAll('span')
   console.assert(spans.length == 3)
   spans[0].firstChild.data = specActiveDays
