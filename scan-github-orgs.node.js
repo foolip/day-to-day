@@ -228,7 +228,7 @@ const REPO_BLOCKLIST = new Set([
 ])
 
 function normalizeUrl(urlString) {
-  const url = new URL(urlString.trim())
+  const url = new URL(urlString)
   url.protocol = 'https:'
   return url.toString()
 }
@@ -252,7 +252,7 @@ async function followRedirects(url) {
     // do something simple, the correct behavior is complicated:
     // https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh
     try {
-      const url = normalizeUrl(content.split('=')[1])
+      const url = normalizeUrl(content.split('=')[1].replace(/['" ]/g, ''))
       return followRedirects(url)
     } catch(e) {}
   }
@@ -285,7 +285,7 @@ async function main() {
 
       // try the homepage
       try {
-        const url = normalizeUrl(repo.homepage)
+        const url = normalizeUrl(repo.homepage.trim())
         candidates.add(url.toString())
       } catch(e) {}
 
