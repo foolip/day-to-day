@@ -46,9 +46,7 @@ const REPO_BLOCKLIST = new Set([
   'w3c/charter-webperf',
   'w3c/charters-dashboard',
   'w3c/clreq',
-  'w3c/css-houdini-drafts', // many specs
   'w3c/css-validator',
-  'w3c/csswg-drafts', // many specs
   'w3c/csswg-test',
   'w3c/csswg-w3ctestlib',
   'w3c/dap-charter',
@@ -76,7 +74,6 @@ const REPO_BLOCKLIST = new Set([
   'w3c/epub4',
   'w3c/epubweb',
   'w3c/fingerprinting-guidance',
-  'w3c/fxtf-drafts', // many specs
   'w3c/gh-issue-dashboard',
   'w3c/hcls',
   'w3c/hcls-fhir-rdf',
@@ -330,7 +327,7 @@ async function main() {
   console.log('URLs not in the day-to-day data:')
   for (const response of urlMap.values()) {
     const url = response.url
-    if (!data.some(spec => spec.href == url))
+    if (!data.some(spec => spec.href.startsWith(url)))
       console.log(`  ${url} (${response.repo.full_name})`)
   }
 
