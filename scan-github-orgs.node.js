@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 const JSDOM = require('jsdom').JSDOM
 
-const orgs = ['w3c', 'whatwg', 'WICG']
+const orgs = ['WICG', 'w3c']
 
 // repos that aren't specs or are abandoned, and that would either cause errors
 // or contribute boring URLs.
@@ -289,12 +289,6 @@ const REPO_BLOCKLIST = new Set([
   'w3c/wptdashboard',
   'w3c/wptrunner',
   'w3c/wpub',
-  'whatwg/html-differences',
-  'whatwg/infra',
-  'whatwg/loader',
-  'whatwg/platform.html5.org',
-  'whatwg/serial',
-  'whatwg/whatwg.org',
 ])
 
 function normalizeUrl(urlString) {
@@ -362,9 +356,8 @@ async function main() {
         candidates.add(url.toString())
       } catch(e) {}
 
-      // try the github.io URL if it's different (never for WHATWG)
-      if (org != 'whatwg')
-        candidates.add(`https://${org.toLowerCase()}.github.io/${repo.name}/`)
+      // try the github.io URL if it's different
+      candidates.add(`https://${org.toLowerCase()}.github.io/${repo.name}/`)
 
       if (candidates.size) {
         for (const url of candidates) {
