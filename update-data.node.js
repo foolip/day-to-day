@@ -204,7 +204,7 @@ function update() {
   // list of specs (entries) for which no tests are found in wpt
   const specsWithoutWptDirs = []
 
-  const manifest = JSON.parse(fs.readFileSync('manifest.json'))
+  const manifest = JSON.parse(fs.readFileSync('out/manifest.json'))
 
   for (const entry of manifest) {
     console.assert(entry.id && entry.name && entry.specrepo)
@@ -247,12 +247,12 @@ function update() {
 
   // update the date <meta> in the index.html with the last date to show
   let html = fs.readFileSync('index.html').toString()
-  html = html.replace(/\d{4}-\d{2}-\d{2}/, new Date(today - DAY).toISOString().substr(0, 10))
-  fs.writeFileSync('index.html', html)
+  html = html.replace('YYYY-MM-DD', new Date(today - DAY).toISOString().substr(0, 10))
+  fs.writeFileSync('out/index.html', html)
 
   // done
   console.log('Writing data.json')
-  fs.writeFileSync('data.json', JSON.stringify(manifest, null, '  ') + '\n')
+  fs.writeFileSync('out/data.json', JSON.stringify(manifest, null, '  ') + '\n')
 
   // report on missing things
 

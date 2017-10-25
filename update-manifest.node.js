@@ -336,5 +336,5 @@ Promise.all(biblio.map(processGroup))
 
     // done
     console.log('Writing manifest.json')
-    fs.writeFileSync('manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
+    fs.writeFileSync('out/manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
   })
