@@ -91,7 +91,7 @@ function populateTable(table, days, entry) {
   return table
 }
 
-function compareStrings = (a, b) => {
+function compareStrings(a, b) {
   const lowerA = a.toLowerCase(),
         lowerB = b.toLowerCase()
   if (lowerA < lowerB)
