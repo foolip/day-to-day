@@ -22,6 +22,7 @@ const REPO_BLOCKLIST = new Set([
   'w3c/EasyChecks',
   'w3c/Eunomia',
   'w3c/Guide',
+  'w3c/LRS',
   'w3c/Micropub',
   'w3c/Mobile-A11y-Extension',
   'w3c/Mobile-A11y-TF-Note',
@@ -92,7 +93,9 @@ const REPO_BLOCKLIST = new Set([
   'w3c/epub4',
   'w3c/epubweb',
   'w3c/eventsource',
+  'w3c/findtext', // discontinued
   'w3c/fingerprinting-guidance',
+  'w3c/geofencing-api', // obsolete
   'w3c/gh-issue-dashboard',
   'w3c/hcls',
   'w3c/hcls-fhir-rdf',
@@ -110,6 +113,7 @@ const REPO_BLOCKLIST = new Set([
   'w3c/i18n-drafts',
   'w3c/idn-issues',
   'w3c/ilreq',
+  'w3c/ime-api', // abandoned
   'w3c/imsc-tests',
   'w3c/imsc-vnext-reqs',
   'w3c/its2req',
@@ -135,10 +139,15 @@ const REPO_BLOCKLIST = new Set([
   'w3c/mlw-metadata-us-impl',
   'w3c/mmi',
   'w3c/mmi-discovery',
+  'w3c/mnx',
   'w3c/modern-tooling',
+  'w3c/motion-path', // https://github.com/w3c/motion-path/pull/1
+  'w3c/musicxml',
+  'w3c/nfc', // not the same as https://w3c.github.io/web-nfc/
   'w3c/node-w3capi',
   'w3c/omn',
   'w3c/opentrack-cg',
+  'w3c/packaged-webapps', // discontinued
   'w3c/perf-security-privacy',
   'w3c/perf-timing-primer',
   'w3c/personalization-semantics',
@@ -155,6 +164,7 @@ const REPO_BLOCKLIST = new Set([
   'w3c/publ-wg',
   'w3c/publishing',
   'w3c/pwpub',
+  'w3c/rangefinder', // strawman
   'w3c/rdf-tests',
   'w3c/rdfa-md-service',
   'w3c/respec',
@@ -187,6 +197,7 @@ const REPO_BLOCKLIST = new Set([
   'w3c/transitions',
   'w3c/tt-profile-registry',
   'w3c/ttml-webvtt-mapping',
+  'w3c/tvcontrol-api',
   'w3c/type-samples',
   'w3c/typography',
   'w3c/using-aria',
@@ -248,10 +259,14 @@ const REPO_BLOCKLIST = new Set([
   'w3c/wcag21',
   'w3c/web-annotation',
   'w3c/web-based-signage-bg',
+  'w3c/web-ledger',
+  'w3c/web-performance',
   'w3c/web-platform-tests',
   'w3c/web-roadmaps',
   'w3c/web5g-workshop',
+  'w3c/webappsec',
   'w3c/webappsec-cors-for-developers',
+  'w3c/webappsec-epr', // obsolete
   'w3c/webmediaguidelines',
   'w3c/webmessaging',
   'w3c/webpayments-ig',
