@@ -191,10 +191,9 @@ function main() {
   const config = JSON.parse(fs.readFileSync('config.json'))
 
   const now = Date.now()
-  const today = now - (now % DAY)
   // days+1 so that there are enough whole UTC days in range
-  const since = new Date(today - (config.days + 1) * DAY).toISOString()
-  const until = new Date(today).toISOString()
+  const since = new Date(now - (config.days + 1) * DAY).toISOString()
+  const until = new Date(now).toISOString()
 
   // a url->dir map to avoid updating the same repo twice
   const repoCache = new Map
@@ -262,7 +261,7 @@ function main() {
     days: config.days,
     since: since,
     until: until,
-    date: new Date(today - DAY).toISOString().substr(0, 10),
+    date: new Date(now - DAY).toISOString().substr(0, 10),
     specs: specs,
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')
