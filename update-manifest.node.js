@@ -141,8 +141,7 @@ function processRef(group, info) {
         .replace(/ Level \d+$/, '')
         .replace(/ Module$/, '')
         .replace(/ \d+(\.\d+)?$/, '')
-        .replace(/ Specification$/, '')
-        .replace(/ API$/, ''),
+        .replace(/ Specification$/, ''),
       href: url.href,
       specrepo: `${url.hostname.split('.')[0]}/${id}`,
     }
@@ -289,9 +288,7 @@ function processRef(group, info) {
 
     return {
       id: id,
-      name: info.title
-        .replace(/ Standard$/, '')
-        .replace(/ API$/, ''),
+      name: info.title.replace(/ Standard$/, ''),
       href: url.href,
       specrepo: 'whatwg/' + id,
       testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
