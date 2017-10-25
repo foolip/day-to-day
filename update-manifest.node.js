@@ -1,7 +1,5 @@
 'use strict'
 
-const common = require('./common.js')
-
 const fs = require('fs')
 const fetch = require('node-fetch')
 const URL = require('url').URL
@@ -333,9 +331,6 @@ async function main() {
 
   // check that names are unique, ignore returned map
   uniqueMap('name')
-
-  // sort the manifest in the same way as the client would
-  manifest.sort((a, b) => common.compareStrings(a.name, b.name))
 
   // done
   console.log(`Writing ${manifestPath}`)

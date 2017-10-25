@@ -91,6 +91,16 @@ function populateTable(table, days, entry) {
   return table
 }
 
+function compareStrings = (a, b) => {
+  const lowerA = a.toLowerCase(),
+        lowerB = b.toLowerCase()
+  if (lowerA < lowerB)
+    return -1
+  if (lowerA > lowerB)
+    return 1
+  return 0
+}
+
 function sortTables(container, mode) {
   const key = {
     'total activity': table => -(table._specActiveDays + table._testActiveDays),
