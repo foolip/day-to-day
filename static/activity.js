@@ -138,9 +138,9 @@ function main() {
     .then(response => response.json())
     .then(data => {
       const lastDay = data.date
-      const days = pastDays(new Date(lastDay).valueOf(), NUM_DAYS)
-      console.assert(days.length == NUM_DAYS)
-      console.assert(days[NUM_DAYS-1] == lastDay)
+      const days = pastDays(new Date(lastDay).valueOf(), data.days)
+      console.assert(days.length == data.days)
+      console.assert(days[data.days - 1] == lastDay)
 
       const container = document.querySelector('main')
       const template = document.querySelector('template')

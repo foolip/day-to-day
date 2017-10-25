@@ -190,9 +190,12 @@ function main() {
         dataPath = process.argv[3]
   console.assert(manifestPath && dataPath)
 
+  const config = JSON.parse(fs.readFileSync('config.json'))
+
   const now = Date.now()
   const today = now - (now % DAY)
-  const since = new Date(today - (common.NUM_DAYS + common.GRACE_DAYS) * DAY).toISOString()
+  // days+1 so that there are enough whole UTC days in range
+  const since = new Date(today - (config.days + 1) * DAY).toISOString()
   const until = new Date(today).toISOString()
 
   // a url->dir map to avoid updating the same repo twice
@@ -252,6 +255,7 @@ function main() {
   console.log(`Writing ${dataPath}`)
   const data = {
     date: new Date(today - DAY).toISOString().substr(0, 10),
+    days: config.days,
     specs: manifest,
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')
