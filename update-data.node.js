@@ -188,6 +188,7 @@ function main() {
         dataPath = process.argv[3]
   console.assert(specsPath && dataPath)
 
+  console.log('Reading config.json')
   const config = JSON.parse(fs.readFileSync('config.json'))
 
   const now = Date.now()
@@ -208,6 +209,7 @@ function main() {
   // list of specs (entries) for which no tests are found in wpt
   const specsWithoutWptDirs = []
 
+  console.log(`Reading ${specsPath}`)
   const specs = JSON.parse(fs.readFileSync(specsPath))
 
   for (const entry of specs) {

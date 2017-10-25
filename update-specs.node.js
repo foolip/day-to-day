@@ -308,6 +308,7 @@ async function main() {
   const specsPath = process.argv[2]
   console.assert(specsPath)
 
+  console.log('Reading specs-manual.json')
   const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'))
   const specGroups = await Promise.all(biblio.map(processGroup))
   const specs = [].concat(specsManual, ...specGroups)
@@ -324,6 +325,7 @@ async function main() {
 
   const idMap = uniqueMap('id')
 
+  console.log('Applying specs-fixes.json')
   const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'))
   for (const fix of specsFixes) {
     Object.assign(idMap.get(fix.id), fix)
