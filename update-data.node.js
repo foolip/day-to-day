@@ -3,8 +3,6 @@
 const REPO_CACHE_DIR = 'cache'
 const DAY = 24 * 3600 * 1000
 
-const common = require('./common.js')
-
 const fs = require('fs')
 const execSync = require('child_process').execSync
 
