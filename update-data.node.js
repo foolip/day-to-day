@@ -263,7 +263,6 @@ function main() {
     days: config.days,
     since: since,
     until: until,
-    date: new Date(now - DAY).toISOString().substr(0, 10),
     specs: specs,
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')

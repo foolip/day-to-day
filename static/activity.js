@@ -137,7 +137,7 @@ function main() {
   fetch('data.json')
     .then(response => response.json())
     .then(data => {
-      const lastDay = data.date
+      const lastDay = data.until.substr(0, 10)
       const days = pastDays(new Date(lastDay).valueOf(), data.days)
       console.assert(days.length == data.days)
       console.assert(days[data.days - 1] == lastDay)
