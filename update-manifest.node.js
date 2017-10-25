@@ -306,35 +306,40 @@ function processRef(group, info) {
   throw `Unknown group: ${group}`
 }
 
-Promise.all(biblio.map(processGroup))
-  .then(manifests => {
-    const manifestBase = JSON.parse(fs.readFileSync('manifest-manual.json'))
-    const manifest = [].concat(manifestBase, ...manifests)
+async function main() {
+  const manifestPath = process.argv[2]
+  console.assert(manifestPath)
 
-    function uniqueMap(prop) {
-      const map = new Map
-      for (const entry of manifest) {
-        if (map.has(entry[prop]))
-          throw `duplicate ${prop}: ${entry[prop]}`
-        map.set(entry[prop], entry)
-      }
-      return map
+  const manifests = await Promise.all(biblio.map(processGroup))
+  const manifestBase = JSON.parse(fs.readFileSync('manifest-manual.json'))
+  const manifest = [].concat(manifestBase, ...manifests)
+
+  function uniqueMap(prop) {
+    const map = new Map
+    for (const entry of manifest) {
+      if (map.has(entry[prop]))
+        throw `duplicate ${prop}: ${entry[prop]}`
+      map.set(entry[prop], entry)
     }
+    return map
+  }
 
-    const idMap = uniqueMap('id')
+  const idMap = uniqueMap('id')
 
-    const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
-    for (const fix of manifestFixes) {
-      Object.assign(idMap.get(fix.id), fix)
-    }
+  const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
+  for (const fix of manifestFixes) {
+    Object.assign(idMap.get(fix.id), fix)
+  }
 
-    // check that names are unique, ignore returned map
-    uniqueMap('name')
+  // check that names are unique, ignore returned map
+  uniqueMap('name')
 
-    // sort the manifest in the same way as the client would
-    manifest.sort((a, b) => common.compareStrings(a.name, b.name))
+  // sort the manifest in the same way as the client would
+  manifest.sort((a, b) => common.compareStrings(a.name, b.name))
 
-    // done
-    console.log('Writing manifest.json')
-    fs.writeFileSync('out/manifest.json', JSON.stringify(manifest, null, '  ') + '\n')
-  })
+  // done
+  console.log(`Writing ${manifestPath}`)
+  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, '  ') + '\n')
+}
+
+main()

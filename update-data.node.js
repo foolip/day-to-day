@@ -185,7 +185,11 @@ function getTestRepo(entry) {
   return 'https://github.com/' + repo
 }
 
-function update() {
+function main() {
+  const manifestPath = process.argv[2],
+        dataPath = process.argv[3]
+  console.assert(manifestPath && dataPath)
+
   const now = Date.now()
   const today = now - (now % DAY)
   const since = new Date(today - (common.NUM_DAYS + common.GRACE_DAYS) * DAY).toISOString()
@@ -204,7 +208,7 @@ function update() {
   // list of specs (entries) for which no tests are found in wpt
   const specsWithoutWptDirs = []
 
-  const manifest = JSON.parse(fs.readFileSync('out/manifest.json'))
+  const manifest = JSON.parse(fs.readFileSync(manifestPath))
 
   for (const entry of manifest) {
     console.assert(entry.id && entry.name && entry.specrepo)
@@ -251,8 +255,8 @@ function update() {
   fs.writeFileSync('out/index.html', html)
 
   // done
-  console.log('Writing data.json')
-  fs.writeFileSync('out/data.json', JSON.stringify(manifest, null, '  ') + '\n')
+  console.log(`Writing ${dataPath}`)
+  fs.writeFileSync(dataPath, JSON.stringify(manifest, null, '  ') + '\n')
 
   // report on missing things
 
@@ -281,4 +285,4 @@ function update() {
   }
 }
 
-update()
+main()

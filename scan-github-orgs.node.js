@@ -329,6 +329,9 @@ async function followRedirects(url) {
 }
 
 async function main() {
+  const manifestPath = process.argv[2]
+  console.assert(manifestPath)
+
   const token = process.env.GH_TOKEN
   if (!token)
     console.warn('Warning: no GitHub token given, provide it via GH_TOKEN')
@@ -390,16 +393,13 @@ async function main() {
     console.log(`  ${response.url} (${response.repo.full_name})`)
   }
 
-  const response = await fetch('https://foolip.github.io/day-to-day/data.json')
-  const data = await response.json()
-  console.log('URLs not in the day-to-day data:')
+  const manifest = JSON.parse(fs.readFileSync(manifestPath))
+  console.log(`URLs not in ${manifestPath}:`)
   for (const response of urlMap.values()) {
     const url = response.url
-    if (!data.some(spec => spec.href.startsWith(url)))
+    if (!manifest.some(spec => spec.href.startsWith(url)))
       console.log(`  ${url} (${response.repo.full_name})`)
   }
-
-  console.log('All done')
 }
 
 main()
