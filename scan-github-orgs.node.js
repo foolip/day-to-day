@@ -331,8 +331,8 @@ async function followRedirects(url) {
 }
 
 async function main() {
-  const manifestPath = process.argv[2]
-  console.assert(manifestPath)
+  const specsPath = process.argv[2]
+  console.assert(specsPath)
 
   const token = process.env.GH_TOKEN
   if (!token)
@@ -395,11 +395,11 @@ async function main() {
     console.log(`  ${response.url} (${response.repo.full_name})`)
   }
 
-  const manifest = JSON.parse(fs.readFileSync(manifestPath))
-  console.log(`URLs not in ${manifestPath}:`)
+  const specs = JSON.parse(fs.readFileSync(specsPath))
+  console.log(`URLs not in ${specsPath}:`)
   for (const response of urlMap.values()) {
     const url = response.url
-    if (!manifest.some(spec => spec.href.startsWith(url)))
+    if (!specs.some(spec => spec.href.startsWith(url)))
       console.log(`  ${url} (${response.repo.full_name})`)
   }
 }

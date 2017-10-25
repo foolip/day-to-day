@@ -30,7 +30,7 @@ const blocklist = [
   'clreq',
   'coga-user-research',
   'core-aam-1.1',
-  'csp-embedded-enforcement', // in manifest-manual.json
+  'csp-embedded-enforcement', // in specs-manual.json
   'css-cascade-3',
   'css-fonts-3',
   'css-overflow-3',
@@ -108,7 +108,7 @@ function processGroup(group) {
 }
 
 function processRefs(group, refs) {
-  const manifest = []
+  const specs = []
 
   for (const name in refs) {
     if (blocklist.includes(name))
@@ -116,13 +116,13 @@ function processRefs(group, refs) {
     const info = refs[name]
     const entry = processRef(group, refs[name])
     if (entry)
-      manifest.push(entry)
+      specs.push(entry)
   }
 
-  return manifest
+  return specs
 }
 
-// turns group+info into a manifest entry or returns undefined if skipped
+// turns group+info into a spec entry or returns undefined if skipped
 function processRef(group, info) {
   if (!info.href || !info.title)
     return
@@ -305,16 +305,16 @@ function processRef(group, info) {
 }
 
 async function main() {
-  const manifestPath = process.argv[2]
-  console.assert(manifestPath)
+  const specsPath = process.argv[2]
+  console.assert(specsPath)
 
-  const manifests = await Promise.all(biblio.map(processGroup))
-  const manifestBase = JSON.parse(fs.readFileSync('manifest-manual.json'))
-  const manifest = [].concat(manifestBase, ...manifests)
+  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'))
+  const specGroups = await Promise.all(biblio.map(processGroup))
+  const specs = [].concat(specsManual, ...specGroups)
 
   function uniqueMap(prop) {
     const map = new Map
-    for (const entry of manifest) {
+    for (const entry of specs) {
       if (map.has(entry[prop]))
         throw `duplicate ${prop}: ${entry[prop]}`
       map.set(entry[prop], entry)
@@ -324,8 +324,8 @@ async function main() {
 
   const idMap = uniqueMap('id')
 
-  const manifestFixes = JSON.parse(fs.readFileSync('manifest-fixes.json'))
-  for (const fix of manifestFixes) {
+  const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'))
+  for (const fix of specsFixes) {
     Object.assign(idMap.get(fix.id), fix)
   }
 
@@ -333,8 +333,8 @@ async function main() {
   uniqueMap('name')
 
   // done
-  console.log(`Writing ${manifestPath}`)
-  fs.writeFileSync(manifestPath, JSON.stringify(manifest, null, '  ') + '\n')
+  console.log(`Writing ${specsPath}`)
+  fs.writeFileSync(specsPath, JSON.stringify(specs, null, '  ') + '\n')
 }
 
 main()

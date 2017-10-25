@@ -184,9 +184,9 @@ function getTestRepo(entry) {
 }
 
 function main() {
-  const manifestPath = process.argv[2],
+  const specsPath = process.argv[2],
         dataPath = process.argv[3]
-  console.assert(manifestPath && dataPath)
+  console.assert(specsPath && dataPath)
 
   const config = JSON.parse(fs.readFileSync('config.json'))
 
@@ -209,9 +209,9 @@ function main() {
   // list of specs (entries) for which no tests are found in wpt
   const specsWithoutWptDirs = []
 
-  const manifest = JSON.parse(fs.readFileSync(manifestPath))
+  const specs = JSON.parse(fs.readFileSync(specsPath))
 
-  for (const entry of manifest) {
+  for (const entry of specs) {
     console.assert(entry.id && entry.name && entry.specrepo)
 
     const specRepo = getSpecRepo(entry)
@@ -254,7 +254,7 @@ function main() {
   const data = {
     date: new Date(today - DAY).toISOString().substr(0, 10),
     days: config.days,
-    specs: manifest,
+    specs: specs,
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')
 
@@ -266,7 +266,7 @@ function main() {
       console.log(`  ${entry.name} <${entry.href}>`)
   }
 
-  const specsWithoutTestPolicy = manifest.filter(entry => {
+  const specsWithoutTestPolicy = specs.filter(entry => {
     return !entry.testpolicy && !TODO_SPEC_IDS.has(entry.id)
   })
   if (specsWithoutTestPolicy.length) {

@@ -4,7 +4,7 @@ install:
   - npm install github-api jsdom node-fetch
 script:
   - ./build.sh
-  - node scan-github-orgs.node.js out/manifest.json
+  - node scan-github-orgs.node.js out/specs.json
 after_success:
   - openssl aes-256-cbc -K $encrypted_b4940861cf48_key -iv $encrypted_b4940861cf48_iv -in deploy_key.enc -out deploy_key -d
   - chmod 0600 deploy_key
