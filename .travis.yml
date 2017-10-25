@@ -8,7 +8,7 @@ script:
   - mkdir out
   - node update-manifest.node.js out/manifest.json
   - node update-data.node.js out/manifest.json out/data.json
-  - cp activity.js common.js index.html style.css out/
+  - cp common.js static/* out/
   - node scan-github-orgs.node.js out/manifest.json
 after_success:
   - openssl aes-256-cbc -K $encrypted_b4940861cf48_key -iv $encrypted_b4940861cf48_iv -in deploy_key.enc -out deploy_key -d
