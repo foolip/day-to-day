@@ -259,8 +259,10 @@ function main() {
 
   console.log(`Writing ${dataPath}`)
   const data = {
-    date: new Date(today - DAY).toISOString().substr(0, 10),
     days: config.days,
+    since: since,
+    until: until,
+    date: new Date(today - DAY).toISOString().substr(0, 10),
     specs: specs,
   }
   fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')
