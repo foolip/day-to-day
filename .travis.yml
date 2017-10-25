@@ -23,5 +23,4 @@ after_success:
   - git config user.name "Automat af Grönlåda"
   - git add -A
   - git commit -m "Deploy from $TRAVIS_COMMIT" -m "https://travis-ci.org/foolip/day-to-day/builds/$TRAVIS_BUILD_ID"
-  - git show
   - git push
