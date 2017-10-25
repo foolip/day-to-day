@@ -11,6 +11,7 @@ const blocklist = [
   'API-DESIGN-PRINCIPLES',
   'COWL',
   'CSP2',
+  'CSS-PARSER-API', // https://github.com/WICG/admin/pull/45
   'DIFFERENCES',
   'GraphQL',
   'HTML-EXTENSIONS',
