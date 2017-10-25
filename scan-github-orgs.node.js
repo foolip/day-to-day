@@ -390,11 +390,6 @@ async function main() {
       urlMap.set(response.url, response)
   }
 
-  console.log('All URLs found:')
-  for (const response of urlMap.values()) {
-    console.log(`  ${response.url} (${response.repo.full_name})`)
-  }
-
   const specs = JSON.parse(fs.readFileSync(specsPath))
   console.log(`URLs not in ${specsPath}:`)
   for (const response of urlMap.values()) {
