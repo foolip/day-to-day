@@ -27,6 +27,7 @@ function cloneOrUpdate(url, repoCache) {
 
 // dirs with no tests / old tests
 const IGNORE_WPT_DIRS = new Set([
+  'acid', // Acid2 and Acid3
   'common',
   'conformance-checkers',
   'css', // tests are in subdirs
@@ -121,7 +122,6 @@ const TODO_SPEC_IDS = new Set([
   'svg-markers',
   'svg-paths',
   'svg-strokes',
-  'wake-lock',
   'web-midi-api',
   'webappsec-csp-embedded', // in content-security-policy/embedded-enforcement
   'webrtc-stats',
