@@ -250,6 +250,13 @@ function main() {
     }
   }
 
+  // delete that aren't (going to be) used by the client
+  for (const entry of specs) {
+    delete entry.id
+    delete entry.specpath
+    delete entry.testpath
+  }
+
   console.log(`Writing ${dataPath}`)
   const data = {
     date: new Date(today - DAY).toISOString().substr(0, 10),
