@@ -249,14 +249,12 @@ function main() {
     }
   }
 
-  // update the date <meta> in the index.html with the last date to show
-  let html = fs.readFileSync('index.html').toString()
-  html = html.replace('YYYY-MM-DD', new Date(today - DAY).toISOString().substr(0, 10))
-  fs.writeFileSync('out/index.html', html)
-
-  // done
   console.log(`Writing ${dataPath}`)
-  fs.writeFileSync(dataPath, JSON.stringify(manifest, null, '  ') + '\n')
+  const data = {
+    date: new Date(today - DAY).toISOString().substr(0, 10),
+    specs: manifest,
+  }
+  fs.writeFileSync(dataPath, JSON.stringify(data, null, '  ') + '\n')
 
   // report on missing things
 

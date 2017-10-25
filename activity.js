@@ -124,20 +124,19 @@ function sortTables(container, mode) {
 function main() {
   document.body.classList.add('loading')
 
-  const lastDay = document.querySelector('meta[name]').content
-  const days = pastDays(new Date(lastDay).valueOf(), NUM_DAYS)
-  console.assert(days.length == NUM_DAYS)
-  console.assert(days[NUM_DAYS-1] == lastDay)
-
   fetch('data.json')
-    .then(response => response.text())
-    .then(json => {
+    .then(response => response.json())
+    .then(data => {
+      const lastDay = data.date
+      const days = pastDays(new Date(lastDay).valueOf(), NUM_DAYS)
+      console.assert(days.length == NUM_DAYS)
+      console.assert(days[NUM_DAYS-1] == lastDay)
+
       const container = document.querySelector('main')
       const template = document.querySelector('template')
       container.textContent = ''
 
-      const manifest = JSON.parse(json)
-      for (const entry of manifest) {
+      for (const entry of data.specs) {
         const table = template.content.cloneNode(true).children[0]
         const a = table.querySelector('a')
         a.textContent = entry.name
