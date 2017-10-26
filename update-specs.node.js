@@ -224,12 +224,12 @@ function processRef(group, info) {
 
   case 'w3c': {
     // ignore everything that isn't maintained
-    if (!info.edDraft)
+    if (info.status != 'ED' && !info.edDraft)
       return
     if (info.status == 'NOTE')
       return
 
-    let url = info.edDraft
+    let url = info.edDraft || info.href
 
     // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
     const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/'
