@@ -1,4 +1,7 @@
-#!/bin/sh -e
+#!/bin/bash
+set -o errexit
+set -o nounset
+set -o pipefail
 
 URL="$1"
 DIR="$2"

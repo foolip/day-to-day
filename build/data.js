@@ -4,6 +4,7 @@ const DAY = 24 * 3600 * 1000
 
 const fs = require('fs')
 const execSync = require('child_process').execSync
+const path = require('path')
 const repo = require('./repo')
 
 // dirs with no tests / old tests
@@ -138,8 +139,8 @@ function getLog(dir, since, until, options) {
 }
 
 function getTestPolicy(dir) {
-  const cmd = `sh find-test-policy.sh "${dir}"`
-  const matches = execSync(cmd)
+  const script = path.join(path.dirname(module.filename), 'find-test-policy.sh')
+  const matches = execSync(`${script} "${dir}"`)
         .toString().split('\n').filter(line => line != '')
   if (matches.length == 1)
     return matches[0]

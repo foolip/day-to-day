@@ -1,6 +1,7 @@
 'use strict'
 
 const execSync = require('child_process').execSync
+const path = require('path')
 
 // the cache directory is used to reuse checkouts between processes
 const DISK_CACHE_DIR = 'cache'
@@ -20,7 +21,8 @@ exports.checkout = function(url, options = { update: true }) {
 
   if (options.update) {
     console.log(`Updating ${url}`)
-    execSync(`sh repo-checkout.sh "${url}" "${dir}"`, {stdio:[0,1,2]})
+    const script = path.join(path.dirname(module.filename), 'repo-checkout.sh')
+    execSync(`${script} "${url}" "${dir}"`, {stdio:[0,1,2]})
     cache.set(url, dir)
   }
 
