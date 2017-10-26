@@ -1,27 +1,10 @@
 'use strict'
 
-const REPO_CACHE_DIR = 'cache'
 const DAY = 24 * 3600 * 1000
 
 const fs = require('fs')
 const execSync = require('child_process').execSync
-
-// clones or updates a repo, returns its directory name
-function cloneOrUpdate(url, repoCache) {
-  if (!url.startsWith('https://'))
-    throw 'Use a https:// repo URL!'
-
-  if (repoCache.has(url))
-    return repoCache.get(url)
-
-  const dir = `${REPO_CACHE_DIR}/${url.substr(8)}`
-  console.log(`Updating ${url}`)
-  execSync(`sh clone-or-update.sh "${url}" "${dir}"`, {stdio:[0,1,2]})
-
-  repoCache.set(url, dir)
-
-  return dir
-}
+const repo = require('./repo')
 
 // dirs with no tests / old tests
 const IGNORE_WPT_DIRS = new Set([
@@ -196,11 +179,8 @@ function main() {
   const since = new Date(now - (config.days + 1) * DAY).toISOString()
   const until = new Date(now).toISOString()
 
-  // a url->dir map to avoid updating the same repo twice
-  const repoCache = new Map
-
   // set of all dirs that (currently) really exist in wpt
-  const wptDir = cloneOrUpdate('https://github.com/w3c/web-platform-tests', repoCache)
+  const wptDir = repo.checkout('https://github.com/w3c/web-platform-tests')
   const realWptDirs = getWptDirs(wptDir)
 
   // set of all dirs in wpt that are used by some entry
@@ -218,8 +198,8 @@ function main() {
     const specRepo = getSpecRepo(entry)
     const testRepo = getTestRepo(entry)
 
-    const specDir = cloneOrUpdate(specRepo, repoCache)
-    const testDir = cloneOrUpdate(testRepo, repoCache)
+    const specDir = repo.checkout(specRepo)
+    const testDir = repo.checkout(testRepo)
 
     const specPath = entry.specpath
     const testPath = entry.testpath || entry.id
