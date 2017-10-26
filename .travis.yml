@@ -1,7 +1,7 @@
 language: node_js
 node_js: stable
 install:
-  - npm install github-api jsdom node-fetch
+  - npm install
 script:
   - ./build.sh
   - node scan-github-orgs.node.js out/specs.json
