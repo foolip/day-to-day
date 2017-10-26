@@ -19,6 +19,6 @@ git add -A
 if [[ "$TRAVIS" == "true" ]]; then
     git commit -m "Deploy from $COMMIT" -m "https://travis-ci.org/foolip/day-to-day/builds/$TRAVIS_BUILD_ID"
 else
-    git commit -m "Deploy from $COMMIT (manual)"
+    git commit -m "Deploy from $COMMIT"
 fi
 git push
