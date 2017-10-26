@@ -131,6 +131,16 @@ function sortTables(container, mode) {
     container.appendChild(table)
 }
 
+function timeSince(when) {
+  const minutesAgo = Math.floor((Date.now() - Date.parse(when)) / 60000)
+
+  if (minutesAgo < 2)
+    return 'just now'
+  if (minutesAgo < 120)
+    return `${minutesAgo} minutes ago`
+  return `${Math.floor(minutesAgo / 60)} hours ago`
+}
+
 function main() {
   document.body.classList.add('loading')
 
@@ -166,6 +176,11 @@ function main() {
         sortTables(container, event.target.value)
       })
       select.dispatchEvent(new Event('change'))
+
+      // show the freshness of the data
+      const ago = document.querySelector('footer span')
+      ago.title = data.until
+      ago.textContent = timeSince(data.until)
 
       document.body.classList.remove('loading')
     })
