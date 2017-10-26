@@ -3,9 +3,8 @@ node_js: stable
 install:
   - npm install
 script:
-  - mkdir -p out/logs
-  - ./build.sh | tee out/logs/build.txt
-  - ./check.sh | tee out/logs/check.txt
+  - ./build.sh
+  - ./check.sh
 after_success:
   - openssl aes-256-cbc -K $encrypted_b4940861cf48_key -iv $encrypted_b4940861cf48_iv -in deploy_key.enc -out deploy_key -d
   - chmod 0600 deploy_key
