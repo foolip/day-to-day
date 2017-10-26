@@ -256,16 +256,6 @@ function main() {
       console.log(`  ${entry.name} <${entry.href}>`)
   }
 
-  const specsWithoutTestPolicy = specs.filter(entry => {
-    return !entry.testpolicy && !TODO_SPEC_IDS.has(entry.id)
-  })
-  if (specsWithoutTestPolicy.length) {
-    console.log('Specs with no (known) testing policy:')
-    specsWithoutTestPolicy.forEach(entry => {
-      console.log(`  ${entry.name} <${entry.href}>`)
-    })
-  }
-
   const wptDirsWithoutSpec = Array.from(realWptDirs)
         .filter(dir => !usedWptDirs.has(dir))
   if (wptDirsWithoutSpec.length) {
