@@ -132,13 +132,13 @@ function sortTables(container, mode) {
 }
 
 function timeSince(when) {
-  const minutesAgo = Math.floor((Date.now() - Date.parse(when)) / 60000)
+  const minutes = Math.floor((Date.now() - Date.parse(when)) / 60000)
 
-  if (minutesAgo < 2)
-    return 'just now'
-  if (minutesAgo < 120)
-    return `${minutesAgo} minutes ago`
-  return `${Math.floor(minutesAgo / 60)} hours ago`
+  if (minutes < 2)
+    return 'moments'
+  if (minutes < 120)
+    return `${minutes} minutes`
+  return `${Math.floor(minutes / 60)} hours`
 }
 
 function main() {
