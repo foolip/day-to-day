@@ -37,7 +37,6 @@ const IGNORE_WPT_DIRS = new Set([
   'tools',
   'wai-aria', // http://w3c.github.io/aria/aria/aria.html
   'wasm', // https://github.com/WebAssembly/spec/issues/529
-  'webgl', // https://github.com/w3c/web-platform-tests/issues/5927
 ])
 
 function findWptDirs(dir) {
