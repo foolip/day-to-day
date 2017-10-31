@@ -6,7 +6,7 @@ const fetch = require('node-fetch')
 const fs = require('fs')
 const JSDOM = require('jsdom').JSDOM
 
-const orgs = ['WICG', 'w3c']
+const orgs = ['w3c', 'wicg']
 
 // repos that aren't specs or are abandoned, and that would either cause errors
 // or contribute boring URLs.
@@ -305,7 +305,6 @@ async function followRedirects(url) {
     return response
 
   // parse the response as HTML to find <meta http-equiv=refresh>
-  //console.log(`Parsing ${url}`)
   const text = await response.text()
   const document = new JSDOM(text).window.document
   const metas = document.querySelectorAll('meta[http-equiv=refresh i][content]')
@@ -327,6 +326,7 @@ async function followRedirects(url) {
 async function main() {
   const specsPath = process.argv[2]
   console.assert(specsPath)
+  const specs = JSON.parse(fs.readFileSync(specsPath))
 
   const token = process.env.GH_TOKEN
   if (!token)
@@ -337,40 +337,19 @@ async function main() {
   const fetches = []
 
   for (const org of orgs) {
-    console.log(`Processing ${org}`)
     const repos = (await gh.getOrganization(org).getRepos()).data
 
+    console.log(`Checking ${repos.length} ${org} repos`)
     for (const repo of repos) {
-      if (REPO_BLOCKLIST.has(repo.full_name)) {
-        console.log(`  Skipping ${repo.full_name} (in blocklist)`)
+      const url = `https://${org}.github.io/${repo.name}/`
+
+      if (REPO_BLOCKLIST.has(repo.full_name))
         continue
-      }
 
-      console.log(`  Processing ${repo.full_name}`)
+      if (specs.some(spec => spec.href.startsWith(url)))
+        continue
 
-      let candidates = new Set
-
-      // try the homepage
-      try {
-        const url = normalizeUrl(repo.homepage.trim())
-        candidates.add(url.toString())
-      } catch(e) {}
-
-      // try the github.io URL if it's different
-      candidates.add(`https://${org.toLowerCase()}.github.io/${repo.name}/`)
-
-      if (candidates.size) {
-        for (const url of candidates) {
-          console.log(`    Following ${url}`)
-          fetches.push(followRedirects(url).then(response => {
-            // attach the repo to the response for later logging
-            response.repo = repo
-            return response
-          }))
-        }
-      } else {
-        console.log('    No candidate URLs found')
-      }
+      fetches.push(followRedirects(url))
     }
   }
 
@@ -383,12 +362,11 @@ async function main() {
       urlMap.set(response.url, response)
   }
 
-  const specs = JSON.parse(fs.readFileSync(specsPath))
   console.log(`URLs not in ${specsPath}:`)
   for (const response of urlMap.values()) {
     const url = response.url
     if (!specs.some(spec => spec.href.startsWith(url)))
-      console.log(`  ${url} (${response.repo.full_name})`)
+      console.log(`  ${url}`)
   }
 }
 
