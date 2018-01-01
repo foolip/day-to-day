@@ -29,6 +29,7 @@ const blocklist = [
   'annotation-vocab',
   'charmod-norm',
   'clreq',
+  'coga-gap-analysis',
   'coga-user-research',
   'core-aam-1.1',
   'csp-embedded-enforcement', // in specs-manual.json
