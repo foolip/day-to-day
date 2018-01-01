@@ -54,6 +54,7 @@ const blocklist = [
   'html-aria',
   'html-imports',
   'html52',
+  'html53',
   'ilreq',
   'indie-ui-context',
   'indie-ui-events',
