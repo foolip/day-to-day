@@ -35,6 +35,7 @@ const blocklist = [
   'csp-embedded-enforcement', // in specs-manual.json
   'css-cascade-3',
   'css-fonts-3',
+  'css-grid-1',
   'css-overflow-3',
   'css-text-3',
   'css-ui-3',
@@ -73,6 +74,7 @@ const blocklist = [
   'poe-ucr',
   'pointerlock',
   'resource-timing-1',
+  'selectors-4',
   'selectors-nonelement-1',
   'shacl',
   'shadow-dom',
