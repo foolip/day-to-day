@@ -172,7 +172,7 @@ function processRef(group, info) {
     url.pathname = `/${id}/`
 
     const testpolicy = {
-      // TODO: https://github.com/w3c/css-houdini-drafts/pull/493
+      'drafts.css-houdini.org': 'https://github.com/w3c/css-houdini-drafts#tests',
       'drafts.csswg.org': 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
       'drafts.fxtf.org': 'https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md',
     }[url.hostname]
