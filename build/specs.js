@@ -24,6 +24,7 @@ const blocklist = [
   'activitypub',
   'activitystreams-core',
   'activitystreams-vocabulary',
+  'alreq',
   'annotation-model',
   'annotation-protocol',
   'annotation-vocab',
@@ -71,8 +72,10 @@ const blocklist = [
   'odrl-vocab',
   'owl-time',
   'personalization-semantics-1.0',
+  'personalization-semantics-1.0',
   'poe-ucr',
   'pointerlock',
+  'pwpub',
   'resource-timing-1',
   'selectors-4',
   'selectors-nonelement-1',
@@ -102,6 +105,8 @@ const blocklist = [
   'wot-architecture',
   'wot-scripting-api',
   'wot-thing-description',
+  'wpub',
+  'wpub-ann',
 ]
 
 function processGroup(group) {
