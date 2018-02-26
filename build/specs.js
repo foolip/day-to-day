@@ -72,7 +72,7 @@ const blocklist = [
   'odrl-vocab',
   'owl-time',
   'personalization-semantics-1.0',
-  'personalization-semantics-1.0',
+  'personalization-semantics-content-1.0',
   'poe-ucr',
   'pointerlock',
   'pwpub',
