@@ -307,7 +307,11 @@ function processRef(group, info) {
   case 'wicg': {
     const url = new URL(info.href)
     console.assert(url.hostname.endsWith('.github.io'))
-    return entryFromGitHubIO(url)
+    const entry = entryFromGitHubIO(url)
+    // TODO: it might be simpler to just use the specref ids more
+    if (entry.href == 'https://wicg.github.io/shape-detection-api/text.html')
+      entry.id = 'text-detection-api'
+    return entry
   }
 
   }
