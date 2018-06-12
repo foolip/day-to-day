@@ -102,6 +102,7 @@ const blocklist = [
   'webpayments-http-messages',
   'webstorage',
   'websub',
+  'webvr',
   'widgets-apis',
   'wot-architecture',
   'wot-scripting-api',
