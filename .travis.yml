@@ -8,11 +8,11 @@ install:
 script:
   - ./build.sh
   - ./check.sh
-after_success:
-  - openssl aes-256-cbc -K $encrypted_b4940861cf48_key -iv $encrypted_b4940861cf48_iv -in deploy_key.enc -out deploy_key -d
-  - chmod 0600 deploy_key
-  - eval "$(ssh-agent -s)"
-  - ssh-add deploy_key
-  - git config --global user.email "bot@foolip.org"
-  - git config --global user.name "Automat af Grönlåda"
-  - ./deploy.sh
+deploy:
+  local-dir: out
+  provider: pages
+  skip-cleanup: true
+  github-token: $GH_TOKEN
+  keep-history: true
+  on:
+    branch: master
