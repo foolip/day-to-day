@@ -35,6 +35,7 @@ const blocklist = [
   'core-aam-1.1',
   'csp-embedded-enforcement', // in specs-manual.json
   'css-cascade-3',
+  'css-color-3',
   'css-fonts-3',
   'css-grid-1',
   'css-overflow-3',
