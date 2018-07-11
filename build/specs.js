@@ -17,6 +17,7 @@ const blocklist = [
   'HTML-EXTENSIONS',
   'INFRA',
   'LOADER',
+  'WICG-MST-CONTENT-HINT', // https://github.com/tobie/specref/pull/473
   'UISecurity',
   'WCAG21',
   'accname-aam-1.1',
