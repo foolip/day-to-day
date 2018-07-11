@@ -96,6 +96,7 @@ const blocklist = [
   'vehicle-information-api',
   'vehicle-information-service',
   'verifiable-claims-data-model',
+  'vocab-dcat-2',
   'vocab-ssn',
   'wai-aria-1.1',
   'wai-aria-practices-1.1',
