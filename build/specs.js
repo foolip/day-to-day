@@ -37,6 +37,7 @@ const blocklist = [
   'core-aam-1.1',
   'csp-embedded-enforcement', // in specs-manual.json
   'css3-images',
+  'css3-mediaqueries',
   'css-cascade-3',
   'css-color-3',
   'css-fonts-3',
