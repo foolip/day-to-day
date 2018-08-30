@@ -46,6 +46,7 @@ const blocklist = [
   'css-text-3',
   'css-text-decor-3',
   'css-ui-3',
+  'css-values-3',
   'css-writing-modes-3',
   'csv2json',
   'csv2rdf',
