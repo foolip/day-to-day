@@ -22,6 +22,7 @@ const blocklist = [
   'UISecurity',
   'WICG-GEOLOCATION-SENSOR', // https://github.com/tobie/specref/commit/a807c9e6c5ff88a1a7d3c1c32791f18248afed48
   'WICG-MST-CONTENT-HINT', // https://github.com/tobie/specref/pull/473
+  'WICG-NETWORK-ERROR-LOGGING',
   'WCAG21',
   'accname-aam-1.1',
   'act-rules-format-1.0',
