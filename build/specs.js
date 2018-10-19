@@ -81,6 +81,8 @@ const blocklist = [
   'owl-time',
   'personalization-semantics-1.0',
   'personalization-semantics-content-1.0',
+  'personalization-semantics-help-1.0',
+  'personalization-semantics-tools-1.0',
   'poe-ucr',
   'pointerlock',
   'pwpub',
