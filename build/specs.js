@@ -13,6 +13,7 @@ const blocklist = [
   'CSP2',
   'CSS2',
   'CSS-PARSER-API', // https://github.com/WICG/admin/pull/45
+  'DASHIFIOP',
   'DIFFERENCES',
   'GraphQL',
   'HTML-EXTENSIONS',
