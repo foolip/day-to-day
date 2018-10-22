@@ -39,7 +39,6 @@ const blocklist = [
   'coga-gap-analysis',
   'coga-user-research',
   'core-aam-1.1',
-  'csp-embedded-enforcement', // in specs-manual.json
   'css3-images',
   'css3-mediaqueries',
   'css-cascade-3',
