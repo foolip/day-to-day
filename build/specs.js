@@ -168,7 +168,6 @@ function processRef(group, info) {
     return {
       id: id,
       name: info.title
-        .replace(/:.*/, '')
         .replace(/ Level \d+$/, '')
         .replace(/ Module$/, '')
         .replace(/ \d+(\.\d+)?$/, '')
