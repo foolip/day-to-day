@@ -97,6 +97,7 @@ const blocklist = [
   'resource-timing-1',
   'selectors-4',
   'selectors-nonelement-1',
+  'service-workers-nightly',
   'shacl',
   'shadow-dom',
   'svg-aam-1.0',
