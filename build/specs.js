@@ -41,6 +41,7 @@ const blocklist = [
   'core-aam-1.1',
   'css3-images',
   'css3-mediaqueries',
+  'css-break-3',
   'css-cascade-3',
   'css-color-3',
   'css-fonts-3',
