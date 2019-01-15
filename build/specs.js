@@ -61,6 +61,8 @@ const blocklist = [
   'dpub-css-priorities',
   'dpub-latinreq',
   'dwbp',
+  'dx-prof',
+  'dx-prof-conneg',
   'elreq',
   'graphics-aam-1.0',
   'graphics-aria-1.0',
