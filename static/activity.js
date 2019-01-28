@@ -10,21 +10,18 @@ function pastDays(fromWhen, numDays) {
   return Object.freeze(days)
 }
 
-function commitFromLine(line) {
-  const parts = line.split(' ')
-  return {
-    date: parts[0],
-    hash: parts[1],
-    subject: parts.splice(2).join(' ')
-  }
-}
-
-// turn an array of log lines into a date -> commit count map
+// turn an array of log entries into a date -> commit count map
 function activityFromLog(log) {
   const activity = {}
 
-  for (const line of log) {
-    const date = commitFromLine(line).date
+  for (const entry of log) {
+    let date;
+    if (typeof entry === 'object') {
+      date = entry.date;
+    } else {
+      // TODO(foolip): remove this code path later
+      date = entry.split(' ')[0];
+    }
     if (date in activity)
       activity[date]++
     else
