@@ -9,7 +9,7 @@ const repo = require('./repo')
 
 function getLog(dir, since, until, options) {
   // --date=short-local combined with TZ=UTC gets us the UTC date.
-  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=short-local --pretty="%cd %h %s"`
+  let cmd = `git log --no-merges --since="${since}" --until="${until}" --date=short-local --pretty="%cd\t%ae\t%h\t%s"`
   if (options.path)
     cmd += ` -- ${options.path}`
 
@@ -18,7 +18,10 @@ function getLog(dir, since, until, options) {
     env: { 'TZ': 'UTC' },
   }).toString()
 
-  return stdout.split('\n').filter(line => line != '')
+  return stdout.split('\n').filter(line => line != '').map(line => {
+    const [date, author, hash, subject] = line.split('\t');
+    return { date, author, hash, subject };
+  });
 }
 
 function getTestPolicy(dir) {
