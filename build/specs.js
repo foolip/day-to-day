@@ -9,6 +9,7 @@ const biblio = ['biblio', 'w3c', 'whatwg', 'wicg']
 // specref names to drop on the floor
 const blocklist = [
   'API-DESIGN-PRINCIPLES',
+  'BBC-SUBTITLE',
   'COWL',
   'CSP2',
   'CSS2',
