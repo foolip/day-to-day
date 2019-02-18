@@ -117,6 +117,7 @@ const blocklist = [
   'verifiable-claims-data-model',
   'vocab-dcat-2',
   'vocab-ssn',
+  'vocab-ssn-ext',
   'wai-aria-1.1',
   'wai-aria-practices',
   'wai-aria-practices-1.1',
