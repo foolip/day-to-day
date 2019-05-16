@@ -1,12 +1,12 @@
-'use strict'
+'use strict';
 
-const GitHub = require('github-api')
-const URL = require('url').URL
-const fetch = require('node-fetch')
-const fs = require('fs')
-const JSDOM = require('jsdom').JSDOM
+const GitHub = require('github-api');
+const URL = require('url').URL;
+const fetch = require('node-fetch');
+const fs = require('fs');
+const JSDOM = require('jsdom').JSDOM;
 
-const orgs = ['w3c', 'wicg']
+const orgs = ['w3c', 'wicg'];
 
 // repos that aren't specs or are abandoned, and that would either cause errors
 // or contribute boring URLs.
@@ -289,85 +289,94 @@ const REPO_BLOCKLIST = new Set([
   'w3c/wptdashboard',
   'w3c/wptrunner',
   'w3c/wpub',
-])
+]);
 
 function normalizeUrl(urlString) {
-  const url = new URL(urlString)
-  url.protocol = 'https:'
-  return url.toString()
+  const url = new URL(urlString);
+  url.protocol = 'https:';
+  return url.toString();
 }
 
 // fetches url and follows <meta http-equiv=refresh> redirects. Returns the
 // final response and has no protection against redirect loops.
 async function followRedirects(url) {
-  const response = await fetch(url)
-  if (response.status != 200)
-    return response
+  const response = await fetch(url);
+  if (response.status != 200) {
+    return response;
+  }
 
   // parse the response as HTML to find <meta http-equiv=refresh>
-  const text = await response.text()
-  const document = new JSDOM(text).window.document
-  const metas = document.querySelectorAll('meta[http-equiv=refresh i][content]')
+  const text = await response.text();
+  const document = new JSDOM(text).window.document;
+  const metas = document.querySelectorAll(
+      'meta[http-equiv=refresh i][content]');
 
   for (let i = 0; i < metas.length; i++) {
-    const content = metas[i].getAttribute('content')
+    const content = metas[i].getAttribute('content');
 
     // do something simple, the correct behavior is complicated:
     // https://html.spec.whatwg.org/multipage/semantics.html#attr-meta-http-equiv-refresh
     try {
-      const url = normalizeUrl(content.split('=')[1].replace(/['" ]/g, ''))
-      return followRedirects(url)
-    } catch(e) {}
-  }
-
-  return response
-}
-
-async function main() {
-  const specsPath = process.argv[2]
-  console.assert(specsPath)
-  const specs = JSON.parse(fs.readFileSync(specsPath))
-
-  const token = process.env.GH_TOKEN
-  if (!token)
-    console.warn('Warning: no GitHub token given, provide it via GH_TOKEN')
-
-  const gh = new GitHub({ token: token })
-
-  const fetches = []
-
-  for (const org of orgs) {
-    const repos = (await gh.getOrganization(org).getRepos()).data
-
-    console.log(`Checking ${repos.length} ${org} repos`)
-    for (const repo of repos) {
-      const url = `https://${org}.github.io/${repo.name}/`
-
-      if (REPO_BLOCKLIST.has(repo.full_name))
-        continue
-
-      if (specs.some(spec => spec.href.startsWith(url)))
-        continue
-
-      fetches.push(followRedirects(url))
+      const url = normalizeUrl(content.split('=')[1].replace(/['" ]/g, ''));
+      return followRedirects(url);
+    } catch (e) {
+      // swallow error
     }
   }
 
-  const responses = (await Promise.all(fetches)).filter(r => r.status == 200)
+  return response;
+}
 
-  // make responses unique (we can end up at the same URL many times)
-  const urlMap = new Map
-  for (const response of responses) {
-    if (!urlMap.has(response.url))
-      urlMap.set(response.url, response)
+async function main() {
+  const specsPath = process.argv[2];
+  console.assert(specsPath);
+  const specs = JSON.parse(fs.readFileSync(specsPath));
+
+  const token = process.env.GH_TOKEN;
+  if (!token) {
+    console.warn('Warning: no GitHub token given, provide it via GH_TOKEN');
   }
 
-  console.log(`URLs not in ${specsPath}:`)
+  const gh = new GitHub({token: token});
+
+  const fetches = [];
+
+  for (const org of orgs) {
+    const repos = (await gh.getOrganization(org).getRepos()).data;
+
+    console.log(`Checking ${repos.length} ${org} repos`);
+    for (const repo of repos) {
+      const url = `https://${org}.github.io/${repo.name}/`;
+
+      if (REPO_BLOCKLIST.has(repo.full_name)) {
+        continue;
+      }
+
+      if (specs.some((spec) => spec.href.startsWith(url))) {
+        continue;
+      }
+
+      fetches.push(followRedirects(url));
+    }
+  }
+
+  const responses = (await Promise.all(fetches)).filter((r) => r.status == 200);
+
+  // make responses unique (we can end up at the same URL many times)
+  const urlMap = new Map;
+  for (const response of responses) {
+    if (!urlMap.has(response.url)) {
+      urlMap.set(response.url, response);
+    }
+  }
+
+  console.log(`URLs not in ${specsPath}:`);
   for (const response of urlMap.values()) {
-    const url = response.url
-    if (!specs.some(spec => spec.href.startsWith(url)))
-      console.log(`  ${url}`)
+    const url = response.url;
+    if (!specs.some((spec) => spec.href.startsWith(url))) {
+      console.log(`  ${url}`);
+    }
   }
 }
 
-main()
+main();

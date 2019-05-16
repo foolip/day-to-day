@@ -1,10 +1,10 @@
-'use strict'
+'use strict';
 
-const fs = require('fs')
-const fetch = require('node-fetch')
-const URL = require('url').URL
+const fs = require('fs');
+const fetch = require('node-fetch');
+const URL = require('url').URL;
 
-const biblio = ['biblio', 'w3c', 'whatwg', 'wicg']
+const biblio = ['biblio', 'w3c', 'whatwg', 'wicg'];
 
 // specref names to drop on the floor
 const blocklist = [
@@ -135,96 +135,100 @@ const blocklist = [
   'wot-thing-description',
   'wpub',
   'wpub-ann',
-]
+];
 
 function processGroup(group) {
-  const url = `https://github.com/tobie/specref/raw/master/refs/${group}.json`
+  const url = `https://github.com/tobie/specref/raw/master/refs/${group}.json`;
 
-  console.log(`Fetching ${url}`)
+  console.log(`Fetching ${url}`);
   return fetch(url)
-    .then(response => response.json())
-    .then(processRefs.bind(null, group))
+      .then((response) => response.json())
+      .then(processRefs.bind(null, group));
 }
 
 function processRefs(group, refs) {
-  const specs = []
+  const specs = [];
 
   for (const name in refs) {
-    if (blocklist.includes(name))
-      continue
-    const info = refs[name]
-    const entry = processRef(group, refs[name])
-    if (entry)
-      specs.push(entry)
+    if (blocklist.includes(name)) {
+      continue;
+    }
+    const entry = processRef(group, refs[name]);
+    if (entry) {
+      specs.push(entry);
+    }
   }
 
-  return specs
+  return specs;
 }
 
 // turns group+info into a spec entry or returns undefined if skipped
 function processRef(group, info) {
-  if (!info.href || !info.title)
-    return
+  if (!info.href || !info.title) {
+    return;
+  }
 
   function entryFromGitHubIO(url) {
-    console.assert(url.hostname.endsWith('.github.io'))
+    console.assert(url.hostname.endsWith('.github.io'));
 
-    const id = url.pathname.split('/')[1]
+    const id = url.pathname.split('/')[1];
 
     return {
       id: id,
       name: info.title
-        .replace(/ Level \d+$/, '')
-        .replace(/ Module$/, '')
-        .replace(/ \d+(\.\d+)?$/, '')
-        .replace(/ Specification$/, ''),
+          .replace(/ Level \d+$/, '')
+          .replace(/ Module$/, '')
+          .replace(/ \d+(\.\d+)?$/, '')
+          .replace(/ Specification$/, ''),
       href: url.href,
       specrepo: `${url.hostname.split('.')[0]}/${id}`,
-    }
+    };
   }
 
   function entryFromDraftsOrg(url) {
     console.assert(url.hostname == 'drafts.css-houdini.org' ||
                    url.hostname == 'drafts.csswg.org' ||
-                   url.hostname == 'drafts.fxtf.org')
+                   url.hostname == 'drafts.fxtf.org');
 
-    const org = url.hostname.split('.')[1]
-    const match = /^\/(.*)\/$/.exec(url.pathname)
-    let id = match[1]
-    console.assert(!id.includes('/'))
+    const org = url.hostname.split('.')[1];
+    const match = /^\/(.*)\/$/.exec(url.pathname);
+    let id = match[1];
+    console.assert(!id.includes('/'));
     // no versions thanks
     if (id.startsWith('css3')) {
-      if (id == 'css3-background')
-        id = 'css-backgrounds' // plural
-      else
-        id = id.replace('css3', 'css')
+      if (id == 'css3-background') {
+        id = 'css-backgrounds'; // plural
+      } else {
+        id = id.replace('css3', 'css');
+      }
     } else {
-      id = id.replace(/-\d$/, '')
+      id = id.replace(/-\d$/, '');
     }
-    url.pathname = `/${id}/`
+    url.pathname = `/${id}/`;
 
     const testpolicy = {
       'drafts.css-houdini.org': 'https://github.com/w3c/css-houdini-drafts#tests',
       'drafts.csswg.org': 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
       'drafts.fxtf.org': 'https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md',
-    }[url.hostname]
+    }[url.hostname];
 
     return {
       id: id,
       name: info.title
-        .replace(/ Level \d+$/, '')
-        .replace(/ Module$/, ''),
+          .replace(/ Level \d+$/, '')
+          .replace(/ Module$/, ''),
       href: url.href,
       specrepo: `w3c/${org}-drafts`,
       // Note: mediaqueries-5 has the highest level on 2017-09-30
       specpath: `${id} ${id}-1 ${id}-2 ${id}-3 ${id}-4 ${id}-5`,
-      testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 css/${id}-4 css/${id}-5`,
+      testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 `
+          + `css/${id}-4 css/${id}-5`,
       testpolicy: testpolicy,
-    }
+    };
   }
 
   function entryFromSvgwgOrg(url) {
-    console.assert(url.hostname == 'svgwg.org')
+    console.assert(url.hostname == 'svgwg.org');
 
     const entry = {
       id: undefined, // just for the order
@@ -232,153 +236,162 @@ function processRef(group, info) {
       href: url.href,
       specrepo: 'w3c/svgwg',
       testpolicy: 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
-    }
+    };
 
     if (url.pathname == '/svg2-draft/') {
       entry.id = 'svg',
-      entry.name = 'SVG'
-      entry.specpath = 'master'
+      entry.name = 'SVG';
+      entry.specpath = 'master';
     } else {
-      console.assert(url.pathname.startsWith('/specs/')  &&
-                     url.pathname.endsWith('/'))
-      const id = url.pathname.split('/')[2]
-      entry.id = `svg-${id}`
-      entry.specpath = `specs/${id}`
+      console.assert(url.pathname.startsWith('/specs/') &&
+                     url.pathname.endsWith('/'));
+      const id = url.pathname.split('/')[2];
+      entry.id = `svg-${id}`;
+      entry.specpath = `specs/${id}`;
     }
 
-    return entry
+    return entry;
   }
 
   switch (group) {
-  case 'biblio': {
-    const url = new URL(info.href)
-    if (url.hostname.endsWith('.github.io'))
-      return entryFromGitHubIO(url)
-
-    // TODO: handle more interesting things, like WebGL
-    return
-  }
-
-  case 'w3c': {
-    // ignore everything that isn't maintained
-    if (info.status != 'ED' && !info.edDraft)
-      return
-    if (info.status == 'NOTE')
-      return
-
-    let url = info.edDraft || info.href
-
-    // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
-    const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/'
-    if (url.startsWith(OLD_CSS_PREFIX))
-      url = 'https://drafts.csswg.org/' + url.substr(OLD_CSS_PREFIX.length)
-
-    url = new URL(url)
-
-    const HOSTNAMES = [
-      'drafts.css-houdini.org',
-      'drafts.csswg.org',
-      'drafts.fxtf.org',
-      'heycam.github.io',
-      'svgwg.org',
-      'w3c.github.io',
-      'webaudio.github.io',
-    ]
-
-    if (!HOSTNAMES.some(hostname => url.hostname == hostname))
-      return
-
-    if (url.hostname.endsWith('.github.io')) {
-      const entry = entryFromGitHubIO(url)
-
-      // the webappsec prefix isn't used in the wpt dirname
-      if (entry.id.startsWith('webappsec-'))
-        entry.testpath = entry.id.substr(10)
-
-      // the Web Performance WG has a testing policy
-      if (info.deliveredBy &&
-          info.deliveredBy.includes('https://www.w3.org/webperf/')) {
-        entry.testpolicy = 'https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md'
+    case 'biblio': {
+      const url = new URL(info.href);
+      if (url.hostname.endsWith('.github.io')) {
+        return entryFromGitHubIO(url);
       }
 
-      return entry
+      // TODO: handle more interesting things, like WebGL
+      return;
     }
 
-    if (url.hostname.startsWith('drafts.'))
-      return entryFromDraftsOrg(url)
+    case 'w3c': {
+    // ignore everything that isn't maintained
+      if (info.status != 'ED' && !info.edDraft) {
+        return;
+      }
+      if (info.status == 'NOTE') {
+        return;
+      }
 
-    console.assert(url.hostname == 'svgwg.org')
-    return entryFromSvgwgOrg(url)
-  }
+      let url = info.edDraft || info.href;
 
-  case 'whatwg': {
-    if (info.obsoletedBy)
-      return
+      // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
+      const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/';
+      if (url.startsWith(OLD_CSS_PREFIX)) {
+        url = 'https://drafts.csswg.org/' + url.substr(OLD_CSS_PREFIX.length);
+      }
 
-    const url = new URL(info.href)
+      url = new URL(url);
 
-    console.assert(url.hostname.endsWith('.idea.whatwg.org') ||
-                   url.hostname.endsWith('.spec.whatwg.org'))
+      const HOSTNAMES = [
+        'drafts.css-houdini.org',
+        'drafts.csswg.org',
+        'drafts.fxtf.org',
+        'heycam.github.io',
+        'svgwg.org',
+        'w3c.github.io',
+        'webaudio.github.io',
+      ];
 
-    const id = url.hostname.split('.')[0]
+      if (!HOSTNAMES.some((hostname) => url.hostname == hostname)) {
+        return;
+      }
 
-    return {
-      id: id,
-      name: info.title.replace(/ Standard$/, ''),
-      href: url.href,
-      specrepo: 'whatwg/' + id,
-      testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
+      if (url.hostname.endsWith('.github.io')) {
+        const entry = entryFromGitHubIO(url);
+
+        // the webappsec prefix isn't used in the wpt dirname
+        if (entry.id.startsWith('webappsec-')) {
+          entry.testpath = entry.id.substr(10);
+        }
+
+        // the Web Performance WG has a testing policy
+        if (info.deliveredBy &&
+          info.deliveredBy.includes('https://www.w3.org/webperf/')) {
+          entry.testpolicy = 'https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md';
+        }
+
+        return entry;
+      }
+
+      if (url.hostname.startsWith('drafts.')) {
+        return entryFromDraftsOrg(url);
+      }
+
+      console.assert(url.hostname == 'svgwg.org');
+      return entryFromSvgwgOrg(url);
+    }
+
+    case 'whatwg': {
+      if (info.obsoletedBy) {
+        return;
+      }
+
+      const url = new URL(info.href);
+
+      console.assert(url.hostname.endsWith('.idea.whatwg.org') ||
+                   url.hostname.endsWith('.spec.whatwg.org'));
+
+      const id = url.hostname.split('.')[0];
+
+      return {
+        id: id,
+        name: info.title.replace(/ Standard$/, ''),
+        href: url.href,
+        specrepo: 'whatwg/' + id,
+        testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
+      };
+    }
+
+    case 'wicg': {
+      const url = new URL(info.href);
+      console.assert(url.hostname.endsWith('.github.io'));
+      const entry = entryFromGitHubIO(url);
+      // TODO: it might be simpler to just use the specref ids more
+      if (entry.href == 'https://wicg.github.io/shape-detection-api/text.html') {
+        entry.id = 'text-detection-api';
+      }
+      return entry;
     }
   }
 
-  case 'wicg': {
-    const url = new URL(info.href)
-    console.assert(url.hostname.endsWith('.github.io'))
-    const entry = entryFromGitHubIO(url)
-    // TODO: it might be simpler to just use the specref ids more
-    if (entry.href == 'https://wicg.github.io/shape-detection-api/text.html')
-      entry.id = 'text-detection-api'
-    return entry
-  }
-
-  }
-
-  throw `Unknown group: ${group}`
+  throw new Error(`Unknown group: ${group}`);
 }
 
 async function main() {
-  const specsPath = process.argv[2]
-  console.assert(specsPath)
+  const specsPath = process.argv[2];
+  console.assert(specsPath);
 
-  console.log('Reading specs-manual.json')
-  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'))
-  const specGroups = await Promise.all(biblio.map(processGroup))
-  const specs = [].concat(specsManual, ...specGroups)
+  console.log('Reading specs-manual.json');
+  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'));
+  const specGroups = await Promise.all(biblio.map(processGroup));
+  const specs = [].concat(specsManual, ...specGroups);
 
   function uniqueMap(prop) {
-    const map = new Map
+    const map = new Map;
     for (const entry of specs) {
-      if (map.has(entry[prop]))
-        throw `duplicate ${prop}: ${entry[prop]}`
-      map.set(entry[prop], entry)
+      if (map.has(entry[prop])) {
+        throw new Error(`duplicate ${prop}: ${entry[prop]}`);
+      }
+      map.set(entry[prop], entry);
     }
-    return map
+    return map;
   }
 
-  const idMap = uniqueMap('id')
+  const idMap = uniqueMap('id');
 
-  console.log('Applying specs-fixes.json')
-  const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'))
+  console.log('Applying specs-fixes.json');
+  const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'));
   for (const fix of specsFixes) {
-    Object.assign(idMap.get(fix.id), fix)
+    Object.assign(idMap.get(fix.id), fix);
   }
 
   // check that names are unique, ignore returned map
-  uniqueMap('name')
+  uniqueMap('name');
 
   // done
-  console.log(`Writing ${specsPath}`)
-  fs.writeFileSync(specsPath, JSON.stringify(specs, null, '  ') + '\n')
+  console.log(`Writing ${specsPath}`);
+  fs.writeFileSync(specsPath, JSON.stringify(specs, null, '  ') + '\n');
 }
 
-main()
+main();
