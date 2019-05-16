@@ -112,6 +112,7 @@ const blocklist = [
   'typography',
   'uievents-code',
   'uievents-key',
+  'user-timing-2',
   'using-aria',
   'vehicle-information-api',
   'vehicle-information-service',
