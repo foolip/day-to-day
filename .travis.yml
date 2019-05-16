@@ -5,7 +5,7 @@ language: node_js
 node_js: stable
 script:
   - npm run lint
-  - ./build.sh
+  - npm run build
   - ./check.sh
 deploy:
   local-dir: out
