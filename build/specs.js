@@ -138,13 +138,12 @@ const blocklist = [
   'wpub-ann',
 ];
 
-function processGroup(group) {
+async function processGroup(group) {
   const url = `https://github.com/tobie/specref/raw/master/refs/${group}.json`;
 
   console.log(`Fetching ${url}`);
-  return fetch(url)
-      .then((response) => response.json())
-      .then(processRefs.bind(null, group));
+  const refs = await (await fetch(url)).json();
+  return processRefs(group, refs);
 }
 
 function processRefs(group, refs) {
