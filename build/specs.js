@@ -370,8 +370,11 @@ async function main() {
   function uniqueMap(prop) {
     const map = new Map;
     for (const entry of specs) {
-      if (map.has(entry[prop])) {
-        throw new Error(`duplicate ${prop}: ${entry[prop]}`);
+      const existingEntry = map.get(entry[prop]);
+      if (existingEntry) {
+        throw new Error(`duplicate ${prop} ${entry[prop]}:\n` +
+                        `${JSON.stringify(existingEntry)}\n` +
+                        `${JSON.stringify(entry)}`);
       }
       map.set(entry[prop], entry);
     }
@@ -394,4 +397,7 @@ async function main() {
   fs.writeFileSync(specsPath, JSON.stringify(specs, null, '  ') + '\n');
 }
 
-main();
+main().catch((reason) => {
+  console.error(reason);
+  process.exit(1);
+});
