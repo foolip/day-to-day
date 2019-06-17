@@ -1,6 +1,6 @@
 'use strict';
 
-const GitHub = require('github-api');
+const Octokit = require('@octokit/rest');
 const URL = require('url').URL;
 const fetch = require('node-fetch');
 const fs = require('fs');
@@ -337,12 +337,12 @@ async function main() {
     console.warn('Warning: no GitHub token given, provide it via GH_TOKEN');
   }
 
-  const gh = new GitHub({token: token});
+  const octokit = new Octokit({auth: token});
 
   const fetches = [];
 
   for (const org of orgs) {
-    const repos = (await gh.getOrganization(org).getRepos()).data;
+    const repos = (await octokit.repos.listForOrg({org})).data;
 
     console.log(`Checking ${repos.length} ${org} repos`);
     for (const repo of repos) {
