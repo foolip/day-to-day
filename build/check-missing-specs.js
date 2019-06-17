@@ -342,7 +342,8 @@ async function main() {
   const fetches = [];
 
   for (const org of orgs) {
-    const repos = (await octokit.repos.listForOrg({org})).data;
+    const options = octokit.repos.listForOrg.endpoint.merge({org});
+    const repos = await octokit.paginate(options);
 
     console.log(`Checking ${repos.length} ${org} repos`);
     for (const repo of repos) {
