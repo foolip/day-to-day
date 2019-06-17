@@ -1,7 +1,6 @@
 'use strict';
 
 const Octokit = require('@octokit/rest');
-const URL = require('url').URL;
 const fetch = require('node-fetch');
 const fs = require('fs');
 const JSDOM = require('jsdom').JSDOM;
