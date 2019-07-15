@@ -27,6 +27,7 @@ const blocklist = [
   'WICG-MST-CONTENT-HINT', // https://github.com/tobie/specref/pull/473
   'WICG-NETWORK-ERROR-LOGGING',
   'WCAG21',
+  'accname-1.1',
   'accname-aam-1.1',
   'act-rules-format-1.0',
   'activitypub',
