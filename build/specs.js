@@ -13,6 +13,7 @@ const blocklist = [
   'COWL',
   'CSP2',
   'CSS2',
+  'CSS-ANIMATION-WORKLET',
   'CSS-OVERSCROLL-BEHAVIOR',
   'CSS-PARSER-API', // https://github.com/WICG/admin/pull/45
   'DASHIFIOP',
