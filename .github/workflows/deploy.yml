@@ -1,0 +1,21 @@
+on:
+  push:
+    branches:
+      - master
+name: deploy
+jobs:
+  deploy:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v1
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+    - run: npm ci
+    - run: npm run build
+    - run: ./check.sh
+    - uses: JamesIves/github-pages-deploy-action@v2
+      env:
+        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: out
