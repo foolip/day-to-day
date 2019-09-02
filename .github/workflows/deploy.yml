@@ -16,6 +16,6 @@ jobs:
     - run: ./check.sh
     - uses: JamesIves/github-pages-deploy-action@2.0.1
       env:
-        ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
         BRANCH: gh-pages
         FOLDER: out
