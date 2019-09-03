@@ -9,8 +9,8 @@ const repo = require('./repo');
 
 function getLog(dir, since, until, options) {
   // --date=short-local combined with TZ=UTC gets us the UTC date.
-  let cmd = `git log --no-merges --since="${since}" --until="${until}" `
-      + `--date=short-local --pretty="%cd\t%ae\t%h\t%s"`;
+  let cmd = `git log --no-merges --since="${since}" --until="${until}" ` +
+      `--date=short-local --pretty="%cd\t%ae\t%h\t%s"`;
   if (options.path) {
     cmd += ` -- ${options.path}`;
   }
