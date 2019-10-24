@@ -104,6 +104,7 @@ const blocklist = [
   'pronunciation-lexicon',
   'pronunciation-use-cases',
   'pronunciation-user-scenarios',
+  'pub-manifest',
   'pwpub',
   'resource-timing-1',
   'selectors-4',
