@@ -113,6 +113,7 @@ const blocklist = [
   'service-workers-nightly',
   'shacl',
   'shadow-dom',
+  'string-meta',
   'svg-aam-1.0',
   'tabular-data-model',
   'tabular-metadata',
