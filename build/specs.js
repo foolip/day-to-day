@@ -38,6 +38,7 @@ const blocklist = [
   'annotation-model',
   'annotation-protocol',
   'annotation-vocab',
+  'audiobooks',
   'charmod-norm',
   'clreq',
   'coga-gap-analysis',
