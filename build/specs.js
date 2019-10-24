@@ -42,6 +42,7 @@ const blocklist = [
   'charmod-norm',
   'clreq',
   'coga-gap-analysis',
+  'coga-usable',
   'coga-user-research',
   'core-aam-1.1',
   'css3-images',
