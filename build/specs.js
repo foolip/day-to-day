@@ -133,6 +133,7 @@ const blocklist = [
   'wai-aria-practices-1.2',
   'wcag2-ext-req',
   'webauthn-1',
+  'webdriver1',
   'webpayments-http-api',
   'webpayments-http-messages',
   'webstorage',
