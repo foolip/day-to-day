@@ -395,7 +395,11 @@ async function main() {
   console.log('Applying specs-fixes.json');
   const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'));
   for (const fix of specsFixes) {
-    Object.assign(idMap.get(fix.id), fix);
+    const spec = idMap.get(fix.id);
+    if (!spec) {
+      throw new Error(`have spec fix with id ${fix.id} but no spec found`);
+    }
+    Object.assign(spec, fix);
   }
 
   // check that names are unique, ignore returned map
