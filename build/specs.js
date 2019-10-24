@@ -124,6 +124,7 @@ const blocklist = [
   'uievents-key',
   'user-timing-2',
   'using-aria',
+  'vc-data-model',
   'vehicle-information-api',
   'vehicle-information-service',
   'verifiable-claims-data-model',
