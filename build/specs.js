@@ -91,6 +91,7 @@ const blocklist = [
   'ltli',
   'matrix',
   'microdata',
+  'mini-app-white-paper',
   'mobile-accessibility-mapping',
   'odrl-model',
   'odrl-vocab',
