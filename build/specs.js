@@ -262,11 +262,31 @@ function processRef(group, info) {
     return entry;
   }
 
+  function entryFromTC39(url) {
+    console.assert(url.hostname == 'tc39.es');
+
+    const repoURL = new URL(info.repository);
+    console.assert(repoURL.hostname == 'github.com');
+
+    const [org, repo] = repoURL.pathname.split('/').filter(s => s);
+
+    return {
+      id: repo,
+      name: info.title,
+      href: url.href,
+      specrepo: `${org}/${repo}`,
+    };
+  }
+
   switch (group) {
     case 'biblio': {
       const url = new URL(info.href);
       if (url.hostname.endsWith('.github.io')) {
         return entryFromGitHubIO(url);
+      }
+
+      if (url.hostname == 'tc39.es') {
+        return entryFromTC39(url);
       }
 
       // TODO: handle more interesting things, like WebGL
