@@ -13,7 +13,7 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 10.x
-    - run: npm ci
+    - run: npm ci --production
     - run: npm run build
     - run: ./check.sh
     - uses: JamesIves/github-pages-deploy-action@2.0.1
