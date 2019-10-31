@@ -274,7 +274,7 @@ function processRef(group, info) {
     const repoURL = new URL(info.repository);
     console.assert(repoURL.hostname == 'github.com');
 
-    const [org, repo] = repoURL.pathname.split('/').filter(s => s);
+    const [org, repo] = repoURL.pathname.split('/').filter((s) => s);
 
     return {
       id: repo,
