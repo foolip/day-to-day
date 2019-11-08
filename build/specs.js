@@ -50,6 +50,7 @@ const blocklist = [
   'css-break-3',
   'css-cascade-3',
   'css-color-3',
+  'css-contain-1',
   'css-fonts-3',
   'css-grid-1',
   'css-overflow-3',
