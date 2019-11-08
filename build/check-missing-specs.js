@@ -262,7 +262,6 @@ const REPO_BLOCKLIST = new Set([
   'w3c/web-based-signage-bg',
   'w3c/web-ledger',
   'w3c/web-performance',
-  'w3c/web-platform-tests',
   'w3c/web-roadmaps',
   'w3c/web5g-workshop',
   'w3c/webappsec',

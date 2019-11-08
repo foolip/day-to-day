@@ -50,7 +50,7 @@ function getTestRepo(entry) {
   const repo = entry.testrepo;
 
   if (!repo) {
-    return 'https://github.com/w3c/web-platform-tests';
+    return 'https://github.com/web-platform-tests/wpt';
   }
 
   if (repo.startsWith('https://')) {

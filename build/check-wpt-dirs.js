@@ -29,7 +29,7 @@ const IGNORE_WPT_DIRS = new Set([
   'images',
   'infrastructure',
   'interfaces',
-  'js', // https://github.com/w3c/web-platform-tests/issues/6462
+  'js', // https://github.com/web-platform-tests/wpt/issues/6462
   'media',
   'old-tests',
   'resources',
@@ -56,7 +56,7 @@ function main() {
   const specs = JSON.parse(fs.readFileSync(specsPath));
 
   // set of all dirs that (currently) really exist in wpt
-  const wptDir = repo.checkout('https://github.com/w3c/web-platform-tests', {update: false});
+  const wptDir = repo.checkout('https://github.com/web-platform-tests/wpt', {update: false});
   const realWptDirs = findWptDirs(wptDir);
 
   // set of all dirs in wpt that are used by some entry
@@ -66,8 +66,8 @@ function main() {
   const specsWithoutWptDirs = [];
 
   for (const entry of specs) {
-    // skips specs where the tests aren't int wpt
-    if (entry.testrepo && !entry.testrepo != 'w3c/web-platform-tests') {
+    // skips specs where the tests aren't in wpt
+    if (entry.testrepo && !entry.testrepo != 'web-platform-tests/wpt') {
       continue;
     }
 
