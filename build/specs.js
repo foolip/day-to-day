@@ -53,6 +53,7 @@ const blocklist = [
   'css-contain-1',
   'css-fonts-3',
   'css-grid-1',
+  'css-images-3',
   'css-overflow-3',
   'css-text-3',
   'css-text-decor-3',
