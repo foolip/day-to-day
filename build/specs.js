@@ -201,7 +201,8 @@ function processRef(group, info) {
           .replace(/ Level \d+$/, '')
           .replace(/ Module$/, '')
           .replace(/ \d+(\.\d+)?$/, '')
-          .replace(/ Specification$/, ''),
+          .replace(/ Specification$/, '')
+          .replace(/ -$/, ''),
       href: url.href,
       specrepo: `${url.hostname.split('.')[0]}/${id}`,
     };
@@ -330,6 +331,7 @@ function processRef(group, info) {
         'drafts.csswg.org',
         'drafts.fxtf.org',
         'heycam.github.io',
+        'immersive-web.github.io',
         'svgwg.org',
         'w3c.github.io',
         'webaudio.github.io',
