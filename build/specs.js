@@ -105,6 +105,7 @@ const blocklist = [
   'personalization-semantics-help-1.0',
   'personalization-semantics-tools-1.0',
   'poe-ucr',
+  'pointerevents2',
   'pointerlock',
   'pronunciation-gap-analysis',
   'pronunciation-lexicon',
