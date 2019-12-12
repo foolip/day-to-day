@@ -64,6 +64,7 @@ const blocklist = [
   'csv2rdf',
   'custom-elements',
   'did-core',
+  'did-use-cases',
   'dom41',
   'dpub-aam-1.0',
   'dpub-aria-1.0',
