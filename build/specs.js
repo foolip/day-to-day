@@ -120,6 +120,7 @@ const blocklist = [
   'service-workers-nightly',
   'shacl',
   'shadow-dom',
+  'staticrange',
   'string-meta',
   'svg-aam-1.0',
   'tabular-data-model',
