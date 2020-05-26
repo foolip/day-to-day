@@ -425,6 +425,7 @@ async function main() {
   const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'));
   const specGroups = await Promise.all(biblio.map(processGroup));
   const specs = [].concat(specsManual, ...specGroups);
+  specs.sort((a, b) => a.id.localeCompare(b.id));
 
   function uniqueMap(prop) {
     const map = new Map;
