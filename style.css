@@ -1,0 +1,76 @@
+:root {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  margin: auto;
+  width: 700px;
+}
+
+p {
+  margin: 24px 0;
+}
+
+a {
+  color: hsl(90, 60%, 35%);
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 24px;
+  text-align: center;
+}
+
+main {
+  margin: 24px 0;
+}
+
+table {
+  border-collapse: collapse;
+  border-style: hidden;
+  margin: 5px 0;
+}
+
+caption {
+  font-size: 15px;
+  height: 22px;
+  line-height: 22px;
+  text-align: left;
+}
+
+caption div {
+  color: gray;
+  float: right;
+  font-size: 14px;
+}
+
+/* make the sort key part of the caption bold */
+.sort-spec caption .spec,
+.sort-test caption .test,
+.sort-total caption .total {
+  font-weight: bold;
+}
+
+td {
+  background: #eee;
+  border: 2px solid white;
+  height: 10px;
+  padding: 0;
+  width: 10px;
+}
+
+td.activity {
+  background: hsl(90, 60%, 70%);
+}
+
+footer {
+  color: gray;
+  font-size: 14px;
+  margin: 24px;
+  text-align: center;
+}
+
+/* the loading class is added and removed by script */
+.loading main, .loading footer {
+  display: none;
+}
