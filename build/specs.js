@@ -1,232 +1,35 @@
 'use strict';
 
+const browserSpecs = require('browser-specs');
 const fs = require('fs');
-const fetch = require('node-fetch');
-const URL = require('url').URL;
 
-const biblio = ['biblio', 'w3c', 'whatwg', 'wicg'];
+// browser-specs shortnames to drop on the floor
+const blocklist = new Set([
+  'css-forms', // https://github.com/w3c/browser-specs/issues/56
+  'css-speech', // https://github.com/w3c/browser-specs/issues/54
+  'css-tv', // https://github.com/w3c/browser-specs/issues/51
+  'wai-aria', // https://github.com/w3c/browser-specs/issues/53
+]);
 
-// specref names to drop on the floor
-const blocklist = [
-  'API-DESIGN-PRINCIPLES',
-  'AV1',
-  'BBC-SUBTITLE',
-  'COWL',
-  'CSP2',
-  'CSS2',
-  'CSS-ANIMATION-WORKLET',
-  'CSS-OVERSCROLL-BEHAVIOR',
-  'CSS-PARSER-API', // https://github.com/WICG/admin/pull/45
-  'DASHIFIOP',
-  'DIFFERENCES',
-  'GraphQL',
-  'HTML-EXTENSIONS',
-  'INFRA',
-  'IndexedDB',
-  'LOADER',
-  'REPORTING',
-  'RESIZE-OBSERVER',
-  'UISecurity',
-  'WEBVMT',
-  'WICG-GEOLOCATION-SENSOR', // https://github.com/tobie/specref/commit/a807c9e6c5ff88a1a7d3c1c32791f18248afed48
-  'WICG-MST-CONTENT-HINT', // https://github.com/tobie/specref/pull/473
-  'WICG-NETWORK-ERROR-LOGGING',
-  'WICG-WEB-SHARE',
-  'WCAG21',
-  'WCAG22',
-  'accessibility-conformance-challenges',
-  'accname-1.1',
-  'accname-aam-1.1',
-  'act-rules-format-1.0',
-  'activitypub',
-  'activitystreams-core',
-  'activitystreams-vocabulary',
-  'alreq',
-  'annotation-model',
-  'annotation-protocol',
-  'annotation-vocab',
-  'audiobooks',
-  'charmod-norm',
-  'clreq',
-  'coga-gap-analysis',
-  'coga-usable',
-  'coga-user-research',
-  'core-aam-1.1',
-  'css3-conditional',
-  'css3-images',
-  'css3-mediaqueries',
-  'css-box-3',
-  'css-break-3',
-  'css-cascade-3',
-  'css-color-3',
-  'css-color-4',
-  'css-contain-1',
-  'css-fonts-3',
-  'css-grid-1',
-  'css-images-3',
-  'css-overflow-3',
-  'css-sizing-3',
-  'css-text-3',
-  'css-text-decor-3',
-  'css-transforms-1',
-  'css-ui-3',
-  'css-values-3',
-  'css-writing-modes-3',
-  'csv2json',
-  'csv2rdf',
-  'custom-elements',
-  'did-core',
-  'did-use-cases',
-  'dom41',
-  'dpub-aam-1.0',
-  'dpub-aria-1.0',
-  'dpub-css-priorities',
-  'dpub-latinreq',
-  'dwbp',
-  'dx-prof',
-  'dx-prof-conneg',
-  'elreq',
-  'graphics-aam-1.0',
-  'graphics-aria-1.0',
-  'html-aam-1.0',
-  'html-aria',
-  'html-imports',
-  'html52',
-  'html53',
-  'ilreq',
-  'indie-ui-context',
-  'indie-ui-events',
-  'international-specs',
-  'json-ld',
-  'json-ld-api',
-  'json-ld-syntax',
-  'json-ld11',
-  'json-ld11-api',
-  'json-ld11-framing',
-  'klreq',
-  'low-vision-needs',
-  'ltli',
-  'matrix',
-  'mediaqueries-4',
-  'microdata',
-  'mini-app-white-paper',
-  'mobile-accessibility-mapping',
-  'odrl-model',
-  'odrl-vocab',
-  'owl-time',
-  'personalization-semantics-1.0',
-  'personalization-semantics-content-1.0',
-  'personalization-semantics-help-1.0',
-  'personalization-semantics-requirements-1.0',
-  'personalization-semantics-tools-1.0',
-  'poe-ucr',
-  'pointerevents2',
-  'pointerlock',
-  'pronunciation-explainer',
-  'pronunciation-gap-analysis',
-  'pronunciation-gap-analysis-and-use-cases',
-  'pronunciation-lexicon',
-  'pronunciation-use-cases',
-  'pronunciation-user-scenarios',
-  'pub-manifest',
-  'pwpub',
-  'raur',
-  'resource-timing-1',
-  'selectors-4',
-  'selectors-nonelement-1',
-  'service-workers-nightly',
-  'shacl',
-  'shadow-dom',
-  'staticrange',
-  'string-meta',
-  'svg-aam-1.0',
-  'tabular-data-model',
-  'tabular-metadata',
-  'ttml-imsc1',
-  'ttml-imsc1.0.1',
-  'ttml-imsc1.1',
-  'ttml1',
-  'ttml2',
-  'typography',
-  'uievents-code',
-  'uievents-key',
-  'user-timing-2',
-  'using-aria',
-  'vc-data-model',
-  'vehicle-information-api',
-  'vehicle-information-service',
-  'verifiable-claims-data-model',
-  'vocab-dcat-2',
-  'vocab-ssn',
-  'vocab-ssn-ext',
-  'wai-aria-1.1',
-  'wai-aria-practices',
-  'wai-aria-practices-1.1',
-  'wai-aria-practices-1.2',
-  'wcag2-ext-req',
-  'webauthn-1',
-  'webdriver1',
-  'webpayments-http-api',
-  'webpayments-http-messages',
-  'webrtc-nv-use-cases',
-  'webstorage',
-  'websub',
-  'webvr',
-  'widgets-apis',
-  'wot-architecture',
-  'wot-scripting-api',
-  'wot-thing-description',
-  'wpub',
-  'wpub-ann',
-  'xaur',
-];
-
-async function processGroup(group) {
-  const url = `https://github.com/tobie/specref/raw/master/refs/${group}.json`;
-
-  console.log(`Fetching ${url}`);
-  const refs = await (await fetch(url)).json();
-  return processRefs(group, refs);
-}
-
-function processRefs(group, refs) {
-  const specs = [];
-
-  for (const name in refs) {
-    if (blocklist.includes(name)) {
-      continue;
-    }
-    const entry = processRef(group, refs[name]);
-    if (entry) {
-      specs.push(entry);
-    }
-  }
-
-  return specs;
-}
-
-// turns group+info into a spec entry or returns undefined if skipped
-function processRef(group, info) {
-  if (!info.href || !info.title) {
-    return;
-  }
+// infer some additional information for an entry
+function completeEntry(entry, mode) {
+  const {id, name, href} = entry;
 
   function entryFromGitHubIO(url) {
     console.assert(url.hostname.endsWith('.github.io'));
 
-    const id = url.pathname.split('/')[1];
+    const org = url.hostname.split('.')[0];
+    const repo = url.pathname.split('/')[1];
 
-    return {
-      id: id,
-      name: info.title
+    return Object.assign(entry, {
+      name: name
           .replace(/ Level \d+$/, '')
           .replace(/ Module$/, '')
           .replace(/ \d+(\.\d+)?$/, '')
           .replace(/ Specification$/, '')
           .replace(/ -$/, ''),
-      href: url.href,
-      specrepo: `${url.hostname.split('.')[0]}/${id}`,
-    };
+      specrepo: `${org}/${repo}`,
+    });
   }
 
   function entryFromDraftsOrg(url) {
@@ -235,20 +38,6 @@ function processRef(group, info) {
                    url.hostname == 'drafts.fxtf.org');
 
     const org = url.hostname.split('.')[1];
-    const match = /^\/(.*)\/$/.exec(url.pathname);
-    let id = match[1];
-    console.assert(!id.includes('/'));
-    // no versions thanks
-    if (id.startsWith('css3')) {
-      if (id == 'css3-background') {
-        id = 'css-backgrounds'; // plural
-      } else {
-        id = id.replace('css3', 'css');
-      }
-    } else {
-      id = id.replace(/-\d$/, '');
-    }
-    url.pathname = `/${id}/`;
 
     const testpolicy = {
       'drafts.css-houdini.org': 'https://github.com/w3c/css-houdini-drafts#tests',
@@ -256,31 +45,27 @@ function processRef(group, info) {
       'drafts.fxtf.org': 'https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md',
     }[url.hostname];
 
-    return {
-      id: id,
-      name: info.title
+    return Object.assign(entry, {
+      name: name
           .replace(/ Level \d+$/, '')
           .replace(/ Module$/, ''),
-      href: url.href,
+      href: `https://${url.hostname}/${id}/`,
       specrepo: `w3c/${org}-drafts`,
       // Note: mediaqueries-5 has the highest level on 2017-09-30
       specpath: `${id} ${id}-1 ${id}-2 ${id}-3 ${id}-4 ${id}-5`,
       testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 ` +
           `css/${id}-4 css/${id}-5`,
       testpolicy: testpolicy,
-    };
+    });
   }
 
   function entryFromSvgwgOrg(url) {
     console.assert(url.hostname == 'svgwg.org');
 
-    const entry = {
-      id: undefined, // just for the order
-      name: info.title,
-      href: url.href,
+    Object.assign(entry, {
       specrepo: 'w3c/svgwg',
       testpolicy: 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
-    };
+    });
 
     if (url.pathname == '/svg2-draft/') {
       entry.id = 'svg',
@@ -297,173 +82,211 @@ function processRef(group, info) {
     return entry;
   }
 
-  function entryFromTC39(url) {
-    console.assert(url.hostname == 'tc39.es');
+  const url = new URL(href);
 
-    const repoURL = new URL(info.repository);
-    console.assert(repoURL.hostname == 'github.com');
-
-    const [org, repo] = repoURL.pathname.split('/').filter((s) => s);
-
-    return {
-      id: repo,
-      name: info.title,
-      href: url.href,
-      specrepo: `${org}/${repo}`,
-    };
-  }
-
-  switch (group) {
-    case 'biblio': {
-      const url = new URL(info.href);
-      if (url.hostname.endsWith('.github.io')) {
-        return entryFromGitHubIO(url);
-      }
-
-      if (url.hostname == 'tc39.es') {
-        return entryFromTC39(url);
-      }
-
-      // TODO: handle more interesting things, like WebGL
-      return;
-    }
-
-    case 'w3c': {
-    // ignore everything that isn't maintained
-      if (info.status != 'ED' && !info.edDraft) {
-        return;
-      }
-      if (info.status == 'NOTE') {
-        return;
-      }
-
-      let url = info.edDraft || info.href;
-
-      // workaround before fix in https://www.w3.org/2002/01/tr-automation/tr.rdf
-      const OLD_CSS_PREFIX = 'http://dev.w3.org/csswg/';
-      if (url.startsWith(OLD_CSS_PREFIX)) {
-        url = 'https://drafts.csswg.org/' + url.substr(OLD_CSS_PREFIX.length);
-      }
-
-      url = new URL(url);
-      url.protocol = 'https:'; // https://github.com/w3c/browser-specs/issues/55
-
-      const HOSTNAMES = [
-        'drafts.css-houdini.org',
-        'drafts.csswg.org',
-        'drafts.fxtf.org',
-        'heycam.github.io',
-        'immersive-web.github.io',
-        'svgwg.org',
-        'w3c.github.io',
-        'webaudio.github.io',
-      ];
-
-      if (!HOSTNAMES.some((hostname) => url.hostname == hostname)) {
-        return;
-      }
-
-      if (url.hostname.endsWith('.github.io')) {
-        const entry = entryFromGitHubIO(url);
-
-        // the webappsec prefix isn't used in the wpt dirname
-        if (entry.id.startsWith('webappsec-')) {
-          entry.testpath = entry.id.substr(10);
-        }
-
-        // the Web Performance WG has a testing policy
-        if (info.deliveredBy &&
-          info.deliveredBy.includes('https://www.w3.org/webperf/')) {
-          entry.testpolicy = 'https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md';
-        }
-
-        return entry;
-      }
-
-      if (url.hostname.startsWith('drafts.')) {
-        return entryFromDraftsOrg(url);
-      }
-
-      console.assert(url.hostname == 'svgwg.org');
+  // Exact hostname matches
+  switch (url.hostname) {
+    case 'drafts.css-houdini.org':
+    case 'drafts.csswg.org':
+    case 'drafts.fxtf.org':
+      return entryFromDraftsOrg(url);
+    case 'svgwg.org':
       return entryFromSvgwgOrg(url);
-    }
-
-    case 'whatwg': {
-      if (info.obsoletedBy) {
-        return;
-      }
-
-      const url = new URL(info.href);
-
-      console.assert(url.hostname.endsWith('.idea.whatwg.org') ||
-                   url.hostname.endsWith('.spec.whatwg.org'));
-
-      const id = url.hostname.split('.')[0];
-
-      return {
-        id: id,
-        name: info.title.replace(/ Standard$/, ''),
-        href: url.href,
-        specrepo: 'whatwg/' + id,
-        testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
-      };
-    }
-
-    case 'wicg': {
-      const url = new URL(info.href);
-      console.assert(url.hostname.endsWith('.github.io'));
-      const entry = entryFromGitHubIO(url);
-      // TODO: it might be simpler to just use the specref ids more
-      if (entry.href == 'https://wicg.github.io/shape-detection-api/text.html') {
-        entry.id = 'text-detection-api';
-      }
+    case 'www.khronos.org':
       return entry;
-    }
   }
 
-  throw new Error(`Unknown group: ${group}`);
+  // Anything hosted on github.io
+  if (url.hostname.endsWith('.github.io')) {
+    const entry = entryFromGitHubIO(url);
+
+    // the webappsec prefix isn't used in the wpt dirname
+    if (entry.id.startsWith('webappsec-')) {
+      entry.testpath = entry.id.substr(10);
+    }
+
+    // TODO: infer for Web Performance WG using Specref data
+    switch (entry.id) {
+      case 'beacon':
+      case 'device-memory':
+      case 'hr-time':
+      case 'longtasks':
+      case 'navigation-timing':
+      case 'network-error-logging':
+      case 'page-visibility':
+      case 'paint-timing':
+      case 'performance-timeline':
+      case 'preload':
+      case 'reporting':
+      case 'requestidlecallback':
+      case 'resource-hints':
+      case 'resource-timing':
+      case 'server-timing':
+      case 'timing-entrytypes-registry':
+      case 'user-timing':
+        entry.testpolicy = 'https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md';
+    }
+
+    return entry;
+  }
+
+  // WHATWG specs
+  if (url.hostname.endsWith('.idea.whatwg.org') ||
+      url.hostname.endsWith('.spec.whatwg.org')) {
+    const id = url.hostname.split('.')[0];
+
+    return Object.assign(entry, {
+      name: name.replace(/ Standard$/, ''),
+      specrepo: 'whatwg/' + id,
+      testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
+    });
+  }
+
+  if (mode == 'manual') {
+    return entry;
+  }
+
+  throw new Error(`Unmatched spec URL pattern: ${href}`);
+}
+
+function idFromShortname(shortname) {
+  // TODO: remove this mapping
+  switch (shortname) {
+    case 'CSP':
+    case 'feature-policy':
+    case 'fetch-metadata':
+    case 'clear-site-data':
+    case 'credential-management':
+    case 'mixed-content':
+    case 'referrer-policy':
+    case 'secure-contexts':
+    case 'subresource-integrity':
+    case 'trusted-types':
+    case 'upgrade-insecure-requests':
+      return `webappsec-${shortname.toLowerCase()}`;
+
+    case 'CSS':
+      return 'css2';
+    case 'SRI':
+      return 'webappsec-subresource-integrity';
+    case 'WOFF':
+      return 'woff';
+    case 'WebCryptoAPI':
+      return 'webcrypto';
+    case 'WebIDL':
+      return 'webidl';
+    case 'appmanifest':
+      return 'manifest';
+    case 'audio-output':
+      return 'mediacapture-output';
+    case 'battery-status':
+      return 'battery';
+    case 'css-animation-worklet':
+      return 'css-animationworklet';
+    case 'csp-embedded-enforcement':
+      return 'webappsec-cspee';
+    case 'generic-sensor':
+      return 'sensors';
+    case 'geolocation-API':
+      return 'geolocation-api';
+    case 'image-capture':
+      return 'mediacapture-image';
+    case 'intersection-observer':
+      return 'IntersectionObserver';
+    case 'mediastream-recording':
+      return 'mediacapture-record';
+    case 'mediacapture-streams':
+      return 'mediacapture-main';
+    case 'orientation-event':
+      return 'deviceorientation';
+    case 'service-workers':
+      return 'ServiceWorker';
+    case 'screen-capture':
+      return 'mediacapture-screen-share';
+    case 'wake-lock':
+      return 'screen-wake-lock';
+    case 'webaudio':
+      return 'web-audio-api';
+    case 'webgl1':
+      return 'webgl';
+    case 'webmidi':
+      return 'web-midi-api';
+    case 'webrtc':
+      return 'webrtc-pc';
+  }
+  return shortname;
+}
+
+function uniqueMap(entries, prop) {
+  const map = new Map;
+  for (const entry of entries) {
+    const existingEntry = map.get(entry[prop]);
+    if (existingEntry) {
+      throw new Error(`duplicate ${prop} ${entry[prop]}:\n` +
+                      `${JSON.stringify(existingEntry)}\n` +
+                      `${JSON.stringify(entry)}`);
+    }
+    map.set(entry[prop], entry);
+  }
+  return map;
 }
 
 async function main() {
   const specsPath = process.argv[2];
   console.assert(specsPath);
 
-  console.log('Reading specs-manual.json');
-  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'));
-  const specGroups = await Promise.all(biblio.map(processGroup));
-  const specs = [].concat(specsManual, ...specGroups);
-  specs.sort((a, b) => a.id.localeCompare(b.id));
-
-  function uniqueMap(prop) {
-    const map = new Map;
-    for (const entry of specs) {
-      const existingEntry = map.get(entry[prop]);
-      if (existingEntry) {
-        throw new Error(`duplicate ${prop} ${entry[prop]}:\n` +
-                        `${JSON.stringify(existingEntry)}\n` +
-                        `${JSON.stringify(entry)}`);
-      }
-      map.set(entry[prop], entry);
-    }
-    return map;
-  }
-
-  const idMap = uniqueMap('id');
+  console.log('Reading browser-specs');
+  const specsAuto = browserSpecs
+      .filter((entry) => {
+        if (blocklist.has(entry.shortname) ||
+            blocklist.has(entry.series.shortname)) {
+          return false;
+        }
+        // only include the latest level of any spec
+        if (entry.shortname != entry.series.currentSpecification) {
+          return false;
+        }
+        return true;
+      })
+      .map((entry) => {
+        return completeEntry({
+          id: idFromShortname(entry.series.shortname),
+          name: entry.title,
+          href: entry.nightly.url.replace('http://', 'https://'),
+        }, 'auto');
+      });
 
   console.log('Applying specs-fixes.json');
+  const idMap = uniqueMap(specsAuto, 'id');
   const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'));
   for (const fix of specsFixes) {
     const spec = idMap.get(fix.id);
     if (!spec) {
       throw new Error(`have spec fix with id ${fix.id} but no spec found`);
     }
-    Object.assign(spec, fix);
+    for (const [key, value] of Object.entries(fix)) {
+      if (key == 'id') {
+        continue;
+      }
+      if (spec[key] === value) {
+        throw new Error(`unnecessary fix for spec with id ${fix.id}, ${key} is already ${JSON.stringify(value)}`);
+      }
+      spec[key] = value;
+    }
   }
 
-  // check that names are unique, ignore returned map
-  uniqueMap('name');
+  console.log('Reading specs-manual.json');
+  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'))
+      .map((entry) => completeEntry(entry, 'manual'));
 
-  // done
+  const specs = [...specsAuto, ...specsManual];
+  specs.sort((a, b) => a.id.localeCompare(b.id));
+
+  // check that things are unique, ignore returned maps
+  uniqueMap(specs, 'id');
+  uniqueMap(specs, 'name');
+  uniqueMap(specs, 'href');
+
   console.log(`Writing ${specsPath}`);
   fs.writeFileSync(specsPath, JSON.stringify(specs, null, '  ') + '\n');
 }
