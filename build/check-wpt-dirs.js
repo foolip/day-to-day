@@ -4,41 +4,6 @@ const execSync = require('child_process').execSync;
 const fs = require('fs');
 const repo = require('./repo');
 
-const IGNORE_WPT_DIRS = new Set([
-  'acid', // Acid2 and Acid3
-  'annotation-model', // https://www.w3.org/TR/annotation-model/
-  'annotation-protocol', // https://www.w3.org/TR/annotation-protocol/
-  'annotation-vocab', // https://www.w3.org/TR/annotation-vocab/
-  'common',
-  'conformance-checkers',
-  'core-aam', // https://w3c.github.io/aria/core-aam/core-aam.html
-  'css', // tests are in subdirs
-  'css/CSS1', // https://www.w3.org/TR/CSS1/
-  'css/fonts',
-  'css/reference',
-  'css/support',
-  'css/tools',
-  'css/vendor-imports',
-  'css/work-in-progress',
-  'docs',
-  'dpub-aam', // https://w3c.github.io/aria/dpub-aam/dpub-aam.html
-  'dpub-aria', // http://w3c.github.io/aria/aria/dpub.html
-  'fonts',
-  'html-imports', // https://w3c.github.io/webcomponents/spec/imports/
-  'html-longdesc', // https://www.w3.org/TR/html-longdesc/
-  'images',
-  'infrastructure',
-  'interfaces',
-  'js', // https://github.com/web-platform-tests/wpt/issues/6462
-  'media',
-  'old-tests',
-  'resources',
-  'svg-aam', // https://w3c.github.io/aria/svg-aam/svg-aam.html
-  'tools',
-  'wai-aria', // http://w3c.github.io/aria/aria/aria.html
-  'wasm', // https://github.com/WebAssembly/spec/issues/529
-]);
-
 function findWptDirs(dir) {
   const cmd = 'find * -maxdepth 0 -type d -print0; ' +
       'find css/* -maxdepth 0 -type d -print0';
@@ -86,15 +51,6 @@ function main() {
     console.log('Specs without tests (in wpt):');
     for (const entry of specsWithoutWptDirs) {
       console.log(`  ${entry.name} <${entry.href}>`);
-    }
-  }
-
-  const wptDirsWithoutSpec = Array.from(realWptDirs)
-      .filter((dir) => !usedWptDirs.has(dir) && !IGNORE_WPT_DIRS.has(dir));
-  if (wptDirsWithoutSpec.length) {
-    console.log('Directories (in wpt) without spec:');
-    for (const dir of wptDirsWithoutSpec) {
-      console.log(`  ${dir}`);
     }
   }
 }
