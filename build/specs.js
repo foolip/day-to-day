@@ -341,6 +341,7 @@ function processRef(group, info) {
       }
 
       url = new URL(url);
+      url.protocol = 'https:'; // https://github.com/w3c/browser-specs/issues/55
 
       const HOSTNAMES = [
         'drafts.css-houdini.org',
