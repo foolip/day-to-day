@@ -149,74 +149,6 @@ function completeEntry(entry, mode) {
   throw new Error(`Unmatched spec URL pattern: ${href}`);
 }
 
-function idFromShortname(shortname) {
-  // TODO: remove this mapping
-  switch (shortname) {
-    case 'CSP':
-    case 'feature-policy':
-    case 'fetch-metadata':
-    case 'clear-site-data':
-    case 'credential-management':
-    case 'mixed-content':
-    case 'referrer-policy':
-    case 'secure-contexts':
-    case 'subresource-integrity':
-    case 'trusted-types':
-    case 'upgrade-insecure-requests':
-      return `webappsec-${shortname.toLowerCase()}`;
-
-    case 'CSS':
-      return 'css2';
-    case 'SRI':
-      return 'webappsec-subresource-integrity';
-    case 'WOFF':
-      return 'woff';
-    case 'WebCryptoAPI':
-      return 'webcrypto';
-    case 'WebIDL':
-      return 'webidl';
-    case 'appmanifest':
-      return 'manifest';
-    case 'audio-output':
-      return 'mediacapture-output';
-    case 'battery-status':
-      return 'battery';
-    case 'css-animation-worklet':
-      return 'css-animationworklet';
-    case 'csp-embedded-enforcement':
-      return 'webappsec-cspee';
-    case 'generic-sensor':
-      return 'sensors';
-    case 'geolocation-API':
-      return 'geolocation-api';
-    case 'image-capture':
-      return 'mediacapture-image';
-    case 'intersection-observer':
-      return 'IntersectionObserver';
-    case 'mediastream-recording':
-      return 'mediacapture-record';
-    case 'mediacapture-streams':
-      return 'mediacapture-main';
-    case 'orientation-event':
-      return 'deviceorientation';
-    case 'service-workers':
-      return 'ServiceWorker';
-    case 'screen-capture':
-      return 'mediacapture-screen-share';
-    case 'wake-lock':
-      return 'screen-wake-lock';
-    case 'webaudio':
-      return 'web-audio-api';
-    case 'webgl1':
-      return 'webgl';
-    case 'webmidi':
-      return 'web-midi-api';
-    case 'webrtc':
-      return 'webrtc-pc';
-  }
-  return shortname;
-}
-
 function uniqueMap(entries, prop) {
   const map = new Map;
   for (const entry of entries) {
@@ -250,7 +182,7 @@ async function main() {
       })
       .map((entry) => {
         return completeEntry({
-          id: idFromShortname(entry.series.shortname),
+          id: entry.series.shortname,
           name: entry.title,
           href: entry.nightly.url.replace('http://', 'https://'),
         }, 'auto');
