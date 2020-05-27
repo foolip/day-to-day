@@ -269,7 +269,8 @@ async function main() {
         continue;
       }
       if (spec[key] === value) {
-        throw new Error(`unnecessary fix for spec with id ${fix.id}, ${key} is already ${JSON.stringify(value)}`);
+        throw new Error(`unnecessary fix for spec with id ${fix.id}, ` +
+                        `${key} is already ${JSON.stringify(value)}`);
       }
       spec[key] = value;
     }
