@@ -6,9 +6,6 @@ const fs = require('fs');
 // browser-specs shortnames to drop on the floor
 const blocklist = new Set([
   'css-forms', // https://github.com/w3c/browser-specs/issues/56
-  'css-speech', // https://github.com/w3c/browser-specs/issues/54
-  'css-tv', // https://github.com/w3c/browser-specs/issues/51
-  'wai-aria', // https://github.com/w3c/browser-specs/issues/53
 ]);
 
 // infer some additional information for an entry
@@ -184,7 +181,7 @@ async function main() {
         return completeEntry({
           id: entry.series.shortname,
           name: entry.title,
-          href: entry.nightly.url.replace('http://', 'https://'),
+          href: entry.nightly.url,
         }, 'auto');
       });
 
