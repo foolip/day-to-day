@@ -67,19 +67,6 @@
     "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md"
   },
   {
-    "id": "books",
-    "name": "CSS Books",
-    "href": "https://books.idea.whatwg.org/",
-    "specrepo": "whatwg/books",
-    "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md"
-  },
-  {
-    "id": "browserext",
-    "name": "Browser Extensions",
-    "href": "https://browserext.github.io/browserext/",
-    "specrepo": "browserext/browserext"
-  },
-  {
     "id": "budget-api",
     "name": "Web Budget API",
     "href": "https://wicg.github.io/budget-api/",
@@ -136,7 +123,8 @@
     "id": "construct-stylesheets",
     "name": "Constructable Stylesheet Objects",
     "href": "https://wicg.github.io/construct-stylesheets/",
-    "specrepo": "wicg/construct-stylesheets"
+    "specrepo": "wicg/construct-stylesheets",
+    "testpath": "css/construct-stylesheets"
   },
   {
     "id": "contact-api",
@@ -940,13 +928,6 @@
     "specrepo": "w3c/webappsec-fetch-metadata"
   },
   {
-    "id": "figures",
-    "name": "CSS Figures",
-    "href": "https://figures.idea.whatwg.org/",
-    "specrepo": "whatwg/figures",
-    "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md"
-  },
-  {
     "id": "FileAPI",
     "name": "File API",
     "href": "https://w3c.github.io/FileAPI/",
@@ -966,7 +947,7 @@
     "name": "Filter Effects",
     "href": "https://drafts.fxtf.org/filter-effects/",
     "specrepo": "w3c/fxtf-drafts",
-    "specpath": "filter-effects filter-effects-2",
+    "specpath": "filter-effects filter-effects-1 filter-effects-2 filter-effects-3 filter-effects-4 filter-effects-5",
     "testpath": "filter-effects css/filter-effects css/filter-effects-1 css/filter-effects-2 css/filter-effects-3 css/filter-effects-4 css/filter-effects-5",
     "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md"
   },
@@ -1042,7 +1023,8 @@
     "id": "gpuweb",
     "name": "WebGPU",
     "href": "https://gpuweb.github.io/gpuweb/",
-    "specrepo": "gpuweb/gpuweb"
+    "specrepo": "gpuweb/gpuweb",
+    "testpath": "webgpu"
   },
   {
     "id": "gyroscope",
@@ -1054,7 +1036,8 @@
     "id": "hit-test",
     "name": "WebXR Hit Test",
     "href": "https://immersive-web.github.io/hit-test/",
-    "specrepo": "immersive-web/hit-test"
+    "specrepo": "immersive-web/hit-test",
+    "testpath": "webxr/hit-test"
   },
   {
     "id": "hr-time",
@@ -1081,7 +1064,8 @@
     "id": "image-capture",
     "name": "MediaStream Image Capture",
     "href": "https://w3c.github.io/mediacapture-image/",
-    "specrepo": "w3c/mediacapture-image"
+    "specrepo": "w3c/mediacapture-image",
+    "testpath": "mediacapture-image"
   },
   {
     "id": "image-resource",
@@ -1094,12 +1078,6 @@
     "name": "Import Maps",
     "href": "https://wicg.github.io/import-maps/",
     "specrepo": "wicg/import-maps"
-  },
-  {
-    "id": "imsc",
-    "name": "TTML Profiles for Internet Media Subtitles and Captions",
-    "href": "https://w3c.github.io/imsc/imsc1/spec/ttml-ww-profiles.html",
-    "specrepo": "w3c/imsc"
   },
   {
     "id": "IndexedDB",
@@ -1150,12 +1128,6 @@
     "name": "Keyboard Map",
     "href": "https://wicg.github.io/keyboard-map/",
     "specrepo": "wicg/keyboard-map"
-  },
-  {
-    "id": "kv-storage",
-    "name": "KV Storage",
-    "href": "https://wicg.github.io/kv-storage/",
-    "specrepo": "wicg/kv-storage"
   },
   {
     "id": "largest-contentful-paint",
@@ -1230,7 +1202,7 @@
     "name": "Media Queries",
     "href": "https://drafts.csswg.org/mediaqueries/",
     "specrepo": "w3c/csswg-drafts",
-    "specpath": "mediaqueries mediaqueries-3 mediaqueries-5",
+    "specpath": "mediaqueries mediaqueries-1 mediaqueries-2 mediaqueries-3 mediaqueries-4 mediaqueries-5",
     "testpath": "mediaqueries css/mediaqueries css/mediaqueries-1 css/mediaqueries-2 css/mediaqueries-3 css/mediaqueries-4 css/mediaqueries-5",
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
   },
@@ -1281,12 +1253,6 @@
     "specrepo": "wicg/native-file-system"
   },
   {
-    "id": "native-messaging",
-    "name": "Native Messaging for Browser Extensions",
-    "href": "https://browserext.github.io/native-messaging/",
-    "specrepo": "browserext/native-messaging"
-  },
-  {
     "id": "navigation-timing",
     "name": "Navigation Timing",
     "href": "https://w3c.github.io/navigation-timing/",
@@ -1330,12 +1296,6 @@
     "name": "Origin Policy",
     "href": "https://wicg.github.io/origin-policy/",
     "specrepo": "wicg/origin-policy"
-  },
-  {
-    "id": "ortc",
-    "name": "Object RTC (ORTC) API for WebRTC",
-    "href": "https://draft.ortc.org/",
-    "specrepo": "w3c/ortc"
   },
   {
     "id": "page-lifecycle",
@@ -1555,7 +1515,8 @@
     "id": "ScrollToTextFragment",
     "name": "Text Fragments",
     "href": "https://wicg.github.io/ScrollToTextFragment/",
-    "specrepo": "wicg/ScrollToTextFragment"
+    "specrepo": "wicg/ScrollToTextFragment",
+    "testpath": "scroll-to-text-fragment"
   },
   {
     "id": "secure-contexts",
@@ -1608,16 +1569,11 @@
     "specrepo": "w3c/ServiceWorker"
   },
   {
-    "id": "setImmediate",
-    "name": "Efficient Script Yielding (setImmediate)",
-    "href": "https://w3c.github.io/setImmediate/",
-    "specrepo": "w3c/setImmediate"
-  },
-  {
     "id": "shape-detection-api",
     "name": "Accelerated Shape Detection in Images",
     "href": "https://wicg.github.io/shape-detection-api/",
-    "specrepo": "wicg/shape-detection-api"
+    "specrepo": "wicg/shape-detection-api",
+    "testpath": "shape-detection"
   },
   {
     "id": "sms-one-time-codes",
@@ -1790,7 +1746,8 @@
     "id": "wake-lock",
     "name": "Wake Lock API",
     "href": "https://w3c.github.io/screen-wake-lock/",
-    "specrepo": "w3c/screen-wake-lock"
+    "specrepo": "w3c/screen-wake-lock",
+    "testpath": "screen-wake-lock"
   },
   {
     "id": "wasm",
@@ -1971,19 +1928,22 @@
     "id": "webxr-ar-module",
     "name": "WebXR Augmented Reality Module",
     "href": "https://immersive-web.github.io/webxr-ar-module/",
-    "specrepo": "immersive-web/webxr-ar-module"
+    "specrepo": "immersive-web/webxr-ar-module",
+    "testpath": "webxr/ar-module"
   },
   {
     "id": "webxr-gamepads-module",
     "name": "WebXR Gamepads Module",
     "href": "https://immersive-web.github.io/webxr-gamepads-module/",
-    "specrepo": "immersive-web/webxr-gamepads-module"
+    "specrepo": "immersive-web/webxr-gamepads-module",
+    "testpath": "webxr/gamepads-module"
   },
   {
     "id": "WOFF",
     "name": "WOFF File Format",
     "href": "https://w3c.github.io/woff/woff2/",
-    "specrepo": "w3c/woff"
+    "specrepo": "w3c/woff",
+    "testpath": "css/WOFF2"
   },
   {
     "id": "worklets",
