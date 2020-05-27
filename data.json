@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-03-31T11:18:13.370Z",
-  "until": "2020-05-27T11:18:13.370Z",
+  "since": "2020-03-31T12:02:26.228Z",
+  "until": "2020-05-27T12:02:26.228Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -50,6 +50,76 @@
       "name": "Accessibility Object Model",
       "href": "https://wicg.github.io/aom/spec/",
       "specrepo": "wicg/aom",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "Web App Manifest",
+      "href": "https://w3c.github.io/manifest/",
+      "specrepo": "w3c/manifest",
+      "speclog": [
+        {
+          "date": "2020-05-25",
+          "author": "mcaceres@mozilla.com",
+          "hash": "f1b640a",
+          "subject": "chore: remove implementation status, use MDN data instead (#874)"
+        },
+        {
+          "date": "2020-05-25",
+          "author": "mcaceres@mozilla.com",
+          "hash": "50d320b",
+          "subject": "chore: switch to respec-autopublish (#873)"
+        },
+        {
+          "date": "2020-05-25",
+          "author": "mcaceres@mozilla.com",
+          "hash": "74b7290",
+          "subject": "chore: fix index section issue (#869)"
+        },
+        {
+          "date": "2020-05-22",
+          "author": "xfq@w3.org",
+          "hash": "f704809",
+          "subject": "Update links to the WG (#871)"
+        },
+        {
+          "date": "2020-05-21",
+          "author": "marcos@marcosc.com",
+          "hash": "5673436",
+          "subject": "chore: fix tiny linking issue"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "mcaceres@mozilla.com",
+          "hash": "8c7fd7b",
+          "subject": "Remove beforeinstallprompt and appinstalled events. (#836)"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "mcaceres@mozilla.com",
+          "hash": "0dbd58b",
+          "subject": "chore: remove redundant dependencies (#857)"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "mcaceres@mozilla.com",
+          "hash": "9b0c8da",
+          "subject": "chore: export some terms needed by Badging (#823)"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-04-14",
+          "author": "smcgruer@chromium.org",
+          "hash": "194df1e4ca",
+          "subject": "Update interfaces/appmanifest.idl and test (#22853)"
+        }
+      ]
+    },
+    {
+      "name": "Audio Output Devices API",
+      "href": "https://w3c.github.io/mediacapture-output/",
+      "specrepo": "w3c/mediacapture-output",
       "speclog": [],
       "testlog": []
     },
@@ -137,6 +207,13 @@
       "name": "Web Budget API",
       "href": "https://wicg.github.io/budget-api/",
       "specrepo": "wicg/budget-api",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "Clear Site Data",
+      "href": "https://w3c.github.io/webappsec-clear-site-data/",
+      "specrepo": "w3c/webappsec-clear-site-data",
       "speclog": [],
       "testlog": []
     },
@@ -523,6 +600,154 @@
       "testlog": []
     },
     {
+      "name": "Credential Management",
+      "href": "https://w3c.github.io/webappsec-credential-management/",
+      "specrepo": "w3c/webappsec-credential-management",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-04-20",
+          "author": "smcgruer@chromium.org",
+          "hash": "f4f991aac0",
+          "subject": "Replace assert_precondition with assert_implements in credential-management (#23008)"
+        }
+      ]
+    },
+    {
+      "name": "Content Security Policy",
+      "href": "https://w3c.github.io/webappsec-csp/",
+      "specrepo": "w3c/webappsec-csp",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-20",
+          "author": "peria@chromium.org",
+          "hash": "a4d52ac525",
+          "subject": "IDL: Put default values on 2 members of SecurityPolicyViolationEventInit"
+        },
+        {
+          "date": "2020-05-20",
+          "author": "antoniosartori@chromium.org",
+          "hash": "62bc0e84b0",
+          "subject": "Use original URL before redirects as blocked URL in CSP reporting"
+        },
+        {
+          "date": "2020-05-07",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "48bd16d814",
+          "subject": "Improve test: csp/reporting/post-redirect-stacktrace.https.html"
+        },
+        {
+          "date": "2020-05-05",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "5841e8d230",
+          "subject": "Add WPT tests for bug 1074317"
+        },
+        {
+          "date": "2020-04-28",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "d0824973ef",
+          "subject": "Fix host substitution in CSP test"
+        },
+        {
+          "date": "2020-04-27",
+          "author": "antoniosartori@chromium.org",
+          "hash": "fa3d5b0da2",
+          "subject": "Fix report-to CSP directive to only allow one endpoint"
+        },
+        {
+          "date": "2020-04-27",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "7179786e28",
+          "subject": "Forward CSP, even for the initial empty document."
+        },
+        {
+          "date": "2020-04-20",
+          "author": "smcgruer@chromium.org",
+          "hash": "0bd159c15f",
+          "subject": "Remove instances of 'whitelist' in content-security-policy/ (#21321)"
+        },
+        {
+          "date": "2020-04-14",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "616f31ab20",
+          "subject": "Add regression test for https://crbug.com/1064676"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "lyf@google.com",
+          "hash": "ff3ba87e4b",
+          "subject": "[Trusted Types] Sink name changes in violation reports."
+        }
+      ]
+    },
+    {
+      "name": "Content Security Policy: Embedded Enforcement",
+      "href": "https://w3c.github.io/webappsec-cspee/",
+      "specrepo": "w3c/webappsec-cspee",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-20",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "7c66133c79",
+          "subject": "CSP embedder enforcement: Stop removing the allow-origin flag."
+        },
+        {
+          "date": "2020-04-20",
+          "author": "smcgruer@chromium.org",
+          "hash": "0bd159c15f",
+          "subject": "Remove instances of 'whitelist' in content-security-policy/ (#21321)"
+        }
+      ]
+    },
+    {
+      "name": "CSS 2.2",
+      "href": "https://drafts.csswg.org/css2/",
+      "specrepo": "w3c/csswg-drafts",
+      "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
+      "speclog": [
+        {
+          "date": "2020-05-03",
+          "author": "me@gsnedders.com",
+          "hash": "1f24d458d",
+          "subject": "[CSS2] add <meta charset> everywhere"
+        },
+        {
+          "date": "2020-05-03",
+          "author": "me@gsnedders.com",
+          "hash": "f90846429",
+          "subject": "[CSS2] Move more intermediate build products into build/"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-05-14",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "fc5fe7e3cc",
+          "subject": "[LayoutNG] Change NGBlockLayoutAlgorithm::FinishInflow DCHECK."
+        },
+        {
+          "date": "2020-04-23",
+          "author": "gtsteel@google.com",
+          "hash": "e4040c2f77",
+          "subject": "Increase timeout for wpt...CSS2...line-height-interpolation.html"
+        },
+        {
+          "date": "2020-04-17",
+          "author": "rego@igalia.com",
+          "hash": "701892246b",
+          "subject": "Remove duplicated copies of 60x60-red.png file"
+        },
+        {
+          "date": "2020-04-08",
+          "author": "arenevier@fb.com",
+          "hash": "db3923e6e7",
+          "subject": "Run script segmenter for each bidi run"
+        }
+      ]
+    },
+    {
       "name": "CSS Box Alignment",
       "href": "https://drafts.csswg.org/css-align/",
       "specrepo": "w3c/csswg-drafts",
@@ -635,6 +860,21 @@
       ]
     },
     {
+      "name": "CSS Animation Worklet API",
+      "href": "https://drafts.css-houdini.org/css-animationworklet/",
+      "specrepo": "w3c/css-houdini-drafts",
+      "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-04-02",
+          "author": "gerchiko@microsoft.com",
+          "hash": "167fc7a89f",
+          "subject": "Snapshot scroll timeline state once per animation frame."
+        }
+      ]
+    },
+    {
       "name": "CSS Animations",
       "href": "https://drafts.csswg.org/css-animations/",
       "specrepo": "w3c/csswg-drafts",
@@ -684,14 +924,6 @@
           "subject": "Fix a bunch of links to specs that are not or no longer correct (#22591)"
         }
       ]
-    },
-    {
-      "name": "CSS Animation Worklet API",
-      "href": "https://drafts.css-houdini.org/css-animationworklet/",
-      "specrepo": "w3c/css-houdini-drafts",
-      "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
-      "speclog": [],
-      "testlog": []
     },
     {
       "name": "CSS Backgrounds and Borders",
@@ -5161,52 +5393,6 @@
       ]
     },
     {
-      "name": "CSS 2.2",
-      "href": "https://drafts.csswg.org/css2/",
-      "specrepo": "w3c/csswg-drafts",
-      "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2020-05-03",
-          "author": "me@gsnedders.com",
-          "hash": "1f24d458d",
-          "subject": "[CSS2] add <meta charset> everywhere"
-        },
-        {
-          "date": "2020-05-03",
-          "author": "me@gsnedders.com",
-          "hash": "f90846429",
-          "subject": "[CSS2] Move more intermediate build products into build/"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-05-14",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "fc5fe7e3cc",
-          "subject": "[LayoutNG] Change NGBlockLayoutAlgorithm::FinishInflow DCHECK."
-        },
-        {
-          "date": "2020-04-23",
-          "author": "gtsteel@google.com",
-          "hash": "e4040c2f77",
-          "subject": "Increase timeout for wpt...CSS2...line-height-interpolation.html"
-        },
-        {
-          "date": "2020-04-17",
-          "author": "rego@igalia.com",
-          "hash": "701892246b",
-          "subject": "Remove duplicated copies of 60x60-red.png file"
-        },
-        {
-          "date": "2020-04-08",
-          "author": "arenevier@fb.com",
-          "hash": "db3923e6e7",
-          "subject": "Run script segmenter for each bidi run"
-        }
-      ]
-    },
-    {
       "name": "CSS Object Model (CSSOM)",
       "href": "https://drafts.csswg.org/cssom/",
       "specrepo": "w3c/csswg-drafts",
@@ -5342,14 +5528,6 @@
           "subject": "*.any.js: add EOF newlines"
         }
       ]
-    },
-    {
-      "name": "DeviceOrientation Event",
-      "href": "https://w3c.github.io/deviceorientation/",
-      "specrepo": "w3c/deviceorientation",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/w3c/deviceorientation/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "DOM",
@@ -7317,6 +7495,214 @@
       ]
     },
     {
+      "name": "Feature Policy",
+      "href": "https://w3c.github.io/webappsec-feature-policy/",
+      "specrepo": "w3c/webappsec-feature-policy",
+      "speclog": [
+        {
+          "date": "2020-05-26",
+          "author": "iclelland@google.com",
+          "hash": "8bd876f",
+          "subject": "Rename Feature->Permissions in README.md"
+        },
+        {
+          "date": "2020-05-26",
+          "author": "iclelland@google.com",
+          "hash": "b886eb3",
+          "subject": "Rename Feature Policy in integration.md"
+        },
+        {
+          "date": "2020-05-26",
+          "author": "iclelland@google.com",
+          "hash": "3a56df6",
+          "subject": "Update integration.md"
+        },
+        {
+          "date": "2020-05-26",
+          "author": "iclelland@google.com",
+          "hash": "d2b4fd5",
+          "subject": "Cleanup algorithms (#380)"
+        },
+        {
+          "date": "2020-05-26",
+          "author": "iclelland@chromium.org",
+          "hash": "c6e61e6",
+          "subject": "Change FP inheritance"
+        },
+        {
+          "date": "2020-05-21",
+          "author": "iclelland@chromium.org",
+          "hash": "b297ab0",
+          "subject": "Remove \"requires acknowledgment\" flag from document policy"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "62a580c",
+          "subject": "Clean up wrapping"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "9830475",
+          "subject": "Update ABNF"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "dfcf2c7",
+          "subject": "Rename featurePolicy member"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "44a7b9e",
+          "subject": "Rename FeaturePolicy interface"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "deb2fef",
+          "subject": "Rename variables"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "fe5e6f1",
+          "subject": "Rename reporting concepts and interfaces"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "1096ea8",
+          "subject": "Rename the feature policy concept"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "18a2f87",
+          "subject": "Rename the header"
+        },
+        {
+          "date": "2020-05-14",
+          "author": "iclelland@chromium.org",
+          "hash": "d6b23aa",
+          "subject": "Rename the spec and API"
+        },
+        {
+          "date": "2020-05-13",
+          "author": "iclelland@chromium.org",
+          "hash": "0a9f495",
+          "subject": "Change FP inheritance"
+        },
+        {
+          "date": "2020-05-12",
+          "author": "iclelland@google.com",
+          "hash": "967795e",
+          "subject": "Standardize on spelling of \"behavior\""
+        },
+        {
+          "date": "2020-04-30",
+          "author": "jdhodges@google.com",
+          "hash": "0ee2566",
+          "subject": "Update publickey-credentials to be \"get-only\" policy (#370)"
+        },
+        {
+          "date": "2020-04-29",
+          "author": "iclelland@google.com",
+          "hash": "1365a8e",
+          "subject": "Replace 'vr' with 'xr-spatial-tracking' in examples"
+        },
+        {
+          "date": "2020-04-17",
+          "author": "iclelland@google.com",
+          "hash": "58fbb1c",
+          "subject": "Add document policy use cases (#373)"
+        },
+        {
+          "date": "2020-04-16",
+          "author": "iclelland@google.com",
+          "hash": "188bd06",
+          "subject": "Update the document policy explainer (#372)"
+        },
+        {
+          "date": "2020-04-15",
+          "author": "iclelland@google.com",
+          "hash": "1e35db6",
+          "subject": "Start being more consistent with definitions (#371)"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-05-26",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "2228dbdd37",
+          "subject": "Reduce cross frame messages in feature-policy-nested-subframe-policy.https.sub.html (#23731)"
+        },
+        {
+          "date": "2020-05-25",
+          "author": "chenleihu@google.com",
+          "hash": "7e024a21d3",
+          "subject": "Fix flaky test feature-policy-nested-header-policy-allowed-for-all.https.sub.html"
+        },
+        {
+          "date": "2020-05-13",
+          "author": "chenleihu@google.com",
+          "hash": "34fb486956",
+          "subject": "Fix test time out on feature-propagation-to-auxiliary-context.html"
+        },
+        {
+          "date": "2020-05-04",
+          "author": "smcgruer@chromium.org",
+          "hash": "c3ecc8c00f",
+          "subject": "Mark some idlharness.html tests as timeout=long"
+        },
+        {
+          "date": "2020-05-01",
+          "author": "chenleihu@google.com",
+          "hash": "795e198205",
+          "subject": "Split feature-policy-frame-policy-allowed-for-some.https.sub.html"
+        },
+        {
+          "date": "2020-04-28",
+          "author": "rajendrant@chromium.org",
+          "hash": "1cbd65166f",
+          "subject": "Undelete lazyload feature policy test"
+        },
+        {
+          "date": "2020-04-28",
+          "author": "rajendrant@chromium.org",
+          "hash": "ddad50b245",
+          "subject": "LazyLoad: Fix feature-policy tests"
+        },
+        {
+          "date": "2020-04-08",
+          "author": "robertma@chromium.org",
+          "hash": "e7fe387361",
+          "subject": "[payment-request] Stop sending requests to wpt.fyi (#22767)"
+        },
+        {
+          "date": "2020-04-06",
+          "author": "chenleihu@google.com",
+          "hash": "6bb87e50ba",
+          "subject": "Migrate LayoutAnimations from feature policy to document policy"
+        },
+        {
+          "date": "2020-04-06",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "7ab34f7e16",
+          "subject": "wake lock: Remove WakeLockPermissionDescriptor, use separate permission names."
+        },
+        {
+          "date": "2020-04-01",
+          "author": "davidvc@chromium.org",
+          "hash": "605c141497",
+          "subject": "Trust Tokens: Add an XMLHttpRequest interface"
+        }
+      ],
+      "testpolicy": "https://github.com/w3c/webappsec-feature-policy/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
       "name": "Fetch",
       "href": "https://fetch.spec.whatwg.org/",
       "specrepo": "whatwg/fetch",
@@ -7439,6 +7825,26 @@
           "subject": "Test GET + Cors combination in assorted.window.js (#22567)"
         }
       ]
+    },
+    {
+      "name": "Fetch Metadata Request Headers",
+      "href": "https://w3c.github.io/webappsec-fetch-metadata/",
+      "specrepo": "w3c/webappsec-fetch-metadata",
+      "speclog": [
+        {
+          "date": "2020-04-22",
+          "author": "mkwst@google.com",
+          "hash": "ea8fb02",
+          "subject": "Regenerate HTML."
+        },
+        {
+          "date": "2020-04-22",
+          "author": "mkwst@google.com",
+          "hash": "d17bbae",
+          "subject": "Remove 'nested-{document,navigate}."
+        }
+      ],
+      "testlog": []
     },
     {
       "name": "CSS Figures",
@@ -7865,6 +8271,51 @@
       "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gamepad/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "Generic Sensor API",
+      "href": "https://w3c.github.io/sensors/",
+      "specrepo": "w3c/sensors",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-19",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "bede10791c",
+          "subject": "sensors: Make frequency hint test wait for another slow sensor \"tick\"."
+        },
+        {
+          "date": "2020-05-16",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "823cca0c2c",
+          "subject": "sensors: Wait for all sensors to receive a \"reading\" event before use."
+        },
+        {
+          "date": "2020-05-15",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "257af6a7bd",
+          "subject": "sensors: Remove cross-origin iframe test from runGenericSensorTests()."
+        },
+        {
+          "date": "2020-05-15",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "e909362eb4",
+          "subject": "sensors: Call GenericSensorTest.reset() in a cleanup function."
+        },
+        {
+          "date": "2020-05-07",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "1d14e74b0e",
+          "subject": "Improve error handling in iframe-related Generic Sensor tests."
+        },
+        {
+          "date": "2020-04-14",
+          "author": "wanming.lin@intel.com",
+          "hash": "4ecd8a4cf7",
+          "subject": "[device-orientation] Upstream web tests to WPT"
+        }
+      ],
+      "testpolicy": "https://github.com/w3c/sensors/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "Geolocation API",
@@ -9365,6 +9816,32 @@
       "testpolicy": "https://github.com/w3c/html-media-capture/blob/HEAD/CONTRIBUTING.md"
     },
     {
+      "name": "MediaStream Image Capture",
+      "href": "https://w3c.github.io/mediacapture-image/",
+      "specrepo": "w3c/mediacapture-image",
+      "speclog": [
+        {
+          "date": "2020-04-17",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "5dcd361",
+          "subject": "Clarify more"
+        },
+        {
+          "date": "2020-04-17",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "22c1e02",
+          "subject": "Clarify PTZ permission denied behaviour"
+        },
+        {
+          "date": "2020-04-15",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "e5e4dfc",
+          "subject": "Add PTZ explainer"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Image Resource",
       "href": "https://w3c.github.io/image-resource/",
       "specrepo": "w3c/image-resource",
@@ -9954,69 +10431,6 @@
       "testpolicy": "https://github.com/w3c/magnetometer/blob/HEAD/CONTRIBUTING.md"
     },
     {
-      "name": "Web App Manifest",
-      "href": "https://w3c.github.io/manifest/",
-      "specrepo": "w3c/manifest",
-      "speclog": [
-        {
-          "date": "2020-05-25",
-          "author": "mcaceres@mozilla.com",
-          "hash": "f1b640a",
-          "subject": "chore: remove implementation status, use MDN data instead (#874)"
-        },
-        {
-          "date": "2020-05-25",
-          "author": "mcaceres@mozilla.com",
-          "hash": "50d320b",
-          "subject": "chore: switch to respec-autopublish (#873)"
-        },
-        {
-          "date": "2020-05-25",
-          "author": "mcaceres@mozilla.com",
-          "hash": "74b7290",
-          "subject": "chore: fix index section issue (#869)"
-        },
-        {
-          "date": "2020-05-22",
-          "author": "xfq@w3.org",
-          "hash": "f704809",
-          "subject": "Update links to the WG (#871)"
-        },
-        {
-          "date": "2020-05-21",
-          "author": "marcos@marcosc.com",
-          "hash": "5673436",
-          "subject": "chore: fix tiny linking issue"
-        },
-        {
-          "date": "2020-04-01",
-          "author": "mcaceres@mozilla.com",
-          "hash": "8c7fd7b",
-          "subject": "Remove beforeinstallprompt and appinstalled events. (#836)"
-        },
-        {
-          "date": "2020-04-01",
-          "author": "mcaceres@mozilla.com",
-          "hash": "0dbd58b",
-          "subject": "chore: remove redundant dependencies (#857)"
-        },
-        {
-          "date": "2020-04-01",
-          "author": "mcaceres@mozilla.com",
-          "hash": "9b0c8da",
-          "subject": "chore: export some terms needed by Badging (#823)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-04-14",
-          "author": "smcgruer@chromium.org",
-          "hash": "194df1e4ca",
-          "subject": "Update interfaces/appmanifest.idl and test (#22853)"
-        }
-      ]
-    },
-    {
       "name": "MathML Core",
       "href": "https://mathml-refresh.github.io/mathml-core/",
       "specrepo": "mathml-refresh/mathml-core",
@@ -10559,45 +10973,6 @@
       "testlog": []
     },
     {
-      "name": "MediaStream Image Capture",
-      "href": "https://w3c.github.io/mediacapture-image/",
-      "specrepo": "w3c/mediacapture-image",
-      "speclog": [
-        {
-          "date": "2020-04-17",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "5dcd361",
-          "subject": "Clarify more"
-        },
-        {
-          "date": "2020-04-17",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "22c1e02",
-          "subject": "Clarify PTZ permission denied behaviour"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "e5e4dfc",
-          "subject": "Add PTZ explainer"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-05-19",
-          "author": "smcgruer@chromium.org",
-          "hash": "27e994b5ba",
-          "subject": "Mark idlharness test as timeout=long"
-        },
-        {
-          "date": "2020-05-15",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "50c9fd23e3",
-          "subject": "[PTZ] Expose image capture pan & tilt only if PTZ permission is granted"
-        }
-      ]
-    },
-    {
       "name": "Media Capture and Streams",
       "href": "https://w3c.github.io/mediacapture-main/",
       "specrepo": "w3c/mediacapture-main",
@@ -10835,27 +11210,6 @@
       ]
     },
     {
-      "name": "Audio Output Devices API",
-      "href": "https://w3c.github.io/mediacapture-output/",
-      "specrepo": "w3c/mediacapture-output",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "MediaStream Recording",
-      "href": "https://w3c.github.io/mediacapture-record/",
-      "specrepo": "w3c/mediacapture-record",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Screen Capture",
-      "href": "https://w3c.github.io/mediacapture-screen-share/",
-      "specrepo": "w3c/mediacapture-screen-share",
-      "speclog": [],
-      "testlog": []
-    },
-    {
       "name": "Media Queries",
       "href": "https://drafts.csswg.org/mediaqueries/",
       "specrepo": "w3c/csswg-drafts",
@@ -10874,6 +11228,13 @@
       "name": "Media Session Standard",
       "href": "https://w3c.github.io/mediasession/",
       "specrepo": "w3c/mediasession",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "MediaStream Recording",
+      "href": "https://w3c.github.io/mediacapture-record/",
+      "specrepo": "w3c/mediacapture-record",
       "speclog": [],
       "testlog": []
     },
@@ -10910,6 +11271,20 @@
           "subject": "MIME Sniffing: tests for MIME type groups"
         }
       ]
+    },
+    {
+      "name": "Mixed Content",
+      "href": "https://w3c.github.io/webappsec-mixed-content/",
+      "specrepo": "w3c/webappsec-mixed-content",
+      "speclog": [
+        {
+          "date": "2020-04-22",
+          "author": "carlosil@chromium.org",
+          "hash": "dad00df",
+          "subject": "Add acknowledgements"
+        }
+      ],
+      "testlog": []
     },
     {
       "name": "Motion Path",
@@ -11110,6 +11485,75 @@
         }
       ],
       "testlog": []
+    },
+    {
+      "name": "DeviceOrientation Event",
+      "href": "https://w3c.github.io/deviceorientation/",
+      "specrepo": "w3c/deviceorientation",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-15",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "e909362eb4",
+          "subject": "sensors: Call GenericSensorTest.reset() in a cleanup function."
+        },
+        {
+          "date": "2020-05-15",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "dcc8f62cca",
+          "subject": "device orientation: Ensure new reading values are available in tests."
+        },
+        {
+          "date": "2020-05-12",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "030299ef4d",
+          "subject": "device orientation: Properly reject promise in waitForEvent()."
+        },
+        {
+          "date": "2020-05-08",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "54b6be43d7",
+          "subject": "device orientation: Try to remove flakiness from tests."
+        },
+        {
+          "date": "2020-04-26",
+          "author": "wanming.lin@intel.com",
+          "hash": "44915d53e1",
+          "subject": "[device-orientation] Simplifies tests by using EventWatcher"
+        },
+        {
+          "date": "2020-04-23",
+          "author": "smcgruer@chromium.org",
+          "hash": "a5d1774ecf",
+          "subject": "Mark a bunch of idlharness tests as timeout=long"
+        },
+        {
+          "date": "2020-04-17",
+          "author": "wanming.lin@intel.com",
+          "hash": "7649cb84f3",
+          "subject": "[device-orientation] Classify tests to corresponding subfolders"
+        },
+        {
+          "date": "2020-04-15",
+          "author": "wanming.lin@intel.com",
+          "hash": "cecb2bbc14",
+          "subject": "[device-orientation] Remove duplicated tests"
+        },
+        {
+          "date": "2020-04-14",
+          "author": "smcgruer@chromium.org",
+          "hash": "1e70d80274",
+          "subject": "Use HTTP_ORIGIN in orientation-event/ test"
+        },
+        {
+          "date": "2020-04-14",
+          "author": "wanming.lin@intel.com",
+          "hash": "4ecd8a4cf7",
+          "subject": "[device-orientation] Upstream web tests to WPT"
+        }
+      ],
+      "testpolicy": "https://github.com/w3c/deviceorientation/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "Orientation Sensor",
@@ -11923,6 +12367,39 @@
       ]
     },
     {
+      "name": "Referrer Policy",
+      "href": "https://w3c.github.io/webappsec-referrer-policy/",
+      "specrepo": "w3c/webappsec-referrer-policy",
+      "speclog": [
+        {
+          "date": "2020-05-11",
+          "author": "26493779+Malvoz@users.noreply.github.com",
+          "hash": "4fe129d",
+          "subject": "Fix @domfarolino's feedback"
+        },
+        {
+          "date": "2020-05-10",
+          "author": "26493779+Malvoz@users.noreply.github.com",
+          "hash": "196dee9",
+          "subject": "Add <script> for `referrerpolicy` content attribute"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "domfarolino@gmail.com",
+          "hash": "447d65c",
+          "subject": "Rebuild spec"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-04-30",
+          "author": "dom@chromium.org",
+          "hash": "f9f0aa06e3",
+          "subject": "Add about:blank iframe referrer tests"
+        }
+      ]
+    },
+    {
       "name": "Remote Playback API",
       "href": "https://w3c.github.io/remote-playback/",
       "specrepo": "w3c/remote-playback",
@@ -12029,6 +12506,20 @@
       ]
     },
     {
+      "name": "Screen Capture",
+      "href": "https://w3c.github.io/mediacapture-screen-share/",
+      "specrepo": "w3c/mediacapture-screen-share",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-06",
+          "author": "jib@mozilla.com",
+          "hash": "ddfcefd619",
+          "subject": "Mark getdisplaymedia.https.html WPT as long."
+        }
+      ]
+    },
+    {
       "name": "Screen Orientation API",
       "href": "https://w3c.github.io/screen-orientation/",
       "specrepo": "w3c/screen-orientation",
@@ -12041,40 +12532,6 @@
         }
       ],
       "testlog": []
-    },
-    {
-      "name": "Wake Lock API",
-      "href": "https://w3c.github.io/screen-wake-lock/",
-      "specrepo": "w3c/screen-wake-lock",
-      "speclog": [
-        {
-          "date": "2020-04-20",
-          "author": "wanming.lin@intel.com",
-          "hash": "b0193f0",
-          "subject": "chore: update test links (#261)"
-        },
-        {
-          "date": "2020-04-02",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "e9ff478",
-          "subject": "Editorial: Proof-read after #255. (#260)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-05-20",
-          "author": "smcgruer@chromium.org",
-          "hash": "c8e560bd7e",
-          "subject": "Update interfaces/{screen-}wake-lock.idl and test (#23115)"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "wanming.lin@intel.com",
-          "hash": "229773d606",
-          "subject": "[wake-lock] Rename wpt/wake-lock to wpt/screen-wake-lock"
-        }
-      ],
-      "testpolicy": "https://github.com/w3c/screen-wake-lock/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "Scroll-linked Animations",
@@ -12257,6 +12714,20 @@
       "testlog": []
     },
     {
+      "name": "Secure Contexts",
+      "href": "https://w3c.github.io/webappsec-secure-contexts/",
+      "specrepo": "w3c/webappsec-secure-contexts",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-05-08",
+          "author": "smcgruer@chromium.org",
+          "hash": "b0f0a12c73",
+          "subject": "Mark two idlharness.html tests as timeout=long"
+        }
+      ]
+    },
+    {
       "name": "Selection API",
       "href": "https://w3c.github.io/selection-api/",
       "specrepo": "w3c/selection-api",
@@ -12342,51 +12813,6 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": []
-    },
-    {
-      "name": "Generic Sensor API",
-      "href": "https://w3c.github.io/sensors/",
-      "specrepo": "w3c/sensors",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-05-19",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "bede10791c",
-          "subject": "sensors: Make frequency hint test wait for another slow sensor \"tick\"."
-        },
-        {
-          "date": "2020-05-16",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "823cca0c2c",
-          "subject": "sensors: Wait for all sensors to receive a \"reading\" event before use."
-        },
-        {
-          "date": "2020-05-15",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "257af6a7bd",
-          "subject": "sensors: Remove cross-origin iframe test from runGenericSensorTests()."
-        },
-        {
-          "date": "2020-05-15",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "e909362eb4",
-          "subject": "sensors: Call GenericSensorTest.reset() in a cleanup function."
-        },
-        {
-          "date": "2020-05-07",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "1d14e74b0e",
-          "subject": "Improve error handling in iframe-related Generic Sensor tests."
-        },
-        {
-          "date": "2020-04-14",
-          "author": "wanming.lin@intel.com",
-          "hash": "4ecd8a4cf7",
-          "subject": "[device-orientation] Upstream web tests to WPT"
-        }
-      ],
-      "testpolicy": "https://github.com/w3c/sensors/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "Serial API",
@@ -12620,6 +13046,13 @@
         }
       ],
       "testpolicy": "https://github.com/wicg/speech-api/blob/HEAD/README.md"
+    },
+    {
+      "name": "Subresource Integrity",
+      "href": "https://w3c.github.io/webappsec-subresource-integrity/",
+      "specrepo": "w3c/webappsec-subresource-integrity",
+      "speclog": [],
+      "testlog": []
     },
     {
       "name": "Storage",
@@ -12905,6 +13338,75 @@
       "testlog": []
     },
     {
+      "name": "Trusted Types",
+      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+      "specrepo": "w3c/webappsec-trusted-types",
+      "speclog": [
+        {
+          "date": "2020-05-20",
+          "author": "koto@google.com",
+          "hash": "460b163",
+          "subject": "Add `'none'` keyword support for `trusted-types` directive. (#280)"
+        },
+        {
+          "date": "2020-04-22",
+          "author": "koto@google.com",
+          "hash": "b102df7",
+          "subject": "Fix #275. (#277)"
+        },
+        {
+          "date": "2020-03-31",
+          "author": "koto@google.com",
+          "hash": "eab49be",
+          "subject": "Update README.md"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-05-20",
+          "author": "lyf@google.com",
+          "hash": "31a3e32343",
+          "subject": "[Trusted Types] Add Trusted Type to href for SVGScriptElement."
+        },
+        {
+          "date": "2020-05-15",
+          "author": "lyf@google.com",
+          "hash": "bb11e0cb0c",
+          "subject": "[Trusted Types] Change tests for SVGScriptElement.innerHTML."
+        },
+        {
+          "date": "2020-05-12",
+          "author": "mkwst@chromium.org",
+          "hash": "094353fedf",
+          "subject": "Remove the `[SecureContext]` restriction from Trusted Types."
+        },
+        {
+          "date": "2020-04-02",
+          "author": "vogelheim@chromium.org",
+          "hash": "c1fc72c479",
+          "subject": "[Trusted Types] Add test cases for svg:script."
+        },
+        {
+          "date": "2020-04-02",
+          "author": "vogelheim@chromium.org",
+          "hash": "1afd76112f",
+          "subject": "[Trusted Types] Add default policy callback arguments"
+        },
+        {
+          "date": "2020-04-01",
+          "author": "lyf@google.com",
+          "hash": "ff3ba87e4b",
+          "subject": "[Trusted Types] Sink name changes in violation reports."
+        },
+        {
+          "date": "2020-04-01",
+          "author": "vogelheim@chromium.org",
+          "hash": "ee1697dab6",
+          "subject": "[Trusted Types] Worker constructor URLs are TrustedScriptURLs"
+        }
+      ]
+    },
+    {
       "name": "UI Events",
       "href": "https://w3c.github.io/uievents/",
       "specrepo": "w3c/uievents",
@@ -12938,6 +13440,20 @@
       "specrepo": "w3c/uievents-key",
       "speclog": [],
       "testlog": []
+    },
+    {
+      "name": "Upgrade Insecure Requests",
+      "href": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+      "specrepo": "w3c/webappsec-upgrade-insecure-requests",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2020-04-27",
+          "author": "elkurin@google.com",
+          "hash": "19a0095b86",
+          "subject": "UpgradeInsecureRequest: Add WPTs for static-import in dedicated/shared workers"
+        }
+      ]
     },
     {
       "name": "URL",
@@ -13309,6 +13825,40 @@
       ]
     },
     {
+      "name": "Wake Lock API",
+      "href": "https://w3c.github.io/screen-wake-lock/",
+      "specrepo": "w3c/screen-wake-lock",
+      "speclog": [
+        {
+          "date": "2020-04-20",
+          "author": "wanming.lin@intel.com",
+          "hash": "b0193f0",
+          "subject": "chore: update test links (#261)"
+        },
+        {
+          "date": "2020-04-02",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "e9ff478",
+          "subject": "Editorial: Proof-read after #255. (#260)"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-04-20",
+          "author": "wanming.lin@intel.com",
+          "hash": "229773d606",
+          "subject": "[wake-lock] Rename wpt/wake-lock to wpt/screen-wake-lock"
+        },
+        {
+          "date": "2020-04-06",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "7ab34f7e16",
+          "subject": "wake lock: Remove WakeLockPermissionDescriptor, use separate permission names."
+        }
+      ],
+      "testpolicy": "https://github.com/w3c/screen-wake-lock/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
       "name": "WebAssembly",
       "href": "https://webassembly.github.io/spec/core/",
       "specrepo": "webassembly/spec",
@@ -13558,166 +14108,6 @@
       ]
     },
     {
-      "name": "Web Audio API",
-      "href": "https://webaudio.github.io/web-audio-api/",
-      "specrepo": "webaudio/web-audio-api",
-      "speclog": [
-        {
-          "date": "2020-05-26",
-          "author": "toy.raymond@gmail.com",
-          "hash": "ef824b66",
-          "subject": "Fix #2202: Update id of change log section (#2204)"
-        },
-        {
-          "date": "2020-05-18",
-          "author": "khodzha.sh@gmail.com",
-          "hash": "9b3f727f",
-          "subject": "fixed wrong optionality of IIRFilterNode options (#2201)"
-        },
-        {
-          "date": "2020-04-29",
-          "author": "toy.raymond@gmail.com",
-          "hash": "80ee1a8c",
-          "subject": "Update Change Log to 2020-04-29 (#2200)"
-        },
-        {
-          "date": "2020-04-29",
-          "author": "paul@paul.cx",
-          "hash": "902ff87f",
-          "subject": "Allow not having get parameterDescriptors in an AudioWorkletProcessor"
-        },
-        {
-          "date": "2020-04-29",
-          "author": "toy.raymond@gmail.com",
-          "hash": "2a7f55f1",
-          "subject": "Fix #2192: Fix WaveShaperNode curve interpolation algorithm."
-        },
-        {
-          "date": "2020-04-29",
-          "author": "toy.raymond@gmail.com",
-          "hash": "f4f85609",
-          "subject": "Fix #2193: Fix typo in azimuth algorithm."
-        },
-        {
-          "date": "2020-04-29",
-          "author": "toy.raymond@gmail.com",
-          "hash": "77176819",
-          "subject": "Update change log 2020-04-22"
-        },
-        {
-          "date": "2020-04-24",
-          "author": "toy.raymond@gmail.com",
-          "hash": "288bafb4",
-          "subject": "Fix #1772: Sort tracks by code units (#2189)"
-        },
-        {
-          "date": "2020-04-24",
-          "author": "toy.raymond@gmail.com",
-          "hash": "52d90ff7",
-          "subject": "Fix #2190: Update expected results (#2196)"
-        },
-        {
-          "date": "2020-04-02",
-          "author": "toy.raymond@gmail.com",
-          "hash": "1ded13d6",
-          "subject": "Add links to browser issue trackers (#2181)"
-        },
-        {
-          "date": "2020-04-02",
-          "author": "toy.raymond@gmail.com",
-          "hash": "fe221f30",
-          "subject": "Fix #2184: Clarify refDistance description (#2187)"
-        },
-        {
-          "date": "2020-03-31",
-          "author": "10491533+tim-we@users.noreply.github.com",
-          "hash": "948b53b2",
-          "subject": "Fix a typo. (#2188)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-05-12",
-          "author": "rtoy@chromium.org",
-          "hash": "f0799f9588",
-          "subject": "Handle k-rate AudioParam inputs for AudioWorkletNode"
-        },
-        {
-          "date": "2020-05-07",
-          "author": "orders+github@karlt.net",
-          "hash": "366ea52357",
-          "subject": "[webaudio] Generalize convolver test tolerances for numerical error (#11935)"
-        },
-        {
-          "date": "2020-05-05",
-          "author": "rtoy@chromium.org",
-          "hash": "100d85cd2b",
-          "subject": "Handle k-rate AudioParam inputs for BiquadFilterNode"
-        },
-        {
-          "date": "2020-05-05",
-          "author": "rtoy@chromium.org",
-          "hash": "a135e5f5e7",
-          "subject": "Handle k-rate AudioParam inputs for DynamicsCompressorNode"
-        },
-        {
-          "date": "2020-04-29",
-          "author": "hongchan@chromium.org",
-          "hash": "d9ff48a8ba",
-          "subject": "Use ErrorEvent for AudioWorkletNode.onprocessorerror"
-        },
-        {
-          "date": "2020-04-22",
-          "author": "hongchan@chromium.org",
-          "hash": "e764b34bd0",
-          "subject": "Correct input connection and automatic pull behavior of AudioWorkletNode"
-        },
-        {
-          "date": "2020-04-14",
-          "author": "rtoy@chromium.org",
-          "hash": "04e2e7aa3b",
-          "subject": "Handle k-rate AudioParams with input for AudioBufferSourceNode"
-        },
-        {
-          "date": "2020-04-14",
-          "author": "rtoy@chromium.org",
-          "hash": "55d4561356",
-          "subject": "Test k-rate AudioParam input for DelayNode"
-        },
-        {
-          "date": "2020-04-09",
-          "author": "rtoy@chromium.org",
-          "hash": "41f7e2e9da",
-          "subject": "Handle k-rate AudioParam inputs for OscillatorNode"
-        },
-        {
-          "date": "2020-04-08",
-          "author": "rtoy@chromium.org",
-          "hash": "6633ecd1ca",
-          "subject": "Uniquify test names for k-rate PannerNode test"
-        },
-        {
-          "date": "2020-04-07",
-          "author": "huangdarwin@chromium.org",
-          "hash": "3fda5b0930",
-          "subject": "Revert \"Handle k-rate AudioParam inputs for BiquadFilterNode\""
-        },
-        {
-          "date": "2020-04-07",
-          "author": "rtoy@chromium.org",
-          "hash": "d406e435b8",
-          "subject": "Handle k-rate AudioParam inputs for BiquadFilterNode"
-        },
-        {
-          "date": "2020-04-07",
-          "author": "rtoy@chromium.org",
-          "hash": "6aaefc24d0",
-          "subject": "Handle k-rate AudioParam inputs for PannerNode"
-        }
-      ],
-      "testpolicy": "https://github.com/webaudio/web-audio-api/blob/HEAD/README.md"
-    },
-    {
       "name": "Web Bluetooth",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/",
       "specrepo": "webbluetoothcg/web-bluetooth",
@@ -13842,14 +14232,6 @@
           "subject": "Mark a bunch of idlharness tests as timeout=long"
         }
       ]
-    },
-    {
-      "name": "Web MIDI API",
-      "href": "https://webaudio.github.io/web-midi-api/",
-      "specrepo": "webaudio/web-midi-api",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/webaudio/web-midi-api/blob/HEAD/README.md"
     },
     {
       "name": "Web NFC API",
@@ -14090,492 +14472,164 @@
       "testlog": []
     },
     {
-      "name": "Clear Site Data",
-      "href": "https://w3c.github.io/webappsec-clear-site-data/",
-      "specrepo": "w3c/webappsec-clear-site-data",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Credential Management",
-      "href": "https://w3c.github.io/webappsec-credential-management/",
-      "specrepo": "w3c/webappsec-credential-management",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-04-20",
-          "author": "smcgruer@chromium.org",
-          "hash": "f4f991aac0",
-          "subject": "Replace assert_precondition with assert_implements in credential-management (#23008)"
-        }
-      ]
-    },
-    {
-      "name": "Content Security Policy",
-      "href": "https://w3c.github.io/webappsec-csp/",
-      "specrepo": "w3c/webappsec-csp",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-05-20",
-          "author": "peria@chromium.org",
-          "hash": "a4d52ac525",
-          "subject": "IDL: Put default values on 2 members of SecurityPolicyViolationEventInit"
-        },
-        {
-          "date": "2020-05-20",
-          "author": "antoniosartori@chromium.org",
-          "hash": "62bc0e84b0",
-          "subject": "Use original URL before redirects as blocked URL in CSP reporting"
-        },
-        {
-          "date": "2020-05-07",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "48bd16d814",
-          "subject": "Improve test: csp/reporting/post-redirect-stacktrace.https.html"
-        },
-        {
-          "date": "2020-05-05",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "5841e8d230",
-          "subject": "Add WPT tests for bug 1074317"
-        },
-        {
-          "date": "2020-04-28",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "d0824973ef",
-          "subject": "Fix host substitution in CSP test"
-        },
-        {
-          "date": "2020-04-27",
-          "author": "antoniosartori@chromium.org",
-          "hash": "fa3d5b0da2",
-          "subject": "Fix report-to CSP directive to only allow one endpoint"
-        },
-        {
-          "date": "2020-04-27",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "7179786e28",
-          "subject": "Forward CSP, even for the initial empty document."
-        },
-        {
-          "date": "2020-04-20",
-          "author": "smcgruer@chromium.org",
-          "hash": "0bd159c15f",
-          "subject": "Remove instances of 'whitelist' in content-security-policy/ (#21321)"
-        },
-        {
-          "date": "2020-04-14",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "616f31ab20",
-          "subject": "Add regression test for https://crbug.com/1064676"
-        },
-        {
-          "date": "2020-04-01",
-          "author": "lyf@google.com",
-          "hash": "ff3ba87e4b",
-          "subject": "[Trusted Types] Sink name changes in violation reports."
-        }
-      ]
-    },
-    {
-      "name": "Content Security Policy: Embedded Enforcement",
-      "href": "https://w3c.github.io/webappsec-cspee/",
-      "specrepo": "w3c/webappsec-cspee",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-05-20",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "7c66133c79",
-          "subject": "CSP embedder enforcement: Stop removing the allow-origin flag."
-        },
-        {
-          "date": "2020-04-20",
-          "author": "smcgruer@chromium.org",
-          "hash": "0bd159c15f",
-          "subject": "Remove instances of 'whitelist' in content-security-policy/ (#21321)"
-        }
-      ]
-    },
-    {
-      "name": "Feature Policy",
-      "href": "https://w3c.github.io/webappsec-feature-policy/",
-      "specrepo": "w3c/webappsec-feature-policy",
+      "name": "Web Audio API",
+      "href": "https://webaudio.github.io/web-audio-api/",
+      "specrepo": "webaudio/web-audio-api",
       "speclog": [
         {
           "date": "2020-05-26",
-          "author": "iclelland@google.com",
-          "hash": "8bd876f",
-          "subject": "Rename Feature->Permissions in README.md"
+          "author": "toy.raymond@gmail.com",
+          "hash": "ef824b66",
+          "subject": "Fix #2202: Update id of change log section (#2204)"
         },
         {
-          "date": "2020-05-26",
-          "author": "iclelland@google.com",
-          "hash": "b886eb3",
-          "subject": "Rename Feature Policy in integration.md"
-        },
-        {
-          "date": "2020-05-26",
-          "author": "iclelland@google.com",
-          "hash": "3a56df6",
-          "subject": "Update integration.md"
-        },
-        {
-          "date": "2020-05-26",
-          "author": "iclelland@google.com",
-          "hash": "d2b4fd5",
-          "subject": "Cleanup algorithms (#380)"
-        },
-        {
-          "date": "2020-05-26",
-          "author": "iclelland@chromium.org",
-          "hash": "c6e61e6",
-          "subject": "Change FP inheritance"
-        },
-        {
-          "date": "2020-05-21",
-          "author": "iclelland@chromium.org",
-          "hash": "b297ab0",
-          "subject": "Remove \"requires acknowledgment\" flag from document policy"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "62a580c",
-          "subject": "Clean up wrapping"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "9830475",
-          "subject": "Update ABNF"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "dfcf2c7",
-          "subject": "Rename featurePolicy member"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "44a7b9e",
-          "subject": "Rename FeaturePolicy interface"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "deb2fef",
-          "subject": "Rename variables"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "fe5e6f1",
-          "subject": "Rename reporting concepts and interfaces"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "1096ea8",
-          "subject": "Rename the feature policy concept"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "18a2f87",
-          "subject": "Rename the header"
-        },
-        {
-          "date": "2020-05-14",
-          "author": "iclelland@chromium.org",
-          "hash": "d6b23aa",
-          "subject": "Rename the spec and API"
-        },
-        {
-          "date": "2020-05-13",
-          "author": "iclelland@chromium.org",
-          "hash": "0a9f495",
-          "subject": "Change FP inheritance"
-        },
-        {
-          "date": "2020-05-12",
-          "author": "iclelland@google.com",
-          "hash": "967795e",
-          "subject": "Standardize on spelling of \"behavior\""
-        },
-        {
-          "date": "2020-04-30",
-          "author": "jdhodges@google.com",
-          "hash": "0ee2566",
-          "subject": "Update publickey-credentials to be \"get-only\" policy (#370)"
+          "date": "2020-05-18",
+          "author": "khodzha.sh@gmail.com",
+          "hash": "9b3f727f",
+          "subject": "fixed wrong optionality of IIRFilterNode options (#2201)"
         },
         {
           "date": "2020-04-29",
-          "author": "iclelland@google.com",
-          "hash": "1365a8e",
-          "subject": "Replace 'vr' with 'xr-spatial-tracking' in examples"
+          "author": "toy.raymond@gmail.com",
+          "hash": "80ee1a8c",
+          "subject": "Update Change Log to 2020-04-29 (#2200)"
         },
         {
-          "date": "2020-04-17",
-          "author": "iclelland@google.com",
-          "hash": "58fbb1c",
-          "subject": "Add document policy use cases (#373)"
+          "date": "2020-04-29",
+          "author": "paul@paul.cx",
+          "hash": "902ff87f",
+          "subject": "Allow not having get parameterDescriptors in an AudioWorkletProcessor"
         },
         {
-          "date": "2020-04-16",
-          "author": "iclelland@google.com",
-          "hash": "188bd06",
-          "subject": "Update the document policy explainer (#372)"
+          "date": "2020-04-29",
+          "author": "toy.raymond@gmail.com",
+          "hash": "2a7f55f1",
+          "subject": "Fix #2192: Fix WaveShaperNode curve interpolation algorithm."
         },
         {
-          "date": "2020-04-15",
-          "author": "iclelland@google.com",
-          "hash": "1e35db6",
-          "subject": "Start being more consistent with definitions (#371)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-05-26",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "2228dbdd37",
-          "subject": "Reduce cross frame messages in feature-policy-nested-subframe-policy.https.sub.html (#23731)"
+          "date": "2020-04-29",
+          "author": "toy.raymond@gmail.com",
+          "hash": "f4f85609",
+          "subject": "Fix #2193: Fix typo in azimuth algorithm."
         },
         {
-          "date": "2020-05-25",
-          "author": "chenleihu@google.com",
-          "hash": "7e024a21d3",
-          "subject": "Fix flaky test feature-policy-nested-header-policy-allowed-for-all.https.sub.html"
+          "date": "2020-04-29",
+          "author": "toy.raymond@gmail.com",
+          "hash": "77176819",
+          "subject": "Update change log 2020-04-22"
         },
         {
-          "date": "2020-05-13",
-          "author": "chenleihu@google.com",
-          "hash": "34fb486956",
-          "subject": "Fix test time out on feature-propagation-to-auxiliary-context.html"
+          "date": "2020-04-24",
+          "author": "toy.raymond@gmail.com",
+          "hash": "288bafb4",
+          "subject": "Fix #1772: Sort tracks by code units (#2189)"
         },
         {
-          "date": "2020-05-04",
-          "author": "smcgruer@chromium.org",
-          "hash": "c3ecc8c00f",
-          "subject": "Mark some idlharness.html tests as timeout=long"
+          "date": "2020-04-24",
+          "author": "toy.raymond@gmail.com",
+          "hash": "52d90ff7",
+          "subject": "Fix #2190: Update expected results (#2196)"
         },
         {
-          "date": "2020-05-01",
-          "author": "chenleihu@google.com",
-          "hash": "795e198205",
-          "subject": "Split feature-policy-frame-policy-allowed-for-some.https.sub.html"
+          "date": "2020-04-02",
+          "author": "toy.raymond@gmail.com",
+          "hash": "1ded13d6",
+          "subject": "Add links to browser issue trackers (#2181)"
         },
         {
-          "date": "2020-04-28",
-          "author": "rajendrant@chromium.org",
-          "hash": "1cbd65166f",
-          "subject": "Undelete lazyload feature policy test"
-        },
-        {
-          "date": "2020-04-28",
-          "author": "rajendrant@chromium.org",
-          "hash": "ddad50b245",
-          "subject": "LazyLoad: Fix feature-policy tests"
-        },
-        {
-          "date": "2020-04-08",
-          "author": "robertma@chromium.org",
-          "hash": "e7fe387361",
-          "subject": "[payment-request] Stop sending requests to wpt.fyi (#22767)"
-        },
-        {
-          "date": "2020-04-06",
-          "author": "chenleihu@google.com",
-          "hash": "6bb87e50ba",
-          "subject": "Migrate LayoutAnimations from feature policy to document policy"
-        },
-        {
-          "date": "2020-04-06",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "7ab34f7e16",
-          "subject": "wake lock: Remove WakeLockPermissionDescriptor, use separate permission names."
-        },
-        {
-          "date": "2020-04-01",
-          "author": "davidvc@chromium.org",
-          "hash": "605c141497",
-          "subject": "Trust Tokens: Add an XMLHttpRequest interface"
-        }
-      ],
-      "testpolicy": "https://github.com/w3c/webappsec-feature-policy/blob/HEAD/CONTRIBUTING.md"
-    },
-    {
-      "name": "Fetch Metadata Request Headers",
-      "href": "https://w3c.github.io/webappsec-fetch-metadata/",
-      "specrepo": "w3c/webappsec-fetch-metadata",
-      "speclog": [
-        {
-          "date": "2020-04-22",
-          "author": "mkwst@google.com",
-          "hash": "ea8fb02",
-          "subject": "Regenerate HTML."
-        },
-        {
-          "date": "2020-04-22",
-          "author": "mkwst@google.com",
-          "hash": "d17bbae",
-          "subject": "Remove 'nested-{document,navigate}."
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "Mixed Content",
-      "href": "https://w3c.github.io/webappsec-mixed-content/",
-      "specrepo": "w3c/webappsec-mixed-content",
-      "speclog": [
-        {
-          "date": "2020-04-22",
-          "author": "carlosil@chromium.org",
-          "hash": "dad00df",
-          "subject": "Add acknowledgements"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "Referrer Policy",
-      "href": "https://w3c.github.io/webappsec-referrer-policy/",
-      "specrepo": "w3c/webappsec-referrer-policy",
-      "speclog": [
-        {
-          "date": "2020-05-11",
-          "author": "26493779+Malvoz@users.noreply.github.com",
-          "hash": "4fe129d",
-          "subject": "Fix @domfarolino's feedback"
-        },
-        {
-          "date": "2020-05-10",
-          "author": "26493779+Malvoz@users.noreply.github.com",
-          "hash": "196dee9",
-          "subject": "Add <script> for `referrerpolicy` content attribute"
-        },
-        {
-          "date": "2020-04-01",
-          "author": "domfarolino@gmail.com",
-          "hash": "447d65c",
-          "subject": "Rebuild spec"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2020-04-30",
-          "author": "dom@chromium.org",
-          "hash": "f9f0aa06e3",
-          "subject": "Add about:blank iframe referrer tests"
-        }
-      ]
-    },
-    {
-      "name": "Secure Contexts",
-      "href": "https://w3c.github.io/webappsec-secure-contexts/",
-      "specrepo": "w3c/webappsec-secure-contexts",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-05-08",
-          "author": "smcgruer@chromium.org",
-          "hash": "b0f0a12c73",
-          "subject": "Mark two idlharness.html tests as timeout=long"
-        }
-      ]
-    },
-    {
-      "name": "Subresource Integrity",
-      "href": "https://w3c.github.io/webappsec-subresource-integrity/",
-      "specrepo": "w3c/webappsec-subresource-integrity",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Trusted Types",
-      "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-      "specrepo": "w3c/webappsec-trusted-types",
-      "speclog": [
-        {
-          "date": "2020-05-20",
-          "author": "koto@google.com",
-          "hash": "460b163",
-          "subject": "Add `'none'` keyword support for `trusted-types` directive. (#280)"
-        },
-        {
-          "date": "2020-04-22",
-          "author": "koto@google.com",
-          "hash": "b102df7",
-          "subject": "Fix #275. (#277)"
+          "date": "2020-04-02",
+          "author": "toy.raymond@gmail.com",
+          "hash": "fe221f30",
+          "subject": "Fix #2184: Clarify refDistance description (#2187)"
         },
         {
           "date": "2020-03-31",
-          "author": "koto@google.com",
-          "hash": "eab49be",
-          "subject": "Update README.md"
+          "author": "10491533+tim-we@users.noreply.github.com",
+          "hash": "948b53b2",
+          "subject": "Fix a typo. (#2188)"
         }
       ],
       "testlog": [
         {
-          "date": "2020-05-20",
-          "author": "lyf@google.com",
-          "hash": "31a3e32343",
-          "subject": "[Trusted Types] Add Trusted Type to href for SVGScriptElement."
-        },
-        {
-          "date": "2020-05-15",
-          "author": "lyf@google.com",
-          "hash": "bb11e0cb0c",
-          "subject": "[Trusted Types] Change tests for SVGScriptElement.innerHTML."
-        },
-        {
           "date": "2020-05-12",
-          "author": "mkwst@chromium.org",
-          "hash": "094353fedf",
-          "subject": "Remove the `[SecureContext]` restriction from Trusted Types."
+          "author": "rtoy@chromium.org",
+          "hash": "f0799f9588",
+          "subject": "Handle k-rate AudioParam inputs for AudioWorkletNode"
         },
         {
-          "date": "2020-04-02",
-          "author": "vogelheim@chromium.org",
-          "hash": "c1fc72c479",
-          "subject": "[Trusted Types] Add test cases for svg:script."
+          "date": "2020-05-07",
+          "author": "orders+github@karlt.net",
+          "hash": "366ea52357",
+          "subject": "[webaudio] Generalize convolver test tolerances for numerical error (#11935)"
         },
         {
-          "date": "2020-04-02",
-          "author": "vogelheim@chromium.org",
-          "hash": "1afd76112f",
-          "subject": "[Trusted Types] Add default policy callback arguments"
+          "date": "2020-05-05",
+          "author": "rtoy@chromium.org",
+          "hash": "100d85cd2b",
+          "subject": "Handle k-rate AudioParam inputs for BiquadFilterNode"
         },
         {
-          "date": "2020-04-01",
-          "author": "lyf@google.com",
-          "hash": "ff3ba87e4b",
-          "subject": "[Trusted Types] Sink name changes in violation reports."
+          "date": "2020-05-05",
+          "author": "rtoy@chromium.org",
+          "hash": "a135e5f5e7",
+          "subject": "Handle k-rate AudioParam inputs for DynamicsCompressorNode"
         },
         {
-          "date": "2020-04-01",
-          "author": "vogelheim@chromium.org",
-          "hash": "ee1697dab6",
-          "subject": "[Trusted Types] Worker constructor URLs are TrustedScriptURLs"
+          "date": "2020-04-29",
+          "author": "hongchan@chromium.org",
+          "hash": "d9ff48a8ba",
+          "subject": "Use ErrorEvent for AudioWorkletNode.onprocessorerror"
+        },
+        {
+          "date": "2020-04-22",
+          "author": "hongchan@chromium.org",
+          "hash": "e764b34bd0",
+          "subject": "Correct input connection and automatic pull behavior of AudioWorkletNode"
+        },
+        {
+          "date": "2020-04-14",
+          "author": "rtoy@chromium.org",
+          "hash": "04e2e7aa3b",
+          "subject": "Handle k-rate AudioParams with input for AudioBufferSourceNode"
+        },
+        {
+          "date": "2020-04-14",
+          "author": "rtoy@chromium.org",
+          "hash": "55d4561356",
+          "subject": "Test k-rate AudioParam input for DelayNode"
+        },
+        {
+          "date": "2020-04-09",
+          "author": "rtoy@chromium.org",
+          "hash": "41f7e2e9da",
+          "subject": "Handle k-rate AudioParam inputs for OscillatorNode"
+        },
+        {
+          "date": "2020-04-08",
+          "author": "rtoy@chromium.org",
+          "hash": "6633ecd1ca",
+          "subject": "Uniquify test names for k-rate PannerNode test"
+        },
+        {
+          "date": "2020-04-07",
+          "author": "huangdarwin@chromium.org",
+          "hash": "3fda5b0930",
+          "subject": "Revert \"Handle k-rate AudioParam inputs for BiquadFilterNode\""
+        },
+        {
+          "date": "2020-04-07",
+          "author": "rtoy@chromium.org",
+          "hash": "d406e435b8",
+          "subject": "Handle k-rate AudioParam inputs for BiquadFilterNode"
+        },
+        {
+          "date": "2020-04-07",
+          "author": "rtoy@chromium.org",
+          "hash": "6aaefc24d0",
+          "subject": "Handle k-rate AudioParam inputs for PannerNode"
         }
-      ]
-    },
-    {
-      "name": "Upgrade Insecure Requests",
-      "href": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
-      "specrepo": "w3c/webappsec-upgrade-insecure-requests",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-04-27",
-          "author": "elkurin@google.com",
-          "hash": "19a0095b86",
-          "subject": "UpgradeInsecureRequest: Add WPTs for static-import in dedicated/shared workers"
-        }
-      ]
+      ],
+      "testpolicy": "https://github.com/webaudio/web-audio-api/blob/HEAD/README.md"
     },
     {
       "name": "Web Authentication",
@@ -15063,12 +15117,12 @@
       ]
     },
     {
-      "name": "Identity for WebRTC",
-      "href": "https://w3c.github.io/webrtc-identity/identity.html",
-      "specrepo": "w3c/webrtc-identity",
+      "name": "Web MIDI API",
+      "href": "https://webaudio.github.io/web-midi-api/",
+      "specrepo": "webaudio/web-midi-api",
       "speclog": [],
       "testlog": [],
-      "testpolicy": "https://github.com/w3c/webrtc-identity/blob/HEAD/CONTRIBUTING.md"
+      "testpolicy": "https://github.com/webaudio/web-midi-api/blob/HEAD/README.md"
     },
     {
       "name": "WebRTC",
@@ -15517,6 +15571,14 @@
         }
       ],
       "testpolicy": "https://github.com/w3c/webrtc-pc/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "Identity for WebRTC",
+      "href": "https://w3c.github.io/webrtc-identity/identity.html",
+      "specrepo": "w3c/webrtc-identity",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/w3c/webrtc-identity/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "WebRTC Priority Control API",

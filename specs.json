@@ -24,6 +24,18 @@
     "specrepo": "wicg/aom"
   },
   {
+    "id": "appmanifest",
+    "name": "Web App Manifest",
+    "href": "https://w3c.github.io/manifest/",
+    "specrepo": "w3c/manifest"
+  },
+  {
+    "id": "audio-output",
+    "name": "Audio Output Devices API",
+    "href": "https://w3c.github.io/mediacapture-output/",
+    "specrepo": "w3c/mediacapture-output"
+  },
+  {
     "id": "background-fetch",
     "name": "Background Fetch",
     "href": "https://wicg.github.io/background-fetch/",
@@ -42,11 +54,10 @@
     "specrepo": "wicg/badging"
   },
   {
-    "id": "battery",
+    "id": "battery-status",
     "name": "Battery Status API",
     "href": "https://w3c.github.io/battery/",
-    "specrepo": "w3c/battery",
-    "testpath": "battery-status"
+    "specrepo": "w3c/battery"
   },
   {
     "id": "beacon",
@@ -73,6 +84,12 @@
     "name": "Web Budget API",
     "href": "https://wicg.github.io/budget-api/",
     "specrepo": "wicg/budget-api"
+  },
+  {
+    "id": "clear-site-data",
+    "name": "Clear Site Data",
+    "href": "https://w3c.github.io/webappsec-clear-site-data/",
+    "specrepo": "w3c/webappsec-clear-site-data"
   },
   {
     "id": "client-hints-infrastructure",
@@ -152,6 +169,36 @@
     "specrepo": "wicg/cors-rfc1918"
   },
   {
+    "id": "credential-management",
+    "name": "Credential Management",
+    "href": "https://w3c.github.io/webappsec-credential-management/",
+    "specrepo": "w3c/webappsec-credential-management"
+  },
+  {
+    "id": "CSP",
+    "name": "Content Security Policy",
+    "href": "https://w3c.github.io/webappsec-csp/",
+    "specrepo": "w3c/webappsec-csp",
+    "specpath": "index.src.html",
+    "testpath": "content-security-policy ':(exclude)content-security-policy/embedded-enforcement'"
+  },
+  {
+    "id": "csp-embedded-enforcement",
+    "name": "Content Security Policy: Embedded Enforcement",
+    "href": "https://w3c.github.io/webappsec-cspee/",
+    "specrepo": "w3c/webappsec-cspee",
+    "testpath": "content-security-policy/embedded-enforcement"
+  },
+  {
+    "id": "CSS",
+    "name": "CSS 2.2",
+    "href": "https://drafts.csswg.org/css2/",
+    "specrepo": "w3c/csswg-drafts",
+    "specpath": "css2",
+    "testpath": "css/CSS2",
+    "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
+  },
+  {
     "id": "css-align",
     "name": "CSS Box Alignment",
     "href": "https://drafts.csswg.org/css-align/",
@@ -161,6 +208,15 @@
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
   },
   {
+    "id": "css-animation-worklet",
+    "name": "CSS Animation Worklet API",
+    "href": "https://drafts.css-houdini.org/css-animationworklet/",
+    "specrepo": "w3c/css-houdini-drafts",
+    "specpath": "css-animationworklet",
+    "testpath": "animation-worklet",
+    "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests"
+  },
+  {
     "id": "css-animations",
     "name": "CSS Animations",
     "href": "https://drafts.csswg.org/css-animations/",
@@ -168,15 +224,6 @@
     "specpath": "css-animations css-animations-1 css-animations-2 css-animations-3 css-animations-4 css-animations-5",
     "testpath": "css-animations css/css-animations css/css-animations-1 css/css-animations-2 css/css-animations-3 css/css-animations-4 css/css-animations-5",
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
-  },
-  {
-    "id": "css-animationworklet",
-    "name": "CSS Animation Worklet API",
-    "href": "https://drafts.css-houdini.org/css-animationworklet/",
-    "specrepo": "w3c/css-houdini-drafts",
-    "specpath": "css-animationworklet css-animationworklet-1 css-animationworklet-2 css-animationworklet-3 css-animationworklet-4 css-animationworklet-5",
-    "testpath": "css-animationworklet css/css-animationworklet css/css-animationworklet-1 css/css-animationworklet-2 css/css-animationworklet-3 css/css-animationworklet-4 css/css-animationworklet-5",
-    "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests"
   },
   {
     "id": "css-backgrounds",
@@ -779,15 +826,6 @@
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
   },
   {
-    "id": "css2",
-    "name": "CSS 2.2",
-    "href": "https://drafts.csswg.org/css2/",
-    "specrepo": "w3c/csswg-drafts",
-    "specpath": "css2",
-    "testpath": "css/CSS2",
-    "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
-  },
-  {
     "id": "cssom",
     "name": "CSS Object Model (CSSOM)",
     "href": "https://drafts.csswg.org/cssom/",
@@ -811,12 +849,6 @@
     "href": "https://w3c.github.io/device-memory/",
     "specrepo": "w3c/device-memory",
     "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md"
-  },
-  {
-    "id": "deviceorientation",
-    "name": "DeviceOrientation Event",
-    "href": "https://w3c.github.io/deviceorientation/",
-    "specrepo": "w3c/deviceorientation"
   },
   {
     "id": "dom",
@@ -888,12 +920,24 @@
     "testpath": "editing"
   },
   {
+    "id": "feature-policy",
+    "name": "Feature Policy",
+    "href": "https://w3c.github.io/webappsec-feature-policy/",
+    "specrepo": "w3c/webappsec-feature-policy"
+  },
+  {
     "id": "fetch",
     "name": "Fetch",
     "href": "https://fetch.spec.whatwg.org/",
     "specrepo": "whatwg/fetch",
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
     "testpath": "fetch cors"
+  },
+  {
+    "id": "fetch-metadata",
+    "name": "Fetch Metadata Request Headers",
+    "href": "https://w3c.github.io/webappsec-fetch-metadata/",
+    "specrepo": "w3c/webappsec-fetch-metadata"
   },
   {
     "id": "figures",
@@ -962,7 +1006,13 @@
     "specpath": "extensions.html"
   },
   {
-    "id": "geolocation-api",
+    "id": "generic-sensor",
+    "name": "Generic Sensor API",
+    "href": "https://w3c.github.io/sensors/",
+    "specrepo": "w3c/sensors"
+  },
+  {
+    "id": "geolocation-API",
     "name": "Geolocation API",
     "href": "https://w3c.github.io/geolocation-api/",
     "specrepo": "w3c/geolocation-api"
@@ -1028,6 +1078,12 @@
     "specrepo": "w3c/html-media-capture"
   },
   {
+    "id": "image-capture",
+    "name": "MediaStream Image Capture",
+    "href": "https://w3c.github.io/mediacapture-image/",
+    "specrepo": "w3c/mediacapture-image"
+  },
+  {
     "id": "image-resource",
     "name": "Image Resource",
     "href": "https://w3c.github.io/image-resource/",
@@ -1072,11 +1128,10 @@
     "testpath": "input-device-capabilities"
   },
   {
-    "id": "IntersectionObserver",
+    "id": "intersection-observer",
     "name": "Intersection Observer",
     "href": "https://w3c.github.io/IntersectionObserver/",
-    "specrepo": "w3c/IntersectionObserver",
-    "testpath": "intersection-observer"
+    "specrepo": "w3c/IntersectionObserver"
   },
   {
     "id": "js-self-profiling",
@@ -1129,13 +1184,6 @@
     "specrepo": "w3c/magnetometer"
   },
   {
-    "id": "manifest",
-    "name": "Web App Manifest",
-    "href": "https://w3c.github.io/manifest/",
-    "specrepo": "w3c/manifest",
-    "testpath": "appmanifest"
-  },
-  {
     "id": "mathml-core",
     "name": "MathML Core",
     "href": "https://mathml-refresh.github.io/mathml-core/",
@@ -1172,36 +1220,10 @@
     "specrepo": "w3c/mediacapture-fromelement"
   },
   {
-    "id": "mediacapture-image",
-    "name": "MediaStream Image Capture",
-    "href": "https://w3c.github.io/mediacapture-image/",
-    "specrepo": "w3c/mediacapture-image"
-  },
-  {
-    "id": "mediacapture-main",
+    "id": "mediacapture-streams",
     "name": "Media Capture and Streams",
     "href": "https://w3c.github.io/mediacapture-main/",
-    "specrepo": "w3c/mediacapture-main",
-    "testpath": "mediacapture-streams"
-  },
-  {
-    "id": "mediacapture-output",
-    "name": "Audio Output Devices API",
-    "href": "https://w3c.github.io/mediacapture-output/",
-    "specrepo": "w3c/mediacapture-output",
-    "testpath": "audio-output"
-  },
-  {
-    "id": "mediacapture-record",
-    "name": "MediaStream Recording",
-    "href": "https://w3c.github.io/mediacapture-record/",
-    "specrepo": "w3c/mediacapture-record"
-  },
-  {
-    "id": "mediacapture-screen-share",
-    "name": "Screen Capture",
-    "href": "https://w3c.github.io/mediacapture-screen-share/",
-    "specrepo": "w3c/mediacapture-screen-share"
+    "specrepo": "w3c/mediacapture-main"
   },
   {
     "id": "mediaqueries",
@@ -1219,11 +1241,23 @@
     "specrepo": "w3c/mediasession"
   },
   {
+    "id": "mediastream-recording",
+    "name": "MediaStream Recording",
+    "href": "https://w3c.github.io/mediacapture-record/",
+    "specrepo": "w3c/mediacapture-record"
+  },
+  {
     "id": "mimesniff",
     "name": "MIME Sniffing",
     "href": "https://mimesniff.spec.whatwg.org/",
     "specrepo": "whatwg/mimesniff",
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md"
+  },
+  {
+    "id": "mixed-content",
+    "name": "Mixed Content",
+    "href": "https://w3c.github.io/webappsec-mixed-content/",
+    "specrepo": "w3c/webappsec-mixed-content"
   },
   {
     "id": "motion",
@@ -1278,6 +1312,12 @@
     "href": "https://notifications.spec.whatwg.org/",
     "specrepo": "whatwg/notifications",
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md"
+  },
+  {
+    "id": "orientation-event",
+    "name": "DeviceOrientation Event",
+    "href": "https://w3c.github.io/deviceorientation/",
+    "specrepo": "w3c/deviceorientation"
   },
   {
     "id": "orientation-sensor",
@@ -1442,6 +1482,12 @@
     "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md"
   },
   {
+    "id": "referrer-policy",
+    "name": "Referrer Policy",
+    "href": "https://w3c.github.io/webappsec-referrer-policy/",
+    "specrepo": "w3c/webappsec-referrer-policy"
+  },
+  {
     "id": "remote-playback",
     "name": "Remote Playback API",
     "href": "https://w3c.github.io/remote-playback/",
@@ -1485,16 +1531,16 @@
     "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md"
   },
   {
+    "id": "screen-capture",
+    "name": "Screen Capture",
+    "href": "https://w3c.github.io/mediacapture-screen-share/",
+    "specrepo": "w3c/mediacapture-screen-share"
+  },
+  {
     "id": "screen-orientation",
     "name": "Screen Orientation API",
     "href": "https://w3c.github.io/screen-orientation/",
     "specrepo": "w3c/screen-orientation"
-  },
-  {
-    "id": "screen-wake-lock",
-    "name": "Wake Lock API",
-    "href": "https://w3c.github.io/screen-wake-lock/",
-    "specrepo": "w3c/screen-wake-lock"
   },
   {
     "id": "scroll-animations",
@@ -1510,6 +1556,12 @@
     "name": "Text Fragments",
     "href": "https://wicg.github.io/ScrollToTextFragment/",
     "specrepo": "wicg/ScrollToTextFragment"
+  },
+  {
+    "id": "secure-contexts",
+    "name": "Secure Contexts",
+    "href": "https://w3c.github.io/webappsec-secure-contexts/",
+    "specrepo": "w3c/webappsec-secure-contexts"
   },
   {
     "id": "selection-api",
@@ -1537,13 +1589,6 @@
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
   },
   {
-    "id": "sensors",
-    "name": "Generic Sensor API",
-    "href": "https://w3c.github.io/sensors/",
-    "specrepo": "w3c/sensors",
-    "testpath": "generic-sensor"
-  },
-  {
     "id": "serial",
     "name": "Serial API",
     "href": "https://wicg.github.io/serial/",
@@ -1557,11 +1602,10 @@
     "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md"
   },
   {
-    "id": "ServiceWorker",
+    "id": "service-workers",
     "name": "Service Workers",
     "href": "https://w3c.github.io/ServiceWorker/",
-    "specrepo": "w3c/ServiceWorker",
-    "testpath": "service-workers"
+    "specrepo": "w3c/ServiceWorker"
   },
   {
     "id": "setImmediate",
@@ -1586,6 +1630,12 @@
     "name": "Web Speech API",
     "href": "https://wicg.github.io/speech-api/",
     "specrepo": "wicg/speech-api"
+  },
+  {
+    "id": "SRI",
+    "name": "Subresource Integrity",
+    "href": "https://w3c.github.io/webappsec-subresource-integrity/",
+    "specrepo": "w3c/webappsec-subresource-integrity"
   },
   {
     "id": "storage",
@@ -1675,6 +1725,12 @@
     "specrepo": "w3c/trace-context"
   },
   {
+    "id": "trusted-types",
+    "name": "Trusted Types",
+    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
+    "specrepo": "w3c/webappsec-trusted-types"
+  },
+  {
     "id": "uievents",
     "name": "UI Events",
     "href": "https://w3c.github.io/uievents/",
@@ -1691,6 +1747,12 @@
     "name": "UI Events KeyboardEvent key Values",
     "href": "https://w3c.github.io/uievents-key/",
     "specrepo": "w3c/uievents-key"
+  },
+  {
+    "id": "upgrade-insecure-requests",
+    "name": "Upgrade Insecure Requests",
+    "href": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
+    "specrepo": "w3c/webappsec-upgrade-insecure-requests"
   },
   {
     "id": "url",
@@ -1723,6 +1785,12 @@
     "name": "Visual Viewport API",
     "href": "https://wicg.github.io/visual-viewport/",
     "specrepo": "wicg/visual-viewport"
+  },
+  {
+    "id": "wake-lock",
+    "name": "Wake Lock API",
+    "href": "https://w3c.github.io/screen-wake-lock/",
+    "specrepo": "w3c/screen-wake-lock"
   },
   {
     "id": "wasm",
@@ -1761,13 +1829,6 @@
     "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md"
   },
   {
-    "id": "web-audio-api",
-    "name": "Web Audio API",
-    "href": "https://webaudio.github.io/web-audio-api/",
-    "specrepo": "webaudio/web-audio-api",
-    "testpath": "webaudio"
-  },
-  {
     "id": "web-bluetooth",
     "name": "Web Bluetooth",
     "href": "https://webbluetoothcg.github.io/web-bluetooth/",
@@ -1779,12 +1840,6 @@
     "name": "Web Locks API",
     "href": "https://wicg.github.io/web-locks/",
     "specrepo": "wicg/web-locks"
-  },
-  {
-    "id": "web-midi-api",
-    "name": "Web MIDI API",
-    "href": "https://webaudio.github.io/web-midi-api/",
-    "specrepo": "webaudio/web-midi-api"
   },
   {
     "id": "web-nfc",
@@ -1811,89 +1866,10 @@
     "specrepo": "wicg/web-transport"
   },
   {
-    "id": "webappsec-clear-site-data",
-    "name": "Clear Site Data",
-    "href": "https://w3c.github.io/webappsec-clear-site-data/",
-    "specrepo": "w3c/webappsec-clear-site-data",
-    "testpath": "clear-site-data"
-  },
-  {
-    "id": "webappsec-credential-management",
-    "name": "Credential Management",
-    "href": "https://w3c.github.io/webappsec-credential-management/",
-    "specrepo": "w3c/webappsec-credential-management",
-    "testpath": "credential-management"
-  },
-  {
-    "id": "webappsec-csp",
-    "name": "Content Security Policy",
-    "href": "https://w3c.github.io/webappsec-csp/",
-    "specrepo": "w3c/webappsec-csp",
-    "testpath": "content-security-policy ':(exclude)content-security-policy/embedded-enforcement'",
-    "specpath": "index.src.html"
-  },
-  {
-    "id": "webappsec-cspee",
-    "name": "Content Security Policy: Embedded Enforcement",
-    "href": "https://w3c.github.io/webappsec-cspee/",
-    "specrepo": "w3c/webappsec-cspee",
-    "testpath": "content-security-policy/embedded-enforcement"
-  },
-  {
-    "id": "webappsec-feature-policy",
-    "name": "Feature Policy",
-    "href": "https://w3c.github.io/webappsec-feature-policy/",
-    "specrepo": "w3c/webappsec-feature-policy",
-    "testpath": "feature-policy"
-  },
-  {
-    "id": "webappsec-fetch-metadata",
-    "name": "Fetch Metadata Request Headers",
-    "href": "https://w3c.github.io/webappsec-fetch-metadata/",
-    "specrepo": "w3c/webappsec-fetch-metadata",
-    "testpath": "fetch-metadata"
-  },
-  {
-    "id": "webappsec-mixed-content",
-    "name": "Mixed Content",
-    "href": "https://w3c.github.io/webappsec-mixed-content/",
-    "specrepo": "w3c/webappsec-mixed-content",
-    "testpath": "mixed-content"
-  },
-  {
-    "id": "webappsec-referrer-policy",
-    "name": "Referrer Policy",
-    "href": "https://w3c.github.io/webappsec-referrer-policy/",
-    "specrepo": "w3c/webappsec-referrer-policy",
-    "testpath": "referrer-policy"
-  },
-  {
-    "id": "webappsec-secure-contexts",
-    "name": "Secure Contexts",
-    "href": "https://w3c.github.io/webappsec-secure-contexts/",
-    "specrepo": "w3c/webappsec-secure-contexts",
-    "testpath": "secure-contexts"
-  },
-  {
-    "id": "webappsec-subresource-integrity",
-    "name": "Subresource Integrity",
-    "href": "https://w3c.github.io/webappsec-subresource-integrity/",
-    "specrepo": "w3c/webappsec-subresource-integrity",
-    "testpath": "subresource-integrity"
-  },
-  {
-    "id": "webappsec-trusted-types",
-    "name": "Trusted Types",
-    "href": "https://w3c.github.io/webappsec-trusted-types/dist/spec/",
-    "specrepo": "w3c/webappsec-trusted-types",
-    "testpath": "trusted-types"
-  },
-  {
-    "id": "webappsec-upgrade-insecure-requests",
-    "name": "Upgrade Insecure Requests",
-    "href": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
-    "specrepo": "w3c/webappsec-upgrade-insecure-requests",
-    "testpath": "upgrade-insecure-requests"
+    "id": "webaudio",
+    "name": "Web Audio API",
+    "href": "https://webaudio.github.io/web-audio-api/",
+    "specrepo": "webaudio/web-audio-api"
   },
   {
     "id": "webauthn",
@@ -1902,11 +1878,10 @@
     "specrepo": "w3c/webauthn"
   },
   {
-    "id": "webcrypto",
+    "id": "WebCryptoAPI",
     "name": "Web Cryptography API",
     "href": "https://w3c.github.io/webcrypto/",
-    "specrepo": "w3c/webcrypto",
-    "testpath": "WebCryptoAPI"
+    "specrepo": "w3c/webcrypto"
   },
   {
     "id": "webdriver",
@@ -1915,7 +1890,7 @@
     "specrepo": "w3c/webdriver"
   },
   {
-    "id": "webgl",
+    "id": "webgl1",
     "name": "WebGL",
     "href": "https://www.khronos.org/registry/webgl/specs/latest/1.0/",
     "specrepo": "KhronosGroup/WebGL",
@@ -1933,24 +1908,28 @@
     "testpath": "conformance-suites/2.0.0"
   },
   {
-    "id": "webidl",
+    "id": "WebIDL",
     "name": "Web IDL",
     "href": "https://heycam.github.io/webidl/",
-    "specrepo": "heycam/webidl",
-    "testpath": "WebIDL"
+    "specrepo": "heycam/webidl"
+  },
+  {
+    "id": "webmidi",
+    "name": "Web MIDI API",
+    "href": "https://webaudio.github.io/web-midi-api/",
+    "specrepo": "webaudio/web-midi-api"
+  },
+  {
+    "id": "webrtc",
+    "name": "WebRTC",
+    "href": "https://w3c.github.io/webrtc-pc/",
+    "specrepo": "w3c/webrtc-pc"
   },
   {
     "id": "webrtc-identity",
     "name": "Identity for WebRTC",
     "href": "https://w3c.github.io/webrtc-identity/identity.html",
     "specrepo": "w3c/webrtc-identity"
-  },
-  {
-    "id": "webrtc-pc",
-    "name": "WebRTC",
-    "href": "https://w3c.github.io/webrtc-pc/",
-    "specrepo": "w3c/webrtc-pc",
-    "testpath": "webrtc"
   },
   {
     "id": "webrtc-priority",
@@ -2001,7 +1980,7 @@
     "specrepo": "immersive-web/webxr-gamepads-module"
   },
   {
-    "id": "woff",
+    "id": "WOFF",
     "name": "WOFF File Format",
     "href": "https://w3c.github.io/woff/woff2/",
     "specrepo": "w3c/woff"
