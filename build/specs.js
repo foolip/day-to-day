@@ -9,6 +9,7 @@ const biblio = ['biblio', 'w3c', 'whatwg', 'wicg'];
 // specref names to drop on the floor
 const blocklist = [
   'API-DESIGN-PRINCIPLES',
+  'AV1',
   'BBC-SUBTITLE',
   'COWL',
   'CSP2',
@@ -26,6 +27,7 @@ const blocklist = [
   'REPORTING',
   'RESIZE-OBSERVER',
   'UISecurity',
+  'WEBVMT',
   'WICG-GEOLOCATION-SENSOR', // https://github.com/tobie/specref/commit/a807c9e6c5ff88a1a7d3c1c32791f18248afed48
   'WICG-MST-CONTENT-HINT', // https://github.com/tobie/specref/pull/473
   'WICG-NETWORK-ERROR-LOGGING',
@@ -115,6 +117,7 @@ const blocklist = [
   'personalization-semantics-1.0',
   'personalization-semantics-content-1.0',
   'personalization-semantics-help-1.0',
+  'personalization-semantics-requirements-1.0',
   'personalization-semantics-tools-1.0',
   'poe-ucr',
   'pointerevents2',
@@ -142,6 +145,7 @@ const blocklist = [
   'ttml-imsc1',
   'ttml-imsc1.0.1',
   'ttml-imsc1.1',
+  'ttml1',
   'ttml2',
   'typography',
   'uievents-code',
@@ -164,6 +168,7 @@ const blocklist = [
   'webdriver1',
   'webpayments-http-api',
   'webpayments-http-messages',
+  'webrtc-nv-use-cases',
   'webstorage',
   'websub',
   'webvr',
