@@ -21,6 +21,7 @@ const blocklist = [
   'GraphQL',
   'HTML-EXTENSIONS',
   'INFRA',
+  'IndexedDB',
   'LOADER',
   'REPORTING',
   'RESIZE-OBSERVER',
