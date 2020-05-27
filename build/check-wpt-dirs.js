@@ -10,7 +10,9 @@ function main() {
   console.log(`Reading ${specsPath}`);
   const specs = JSON.parse(fs.readFileSync(specsPath));
 
-  const wptDir = repo.checkout('https://github.com/web-platform-tests/wpt', {update: false});
+  const wptDir = repo.checkout('https://github.com/web-platform-tests/wpt', {
+    update: false,
+  });
 
   const specsWithoutWptDirs = [];
 
@@ -26,7 +28,9 @@ function main() {
     }
 
     const paths = entry.testpath.split(' ');
-    const somePathExists = paths.some((path) => fs.existsSync(`${wptDir}/${path}`));
+    const somePathExists = paths.some((path) => {
+      return fs.existsSync(`${wptDir}/${path}`);
+    });
     if (!somePathExists) {
       specsWithoutWptDirs.push(entry);
     }
