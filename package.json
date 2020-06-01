@@ -8,6 +8,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint --ignore-path .gitignore .",
+    "test": "node build/specs.js /dev/null",
     "build": "rm -rf out && mkdir out && node build/specs.js out/specs.json && node build/data.js out/specs.json out/data.json && cp static/* out/"
   },
   "dependencies": {
