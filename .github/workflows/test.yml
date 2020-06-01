@@ -1,0 +1,12 @@
+name: test
+on: pull_request
+jobs:
+  test:
+    runs-on: ubuntu-18.04
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12.x
+    - run: npm ci --production
+    - run: npm run test
