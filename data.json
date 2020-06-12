@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-04-15T07:11:03.019Z",
-  "until": "2020-06-11T07:11:03.019Z",
+  "since": "2020-04-16T07:10:52.057Z",
+  "until": "2020-06-12T07:10:52.057Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -277,7 +277,14 @@
       "href": "https://w3c.github.io/webappsec-clear-site-data/",
       "specrepo": "w3c/webappsec-clear-site-data",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "bfa5d6b4b0",
+          "subject": "Python 3: port tests in clear-site-data etc. (#24081)"
+        }
+      ]
     },
     {
       "name": "Client Hints Infrastructure",
@@ -504,6 +511,12 @@
       "href": "https://wicg.github.io/cookie-store/",
       "specrepo": "wicg/cookie-store",
       "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "pwnall@chromium.org",
+          "hash": "5f59cf0",
+          "subject": "Credit the W3C TAG members who gave feedback on this API. (#147)"
+        },
         {
           "date": "2020-06-10",
           "author": "48255136+ayuishii@users.noreply.github.com",
@@ -1007,12 +1020,6 @@
           "author": "andruud@chromium.org",
           "hash": "9f16de83ab",
           "subject": "Animations modified with setKeyframes must not mask !important"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "andruud@chromium.org",
-          "hash": "f16078c799",
-          "subject": "Base style should respond to animations modified with setKeyframes"
         }
       ]
     },
@@ -1157,18 +1164,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "0f1ce2b39",
           "subject": "[css-box-3] dfn and export the term 'edge'."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "5f5fe735e",
-          "subject": "[css-box-4] Update Changes list"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "0ed769d0c",
-          "subject": "[css-box] Fix link"
         }
       ],
       "testlog": []
@@ -1477,12 +1472,6 @@
           "author": "futhark@chromium.org",
           "hash": "f233cde21f",
           "subject": "Remove 'only' keyword and support 'dark' scheme with preferred 'light'."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "futhark@chromium.org",
-          "hash": "4f2bd218c6",
-          "subject": "Invalidate paint when used color-scheme changes."
         }
       ]
     },
@@ -1767,6 +1756,42 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "6dd2edc27",
+          "subject": "[css-flexbox] Remove the redundant first bullet point (changing it to a note), and genericize the third accordingly. #3531"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "84dabef61",
+          "subject": "[css-flexbox] Define the automatic block size of a flex container, since it's technically not defined by CSS2. #4905"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "9cbf855e9",
+          "subject": "[css-flexbox] Move statement about auto margins to the correct section. No normative changes intended."
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "dbc8f6df5",
+          "subject": "[css-flexbox] Rewrote container cross-sizing to be generic to the formatting context, rather than assuming block layout. #5190."
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "ab0e4fe21",
+          "subject": "[css-flexbox] Clarified that 'perform layout' means using block-level rules. Fixes #5188."
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jackalmage@gmail.com",
+          "hash": "91bab66ac",
+          "subject": "[css-flexbox] Slightly restructured the text for resolving flexible lengths to resolve #5179. No normative changes intended."
+        },
+        {
           "date": "2020-05-06",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "dbd98f29f",
@@ -1960,6 +1985,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-06-12",
+          "author": "git@florian.rivoal.net",
+          "hash": "dd3ef9c73",
+          "subject": "[css-fonts-4] Fix punctuation"
+        },
+        {
           "date": "2020-04-22",
           "author": "chris@w3.org",
           "hash": "fc3ec4de3",
@@ -1973,6 +2004,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-12",
+          "author": "jkew@mozilla.com",
+          "hash": "4dcd73f4c3",
+          "subject": "Add some WPT reftests for font-language-override behavior."
+        },
         {
           "date": "2020-05-28",
           "author": "gtsteel@google.com",
@@ -2398,102 +2435,6 @@
           "author": "abhijeet@igalia.com",
           "hash": "4307fdd2c9",
           "subject": "[css-grid] Migrate grid-auto-fit-rows.html test to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "mario@igalia.com",
-          "hash": "691bdb218f",
-          "subject": "[css-grid] Migrate grid-add-item-with-positioned-items.html to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "mario@igalia.com",
-          "hash": "f3424eda12",
-          "subject": "[css-grid] Migrate grid-add-positioned-block-item-after-inline-item.html to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "gyuyoung@igalia.com",
-          "hash": "210cd1641c",
-          "subject": "[css-grid] Migrate grid-element-remove-svg-child.html to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "tonikitoo@igalia.com",
-          "hash": "8d4aa0541d",
-          "subject": "[css-grid] Migrate flex-and-intrinsic-sizes.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "abhijeet@igalia.com",
-          "hash": "4171fc9466",
-          "subject": "[css-grid] Migrate grid-auto-fill-columns.html test to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "tonikitoo@igalia.com",
-          "hash": "b3e63e7e3f",
-          "subject": "[css-grid] Migrate grid-auto-repeat-positioned-container.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "abhijeet@igalia.com",
-          "hash": "a4eda5a167",
-          "subject": "[css-grid] Migrate whitespace-in-grid-item.html test to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "tonikitoo@igalia.com",
-          "hash": "866da21642",
-          "subject": "[css-grid] Migrate fixed-width-intrinsic-width-should-exclude-scrollbar-width-in-grid.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "abhijeet@igalia.com",
-          "hash": "19c95e99ad",
-          "subject": "[css-grid] Migrate grid-item-margins-and-writing-modes.html test to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "hferreiro@igalia.com",
-          "hash": "00a2ae6a11",
-          "subject": "[css-grid] Migrate grid-item-margin-auto-columns-rows to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "4b10411021",
-          "subject": "[css-grid] Migrate float-not-protruding-into-next-grid-item.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "e6c658eb22",
-          "subject": "[css-grid] Migrate flex-content-resolution-rows to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "e7e425b3f5",
-          "subject": "[css-grid] Migrate flex-content-distribution.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "722ea0d83d",
-          "subject": "[css-grid] Migrate flex-content-resolution-columns to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "547878b609",
-          "subject": "[css-grid] Migrate flex-factor-sum-less-than-1.html to WPT"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mario@igalia.com",
-          "hash": "4832a943de",
-          "subject": "[css-grid] Migrate grid-item-margins-not-collapse.html to WPT"
         }
       ]
     },
@@ -2556,6 +2497,54 @@
       "specrepo": "w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-12",
+          "author": "git@florian.rivoal.net",
+          "hash": "52a5e2e90",
+          "subject": "[css-inline-3] Crosslink to the right definition of baseline"
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "ebec7a974",
+          "subject": "[css-inline-3] Clarify that we don't align the line-relative boxes when doing the initial vertical alignment."
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "ad69704b4",
+          "subject": "[css-inline-3] Move sentence to try to be clearer."
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b22e8c902",
+          "subject": "[css-inline-3] Add comma"
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "77941a598",
+          "subject": "[css-inline-3] Fix whitespace, markup."
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "1c87d577b",
+          "subject": "[css-inline-3] Improve cross-linking and stuff."
+        },
+        {
+          "date": "2020-06-12",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b391ad609",
+          "subject": "[css-inline-3] Clarify the shaping effect of initial letter a bit more. #2399"
+        },
+        {
+          "date": "2020-06-12",
+          "author": "git@florian.rivoal.net",
+          "hash": "e2879c91c",
+          "subject": "[css-inline-3] Fixup punctuation"
+        },
         {
           "date": "2020-06-10",
           "author": "fantasai.bugs@inkedblade.net",
@@ -2967,12 +2956,6 @@
           "author": "myid.shin@igalia.com",
           "hash": "abcba07aa3",
           "subject": "[css-masking] Migrate clip-path-transform-mutated.html to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "gyuyoung@igalia.com",
-          "hash": "1308c4c9de",
-          "subject": "[css-masking] Migrate clip-path-descendant-text-mutated.html to WPT"
         }
       ]
     },
@@ -3736,6 +3719,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-11",
+          "author": "andruud@chromium.org",
+          "hash": "f995ed6cb0",
+          "subject": "[@property] Serialize property name as an identifier"
+        },
+        {
           "date": "2020-06-04",
           "author": "andruud@chromium.org",
           "hash": "df6a748a3e",
@@ -3841,6 +3830,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "github@gtalbot.org",
+          "hash": "ce024853ff",
+          "subject": "Corrected small error in textpath-selection-011.html"
+        },
         {
           "date": "2020-06-10",
           "author": "github@gtalbot.org",
@@ -4124,12 +4119,6 @@
           "author": "futhark@chromium.org",
           "hash": "245ed57a5e",
           "subject": "FindKeyframesRules should use originating element."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "futhark@chromium.org",
-          "hash": "6f1eacce84",
-          "subject": "Added tests for @keyframes/animation-name and Shadow DOM."
         }
       ]
     },
@@ -4397,42 +4386,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "9f03cf30b",
           "subject": "[css-sizing-4] Add intrinsic sizing example for aspect-ratio. #4639"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "73bd5ba69",
-          "subject": "[css-sizing-4] Clarify referring to in-flow phantom content."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "65e6e23fd",
-          "subject": "[css-sizing-4] Wording tweak to distinguish assuming sizes for content vs children better."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "f91643f28",
-          "subject": "[css-sizing-4] Extract out intrinsic-sizing section, which is getting deferred again."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "aeca5d19a",
-          "subject": "[css-sizing-3] Clarify that an automatic size is treated as no intrinsic dimension wrt aspect ratio calculations. #4637"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "7e02d4b81",
-          "subject": "[css-sizing-4] Replace the intrinsic-* properties with contain-intrinsic-size, per WG resolution. Closes #4531."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "3358c4f67",
-          "subject": "[css-sizing-3] Remove issue fixed in https://html.spec.whatwg.org/multipage/rendering.html#attributes-for-embedded-content-and-images"
         }
       ],
       "testlog": [
@@ -4901,12 +4854,6 @@
           "author": "drott@chromium.org",
           "hash": "ccb3fe7740",
           "subject": "Support parsing of text-underline-offset property"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "drott@chromium.org",
-          "hash": "4de32a3ad4",
-          "subject": "Move text-decoration property down to styled element (#22959)"
         }
       ]
     },
@@ -5125,12 +5072,6 @@
           "author": "github@gtalbot.org",
           "hash": "957d182d4",
           "subject": "Removed links to 4 inexistent tests"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "16da29753",
-          "subject": "[css-values-4][mediaqueries-4] Move the definition of <ratio> to V&U now that it's used in more than one spec. Closes #4908."
         }
       ],
       "testlog": [
@@ -5433,6 +5374,12 @@
       "specrepo": "tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2020-06-12",
+          "author": "bakkot@gmail.com",
+          "hash": "83acfd4",
+          "subject": "Meta: deploy preview even if lint fails (#2044)"
+        },
         {
           "date": "2020-06-11",
           "author": "3889017+ExE-Boss@users.noreply.github.com",
@@ -5849,6 +5796,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "7ed6238a89",
+          "subject": "Replace `instanceof` with reference equality"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "ce662e5474",
+          "subject": "Add async generator tests"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "ac4d02d77a",
+          "subject": "Fix Promise.prototype.finally test"
+        },
         {
           "date": "2020-06-10",
           "author": "shvaikalesh@gmail.com",
@@ -7221,6 +7186,18 @@
       "specrepo": "w3c/webappsec-feature-policy",
       "speclog": [
         {
+          "date": "2020-06-11",
+          "author": "iclelland@google.com",
+          "hash": "87bf90c",
+          "subject": "Define \"Permissions-Policy\" as a structured header (#383)"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "yoav@yoav.ws",
+          "hash": "0cad474",
+          "subject": "Remove a spurious `s` (#384)"
+        },
+        {
           "date": "2020-05-27",
           "author": "annevk@annevk.nl",
           "hash": "608be87",
@@ -7351,12 +7328,6 @@
           "author": "iclelland@google.com",
           "hash": "188bd06",
           "subject": "Update the document policy explainer (#372)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "iclelland@google.com",
-          "hash": "1e35db6",
-          "subject": "Start being more consistent with definitions (#371)"
         }
       ],
       "testlog": [
@@ -7669,12 +7640,6 @@
           "author": "jkim@igalia.com",
           "hash": "522ce381c2",
           "subject": "[css-filters] Move effect-reference-turbulence-invalid.html to WPT"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "myid.shin@igalia.com",
-          "hash": "3b6c51f56f",
-          "subject": "[css-filters] Move effect-reference-reset-style-delete-crash.html to WPT"
         }
       ]
     },
@@ -7699,6 +7664,12 @@
       "specrepo": "whatwg/fullscreen",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "philip@foolip.org",
+          "hash": "7ef04e0",
+          "subject": "Meta: wrap algorithms in <div algorithm> (#174)"
+        },
         {
           "date": "2020-05-18",
           "author": "annevk@annevk.nl",
@@ -8216,12 +8187,6 @@
           "author": "jiawei.shao@intel.com",
           "hash": "adfae01",
           "subject": "Add validation rules for copyTextureToBuffer (#694)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "dneto@google.com",
-          "hash": "5f9beea",
-          "subject": "[wgsl] Define the void type (#712)"
         }
       ],
       "testlog": [
@@ -8242,12 +8207,6 @@
           "author": "kainino@chromium.org",
           "hash": "883513bcb9",
           "subject": "Add webgpu/ test directory"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "kainino@chromium.org",
-          "hash": "b666e086c1",
-          "subject": "Roll external/wpt/webgpu and create wpt_internal/webgpu"
         }
       ]
     },
@@ -8650,15 +8609,75 @@
           "author": "annevk@annevk.nl",
           "hash": "af228b2a",
           "subject": "Remove the title argument from registerProtocolHandler()"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "d@domenic.me",
-          "hash": "5e7d6069",
-          "subject": "Disentangle images loading on-demand from scripting"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-12",
+          "author": "hsivonen@hsivonen.fi",
+          "hash": "d23db97703",
+          "subject": "test - Test context node end tag with special tokenizer modes in innerHTML setter."
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "6ab9bc3dfe",
+          "subject": "Unbreak use of createDataChannelPair() (#24118)"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "masonfreed@chromium.org",
+          "hash": "b1353e9125",
+          "subject": "Add closedRoots to GetInnerHTMLOptions dictionary"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "japhet@chromium.org",
+          "hash": "c3514a1ed4",
+          "subject": "Reland \"Remove Document::IsFeatureEnabled, use the ExecutionContext variants instead.\""
+        },
+        {
+          "date": "2020-06-11",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "2eccf723ac",
+          "subject": "[Security][Coop] Browsing context switch reporting WPT (#23670)"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "be852b3ced",
+          "subject": "Python 3: import tests in html/browsers (#24082)"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jarhar@chromium.org",
+          "hash": "d46b0e393b",
+          "subject": "De-flake cross-domain-iframe.sub.html"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "tkent@chromium.org",
+          "hash": "dc750db0ef",
+          "subject": "OPTION element: Update OPTION label even if it has invalid markup"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "japhet@chromium.org",
+          "hash": "b38d0e26ee",
+          "subject": "Ensure cloning a template element into an inactive document does not crash."
+        },
+        {
+          "date": "2020-06-11",
+          "author": "jarhar@chromium.org",
+          "hash": "0eebcad290",
+          "subject": "Move form submission cancellation logic to FrameLoader"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "sefeng@mozilla.com",
+          "hash": "80836cc038",
+          "subject": "Add a temporary solution for modal dialog centered alignment"
+        },
         {
           "date": "2020-06-11",
           "author": "jarhar@chromium.org",
@@ -9444,36 +9463,6 @@
           "author": "smcgruer@chromium.org",
           "hash": "d97d993e1c",
           "subject": "Implement assert_implements and assert_implements_optional (#22699)"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "masonfreed@chromium.org",
-          "hash": "c6631ffd84",
-          "subject": "Hide the .content() property for declarative shadow roots"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "echen@mozilla.com",
-          "hash": "edb59b8bc7",
-          "subject": "Should not invoke attributeChangedCallback for the attribute that is changed during upgrading"
-        },
-        {
-          "date": "2020-04-16",
-          "author": "emilio@crisal.io",
-          "hash": "4ad2115794",
-          "subject": "Fix HTMLImageElement.currentSrc when we share the underlying blob image data."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "yukishiino@chromium.org",
-          "hash": "221071beb3",
-          "subject": "wpt: Fix the test of history.state === popStateEvent.state"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "annevk@annevk.nl",
-          "hash": "08fb3cceab",
-          "subject": "COEP requires a secure context"
         }
       ]
     },
@@ -9514,12 +9503,6 @@
           "author": "beaufort.francois@gmail.com",
           "hash": "22c1e02",
           "subject": "Clarify PTZ permission denied behaviour"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "e5e4dfc",
-          "subject": "Add PTZ explainer"
         }
       ],
       "testlog": [
@@ -9857,30 +9840,6 @@
           "author": "dvoytenko@gmail.com",
           "hash": "54a6d3e",
           "subject": "review fixes"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "dvoytenko@gmail.com",
-          "hash": "cc7c2df",
-          "subject": "More docs"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "dvoytenko@gmail.com",
-          "hash": "4a58198",
-          "subject": "fixing tests"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "dvoytenko@gmail.com",
-          "hash": "39018fd",
-          "subject": "cleanup"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "dvoytenko@gmail.com",
-          "hash": "8fe41ba",
-          "subject": "Support 3p mode for the polyfill"
         }
       ],
       "testlog": [
@@ -10035,12 +9994,6 @@
           "author": "npm@chromium.org",
           "hash": "e90cd85",
           "subject": "Update syntax"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "npm@chromium.org",
-          "hash": "359bc82",
-          "subject": "Update index.bs"
         }
       ],
       "testlog": [
@@ -10718,12 +10671,6 @@
           "author": "fwang@igalia.com",
           "hash": "5d253f2",
           "subject": "Update wpt data and fix respec error."
-        },
-        {
-          "date": "2020-04-16",
-          "author": "fwang@igalia.com",
-          "hash": "55ae71e",
-          "subject": "Add a comment saying the font-relative operator lengths are relative to the core mo."
         }
       ],
       "testlog": []
@@ -11017,18 +10964,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "934cb58f4",
           "subject": "[css-mediaqueries] Adjust headings hierarchy"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "16da29753",
-          "subject": "[css-values-4][mediaqueries-4] Move the definition of <ratio> to V&U now that it's used in more than one spec. Closes #4908."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "git@florian.rivoal.net",
-          "hash": "9296820fc",
-          "subject": "[mediaqueries-4] Fix broken grammar / stray sentence fragment"
         }
       ],
       "testlog": [
@@ -11201,21 +11136,15 @@
           "author": "mek@chromium.org",
           "hash": "2ae925b",
           "subject": "Be a bit more explicit about restricted directories. (#172)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mek@chromium.org",
-          "hash": "b5e23db",
-          "subject": "Attempt to specify the algorithm for chooseFileSystemEntries. (#169)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "mek@chromium.org",
-          "hash": "ab36e38",
-          "subject": "Add algorithms for a couple more methods. (#168)"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "smcgruer@chromium.org",
+          "hash": "553ab1a48e",
+          "subject": "Update interfaces/native-file-system.idl and test (#24121)"
+        },
         {
           "date": "2020-06-03",
           "author": "hazimmohamed@google.com",
@@ -11420,6 +11349,18 @@
       "specrepo": "w3c/page-visibility",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-09",
+          "author": "marcos@marcosc.com",
+          "hash": "15a4f9c",
+          "subject": "Review feeback"
+        },
+        {
+          "date": "2020-06-05",
+          "author": "marcos@marcosc.com",
+          "hash": "4f1ea7c",
+          "subject": "rewrite to operate on browsing contexts"
+        },
         {
           "date": "2020-05-19",
           "author": "marcos@marcosc.com",
@@ -11724,7 +11665,20 @@
       "name": "Picture-in-Picture",
       "href": "https://w3c.github.io/picture-in-picture/",
       "specrepo": "w3c/picture-in-picture",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-06-12",
+          "author": "marcos@marcosc.com",
+          "hash": "ba4b286",
+          "subject": "fix: check HTMLVideoElement/disablePictureInPicture attribute"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "a37eff8",
+          "subject": "Update implementation-status.md"
+        }
+      ],
       "testlog": [
         {
           "date": "2020-06-03",
@@ -11754,6 +11708,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "lanwei@chromium.org",
+          "hash": "e4d8638d65",
+          "subject": "De-flake some pointerevents wpt tests - Part 3"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "liviutinta@chromium.org",
+          "hash": "7f6a03051a",
+          "subject": "Mark pointerevent_pointermove_in_pointerlock test non flaky"
+        },
         {
           "date": "2020-06-05",
           "author": "liviutinta@chromium.org",
@@ -11991,6 +11957,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "bfa5d6b4b0",
+          "subject": "Python 3: port tests in clear-site-data etc. (#24081)"
+        },
+        {
           "date": "2020-05-15",
           "author": "nhiroki@chromium.org",
           "hash": "9497c1dbee",
@@ -12068,6 +12040,18 @@
       "href": "https://w3c.github.io/webappsec-referrer-policy/",
       "specrepo": "w3c/webappsec-referrer-policy",
       "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "55262348+davidvancleve@users.noreply.github.com",
+          "hash": "9f6df6c",
+          "subject": "Have no-referrer-when-downgrade specify stripping the URL as a referrer"
+        },
+        {
+          "date": "2020-06-08",
+          "author": "55262348+davidvancleve@users.noreply.github.com",
+          "hash": "f8c33aa",
+          "subject": "Have no-referrer-when-downgrade specify stripping the URL as a referrer"
+        },
         {
           "date": "2020-05-11",
           "author": "26493779+Malvoz@users.noreply.github.com",
@@ -12510,7 +12494,14 @@
           "subject": "Add information on ForceLoadAtTop origin trial"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "bfa5d6b4b0",
+          "subject": "Python 3: port tests in clear-site-data etc. (#24081)"
+        }
+      ]
     },
     {
       "name": "Secure Contexts",
@@ -12839,8 +12830,21 @@
       "href": "https://streams.spec.whatwg.org/",
       "specrepo": "whatwg/streams",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "d@domenic.me",
+          "hash": "caf3cea",
+          "subject": "Rewrite to use Web IDL, and generally modernize"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "d@domenic.me",
+          "hash": "887350c2f4",
+          "subject": "Streams: update tests for Web IDL conversion"
+        },
         {
           "date": "2020-04-27",
           "author": "annevk@annevk.nl",
@@ -12897,18 +12901,6 @@
           "author": "iapres@microsoft.com",
           "hash": "e2a3527a8d",
           "subject": "SVG: Increase hit-testing precision on strokes"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "tnikkel@gmail.com",
-          "hash": "c8acabf585",
-          "subject": "Handle incomplete masks on svg content properly with webrender."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "fs@opera.com",
-          "hash": "79854cb024",
-          "subject": "Update <use>'s target reference when adopting to a new document"
         }
       ]
     },
@@ -13950,6 +13942,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "bfa5d6b4b0",
+          "subject": "Python 3: port tests in clear-site-data etc. (#24081)"
+        },
+        {
           "date": "2020-06-04",
           "author": "jortaylo@microsoft.com",
           "hash": "9f93577bb2",
@@ -13996,12 +13994,6 @@
           "author": "kevers@chromium.org",
           "hash": "db694b4824",
           "subject": "Add test for computed versus resolved style."
-        },
-        {
-          "date": "2020-04-15",
-          "author": "xidachen@chromium.org",
-          "hash": "751ceadd29",
-          "subject": "[Layout test] Fix some timeout layout tests"
         }
       ]
     },
@@ -14010,6 +14002,18 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/",
       "specrepo": "webbluetoothcg/web-bluetooth",
       "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "odejesush@chromium.org",
+          "hash": "0a0b9e1",
+          "subject": "Update Implementation Status for Persistent Permissions Feature (#502)"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "david@pybricks.com",
+          "hash": "ea86c94",
+          "subject": "update implementation status for write with/without response (#501)"
+        },
         {
           "date": "2020-05-13",
           "author": "david@lechnology.com",
@@ -14288,12 +14292,6 @@
           "author": "jsbell@chromium.org",
           "hash": "3801fcf",
           "subject": "Initial take on Security/Privacy self-review (#150)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "ewilligers@users.noreply.github.com",
-          "hash": "5f837a9",
-          "subject": "Accessibility considerations (#146)"
         }
       ],
       "testlog": [
@@ -14310,6 +14308,12 @@
       "href": "https://wicg.github.io/web-share-target/",
       "specrepo": "wicg/web-share-target",
       "speclog": [
+        {
+          "date": "2020-06-12",
+          "author": "mcaceres@mozilla.com",
+          "hash": "a703396",
+          "subject": "Editorial: reference Encoding's 'UTF-8' directly (#96)"
+        },
         {
           "date": "2020-06-05",
           "author": "mcaceres@mozilla.com",
@@ -14665,15 +14669,15 @@
           "author": "ve7jtb@ve7jtb.com",
           "hash": "b16ec8d",
           "subject": "Fix IANA Registration (#1408)"
-        },
-        {
-          "date": "2020-04-15",
-          "author": "agl@google.com",
-          "hash": "b81f8f6",
-          "subject": "Fix markup error in three headings. (#1405)"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "agl@chromium.org",
+          "hash": "b3778ff535",
+          "subject": "Reland \"webauthn: implement getPublicKey() and friends.\""
+        },
         {
           "date": "2020-06-09",
           "author": "pavely@chromium.org",
@@ -14945,6 +14949,18 @@
       "specrepo": "heycam/webidl",
       "speclog": [
         {
+          "date": "2020-06-12",
+          "author": "timothygu99@gmail.com",
+          "hash": "9208c17",
+          "subject": "Meta: add Timothy as co-editor"
+        },
+        {
+          "date": "2020-06-11",
+          "author": "d@domenic.me",
+          "hash": "590fdc5",
+          "subject": "Make async iterator return() and next() more like async generators"
+        },
+        {
           "date": "2020-05-28",
           "author": "3889017+ExE-Boss@users.noreply.github.com",
           "hash": "fe3b0cc",
@@ -15124,6 +15140,18 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2020-06-09",
+          "author": "dom@w3.org",
+          "hash": "6065e17",
+          "subject": "Fix links to WebIDL definitions"
+        },
+        {
+          "date": "2020-06-09",
+          "author": "dom@w3.org",
+          "hash": "6345263",
+          "subject": "Upgrade to ReSpec 25.6.0"
+        },
         {
           "date": "2020-05-14",
           "author": "bernard.aboba@gmail.com",
@@ -16135,6 +16163,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-12",
+          "author": "bialpio@chromium.org",
+          "hash": "917583dc10",
+          "subject": "WebXR - fix bugs in WPTs and clarify meaning of time deltas"
+        },
+        {
           "date": "2020-06-06",
           "author": "patrto@microsoft.com",
           "hash": "abfd8c9729",
@@ -16308,7 +16342,14 @@
       "specrepo": "w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-06-11",
+          "author": "zsun@igalia.com",
+          "hash": "77211c448d",
+          "subject": "Python 3: Port tests in x-frame-options and worklets (#24085)"
+        }
+      ]
     },
     {
       "name": "XMLHttpRequest",
