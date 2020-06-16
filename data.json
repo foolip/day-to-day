@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-04-19T11:30:19.256Z",
-  "until": "2020-06-15T11:30:19.256Z",
+  "since": "2020-04-20T07:11:09.652Z",
+  "until": "2020-06-16T07:11:09.652Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -160,7 +160,14 @@
       "name": "Audio Output Devices API",
       "href": "https://w3c.github.io/mediacapture-output/",
       "specrepo": "w3c/mediacapture-output",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-06-11",
+          "author": "wingboy@gmail.com",
+          "hash": "cf4874c",
+          "subject": "Require consent unless sinkId is \"\""
+        }
+      ],
       "testlog": []
     },
     {
@@ -270,7 +277,14 @@
       "specrepo": "w3c/beacon",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "zsun@igalia.com",
+          "hash": "16bf93260a",
+          "subject": "Python3: port beacon tests (#24079)"
+        }
+      ]
     },
     {
       "name": "Clear Site Data",
@@ -488,6 +502,18 @@
       "specrepo": "whatwg/console",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-15",
+          "author": "domfarolino@gmail.com",
+          "hash": "b2ae716",
+          "subject": "Remove test/ directory (#183)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "domfarolino@gmail.com",
+          "hash": "524055b",
+          "subject": "Remove the reference implementation (#180)"
+        },
         {
           "date": "2020-06-14",
           "author": "philip@foolip.org",
@@ -1141,18 +1167,6 @@
           "author": "chris@w3.org",
           "hash": "8c45d7a6b",
           "subject": "[css-box-4] fix IDs in changes"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "8fcd1b204",
-          "subject": "[css-box-4] Fixup the changes section"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "b823897ef",
-          "subject": "[css-box] Apply 0f1ce2b395c323a76f17bec9a21474024dc87141 to box-4"
         }
       ],
       "testlog": []
@@ -1183,6 +1197,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "mstensho@chromium.org",
+          "hash": "096d2a70d0",
+          "subject": "[LayoutNG] Better support for parallel flows in block fragmentation."
+        },
         {
           "date": "2020-05-20",
           "author": "mstensho@chromium.org",
@@ -1217,6 +1237,12 @@
       "specrepo": "w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-15",
+          "author": "chris@w3.org",
+          "hash": "e93bfaab6",
+          "subject": "[css-color-4] hue curvature examples"
+        },
         {
           "date": "2020-06-11",
           "author": "lea@verou.me",
@@ -1541,6 +1567,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-15",
+          "author": "vmpstr@chromium.org",
+          "hash": "bbbcde8645",
+          "subject": "counter-set: Implement counter-set"
+        },
+        {
           "date": "2020-06-12",
           "author": "vmpstr@chromium.org",
           "hash": "62fcfd1be9",
@@ -1668,20 +1700,7 @@
       "href": "https://drafts.csswg.org/css-easing/",
       "specrepo": "w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2020-04-20",
-          "author": "birtles@gmail.com",
-          "hash": "a15d531b1",
-          "subject": "[css-easing-1] Add range annotation to cubic-bezier function syntax definition"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "birtles@gmail.com",
-          "hash": "ca0e46e5b",
-          "subject": "[css-easing-1] Use CSS-VALUES-3 reference consistently"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -2112,12 +2131,6 @@
           "author": "mario@igalia.com",
           "hash": "05ec95b3c6",
           "subject": "[css-grid] Migrate grid-self-baseline-* tests to WPT"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "tonikitoo@igalia.com",
-          "hash": "81577cd908",
-          "subject": "[css-grid] Migrate grid-gutters-as-percentage.html to WPT"
         }
       ]
     },
@@ -2168,6 +2181,78 @@
       "specrepo": "w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "a736b534a",
+          "subject": "[css-inline-3] Fix applies-to of baseline-shift"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "a5ac6eb28",
+          "subject": "[css-inline-3] Move sentence."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "git@florian.rivoal.net",
+          "hash": "fe938646b",
+          "subject": "[css-inline-3] Harmonize phrasing"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "git@florian.rivoal.net",
+          "hash": "e90d74946",
+          "subject": "[css-inline-3] Expand a bit on example 1"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4b6d4ac47",
+          "subject": "[css-inline-3] Define synthesis rules for more baselines."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "881605d04",
+          "subject": "[css-inline-3] Import baseline definitions from Writing Modes."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "9b49151fc",
+          "subject": "[css-inline-3] Add images"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "2aae440e1",
+          "subject": "[css-inline-3] Pull out the line gap metric description into its own subsection near the rest of the metric descriptions. Note effects on inline boxes via 'leading-trim' control."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4dc3178ba",
+          "subject": "[css-inline-3] Incorporate leading-trim into line box height calculation."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "eeecc71d6",
+          "subject": "[css-inline-3] Incorporate 'line-sizing: normal' into line box height calculations."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f6727ee0e",
+          "subject": "[css-inline-3] Trivial wording tweaks."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "9f8c9ea38",
+          "subject": "[css-inline-3] Switch leading-trim descriptions to reference common font metric definitions."
+        },
         {
           "date": "2020-06-15",
           "author": "fantasai.bugs@inkedblade.net",
@@ -2663,6 +2748,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "vmpstr@chromium.org",
+          "hash": "bbbcde8645",
+          "subject": "counter-set: Implement counter-set"
+        },
         {
           "date": "2020-06-08",
           "author": "obrufau@igalia.com",
@@ -3634,30 +3725,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "bde69e327",
           "subject": "[css-ruby-1] Add issues list source"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "41cdb828c",
-          "subject": "[css-ruby] M/B/P do not apply to base/annotation containers"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "5c65ace34",
-          "subject": "[css-ruby] size and position empty rbc/rtc (#4941)"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "f01e4d3c6",
-          "subject": "[css-ruby] Remove incorrect language tags, include terms in original language (#4942)"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a9f373215",
-          "subject": "[css-ruby-1] Compile DoC against www-style."
         }
       ],
       "testlog": [
@@ -3702,12 +3769,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "73c2c2bbb9",
           "subject": "[css-ruby] Test for M/B/P around base/annotation container boxes (#22843)"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "git@florian.rivoal.net",
-          "hash": "711f50ca73",
-          "subject": "[css-ruby] tests for https://github.com/w3c/csswg-drafts/issues/4631 (#23103)"
         }
       ]
     },
@@ -4401,6 +4462,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2020-06-15",
+          "author": "gtsteel@google.com",
+          "hash": "582928cac2",
+          "subject": "Add reftests for transform-box"
+        },
+        {
           "date": "2020-06-12",
           "author": "rego@igalia.com",
           "hash": "81c7371e59",
@@ -4458,6 +4525,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2020-06-15",
+          "author": "kevers@chromium.org",
+          "hash": "5a7701e936",
+          "subject": "Fix timing of when transition generation is updated"
+        },
+        {
           "date": "2020-06-05",
           "author": "gtsteel@google.com",
           "hash": "3e9d42dde6",
@@ -4490,6 +4563,12 @@
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "vmpstr@chromium.org",
+          "hash": "bbbcde8645",
+          "subject": "counter-set: Implement counter-set"
+        },
         {
           "date": "2020-05-04",
           "author": "drott@chromium.org",
@@ -4892,6 +4971,66 @@
       "specrepo": "tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2020-06-16",
+          "author": "bakkot@gmail.com",
+          "hash": "6f0a88d",
+          "subject": "Editorial: make step numbers consistently 1 (#2051)"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "bakkot@gmail.com",
+          "hash": "f2fc51a",
+          "subject": "Meta: bump ecmarkup (#2051)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "f8e7557",
+          "subject": "Editorial: Delete \"the String value\" in GetTemplateObject (#2022)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "2eb104a",
+          "subject": "Editorial: Delete more steps in the same vein as PR #1519 (#2022)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "01312dd",
+          "subject": "Editorial: Fix typo: \"use\" -> \"uses\" (#2022)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "5e8a96c",
+          "subject": "Editorial: Number.prototype.toExponential: update a step-reference (#2022)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "bakkot@gmail.com",
+          "hash": "b26b908",
+          "subject": "Editorial: remove stray \"the\" (#2049)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "bakkot@gmail.com",
+          "hash": "364fee0",
+          "subject": "Editorial: do not describe assertion as performing verification (#2049)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "bakkot@gmail.com",
+          "hash": "ba89b93",
+          "subject": "Editorial: fix casing on step reference (#2049)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "bakkot@gmail.com",
+          "hash": "4f36c0f",
+          "subject": "Editorial: consistent wording in GetValue/PutValue notes (#2049)"
+        },
         {
           "date": "2020-06-12",
           "author": "bakkot@gmail.com",
@@ -6885,6 +7024,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-15",
+          "author": "zsun@igalia.com",
+          "hash": "16bf93260a",
+          "subject": "Python3: port beacon tests (#24079)"
+        },
+        {
           "date": "2020-06-09",
           "author": "alexmt@chromium.org",
           "hash": "9b572e3991",
@@ -7268,6 +7413,24 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2020-06-15",
+          "author": "corentin@wallez.net",
+          "hash": "0ceb9d0",
+          "subject": "Add BC formats. (#812)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "kvarkus@gmail.com",
+          "hash": "0e437f2",
+          "subject": "Add minimumBufferSize to BGL entry (#678)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "tojiro@gmail.com",
+          "hash": "9f8a445",
+          "subject": "Document compute pass creation (#846)"
+        },
         {
           "date": "2020-06-10",
           "author": "kainino@chromium.org",
@@ -7745,6 +7908,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-06-15",
+          "author": "domfarolino@gmail.com",
+          "hash": "f6cbe27c",
+          "subject": "Remove notest about executing scripts that have moved documents"
+        },
+        {
           "date": "2020-06-10",
           "author": "hannalaakso@users.noreply.github.com",
           "hash": "e915da41",
@@ -8046,6 +8215,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-16",
+          "author": "japhet@chromium.org",
+          "hash": "5c300e3f7a",
+          "subject": "Ensure a <marquee> that has been started can be adopted into an inactive document without crashing"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "zsun@igalia.com",
+          "hash": "eaae8970c1",
+          "subject": "Python 3: port tests in workers (#24091)"
+        },
+        {
+          "date": "2020-06-15",
+          "author": "annevk@annevk.nl",
+          "hash": "e190ad557f",
+          "subject": "COOP+COEP: adopt step_wait & friends"
+        },
         {
           "date": "2020-06-13",
           "author": "cassew@google.com",
@@ -8885,12 +9072,6 @@
           "author": "hferreiro@igalia.com",
           "hash": "2e8bcc047f",
           "subject": "[WPT] Remove unused green-100x50.png images"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "yhirano@chromium.org",
-          "hash": "1eaf296e2e",
-          "subject": "Fix unintentional case-sensitivity for COEP header parsing"
         }
       ]
     },
@@ -9384,6 +9565,36 @@
       "href": "https://mathml-refresh.github.io/mathml-core/",
       "specrepo": "mathml-refresh/mathml-core",
       "speclog": [
+        {
+          "date": "2020-06-16",
+          "author": "fwang@igalia.com",
+          "hash": "0fe5f4f",
+          "subject": "Renaming of examples for math-style and math-shift"
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fwang@igalia.com",
+          "hash": "70d0ba6",
+          "subject": "Remame math-superscript-shift-style to math-shift and display/inline values to normal/compact."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fwang@igalia.com",
+          "hash": "8132e86",
+          "subject": "Rename math-style values from display/inline to normal/compact."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fwang@igalia.com",
+          "hash": "dcc8051",
+          "subject": "Remove mention of ssty (move to level 2)."
+        },
+        {
+          "date": "2020-06-16",
+          "author": "fwang@igalia.com",
+          "hash": "69c7776",
+          "subject": "Remove mention of rtlm mirroring from the current text."
+        },
         {
           "date": "2020-06-10",
           "author": "fwang@igalia.com",
@@ -10907,6 +11118,12 @@
       "specrepo": "w3c/permissions",
       "speclog": [
         {
+          "date": "2020-06-16",
+          "author": "huangdarwin2@gmail.com",
+          "hash": "e38762b",
+          "subject": "Update clipboard permissions as per Clipboard Specification (#209)"
+        },
+        {
           "date": "2020-06-03",
           "author": "philip@foolip.org",
           "hash": "02de366",
@@ -11294,7 +11511,14 @@
       "href": "https://quirks.spec.whatwg.org/",
       "specrepo": "whatwg/quirks",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-06-15",
+          "author": "philip@foolip.org",
+          "hash": "89f4fe2",
+          "subject": "Meta: update repository files"
+        }
+      ],
       "testlog": [
         {
           "date": "2020-04-23",
@@ -11335,6 +11559,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "dom@chromium.org",
+          "hash": "3afb306929",
+          "subject": "Fix iframe referrer upgrade tests"
+        },
         {
           "date": "2020-06-10",
           "author": "dom@chromium.org",
@@ -12114,6 +12344,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-06-15",
+          "author": "annevk@annevk.nl",
+          "hash": "e41b7a7",
+          "subject": "Clarify storage endpoint quota"
+        },
+        {
           "date": "2020-06-14",
           "author": "philip@foolip.org",
           "hash": "60b30c8",
@@ -12629,6 +12865,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-06-15",
+          "author": "jj@jjsweb.site",
+          "hash": "c79fe5612a",
+          "subject": "Add test cases for URLSearchParams parsing %"
+        },
+        {
           "date": "2020-05-14",
           "author": "rmisev3@gmail.com",
           "hash": "9ffe8f2643",
@@ -12908,12 +13150,6 @@
           "author": "smcgruer@chromium.org",
           "hash": "c8e560bd7e",
           "subject": "Update interfaces/{screen-}wake-lock.idl and test (#23115)"
-        },
-        {
-          "date": "2020-04-20",
-          "author": "wanming.lin@intel.com",
-          "hash": "229773d606",
-          "subject": "[wake-lock] Rename wpt/wake-lock to wpt/screen-wake-lock"
         }
       ],
       "testpolicy": "https://github.com/w3c/screen-wake-lock/blob/HEAD/CONTRIBUTING.md"
@@ -13848,6 +14084,12 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "w3c/webauthn",
       "speclog": [
+        {
+          "date": "2020-06-15",
+          "author": "emil@yubico.com",
+          "hash": "0df170f",
+          "subject": "Enrichen registration and authentication ceremonies definitions (#1330)"
+        },
         {
           "date": "2020-06-08",
           "author": "emil@yubico.com",
@@ -15846,6 +16088,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-06-15",
+          "author": "ricea@chromium.org",
+          "hash": "380639aa51",
+          "subject": "[XHR] Use XMLHttpRequestBodyInit in IDL"
+        },
         {
           "date": "2020-06-09",
           "author": "gterzian@users.noreply.github.com",
