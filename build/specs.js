@@ -12,11 +12,13 @@ const blocklist = new Set([
 function completeEntry(entry, mode) {
   const {id, name, href} = entry;
 
+  // TODO: Drop this rewriting, and its inverse in data.js.
+  if (entry.specrepo.startsWith('https://github.com/')) {
+    entry.specrepo = entry.specrepo.substr(19);
+  }
+
   function entryFromGitHubIO(url) {
     console.assert(url.hostname.endsWith('.github.io'));
-
-    const org = url.hostname.split('.')[0];
-    const repo = url.pathname.split('/')[1];
 
     return Object.assign(entry, {
       name: name
@@ -25,7 +27,6 @@ function completeEntry(entry, mode) {
           .replace(/ \d+(\.\d+)?$/, '')
           .replace(/ Specification$/, '')
           .replace(/ -$/, ''),
-      specrepo: `${org}/${repo}`,
     });
   }
 
@@ -33,8 +34,6 @@ function completeEntry(entry, mode) {
     console.assert(url.hostname == 'drafts.css-houdini.org' ||
                    url.hostname == 'drafts.csswg.org' ||
                    url.hostname == 'drafts.fxtf.org');
-
-    const org = url.hostname.split('.')[1];
 
     const testpolicy = {
       'drafts.css-houdini.org': 'https://github.com/w3c/css-houdini-drafts#tests',
@@ -47,7 +46,6 @@ function completeEntry(entry, mode) {
           .replace(/ Level \d+$/, '')
           .replace(/ Module$/, ''),
       href: `https://${url.hostname}/${id}/`,
-      specrepo: `w3c/${org}-drafts`,
       // Note: mediaqueries-5 has the highest level on 2017-09-30
       specpath: `${id} ${id}-1 ${id}-2 ${id}-3 ${id}-4 ${id}-5`,
       testpath: `${id} css/${id} css/${id}-1 css/${id}-2 css/${id}-3 ` +
@@ -60,7 +58,6 @@ function completeEntry(entry, mode) {
     console.assert(url.hostname == 'svgwg.org');
 
     Object.assign(entry, {
-      specrepo: 'w3c/svgwg',
       testpolicy: 'https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md',
     });
 
@@ -130,11 +127,8 @@ function completeEntry(entry, mode) {
   // WHATWG specs
   if (url.hostname.endsWith('.idea.whatwg.org') ||
       url.hostname.endsWith('.spec.whatwg.org')) {
-    const id = url.hostname.split('.')[0];
-
     return Object.assign(entry, {
       name: name.replace(/ Standard$/, ''),
-      specrepo: 'whatwg/' + id,
       testpolicy: 'https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md',
     });
   }
@@ -182,6 +176,7 @@ async function main() {
           id: entry.series.shortname,
           name: entry.title,
           href: entry.nightly.url,
+          specrepo: entry.nightly.repository,
         }, 'auto');
       });
 
