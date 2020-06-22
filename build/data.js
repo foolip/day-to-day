@@ -98,7 +98,8 @@ function main() {
       // look for a testing policy (anywhere in the repo, ignore specPath)
       const testPolicy = getTestPolicy(specDir);
       if (testPolicy) {
-        entry.testpolicy = `https://github.com/${entry.specrepo}/blob/HEAD/${testPolicy}`;
+        // Note: This assumes GitHub's URL structure.
+        entry.testpolicy = `${specRepo}/blob/HEAD/${testPolicy}`;
       }
     }
   }
