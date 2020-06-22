@@ -12,11 +12,6 @@ const blocklist = new Set([
 function completeEntry(entry, mode) {
   const {id, name, href} = entry;
 
-  // TODO: Drop this rewriting, and its inverse in data.js.
-  if (entry.specrepo.startsWith('https://github.com/')) {
-    entry.specrepo = entry.specrepo.substr(19);
-  }
-
   function entryFromGitHubIO(url) {
     console.assert(url.hostname.endsWith('.github.io'));
 

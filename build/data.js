@@ -39,11 +39,11 @@ function getTestPolicy(dir) {
 function getSpecRepo(entry) {
   const repo = entry.specrepo;
 
-  if (repo.startsWith('https://')) {
-    return repo;
+  if (!repo.startsWith('https://')) {
+    throw new Error(`specrepo must be a HTTPS URL: ${repo}`);
   }
 
-  return 'https://github.com/' + repo;
+  return repo;
 }
 
 function getTestRepo(entry) {
