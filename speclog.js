@@ -24,7 +24,8 @@ function main() {
               date: commit.date,
               subject: commit.subject,
               name: entry.name,
-              url: `https://github.com/${entry.specrepo}/commit/${commit.hash}`,
+              // Note: This assumes GitHub's URL structure.
+              url: `${entry.specrepo}/commit/${commit.hash}`,
             });
           }
         }
