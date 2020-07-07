@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-05-10T07:14:01.509Z",
-  "until": "2020-07-06T07:14:01.509Z",
+  "since": "2020-05-11T07:14:08.843Z",
+  "until": "2020-07-07T07:14:08.843Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -89,6 +89,12 @@
       "href": "https://w3c.github.io/manifest/",
       "specrepo": "https://github.com/w3c/manifest",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "christian.liebel@thinktecture.com",
+          "hash": "4ab46a2",
+          "subject": "BREAKING CHANGE: remove `platform` from ManifestImageResource (#913)"
+        },
         {
           "date": "2020-07-01",
           "author": "mcaceres@mozilla.com",
@@ -1215,6 +1221,18 @@
         {
           "date": "2020-07-06",
           "author": "kojii@chromium.org",
+          "hash": "bc36542dc6",
+          "subject": "[FragmentItem] Clear inline fragment for positioned objects"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kojii@chromium.org",
+          "hash": "eae9c1b625",
+          "subject": "[FragmentItem] Limit reusing cached lines only when top-level child is clean"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kojii@chromium.org",
           "hash": "aef9da08fe",
           "subject": "[FragmentItem] Fix DirtyLinesFromNeedsLayout"
         },
@@ -1338,6 +1356,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "372c9aebd",
+          "subject": "[css-backgrounds-3] Fix grammar error in background shorthand value definition introduced during switch to # multipliers"
+        },
         {
           "date": "2020-05-25",
           "author": "fantasai.bugs@inkedblade.net",
@@ -1530,6 +1554,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "228d04762",
+          "subject": "[css-color-4] Improve description of Highlight/HighlightText"
+        },
         {
           "date": "2020-07-02",
           "author": "lea@verou.me",
@@ -2065,6 +2095,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-07-06",
+          "author": "almaher@microsoft.com",
+          "hash": "d33bc572d4",
+          "subject": "Reland \"Don't reset computed 'float' for flex and grid items\""
+        },
+        {
           "date": "2020-07-02",
           "author": "almaher@microsoft.com",
           "hash": "97361605ea",
@@ -2314,8 +2350,135 @@
       "href": "https://drafts.csswg.org/css-grid/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-07-07",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "e4391db71",
+          "subject": "[css-grid-1] Fix example. Fixes #4991"
+        },
+        {
+          "date": "2020-07-07",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "841f5a95d",
+          "subject": "[css-grid-1] Typo. Fixes #4994"
+        },
+        {
+          "date": "2020-07-07",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "6388f6f36",
+          "subject": "[css-grid-1] Add test link"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "64f61cdc4",
+          "subject": "[css-grid-1] Tag change with <wpt>."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "916d45812",
+          "subject": "[css-grid-1] Clarify that you only look for baseline-aligned items that are aligned *to the correct baseline*. Fixes #5293."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "d1f8dbc92",
+          "subject": "[css-grid-1] Add an explanation to the Changes addition from the previous commit."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "20b66b9e3",
+          "subject": "[css-grid-1] Add the previous commit to the Changes list."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "e85a11caa",
+          "subject": "[css-grid-1] Put the baseline-determining steps back into 'main, then exception' order. #3645"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "477f36ebd",
+          "subject": "[css-grid-1] Add testcase link"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "a74f96f7e",
+          "subject": "[css-grid-1] Ensure that 'take from a baseline-aligned item' and 'take from first item in any row' conditions apply together, so if there's no items in the first row you'll still pay attention to the baseline-aligned items in the second row. Separately, rearrange the text so that these conditions read more clearly. Part of #3645."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "675a48db0",
+          "subject": "[css-grid-1] Add testcase link"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "55641a31d",
+          "subject": "[css-grid-1] Annotate some more changes with <wpt>."
+        }
+      ],
       "testlog": [
+        {
+          "date": "2020-07-07",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "e3698c7bb3",
+          "subject": "[css-grid] Check that 'align-self: last baseline' does not interfere with baseline alignment in first row. https://github.com/w3c/csswg-drafts/issues/5293"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "b0c2259826",
+          "subject": "[css-grid] Remove now-disallowed variant results. (#24475)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "e365e5f527",
+          "subject": "[css-grid] Add testcase for second-row shared alignment baseline. https://github.com/w3c/csswg-drafts/issues/3645 https://github.com/w3c/csswg-drafts/commit/a74f96f7e29be98ee2b73ecdfedc27b3a789a410"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "7f77bdd0d1",
+          "subject": "[css-grid] Use background vs. background-color consistently. (editorial/lint)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "9520e0643c",
+          "subject": "[css-grid] Test autorepeat with max,min. https://github.com/w3c/csswg-drafts/issues/4043"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "511805a83e",
+          "subject": "[css-grid] Fix empty first row baseline test. https://github.com/w3c/csswg-drafts/issues/3645"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "cbedc38b1d",
+          "subject": "[css-grid] Improve readability/understandability of baseline alignment test."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "1f53c57f1b",
+          "subject": "Add another variant that explicitly uses minmax(0, 1fr), rather than relying on the auto size. (#24464)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "e8401319ee",
+          "subject": "Duplicate -001, but with the item getting its size from a child rather than explicitly. (#24463)"
+        },
         {
           "date": "2020-06-12",
           "author": "obrufau@igalia.com",
@@ -2425,6 +2588,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "bc0c740fd",
+          "subject": "[css-inline-3] Remove stray values from alignment-baseline. #5291"
+        },
         {
           "date": "2020-06-18",
           "author": "fantasai.bugs@inkedblade.net",
@@ -3207,6 +3376,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "3d92704499",
+          "subject": "Unify most clip-path code paths of pre-CAP and CAP"
+        },
         {
           "date": "2020-06-30",
           "author": "wangxianzhu@chromium.org",
@@ -4427,6 +4602,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2020-07-06",
+          "author": "jbauman@mozilla.com",
+          "hash": "722e3e0a6e",
+          "subject": "No derogatory language: Remove references to grandfather in comments"
+        },
+        {
           "date": "2020-07-02",
           "author": "futhark@chromium.org",
           "hash": "2677b2edb9",
@@ -4507,7 +4688,14 @@
           "subject": "[css-values-4] typo: s/atr/attr/ (#5075)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "futhark@chromium.org",
+          "hash": "c269b86af5",
+          "subject": "Use the style being computed as rem base for root element."
+        }
+      ]
     },
     {
       "name": "CSS Custom Properties for Cascading Variables",
@@ -4625,14 +4813,28 @@
           "subject": "Change the syntax; :state(foo) -> :--foo (#9)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "smcgruer@chromium.org",
+          "hash": "c27fba52a8",
+          "subject": "Add interfaces/custom-state-pseudo-class.idl and test (#24209)"
+        }
+      ]
     },
     {
       "name": "Deprecation Reporting",
       "href": "https://wicg.github.io/deprecation-reporting/",
       "specrepo": "https://github.com/WICG/deprecation-reporting",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "smcgruer@chromium.org",
+          "hash": "79d0017b97",
+          "subject": "Add interfaces/deprecation-reporting.idl and test (#24201)"
+        }
+      ]
     },
     {
       "name": "Device Memory",
@@ -5137,12 +5339,6 @@
           "author": "bakkot@gmail.com",
           "hash": "bd868f2",
           "subject": "Editorial: rename LeadSurrogate, TrailSurrogate, and NonSurrogate (#1936)"
-        },
-        {
-          "date": "2020-05-10",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "e38ce06",
-          "subject": "Editorial: Complete standard preambles for numeric methods (#1974)"
         }
       ],
       "testlog": [
@@ -6296,6 +6492,18 @@
       ],
       "testlog": [
         {
+          "date": "2020-07-06",
+          "author": "bokan@chromium.org",
+          "hash": "08c4b3cb15",
+          "subject": "Add metadata to preserve-fragment.html WPT test"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "alexmt@chromium.org",
+          "hash": "b785f83c79",
+          "subject": "Remove .tentative flag from Split Cache Web Platform Test"
+        },
+        {
           "date": "2020-07-02",
           "author": "bokan@chromium.org",
           "hash": "e4b2fe646b",
@@ -6654,6 +6862,54 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "43109956+ponitka@users.noreply.github.com",
+          "hash": "895623e",
+          "subject": "Bug in validating linear texture data (#904)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kainino@chromium.org",
+          "hash": "7b53e30",
+          "subject": "Re-introduce createReady*Pipeline and remove GPUErrorFilter \"none\" (#871)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kvarkus@gmail.com",
+          "hash": "12378b0",
+          "subject": "Expand security considerations, split into sub-sections (#898)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "tojiro@gmail.com",
+          "hash": "c2a6ee0",
+          "subject": "Documented render pass rasterization state methods (#850)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kvarkus@gmail.com",
+          "hash": "4f843aa",
+          "subject": "Add maxAnisotropy property (#864)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kvarkus@gmail.com",
+          "hash": "2ee8033",
+          "subject": "Depth clamping extension (#900)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "kvarkus@gmail.com",
+          "hash": "2ae629f",
+          "subject": "Require mapped buffer sizes aligned to 4 (#899)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "dsinclair@google.com",
+          "hash": "72d546e",
+          "subject": "[wgsl] Add spec text around vector accessors. (#852)"
+        },
         {
           "date": "2020-07-05",
           "author": "philip@foolip.org",
@@ -7120,6 +7376,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-07-06",
+          "author": "travil@microsoft.com",
+          "hash": "db61f81e",
+          "subject": "Fix links to CSS2 spec"
+        },
+        {
           "date": "2020-07-02",
           "author": "annevk@annevk.nl",
           "hash": "03b07a32",
@@ -7427,6 +7689,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "zcorpan@gmail.com",
+          "hash": "2f4dbfef96",
+          "subject": "Change 'window.load() event' to 'window load event' for correctness (#24471)"
+        },
+        {
+          "date": "2020-07-06",
+          "author": "almaher@microsoft.com",
+          "hash": "d33bc572d4",
+          "subject": "Reland \"Don't reset computed 'float' for flex and grid items\""
+        },
         {
           "date": "2020-07-05",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -9185,6 +9459,12 @@
       "specrepo": "https://github.com/mathml-refresh/mathml-core",
       "speclog": [
         {
+          "date": "2020-07-06",
+          "author": "fwang@igalia.com",
+          "hash": "531111e",
+          "subject": "Compact operator dictionary: sort figure 27 by key, so that binary search is possible."
+        },
+        {
           "date": "2020-07-03",
           "author": "fwang@igalia.com",
           "hash": "108ce59",
@@ -9681,12 +9961,6 @@
           "author": "fwang@igalia.com",
           "hash": "aaeeaef",
           "subject": "Provide an encoding for categories such that the 2 least significant bits is the form."
-        },
-        {
-          "date": "2020-05-10",
-          "author": "fwang@igalia.com",
-          "hash": "de92d2a",
-          "subject": "Fix duplicate entries for fences, add a TODO for better compression"
         }
       ],
       "testlog": []
@@ -10267,20 +10541,7 @@
       "name": "Network Information API",
       "href": "https://wicg.github.io/netinfo/",
       "specrepo": "https://github.com/WICG/netinfo",
-      "speclog": [
-        {
-          "date": "2020-05-11",
-          "author": "marcos@marcosc.com",
-          "hash": "7922967",
-          "subject": "chore: enable MDN + config cleanup"
-        },
-        {
-          "date": "2020-05-11",
-          "author": "mike@w3.org",
-          "hash": "823596f",
-          "subject": "chore: In the Browser Support table, show Android Firefox (#86)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2020-05-19",
@@ -11057,12 +11318,6 @@
           "author": "26493779+Malvoz@users.noreply.github.com",
           "hash": "4fe129d",
           "subject": "Fix @domfarolino's feedback"
-        },
-        {
-          "date": "2020-05-10",
-          "author": "26493779+Malvoz@users.noreply.github.com",
-          "hash": "196dee9",
-          "subject": "Add <script> for `referrerpolicy` content attribute"
         }
       ],
       "testlog": [
@@ -11933,6 +12188,12 @@
       "specrepo": "https://github.com/privacycg/storage-access",
       "speclog": [
         {
+          "date": "2020-07-06",
+          "author": "hober@apple.com",
+          "hash": "2eaf4e0",
+          "subject": "Direct-child check: use \"parent browsing context\", not \"opener browsing context\". (#48)"
+        },
+        {
           "date": "2020-06-09",
           "author": "hober@apple.com",
           "hash": "cbfeff7",
@@ -12043,6 +12304,12 @@
       "specrepo": "https://github.com/whatwg/streams",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "d@domenic.me",
+          "hash": "63b4407",
+          "subject": "Editorial: remove forAuthorCode and use dictionaries for read()"
+        },
         {
           "date": "2020-06-29",
           "author": "philip@foolip.org",
@@ -12391,7 +12658,14 @@
       "name": "UI Events",
       "href": "https://w3c.github.io/uievents/",
       "specrepo": "https://github.com/w3c/uievents",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-07-07",
+          "author": "garykac@gmail.com",
+          "hash": "88a5933",
+          "subject": "Fix #243 - use new constructor syntax (& regen-html)"
+        }
+      ],
       "testlog": [
         {
           "date": "2020-05-20",
@@ -12406,7 +12680,44 @@
       "name": "UI Events KeyboardEvent code Values",
       "href": "https://w3c.github.io/uievents-code/",
       "specrepo": "https://github.com/w3c/uievents-code",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-07-07",
+          "author": "garykac@gmail.com",
+          "hash": "07ee7ba",
+          "subject": "Use '?' for unknown values for Edge and Safari"
+        },
+        {
+          "date": "2020-07-07",
+          "author": "garykac@gmail.com",
+          "hash": "074f3b4",
+          "subject": "Update impl report with Edge data"
+        },
+        {
+          "date": "2020-07-07",
+          "author": "garykac@gmail.com",
+          "hash": "7c06ecf",
+          "subject": "Update impl report with Safari data"
+        },
+        {
+          "date": "2020-07-07",
+          "author": "garykac@gmail.com",
+          "hash": "54a46e2",
+          "subject": "Ignore .pyc files"
+        },
+        {
+          "date": "2020-06-30",
+          "author": "garykac@gmail.com",
+          "hash": "3ade0cb",
+          "subject": "Re-generate index and impl-report with latest bikeshed"
+        },
+        {
+          "date": "2020-06-30",
+          "author": "garykac@gmail.com",
+          "hash": "f031501",
+          "subject": "Update build script for Python3"
+        }
+      ],
       "testlog": []
     },
     {
@@ -12586,6 +12897,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-07-06",
+          "author": "docfaraday@gmail.com",
+          "hash": "d27f50ca8a",
+          "subject": "Clean up PeerConnections in these tests."
+        },
+        {
           "date": "2020-06-08",
           "author": "smcgruer@chromium.org",
           "hash": "0a89735048",
@@ -12618,6 +12935,12 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2020-07-06",
+          "author": "silbermann.sebastian@gmail.com",
+          "hash": "48282a0",
+          "subject": "Fix list structure for required owners in `suggestion` (#1293)"
+        },
         {
           "date": "2020-06-25",
           "author": "Carolyn_MacLeod@ca.ibm.com",
@@ -13325,6 +13648,12 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2020-07-06",
+          "author": "paul@paul.cx",
+          "hash": "5d87cf81",
+          "subject": "Update expected error for current bikeshed"
+        },
+        {
           "date": "2020-05-26",
           "author": "toy.raymond@gmail.com",
           "hash": "ef824b66",
@@ -13338,6 +13667,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "koalab1999@gmail.com",
+          "hash": "ca5a211e4f",
+          "subject": "Added wpt test for loop with duration"
+        },
         {
           "date": "2020-06-26",
           "author": "hongchan@chromium.org",
@@ -14210,6 +14545,18 @@
       "specrepo": "https://github.com/WICG/webpackage",
       "speclog": [
         {
+          "date": "2020-07-06",
+          "author": "jyasskin@chromium.org",
+          "hash": "f384460",
+          "subject": "Reference a particular branch of the mirror-branch-action."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "jyasskin@chromium.org",
+          "hash": "5f74075",
+          "subject": "Start mirroring the \"master\" branch to \"main\""
+        },
+        {
           "date": "2020-06-26",
           "author": "hayatoito@gmail.com",
           "hash": "8e96b29",
@@ -14345,6 +14692,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-07-06",
+          "author": "docfaraday@gmail.com",
+          "hash": "8abbab0310",
+          "subject": "Make these tests fail instead of timing out if ICE fails."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "docfaraday@gmail.com",
+          "hash": "fd3081aa9f",
+          "subject": "Mark these tests as long, because they do ICE."
+        },
+        {
+          "date": "2020-07-06",
+          "author": "docfaraday@gmail.com",
+          "hash": "d27f50ca8a",
+          "subject": "Clean up PeerConnections in these tests."
+        },
         {
           "date": "2020-06-19",
           "author": "docfaraday@gmail.com",
