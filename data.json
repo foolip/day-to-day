@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-07-26T07:21:05.923Z",
-  "until": "2020-09-21T07:21:05.923Z",
+  "since": "2020-07-27T07:21:11.765Z",
+  "until": "2020-09-22T07:21:11.765Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -227,6 +227,12 @@
       "href": "https://wicg.github.io/change-password-url/",
       "specrepo": "https://github.com/WICG/change-password-url",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "wseltzer@w3.org",
+          "hash": "3a7ed00",
+          "subject": "Migrate from WICG"
+        },
         {
           "date": "2020-08-25",
           "author": "hober@apple.com",
@@ -1373,7 +1379,14 @@
           "subject": "[mediaqueries-5] Remove mention of prefers-color-scheme:no-preference"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-09-22",
+          "author": "futhark@chromium.org",
+          "hash": "58c3d744e6",
+          "subject": "Pass iframe element color-scheme to contentDocument."
+        }
+      ]
     },
     {
       "name": "CSS Conditional Rules",
@@ -1766,6 +1779,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "fwang@igalia.com",
+          "hash": "34c89bf03f",
+          "subject": "[mathml] Update CSS math-style to match specification update"
+        },
         {
           "date": "2020-09-19",
           "author": "xiaochengh@chromium.org",
@@ -2248,18 +2267,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "0cb820228",
           "subject": "[css-inline-3] Define em-over and em-under baselines for Canvas API. #5312"
-        },
-        {
-          "date": "2020-07-27",
-          "author": "dauwhe@gmail.com",
-          "hash": "c2dc2712b",
-          "subject": "[css-inline-3] add figure with illustration of values of text-edge"
-        },
-        {
-          "date": "2020-07-27",
-          "author": "dauwhe@gmail.com",
-          "hash": "6e0f283ec",
-          "subject": "[css-inline-3] add image file for text-edge"
         }
       ],
       "testlog": []
@@ -2851,6 +2858,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-09-21",
+          "author": "emilio@crisal.io",
+          "hash": "2e309e8b50",
+          "subject": "Don't optimize ::before/::after away if content/display have been specified via custom properties."
+        },
+        {
           "date": "2020-09-09",
           "author": "obrufau@igalia.com",
           "hash": "0b2796c083",
@@ -3272,6 +3285,24 @@
       ],
       "testlog": [
         {
+          "date": "2020-09-22",
+          "author": "boris.chiou@gmail.com",
+          "hash": "0a2ff2d837",
+          "subject": "Mark bug number for the incorrect calculation of the cross size for column-oriented flex container."
+        },
+        {
+          "date": "2020-09-22",
+          "author": "boris.chiou@gmail.com",
+          "hash": "fccb05e01a",
+          "subject": "Support aspect-ratio for flex items when computing their sizes for ReflowInput."
+        },
+        {
+          "date": "2020-09-22",
+          "author": "boris.chiou@gmail.com",
+          "hash": "b2a265b68a",
+          "subject": "Add tests for replaced-element flex items with aspect-ratio."
+        },
+        {
           "date": "2020-09-12",
           "author": "cbiesinger@chromium.org",
           "hash": "4276fef807",
@@ -3445,12 +3476,6 @@
           "author": "chrishtr@chromium.org",
           "hash": "ff1fd0c93e",
           "subject": "SetNeedsPaint on tables when collapsed borders change"
-        },
-        {
-          "date": "2020-07-26",
-          "author": "emilio@crisal.io",
-          "hash": "5ccde40711",
-          "subject": "When inserting a col frame, invalidate all subsequent column BC borders."
         }
       ]
     },
@@ -3528,6 +3553,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "jfernandez@igalia.com",
+          "hash": "9c03638de8",
+          "subject": "Use nullopt when the non-hangable-run-end is not applicable"
+        },
         {
           "date": "2020-09-17",
           "author": "jfernandez@igalia.com",
@@ -3882,6 +3913,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-09-17",
+          "author": "bkardell@gmail.com",
+          "hash": "d83366aca",
+          "subject": "Add MathMLIDL"
+        },
+        {
           "date": "2020-09-03",
           "author": "mathias@qiwi.be",
           "hash": "b590c9d86",
@@ -3901,6 +3938,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "emilio@crisal.io",
+          "hash": "66fd039e01",
+          "subject": "CSSOM should respect rule-level property restrictions."
+        },
         {
           "date": "2020-09-16",
           "author": "smcgruer@chromium.org",
@@ -3970,18 +4013,6 @@
           "author": "emilio@crisal.io",
           "hash": "ca92b70193",
           "subject": "Don't move the client area rect for the root scroll frame."
-        },
-        {
-          "date": "2020-07-27",
-          "author": "kojii@chromium.org",
-          "hash": "fc8c0bf79b",
-          "subject": "Fix hit-testing culled inline for atomic inlines"
-        },
-        {
-          "date": "2020-07-27",
-          "author": "emilio@crisal.io",
-          "hash": "0ea87f88da",
-          "subject": "Make clientRect offsets relative to the primary frame of the element."
         }
       ]
     },
@@ -3990,7 +4021,14 @@
       "href": "https://wicg.github.io/custom-state-pseudo-class/",
       "specrepo": "https://github.com/WICG/custom-state-pseudo-class",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "smcgruer@chromium.org",
+          "hash": "f41d21f871",
+          "subject": "Update interfaces/html.idl and test (#25640)"
+        }
+      ]
     },
     {
       "name": "Deprecation Reporting",
@@ -5174,6 +5212,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-09-21",
+          "author": "ysuzuki@apple.com",
+          "hash": "e75ed15b91",
+          "subject": "Perl YAML parser cannot parse documents in options-granularity-abrupt-throws.js and options-granularity-toString-abrupt-throws.js"
+        },
+        {
           "date": "2020-09-19",
           "author": "ysuzuki@apple.com",
           "hash": "333da4198a",
@@ -5291,6 +5335,12 @@
       "specrepo": "https://github.com/whatwg/encoding",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "abb@randomunok.com",
+          "hash": "3e16fb3",
+          "subject": "Clarify the usage the output I/O queues in the hooks"
+        },
         {
           "date": "2020-09-15",
           "author": "d@domenic.me",
@@ -5709,6 +5759,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-09-21",
+          "author": "steven@smacleod.ca",
+          "hash": "87cd9eb2ad",
+          "subject": "add WPT for requestFullscreen in a tree of cross-origin iframes.  DONTBUILD"
+        },
+        {
           "date": "2020-08-25",
           "author": "philip@foolip.org",
           "hash": "19e5bdc85f",
@@ -5771,6 +5827,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "9fa293bbec",
+          "subject": "sensors: Cleanup iframe-related tests. (#25626)"
+        },
         {
           "date": "2020-09-16",
           "author": "raphael.kubo.da.costa@intel.com",
@@ -6348,7 +6410,14 @@
       "href": "https://w3c.github.io/hr-time/",
       "specrepo": "https://github.com/w3c/hr-time",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-09-16",
+          "author": "peter.perlepes@trivago.com",
+          "hash": "c376f39",
+          "subject": "Define 'relative high resolution time'"
+        }
+      ],
       "testlog": []
     },
     {
@@ -6357,6 +6426,24 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "34962541+OisinNolan@users.noreply.github.com",
+          "hash": "cc2ba624",
+          "subject": "Editorial: fix typo in tabindex value definition"
+        },
+        {
+          "date": "2020-09-21",
+          "author": "tristan.fraipont@gmail.com",
+          "hash": "71e76f8e",
+          "subject": "Editorial: fix typo in beginPath() definition"
+        },
+        {
+          "date": "2020-09-21",
+          "author": "mike@w3.org",
+          "hash": "63f5cd7b",
+          "subject": "Meta: restore old anchor for input Email state"
+        },
         {
           "date": "2020-09-18",
           "author": "d@domenic.me",
@@ -6695,6 +6782,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-22",
+          "author": "tkent@chromium.org",
+          "hash": "af5170f572",
+          "subject": "Fieldset NG: Fix inline offsets of children in RTL"
+        },
+        {
+          "date": "2020-09-21",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "9d8250c9da",
+          "subject": "[COOP] Access reporting with 2 reporters."
+        },
+        {
+          "date": "2020-09-21",
+          "author": "smcgruer@chromium.org",
+          "hash": "f41d21f871",
+          "subject": "Update interfaces/html.idl and test (#25640)"
+        },
         {
           "date": "2020-09-19",
           "author": "yiyix@chromium.org",
@@ -7821,6 +7926,42 @@
       "specrepo": "https://github.com/w3c/IntersectionObserver",
       "speclog": [
         {
+          "date": "2020-09-19",
+          "author": "szager@chromium.org",
+          "hash": "604c60b",
+          "subject": "s/same-origin/same-origin-domain/"
+        },
+        {
+          "date": "2020-09-18",
+          "author": "szager@chromium.org",
+          "hash": "64950c2",
+          "subject": "Add styling to null"
+        },
+        {
+          "date": "2020-09-18",
+          "author": "szager@chromium.org",
+          "hash": "49f81bc",
+          "subject": "fix typos"
+        },
+        {
+          "date": "2020-09-17",
+          "author": "szager@chromium.org",
+          "hash": "b5058bd",
+          "subject": "Clarify same-origin/cross-origin"
+        },
+        {
+          "date": "2020-09-14",
+          "author": "szager@chromium.org",
+          "hash": "e0be006",
+          "subject": "define explicit root observer"
+        },
+        {
+          "date": "2020-09-11",
+          "author": "szager@chromium.org",
+          "hash": "6b1b135",
+          "subject": "Remove references to unit of related similar-origin browsing contexts"
+        },
+        {
           "date": "2020-09-11",
           "author": "szager@chromium.org",
           "hash": "99b8d94",
@@ -8067,6 +8208,12 @@
       "href": "https://wicg.github.io/layout-instability/",
       "specrepo": "https://github.com/WICG/layout-instability",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "npm@chromium.org",
+          "hash": "6c47db0",
+          "subject": "Update index.bs"
+        },
         {
           "date": "2020-09-17",
           "author": "skobes@chromium.org",
@@ -9578,6 +9725,12 @@
       "specrepo": "https://github.com/WICG/portals",
       "speclog": [
         {
+          "date": "2020-09-21",
+          "author": "d@domenic.me",
+          "hash": "703914f",
+          "subject": "Prevent navigations to non-HTTP(S) URLs"
+        },
+        {
           "date": "2020-09-14",
           "author": "d@domenic.me",
           "hash": "777e565",
@@ -10277,6 +10430,12 @@
       "href": "https://w3c.github.io/ServiceWorker/",
       "specrepo": "https://github.com/w3c/ServiceWorker",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "044cc99",
+          "subject": "Editorial: Align with Web IDL specification (#1541)"
+        },
         {
           "date": "2020-09-18",
           "author": "jaffathecake@gmail.com",
@@ -11042,6 +11201,12 @@
       "speclog": [
         {
           "date": "2020-09-21",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "c3ebf77",
+          "subject": "Add an Explainer document to the repository. (#286)"
+        },
+        {
+          "date": "2020-09-21",
           "author": "marcos@marcosc.com",
           "hash": "5bd9a2e",
           "subject": "Chore: ScreenWakeLock interface is not a thing"
@@ -11598,6 +11763,12 @@
       "href": "https://w3c.github.io/web-share/",
       "specrepo": "https://github.com/w3c/web-share",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "marcos@marcosc.com",
+          "hash": "9322cbe",
+          "subject": "Reject non-http URLs for url member (#174)"
+        },
         {
           "date": "2020-09-16",
           "author": "marcos@marcosc.com",
@@ -12262,12 +12433,6 @@
           "author": "ted@mielczarek.org",
           "hash": "b59ad15",
           "subject": "Fix EXPLAINER link"
-        },
-        {
-          "date": "2020-07-27",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "6be777a",
-          "subject": "Use [EnforceRange] for reportId"
         }
       ],
       "testlog": []
@@ -12277,6 +12442,12 @@
       "href": "https://heycam.github.io/webidl/",
       "specrepo": "https://github.com/heycam/webidl",
       "speclog": [
+        {
+          "date": "2020-09-21",
+          "author": "mkwst@google.com",
+          "hash": "3fbaa9e",
+          "subject": "Define the [CrossOriginIsolated] extended attribute"
+        },
         {
           "date": "2020-09-18",
           "author": "d@domenic.me",
@@ -12556,6 +12727,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-09-21",
+          "author": "hbos@chromium.org",
+          "hash": "7445e5a133",
+          "subject": "[VideoStreamEncoder] Add a WPT that reproduces a VSE crash."
+        },
         {
           "date": "2020-09-17",
           "author": "philipp.hancke@googlemail.com",
