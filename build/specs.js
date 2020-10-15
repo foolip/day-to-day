@@ -160,6 +160,10 @@ async function main() {
             blocklist.has(entry.series.shortname)) {
           return false;
         }
+        // Skip all WebGL extensions
+        if (entry.url.startsWith('https://www.khronos.org/registry/webgl/extensions/')) {
+          return false;
+        }
         // only include the latest level of any spec
         if (entry.shortname != entry.series.currentSpecification) {
           return false;
