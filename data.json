@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-08-19T13:50:00.721Z",
-  "until": "2020-10-15T13:50:00.721Z",
+  "since": "2020-08-20T07:25:05.383Z",
+  "until": "2020-10-16T07:25:05.383Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -506,7 +506,14 @@
       "href": "https://wicg.github.io/cors-rfc1918/",
       "specrepo": "https://github.com/WICG/cors-rfc1918",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-10-16",
+          "author": "titouan.rigoudy@gmail.com",
+          "hash": "e3cc95aa44",
+          "subject": "[CORS-RFC1918] Add top-level directory. (#26099)"
+        }
+      ]
     },
     {
       "name": "Crash Reporting",
@@ -521,6 +528,12 @@
       "specrepo": "https://github.com/w3c/webappsec-credential-management",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-10-15",
+          "author": "rockot@google.com",
+          "hash": "490a85a94c",
+          "subject": "Migrate credential-management WPTs to JS modules"
+        },
         {
           "date": "2020-10-14",
           "author": "majidvp@chromium.org",
@@ -1231,12 +1244,6 @@
           "author": "chris@w3.org",
           "hash": "c431211ea",
           "subject": "[css-color-4] Split hue angle into its own section, allow NaN,  fix #5309"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "jackalmage@gmail.com",
-          "hash": "ba7fc842c",
-          "subject": "[css-color-4] Add dfn for 'system color pairings'."
         }
       ],
       "testlog": [
@@ -1307,18 +1314,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "24c0f9400",
           "subject": "[css-color-adjust-1] Now that verbiage has changed, move the *-shadow properties to their own paragraph, since they get reset differently than the color properties. Fixes #5459"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "jackalmage@gmail.com",
-          "hash": "7c154ddc7",
-          "subject": "[css-color-adjust] Per WG resolution, respect chosen system colors when force-adjusting. #4178"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "jackalmage@gmail.com",
-          "hash": "d99669c90",
-          "subject": "[mediaqueries-5] Remove mention of prefers-color-scheme:no-preference"
         }
       ],
       "testlog": [
@@ -1421,7 +1416,20 @@
           "subject": "[css-conditional-3] Add DoC"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-10-15",
+          "author": "gsnedders@apple.com",
+          "hash": "847603f577",
+          "subject": "Split CSS.supports tests into separate tests"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "gsnedders@apple.com",
+          "hash": "184287a08b",
+          "subject": "Move CSS.supports tests to more appropriate place"
+        }
+      ]
     },
     {
       "name": "CSS Containment",
@@ -1922,6 +1930,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-15",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "3fd247b21a",
+          "subject": "[grid] Relayout grid items when definiteness changes."
+        },
+        {
           "date": "2020-09-30",
           "author": "dgrogan@chromium.org",
           "hash": "4816b3d70f",
@@ -2282,6 +2296,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-10-15",
+          "author": "fs@opera.com",
+          "hash": "efed29a263",
+          "subject": "Add test for crbug.com/1138917"
+        },
         {
           "date": "2020-10-15",
           "author": "noam.j.rosenthal@gmail.com",
@@ -3213,6 +3233,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-15",
+          "author": "cbiesinger@chromium.org",
+          "hash": "4c0a2ff019",
+          "subject": "[AspectRatio] Fix divide by zero with a small float ratio"
+        },
+        {
           "date": "2020-10-01",
           "author": "cbiesinger@chromium.org",
           "hash": "ec58818741",
@@ -3532,12 +3558,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "d78437c6f",
           "subject": "[css-text] tab-size applies to inlines"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a637e80a7",
-          "subject": "[css-text-3] mention the target"
         }
       ],
       "testlog": [
@@ -4046,6 +4066,18 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-15",
+          "author": "gsnedders@apple.com",
+          "hash": "184287a08b",
+          "subject": "Move CSS.supports tests to more appropriate place"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "gsnedders@apple.com",
+          "hash": "1f53be1a20",
+          "subject": "Consolidate CSS.escape tests"
+        },
+        {
           "date": "2020-10-02",
           "author": "kbabbitt@microsoft.com",
           "hash": "1e4e3bd750",
@@ -4275,6 +4307,48 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2020-10-15",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "096f30b",
+          "subject": "Editorial: Remove Formal[Rest]Parameter from IteratorBindingInitialization (#2084)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "rkirsling@gmail.com",
+          "hash": "a4a142c",
+          "subject": "Normative: Align detached buffer semantics with web reality (#2164)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "richard.gibson@gmail.com",
+          "hash": "b1afdde",
+          "subject": "Editorial: Add Annex B note warning about (n)octal escape sequences before \"use strict\" (#2132)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "richard.gibson@gmail.com",
+          "hash": "28f5a6a",
+          "subject": "Editorial: Move the definition of Directive Prologue out of Functions and Classes (#2132)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "richard.gibson@gmail.com",
+          "hash": "1bb7502",
+          "subject": "Editorial: Add cross-references between strict mode explanation & entry conditions, & to ASI section (#2132)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "3b654e9",
+          "subject": "Editorial: Rewrite overloaded functions so each has a single definition (#2176)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "2f2a6d3",
+          "subject": "Editorial: Move TypedArraySpeciesCreate and TypedArrayCreate (#2176)"
+        },
         {
           "date": "2020-10-13",
           "author": "bakkot@gmail.com",
@@ -4634,12 +4708,6 @@
           "author": "richard.gibson@gmail.com",
           "hash": "ed2fe29",
           "subject": "Editorial: Simplify spec use of bitwise operations (#2029)"
-        },
-        {
-          "date": "2020-08-20",
-          "author": "richard.gibson@gmail.com",
-          "hash": "93ac768",
-          "subject": "Editorial: Update clause range references (#2133)"
         }
       ],
       "testlog": [
@@ -5812,24 +5880,6 @@
           "author": "xhwang@google.com",
           "hash": "a67b33f",
           "subject": "Add \"usable-in-future\" to MediaKeyStatus"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "joeyparrish@google.com",
-          "hash": "26b1719",
-          "subject": "Update generated HTML for PR #474"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "joeyparrish@google.com",
-          "hash": "1f42056",
-          "subject": "Fix remaining references to Promise<void>"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "saschanaz+autokagami@outlook.com",
-          "hash": "44f1408",
-          "subject": "Editorial: Align with Web IDL specification (#474)"
         }
       ],
       "testlog": [
@@ -6047,24 +6097,6 @@
           "author": "alex.abbra@gmail.com",
           "hash": "555d61c",
           "subject": "Correct example code for file and directory. (#223)"
-        },
-        {
-          "date": "2020-08-20",
-          "author": "mek@chromium.org",
-          "hash": "3dd57a2",
-          "subject": "Update EXPLAINER.md"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "tomac@google.com",
-          "hash": "8a5dde2",
-          "subject": "Update README.md (#221)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "tomac@google.com",
-          "hash": "d644e2d",
-          "subject": "Add browser-nativefs reference (#220)"
         }
       ],
       "testlog": []
@@ -6307,6 +6339,24 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2020-10-15",
+          "author": "corentin@wallez.net",
+          "hash": "51d54af",
+          "subject": "Add defaulting to 1 for GPUExtent3D members. (#1152)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "corentin@wallez.net",
+          "hash": "b2d9f4e",
+          "subject": "Disallow depth-comparison for multisampled-texture (#1151)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "corentin@wallez.net",
+          "hash": "468ed15",
+          "subject": "Make the size defaulting of getMappedRange match mapAsync. (#1149)"
+        },
         {
           "date": "2020-10-13",
           "author": "mehmetoguzderin@mehmetoguzderin.com",
@@ -6726,42 +6776,6 @@
           "author": "fd@tidoust.net",
           "hash": "f9b2c4d",
           "subject": "Add w3c.json file for W3C tracking purpose (#1017)"
-        },
-        {
-          "date": "2020-08-20",
-          "author": "tojiro@gmail.com",
-          "hash": "59e6a94",
-          "subject": "Adding a lot of missing method and argument descriptions (#1015)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "tojiro@gmail.com",
-          "hash": "c61c344",
-          "subject": "Additional validation for all draw methods (#1010)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "connorwadefitzgerald@gmail.com",
-          "hash": "9b3a658",
-          "subject": "Add rgb9e5Float texture format (#975)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "kainino@chromium.org",
-          "hash": "8acdb53",
-          "subject": "Revise the \"validating linear texture data\" algorithm (#1006)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "kvarkus@gmail.com",
-          "hash": "cfd7e48",
-          "subject": "Internal usage flags and rules (#994)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "kainino@chromium.org",
-          "hash": "8a008ad",
-          "subject": "Rename bc6h-rgb-sfloat to bc6h-rgb-float (#1011)"
         }
       ],
       "testlog": []
@@ -7149,6 +7163,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-15",
+          "author": "rbuis@igalia.com",
+          "hash": "586aca5fd7",
+          "subject": "Add test for lazy iframe loading with scripting off (#26130)"
+        },
         {
           "date": "2020-10-13",
           "author": "jarhar@chromium.org",
@@ -7760,12 +7780,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "2520b44189",
           "subject": "[html] Omit empty COOP/COEP reporting HTTP headers (#24343)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "19254cae3f",
-          "subject": "Safelist distributed web schemes for \"registerProtocolHandler\" (#24894)"
         }
       ]
     },
@@ -7937,12 +7951,6 @@
           "author": "eero.hakkinen@intel.com",
           "hash": "6e7b852",
           "subject": "Clarify pan/tilt/zoom capabilities (#245)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "eero.hakkinen@intel.com",
-          "hash": "56e30e2",
-          "subject": "Clarify pan/tilt/zoom settings (#245)"
         }
       ],
       "testlog": [
@@ -9653,6 +9661,18 @@
       "specrepo": "https://github.com/w3c/payment-request",
       "speclog": [
         {
+          "date": "2020-10-15",
+          "author": "marcos@marcosc.com",
+          "hash": "e71e17d",
+          "subject": "Editorial: export some more terms"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "marcos@marcosc.com",
+          "hash": "0d11184",
+          "subject": "Consume user activation (#916)"
+        },
+        {
           "date": "2020-10-05",
           "author": "marcos@marcosc.com",
           "hash": "f697360",
@@ -9690,6 +9710,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-15",
+          "author": "marcos@marcosc.com",
+          "hash": "78f5971a36",
+          "subject": "(re)move redundant payment tests (#26141)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "marcos@marcosc.com",
+          "hash": "08d4c31558",
+          "subject": "Test show() consumes user activation (#26022)"
+        },
         {
           "date": "2020-10-06",
           "author": "mcaceres@mozilla.com",
@@ -9874,7 +9906,14 @@
       "name": "Picture-in-Picture",
       "href": "https://w3c.github.io/picture-in-picture/",
       "specrepo": "https://github.com/w3c/picture-in-picture",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-10-15",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "fce05db",
+          "subject": "Remove edge wpt badge"
+        }
+      ],
       "testlog": []
     },
     {
@@ -10097,20 +10136,7 @@
       "href": "https://w3c.github.io/preload/",
       "specrepo": "https://github.com/w3c/preload",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2020-08-20",
-          "author": "brunobernard@cyberstorm.mu",
-          "hash": "111fdc9",
-          "subject": "Removed HTTP/2 and HTTP/3 from note"
-        },
-        {
-          "date": "2020-08-20",
-          "author": "brunobernard@cyberstorm.mu",
-          "hash": "364d0d1",
-          "subject": "Removed HTTP/2 from title"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2020-09-22",
@@ -10251,6 +10277,18 @@
       "specrepo": "https://github.com/w3c/reporting",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-10-15",
+          "author": "iclelland@google.com",
+          "hash": "de9d47f",
+          "subject": "Disallow credentials from cross-origin reports (#186)"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "iclelland@chromium.org",
+          "hash": "f890dc1",
+          "subject": "Fix bikeshed linking errors in network-reporting.bs"
+        },
         {
           "date": "2020-10-14",
           "author": "iclelland@chromium.org",
@@ -10546,6 +10584,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-15",
+          "author": "kevers@chromium.org",
+          "hash": "ec92f5b96c",
+          "subject": "Reenable scroll-animations/element-based-offset tests"
+        },
+        {
           "date": "2020-09-22",
           "author": "gsnedders@apple.com",
           "hash": "e1f3c83b5a",
@@ -10637,12 +10681,6 @@
           "author": "philip@foolip.org",
           "hash": "cd5f4dfe12",
           "subject": "Add interfaces/scroll-to-text-fragment.idl and test (#24658)"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "bokan@chromium.org",
-          "hash": "f8632b0ebf",
-          "subject": "Move location.fragmentDirective to document"
         }
       ]
     },
@@ -11241,12 +11279,6 @@
           "author": "reyang@microsoft.com",
           "hash": "93b9f96",
           "subject": "add OpenTelemetry .NET (#418)"
-        },
-        {
-          "date": "2020-08-20",
-          "author": "srjames90@berkeley.edu",
-          "hash": "387a108",
-          "subject": "Check if keys exist before trying to access them (#417)"
         }
       ],
       "testlog": []
@@ -12072,12 +12104,6 @@
           "author": "toy.raymond@gmail.com",
           "hash": "c0f79474",
           "subject": "Run html tidy over implementation-report.html"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "toy.raymond@gmail.com",
-          "hash": "a9c900fe",
-          "subject": "Address #2185:  latest bikeshed fixes many errors (#2239)"
         }
       ],
       "testlog": [
@@ -12140,12 +12166,6 @@
           "author": "rtoy@chromium.org",
           "hash": "7da1d06665",
           "subject": "Fix incorrect delay of DelayNode"
-        },
-        {
-          "date": "2020-08-19",
-          "author": "rtoy@chromium.org",
-          "hash": "66dd99d391",
-          "subject": "Make sure Oscillator read index is in valid range."
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -12274,12 +12294,6 @@
           "author": "agl@google.com",
           "hash": "5690b57",
           "subject": "Apply Jeff's suggestion."
-        },
-        {
-          "date": "2020-08-19",
-          "author": "jdhodges@google.com",
-          "hash": "96a4f10",
-          "subject": "Fix spec-build errors (editorial) (#1461)"
         }
       ],
       "testlog": [
@@ -12575,6 +12589,12 @@
       "href": "https://heycam.github.io/webidl/",
       "specrepo": "https://github.com/heycam/webidl",
       "speclog": [
+        {
+          "date": "2020-10-16",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "67bc60f",
+          "subject": "Editorial: Update note on duplicate [[OwnPropertyKeys]] entries"
+        },
         {
           "date": "2020-09-28",
           "author": "jackalmage@gmail.com",
@@ -13415,6 +13435,12 @@
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
         {
+          "date": "2020-10-15",
+          "author": "vasilvv@google.com",
+          "hash": "b827011",
+          "subject": "Run bikeshed"
+        },
+        {
           "date": "2020-09-30",
           "author": "vasilvv@google.com",
           "hash": "f5ff4ba",
@@ -13505,6 +13531,12 @@
       "href": "https://immersive-web.github.io/webxr/",
       "specrepo": "https://github.com/immersive-web/webxr",
       "speclog": [
+        {
+          "date": "2020-10-16",
+          "author": "james_github@baicoianu.com",
+          "hash": "37ef94e",
+          "subject": "Fixed typo in XRWebGLLayer note"
+        },
         {
           "date": "2020-10-01",
           "author": "klausw@chromium.org",
