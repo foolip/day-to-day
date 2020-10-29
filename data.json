@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-09-01T07:29:10.196Z",
-  "until": "2020-10-28T07:29:10.196Z",
+  "since": "2020-09-02T07:29:00.181Z",
+  "until": "2020-10-29T07:29:00.181Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -211,8 +211,21 @@
       "name": "Clipboard API and events",
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2020-10-29",
+          "author": "saschanaz@outlook.com",
+          "hash": "af4ce03",
+          "subject": "Remove clipboard-read permission (#132)"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2020-10-29",
+          "author": "japhet@chromium.org",
+          "hash": "7bd8d6e6bc",
+          "subject": "navigator.clipboard shouldn't be null after detach."
+        },
         {
           "date": "2020-10-09",
           "author": "huangdarwin@chromium.org",
@@ -454,12 +467,6 @@
           "author": "48255136+ayuishii@users.noreply.github.com",
           "hash": "a8fd697",
           "subject": "Remove Motivations (#160)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "jsbell@chromium.org",
-          "hash": "b513944",
-          "subject": "Add @ayuishii as editor (#161)"
         }
       ],
       "testlog": [
@@ -779,7 +786,14 @@
           "subject": "Removed duplicate \"keywords\" from Value Definitions section"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "andruud@chromium.org",
+          "hash": "1ff31a6816",
+          "subject": "[scroll-animations] Enable CSSScrollTimeline for experimental"
+        }
+      ]
     },
     {
       "name": "CSS Backgrounds and Borders",
@@ -836,12 +850,6 @@
           "author": "rego@igalia.com",
           "hash": "55e3f8d27d",
           "subject": "Fix double zooming in StyleBuilderConverter::ConvertBorderWidth()"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "kojii@chromium.org",
-          "hash": "f7dba633ea",
-          "subject": "Add tests for background-color of inline boxes in RTL"
         }
       ]
     },
@@ -851,6 +859,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-10-28",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "d9690b51f",
+          "subject": "[css-box-3] Update view-box definition with Amelia's wording in https://github.com/w3c/csswg-drafts/issues/4662#issuecomment-598606578"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "706d60168",
+          "subject": "[css-box-3] Update Changes list, metadata."
+        },
         {
           "date": "2020-09-18",
           "author": "sebastianzartner@gmail.com",
@@ -1684,12 +1704,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "6140eb48e1",
           "subject": "Reland: \"[layout] Ensure fragment tree consistency.\""
-        },
-        {
-          "date": "2020-09-01",
-          "author": "vmpstr@chromium.org",
-          "hash": "17f8f001c7",
-          "subject": "ContentVisibility: Make the lifecycle tasks run only on full lifecycle."
         }
       ]
     },
@@ -2635,12 +2649,6 @@
           "author": "tlin@mozilla.com",
           "hash": "6877216497",
           "subject": "Make grid container aware that its available block-size can be unconstrained in paginated context."
-        },
-        {
-          "date": "2020-09-01",
-          "author": "mstensho@chromium.org",
-          "hash": "43847c61ef",
-          "subject": "A column-spanning legend isn't part of the flow thread."
         }
       ]
     },
@@ -2673,6 +2681,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-10-21",
+          "author": "argyle@google.com",
+          "hash": "47ccf092e",
+          "subject": "[css-nesting-1] adds another valid and invalid example to nested conditionals"
+        },
+        {
+          "date": "2020-10-21",
+          "author": "argyle@google.com",
+          "hash": "fbc343c02",
+          "subject": "[css-nesting-1] initial idea for nested conditionals"
+        },
         {
           "date": "2020-10-16",
           "author": "argyle@google.com",
@@ -3437,6 +3457,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b05b8d71f",
+          "subject": "[css-sizing-3] Cyclic percentage compression only affects min-content contribution, not min-content size per https://github.com/w3c/csswg-drafts/issues/765 #5665"
+        },
+        {
           "date": "2020-10-23",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "d8dfa8267",
@@ -3696,12 +3722,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "ba2fd2e258",
           "subject": "[tables] Tables should respect the min content-size."
-        },
-        {
-          "date": "2020-09-01",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "f135c6d792",
-          "subject": "[layout] Make an OOF table-layout:fixed not report an infinite max-size"
         }
       ]
     },
@@ -4689,6 +4709,12 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "35a7d35",
+          "subject": "Editorial: Make Reference type a Record value (#2085)"
+        },
+        {
           "date": "2020-10-15",
           "author": "shvaikalesh@gmail.com",
           "hash": "096f30b",
@@ -4963,24 +4989,6 @@
           "author": "ljharb@gmail.com",
           "hash": "9b5b0ca",
           "subject": "Editorial: remove legacy intrinsics (#2056)"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "bakkot@gmail.com",
-          "hash": "e67ec38",
-          "subject": "Meta: fix watch script (#2162)"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "bakkot@gmail.com",
-          "hash": "8dfc62e",
-          "subject": "Meta: bump ecmarkup to 4.1.0 (#2152)"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "bakkot@gmail.com",
-          "hash": "0038073",
-          "subject": "Editorial: consistent list iteration style (#2152)"
         }
       ],
       "testlog": [
@@ -6072,12 +6080,6 @@
           "author": "annevk@annevk.nl",
           "hash": "5c42982",
           "subject": "Meta: cleanup visualize.py"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "annevk@annevk.nl",
-          "hash": "bd50cc4",
-          "subject": "Meta: “UTF-8 or death”"
         }
       ],
       "testlog": [
@@ -6313,12 +6315,6 @@
           "author": "annevk@annevk.nl",
           "hash": "ffca9d1f71",
           "subject": "File API: make manual IDL test use idl_test"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "annevk@annevk.nl",
-          "hash": "54a8f7df2d",
-          "subject": "File API: make manual IDL test work"
         }
       ],
       "testpolicy": "https://github.com/w3c/FileAPI/blob/HEAD/CONTRIBUTING.md"
@@ -6949,30 +6945,6 @@
           "author": "dneto@google.com",
           "hash": "4cb9430",
           "subject": "Write WGSL \"Shader Stages\" section (#1040)"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "dneto@google.com",
-          "hash": "25524af",
-          "subject": "Elaborate conversions (#983)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "9856269+sarahM0@users.noreply.github.com",
-          "hash": "5a4c0f7",
-          "subject": "Update validation rule v-0008 to match the current spec (#1039)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "yunchao.he@intel.com",
-          "hash": "c406ef6",
-          "subject": "Add a few special examples for resource usages tracking (#1030)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "dneto@google.com",
-          "hash": "9c3d9d0",
-          "subject": "Rewrite for clarity: switch selector is scalar integer (#1038)"
         }
       ],
       "testlog": []
@@ -7004,7 +6976,14 @@
       "href": "https://immersive-web.github.io/hit-test/",
       "specrepo": "https://github.com/immersive-web/hit-test",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "5fe9553936",
+          "subject": "Add webgl2 tests for WebXR (#26038)"
+        }
+      ],
       "testpolicy": "https://github.com/immersive-web/hit-test/blob/HEAD/README.md"
     },
     {
@@ -7309,27 +7288,21 @@
           "author": "andrea.giammarchi@gmail.com",
           "hash": "ed61fda9",
           "subject": "Resolve whenDefined()'s promise with the element's constructor"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "mike@w3.org",
-          "hash": "5bad12a0",
-          "subject": "Allow autocomplete=\"username\" with <input type=email>"
-        },
-        {
-          "date": "2020-09-02",
-          "author": "mike@w3.org",
-          "hash": "3e0ce829",
-          "subject": "Editorial: Rename \"E-mail state\" to \"Email state\""
-        },
-        {
-          "date": "2020-09-01",
-          "author": "annevk@annevk.nl",
-          "hash": "4f7f3042",
-          "subject": "Meta: update the HTML FAQ"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-29",
+          "author": "hiroshige@chromium.org",
+          "hash": "d7e3966f8c",
+          "subject": "[WPT] Fix muted errors flag around setTimeout/setInterval"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "hiroshige@chromium.org",
+          "hash": "49d0a2ef3a",
+          "subject": "[WPT] Fix/add credentials mode tests for dynamic import()"
+        },
         {
           "date": "2020-10-27",
           "author": "yiyix@chromium.org",
@@ -7851,12 +7824,6 @@
           "author": "annevk@annevk.nl",
           "hash": "f155935431",
           "subject": "Storage: move IDL to /html/dom/"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "annevk@annevk.nl",
-          "hash": "9a5acad6f4",
-          "subject": "EventSource: move IDL tests to HTML"
         }
       ]
     },
@@ -8060,12 +8027,6 @@
           "author": "gsnedders@apple.com",
           "hash": "d4beec831b",
           "subject": "Replace assert_true(x == y) with assert_equals"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "arnaud.mandy@intel.com",
-          "hash": "89950d581d",
-          "subject": "WPT: Refactor capture image tests to use test-only-api.js"
         }
       ]
     },
@@ -8296,12 +8257,6 @@
           "author": "masayuki@d-toybox.com",
           "hash": "dedcf7c496",
           "subject": "part 8: Add `AutoDeleteRangesHandler::ComputeRangesToDeleteAtomicContent()` to compute atomic content deleting target range"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "masayuki@d-toybox.com",
-          "hash": "7cdcd0fa5c",
-          "subject": "part 3: Make `AutoDeleteRangesHandler::ComputeRangesToDelete()` quit without modifying the ranges when it shouldn't delete adjacent character(s) in bidi text"
         }
       ],
       "testpolicy": "https://github.com/w3c/input-events/blob/HEAD/CONTRIBUTING.md"
@@ -8614,6 +8569,12 @@
       "specrepo": "https://github.com/WICG/largest-contentful-paint",
       "speclog": [
         {
+          "date": "2020-10-27",
+          "author": "npm@chromium.org",
+          "hash": "9549696",
+          "subject": "Update explainer to include content removal"
+        },
+        {
           "date": "2020-10-20",
           "author": "yoav@yoav.ws",
           "hash": "9a06fd2",
@@ -8647,6 +8608,18 @@
       "href": "https://immersive-web.github.io/layers/",
       "specrepo": "https://github.com/immersive-web/layers",
       "speclog": [
+        {
+          "date": "2020-10-27",
+          "author": "cabanier@fb.com",
+          "hash": "b7e9045",
+          "subject": "Removed depth/stencil attributes in favor of texture type"
+        },
+        {
+          "date": "2020-10-23",
+          "author": "cabanier@fb.com",
+          "hash": "2822a37",
+          "subject": "Allow creation of other texture layouts"
+        },
         {
           "date": "2020-10-20",
           "author": "cabanier@fb.com",
@@ -8861,12 +8834,6 @@
           "author": "skobes@chromium.org",
           "hash": "2a96c8bab6",
           "subject": "Add test for CLS distance fraction upper bound."
-        },
-        {
-          "date": "2020-09-02",
-          "author": "wangxianzhu@chromium.org",
-          "hash": "b715a02c61",
-          "subject": "More accurate layout shift tracking for texts"
         }
       ]
     },
@@ -9850,12 +9817,6 @@
           "author": "rouslan@chromium.org",
           "hash": "373d31d5b5",
           "subject": "[Web Payment] Very long networkData byte array test."
-        },
-        {
-          "date": "2020-09-01",
-          "author": "rouslan@chromium.org",
-          "hash": "a7831be8db",
-          "subject": "[Web Payment] Very long instrumentId string test."
         }
       ]
     },
@@ -10119,6 +10080,12 @@
       "href": "https://wicg.github.io/portals/",
       "specrepo": "https://github.com/WICG/portals",
       "speclog": [
+        {
+          "date": "2020-10-28",
+          "author": "mcnee.kevin@gmail.com",
+          "hash": "bd26765",
+          "subject": "Don't suggest that unload handlers would necessarily be run following activation (#254)"
+        },
         {
           "date": "2020-09-28",
           "author": "d@domenic.me",
@@ -10597,18 +10564,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "ead8b7e",
           "subject": "Stop checking if \"acquire the wake lock\" succeeds. (#285)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "e40b884",
-          "subject": "editorial: Link WakeLockSentinel.released to its corresponding test. (#281)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "228f77e",
-          "subject": "editorial: Add internal slots to WakeLockSentinel. (#280)"
         }
       ],
       "testlog": [
@@ -10635,12 +10590,6 @@
           "author": "smcgruer@chromium.org",
           "hash": "6a54c54fa9",
           "subject": "Convert a few async_test(async...) into promise_tests (#25043)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "82db379638",
-          "subject": "screen-wake-lock: Add tests for WakeLockSentinel's \"released\" attribute. (#25271)"
         }
       ],
       "testpolicy": "https://github.com/w3c/screen-wake-lock/blob/HEAD/CONTRIBUTING.md"
@@ -10659,6 +10608,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "andruud@chromium.org",
+          "hash": "326f137f2c",
+          "subject": "[scroll-animations] Handle changes to selector(#id) references"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "andruud@chromium.org",
+          "hash": "01f96b146f",
+          "subject": "[scroll-animations] Handle dynamically changing @scroll-timelines"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "andruud@chromium.org",
+          "hash": "305dadc1ab",
+          "subject": "[scroll-animations] Handle element-based offsets with null targets"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "andruud@chromium.org",
+          "hash": "f6deafa6bf",
+          "subject": "[scroll-animations] Test that orientation resolves against source"
+        },
         {
           "date": "2020-10-19",
           "author": "kevers@chromium.org",
@@ -10740,14 +10713,7 @@
       "href": "https://w3c.github.io/webappsec-secure-contexts/",
       "specrepo": "https://github.com/w3c/webappsec-secure-contexts",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-09-01",
-          "author": "philip@foolip.org",
-          "hash": "03807c2ad6",
-          "subject": "Update interfaces/html.idl and remove interfaces/secure-contexts.idl (#25320)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Selection API",
@@ -11080,6 +11046,12 @@
       "specrepo": "https://github.com/whatwg/streams",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-10-28",
+          "author": "41948741+nidhijaju@users.noreply.github.com",
+          "hash": "7d866d4",
+          "subject": "Fix readable byte stream example"
+        },
         {
           "date": "2020-10-01",
           "author": "jyasskin@gmail.com",
@@ -11610,6 +11582,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-28",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "5fe9553936",
+          "subject": "Add webgl2 tests for WebXR (#26038)"
+        },
+        {
           "date": "2020-09-16",
           "author": "tguilbert@chromium.org",
           "hash": "54df2c65fc",
@@ -11661,12 +11639,6 @@
           "author": "ngzhian@gmail.com",
           "hash": "7526564b",
           "subject": "Fix signed convert subscript (#1248)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "ngzhian@gmail.com",
-          "hash": "e3964834",
-          "subject": "Fix underscore for text format of trunc_sat instructions (#1245)"
         }
       ],
       "testlog": []
@@ -11687,12 +11659,6 @@
           "author": "ngzhian@gmail.com",
           "hash": "7526564b",
           "subject": "Fix signed convert subscript (#1248)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "ngzhian@gmail.com",
-          "hash": "e3964834",
-          "subject": "Fix underscore for text format of trunc_sat instructions (#1245)"
         }
       ],
       "testlog": []
@@ -11964,6 +11930,18 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "toy.raymond@gmail.com",
+          "hash": "8a4f7fed",
+          "subject": "Fix #2252: Resolve [[pending resume promises]] when resuming (#2265)"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "d@domenic.me",
+          "hash": "f15a9573",
+          "subject": "Prohibit arbitrary termination of AudioWorkletGlobalScopes (#2266)"
+        },
+        {
           "date": "2020-10-27",
           "author": "toy.raymond@gmail.com",
           "hash": "036b5745",
@@ -12046,12 +12024,6 @@
           "author": "toy.raymond@gmail.com",
           "hash": "908dcc78",
           "subject": "Fix #2242: Use {{undefined}} instead of <code>undefined</code> (#2246)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "toy.raymond@gmail.com",
-          "hash": "eb938daa",
-          "subject": "Fix #2240: Align with Web IDL specification (#2241)"
         }
       ],
       "testlog": [
@@ -12148,6 +12120,42 @@
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "martinkr@google.com",
+          "hash": "87ca0fe",
+          "subject": "Add Virtual Authenticator support for CTAP 2.1 (#1506)"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "jdhodges@google.com",
+          "hash": "79ddf89",
+          "subject": "Mention Intersection Observer v2 in sec considerations (#1497)"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "alanwake.tan@gmail.com",
+          "hash": "b9bf133",
+          "subject": "Abstracting the concept of Privacy CA/Attestation CA into Anonymization CA (#1474)"
+        },
+        {
+          "date": "2020-10-28",
+          "author": "lgarron@github.com",
+          "hash": "f729c38",
+          "subject": "Change variable name: uvpaaAvailable → uvpaAvailable (#1500)"
+        },
+        {
+          "date": "2020-10-21",
+          "author": "alanwake.tan@gmail.com",
+          "hash": "febd150",
+          "subject": "Editorial fixes 2"
+        },
+        {
+          "date": "2020-10-21",
+          "author": "alanwake.tan@gmail.com",
+          "hash": "f36e826",
+          "subject": "Editorial fixes 1"
+        },
+        {
           "date": "2020-10-21",
           "author": "sbweeden@users.noreply.github.com",
           "hash": "a780e17",
@@ -12158,6 +12166,12 @@
           "author": "sweeden@au1.ibm.com",
           "hash": "24d34bf",
           "subject": "Address feedback on links to the sections"
+        },
+        {
+          "date": "2020-10-20",
+          "author": "jiewen_tan@apple.com",
+          "hash": "4cebe29",
+          "subject": "Adding Apple Anonymous Attestation Statement Format"
         },
         {
           "date": "2020-10-20",
@@ -12259,12 +12273,6 @@
           "date": "2020-09-02",
           "author": "nsatragno@gmail.com",
           "hash": "ea9ad16",
-          "subject": "Address comments."
-        },
-        {
-          "date": "2020-09-01",
-          "author": "nsatragno@gmail.com",
-          "hash": "ed745df",
           "subject": "Address comments."
         }
       ],
@@ -12456,6 +12464,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "16f1bec",
+          "subject": "Start to specify how to serialize a ES value. (#57)"
+        },
+        {
           "date": "2020-10-20",
           "author": "james@hoppipolla.co.uk",
           "hash": "819fd0c",
@@ -12640,12 +12654,6 @@
           "author": "gsnedders@apple.com",
           "hash": "e2ddf48b78",
           "subject": "Replace assert_true(x === y) with assert_equals"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "annevk@annevk.nl",
-          "hash": "b5b950f450",
-          "subject": "Web IDL: use idl_test() and .any.js"
         }
       ]
     },
@@ -13007,12 +13015,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "b8ff0878e6",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=215567 (#25360)"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "hbos@chromium.org",
-          "hash": "0891f4bf4d",
-          "subject": "[Perfect Negotiation] Split Perfect Negotiation WPTs into smaller files."
         }
       ],
       "testpolicy": "https://github.com/w3c/webrtc-pc/blob/HEAD/CONTRIBUTING.md"
@@ -13036,20 +13038,7 @@
       "name": "WebRTC Insertable Media using Streams",
       "href": "https://w3c.github.io/webrtc-insertable-streams/",
       "specrepo": "https://github.com/w3c/webrtc-insertable-streams",
-      "speclog": [
-        {
-          "date": "2020-09-01",
-          "author": "dom@w3.org",
-          "hash": "9757b3c",
-          "subject": "Fix typo in property name and improve bikeshed markup"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "dom@w3.org",
-          "hash": "3ece5d9",
-          "subject": "Fix a few editorial aspects"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2020-10-26",
@@ -13253,12 +13242,6 @@
           "author": "bernard.aboba@gmail.com",
           "hash": "1dc4510",
           "subject": "Remove comments from code"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c516fdb",
-          "subject": "Fix comment indentation in code examples"
         }
       ],
       "testlog": []
@@ -13268,6 +13251,30 @@
       "href": "https://w3c.github.io/webtransport/",
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
+        {
+          "date": "2020-10-29",
+          "author": "yhirano@chromium.org",
+          "hash": "4f3eb8e",
+          "subject": "Introduce WebTransport.ready (#150)"
+        },
+        {
+          "date": "2020-10-29",
+          "author": "vasilvv@google.com",
+          "hash": "737f8a6",
+          "subject": "Run bikeshed"
+        },
+        {
+          "date": "2020-10-27",
+          "author": "yhirano@chromium.org",
+          "hash": "45a0e74",
+          "subject": "fix"
+        },
+        {
+          "date": "2020-10-27",
+          "author": "yhirano@chromium.org",
+          "hash": "4679d6b",
+          "subject": "fix"
+        },
         {
           "date": "2020-10-19",
           "author": "saschanaz+autokagami@outlook.com",
@@ -13279,6 +13286,24 @@
           "author": "vasilvv@google.com",
           "hash": "b827011",
           "subject": "Run bikeshed"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "yhirano@chromium.org",
+          "hash": "47ecb2b",
+          "subject": "fix"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "yhirano@chromium.org",
+          "hash": "7710cba",
+          "subject": "fix"
+        },
+        {
+          "date": "2020-10-15",
+          "author": "yhirano@chromium.org",
+          "hash": "823599f",
+          "subject": "Update explainer.md"
         },
         {
           "date": "2020-09-30",
@@ -13531,6 +13556,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-10-28",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "5fe9553936",
+          "subject": "Add webgl2 tests for WebXR (#26038)"
+        },
+        {
           "date": "2020-10-13",
           "author": "phle@microsoft.com",
           "hash": "304bef1584",
@@ -13577,12 +13608,6 @@
           "author": "gsnedders@apple.com",
           "hash": "e2ddf48b78",
           "subject": "Replace assert_true(x === y) with assert_equals"
-        },
-        {
-          "date": "2020-09-01",
-          "author": "smcgruer@chromium.org",
-          "hash": "614619fb9f",
-          "subject": "Add interfaces/webxr-hand-input.idl and test (#25299)"
         }
       ],
       "testpolicy": "https://github.com/immersive-web/webxr/blob/HEAD/README.md"
@@ -13593,6 +13618,12 @@
       "specrepo": "https://github.com/immersive-web/webxr-ar-module",
       "speclog": [
         {
+          "date": "2020-10-28",
+          "author": "atsushi@himor.in",
+          "hash": "f9d678b",
+          "subject": "removed style.css (see https://github.com/immersive-web/webxr/pull/1144)"
+        },
+        {
           "date": "2020-10-26",
           "author": "atsushi@himor.in",
           "hash": "2bc9668",
@@ -13600,6 +13631,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "5fe9553936",
+          "subject": "Add webgl2 tests for WebXR (#26038)"
+        },
         {
           "date": "2020-10-13",
           "author": "phle@microsoft.com",
@@ -13625,8 +13662,22 @@
       "name": "WebXR Gamepads Module",
       "href": "https://immersive-web.github.io/webxr-gamepads-module/",
       "specrepo": "https://github.com/immersive-web/webxr-gamepads-module",
-      "speclog": [],
-      "testlog": [],
+      "speclog": [
+        {
+          "date": "2020-10-28",
+          "author": "atsushi@himor.in",
+          "hash": "cbad8b8",
+          "subject": "removed style.css (see https://github.com/immersive-web/webxr/pull/1144)"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "5fe9553936",
+          "subject": "Add webgl2 tests for WebXR (#26038)"
+        }
+      ],
       "testpolicy": "https://github.com/immersive-web/webxr-gamepads-module/blob/HEAD/README.md"
     },
     {
@@ -13634,6 +13685,12 @@
       "href": "https://immersive-web.github.io/webxr-hand-input/",
       "specrepo": "https://github.com/immersive-web/webxr-hand-input",
       "speclog": [
+        {
+          "date": "2020-10-28",
+          "author": "atsushi@himor.in",
+          "hash": "3f1fb0e",
+          "subject": "removed style.css (see https://github.com/immersive-web/webxr/pull/1144)"
+        },
         {
           "date": "2020-10-26",
           "author": "atsushi@himor.in",
@@ -13764,6 +13821,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-10-28",
+          "author": "morlovich@chromium.org",
+          "hash": "c54ef34f03",
+          "subject": "Make xhr/cookies test work when we accept secure cookies on localhost"
+        },
         {
           "date": "2020-09-18",
           "author": "youennf@users.noreply.github.com",
