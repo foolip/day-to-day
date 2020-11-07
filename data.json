@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-09-10T22:31:58.581Z",
-  "until": "2020-11-06T22:31:58.581Z",
+  "since": "2020-09-11T07:19:53.608Z",
+  "until": "2020-11-07T07:19:53.608Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -999,24 +999,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "ec9f279e9",
           "subject": "[css-cascade-4] Clean up"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "33d558a55",
-          "subject": "[css-cascade] mention what it means to not apply, add explicit ID #1861"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "228ec4f1b",
-          "subject": "[css-cascade-3] Add note about applies-to on pseudo-elements; dfn applies-to #1861\""
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "06d942225",
-          "subject": "[css-cascade] Consolidate bits of applies-to text. Editorial."
         }
       ],
       "testlog": []
@@ -2414,6 +2396,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-11-07",
+          "author": "schenney@chromium.org",
+          "hash": "47ff38a34a",
+          "subject": "Don't crash on SVG-as-canvas drawImage"
+        },
+        {
           "date": "2020-10-21",
           "author": "schenney@chromium.org",
           "hash": "b92c26342b",
@@ -2504,6 +2492,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-11-07",
+          "author": "jackalmage@gmail.com",
+          "hash": "53e9ef6bf",
+          "subject": "[css-lists-3] Add previous commit to Changes list."
+        },
+        {
+          "date": "2020-11-07",
+          "author": "jackalmage@gmail.com",
+          "hash": "ad9a4bc6e",
+          "subject": "[css-lists-3] Change counter inheritance to only take from prev sibling if the counter doesn't exist on the parent, per CSSWG resolution. #5477"
+        },
+        {
+          "date": "2020-11-07",
+          "author": "jackalmage@gmail.com",
+          "hash": "ead6aa83c",
+          "subject": "[css-lists-3][editorial] Dfn-ify the parts of a counter."
+        },
+        {
           "date": "2020-10-14",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "6b92af7c3",
@@ -2526,18 +2532,6 @@
           "author": "sebastianzartner@gmail.com",
           "hash": "2a26846c2",
           "subject": "Removed duplicate \"keywords\" from Value Definitions section"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "16f91067e",
-          "subject": "[css-lists-3] Clarify which properties apply to ::marker vs contents of ::marker. #4568"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a1caf7722",
-          "subject": "[css-lists-3] default ::marker { text-transform: none; }"
         }
       ],
       "testlog": []
@@ -3114,6 +3108,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-11-07",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "2c0b793b4",
+          "subject": "[css-pseudo-4] Specify ::marker::marker as invalid, define that display loses its 'list-item'. https://github.com/w3c/csswg-drafts/issues/1793#issuecomment-708072107"
+        },
+        {
           "date": "2020-10-13",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "28bd9e997",
@@ -3148,78 +3148,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "103f7a176",
           "subject": "[css-pseudo-4] Add ::target-text pseudo-element per WG resolution."
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "ab6f44a9f",
-          "subject": "[css-pseudo-4] Exclude writing-mode + direction + text-orientation from ::first-line #1097"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "ddd5cd430",
-          "subject": "[css-pseudo-4] Add oriol to acks"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "491b36fdc",
-          "subject": "[css-pseudo-4] Add fremy to acks #1097"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "20b58a98b",
-          "subject": "[css-pseudo-4] Better definition of inheritance from ::first-line per #1097"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "c90677e25",
-          "subject": "[css-pseudo-4] Clarify that all properties apply to ::before and ::after the same way they would to a normal element. #1861"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "81becd5f0",
-          "subject": "[css-pseudo-4] Drop UA stylesheet rule that was there from previous text-shadow model and is no longer needed. #3932"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "36d3b247d",
-          "subject": "[css-pseudo-4] Move text to more appropriate section"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "f1cd15361",
-          "subject": "[css-pseudo-4] Improve wording / paragraph breaks."
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "82d77fc23",
-          "subject": "[css-pseudo-4] Define painting of text-shadow for highlight pseudos. #3932"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "4cd6d7c1b",
-          "subject": "[css-pseudo-4] Clarify that fallback color of a highlight pseudo could come from ::first-line etc. #4625"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "4316f91ee",
-          "subject": "[css-pseudo-4] Intervening spaces are included in ::first-letter along with the adjacent punctuation. #5154"
-        },
-        {
-          "date": "2020-09-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a414c0959",
-          "subject": "[css-pseudo-4] Allow overlay on inline-level boxes to cover its portion of the line box. #5395"
         }
       ],
       "testlog": [
@@ -3504,6 +3432,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-11-07",
+          "author": "jackalmage@gmail.com",
+          "hash": "84a573d49",
+          "subject": "[css-sizing-4][css-values-4] Define 0 & infinite ratios as degenerate, and define that degenerate ratios do nothing."
+        },
+        {
+          "date": "2020-11-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "692133879",
+          "subject": "[css-sizing-4][editorial] Add issue summarizing the eventual disposition of the 'resolving automatic sizes' section."
+        },
+        {
+          "date": "2020-11-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "c9e233410",
+          "subject": "[css-sizing-4] Remove cyclic a-r section. It's old text, and somewhat confused, from before we laid out the ordering of size transfers more explicitly. (It seems to be assuming that we apply min/max to an axis's size *then* transfer it, which would indeed by cyclic, but that's not how this works.)"
+        },
         {
           "date": "2020-11-06",
           "author": "jackalmage@gmail.com",
@@ -4288,6 +4234,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2020-11-07",
+          "author": "jackalmage@gmail.com",
+          "hash": "84a573d49",
+          "subject": "[css-sizing-4][css-values-4] Define 0 & infinite ratios as degenerate, and define that degenerate ratios do nothing."
+        },
         {
           "date": "2020-11-05",
           "author": "jackalmage@gmail.com",
@@ -6320,7 +6272,14 @@
       "href": "https://w3c.github.io/geolocation-api/",
       "specrepo": "https://github.com/w3c/geolocation-api",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-11-07",
+          "author": "reillyg@chromium.org",
+          "hash": "376a27a796",
+          "subject": "geolocation: Fix PositionOptions.https.html"
+        }
+      ]
     },
     {
       "name": "Geolocation Sensor",
@@ -9270,18 +9229,6 @@
           "author": "carlosjoan91@gmail.com",
           "hash": "6c7675c",
           "subject": "Update index.src.html"
-        },
-        {
-          "date": "2020-09-10",
-          "author": "carlosil@chromium.org",
-          "hash": "bd09769",
-          "subject": "fix copy/paste error"
-        },
-        {
-          "date": "2020-09-10",
-          "author": "carlosil@chromium.org",
-          "hash": "8616a6b",
-          "subject": "Remove HTTPS State mentions"
         }
       ],
       "testlog": [
@@ -9831,12 +9778,6 @@
           "author": "mustaq@google.com",
           "hash": "e97cd630e1",
           "subject": "Add a wpt for touch-action:none on iframe."
-        },
-        {
-          "date": "2020-09-10",
-          "author": "liviutinta@chromium.org",
-          "hash": "b6912668d4",
-          "subject": "Move pointerevent_mouse_pointercapture_inactivate_pointer to wpt"
         }
       ]
     },
@@ -12152,6 +12093,12 @@
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
         {
+          "date": "2020-11-06",
+          "author": "jdhodges@google.com",
+          "hash": "b152547",
+          "subject": "update IANA considerations per IANA instructions (#1512)"
+        },
+        {
           "date": "2020-11-05",
           "author": "jdhodges@google.com",
           "hash": "e8ae1a3",
@@ -12309,6 +12256,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-11-06",
+          "author": "martinkr@google.com",
+          "hash": "427d0deec8",
+          "subject": "webauthn: support CTAP 2.1 in Virtual Authenticator API"
+        },
         {
           "date": "2020-10-26",
           "author": "blink-w3c-test-autoroller@chromium.org",
