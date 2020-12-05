@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-10-08T07:24:49.274Z",
-  "until": "2020-12-04T07:24:49.274Z",
+  "since": "2020-10-09T07:24:00.498Z",
+  "until": "2020-12-05T07:24:00.498Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -147,12 +147,6 @@
           "author": "marcos@marcosc.com",
           "hash": "744003b",
           "subject": "Chore: fix xrefs + ReSpec config"
-        },
-        {
-          "date": "2020-10-09",
-          "author": "saschanaz+autokagami@outlook.com",
-          "hash": "556ca72",
-          "subject": "Editorial: Align with Web IDL specification (#75)"
         }
       ],
       "testlog": []
@@ -244,12 +238,6 @@
           "author": "japhet@chromium.org",
           "hash": "7bd8d6e6bc",
           "subject": "navigator.clipboard shouldn't be null after detach."
-        },
-        {
-          "date": "2020-10-09",
-          "author": "huangdarwin@chromium.org",
-          "hash": "a9865a9ea5",
-          "subject": "Clipboard: Remove note filler word."
         }
       ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
@@ -275,7 +263,14 @@
       "href": "https://wicg.github.io/compression/",
       "specrepo": "https://github.com/WICG/compression",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2020-12-04",
+          "author": "ricea@chromium.org",
+          "hash": "0f98fe9643",
+          "subject": "Correctly handle detach during (de)compression"
+        }
+      ]
     },
     {
       "name": "Console",
@@ -1891,6 +1886,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-12-04",
+          "author": "mats@mozilla.com",
+          "hash": "4198624005",
+          "subject": "Inhibit subgridding for abs.pos. subgrids that doesn't span a parent track."
+        },
+        {
           "date": "2020-12-01",
           "author": "emilio@crisal.io",
           "hash": "6000745c1b",
@@ -2380,12 +2381,6 @@
           "author": "argyle@google.com",
           "hash": "c7793d9d2",
           "subject": "[css-nesting] added a :not, :is, and && error sample"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "argyle@google.com",
-          "hash": "ace6adaad",
-          "subject": "[css-nesting] fixes missing closing div on an example"
         }
       ],
       "testlog": []
@@ -2994,24 +2989,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "1852f7f35",
           "subject": "[css-sizing-3] Define term preferred aspect ratio. #4962"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "ffd94723e",
-          "subject": "[css-sizing-4][editorial] Bikeshed fixes"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "68f02aaca",
-          "subject": "[css-sizing-3][editorial] Add some more dfn terms and links."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e56ff0bdd",
-          "subject": "[css-sizing-4] Add changes section."
         }
       ],
       "testlog": [
@@ -3120,6 +3097,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2020-12-05",
+          "author": "atotic@chromium.org",
+          "hash": "b464d69274",
+          "subject": "[TablesNG] Columns take precedence in table-layout:fixed"
+        },
         {
           "date": "2020-11-19",
           "author": "atotic@chromium.org",
@@ -3342,12 +3325,6 @@
           "author": "skyrabbits1@gmail.com",
           "hash": "5062320bfe",
           "subject": "Apply selection pseudo text-decoration-color style to the selected elements"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "litherum@icloud.com",
-          "hash": "7de0fb49ad",
-          "subject": "[css-text-decor] Add test for negative values of text-underline-offset (#26033)"
         }
       ]
     },
@@ -3497,78 +3474,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "a898cb0d6",
           "subject": "[css-values-4] Per WG resolution, define <ratio> interpolation as over the log of the ratio. Closes #4953"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a9ffaf498",
-          "subject": "[css-values-3][css-values-4] Resync Levels Round 2"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "182c50a7a",
-          "subject": "[css-values] Fix some WPT errors."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "685c0a104",
-          "subject": "[css-values] Fix some WPT errors."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "7eed9d1b5",
-          "subject": "[css-values-3][css-values-4] Sync levels. Editorial, except for dropping <length-number> definition from L3 (see #2789 where it was resolved for L4)."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "d79c9689b",
-          "subject": "[css-values-4] Switch ratio interpolation to the other possibility - divided value interpolation. Closes #4953."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "2cded5513",
-          "subject": "[css-values-4] Define 0/0 as just *behaving as* 1/0, not computing to. #5084"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "7da35cc0a",
-          "subject": "[css-values-4] Explicitly undefine numeric values/range. Closes #4552."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "bb4f520ae",
-          "subject": "[css-values-4] Partially-simplify min/max(), per #4756."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "03d17ab15",
-          "subject": "[css-values-4] Clarify that Quirks Mode has no effect on math-function parsing, but functions resolving to numbers might be okay due to quirks. #4874"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a8ee2655b",
-          "subject": "[css-values-4] Update Changes section"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "2b9ffaf05",
-          "subject": "[css-values-4] Rename fetch() to src(), per WG resolution. Closes #541."
-        },
-        {
-          "date": "2020-10-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "d6bb29114",
-          "subject": "[css-values-4] Add sub-headings to change section"
         }
       ],
       "testlog": []
@@ -3890,6 +3795,24 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2020-12-05",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "590561b",
+          "subject": "Markdown: put underscores around alias name (#2242)"
+        },
+        {
+          "date": "2020-12-04",
+          "author": "yulia.startsev@gmail.com",
+          "hash": "31f3c2b",
+          "subject": "Normative: add normative optional styling css override (#2215)"
+        },
+        {
+          "date": "2020-12-03",
+          "author": "rkirsling@gmail.com",
+          "hash": "7ea0ac9",
+          "subject": "Editorial: IsDetachedBuffer should be checked before accessing (#2207)"
+        },
+        {
           "date": "2020-12-03",
           "author": "jmdyck@ibiblio.org",
           "hash": "130d966",
@@ -4116,24 +4039,6 @@
           "author": "mficarra@shapesecurity.com",
           "hash": "331d9d6",
           "subject": "Editorial: normalise phrasing used to create single-element Lists (#2201)"
-        },
-        {
-          "date": "2020-10-09",
-          "author": "mficarra@shapesecurity.com",
-          "hash": "5b76931",
-          "subject": "Editorial: \"in order\" is implied when constructing Lists (#2142)"
-        },
-        {
-          "date": "2020-10-09",
-          "author": "mficarra@shapesecurity.com",
-          "hash": "c1fd11d",
-          "subject": "Editorial: normalisation around List construction (#2142)"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "mficarra@shapesecurity.com",
-          "hash": "97bd508",
-          "subject": "Editorial: replace some more internal usage of strings with spec enums (#2177)"
         }
       ],
       "testlog": [
@@ -4406,48 +4311,6 @@
           "author": "waldron.rick@gmail.com",
           "hash": "36c2cd165f",
           "subject": "WIP: Align detached buffer semantics with web reality"
-        },
-        {
-          "date": "2020-10-09",
-          "author": "me@gus.host",
-          "hash": "52cb1d0c98",
-          "subject": "Add missing feature"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "me@gus.host",
-          "hash": "ef1ad4c041",
-          "subject": "add dup __proto__ in json test"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "me@gus.host",
-          "hash": "6aa8338d23",
-          "subject": "add feature tags"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "me@gus.host",
-          "hash": "1d31345a70",
-          "subject": "fixup"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "me@gus.host",
-          "hash": "881c9e3ba5",
-          "subject": "move __proto__ tests"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "me@gus.host",
-          "hash": "14788fee59",
-          "subject": "move define/lookup tests"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "waldron.rick@gmail.com",
-          "hash": "6d8ab9c35e",
-          "subject": "Coverage: more Atomics.waitAsync tests, fixes, improved messages."
         }
       ]
     },
@@ -4457,6 +4320,12 @@
       "specrepo": "https://github.com/tc39/ecma402",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2020-12-04",
+          "author": "sffc@google.com",
+          "hash": "76e0dd3",
+          "subject": "Create notes-2020-12-04.md"
+        },
         {
           "date": "2020-12-01",
           "author": "sffc@google.com",
@@ -4474,12 +4343,6 @@
           "author": "sffc@google.com",
           "hash": "0841fa9",
           "subject": "Create notes-2020-11-05.md"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "sffc@google.com",
-          "hash": "9eb644c",
-          "subject": "Create notes-2020-10-08.md"
         }
       ],
       "testlog": [
@@ -5019,6 +4882,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2020-12-05",
+          "author": "jespertheend@users.noreply.github.com",
+          "hash": "b5c36e3",
+          "subject": "Add GPULimits for vertex inputs (#1274)"
+        },
+        {
           "date": "2020-12-02",
           "author": "bclayton@google.com",
           "hash": "df95e0f",
@@ -5359,24 +5228,6 @@
           "author": "mehmetoguzderin@mehmetoguzderin.com",
           "hash": "73647ed",
           "subject": "Fix some basic typos (#1143)"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jdashg@gmail.com",
-          "hash": "c7c3f77",
-          "subject": "Don't specify a strict grammar for decorators. (#689)"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "kainino@chromium.org",
-          "hash": "db3d4c7",
-          "subject": "Make GPUAdapter.extensions a setlike interface (#1098)"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "kainino@chromium.org",
-          "hash": "1cb6b9d",
-          "subject": "Rename \"extensions\" to \"features\" (#1097)"
         }
       ],
       "testlog": []
@@ -5638,21 +5489,15 @@
           "author": "annevk@annevk.nl",
           "hash": "c12e4e23",
           "subject": "Editorial: stop using identical to in the HTML parser"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "josepharhar@gmail.com",
-          "hash": "884dfc44",
-          "subject": "Make hidden input _charset_ checks case insensitive"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "d@domenic.me",
-          "hash": "ec13a5ea",
-          "subject": "Editorial: use an explicit argument for navigationType"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-12-04",
+          "author": "abb@randomunok.com",
+          "hash": "a8fad46bc9",
+          "subject": "Add tests for form newline normalization in filenames"
+        },
         {
           "date": "2020-12-03",
           "author": "krosylight@mozilla.com",
@@ -6042,12 +5887,6 @@
           "author": "masonfreed@chromium.org",
           "hash": "411d1bfc11",
           "subject": "Remove anonymous box from details/summary shadow dom"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "jarhar@chromium.org",
-          "hash": "8562871bb9",
-          "subject": "Make hidden input _charset_ check case insensitive"
         }
       ]
     },
@@ -6061,12 +5900,6 @@
           "author": "scottaohara@users.noreply.github.com",
           "hash": "58be5d0",
           "subject": "fix broken link"
-        },
-        {
-          "date": "2020-10-09",
-          "author": "denis@w3.org",
-          "hash": "600d831",
-          "subject": "update respec configuration"
         }
       ],
       "testlog": [],
@@ -6127,6 +5960,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2020-12-04",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "bdffc9f6f5",
+          "subject": "[PTZ] Copy image capture settings when cloning MediaStreamTrack"
+        },
         {
           "date": "2020-10-12",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -6297,14 +6136,7 @@
       "href": "https://infra.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/infra",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2020-10-08",
-          "author": "d@domenic.me",
-          "hash": "5867ae9",
-          "subject": "Specify optional and named parameters"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -6869,6 +6701,12 @@
       "specrepo": "https://github.com/w3c/media-source",
       "speclog": [
         {
+          "date": "2020-12-04",
+          "author": "fd@w3.org",
+          "hash": "171f66d",
+          "subject": "Drop dependency on jQuery (#264)"
+        },
+        {
           "date": "2020-11-27",
           "author": "fd@tidoust.net",
           "hash": "0a39613",
@@ -7242,14 +7080,7 @@
           "subject": "Add Daniel Libby as mediaqueries-5 editor"
         }
       ],
-      "testlog": [
-        {
-          "date": "2020-10-08",
-          "author": "emilio@crisal.io",
-          "hash": "a9bcde4270",
-          "subject": "Properly distinguish between empty children and no children in rule iterator."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Media Session Standard",
@@ -8541,14 +8372,7 @@
       "href": "https://w3c.github.io/screen-wake-lock/",
       "specrepo": "https://github.com/w3c/screen-wake-lock",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2020-10-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "2abaea3746",
-          "subject": "wake lock: Make |type| optional in WakeLock.request()."
-        }
-      ],
+      "testlog": [],
       "testpolicy": "https://github.com/w3c/screen-wake-lock/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -8824,6 +8648,12 @@
       "testlog": [
         {
           "date": "2020-12-04",
+          "author": "myid.shin@igalia.com",
+          "hash": "7741972130",
+          "subject": "[selectors4] Implement :dir pseudo-class"
+        },
+        {
+          "date": "2020-12-04",
           "author": "lanwei@chromium.org",
           "hash": "733dbcfd53",
           "subject": "Simulate user inputs in css/selectors/focus-visible-004.html"
@@ -9097,6 +8927,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2020-12-04",
+          "author": "41948741+nidhijaju@users.noreply.github.com",
+          "hash": "0690212",
+          "subject": "Editorial: add reader type assertions"
+        },
+        {
           "date": "2020-12-02",
           "author": "41948741+nidhijaju@users.noreply.github.com",
           "hash": "0f419d5",
@@ -9135,6 +8971,12 @@
       ],
       "testlog": [
         {
+          "date": "2020-12-04",
+          "author": "nidhijaju@google.com",
+          "hash": "274af4bd21",
+          "subject": "Add support for ReadableStreamBYOBReader & ByteStreamController"
+        },
+        {
           "date": "2020-11-11",
           "author": "nidhijaju@google.com",
           "hash": "005f9228f0",
@@ -9145,12 +8987,6 @@
           "author": "nidhijaju@google.com",
           "hash": "715288c8dc",
           "subject": "Add StreamPipeOptions to Readable Streams"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "ricea@chromium.org",
-          "hash": "049033313d",
-          "subject": "Streams: Explicitly export function from helpers.js (#26042)"
         }
       ]
     },
@@ -9588,12 +9424,6 @@
           "author": "annevk@annevk.nl",
           "hash": "04f5bd0",
           "subject": "Refactor query state to operate on a buffer"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "rmisev3@gmail.com",
-          "hash": "a19495e",
-          "subject": "Fix file URL reparse issue"
         }
       ],
       "testlog": [
@@ -9614,12 +9444,6 @@
           "author": "shvaikalesh@gmail.com",
           "hash": "54c6d64be0",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=217612"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "rmisev3@gmail.com",
-          "hash": "33e4ac0902",
-          "subject": "File URL reparse tests"
         }
       ]
     },
@@ -10053,6 +9877,12 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2020-12-04",
+          "author": "chris@w3.org",
+          "hash": "6a76dd84",
+          "subject": "Update for Chrome 89, Safari 116p, Firefox 85"
+        },
+        {
           "date": "2020-11-19",
           "author": "toy.raymond@gmail.com",
           "hash": "1e3b46e6",
@@ -10117,33 +9947,15 @@
           "author": "toy.raymond@gmail.com",
           "hash": "48007201",
           "subject": "Fix typo \"atleast\" (#2259)"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "chris@w3.org",
-          "hash": "bcb1b834",
-          "subject": "Update implementation-report.html"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "chris@w3.org",
-          "hash": "bfe49648",
-          "subject": "Update implementation-report.html"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "chris@w3.org",
-          "hash": "b1c9ee46",
-          "subject": "Update implementation-report.html"
-        },
-        {
-          "date": "2020-10-08",
-          "author": "chris@w3.org",
-          "hash": "9e9ee93e",
-          "subject": "Update implementation-report.html"
         }
       ],
       "testlog": [
+        {
+          "date": "2020-12-04",
+          "author": "chris@dumez.cc",
+          "hash": "2ab8d794f0",
+          "subject": "Add flakiness for webaudio/the-audio-api/the-audiobuffer-interface/ctor-audiobuffer.html (#26730)"
+        },
         {
           "date": "2020-10-30",
           "author": "koalab1999@gmail.com",
@@ -10489,6 +10301,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2020-12-04",
+          "author": "philip@foolip.org",
+          "hash": "fe54519",
+          "subject": "Fix nesting of final \"handle an incoming message\" steps (#76)"
+        },
         {
           "date": "2020-12-03",
           "author": "james@hoppipolla.co.uk",
@@ -10965,10 +10783,34 @@
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
         {
+          "date": "2020-12-04",
+          "author": "ylafon@w3.org",
+          "hash": "d98d2d8",
+          "subject": "as the packaged validator is way behind, we must disable validation for now"
+        },
+        {
           "date": "2020-11-25",
           "author": "ylafon@w3.org",
           "hash": "966b65b",
           "subject": "duplicate # in fragment definition"
+        },
+        {
+          "date": "2020-11-25",
+          "author": "ylafon@w3.org",
+          "hash": "18f8cd3",
+          "subject": "push to gh-pages"
+        },
+        {
+          "date": "2020-11-23",
+          "author": "ylafon@w3.org",
+          "hash": "d8261e6",
+          "subject": "auto-build"
+        },
+        {
+          "date": "2020-11-23",
+          "author": "ylafon@w3.org",
+          "hash": "3156724",
+          "subject": "auto-build"
         },
         {
           "date": "2020-11-18",
