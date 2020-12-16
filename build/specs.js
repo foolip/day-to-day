@@ -81,6 +81,7 @@ function completeEntry(entry, mode) {
       return entryFromDraftsOrg(url);
     case 'svgwg.org':
       return entryFromSvgwgOrg(url);
+    case 'tc39.es':
     case 'www.khronos.org':
       return entry;
   }
