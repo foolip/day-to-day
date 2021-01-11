@@ -155,7 +155,7 @@ async function main() {
   console.assert(specsPath);
 
   console.log('Reading browser-specs');
-  const specsAuto = browserSpecs
+  const specs = browserSpecs
       .filter((entry) => {
         if (blocklist.has(entry.shortname) ||
             blocklist.has(entry.series.shortname)) {
@@ -181,7 +181,7 @@ async function main() {
       });
 
   console.log('Applying specs-fixes.json');
-  const idMap = uniqueMap(specsAuto, 'id');
+  const idMap = uniqueMap(specs, 'id');
   const specsFixes = JSON.parse(fs.readFileSync('specs-fixes.json'));
   for (const fix of specsFixes) {
     const spec = idMap.get(fix.id);
@@ -200,11 +200,6 @@ async function main() {
     }
   }
 
-  console.log('Reading specs-manual.json');
-  const specsManual = JSON.parse(fs.readFileSync('specs-manual.json'))
-      .map((entry) => completeEntry(entry, 'manual'));
-
-  const specs = [...specsAuto, ...specsManual];
   specs.sort((a, b) => a.id.localeCompare(b.id));
 
   // check that things are unique, ignore returned maps
