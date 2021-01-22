@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-11-25T08:01:50.344Z",
-  "until": "2021-01-21T08:01:50.344Z",
+  "since": "2020-11-26T08:00:33.864Z",
+  "until": "2021-01-22T08:00:33.864Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -202,6 +202,12 @@
       "specrepo": "https://github.com/WICG/compression",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-01-22",
+          "author": "ricea@chromium.org",
+          "hash": "b837f6124e",
+          "subject": "Stop running compression detach tests on workers"
+        },
         {
           "date": "2020-12-21",
           "author": "fd@tidoust.net",
@@ -1202,7 +1208,14 @@
           "subject": "[css-color-4] annotate with white point CCT"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2021-01-22",
+          "author": "weinig@apple.com",
+          "hash": "755a4a0285",
+          "subject": "Switch lab and lch tests to use rectangles rather than text for comparisons to avoid antialiasing artifacts from text rendering causing failures. (#27202)"
+        }
+      ]
     },
     {
       "name": "CSS Color Adjustment",
@@ -2139,6 +2152,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-01-21",
+          "author": "rachel.andrew@edgeofmyseat.com",
+          "hash": "42fee892e",
+          "subject": "[css-multicol] Adding Can I Use Panels and a fix"
+        },
+        {
           "date": "2020-12-16",
           "author": "rachel.andrew@edgeofmyseat.com",
           "hash": "2dd98475a",
@@ -2252,6 +2271,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-01-21",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "2b9e2dc0c2",
+          "subject": "Allow rasterization of partially recorded tiles"
+        },
         {
           "date": "2021-01-19",
           "author": "sky@chromium.org",
@@ -2382,12 +2407,6 @@
           "author": "xidachen@chromium.org",
           "hash": "3d0aaa49ec",
           "subject": "[OT-PW] Fix a regression in off-thread paint worklet"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "xidachen@chromium.org",
-          "hash": "8225f74565",
-          "subject": "Fix a crash by PaintWorklet + custom property animation"
         }
       ]
     },
@@ -2405,6 +2424,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-01-21",
+          "author": "atotic@chromium.org",
+          "hash": "64cc817eed",
+          "subject": "[TablesNG] Fix DCHECKs when painting rows/sections with absolute children"
+        },
         {
           "date": "2021-01-05",
           "author": "atotic@chromium.org",
@@ -2561,6 +2586,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-01-22",
+          "author": "github@gtalbot.org",
+          "hash": "b28d04080a",
+          "subject": "css-pseudo: Trying to improve selection-[ input | textarea ]-011 reference files (#26641)"
+        },
         {
           "date": "2021-01-18",
           "author": "github@gtalbot.org",
@@ -3705,6 +3736,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-01-21",
+          "author": "weilanweilan@gmail.com",
+          "hash": "b36a20a58d",
+          "subject": "Remove document.createEvent(\"touchevent\") (#27250)"
+        },
+        {
           "date": "2021-01-20",
           "author": "smcgruer@chromium.org",
           "hash": "f207cfdd15",
@@ -4713,12 +4750,6 @@
           "author": "npm@chromium.org",
           "hash": "f6e855c",
           "subject": "Use GitHub Actions"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "npm@chromium.org",
-          "hash": "4b68070",
-          "subject": "Typo"
         }
       ],
       "testlog": [],
@@ -4945,6 +4976,18 @@
       "specrepo": "https://github.com/WICG/file-system-access",
       "speclog": [
         {
+          "date": "2021-01-22",
+          "author": "mek@chromium.org",
+          "hash": "282dcba",
+          "subject": "Add initial explainer for suggestedName, startIn and related options. (#261)"
+        },
+        {
+          "date": "2021-01-22",
+          "author": "mek@chromium.org",
+          "hash": "65e990d",
+          "subject": "Use GitHub workflows instead of travis.org for CI and publishing. (#269)"
+        },
+        {
           "date": "2020-12-02",
           "author": "mek@chromium.org",
           "hash": "ebe5ad5",
@@ -4988,12 +5031,6 @@
           "author": "robertma@chromium.org",
           "hash": "fcb3495f63",
           "subject": "Fix echo-content-escaped.py for real (#26655)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "robertma@chromium.org",
-          "hash": "c52e4b0d42",
-          "subject": "Fix echo-content-escaped.py again (#26645)"
         }
       ],
       "testpolicy": "https://github.com/w3c/FileAPI/blob/HEAD/CONTRIBUTING.md"
@@ -5141,6 +5178,24 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2021-01-22",
+          "author": "kvarkus@gmail.com",
+          "hash": "0e7b94e",
+          "subject": "Refactor the GPURenderPipelineDescriptor according to aspects (#1352)"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "dneto@google.com",
+          "hash": "b608401",
+          "subject": "Add bool coercion for numeric scalars (#1356)"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "dneto@google.com",
+          "hash": "3f6c179",
+          "subject": "Explain matrix type also in terms of column vectors (#1359)"
+        },
         {
           "date": "2021-01-21",
           "author": "corentin@wallez.net",
@@ -5422,24 +5477,6 @@
           "author": "dj2@everburning.com",
           "hash": "7c9f73a",
           "subject": "[wgsl] Unify decoration declarations. (#1236)"
-        },
-        {
-          "date": "2020-11-26",
-          "author": "kvarkus@gmail.com",
-          "hash": "b5b20b6",
-          "subject": "Rename minBufferBindingSize (#1255)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "9856269+sarahM0@users.noreply.github.com",
-          "hash": "e8cca40",
-          "subject": "[wgsl] update validation rules (#1227)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "9856269+sarahM0@users.noreply.github.com",
-          "hash": "0c05770",
-          "subject": "[wgsl] validation rule: add return must come last (#1251)"
         }
       ],
       "testlog": []
@@ -5770,6 +5807,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-01-22",
+          "author": "tkent@chromium.org",
+          "hash": "347a573f27",
+          "subject": "Custom state: Update the IDL interface for 'states' attribute"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "c788d7b979",
+          "subject": "Deflake wpt test about CSPEE."
+        },
+        {
+          "date": "2021-01-21",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "3f78171b9b",
+          "subject": "Move CSPEE to the NavigationRequest. (#27076)"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "tihuang@mozilla.com",
+          "hash": "c403006e2b",
+          "subject": "Fixing the WPT 'unset_context_name.html'."
+        },
         {
           "date": "2021-01-21",
           "author": "tkent@chromium.org",
@@ -6261,12 +6322,6 @@
           "author": "clamy@chromium.org",
           "hash": "44e4706e27",
           "subject": "COOP: emit report whenever there is another window in the bcg"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "adroitwhiz@protonmail.com",
-          "hash": "cfcd8ebdd7",
-          "subject": "Remove annotated-spec-related functionality from canvas tests (#26619)"
         }
       ]
     },
@@ -6648,6 +6703,18 @@
       "specrepo": "https://github.com/WICG/js-self-profiling",
       "speclog": [
         {
+          "date": "2021-01-22",
+          "author": "acomminos@fb.com",
+          "hash": "06bc4a3",
+          "subject": "Remove global object from profiling sessions"
+        },
+        {
+          "date": "2021-01-22",
+          "author": "acomminos@fb.com",
+          "hash": "812a772",
+          "subject": "Remove spec references to profiler session origins"
+        },
+        {
           "date": "2021-01-19",
           "author": "acomminos@fb.com",
           "hash": "df7fed5",
@@ -6754,12 +6821,6 @@
           "author": "chrishtr@chromium.org",
           "hash": "1d50fc221b",
           "subject": "[CLS] Don't let content-visibility:auto affect CLS"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "chrishtr@chromium.org",
-          "hash": "92d9bd4ddb",
-          "subject": "[CLS] Don't count layout shifts due to content-visibility:auto unskipping"
         }
       ]
     },
@@ -7013,6 +7074,12 @@
           "author": "dom@w3.org",
           "hash": "c1baa49",
           "subject": "Update license files to match latest model"
+        },
+        {
+          "date": "2021-01-19",
+          "author": "dom@w3.org",
+          "hash": "7b5e059",
+          "subject": "Mark track/ended as exported definition"
         },
         {
           "date": "2021-01-14",
@@ -8544,18 +8611,6 @@
           "author": "lanwei@chromium.org",
           "hash": "c7c5d94022",
           "subject": "Simulate user inputs in css/selectors/focus-visible-003.html"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "lanwei@chromium.org",
-          "hash": "7726454dad",
-          "subject": "Simulate user inputs in css/selectors/focus-visible-012.html"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "lanwei@chromium.org",
-          "hash": "2777a9e1fd",
-          "subject": "Simulate user inputs in css/selectors/focus-visible-001.html"
         }
       ]
     },
@@ -8863,6 +8918,18 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2021-01-21",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "d5f6b408a3",
+          "subject": "Add external/wpt/svg/extensibility/foreignObject/will-change-in-foreign-object-paint-order.html"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "fs@opera.com",
+          "hash": "26f07871f0",
+          "subject": "Prevent underinvalidation of <pattern> with template"
+        },
+        {
           "date": "2021-01-11",
           "author": "fs@opera.com",
           "hash": "87ef59e960",
@@ -9003,12 +9070,6 @@
           "author": "daniec@microsoft.com",
           "hash": "4334834",
           "subject": "Rename HostGetSupportedAssertions to HostGetSupportedImportAssertions (#105)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "daniec@microsoft.com",
-          "hash": "61c13d4",
-          "subject": "Create new host operation for hosts to specify the assertions they support.  Only supported assertions are provided to the host."
         }
       ],
       "testlog": []
@@ -9198,7 +9259,14 @@
       "href": "https://w3c.github.io/touch-events/",
       "specrepo": "https://github.com/w3c/touch-events",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2021-01-21",
+          "author": "weilanweilan@gmail.com",
+          "hash": "b36a20a58d",
+          "subject": "Remove document.createEvent(\"touchevent\") (#27250)"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/touch-events/blob/HEAD/README.md"
     },
     {
@@ -9249,36 +9317,6 @@
           "author": "koto@google.com",
           "hash": "a8842d7",
           "subject": "Added dynamic compilation sink name (Function constructor will be \"Function\")."
-        },
-        {
-          "date": "2020-11-25",
-          "author": "koto@google.com",
-          "hash": "a3d15b1",
-          "subject": "Bikeshed run."
-        },
-        {
-          "date": "2020-11-25",
-          "author": "mike@mikepennisi.com",
-          "hash": "532846c",
-          "subject": "Correct reference to HTMLScriptElement (#292)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "koto@google.com",
-          "hash": "e872d27",
-          "subject": "Updated the eval / new Function integration, aligning it with dynamic-code-brand-checks proposal."
-        },
-        {
-          "date": "2020-11-25",
-          "author": "koto@google.com",
-          "hash": "cfb6d16",
-          "subject": "Added integration with the dynamic-code-brand-check."
-        },
-        {
-          "date": "2020-11-25",
-          "author": "koto@google.com",
-          "hash": "f605559",
-          "subject": "Regenerated the spec with the new Bikeshed template."
         }
       ],
       "testlog": [
@@ -9498,12 +9536,6 @@
           "author": "lucacasonato@yahoo.com",
           "hash": "5722cc2b57",
           "subject": "URL: move url-constructor and url-origin to .any.js"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "abb@randomunok.com",
-          "hash": "1783c9bccf",
-          "subject": "Update url/resources/percent-encoding.py to work on Python 3 (#26643)"
         }
       ]
     },
@@ -9513,7 +9545,14 @@
       "specrepo": "https://github.com/w3c/user-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2021-01-22",
+          "author": "lucacasonato@yahoo.com",
+          "hash": "4f7b5c43cc",
+          "subject": "Make user-timing/mark strict mode compatible"
+        }
+      ]
     },
     {
       "name": "Vibration API",
@@ -9575,6 +9614,12 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2021-01-22",
+          "author": "a11yThinker@Gmail.com",
+          "hash": "fc6b7fb",
+          "subject": "Listbox and tree: clarify requirements for selected and checked (#1340)"
+        },
         {
           "date": "2021-01-20",
           "author": "cooper@w3.org",
@@ -9650,6 +9695,24 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2021-01-21",
+          "author": "zhin@google.com",
+          "hash": "397bb535",
+          "subject": "Missed the braces"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "zhin@chromium.org",
+          "hash": "c0b7eb03",
+          "subject": "Fix usage of extend in t.load and t.loadN_sx"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "Ms2ger@igalia.com",
+          "hash": "9db08d78",
+          "subject": "[web-api] Update media-type registration for review."
+        },
+        {
           "date": "2021-01-20",
           "author": "andrei@ethereum.org",
           "hash": "3957c7dd",
@@ -9720,7 +9783,14 @@
       "href": "https://webassembly.github.io/spec/web-api/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "testrepo": "web-platform-tests/wpt",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-01-21",
+          "author": "Ms2ger@igalia.com",
+          "hash": "9db08d78",
+          "subject": "[web-api] Update media-type registration for review."
+        }
+      ],
       "testlog": [
         {
           "date": "2021-01-14",
@@ -9775,6 +9845,12 @@
       "href": "https://wicg.github.io/web-codecs/",
       "specrepo": "https://github.com/WICG/web-codecs",
       "speclog": [
+        {
+          "date": "2021-01-21",
+          "author": "chcunningham@chromium.org",
+          "hash": "b1c1710",
+          "subject": "Update security/privacy questionnaire with latest questions."
+        },
         {
           "date": "2020-12-08",
           "author": "chcunningham@chromium.org",
@@ -9879,18 +9955,6 @@
           "author": "zoltan.kis@intel.com",
           "hash": "6dc7be8",
           "subject": "Fix #592: scan rejects prior scan"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "fe2753c",
-          "subject": "Disallow explicitely non top-level browsing contexts (#610)"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "ceff682",
-          "subject": "Fix typo in JS example"
         }
       ],
       "testlog": [
@@ -10018,6 +10082,18 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2021-01-21",
+          "author": "jdhodges@google.com",
+          "hash": "e6791c0",
+          "subject": "fix: empty section, misspelling, RFC7049 is now RFC8949 (#1550)"
+        },
+        {
+          "date": "2021-01-21",
+          "author": "wseltzer@w3.org",
+          "hash": "a1f2e95",
+          "subject": "Bikeshed spec data update (#1553)"
+        },
         {
           "date": "2020-12-18",
           "author": "wseltzer@w3.org",
@@ -10452,12 +10528,6 @@
           "author": "ksakamoto@chromium.org",
           "hash": "b32f0de",
           "subject": "go/signedexchange/README: Remove reference to allow-sxg-certs-without-extension flag"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "jyasskin@chromium.org",
-          "hash": "826cadf",
-          "subject": "Update the bundle specification to be declarative instead of algorithmic (#604)"
         }
       ],
       "testlog": []
@@ -10467,6 +10537,12 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2021-01-21",
+          "author": "dom@w3.org",
+          "hash": "f27172f",
+          "subject": "Disable autopublish"
+        },
         {
           "date": "2021-01-19",
           "author": "dom@w3.org",
@@ -10478,6 +10554,42 @@
           "author": "dom@w3.org",
           "hash": "89d142c",
           "subject": "Update license files to match latest model"
+        },
+        {
+          "date": "2021-01-19",
+          "author": "dom@w3.org",
+          "hash": "4fc9041",
+          "subject": "Remove no longer relevant RTCWeb link for participate"
+        },
+        {
+          "date": "2021-01-19",
+          "author": "dom@w3.org",
+          "hash": "0b1c13a",
+          "subject": "Update map to JSEP sections"
+        },
+        {
+          "date": "2021-01-19",
+          "author": "dom@w3.org",
+          "hash": "3bf80c9",
+          "subject": "Fix integration of JSON mapper into respec warinings"
+        },
+        {
+          "date": "2021-01-18",
+          "author": "dom@w3.org",
+          "hash": "e57160b",
+          "subject": "Remove date from JSEP map"
+        },
+        {
+          "date": "2021-01-18",
+          "author": "dom@w3.org",
+          "hash": "d608652",
+          "subject": "Update links to JSEP sections"
+        },
+        {
+          "date": "2021-01-18",
+          "author": "dom@w3.org",
+          "hash": "2ea7d6d",
+          "subject": "Update references to IETF RFCs"
         },
         {
           "date": "2020-12-15",
@@ -10612,18 +10724,6 @@
           "author": "hta@chromium.org",
           "hash": "a0b5db4520",
           "subject": "Move OAuth ICE server configuration tests to new file"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "philipp.hancke@googlemail.com",
-          "hash": "651219c6de",
-          "subject": "webrtc wpt: add test for valid rtp payload types"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "philipp.hancke@googlemail.com",
-          "hash": "a44c4c2bbe",
-          "subject": "webrtc: check for allowed payload types in createOffer"
         }
       ]
     },
@@ -10833,18 +10933,6 @@
           "author": "ylafon@w3.org",
           "hash": "d98d2d8",
           "subject": "as the packaged validator is way behind, we must disable validation for now"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "ylafon@w3.org",
-          "hash": "966b65b",
-          "subject": "duplicate # in fragment definition"
-        },
-        {
-          "date": "2020-11-25",
-          "author": "ylafon@w3.org",
-          "hash": "18f8cd3",
-          "subject": "push to gh-pages"
         }
       ],
       "testlog": [
