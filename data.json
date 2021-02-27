@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2020-12-31T07:25:00.366Z",
-  "until": "2021-02-26T07:25:00.366Z",
+  "since": "2021-01-01T07:24:38.530Z",
+  "until": "2021-02-27T07:24:38.530Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -206,7 +206,26 @@
       "name": "Battery Status API",
       "href": "https://w3c.github.io/battery/",
       "specrepo": "https://github.com/w3c/battery",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "d@domenic.me",
+          "hash": "1f9a31d",
+          "subject": "Remove secure context check for now"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "d@domenic.me",
+          "hash": "fb28efd",
+          "subject": "It's -> Its"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "d@domenic.me",
+          "hash": "4ec6263",
+          "subject": "Improve getBattery() algorithm"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/battery/blob/HEAD/CONTRIBUTING.md"
     },
@@ -544,6 +563,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "titouan@chromium.org",
+          "hash": "646af600c4",
+          "subject": "Remove now-empty cors-rfc1918/ directory. (#27797)"
+        },
         {
           "date": "2021-02-25",
           "author": "titouan@chromium.org",
@@ -902,6 +927,12 @@
       "testlog": [
         {
           "date": "2021-02-26",
+          "author": "xidachen@chromium.org",
+          "hash": "f3ab352a83",
+          "subject": "Call CheckCanStartAnimationOnCompositor at paint"
+        },
+        {
+          "date": "2021-02-26",
           "author": "qjw@chromium.org",
           "hash": "cd176ca0d1",
           "subject": "Revert \"Repaint when bgcolor animation is triggered\""
@@ -1003,6 +1034,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "mstensho@chromium.org",
+          "hash": "16d86f34f5",
+          "subject": "Avoid fragmentainer overflow from children of monolithic content."
+        },
         {
           "date": "2021-02-24",
           "author": "almaher@microsoft.com",
@@ -1290,6 +1327,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "chris@w3.org",
+          "hash": "2b501f0f3",
+          "subject": "[css-color-4] fix inline issue syntax"
+        },
         {
           "date": "2021-02-26",
           "author": "jackalmage@gmail.com",
@@ -1716,6 +1759,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-02-26",
+          "author": "miriam@oddbird.net",
+          "hash": "98f2c45ee",
+          "subject": "[css-contain-3] Create empty diff spec for container queries"
+        },
+        {
           "date": "2021-02-22",
           "author": "nschonni@gmail.com",
           "hash": "b554cf504",
@@ -1906,6 +1955,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-02-26",
+          "author": "nschonni@gmail.com",
+          "hash": "5546ead37",
+          "subject": "[css-exclusions-1] figure/figcaption and widths (#5980)"
+        },
+        {
           "date": "2021-02-22",
           "author": "nschonni@gmail.com",
           "hash": "b554cf504",
@@ -1954,6 +2009,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "tlin@mozilla.com",
+          "hash": "aacc9d2796",
+          "subject": "Part 2 - Use StyleSizeOverrides to stretch flex item's inline-size."
+        },
+        {
+          "date": "2021-02-26",
+          "author": "tlin@mozilla.com",
+          "hash": "d4939d5cc8",
+          "subject": "Part 4 - Add WPT reftests, and adjust test expectations."
+        },
+        {
+          "date": "2021-02-26",
+          "author": "dgrogan@chromium.org",
+          "hash": "2d15ebc19f",
+          "subject": "[css-flex] Delete broken redundant flex tests"
+        },
         {
           "date": "2021-02-23",
           "author": "tlin@mozilla.com",
@@ -2196,6 +2269,12 @@
         {
           "date": "2021-02-26",
           "author": "siarhei.bobryk@icloud.com",
+          "hash": "cbaec5ced",
+          "subject": "[css-grid-1][css-grid-2] Use `body` in example 9 (#6037)"
+        },
+        {
+          "date": "2021-02-26",
+          "author": "siarhei.bobryk@icloud.com",
           "hash": "0995a0dc9",
           "subject": "[css-grid-1][css-grid-2] Replace article to main (#6012)"
         },
@@ -2237,6 +2316,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-02-27",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "d04481569b",
+          "subject": "[GridNG] Fix querying %-padding on grid-items."
+        },
+        {
+          "date": "2021-02-26",
+          "author": "ansollan@microsoft.com",
+          "hash": "1bda61b278",
+          "subject": "[GridNG] Dynamic change of out of flow items"
+        },
         {
           "date": "2021-02-23",
           "author": "ansollan@microsoft.com",
@@ -2454,6 +2545,12 @@
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "mstensho@chromium.org",
+          "hash": "b71ded018f",
+          "subject": "Never force legacy layout on NG objects."
+        },
         {
           "date": "2021-02-19",
           "author": "mstensho@chromium.org",
@@ -2788,7 +2885,14 @@
       "name": "CSS Parser API",
       "href": "https://wicg.github.io/css-parser-api/",
       "specrepo": "https://github.com/WICG/css-parser-api",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "jackalmage@gmail.com",
+          "hash": "a038fc2",
+          "subject": "rebuild index.html"
+        }
+      ],
       "testlog": []
     },
     {
@@ -2830,7 +2934,14 @@
       "href": "https://drafts.css-houdini.org/css-properties-values-api/",
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "andruud@gmail.com",
+          "hash": "edfe1ab",
+          "subject": "[css-properties-values-api-1] Export registered custom property, etc (#1020)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -2874,54 +2985,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "0213b6793",
           "subject": "[css-pseudo-4] Drop caret-color and cursor from highlight pseudos for lack of interest/use cases. #4100"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "7180f92c8",
-          "subject": "[css-pseudo-4] Improve markup"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "933618cc1",
-          "subject": "[css-pseudo-4] Remove terrible outdated examples. #4392"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "15d5a1cf5",
-          "subject": "[css-pseudo-4] Actually, let's add that to the correct section?"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "b9d46fb1b",
-          "subject": "[css-pseudo-4] Clarify that applying properties to ::first-letter can't change what matches ::first-letter. #4392"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e80f32823",
-          "subject": "[css-pseudo-4] Move paragraphs around."
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "683cfb003",
-          "subject": "[css-pseudo-4] Rewrite ::first-letter section."
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "3066e2f03",
-          "subject": "[css-pseudo-4] Move note."
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "bc178b2b4",
-          "subject": "[css-pseudo-4] Rewrite definition of first formatted line as a proper definition as outlined by Oriol in #1158"
         }
       ],
       "testlog": [
@@ -3885,18 +3948,6 @@
           "author": "tlin@mozilla.com",
           "hash": "feec9930f2",
           "subject": "Part 3 - Make flex item work with box-sizing when its aspect-ratio is set from <ratio>."
-        },
-        {
-          "date": "2020-12-31",
-          "author": "boris.chiou@gmail.com",
-          "hash": "dbc7edfaa9",
-          "subject": "Take box sizing into account for replaced elements with aspect-ratio."
-        },
-        {
-          "date": "2020-12-31",
-          "author": "boris.chiou@gmail.com",
-          "hash": "51f0ded95d",
-          "subject": "Add UseBoxSizing for AspectRatio class, and fix non-replaced element usage."
         }
       ]
     },
@@ -4226,12 +4277,6 @@
           "author": "kojii@chromium.org",
           "hash": "4e7079e2f3",
           "subject": "Fix hyphenation for words with leading/trailing punctuation"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e1b2973c69",
-          "subject": "[css-text-3] Add tests for UAX9 bidi rules pertaining to tabs (U+0009)"
         }
       ]
     },
@@ -4496,6 +4541,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "andruud@gmail.com",
+          "hash": "7ae91230a",
+          "subject": "[css-variables-1] Custom props that are IACVT become guaranteed-invalid (#6006)"
+        },
         {
           "date": "2021-02-08",
           "author": "nschonni@gmail.com",
@@ -4824,6 +4875,390 @@
       "specrepo": "https://github.com/tc39/ecma402",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "6bb6f82",
+          "subject": "Remove no longer referenced intrinsic 'Date_now'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "ae7da67",
+          "subject": "Update spec/biblio.json"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "8ccf9e8",
+          "subject": "Bump ecmarkup to 6.1.0"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "75d291c",
+          "subject": "Remove unnecessary emu-biblio from displaynames.html"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "6327127",
+          "subject": "Handle absent fields in InitializeDateTimeFormat and BasicFormatMatcher"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "4a152a5",
+          "subject": "Replace ObjectCreate with OrdinaryObjectCreate"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3ea627a",
+          "subject": "Typo: dependending -> depending"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "10be157",
+          "subject": "Use upper-case \"String\" in \"the String value\""
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "1ff47e8",
+          "subject": "Typo: non-negative -> non-zero"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "8b9a785",
+          "subject": "Handle \"dayPeriod\" in date-time range patterns"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "a5f4271",
+          "subject": "Remove duplicate steps from PartitionDateTimeRangePattern"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "da2ac29",
+          "subject": "Don't assume absent fields have the value `undefined` in PartitionDateTimeRangePattern"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "79d8690",
+          "subject": "Use the raw value instead of the modifier string when no localised string is available"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "0f2f400",
+          "subject": "Remove stray 'a'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "cad7fe3",
+          "subject": "Remove \"in List order\""
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "be7b370",
+          "subject": "Use 'Else if' in PartitionDateTimeRangePattern"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "8d8ef60",
+          "subject": "Add missing full stop"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "eb7dab2",
+          "subject": "Allow localised year names in FormatDateTimePattern"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "da93611",
+          "subject": "Format \"dayPeriod\" fields in FormatDateTimePattern"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "a91a7e6",
+          "subject": "Directly name the two range fields which are copied in DateTimeStyleFormat"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "bd5aa19",
+          "subject": "Add missing 'field'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c836262",
+          "subject": "Pass the calendar-dependent style record to DateTimeStyleFormat"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "2fa26d0",
+          "subject": "Fix description of date/time-style fields"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "9a2a183",
+          "subject": "Don't require \"ampm\" for all pattern12 strings"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "cfb52d8",
+          "subject": "Add brackets around field names"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "8875543",
+          "subject": "Reword description of date range patterns"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3309974",
+          "subject": "Reword ListFormat internal slots"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "f7cc61e",
+          "subject": "Remove comma between an enumeration of two values"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "102f7e3",
+          "subject": "Assert no resolved property is undefined"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "6798ef8",
+          "subject": "Explicitly test for absent fields in Intl.DisplayNames.prototype.of"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "b75c9cf",
+          "subject": "Use RequireInternalSlot for type checking"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3818168",
+          "subject": "Typo: 'an arguments' -> 'arguments'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "08fff2a",
+          "subject": "Reword Intl.DisplayNames internal slots"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "387556d",
+          "subject": "Replace \"implementation defined\" with \"implementation-defined\""
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "a956c2f",
+          "subject": "Add missing variable names to Intl.RelativeTimeFormat description"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "f884c6a",
+          "subject": "Type: implementationdefined -> implementation-defined"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e004b81",
+          "subject": "Fix uses of asterisk around names"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "38930cf",
+          "subject": "Add Oxford comma"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "ac3dfd3",
+          "subject": "Remove stray comma"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "bb4384a",
+          "subject": "Represent non-unit parts in MakePartsList using \"empty\""
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3a8859f",
+          "subject": "List all Record keys in for-each loops"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "613f0cb",
+          "subject": "Use string-concatenation to concat strings"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "efff632",
+          "subject": "Move `head` to the top of the loop"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "fa9173e",
+          "subject": "Render 'currency' as a string in Annex B"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "7cf8471",
+          "subject": "Mention day period names in Annex A"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "7be3903",
+          "subject": "Order Intl constructors alphabetically in Annex A"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "497b0b3",
+          "subject": "Use a long variable name for \"style\""
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "ef97f99",
+          "subject": "Use https for link to www.rfc-editor.org"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "de5bbed",
+          "subject": "ResolvePlural, GetOperands, and PluralRuleSelect are infallible"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "7d5326e",
+          "subject": "Use lower case \"for\" in section titles"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c984198",
+          "subject": "Simplify default value computation in SetNumberFormatDigitOptions"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e0801fa",
+          "subject": "Spelling (gb-oed): favor -> favour"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "dfbf740",
+          "subject": "Order the Intl constructors in the index alphabetically"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3ee663a",
+          "subject": "Order \"Constructor Properties of the Intl Object\" alphabetically"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "d6c30df",
+          "subject": "List all constructors in 'Internal slots of Service Constructors'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "aefd2e2",
+          "subject": "Add ListFormat and DisplayNames to 'Constructor Properties of the Intl Object'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "801c428",
+          "subject": "Correct case 'Return' -> 'return'"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "2031a6f",
+          "subject": "Add links to UTS 35 sections"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c525a99",
+          "subject": "Add all constructors to 6.2 Language Tags"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "d1ba8e8",
+          "subject": "Add missing dfn for DisplayNames"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "fcb0845",
+          "subject": "Include reference to section 7.4"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "6f3c9c1",
+          "subject": "Remove no longer needed IsObject checks before OrdinaryHasInstance"
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "2ad2742",
+          "subject": "Throw a TypeError when calling `Intl.DisplayNames` with no options argument."
+        },
+        {
+          "date": "2021-02-25",
+          "author": "andre.bargull@gmail.com",
+          "hash": "dc19c78",
+          "subject": "Add missing `?` when calling `GetOptionsObject` in `Intl.ListFormat`."
+        },
         {
           "date": "2021-02-18",
           "author": "leonardo.balter@gmail.com",
@@ -5575,6 +6010,18 @@
       ],
       "testlog": [
         {
+          "date": "2021-02-26",
+          "author": "shvaikalesh@gmail.com",
+          "hash": "c8daa32e48",
+          "subject": "Improve object rest/spread with Proxy coverage (#2930)"
+        },
+        {
+          "date": "2021-02-26",
+          "author": "me@gus.host",
+          "hash": "516ca9af39",
+          "subject": "Update tests for ECMA262 #2216"
+        },
+        {
           "date": "2021-02-25",
           "author": "ron.buckton@microsoft.com",
           "hash": "0d922ddc97",
@@ -5717,6 +6164,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-02-27",
+          "author": "annevk@annevk.nl",
+          "hash": "26f6e56",
+          "subject": "Document gb18030 decoder end-of-queue oddity"
+        },
+        {
           "date": "2021-01-15",
           "author": "annevk@annevk.nl",
           "hash": "4d54adc",
@@ -5798,6 +6251,12 @@
       "specrepo": "https://github.com/whatwg/fetch",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "annevk@annevk.nl",
+          "hash": "efde35d",
+          "subject": "Correct location URL algorithm fragment handling"
+        },
         {
           "date": "2021-02-25",
           "author": "annevk@annevk.nl",
@@ -6807,6 +7266,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-02-26",
+          "author": "tkent@chromium.org",
+          "hash": "3ffa1ba1",
+          "subject": "Autofocus: loosen fragment identifier restriction"
+        },
+        {
           "date": "2021-02-25",
           "author": "yoav@yoav.ws",
           "hash": "c2d1a367",
@@ -7132,6 +7597,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "zcorpan@gmail.com",
+          "hash": "b0fb6608dd",
+          "subject": "Update update_html5lib_tests.py to Python 3"
+        },
         {
           "date": "2021-02-26",
           "author": "mbrodesser@mozilla.com",
@@ -7729,6 +8200,12 @@
       "href": "https://w3c.github.io/html-aria/",
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "redux@splintered.co.uk",
+          "hash": "e89d3d0",
+          "subject": "Standardise table structure, minor markup fixes"
+        },
         {
           "date": "2021-02-20",
           "author": "scottaohara@gmail.com",
@@ -9260,6 +9737,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-02-26",
+          "author": "echen@mozilla.com",
+          "hash": "aecddf85cb",
+          "subject": "Split wpt pointerevent_auxclick_is_a_pointerevent.html"
+        },
+        {
           "date": "2021-02-24",
           "author": "lanwei@chromium.org",
           "hash": "95924af989",
@@ -9633,6 +10116,12 @@
       "specrepo": "https://github.com/w3c/reporting",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-02-25",
+          "author": "iclelland@chromium.org",
+          "hash": "fa154a6",
+          "subject": "Set report request mode to POST"
+        },
         {
           "date": "2021-02-17",
           "author": "iclelland@chromium.org",
@@ -10465,6 +10954,18 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-02-26",
+          "author": "jyasskin@google.com",
+          "hash": "4d5f7da",
+          "subject": "Meta: remove the <pre class=link-defaults> block"
+        },
+        {
+          "date": "2021-02-26",
+          "author": "jyasskin@google.com",
+          "hash": "6395f44",
+          "subject": "Editorial: format \"persistent-storage\" differently and fix reference"
+        },
+        {
           "date": "2021-02-15",
           "author": "annevk@annevk.nl",
           "hash": "61cc1ac",
@@ -11025,6 +11526,12 @@
       "specrepo": "https://github.com/w3c/touch-events",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-02-26",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "a765b134d8",
+          "subject": "Simulate user inputs in wpt/touch-events/multi-touch-interactions.html (#27686)"
+        },
         {
           "date": "2021-02-17",
           "author": "lanwei@chromium.org",
@@ -11944,26 +12451,7 @@
       "name": "Web NFC API",
       "href": "https://w3c.github.io/web-nfc/",
       "specrepo": "https://github.com/w3c/web-nfc",
-      "speclog": [
-        {
-          "date": "2020-12-31",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "36f05d6",
-          "subject": "Fix nits in examples (#615)"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "c8a47e9",
-          "subject": "Remove redundant info (#614)"
-        },
-        {
-          "date": "2020-12-31",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "1f747e9",
-          "subject": "s/error/readingerror/g"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2021-02-02",
@@ -12711,6 +13199,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-02-27",
+          "author": "philipp.hancke@googlemail.com",
+          "hash": "48af5d4101",
+          "subject": "move webrtc icetransport extension tests to separate directory"
+        },
+        {
           "date": "2021-02-24",
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "92b3b83c50",
@@ -12844,7 +13338,14 @@
           "subject": "Update license files to match latest model"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2021-02-27",
+          "author": "philipp.hancke@googlemail.com",
+          "hash": "48af5d4101",
+          "subject": "move webrtc icetransport extension tests to separate directory"
+        }
+      ]
     },
     {
       "name": "Identity for WebRTC",
@@ -13386,6 +13887,12 @@
       "speclog": [
         {
           "date": "2021-02-26",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "6befe1d",
+          "subject": "Editorial: Align with Web IDL specification (#492)"
+        },
+        {
+          "date": "2021-02-26",
           "author": "atsushi@himor.in",
           "hash": "f5c2814",
           "subject": "updated ghactions with JamesIves/github-pages-deploy-action@4.0.0 (#495)"
@@ -13723,6 +14230,12 @@
       "specrepo": "https://github.com/whatwg/xhr",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-02-26",
+          "author": "annevk@annevk.nl",
+          "hash": "26f974f",
+          "subject": "Use Fetch's body read algorithms"
+        },
         {
           "date": "2021-02-15",
           "author": "annevk@annevk.nl",
