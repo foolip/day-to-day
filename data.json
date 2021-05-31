@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2021-04-04T08:37:47.273Z",
-  "until": "2021-05-31T08:37:47.273Z",
+  "since": "2021-04-04T08:41:45.542Z",
+  "until": "2021-05-31T08:41:45.542Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -4394,8 +4394,47 @@
     },
     {
       "name": "Device Posture API",
-      "href": "https://w3c.github.io/screen-fold/",
-      "specrepo": "https://github.com/w3c/screen-fold",
+      "href": "https://w3c.github.io/device-posture/",
+      "specrepo": "https://github.com/w3c/device-posture",
+      "speclog": [
+        {
+          "date": "2021-05-11",
+          "author": "xfq@w3.org",
+          "hash": "70134a9",
+          "subject": "Switch to w3c/spec-prod to automate publication to /TR (#72)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "anssi.kostiainen@intel.com",
+          "hash": "6a78596",
+          "subject": "Editorial update to Diego's affiliation"
+        },
+        {
+          "date": "2021-04-30",
+          "author": "alexis.menard@intel.com",
+          "hash": "a3272e6",
+          "subject": "Move the entry point of the API to the window.navigator interface."
+        },
+        {
+          "date": "2021-04-23",
+          "author": "l.morinigo@samsung.com",
+          "hash": "57893aa",
+          "subject": "Adding posture definition and clarification"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alexis.menard@intel.com",
+          "hash": "db129ee",
+          "subject": "Rename word \"mode\" in the posture definition to \"type\"."
+        }
+      ],
+      "testlog": [],
+      "testpolicy": "https://github.com/w3c/device-posture/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "Document Policy",
+      "href": "https://wicg.github.io/document-policy/",
+      "specrepo": "https://github.com/WICG/document-policy",
       "speclog": [],
       "testlog": []
     },
@@ -4666,7 +4705,7 @@
     },
     {
       "name": "ECMAScript Language Specification",
-      "href": "https://tc39.es/ecma262/",
+      "href": "https://tc39.es/ecma262/multipage/",
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
@@ -5491,812 +5530,6 @@
       "href": "https://wicg.github.io/get-installed-related-apps/spec/",
       "specrepo": "https://github.com/WICG/get-installed-related-apps",
       "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebGPU",
-      "href": "https://gpuweb.github.io/gpuweb/",
-      "specrepo": "https://github.com/gpuweb/gpuweb",
-      "speclog": [
-        {
-          "date": "2021-05-28",
-          "author": "bajones@chromium.org",
-          "hash": "96f50ee",
-          "subject": "Make \"valid to use with\" check for device validity (#1759)"
-        },
-        {
-          "date": "2021-05-28",
-          "author": "jamesprice.dev@gmail.com",
-          "hash": "0af3844",
-          "subject": "Add `void` to the reserved keywords list (#1767)"
-        },
-        {
-          "date": "2021-05-27",
-          "author": "kainino@chromium.org",
-          "hash": "1c3803e",
-          "subject": "Fix PR preview trigger (attempt 2)"
-        },
-        {
-          "date": "2021-05-27",
-          "author": "dneto@google.com",
-          "hash": "ccefa4c",
-          "subject": "wgsl: Fix typo for modf pointer type (#1775)"
-        },
-        {
-          "date": "2021-05-27",
-          "author": "alanbaker@google.com",
-          "hash": "7578481",
-          "subject": "Add floating point execution rules (#1743)"
-        },
-        {
-          "date": "2021-05-27",
-          "author": "dneto@google.com",
-          "hash": "7da3482",
-          "subject": "wgsl: access mode is no longer an attribute (#1735)"
-        },
-        {
-          "date": "2021-05-26",
-          "author": "dneto@google.com",
-          "hash": "3c00033",
-          "subject": "wgsl: mipmap level -> mip level (#1727)"
-        },
-        {
-          "date": "2021-05-26",
-          "author": "jamesprice.dev@gmail.com",
-          "hash": "909f04b",
-          "subject": "Allow non-overridable constants in workgroup_size (#1742)"
-        },
-        {
-          "date": "2021-05-25",
-          "author": "kainino@chromium.org",
-          "hash": "7609f1e",
-          "subject": "Fix PR preview trigger"
-        },
-        {
-          "date": "2021-05-25",
-          "author": "dneto@google.com",
-          "hash": "e4bf00f",
-          "subject": "Fix description of unsigned integer mod (#1764)"
-        },
-        {
-          "date": "2021-05-21",
-          "author": "alanbaker@google.com",
-          "hash": "36ca947",
-          "subject": "Add some text to describe function variables going out of scope (#1748)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "kainino@chromium.org",
-          "hash": "361ab5d",
-          "subject": "publish-specs: run on all PRs, remove special syntax from matrix (#1760)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "kainino@chromium.org",
-          "hash": "a5a4d4f",
-          "subject": "publish-static: create out directory for compile"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "kainino@chromium.org",
-          "hash": "cd17f8e",
-          "subject": "remove GITHUB_TOKEN from github-pages-deploy-action step"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "fd@tidoust.net",
-          "hash": "ec3dcea",
-          "subject": "Automate publication of specs to /TR (#1739)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "alanbaker@google.com",
-          "hash": "bf4a771",
-          "subject": "[editorial] Remove type shorthands (#1749)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "yunchao.he@intel.com",
-          "hash": "8d8c931",
-          "subject": "Clarify that buffer.offset in WriteTexture has no alignment requirement (#1750)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "dneto@google.com",
-          "hash": "260f19c",
-          "subject": "textureDimensions on cube returns 2-elem vec (#1754)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "dneto@google.com",
-          "hash": "a086f48",
-          "subject": "wgsl: Clarify coordinate use by cube textures (#1755)"
-        },
-        {
-          "date": "2021-05-20",
-          "author": "dneto@google.com",
-          "hash": "56f364f",
-          "subject": "wgsl: infer var store type from initializer (#1756)"
-        },
-        {
-          "date": "2021-05-19",
-          "author": "dneto@google.com",
-          "hash": "be5abeb",
-          "subject": "wgsl: Remove stale \"location\" decoration example (#1753)"
-        },
-        {
-          "date": "2021-05-19",
-          "author": "alanbaker@google.com",
-          "hash": "77d490e",
-          "subject": "Restrict barriers to compute shader stage (#1751)"
-        },
-        {
-          "date": "2021-05-19",
-          "author": "jamesprice.dev@gmail.com",
-          "hash": "901eb25",
-          "subject": "Remove texture_multisampled_2d_array builtins (#1741)"
-        },
-        {
-          "date": "2021-05-19",
-          "author": "kainino@chromium.org",
-          "hash": "7c0dada",
-          "subject": "Remove redundant type info on executionTime (#1744)"
-        },
-        {
-          "date": "2021-05-18",
-          "author": "dneto@google.com",
-          "hash": "29b715b",
-          "subject": "wgsl: describe derivatives, related uniformity (#1728)"
-        },
-        {
-          "date": "2021-05-18",
-          "author": "jrprice@google.com",
-          "hash": "89b65f1",
-          "subject": "Limit pipeline constant IDs to between 0 and 65535 (#1720)"
-        },
-        {
-          "date": "2021-05-18",
-          "author": "alanbaker@google.com",
-          "hash": "7725478",
-          "subject": "Re-introduce floating point comparisons (#1740)"
-        },
-        {
-          "date": "2021-05-17",
-          "author": "enrico.galli@intel.com",
-          "hash": "98ae4a0",
-          "subject": "wgsl: Fix typo in vertex_index (#1687)"
-        },
-        {
-          "date": "2021-05-17",
-          "author": "dneto@google.com",
-          "hash": "68e68fd",
-          "subject": "wgsl editorial: clean up IO-shareable, storable (#1732)"
-        },
-        {
-          "date": "2021-05-17",
-          "author": "fd@tidoust.net",
-          "hash": "735baf8",
-          "subject": "Add w3cid to editors and fix new invalid markup (#1725)"
-        },
-        {
-          "date": "2021-05-14",
-          "author": "alanbaker@google.com",
-          "hash": "b9d66eb",
-          "subject": "[editorial] Leverage component-wise to reduce number of table entries (#1730)"
-        },
-        {
-          "date": "2021-05-14",
-          "author": "dneto@google.com",
-          "hash": "be17afd",
-          "subject": "wgsl: Workgroup storage holds plain types (#1731)"
-        },
-        {
-          "date": "2021-05-14",
-          "author": "dneto@google.com",
-          "hash": "bd3b00f",
-          "subject": "wgsl: add textureSampleCompareLevel (#1729)"
-        },
-        {
-          "date": "2021-05-13",
-          "author": "fd@tidoust.net",
-          "hash": "f30d3fb",
-          "subject": "Add missing w3cid, fix invalid markup and link to /TR document (#1726)"
-        },
-        {
-          "date": "2021-05-12",
-          "author": "bclayton@google.com",
-          "hash": "42f8c31",
-          "subject": "s/const/let, remove ws before : in `name: type` (#1724)"
-        },
-        {
-          "date": "2021-05-12",
-          "author": "dneto@google.com",
-          "hash": "8d4036a",
-          "subject": "wgsl: fix cross-references to WebGPU spec (#1723)"
-        },
-        {
-          "date": "2021-05-12",
-          "author": "fd@tidoust.net",
-          "hash": "518a4c2",
-          "subject": "wgsl: Fix markup, broken links, adjust metadata for publication to /TR (#1707)"
-        },
-        {
-          "date": "2021-05-11",
-          "author": "kainino@chromium.org",
-          "hash": "118db57",
-          "subject": "GPUExternalTexture: API for video; WGSL type and functions (#1666)"
-        },
-        {
-          "date": "2021-05-10",
-          "author": "kainino@chromium.org",
-          "hash": "cd21df4",
-          "subject": "Add initial color spaces (#1690)"
-        },
-        {
-          "date": "2021-05-10",
-          "author": "alanbaker@google.com",
-          "hash": "0c08a19",
-          "subject": "[editorial] Refactor validation section (#1719)"
-        },
-        {
-          "date": "2021-05-08",
-          "author": "dwbrite@gmail.com",
-          "hash": "5b38971",
-          "subject": "wgsl: fix typo in module scope example (#1717)"
-        },
-        {
-          "date": "2021-05-07",
-          "author": "alanbaker@google.com",
-          "hash": "07577c9",
-          "subject": "Remove IN and OUT from storage class grammar (#1718)"
-        },
-        {
-          "date": "2021-05-06",
-          "author": "corentin@wallez.net",
-          "hash": "3005d05",
-          "subject": "explainer: Put the security section after the JS section (#1713)"
-        },
-        {
-          "date": "2021-05-06",
-          "author": "alanbaker@google.com",
-          "hash": "a29bad9",
-          "subject": "Clarify function parameter and return types (#1714)"
-        },
-        {
-          "date": "2021-05-06",
-          "author": "alanbaker@google.com",
-          "hash": "73966b5",
-          "subject": "Add function restrictions (#1674)"
-        },
-        {
-          "date": "2021-05-05",
-          "author": "dneto@google.com",
-          "hash": "33a2d3d",
-          "subject": "wgsl: Fix headings on three examples (#1680)"
-        },
-        {
-          "date": "2021-05-05",
-          "author": "kainino@chromium.org",
-          "hash": "7d2888c",
-          "subject": "Refactor binding limits in terms of \"binding slot limits\" (#1689)"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "dneto@google.com",
-          "hash": "557f0c2",
-          "subject": "add atomic type, texture type, store type to storable; adjust rules for var and let. issue #1686 (#1693)"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "alanbaker@google.com",
-          "hash": "5bad480",
-          "subject": "[editorial] Unify built-in function tables (#1701)"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "yunchao.he@intel.com",
-          "hash": "40b7142",
-          "subject": "Merge texture's internal slots (#1694)"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "alanbaker@google.com",
-          "hash": "bca477b",
-          "subject": "Add invariant attribute (#1673)"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "bajones@chromium.org",
-          "hash": "ce1efdd",
-          "subject": "Replace span of characters with substring"
-        },
-        {
-          "date": "2021-05-04",
-          "author": "bajones@chromium.org",
-          "hash": "b31aa43",
-          "subject": "Clarify that CompilationMessage line/pos numbers should be 1-based (#1700)"
-        },
-        {
-          "date": "2021-05-03",
-          "author": "fd@tidoust.net",
-          "hash": "d7774ae",
-          "subject": "WebGPU: Fix markup, broken links, adjust metadata for publication to /TR (#1706)"
-        },
-        {
-          "date": "2021-05-01",
-          "author": "jimb@red-bean.com",
-          "hash": "ed40e00",
-          "subject": "wgsl: \"Structure Layout Rules\": Remove forbidden [[block]] attrs."
-        },
-        {
-          "date": "2021-04-29",
-          "author": "jdarpinian@gmail.com",
-          "hash": "fd63b66",
-          "subject": "Adding workload simulator as a sample. (#1664)"
-        },
-        {
-          "date": "2021-04-29",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "2f510e4",
-          "subject": "Reduce expire to 10 days (#1699)"
-        },
-        {
-          "date": "2021-04-29",
-          "author": "alanbaker@google.com",
-          "hash": "c778746",
-          "subject": "Rename constant_id to override (#1678)"
-        },
-        {
-          "date": "2021-04-29",
-          "author": "dneto@google.com",
-          "hash": "da9393a",
-          "subject": "wgsl: only atomic modifications are mutually ordered (#1688)"
-        },
-        {
-          "date": "2021-04-29",
-          "author": "alanbaker@google.com",
-          "hash": "aa2378a",
-          "subject": "Add num_workgroups built-in variable (#1684)"
-        },
-        {
-          "date": "2021-04-29",
-          "author": "dneto@google.com",
-          "hash": "951ec23",
-          "subject": "Clarify type matching for var initializer (#1685)"
-        },
-        {
-          "date": "2021-04-28",
-          "author": "alanbaker@google.com",
-          "hash": "60d378d",
-          "subject": "Add vertex and fragment interface matching rules (#1683)"
-        },
-        {
-          "date": "2021-04-28",
-          "author": "dneto@google.com",
-          "hash": "017ecfd",
-          "subject": "wgsl: fill out var-and-let (#1679)"
-        },
-        {
-          "date": "2021-04-28",
-          "author": "yunchao.he@intel.com",
-          "hash": "89f530f",
-          "subject": "Add spec for texture creation (#1658)"
-        },
-        {
-          "date": "2021-04-27",
-          "author": "kainino@chromium.org",
-          "hash": "dc7773d",
-          "subject": "Explainer: edit motivation section (#1677)"
-        },
-        {
-          "date": "2021-04-27",
-          "author": "jrprice@google.com",
-          "hash": "1f940d6",
-          "subject": "Update grammar for constexpr type constructors (#1675)"
-        },
-        {
-          "date": "2021-04-27",
-          "author": "corentin@wallez.net",
-          "hash": "80d382b",
-          "subject": "Reorder sections (#1676)"
-        },
-        {
-          "date": "2021-04-27",
-          "author": "kainino@chromium.org",
-          "hash": "dcda8fe",
-          "subject": "copyExternalImageToTexture for ImageBitmap and canvases (#1581)"
-        },
-        {
-          "date": "2021-04-26",
-          "author": "kainino@chromium.org",
-          "hash": "00815a4",
-          "subject": "Fix hello-cube.html sample (#1668)"
-        },
-        {
-          "date": "2021-04-26",
-          "author": "bajones@chromium.org",
-          "hash": "7a64fc2",
-          "subject": "Added offset, length to GPUCompilationMessage (#1643)"
-        },
-        {
-          "date": "2021-04-26",
-          "author": "kainino@chromium.org",
-          "hash": "7553f1b",
-          "subject": "Remove extra #"
-        },
-        {
-          "date": "2021-04-26",
-          "author": "corentin@wallez.net",
-          "hash": "169d70d",
-          "subject": "Explainer: Add a more general introduction / motivation section. (#1662)"
-        },
-        {
-          "date": "2021-04-26",
-          "author": "kainino@chromium.org",
-          "hash": "ba30d6e",
-          "subject": "Explainer: bit more editing (#1665)"
-        },
-        {
-          "date": "2021-04-24",
-          "author": "jdarpinian@gmail.com",
-          "hash": "8bc6bba",
-          "subject": "Deploy samples and tools to GitHub pages. (#1669)"
-        },
-        {
-          "date": "2021-04-23",
-          "author": "bajones@chromium.org",
-          "hash": "27f5cc3",
-          "subject": "Change GPUSupportedFeatures entry type to DOMString (#1667)"
-        },
-        {
-          "date": "2021-04-23",
-          "author": "yunchao.he@intel.com",
-          "hash": "36aeace",
-          "subject": "Fix a few tiny issues about references (#1661)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "kvarkus@gmail.com",
-          "hash": "de91714",
-          "subject": "Allow trailing commas in the argument lists, calls, and cases (#1493)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "alanbaker@google.com",
-          "hash": "6a48a6a",
-          "subject": "Fix uniform struct size requirement (#1560)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "alanbaker@google.com",
-          "hash": "5963fc2",
-          "subject": "Describe function calls (#1651)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "corentin@wallez.net",
-          "hash": "6cd1913",
-          "subject": "Add sections on User Agent State for Privacy (#1656)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "alanbaker@google.com",
-          "hash": "ae42b6b",
-          "subject": "[editorial] Remove vector short convenience names (#1657)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "yunchao.he@intel.com",
-          "hash": "17da038",
-          "subject": "Add the definition of renderable format (#1653)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "kainino@chromium.org",
-          "hash": "e6fa132",
-          "subject": "Explainer: editing/clarifications (#1655)"
-        },
-        {
-          "date": "2021-04-22",
-          "author": "dneto@google.com",
-          "hash": "2cd5d0b",
-          "subject": "Fix description of a variable's reference type (#1654)"
-        },
-        {
-          "date": "2021-04-21",
-          "author": "alanbaker@google.com",
-          "hash": "40f3712",
-          "subject": "Describe if statements (#1650)"
-        },
-        {
-          "date": "2021-04-21",
-          "author": "dneto@google.com",
-          "hash": "4c63310",
-          "subject": "UTF-8 is always a valid encoding for WGSL (#1646)"
-        },
-        {
-          "date": "2021-04-21",
-          "author": "alanbaker@google.com",
-          "hash": "e6f0a53",
-          "subject": "Add transpose built-in function (#1648)"
-        },
-        {
-          "date": "2021-04-21",
-          "author": "yunchao.he@intel.com",
-          "hash": "c51b57c",
-          "subject": "Move <Buffer Usage> to a subsection of <Buffer Creation> (#1645)"
-        },
-        {
-          "date": "2021-04-16",
-          "author": "jgilbert@mozilla.com",
-          "hash": "c2bf7a9",
-          "subject": "Add GPUSwapChainAlphaMode = opaque/premultiplied (#1474)"
-        },
-        {
-          "date": "2021-04-15",
-          "author": "kainino@chromium.org",
-          "hash": "1e9bec7",
-          "subject": "Explainer: initialization (#1636)"
-        },
-        {
-          "date": "2021-04-15",
-          "author": "kainino@chromium.org",
-          "hash": "8542a4f",
-          "subject": "Explainer: image input (#1638)"
-        },
-        {
-          "date": "2021-04-15",
-          "author": "corentin@wallez.net",
-          "hash": "d241c93",
-          "subject": "Add derivatives on vector. (#1639)"
-        },
-        {
-          "date": "2021-04-15",
-          "author": "kainino@chromium.org",
-          "hash": "f9298b4",
-          "subject": "Explainer: command encoding (#1637)"
-        },
-        {
-          "date": "2021-04-15",
-          "author": "kainino@chromium.org",
-          "hash": "9ce912d",
-          "subject": "Require srcFactor=dstFactor=\"one\" for min/max blend op (#1635)"
-        },
-        {
-          "date": "2021-04-14",
-          "author": "kainino@chromium.org",
-          "hash": "1fb1ba4",
-          "subject": "GPUBlendFactor: remove -component (#1633)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "corentin@wallez.net",
-          "hash": "ddc0374",
-          "subject": "Explainer: Add the security and privacy questionnaire (#1631)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "yunchao.he@intel.com",
-          "hash": "7490036",
-          "subject": "Document texture dimension limits in Limit.md explainer (#1632)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "kainino@chromium.org",
-          "hash": "8518e80",
-          "subject": "rename setBlendColor -> setBlendConstant (#1627)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "kainino@chromium.org",
-          "hash": "c325aaf",
-          "subject": "TypeError on usage of enums from unavailable features (#1628)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "kainino@chromium.org",
-          "hash": "4aa7e32",
-          "subject": "Explainer: Swap Chain (#1618)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "kainino@chromium.org",
-          "hash": "bb938b3",
-          "subject": "Add adapter.[[current]] (#1523)"
-        },
-        {
-          "date": "2021-04-13",
-          "author": "kainino@chromium.org",
-          "hash": "a70049a",
-          "subject": "Explainer: Multithreading (#1616)"
-        },
-        {
-          "date": "2021-04-12",
-          "author": "kainino@chromium.org",
-          "hash": "889e02c",
-          "subject": "Naming changes for GPUBlendFactor (#1614)"
-        },
-        {
-          "date": "2021-04-12",
-          "author": "bajones@chromium.org",
-          "hash": "fbf37c1",
-          "subject": "Use a setlike for GPUDevice features (#1620)"
-        },
-        {
-          "date": "2021-04-12",
-          "author": "dneto@google.com",
-          "hash": "9950506",
-          "subject": "Vector-matrix arithmetic extended with scalar \"splats\" (#1611)"
-        },
-        {
-          "date": "2021-04-12",
-          "author": "kainino@chromium.org",
-          "hash": "ccc4aa5",
-          "subject": "Explainer: mini-section on bitflags (#1615)"
-        },
-        {
-          "date": "2021-04-09",
-          "author": "kainino@chromium.org",
-          "hash": "0ecd599",
-          "subject": "Make [[currentTexture]] nullable (#1617)"
-        },
-        {
-          "date": "2021-04-09",
-          "author": "hao.x.li@intel.com",
-          "hash": "919958c",
-          "subject": "Add GPUQuerySet state (#1531)"
-        },
-        {
-          "date": "2021-04-09",
-          "author": "dneto@google.com",
-          "hash": "1c569ac",
-          "subject": "arrayLength acts on pointer-to-runtime-array (#1619)"
-        },
-        {
-          "date": "2021-04-09",
-          "author": "dneto@google.com",
-          "hash": "b45e16b",
-          "subject": "WGSL: Fix wording (#1612)"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "alanbaker@google.com",
-          "hash": "5f46921",
-          "subject": "Add atomics to WGSL (#1448)"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "kainino@chromium.org",
-          "hash": "7b729db",
-          "subject": "address comment (#1609)"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "kvarkus@gmail.com",
-          "hash": "0e35195",
-          "subject": "Basic description of compute operations"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "kvarkus@gmail.com",
-          "hash": "78e3abd",
-          "subject": "Re-organize the rendering algorithm into a separate detailed operations section"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "kvarkus@gmail.com",
-          "hash": "9f9467e",
-          "subject": "Use sub tab in the polygon rasterization equations"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "kainino@chromium.org",
-          "hash": "5918e3a",
-          "subject": "Explainer: section on errors, start on device loss (#1607)"
-        },
-        {
-          "date": "2021-04-08",
-          "author": "corentin@wallez.net",
-          "hash": "49ece0d",
-          "subject": "Add the buffer mapping explainer (#1600)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "kvarkus@gmail.com",
-          "hash": "c69e206",
-          "subject": "Rasterization of points, more general wording (#1606)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "dneto@google.com",
-          "hash": "16c8c88",
-          "subject": "Add WGSL spec writing style guide (#1585)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "alanbaker@google.com",
-          "hash": "ca16707",
-          "subject": "Add interpolation section and attribute (#1605)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "kvarkus@gmail.com",
-          "hash": "81d441a",
-          "subject": "[editorial] Separate sections for the vertex processing and primitive assembly (#1603)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "dneto@google.com",
-          "hash": "396db59",
-          "subject": "WIP: Shader lifecycle, and kinds of errors (#1593)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "dneto@google.com",
-          "hash": "8268098",
-          "subject": "    WGSL: describe ref ptr (#1569)"
-        },
-        {
-          "date": "2021-04-07",
-          "author": "dneto@google.com",
-          "hash": "791a63f",
-          "subject": "WGSL: add Technical Overview (#1592)"
-        },
-        {
-          "date": "2021-04-06",
-          "author": "dneto@google.com",
-          "hash": "cda3661",
-          "subject": "Add section for \"Constant Identifier Expression\" (#1586)"
-        },
-        {
-          "date": "2021-04-06",
-          "author": "dneto@google.com",
-          "hash": "3d5871c",
-          "subject": "Add ignore builtin function (#1587)"
-        },
-        {
-          "date": "2021-04-06",
-          "author": "kainino@chromium.org",
-          "hash": "e0c18f0",
-          "subject": "Deploy imgs to gh-pages (#1601)"
-        },
-        {
-          "date": "2021-04-06",
-          "author": "kainino@chromium.org",
-          "hash": "a231a9f",
-          "subject": "Explainer: Use <object> instead of <img> for SVG (#1602)"
-        },
-        {
-          "date": "2021-04-06",
-          "author": "corentin@wallez.net",
-          "hash": "ace6ee2",
-          "subject": "Replace error_monad_timeline_diagram's PNG with an SVG (#1599)"
-        },
-        {
-          "date": "2021-04-05",
-          "author": "kvarkus@gmail.com",
-          "hash": "5f5917d",
-          "subject": "Fix the use of clampDepth (#1598)"
-        },
-        {
-          "date": "2021-04-05",
-          "author": "corentin@wallez.net",
-          "hash": "cb355a2",
-          "subject": "Move clampDepth to GPUPrimitiveState. (#1583)"
-        },
-        {
-          "date": "2021-04-05",
-          "author": "saschanaz+autokagami@outlook.com",
-          "hash": "1e84e39",
-          "subject": "Editorial: Align with Web IDL specification (#1591)"
-        },
-        {
-          "date": "2021-04-05",
-          "author": "corentin@wallez.net",
-          "hash": "329c0e6",
-          "subject": "Explainer: Object validity and destroyedness (#1595)"
-        }
-      ],
       "testlog": []
     },
     {
@@ -13610,6 +12843,812 @@
       ]
     },
     {
+      "name": "WebGPU",
+      "href": "https://gpuweb.github.io/gpuweb/",
+      "specrepo": "https://github.com/gpuweb/gpuweb",
+      "speclog": [
+        {
+          "date": "2021-05-28",
+          "author": "bajones@chromium.org",
+          "hash": "96f50ee",
+          "subject": "Make \"valid to use with\" check for device validity (#1759)"
+        },
+        {
+          "date": "2021-05-28",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "0af3844",
+          "subject": "Add `void` to the reserved keywords list (#1767)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "kainino@chromium.org",
+          "hash": "1c3803e",
+          "subject": "Fix PR preview trigger (attempt 2)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "dneto@google.com",
+          "hash": "ccefa4c",
+          "subject": "wgsl: Fix typo for modf pointer type (#1775)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "alanbaker@google.com",
+          "hash": "7578481",
+          "subject": "Add floating point execution rules (#1743)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "dneto@google.com",
+          "hash": "7da3482",
+          "subject": "wgsl: access mode is no longer an attribute (#1735)"
+        },
+        {
+          "date": "2021-05-26",
+          "author": "dneto@google.com",
+          "hash": "3c00033",
+          "subject": "wgsl: mipmap level -> mip level (#1727)"
+        },
+        {
+          "date": "2021-05-26",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "909f04b",
+          "subject": "Allow non-overridable constants in workgroup_size (#1742)"
+        },
+        {
+          "date": "2021-05-25",
+          "author": "kainino@chromium.org",
+          "hash": "7609f1e",
+          "subject": "Fix PR preview trigger"
+        },
+        {
+          "date": "2021-05-25",
+          "author": "dneto@google.com",
+          "hash": "e4bf00f",
+          "subject": "Fix description of unsigned integer mod (#1764)"
+        },
+        {
+          "date": "2021-05-21",
+          "author": "alanbaker@google.com",
+          "hash": "36ca947",
+          "subject": "Add some text to describe function variables going out of scope (#1748)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "361ab5d",
+          "subject": "publish-specs: run on all PRs, remove special syntax from matrix (#1760)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "a5a4d4f",
+          "subject": "publish-static: create out directory for compile"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "cd17f8e",
+          "subject": "remove GITHUB_TOKEN from github-pages-deploy-action step"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "fd@tidoust.net",
+          "hash": "ec3dcea",
+          "subject": "Automate publication of specs to /TR (#1739)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "alanbaker@google.com",
+          "hash": "bf4a771",
+          "subject": "[editorial] Remove type shorthands (#1749)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "yunchao.he@intel.com",
+          "hash": "8d8c931",
+          "subject": "Clarify that buffer.offset in WriteTexture has no alignment requirement (#1750)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "260f19c",
+          "subject": "textureDimensions on cube returns 2-elem vec (#1754)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "a086f48",
+          "subject": "wgsl: Clarify coordinate use by cube textures (#1755)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "56f364f",
+          "subject": "wgsl: infer var store type from initializer (#1756)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "dneto@google.com",
+          "hash": "be5abeb",
+          "subject": "wgsl: Remove stale \"location\" decoration example (#1753)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "alanbaker@google.com",
+          "hash": "77d490e",
+          "subject": "Restrict barriers to compute shader stage (#1751)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "901eb25",
+          "subject": "Remove texture_multisampled_2d_array builtins (#1741)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "kainino@chromium.org",
+          "hash": "7c0dada",
+          "subject": "Remove redundant type info on executionTime (#1744)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "dneto@google.com",
+          "hash": "29b715b",
+          "subject": "wgsl: describe derivatives, related uniformity (#1728)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "jrprice@google.com",
+          "hash": "89b65f1",
+          "subject": "Limit pipeline constant IDs to between 0 and 65535 (#1720)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "alanbaker@google.com",
+          "hash": "7725478",
+          "subject": "Re-introduce floating point comparisons (#1740)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "enrico.galli@intel.com",
+          "hash": "98ae4a0",
+          "subject": "wgsl: Fix typo in vertex_index (#1687)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "dneto@google.com",
+          "hash": "68e68fd",
+          "subject": "wgsl editorial: clean up IO-shareable, storable (#1732)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "fd@tidoust.net",
+          "hash": "735baf8",
+          "subject": "Add w3cid to editors and fix new invalid markup (#1725)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "alanbaker@google.com",
+          "hash": "b9d66eb",
+          "subject": "[editorial] Leverage component-wise to reduce number of table entries (#1730)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "dneto@google.com",
+          "hash": "be17afd",
+          "subject": "wgsl: Workgroup storage holds plain types (#1731)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "dneto@google.com",
+          "hash": "bd3b00f",
+          "subject": "wgsl: add textureSampleCompareLevel (#1729)"
+        },
+        {
+          "date": "2021-05-13",
+          "author": "fd@tidoust.net",
+          "hash": "f30d3fb",
+          "subject": "Add missing w3cid, fix invalid markup and link to /TR document (#1726)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "bclayton@google.com",
+          "hash": "42f8c31",
+          "subject": "s/const/let, remove ws before : in `name: type` (#1724)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "dneto@google.com",
+          "hash": "8d4036a",
+          "subject": "wgsl: fix cross-references to WebGPU spec (#1723)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "fd@tidoust.net",
+          "hash": "518a4c2",
+          "subject": "wgsl: Fix markup, broken links, adjust metadata for publication to /TR (#1707)"
+        },
+        {
+          "date": "2021-05-11",
+          "author": "kainino@chromium.org",
+          "hash": "118db57",
+          "subject": "GPUExternalTexture: API for video; WGSL type and functions (#1666)"
+        },
+        {
+          "date": "2021-05-10",
+          "author": "kainino@chromium.org",
+          "hash": "cd21df4",
+          "subject": "Add initial color spaces (#1690)"
+        },
+        {
+          "date": "2021-05-10",
+          "author": "alanbaker@google.com",
+          "hash": "0c08a19",
+          "subject": "[editorial] Refactor validation section (#1719)"
+        },
+        {
+          "date": "2021-05-08",
+          "author": "dwbrite@gmail.com",
+          "hash": "5b38971",
+          "subject": "wgsl: fix typo in module scope example (#1717)"
+        },
+        {
+          "date": "2021-05-07",
+          "author": "alanbaker@google.com",
+          "hash": "07577c9",
+          "subject": "Remove IN and OUT from storage class grammar (#1718)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "corentin@wallez.net",
+          "hash": "3005d05",
+          "subject": "explainer: Put the security section after the JS section (#1713)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "alanbaker@google.com",
+          "hash": "a29bad9",
+          "subject": "Clarify function parameter and return types (#1714)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "alanbaker@google.com",
+          "hash": "73966b5",
+          "subject": "Add function restrictions (#1674)"
+        },
+        {
+          "date": "2021-05-05",
+          "author": "dneto@google.com",
+          "hash": "33a2d3d",
+          "subject": "wgsl: Fix headings on three examples (#1680)"
+        },
+        {
+          "date": "2021-05-05",
+          "author": "kainino@chromium.org",
+          "hash": "7d2888c",
+          "subject": "Refactor binding limits in terms of \"binding slot limits\" (#1689)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "dneto@google.com",
+          "hash": "557f0c2",
+          "subject": "add atomic type, texture type, store type to storable; adjust rules for var and let. issue #1686 (#1693)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "alanbaker@google.com",
+          "hash": "5bad480",
+          "subject": "[editorial] Unify built-in function tables (#1701)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "yunchao.he@intel.com",
+          "hash": "40b7142",
+          "subject": "Merge texture's internal slots (#1694)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "alanbaker@google.com",
+          "hash": "bca477b",
+          "subject": "Add invariant attribute (#1673)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "bajones@chromium.org",
+          "hash": "ce1efdd",
+          "subject": "Replace span of characters with substring"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "bajones@chromium.org",
+          "hash": "b31aa43",
+          "subject": "Clarify that CompilationMessage line/pos numbers should be 1-based (#1700)"
+        },
+        {
+          "date": "2021-05-03",
+          "author": "fd@tidoust.net",
+          "hash": "d7774ae",
+          "subject": "WebGPU: Fix markup, broken links, adjust metadata for publication to /TR (#1706)"
+        },
+        {
+          "date": "2021-05-01",
+          "author": "jimb@red-bean.com",
+          "hash": "ed40e00",
+          "subject": "wgsl: \"Structure Layout Rules\": Remove forbidden [[block]] attrs."
+        },
+        {
+          "date": "2021-04-29",
+          "author": "jdarpinian@gmail.com",
+          "hash": "fd63b66",
+          "subject": "Adding workload simulator as a sample. (#1664)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "2f510e4",
+          "subject": "Reduce expire to 10 days (#1699)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "alanbaker@google.com",
+          "hash": "c778746",
+          "subject": "Rename constant_id to override (#1678)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "dneto@google.com",
+          "hash": "da9393a",
+          "subject": "wgsl: only atomic modifications are mutually ordered (#1688)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "alanbaker@google.com",
+          "hash": "aa2378a",
+          "subject": "Add num_workgroups built-in variable (#1684)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "dneto@google.com",
+          "hash": "951ec23",
+          "subject": "Clarify type matching for var initializer (#1685)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "alanbaker@google.com",
+          "hash": "60d378d",
+          "subject": "Add vertex and fragment interface matching rules (#1683)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "dneto@google.com",
+          "hash": "017ecfd",
+          "subject": "wgsl: fill out var-and-let (#1679)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "yunchao.he@intel.com",
+          "hash": "89f530f",
+          "subject": "Add spec for texture creation (#1658)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "kainino@chromium.org",
+          "hash": "dc7773d",
+          "subject": "Explainer: edit motivation section (#1677)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "jrprice@google.com",
+          "hash": "1f940d6",
+          "subject": "Update grammar for constexpr type constructors (#1675)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "corentin@wallez.net",
+          "hash": "80d382b",
+          "subject": "Reorder sections (#1676)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "kainino@chromium.org",
+          "hash": "dcda8fe",
+          "subject": "copyExternalImageToTexture for ImageBitmap and canvases (#1581)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "00815a4",
+          "subject": "Fix hello-cube.html sample (#1668)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "bajones@chromium.org",
+          "hash": "7a64fc2",
+          "subject": "Added offset, length to GPUCompilationMessage (#1643)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "7553f1b",
+          "subject": "Remove extra #"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "corentin@wallez.net",
+          "hash": "169d70d",
+          "subject": "Explainer: Add a more general introduction / motivation section. (#1662)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "ba30d6e",
+          "subject": "Explainer: bit more editing (#1665)"
+        },
+        {
+          "date": "2021-04-24",
+          "author": "jdarpinian@gmail.com",
+          "hash": "8bc6bba",
+          "subject": "Deploy samples and tools to GitHub pages. (#1669)"
+        },
+        {
+          "date": "2021-04-23",
+          "author": "bajones@chromium.org",
+          "hash": "27f5cc3",
+          "subject": "Change GPUSupportedFeatures entry type to DOMString (#1667)"
+        },
+        {
+          "date": "2021-04-23",
+          "author": "yunchao.he@intel.com",
+          "hash": "36aeace",
+          "subject": "Fix a few tiny issues about references (#1661)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "kvarkus@gmail.com",
+          "hash": "de91714",
+          "subject": "Allow trailing commas in the argument lists, calls, and cases (#1493)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "6a48a6a",
+          "subject": "Fix uniform struct size requirement (#1560)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "5963fc2",
+          "subject": "Describe function calls (#1651)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "corentin@wallez.net",
+          "hash": "6cd1913",
+          "subject": "Add sections on User Agent State for Privacy (#1656)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "ae42b6b",
+          "subject": "[editorial] Remove vector short convenience names (#1657)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "yunchao.he@intel.com",
+          "hash": "17da038",
+          "subject": "Add the definition of renderable format (#1653)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "kainino@chromium.org",
+          "hash": "e6fa132",
+          "subject": "Explainer: editing/clarifications (#1655)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "dneto@google.com",
+          "hash": "2cd5d0b",
+          "subject": "Fix description of a variable's reference type (#1654)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "alanbaker@google.com",
+          "hash": "40f3712",
+          "subject": "Describe if statements (#1650)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "dneto@google.com",
+          "hash": "4c63310",
+          "subject": "UTF-8 is always a valid encoding for WGSL (#1646)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "alanbaker@google.com",
+          "hash": "e6f0a53",
+          "subject": "Add transpose built-in function (#1648)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "yunchao.he@intel.com",
+          "hash": "c51b57c",
+          "subject": "Move <Buffer Usage> to a subsection of <Buffer Creation> (#1645)"
+        },
+        {
+          "date": "2021-04-16",
+          "author": "jgilbert@mozilla.com",
+          "hash": "c2bf7a9",
+          "subject": "Add GPUSwapChainAlphaMode = opaque/premultiplied (#1474)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "1e9bec7",
+          "subject": "Explainer: initialization (#1636)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "8542a4f",
+          "subject": "Explainer: image input (#1638)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "corentin@wallez.net",
+          "hash": "d241c93",
+          "subject": "Add derivatives on vector. (#1639)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "f9298b4",
+          "subject": "Explainer: command encoding (#1637)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "9ce912d",
+          "subject": "Require srcFactor=dstFactor=\"one\" for min/max blend op (#1635)"
+        },
+        {
+          "date": "2021-04-14",
+          "author": "kainino@chromium.org",
+          "hash": "1fb1ba4",
+          "subject": "GPUBlendFactor: remove -component (#1633)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "corentin@wallez.net",
+          "hash": "ddc0374",
+          "subject": "Explainer: Add the security and privacy questionnaire (#1631)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "yunchao.he@intel.com",
+          "hash": "7490036",
+          "subject": "Document texture dimension limits in Limit.md explainer (#1632)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "8518e80",
+          "subject": "rename setBlendColor -> setBlendConstant (#1627)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "c325aaf",
+          "subject": "TypeError on usage of enums from unavailable features (#1628)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "4aa7e32",
+          "subject": "Explainer: Swap Chain (#1618)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "bb938b3",
+          "subject": "Add adapter.[[current]] (#1523)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "a70049a",
+          "subject": "Explainer: Multithreading (#1616)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "kainino@chromium.org",
+          "hash": "889e02c",
+          "subject": "Naming changes for GPUBlendFactor (#1614)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "bajones@chromium.org",
+          "hash": "fbf37c1",
+          "subject": "Use a setlike for GPUDevice features (#1620)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "dneto@google.com",
+          "hash": "9950506",
+          "subject": "Vector-matrix arithmetic extended with scalar \"splats\" (#1611)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "kainino@chromium.org",
+          "hash": "ccc4aa5",
+          "subject": "Explainer: mini-section on bitflags (#1615)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "kainino@chromium.org",
+          "hash": "0ecd599",
+          "subject": "Make [[currentTexture]] nullable (#1617)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "hao.x.li@intel.com",
+          "hash": "919958c",
+          "subject": "Add GPUQuerySet state (#1531)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "dneto@google.com",
+          "hash": "1c569ac",
+          "subject": "arrayLength acts on pointer-to-runtime-array (#1619)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "dneto@google.com",
+          "hash": "b45e16b",
+          "subject": "WGSL: Fix wording (#1612)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "alanbaker@google.com",
+          "hash": "5f46921",
+          "subject": "Add atomics to WGSL (#1448)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kainino@chromium.org",
+          "hash": "7b729db",
+          "subject": "address comment (#1609)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "0e35195",
+          "subject": "Basic description of compute operations"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "78e3abd",
+          "subject": "Re-organize the rendering algorithm into a separate detailed operations section"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "9f9467e",
+          "subject": "Use sub tab in the polygon rasterization equations"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kainino@chromium.org",
+          "hash": "5918e3a",
+          "subject": "Explainer: section on errors, start on device loss (#1607)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "corentin@wallez.net",
+          "hash": "49ece0d",
+          "subject": "Add the buffer mapping explainer (#1600)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "kvarkus@gmail.com",
+          "hash": "c69e206",
+          "subject": "Rasterization of points, more general wording (#1606)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "16c8c88",
+          "subject": "Add WGSL spec writing style guide (#1585)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "alanbaker@google.com",
+          "hash": "ca16707",
+          "subject": "Add interpolation section and attribute (#1605)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "kvarkus@gmail.com",
+          "hash": "81d441a",
+          "subject": "[editorial] Separate sections for the vertex processing and primitive assembly (#1603)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "396db59",
+          "subject": "WIP: Shader lifecycle, and kinds of errors (#1593)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "8268098",
+          "subject": "    WGSL: describe ref ptr (#1569)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "791a63f",
+          "subject": "WGSL: add Technical Overview (#1592)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "dneto@google.com",
+          "hash": "cda3661",
+          "subject": "Add section for \"Constant Identifier Expression\" (#1586)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "dneto@google.com",
+          "hash": "3d5871c",
+          "subject": "Add ignore builtin function (#1587)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "kainino@chromium.org",
+          "hash": "e0c18f0",
+          "subject": "Deploy imgs to gh-pages (#1601)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "kainino@chromium.org",
+          "hash": "a231a9f",
+          "subject": "Explainer: Use <object> instead of <img> for SVG (#1602)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "corentin@wallez.net",
+          "hash": "ace6ee2",
+          "subject": "Replace error_monad_timeline_diagram's PNG with an SVG (#1599)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "kvarkus@gmail.com",
+          "hash": "5f5917d",
+          "subject": "Fix the use of clampDepth (#1598)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "corentin@wallez.net",
+          "hash": "cb355a2",
+          "subject": "Move clampDepth to GPUPrimitiveState. (#1583)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "1e84e39",
+          "subject": "Editorial: Align with Web IDL specification (#1591)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "corentin@wallez.net",
+          "hash": "329c0e6",
+          "subject": "Explainer: Object validity and destroyedness (#1595)"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "WebHID API",
       "href": "https://wicg.github.io/webhid/",
       "specrepo": "https://github.com/WICG/webhid",
@@ -14232,6 +14271,812 @@
       ],
       "testlog": [],
       "testpolicy": "https://github.com/immersive-web/layers/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebGPU Shading Language",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/",
+      "specrepo": "https://github.com/gpuweb/gpuweb",
+      "speclog": [
+        {
+          "date": "2021-05-28",
+          "author": "bajones@chromium.org",
+          "hash": "96f50ee",
+          "subject": "Make \"valid to use with\" check for device validity (#1759)"
+        },
+        {
+          "date": "2021-05-28",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "0af3844",
+          "subject": "Add `void` to the reserved keywords list (#1767)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "kainino@chromium.org",
+          "hash": "1c3803e",
+          "subject": "Fix PR preview trigger (attempt 2)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "dneto@google.com",
+          "hash": "ccefa4c",
+          "subject": "wgsl: Fix typo for modf pointer type (#1775)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "alanbaker@google.com",
+          "hash": "7578481",
+          "subject": "Add floating point execution rules (#1743)"
+        },
+        {
+          "date": "2021-05-27",
+          "author": "dneto@google.com",
+          "hash": "7da3482",
+          "subject": "wgsl: access mode is no longer an attribute (#1735)"
+        },
+        {
+          "date": "2021-05-26",
+          "author": "dneto@google.com",
+          "hash": "3c00033",
+          "subject": "wgsl: mipmap level -> mip level (#1727)"
+        },
+        {
+          "date": "2021-05-26",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "909f04b",
+          "subject": "Allow non-overridable constants in workgroup_size (#1742)"
+        },
+        {
+          "date": "2021-05-25",
+          "author": "kainino@chromium.org",
+          "hash": "7609f1e",
+          "subject": "Fix PR preview trigger"
+        },
+        {
+          "date": "2021-05-25",
+          "author": "dneto@google.com",
+          "hash": "e4bf00f",
+          "subject": "Fix description of unsigned integer mod (#1764)"
+        },
+        {
+          "date": "2021-05-21",
+          "author": "alanbaker@google.com",
+          "hash": "36ca947",
+          "subject": "Add some text to describe function variables going out of scope (#1748)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "361ab5d",
+          "subject": "publish-specs: run on all PRs, remove special syntax from matrix (#1760)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "a5a4d4f",
+          "subject": "publish-static: create out directory for compile"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "kainino@chromium.org",
+          "hash": "cd17f8e",
+          "subject": "remove GITHUB_TOKEN from github-pages-deploy-action step"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "fd@tidoust.net",
+          "hash": "ec3dcea",
+          "subject": "Automate publication of specs to /TR (#1739)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "alanbaker@google.com",
+          "hash": "bf4a771",
+          "subject": "[editorial] Remove type shorthands (#1749)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "yunchao.he@intel.com",
+          "hash": "8d8c931",
+          "subject": "Clarify that buffer.offset in WriteTexture has no alignment requirement (#1750)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "260f19c",
+          "subject": "textureDimensions on cube returns 2-elem vec (#1754)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "a086f48",
+          "subject": "wgsl: Clarify coordinate use by cube textures (#1755)"
+        },
+        {
+          "date": "2021-05-20",
+          "author": "dneto@google.com",
+          "hash": "56f364f",
+          "subject": "wgsl: infer var store type from initializer (#1756)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "dneto@google.com",
+          "hash": "be5abeb",
+          "subject": "wgsl: Remove stale \"location\" decoration example (#1753)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "alanbaker@google.com",
+          "hash": "77d490e",
+          "subject": "Restrict barriers to compute shader stage (#1751)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "jamesprice.dev@gmail.com",
+          "hash": "901eb25",
+          "subject": "Remove texture_multisampled_2d_array builtins (#1741)"
+        },
+        {
+          "date": "2021-05-19",
+          "author": "kainino@chromium.org",
+          "hash": "7c0dada",
+          "subject": "Remove redundant type info on executionTime (#1744)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "dneto@google.com",
+          "hash": "29b715b",
+          "subject": "wgsl: describe derivatives, related uniformity (#1728)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "jrprice@google.com",
+          "hash": "89b65f1",
+          "subject": "Limit pipeline constant IDs to between 0 and 65535 (#1720)"
+        },
+        {
+          "date": "2021-05-18",
+          "author": "alanbaker@google.com",
+          "hash": "7725478",
+          "subject": "Re-introduce floating point comparisons (#1740)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "enrico.galli@intel.com",
+          "hash": "98ae4a0",
+          "subject": "wgsl: Fix typo in vertex_index (#1687)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "dneto@google.com",
+          "hash": "68e68fd",
+          "subject": "wgsl editorial: clean up IO-shareable, storable (#1732)"
+        },
+        {
+          "date": "2021-05-17",
+          "author": "fd@tidoust.net",
+          "hash": "735baf8",
+          "subject": "Add w3cid to editors and fix new invalid markup (#1725)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "alanbaker@google.com",
+          "hash": "b9d66eb",
+          "subject": "[editorial] Leverage component-wise to reduce number of table entries (#1730)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "dneto@google.com",
+          "hash": "be17afd",
+          "subject": "wgsl: Workgroup storage holds plain types (#1731)"
+        },
+        {
+          "date": "2021-05-14",
+          "author": "dneto@google.com",
+          "hash": "bd3b00f",
+          "subject": "wgsl: add textureSampleCompareLevel (#1729)"
+        },
+        {
+          "date": "2021-05-13",
+          "author": "fd@tidoust.net",
+          "hash": "f30d3fb",
+          "subject": "Add missing w3cid, fix invalid markup and link to /TR document (#1726)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "bclayton@google.com",
+          "hash": "42f8c31",
+          "subject": "s/const/let, remove ws before : in `name: type` (#1724)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "dneto@google.com",
+          "hash": "8d4036a",
+          "subject": "wgsl: fix cross-references to WebGPU spec (#1723)"
+        },
+        {
+          "date": "2021-05-12",
+          "author": "fd@tidoust.net",
+          "hash": "518a4c2",
+          "subject": "wgsl: Fix markup, broken links, adjust metadata for publication to /TR (#1707)"
+        },
+        {
+          "date": "2021-05-11",
+          "author": "kainino@chromium.org",
+          "hash": "118db57",
+          "subject": "GPUExternalTexture: API for video; WGSL type and functions (#1666)"
+        },
+        {
+          "date": "2021-05-10",
+          "author": "kainino@chromium.org",
+          "hash": "cd21df4",
+          "subject": "Add initial color spaces (#1690)"
+        },
+        {
+          "date": "2021-05-10",
+          "author": "alanbaker@google.com",
+          "hash": "0c08a19",
+          "subject": "[editorial] Refactor validation section (#1719)"
+        },
+        {
+          "date": "2021-05-08",
+          "author": "dwbrite@gmail.com",
+          "hash": "5b38971",
+          "subject": "wgsl: fix typo in module scope example (#1717)"
+        },
+        {
+          "date": "2021-05-07",
+          "author": "alanbaker@google.com",
+          "hash": "07577c9",
+          "subject": "Remove IN and OUT from storage class grammar (#1718)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "corentin@wallez.net",
+          "hash": "3005d05",
+          "subject": "explainer: Put the security section after the JS section (#1713)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "alanbaker@google.com",
+          "hash": "a29bad9",
+          "subject": "Clarify function parameter and return types (#1714)"
+        },
+        {
+          "date": "2021-05-06",
+          "author": "alanbaker@google.com",
+          "hash": "73966b5",
+          "subject": "Add function restrictions (#1674)"
+        },
+        {
+          "date": "2021-05-05",
+          "author": "dneto@google.com",
+          "hash": "33a2d3d",
+          "subject": "wgsl: Fix headings on three examples (#1680)"
+        },
+        {
+          "date": "2021-05-05",
+          "author": "kainino@chromium.org",
+          "hash": "7d2888c",
+          "subject": "Refactor binding limits in terms of \"binding slot limits\" (#1689)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "dneto@google.com",
+          "hash": "557f0c2",
+          "subject": "add atomic type, texture type, store type to storable; adjust rules for var and let. issue #1686 (#1693)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "alanbaker@google.com",
+          "hash": "5bad480",
+          "subject": "[editorial] Unify built-in function tables (#1701)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "yunchao.he@intel.com",
+          "hash": "40b7142",
+          "subject": "Merge texture's internal slots (#1694)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "alanbaker@google.com",
+          "hash": "bca477b",
+          "subject": "Add invariant attribute (#1673)"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "bajones@chromium.org",
+          "hash": "ce1efdd",
+          "subject": "Replace span of characters with substring"
+        },
+        {
+          "date": "2021-05-04",
+          "author": "bajones@chromium.org",
+          "hash": "b31aa43",
+          "subject": "Clarify that CompilationMessage line/pos numbers should be 1-based (#1700)"
+        },
+        {
+          "date": "2021-05-03",
+          "author": "fd@tidoust.net",
+          "hash": "d7774ae",
+          "subject": "WebGPU: Fix markup, broken links, adjust metadata for publication to /TR (#1706)"
+        },
+        {
+          "date": "2021-05-01",
+          "author": "jimb@red-bean.com",
+          "hash": "ed40e00",
+          "subject": "wgsl: \"Structure Layout Rules\": Remove forbidden [[block]] attrs."
+        },
+        {
+          "date": "2021-04-29",
+          "author": "jdarpinian@gmail.com",
+          "hash": "fd63b66",
+          "subject": "Adding workload simulator as a sample. (#1664)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "2f510e4",
+          "subject": "Reduce expire to 10 days (#1699)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "alanbaker@google.com",
+          "hash": "c778746",
+          "subject": "Rename constant_id to override (#1678)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "dneto@google.com",
+          "hash": "da9393a",
+          "subject": "wgsl: only atomic modifications are mutually ordered (#1688)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "alanbaker@google.com",
+          "hash": "aa2378a",
+          "subject": "Add num_workgroups built-in variable (#1684)"
+        },
+        {
+          "date": "2021-04-29",
+          "author": "dneto@google.com",
+          "hash": "951ec23",
+          "subject": "Clarify type matching for var initializer (#1685)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "alanbaker@google.com",
+          "hash": "60d378d",
+          "subject": "Add vertex and fragment interface matching rules (#1683)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "dneto@google.com",
+          "hash": "017ecfd",
+          "subject": "wgsl: fill out var-and-let (#1679)"
+        },
+        {
+          "date": "2021-04-28",
+          "author": "yunchao.he@intel.com",
+          "hash": "89f530f",
+          "subject": "Add spec for texture creation (#1658)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "kainino@chromium.org",
+          "hash": "dc7773d",
+          "subject": "Explainer: edit motivation section (#1677)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "jrprice@google.com",
+          "hash": "1f940d6",
+          "subject": "Update grammar for constexpr type constructors (#1675)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "corentin@wallez.net",
+          "hash": "80d382b",
+          "subject": "Reorder sections (#1676)"
+        },
+        {
+          "date": "2021-04-27",
+          "author": "kainino@chromium.org",
+          "hash": "dcda8fe",
+          "subject": "copyExternalImageToTexture for ImageBitmap and canvases (#1581)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "00815a4",
+          "subject": "Fix hello-cube.html sample (#1668)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "bajones@chromium.org",
+          "hash": "7a64fc2",
+          "subject": "Added offset, length to GPUCompilationMessage (#1643)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "7553f1b",
+          "subject": "Remove extra #"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "corentin@wallez.net",
+          "hash": "169d70d",
+          "subject": "Explainer: Add a more general introduction / motivation section. (#1662)"
+        },
+        {
+          "date": "2021-04-26",
+          "author": "kainino@chromium.org",
+          "hash": "ba30d6e",
+          "subject": "Explainer: bit more editing (#1665)"
+        },
+        {
+          "date": "2021-04-24",
+          "author": "jdarpinian@gmail.com",
+          "hash": "8bc6bba",
+          "subject": "Deploy samples and tools to GitHub pages. (#1669)"
+        },
+        {
+          "date": "2021-04-23",
+          "author": "bajones@chromium.org",
+          "hash": "27f5cc3",
+          "subject": "Change GPUSupportedFeatures entry type to DOMString (#1667)"
+        },
+        {
+          "date": "2021-04-23",
+          "author": "yunchao.he@intel.com",
+          "hash": "36aeace",
+          "subject": "Fix a few tiny issues about references (#1661)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "kvarkus@gmail.com",
+          "hash": "de91714",
+          "subject": "Allow trailing commas in the argument lists, calls, and cases (#1493)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "6a48a6a",
+          "subject": "Fix uniform struct size requirement (#1560)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "5963fc2",
+          "subject": "Describe function calls (#1651)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "corentin@wallez.net",
+          "hash": "6cd1913",
+          "subject": "Add sections on User Agent State for Privacy (#1656)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "alanbaker@google.com",
+          "hash": "ae42b6b",
+          "subject": "[editorial] Remove vector short convenience names (#1657)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "yunchao.he@intel.com",
+          "hash": "17da038",
+          "subject": "Add the definition of renderable format (#1653)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "kainino@chromium.org",
+          "hash": "e6fa132",
+          "subject": "Explainer: editing/clarifications (#1655)"
+        },
+        {
+          "date": "2021-04-22",
+          "author": "dneto@google.com",
+          "hash": "2cd5d0b",
+          "subject": "Fix description of a variable's reference type (#1654)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "alanbaker@google.com",
+          "hash": "40f3712",
+          "subject": "Describe if statements (#1650)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "dneto@google.com",
+          "hash": "4c63310",
+          "subject": "UTF-8 is always a valid encoding for WGSL (#1646)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "alanbaker@google.com",
+          "hash": "e6f0a53",
+          "subject": "Add transpose built-in function (#1648)"
+        },
+        {
+          "date": "2021-04-21",
+          "author": "yunchao.he@intel.com",
+          "hash": "c51b57c",
+          "subject": "Move <Buffer Usage> to a subsection of <Buffer Creation> (#1645)"
+        },
+        {
+          "date": "2021-04-16",
+          "author": "jgilbert@mozilla.com",
+          "hash": "c2bf7a9",
+          "subject": "Add GPUSwapChainAlphaMode = opaque/premultiplied (#1474)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "1e9bec7",
+          "subject": "Explainer: initialization (#1636)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "8542a4f",
+          "subject": "Explainer: image input (#1638)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "corentin@wallez.net",
+          "hash": "d241c93",
+          "subject": "Add derivatives on vector. (#1639)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "f9298b4",
+          "subject": "Explainer: command encoding (#1637)"
+        },
+        {
+          "date": "2021-04-15",
+          "author": "kainino@chromium.org",
+          "hash": "9ce912d",
+          "subject": "Require srcFactor=dstFactor=\"one\" for min/max blend op (#1635)"
+        },
+        {
+          "date": "2021-04-14",
+          "author": "kainino@chromium.org",
+          "hash": "1fb1ba4",
+          "subject": "GPUBlendFactor: remove -component (#1633)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "corentin@wallez.net",
+          "hash": "ddc0374",
+          "subject": "Explainer: Add the security and privacy questionnaire (#1631)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "yunchao.he@intel.com",
+          "hash": "7490036",
+          "subject": "Document texture dimension limits in Limit.md explainer (#1632)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "8518e80",
+          "subject": "rename setBlendColor -> setBlendConstant (#1627)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "c325aaf",
+          "subject": "TypeError on usage of enums from unavailable features (#1628)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "4aa7e32",
+          "subject": "Explainer: Swap Chain (#1618)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "bb938b3",
+          "subject": "Add adapter.[[current]] (#1523)"
+        },
+        {
+          "date": "2021-04-13",
+          "author": "kainino@chromium.org",
+          "hash": "a70049a",
+          "subject": "Explainer: Multithreading (#1616)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "kainino@chromium.org",
+          "hash": "889e02c",
+          "subject": "Naming changes for GPUBlendFactor (#1614)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "bajones@chromium.org",
+          "hash": "fbf37c1",
+          "subject": "Use a setlike for GPUDevice features (#1620)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "dneto@google.com",
+          "hash": "9950506",
+          "subject": "Vector-matrix arithmetic extended with scalar \"splats\" (#1611)"
+        },
+        {
+          "date": "2021-04-12",
+          "author": "kainino@chromium.org",
+          "hash": "ccc4aa5",
+          "subject": "Explainer: mini-section on bitflags (#1615)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "kainino@chromium.org",
+          "hash": "0ecd599",
+          "subject": "Make [[currentTexture]] nullable (#1617)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "hao.x.li@intel.com",
+          "hash": "919958c",
+          "subject": "Add GPUQuerySet state (#1531)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "dneto@google.com",
+          "hash": "1c569ac",
+          "subject": "arrayLength acts on pointer-to-runtime-array (#1619)"
+        },
+        {
+          "date": "2021-04-09",
+          "author": "dneto@google.com",
+          "hash": "b45e16b",
+          "subject": "WGSL: Fix wording (#1612)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "alanbaker@google.com",
+          "hash": "5f46921",
+          "subject": "Add atomics to WGSL (#1448)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kainino@chromium.org",
+          "hash": "7b729db",
+          "subject": "address comment (#1609)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "0e35195",
+          "subject": "Basic description of compute operations"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "78e3abd",
+          "subject": "Re-organize the rendering algorithm into a separate detailed operations section"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kvarkus@gmail.com",
+          "hash": "9f9467e",
+          "subject": "Use sub tab in the polygon rasterization equations"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "kainino@chromium.org",
+          "hash": "5918e3a",
+          "subject": "Explainer: section on errors, start on device loss (#1607)"
+        },
+        {
+          "date": "2021-04-08",
+          "author": "corentin@wallez.net",
+          "hash": "49ece0d",
+          "subject": "Add the buffer mapping explainer (#1600)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "kvarkus@gmail.com",
+          "hash": "c69e206",
+          "subject": "Rasterization of points, more general wording (#1606)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "16c8c88",
+          "subject": "Add WGSL spec writing style guide (#1585)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "alanbaker@google.com",
+          "hash": "ca16707",
+          "subject": "Add interpolation section and attribute (#1605)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "kvarkus@gmail.com",
+          "hash": "81d441a",
+          "subject": "[editorial] Separate sections for the vertex processing and primitive assembly (#1603)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "396db59",
+          "subject": "WIP: Shader lifecycle, and kinds of errors (#1593)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "8268098",
+          "subject": "    WGSL: describe ref ptr (#1569)"
+        },
+        {
+          "date": "2021-04-07",
+          "author": "dneto@google.com",
+          "hash": "791a63f",
+          "subject": "WGSL: add Technical Overview (#1592)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "dneto@google.com",
+          "hash": "cda3661",
+          "subject": "Add section for \"Constant Identifier Expression\" (#1586)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "dneto@google.com",
+          "hash": "3d5871c",
+          "subject": "Add ignore builtin function (#1587)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "kainino@chromium.org",
+          "hash": "e0c18f0",
+          "subject": "Deploy imgs to gh-pages (#1601)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "kainino@chromium.org",
+          "hash": "a231a9f",
+          "subject": "Explainer: Use <object> instead of <img> for SVG (#1602)"
+        },
+        {
+          "date": "2021-04-06",
+          "author": "corentin@wallez.net",
+          "hash": "ace6ee2",
+          "subject": "Replace error_monad_timeline_diagram's PNG with an SVG (#1599)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "kvarkus@gmail.com",
+          "hash": "5f5917d",
+          "subject": "Fix the use of clampDepth (#1598)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "corentin@wallez.net",
+          "hash": "cb355a2",
+          "subject": "Move clampDepth to GPUPrimitiveState. (#1583)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "1e84e39",
+          "subject": "Editorial: Align with Web IDL specification (#1591)"
+        },
+        {
+          "date": "2021-04-05",
+          "author": "corentin@wallez.net",
+          "hash": "329c0e6",
+          "subject": "Explainer: Object validity and destroyedness (#1595)"
+        }
+      ],
+      "testlog": []
     },
     {
       "name": "WOFF File Format",
