@@ -3,11 +3,6 @@
 const browserSpecs = require('browser-specs');
 const fs = require('fs');
 
-// browser-specs shortnames to drop on the floor
-const blocklist = new Set([
-  'css-forms', // https://github.com/w3c/browser-specs/issues/56
-]);
-
 // infer some additional information for an entry
 function completeEntry(entry, mode) {
   const {id, name, href} = entry;
@@ -157,12 +152,12 @@ async function main() {
   console.log('Reading browser-specs');
   const specs = browserSpecs
       .filter((entry) => {
-        if (blocklist.has(entry.shortname) ||
-            blocklist.has(entry.series.shortname)) {
-          return false;
-        }
         // Skip all WebGL extensions
         if (entry.url.startsWith('https://www.khronos.org/registry/webgl/extensions/')) {
+          return false;
+        }
+        // Skip all RFCs
+        if (entry.url.startsWith('https://www.rfc-editor.org/rfc/')) {
           return false;
         }
         // only include the latest level of any spec
