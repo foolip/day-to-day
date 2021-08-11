@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2021-06-14T07:20:54.449Z",
-  "until": "2021-08-10T07:20:54.449Z",
+  "since": "2021-06-15T07:20:55.442Z",
+  "until": "2021-08-11T07:20:55.442Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -45,6 +45,18 @@
       "href": "https://w3c.github.io/manifest/",
       "specrepo": "https://github.com/w3c/manifest",
       "speclog": [
+        {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "1eb7e8c",
+          "subject": "Editorial: switch completely to infra types (#992)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "0e886d1",
+          "subject": "chore: fix link to incubation repo"
+        },
         {
           "date": "2021-07-29",
           "author": "marcos@marcosc.com",
@@ -273,6 +285,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-08-10",
+          "author": "miketaylr@google.com",
+          "hash": "237bc41",
+          "subject": "Issue #121 - Use legacy name alias concept as defined by CSS (#155)"
+        },
+        {
           "date": "2021-06-21",
           "author": "annevk@annevk.nl",
           "hash": "2c0b530",
@@ -321,7 +339,14 @@
       "name": "Contact Picker API",
       "href": "https://wicg.github.io/contact-api/spec/",
       "specrepo": "https://github.com/WICG/contact-api",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "rayankans@chromium.org",
+          "hash": "68846c2",
+          "subject": "Add note about the ContactAddress and link to relevant issue"
+        }
+      ],
       "testlog": []
     },
     {
@@ -561,12 +586,6 @@
           "author": "mats@mozilla.com",
           "hash": "398cdfa444",
           "subject": "Make 'border-image-repeat: space' paint correctly."
-        },
-        {
-          "date": "2021-06-15",
-          "author": "wangxianzhu@chromium.org",
-          "hash": "7d36272315",
-          "subject": "Fix under-invalidation on removal of the document element"
         }
       ]
     },
@@ -1057,15 +1076,15 @@
           "author": "miriam@oddbird.net",
           "hash": "518bb8b03",
           "subject": "[css-contain-3][editorial] Typo on size container types"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "andruud@google.com",
-          "hash": "5304f92f7",
-          "subject": "[css-contain-3] Make the query container an element, ++"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "andruud@chromium.org",
+          "hash": "4c5408d354",
+          "subject": "Don't modify computed value of 'contain' for locked elements"
+        },
         {
           "date": "2021-08-05",
           "author": "rbuis@igalia.com",
@@ -1301,6 +1320,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-08-10",
+          "author": "jackalmage@gmail.com",
+          "hash": "fe5ad42fe",
+          "subject": "[css-flexbox-1] Correctly ignore auto preferred sizes in max-content contributions, as we clearly intended to in 1992cf37ee38bac14336c925b65c053984a5c067. Fixes #6455."
+        },
+        {
+          "date": "2021-08-10",
+          "author": "jackalmage@gmail.com",
+          "hash": "ac8f15a82",
+          "subject": "[css-flexbox-1] Rearrange the definiteness bullets. Slightly rephrase the one about flex container main-size definiteness. Add additional condition about flex-basis definiteness to fix #4311. Remove extraneous note, replace with different useful note."
+        },
+        {
+          "date": "2021-08-10",
+          "author": "jackalmage@gmail.com",
+          "hash": "cae358e4e",
+          "subject": "[css-flexbox] Reword main/cross size dfns. Make it clearer that any reference to used width/height refers to the flexed size."
+        },
+        {
           "date": "2021-08-05",
           "author": "jackalmage@gmail.com",
           "hash": "2fb1046da",
@@ -1326,6 +1363,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-11",
+          "author": "tlin@mozilla.com",
+          "hash": "5b79a374ae",
+          "subject": "Carry mTreatBSizeAsIndefinite flag from scroll frame to scrolled inner frame (-moz-scrolled-content)."
+        },
         {
           "date": "2021-08-10",
           "author": "tlin@mozilla.com",
@@ -1539,27 +1582,15 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "f6dd9cd58",
           "subject": "[css-fonts-5] Copy font-size-adjust definition from css-fonts-4"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "f68b5a314",
-          "subject": "[css-fonts-5] Add vertical metrics overrides. #6152"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "427c650da",
-          "subject": "[css-fonts-5] Make initial value of superscript/subscript overrides be consistent. Fixes error in 057424c #5518"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "04867b628",
-          "subject": "[css-fonts-5] Fix link"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "mats@mozilla.com",
+          "hash": "1baff76794",
+          "subject": "[css-fonts] Implement 'font-synthesis: small-caps'."
+        },
         {
           "date": "2021-08-05",
           "author": "jkew@mozilla.com",
@@ -1595,12 +1626,6 @@
           "author": "jkew@mozilla.com",
           "hash": "3d83b8688b",
           "subject": "Always use DirectWrite to get glyph widths for variable fonts."
-        },
-        {
-          "date": "2021-06-14",
-          "author": "jkew@mozilla.com",
-          "hash": "f69c495b26",
-          "subject": "Add the extended (two-value) font-size-adjust syntax to various WPT tests."
         }
       ]
     },
@@ -1739,12 +1764,6 @@
           "author": "ansollan@microsoft.com",
           "hash": "04a988b876",
           "subject": "[GridNG] Placement of out of flow items in an undefined and empty grid"
-        },
-        {
-          "date": "2021-06-15",
-          "author": "ethavar@microsoft.com",
-          "hash": "f3c0a01c21",
-          "subject": "[GridNG] Second pass for orthogonal grid item contributions"
         }
       ]
     },
@@ -1762,6 +1781,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "ffiori@microsoft.com",
+          "hash": "0f94ca6528",
+          "subject": "Highlight API: Invalidate Highlights before paint"
+        },
         {
           "date": "2021-07-24",
           "author": "ffiori@microsoft.com",
@@ -2358,6 +2383,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2021-08-10",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "3b89d6bfb4",
+          "subject": "Fuzzy match for css/css-position/position-absolute-iframe-print-00*.sub.html"
+        },
+        {
           "date": "2021-08-02",
           "author": "ikilpatrick@chromium.org",
           "hash": "5280b636d9",
@@ -2565,7 +2596,14 @@
       "href": "https://drafts.csswg.org/css-scroll-snap/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "13536+mrobinson@users.noreply.github.com",
+          "hash": "88fb371a7",
+          "subject": "Fix a small typo in css-scroll-snap Overview.bs (#6505)"
+        }
+      ],
       "testlog": [
         {
           "date": "2021-08-02",
@@ -2764,6 +2802,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-08-10",
+          "author": "cathiechen@igalia.com",
+          "hash": "dd5aead14c",
+          "subject": "Add test for aspect-ratio with auto height (#29964)"
+        },
+        {
           "date": "2021-08-03",
           "author": "cathiechen@igalia.com",
           "hash": "f76ae81001",
@@ -2868,18 +2912,6 @@
           "author": "wangxianzhu@chromium.org",
           "hash": "1ab2113baf",
           "subject": "Fix under-invalidation of collapsed border on removal of a table cell"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "wangxianzhu@chromium.org",
-          "hash": "94099cd249",
-          "subject": "Fix duplicated DisplayItem ID for repeating collpsed borders"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "128525f4e4",
-          "subject": "[TableNG] Updated table-cell block-size definiteness rules."
         }
       ]
     },
@@ -3021,18 +3053,6 @@
           "author": "michaelludwig@google.com",
           "hash": "0d8058e03a",
           "subject": "Remove suppression after Skia roll"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "dbaron@chromium.org",
-          "hash": "ca6913e021",
-          "subject": "Make DCHECK() about signs of w test the same condition the caller does."
-        },
-        {
-          "date": "2021-06-14",
-          "author": "dbaron@chromium.org",
-          "hash": "f0b94497ad",
-          "subject": "[TransformInterop] Make blocks whose DOM parent is an inline follow DOM tree."
         }
       ]
     },
@@ -3197,14 +3217,7 @@
           "subject": "[css-values-4] Define small and dynamic variants of viewport-relative units. #4329 #6113 https://lists.w3.org/Archives/Public/www-style/2020Feb/0007.html https://lists.w3.org/Archives/Public/www-style/2021May/0010.html"
         }
       ],
-      "testlog": [
-        {
-          "date": "2021-06-14",
-          "author": "jkew@mozilla.com",
-          "hash": "861e227cab",
-          "subject": "Adjust css-values/ex-unit-001 test to avoid dependency on locally-installed font lookup."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Custom Properties for Cascading Variables",
@@ -3296,10 +3309,10 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
-          "date": "2021-06-14",
+          "date": "2021-08-11",
           "author": "fantasai.bugs@inkedblade.net",
-          "hash": "7e29a7b34",
-          "subject": "[css-writing-modes] Improve intro & cross-linking"
+          "hash": "de44f988b",
+          "subject": "[css-writing-modes-4] Apply ICB clamping on the orthogonal flow, not the closest block container descendant, matching implementations. #4221"
         }
       ],
       "testlog": [
@@ -3326,12 +3339,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "c7fdfb92b4",
           "subject": "[images] Fix vertical writing mode regression."
-        },
-        {
-          "date": "2021-06-14",
-          "author": "futhark@chromium.org",
-          "hash": "ca3c7f1380",
-          "subject": "Don't do body propagation for non-root html"
         }
       ]
     },
@@ -3716,6 +3723,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "masayuki@d-toybox.com",
+          "hash": "57c5ccf560",
+          "subject": "Disable `KeyEvent.initKeyEvent` by default"
+        },
         {
           "date": "2021-06-25",
           "author": "skobes@chromium.org",
@@ -4145,15 +4158,21 @@
           "author": "3889017+ExE-Boss@users.noreply.github.com",
           "hash": "fbdf389",
           "subject": "Editorial: Add support for Abstract Closures to `CreateBuiltinFunction` (#2109)"
-        },
-        {
-          "date": "2021-06-15",
-          "author": "tomac@google.com",
-          "hash": "61cc329",
-          "subject": "Meta: CONTRIBUTING.md: Some changes to make the doc more beginner-friendly (#2431)"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "waldron.rick@gmail.com",
+          "hash": "452c0e5c61",
+          "subject": "Automated assertion message update: Array * (#3140)"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "waldron.rick@gmail.com",
+          "hash": "bb93efdb6b",
+          "subject": "Automated assertion message update (#3136)"
+        },
         {
           "date": "2021-08-06",
           "author": "ftang@chromium.org",
@@ -5158,12 +5177,6 @@
           "author": "annevk@annevk.nl",
           "hash": "acef461",
           "subject": "Elaborate on obtaining a connection"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "fbraun@mozilla.com",
-          "hash": "d0bd853",
-          "subject": "Block ports 989 and 990"
         }
       ],
       "testlog": [
@@ -5663,12 +5676,6 @@
           "author": "marcos@marcosc.com",
           "hash": "41d7945",
           "subject": "Add \"geolocation task queue\" (#87)"
-        },
-        {
-          "date": "2021-06-15",
-          "author": "marcos@marcosc.com",
-          "hash": "71e4213",
-          "subject": "Editorial: cleanup RS config (#89)"
         }
       ],
       "testlog": [
@@ -5779,6 +5786,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "d@domenic.me",
+          "hash": "cdf62c85",
+          "subject": "Change initial about:blank navigation behavior for iframes and popups"
+        },
         {
           "date": "2021-08-06",
           "author": "jarhar@chromium.org",
@@ -6141,6 +6154,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "mwoodrow@mozilla.com",
+          "hash": "df23c7d0b5",
+          "subject": "Recurse into replay for dependencies, rather than using a temp surface."
+        },
+        {
+          "date": "2021-08-10",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "da3d99ed33",
+          "subject": "Test anonymous iframe in cross-origin-isolated context."
+        },
         {
           "date": "2021-08-10",
           "author": "daniec@microsoft.com",
@@ -6728,12 +6753,6 @@
           "author": "rakina@chromium.org",
           "hash": "50b6ca1cfe",
           "subject": "Always use the referrer used to load the document on same-document navigations"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "svillar@igalia.com",
-          "hash": "a8e5772a0f",
-          "subject": "New test for summary element as list item (#29341)"
         }
       ]
     },
@@ -6742,6 +6761,18 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2021-08-11",
+          "author": "cooper@w3.org",
+          "hash": "ef4ec1d",
+          "subject": "Update auto-publish to ARIA WG decision (#343)"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "cooper@w3.org",
+          "hash": "f67cbd7",
+          "subject": "Pub fixes (#341)"
+        },
         {
           "date": "2021-07-20",
           "author": "scottaohara@users.noreply.github.com",
@@ -7812,7 +7843,14 @@
           "subject": "Upstream codec switching (changeType) feature from WICG incubation spec (#274)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "wolenetz@chromium.org",
+          "hash": "60bc5896a5",
+          "subject": "MSE: Strengthen QuotaExceededError validation for fixing spec #288"
+        }
+      ]
     },
     {
       "name": "Media Capture Automation",
@@ -7937,14 +7975,7 @@
       "href": "https://w3c.github.io/mediasession/",
       "specrepo": "https://github.com/w3c/mediasession",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2021-06-15",
-          "author": "steimel@chromium.org",
-          "hash": "c4e2948e3f",
-          "subject": "PiP 1.5: Add external/wpt tests for video conferencing actions"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "MediaStream Recording",
@@ -8342,6 +8373,30 @@
       "specrepo": "https://github.com/w3c/permissions",
       "speclog": [
         {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "e63e690",
+          "subject": "Geolocation is secure context only (#260)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "99a7256",
+          "subject": "MIDI is secure context powerful feature (#261)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "8c38e8e",
+          "subject": "Editorial: mark various permissions at risk (#259)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "marcos@marcosc.com",
+          "hash": "9c6fdc2",
+          "subject": "Add name attribute to PermissionStatus (#248)"
+        },
+        {
           "date": "2021-08-02",
           "author": "marcos@marcosc.com",
           "hash": "5e35b9f",
@@ -8656,18 +8711,6 @@
           "author": "plh@w3.org",
           "hash": "31a20e4",
           "subject": "task queue is not reliable HTML concept. Use event loop instead (#386)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "redux@splintered.co.uk",
-          "hash": "ee5fdbb",
-          "subject": "Consistency: POINTERLOCK > PointerLock"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "redux@splintered.co.uk",
-          "hash": "532148e",
-          "subject": "Consistency: POINTERLOCK > PointerLock"
         }
       ],
       "testlog": []
@@ -8823,12 +8866,6 @@
           "author": "marcos@marcosc.com",
           "hash": "e025115",
           "subject": "Update index.html"
-        },
-        {
-          "date": "2021-06-15",
-          "author": "marcos@marcosc.com",
-          "hash": "cb44ac3",
-          "subject": "Editorial: cleanup + xrefs"
         }
       ],
       "testlog": []
@@ -8845,14 +8882,7 @@
       "name": "Referrer Policy",
       "href": "https://w3c.github.io/webappsec-referrer-policy/",
       "specrepo": "https://github.com/w3c/webappsec-referrer-policy",
-      "speclog": [
-        {
-          "date": "2021-06-15",
-          "author": "anton.sartori@gmail.com",
-          "hash": "a5fc841",
-          "subject": "Adapt to referrer policy being in policy container (#152)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2021-07-19",
@@ -9325,6 +9355,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-08-10",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "bac5e0617f",
+          "subject": "Converted many scroll animation tests to not use timeRange (#29774)"
+        },
+        {
           "date": "2021-07-23",
           "author": "jortaylo@microsoft.com",
           "hash": "e60d962a2c",
@@ -9448,6 +9484,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2021-08-10",
+          "author": "masonf@chromium.org",
+          "hash": "5b48151e2d",
+          "subject": "Revert \"Make classlist update for XML namespace nodes\""
+        },
         {
           "date": "2021-08-09",
           "author": "masonf@chromium.org",
@@ -10977,18 +11019,6 @@
           "author": "Ms2ger@gmail.com",
           "hash": "fc3d98af",
           "subject": "Add instanceof assertions to TemporalHelpers."
-        },
-        {
-          "date": "2021-06-14",
-          "author": "Ms2ger@gmail.com",
-          "hash": "279c01a2",
-          "subject": "Add tests for the shape of constructors."
-        },
-        {
-          "date": "2021-06-14",
-          "author": "Ms2ger@gmail.com",
-          "hash": "346c2975",
-          "subject": "Add more tests for the shape of static methods."
         }
       ],
       "testlog": []
@@ -11198,12 +11228,6 @@
           "author": "5254025+karwa@users.noreply.github.com",
           "hash": "0672f2e",
           "subject": "Prevent the pathname setter from erasing the path of path-only URLs"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "timothygu99@gmail.com",
-          "hash": "107605c",
-          "subject": "Editorial: restate shorten and use it more"
         }
       ],
       "testlog": [
@@ -11573,6 +11597,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-08-10",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "bac5e0617f",
+          "subject": "Converted many scroll animation tests to not use timeRange (#29774)"
+        },
+        {
           "date": "2021-07-23",
           "author": "jortaylo@microsoft.com",
           "hash": "e60d962a2c",
@@ -11740,12 +11770,6 @@
           "author": "hongchan@chromium.org",
           "hash": "c369985c8b",
           "subject": "Fix dynamic processor registration in AudioWorkletGlobalScope"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "rtoy@chromium.org",
-          "hash": "b12b21f9de",
-          "subject": "Adjust test thresholds for Android"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -11814,12 +11838,6 @@
           "author": "mike@w3.org",
           "hash": "1823a4b",
           "subject": "CI: Drop Travis; switch to GitHub Actions with w3c/spec-prod (#1625)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "matthew@millerti.me",
-          "hash": "6ab9d71",
-          "subject": "Add myself to Contributors"
         }
       ],
       "testlog": []
@@ -11829,6 +11847,12 @@
       "href": "https://w3c.github.io/webcodecs/",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "dalecurtis@chromium.org",
+          "hash": "ad5c6a2",
+          "subject": "Fix post-commit review comments for window/worker text."
+        },
         {
           "date": "2021-08-09",
           "author": "dalecurtis@chromium.org",
@@ -12338,6 +12362,18 @@
         {
           "date": "2021-08-10",
           "author": "dalecurtis@chromium.org",
+          "hash": "9e043a7213",
+          "subject": "[WebCodecs] Support SharedArrayBuffer everywhere."
+        },
+        {
+          "date": "2021-08-10",
+          "author": "tguilbert@chromium.org",
+          "hash": "983507742b",
+          "subject": "Add duration to opus encoder output"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "dalecurtis@chromium.org",
           "hash": "d2a2859ce0",
           "subject": "[WebCodecs] Add SharedArrayBuffer support for ImageDecoder."
         },
@@ -12478,12 +12514,6 @@
           "author": "sandersd@chromium.org",
           "hash": "f93078f2cc",
           "subject": "[webcodecs] Rename regions concepts"
-        },
-        {
-          "date": "2021-06-15",
-          "author": "dalecurtis@chromium.org",
-          "hash": "5d07d9b645",
-          "subject": "Add codec specific tests for AudioDecoder. Add mulaw/alaw support."
         }
       ]
     },
@@ -12589,6 +12619,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2021-08-10",
+          "author": "mail@hskupin.info",
+          "hash": "ce3cee1",
+          "subject": "Small updates for steps of 'update the event map' (#129)"
+        },
+        {
           "date": "2021-08-06",
           "author": "james@hoppipolla.co.uk",
           "hash": "68bd48f",
@@ -12630,6 +12666,12 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "dneto@google.com",
+          "hash": "afe5ca8",
+          "subject": "Clarify the uniform array element alignment rule. (#2026)"
+        },
         {
           "date": "2021-08-06",
           "author": "bajones@chromium.org",
@@ -13157,12 +13199,6 @@
           "author": "alanbaker@google.com",
           "hash": "c911158",
           "subject": "Add atomic type to grammar and keywords (#1841)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "kainino@chromium.org",
-          "hash": "6a8917c",
-          "subject": "Rename misleading nonGuaranteed* names (#1804)"
         }
       ],
       "testlog": []
@@ -13290,7 +13326,20 @@
       "name": "Web MIDI API",
       "href": "https://webaudio.github.io/web-midi-api/",
       "specrepo": "https://github.com/WebAudio/web-midi-api",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "23709367+ZingBlue@users.noreply.github.com",
+          "hash": "ae904d6",
+          "subject": "Use HTTPS in URLs"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "23709367+ZingBlue@users.noreply.github.com",
+          "hash": "db473bc",
+          "subject": "Update URL to use github.io"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/WebAudio/web-midi-api/blob/HEAD/README.md"
     },
@@ -13971,18 +14020,6 @@
           "author": "yhirano@chromium.org",
           "hash": "809721b",
           "subject": "Define datagram backpressure control attributes (#267)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "yhirano@chromium.org",
-          "hash": "dec79ad",
-          "subject": "[Editorial] Merge UnidirectionalStreamsTransport into WebTransport (#275)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "yhirano@chromium.org",
-          "hash": "3f15047",
-          "subject": "Define \"queue a network task\" (#274)"
         }
       ],
       "testlog": []
@@ -14081,12 +14118,6 @@
           "author": "bialpio@chromium.org",
           "hash": "e6036168a8",
           "subject": "WebXR: align the behavior of trackedAnchors & detectedPlanes"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "bialpio@chromium.org",
-          "hash": "bc614ca73e",
-          "subject": "WebXR: fix regression in obtaining pose between targetRay and grip space"
         }
       ],
       "testpolicy": "https://github.com/immersive-web/webxr/blob/HEAD/README.md"
@@ -14173,6 +14204,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2021-08-10",
+          "author": "dneto@google.com",
+          "hash": "afe5ca8",
+          "subject": "Clarify the uniform array element alignment rule. (#2026)"
+        },
         {
           "date": "2021-08-06",
           "author": "bajones@chromium.org",
@@ -14700,12 +14737,6 @@
           "author": "alanbaker@google.com",
           "hash": "c911158",
           "subject": "Add atomic type to grammar and keywords (#1841)"
-        },
-        {
-          "date": "2021-06-14",
-          "author": "kainino@chromium.org",
-          "hash": "6a8917c",
-          "subject": "Rename misleading nonGuaranteed* names (#1804)"
         }
       ],
       "testlog": []
