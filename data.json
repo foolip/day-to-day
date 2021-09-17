@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2021-07-22T07:21:27.831Z",
-  "until": "2021-09-17T07:21:27.831Z",
+  "since": "2021-07-22T08:52:41.687Z",
+  "until": "2021-09-17T08:52:41.687Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -66,6 +66,357 @@
         }
       ],
       "testlog": []
+    },
+    {
+      "name": "App History API",
+      "href": "https://wicg.github.io/app-history/",
+      "specrepo": "https://github.com/WICG/app-history",
+      "speclog": [
+        {
+          "date": "2021-09-16",
+          "author": "d@domenic.me",
+          "hash": "e01412f",
+          "subject": "Change the return value of navigating methods"
+        },
+        {
+          "date": "2021-09-14",
+          "author": "d@domenic.me",
+          "hash": "dfcac27",
+          "subject": "Specify the dispose event"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "posva@users.noreply.github.com",
+          "hash": "2ff00a5",
+          "subject": "TypeScript definitions: ignore the promise content for transitionWhile()"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "d@domenic.me",
+          "hash": "d895b2e",
+          "subject": "Editorial: refactor the inner navigate event firing algorithm"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "d@domenic.me",
+          "hash": "a15251d",
+          "subject": "Use HTML's new \"can have its URL rewritten\" definition"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "d@domenic.me",
+          "hash": "06dd010",
+          "subject": "Remove vestigial \"destination entry\" from AppHistoryNavigateEvent"
+        },
+        {
+          "date": "2021-09-02",
+          "author": "d@domenic.me",
+          "hash": "ca3152c",
+          "subject": "Remove inaccurate note about modifying non-current state"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "d@domenic.me",
+          "hash": "1e5ae85",
+          "subject": "Do not set transition when transitionWhile() isn't called"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "d@domenic.me",
+          "hash": "b2a3c88",
+          "subject": "Fix ordering of transition becoming null vs. navigateerror events"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "d@domenic.me",
+          "hash": "ea6164e",
+          "subject": "Further improvements to ongoing navigation tracking"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "d@domenic.me",
+          "hash": "33af84b",
+          "subject": "Editorial: introduce and use the \"current entry\" algorithm"
+        },
+        {
+          "date": "2021-08-19",
+          "author": "d@domenic.me",
+          "hash": "b5d76e3",
+          "subject": "Consolidate ongoing navigation signal tracking"
+        },
+        {
+          "date": "2021-08-19",
+          "author": "d@domenic.me",
+          "hash": "4a3c038",
+          "subject": "Fix the \"rewritable\" definition"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "d@domenic.me",
+          "hash": "f647fa4",
+          "subject": "Fix state tracking for multiple navigations"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "d@domenic.me",
+          "hash": "33a3904",
+          "subject": "Do not iterate over the traversal list while mutating it"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "d@domenic.me",
+          "hash": "86ee2dc",
+          "subject": "Rename respondWith()/canRespond → transitionWhile()/canTransition"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "d@domenic.me",
+          "hash": "68a4f6b",
+          "subject": "Fix event ordering for reentrant navigations"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "d@domenic.me",
+          "hash": "b4c828e",
+          "subject": "Give non-default values for aborted navigation ErrorEvent properties"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "d@domenic.me",
+          "hash": "7485009",
+          "subject": "Remove the IDL from the explainer"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "d@domenic.me",
+          "hash": "f966ea3",
+          "subject": "Specify the easier parts of appHistory.transition"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "d@domenic.me",
+          "hash": "89ef78b",
+          "subject": "Update close watcher proposal link"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "d@domenic.me",
+          "hash": "16c6e27",
+          "subject": "Add appHistory.updateCurrent() to close #115"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "d@domenic.me",
+          "hash": "b7ca24c",
+          "subject": "Rename navigateInfo to info"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "d@domenic.me",
+          "hash": "0e75539",
+          "subject": "Handle navigation and traversal cancelation more uniformly"
+        },
+        {
+          "date": "2021-08-05",
+          "author": "d@domenic.me",
+          "hash": "d9ef55d",
+          "subject": "Change default for info in the event init to undefined"
+        },
+        {
+          "date": "2021-08-05",
+          "author": "d@domenic.me",
+          "hash": "7ba2544",
+          "subject": "Clarify that event.formData is only for \"push\"/\"replace\""
+        },
+        {
+          "date": "2021-08-03",
+          "author": "samthor@users.noreply.github.com",
+          "hash": "1a837bf",
+          "subject": "TypeScript definitions: add event maps"
+        },
+        {
+          "date": "2021-07-30",
+          "author": "tbondwilkinson@gmail.com",
+          "hash": "e0e5a64",
+          "subject": "Add TypeScript type definitions"
+        },
+        {
+          "date": "2021-07-28",
+          "author": "d@domenic.me",
+          "hash": "c91f863",
+          "subject": "Fix AppHistoryNavigateEvent constructor spec"
+        },
+        {
+          "date": "2021-07-28",
+          "author": "d@domenic.me",
+          "hash": "e6cf661",
+          "subject": "Add missing \"readonly\" for appHistory.current IDL"
+        },
+        {
+          "date": "2021-07-28",
+          "author": "d@domenic.me",
+          "hash": "8d28d2f",
+          "subject": "Add missing step to set post-navigate event signal"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "d@domenic.me",
+          "hash": "1fc9a4d",
+          "subject": "Editorial: tweak domintro styling"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "d@domenic.me",
+          "hash": "31243f6",
+          "subject": "Make the stop button properly abort traversals too"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "d@domenic.me",
+          "hash": "02cb604",
+          "subject": "Specify traversal and overhaul ongoing navigation tracking"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "d@domenic.me",
+          "hash": "12d5a1a",
+          "subject": "Fix some missing \"async\"s in README examples"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "d@domenic.me",
+          "hash": "fcba0d4",
+          "subject": "Fix minor bug in index getter spec"
+        },
+        {
+          "date": "2021-07-23",
+          "author": "d@domenic.me",
+          "hash": "6277f4b",
+          "subject": "Expand AppHistoryDestination"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2021-09-09",
+          "author": "domenic@chromium.org",
+          "hash": "8a46b5efbe",
+          "subject": "Implement AppHistoryEntry's dispose event"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "domenic@chromium.org",
+          "hash": "53960f8437",
+          "subject": "Implement the basics of appHistory.transition"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "japhet@chromium.org",
+          "hash": "243ef1fd32",
+          "subject": "Add a test for appHistory.goTo/back/forward navigating multiple frames simultaneously"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "japhet@chromium.org",
+          "hash": "614c5da7e4",
+          "subject": "Prevent double-navigateerror when detaching between a goTo()'s navigate and navigatesuccess"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "japhet@chromium.org",
+          "hash": "d20629e288",
+          "subject": "Don't fire navigateerror twice when a frame is detached inside a navigate event for an appHistory.goTo()"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "japhet@chromium.org",
+          "hash": "df1b98507a",
+          "subject": "Move to_be_set_serialized_state_ to AppHistoryApiNavigation"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "domenic@chromium.org",
+          "hash": "85a7f05aac",
+          "subject": "Another AppHistoryNavigateEvent constructor tweak"
+        },
+        {
+          "date": "2021-08-18",
+          "author": "domenic@chromium.org",
+          "hash": "93e7dda5c5",
+          "subject": "App history: rename respondWith() to transitionWhile()"
+        },
+        {
+          "date": "2021-08-17",
+          "author": "japhet@chromium.org",
+          "hash": "4cc3ad9409",
+          "subject": "Always run AppHistory's ongoing navigation cleanup step"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "japhet@chromium.org",
+          "hash": "c0c7793b94",
+          "subject": "Fire navigateerror correctly for non-appHistory.navigate() navigations"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "japhet@chromium.org",
+          "hash": "555bb75788",
+          "subject": "Store both a ScriptPromise and ScriptPromiseResolver on OngoingNavigation"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "japhet@chromium.org",
+          "hash": "7eb7372a61",
+          "subject": "Support multiple calls to respondWith() for a single AppHistoryNavigateEvent"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "domenic@chromium.org",
+          "hash": "e14d88e66c",
+          "subject": "App history: implement updateCurrent()"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "domenic@chromium.org",
+          "hash": "a8f15155f3",
+          "subject": "App history: implement reload() instead of no-arg navigate()"
+        },
+        {
+          "date": "2021-08-07",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "fb2cca36ea",
+          "subject": "AppHistory ongoing navigation tracking (#29813)"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "domenic@chromium.org",
+          "hash": "bd68e1184f",
+          "subject": "App history: fix event.formData to be POST-only, plus tests"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "domenic@chromium.org",
+          "hash": "59d525c3fc",
+          "subject": "App history: rename navigateInfo to info"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "domenic@chromium.org",
+          "hash": "5227e9bc81",
+          "subject": "Fix minor bugs in AppHistoryNavigateEventInit"
+        },
+        {
+          "date": "2021-07-28",
+          "author": "zino@chromium.org",
+          "hash": "b8788faf1a",
+          "subject": "AppHistory: |canGo*| attributes should returns false if not fully active"
+        },
+        {
+          "date": "2021-07-23",
+          "author": "japhet@chromium.org",
+          "hash": "6dd5241897",
+          "subject": "AppHistoryNavigateEvent.navigationType, AppHistoryDestination.key, and AppHistoryDestination.id"
+        }
+      ]
     },
     {
       "name": "Web Application Manifest",
@@ -451,6 +802,44 @@
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
     },
     {
+      "name": "Close Watcher API",
+      "href": "https://wicg.github.io/close-watcher/",
+      "specrepo": "https://github.com/WICG/close-watcher",
+      "speclog": [
+        {
+          "date": "2021-09-10",
+          "author": "d@domenic.me",
+          "hash": "5233b32",
+          "subject": "Editorial: fix fullscreenchange link"
+        },
+        {
+          "date": "2021-09-10",
+          "author": "d@domenic.me",
+          "hash": "40420cb",
+          "subject": "Reflect the move to WICG"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "cwilso@gmail.com",
+          "hash": "fa17dc8",
+          "subject": "Adding baseline w3c.json"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "cwilso@gmail.com",
+          "hash": "a4ac55a",
+          "subject": "Adding baseline CONTRIBUTING.md"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "projects@warlow.dev",
+          "hash": "76062ca",
+          "subject": "Fix typos in README"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Compatibility",
       "href": "https://compat.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/compat",
@@ -528,6 +917,146 @@
       "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/contentEditable/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "Attribution Reporting",
+      "href": "https://wicg.github.io/conversion-measurement-api/",
+      "specrepo": "https://github.com/WICG/conversion-measurement-api",
+      "speclog": [
+        {
+          "date": "2021-09-15",
+          "author": "turneram@mit.edu",
+          "hash": "bea885f",
+          "subject": "Specify payload format (#203)"
+        },
+        {
+          "date": "2021-09-10",
+          "author": "csharrison@chromium.org",
+          "hash": "5a7c8fd",
+          "subject": "Add 2021-09-07-minutes.md"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "apaseltiner@google.com",
+          "hash": "06a9cea",
+          "subject": "Fix typos and formatting in draft spec (#215)"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "apaseltiner@google.com",
+          "hash": "41221f9",
+          "subject": "Replace another instance of data with trigger-data in redirect (#210)"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "ohtsu@ohtsu.org",
+          "hash": "e824638",
+          "subject": "Fix query parameter name of trigger data (#207)"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "apaseltiner@google.com",
+          "hash": "f519bc0",
+          "subject": "Spec anchor-based view-through measurement"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "linnan@chromium.org",
+          "hash": "9ebb09d",
+          "subject": "Minor updates"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "linnan@chromium.org",
+          "hash": "965eef9",
+          "subject": "Added more details per review suggestion"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "linnan@chromium.org",
+          "hash": "2ffff76",
+          "subject": "Review suggestions"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "linnan@chromium.org",
+          "hash": "b33720f",
+          "subject": "Fixed typo"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "linnan@chromium.org",
+          "hash": "c1702d9",
+          "subject": "Addressed comment"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "linnan@chromium.org",
+          "hash": "1f6bddd",
+          "subject": "Add the new key format for Aggregation Service"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "40465606+johnivdel@users.noreply.github.com",
+          "hash": "32c049b",
+          "subject": "Add source_type to report JSON (#202)"
+        },
+        {
+          "date": "2021-08-25",
+          "author": "csharrison@chromium.org",
+          "hash": "5c1df57",
+          "subject": "add 2021-08-23-minutes.md"
+        },
+        {
+          "date": "2021-08-19",
+          "author": "apaseltiner@google.com",
+          "hash": "8dd78b2",
+          "subject": "Replace attributeon attribute with attributiondestination in aggregate explainer (#196)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "apaseltiner@google.com",
+          "hash": "15c9a85",
+          "subject": "Fix broken links in view-through explainer (#199)"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "apaseltiner@google.com",
+          "hash": "b598113",
+          "subject": "Fix broken link in views explainer (#197)"
+        },
+        {
+          "date": "2021-08-09",
+          "author": "miketaylr@google.com",
+          "hash": "ab27bc8",
+          "subject": "Fix mistakes in sample convert.js module (#178)"
+        },
+        {
+          "date": "2021-08-09",
+          "author": "csharrison@chromium.org",
+          "hash": "74113a8",
+          "subject": "add 2021-08-09-minutes.md"
+        },
+        {
+          "date": "2021-08-06",
+          "author": "apaseltiner@google.com",
+          "hash": "0a639a6",
+          "subject": "Spec trigger priority (#193)"
+        },
+        {
+          "date": "2021-07-27",
+          "author": "csharrison@chromium.org",
+          "hash": "1f4084a",
+          "subject": "Add 2021-07-26-minutes.md"
+        },
+        {
+          "date": "2021-07-23",
+          "author": "apaseltiner@google.com",
+          "hash": "b0f9df6",
+          "subject": "Spec trigger deduplication (#192)"
+        }
+      ],
+      "testlog": []
     },
     {
       "name": "Cookie Store API",
@@ -634,6 +1163,26 @@
       ]
     },
     {
+      "name": "Cross-Origin-Embedder-Policy: credentialless",
+      "href": "https://wicg.github.io/credentiallessness/",
+      "specrepo": "https://github.com/WICG/credentiallessness",
+      "speclog": [
+        {
+          "date": "2021-07-29",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "df1418c",
+          "subject": "Update links to spec and README.md"
+        },
+        {
+          "date": "2021-07-29",
+          "author": "arthursonzogni@chromium.org",
+          "hash": "07b7e1d",
+          "subject": "Remove \"<code>\" that appeared litterally."
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Content Security Policy",
       "href": "https://w3c.github.io/webappsec-csp/",
       "specrepo": "https://github.com/w3c/webappsec-csp",
@@ -672,6 +1221,56 @@
           "subject": "[CSP] Fix WPT still using 'unsafe-hashed-attributes'"
         }
       ]
+    },
+    {
+      "name": "Scripting Policy",
+      "href": "https://wicg.github.io/csp-next/scripting-policy.html",
+      "specrepo": "https://github.com/WICG/csp-next",
+      "speclog": [
+        {
+          "date": "2021-08-31",
+          "author": "mkwst@chromium.org",
+          "hash": "2515d19",
+          "subject": "Update HTML."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "mkwst@google.com",
+          "hash": "7748b67",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "mkwst@google.com",
+          "hash": "ea07c11",
+          "subject": "Point links to WICG."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "yoav@yoav.ws",
+          "hash": "ab83d85",
+          "subject": "Adding baseline w3c.json"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "yoav@yoav.ws",
+          "hash": "2357fa9",
+          "subject": "Adding baseline CODE_OF_CONDUCT.md"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "yoav@yoav.ws",
+          "hash": "00e873a",
+          "subject": "Adding baseline CONTRIBUTING.md"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "yoav@yoav.ws",
+          "hash": "cff6f87",
+          "subject": "Adding baseline LICENSE.md"
+        }
+      ],
+      "testlog": []
     },
     {
       "name": "CSS 2.2",
@@ -3447,7 +4046,7 @@
       ]
     },
     {
-      "name": "CSS Scrollbars",
+      "name": "CSS Scrollbars Styling",
       "href": "https://drafts.csswg.org/css-scrollbars/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
@@ -4203,39 +4802,6 @@
       "testlog": []
     },
     {
-      "name": "WebXR Depth Sensing",
-      "href": "https://immersive-web.github.io/depth-sensing/",
-      "specrepo": "https://github.com/immersive-web/depth-sensing",
-      "speclog": [
-        {
-          "date": "2021-08-30",
-          "author": "atsushi@himor.in",
-          "hash": "63080d1",
-          "subject": "added favicons (#28)"
-        },
-        {
-          "date": "2021-08-30",
-          "author": "atsushi@himor.in",
-          "hash": "bf1b283",
-          "subject": "added TR for bikeshed (#26)"
-        },
-        {
-          "date": "2021-08-30",
-          "author": "atsushi@himor.in",
-          "hash": "69c1783",
-          "subject": "fix image src (#27)"
-        },
-        {
-          "date": "2021-08-24",
-          "author": "atsushi@himor.in",
-          "hash": "b93012c",
-          "subject": "bikeshed to WG (#25)"
-        }
-      ],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/depth-sensing/blob/HEAD/README.md"
-    },
-    {
       "name": "Device Memory",
       "href": "https://w3c.github.io/device-memory/",
       "specrepo": "https://github.com/w3c/device-memory",
@@ -4309,21 +4875,6 @@
           "subject": "Disable `KeyEvent.initKeyEvent` by default"
         }
       ]
-    },
-    {
-      "name": "WebXR DOM Overlays",
-      "href": "https://immersive-web.github.io/dom-overlays/",
-      "specrepo": "https://github.com/immersive-web/dom-overlays",
-      "speclog": [
-        {
-          "date": "2021-08-30",
-          "author": "klausw@users.noreply.github.com",
-          "hash": "ecaea2c",
-          "subject": "Update the abstract"
-        }
-      ],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/dom-overlays/blob/HEAD/README.md"
     },
     {
       "name": "DOM Parsing and Serialization",
@@ -5750,6 +6301,128 @@
       "testlog": []
     },
     {
+      "name": "EyeDropper API",
+      "href": "https://wicg.github.io/eyedropper-api/",
+      "specrepo": "https://github.com/WICG/eyedropper-api",
+      "speclog": [
+        {
+          "date": "2021-09-03",
+          "author": "iopopesc@microsoft.com",
+          "hash": "b3f71db",
+          "subject": "Add AbortSignal parameter to EyeDropper.open."
+        },
+        {
+          "date": "2021-09-02",
+          "author": "iopopesc@microsoft.com",
+          "hash": "6562403",
+          "subject": "Updated S&P self-review to address #11."
+        },
+        {
+          "date": "2021-09-01",
+          "author": "bramus@bram.us",
+          "hash": "3297c5d",
+          "subject": "Fix Code Example"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "iopopesc@microsoft.com",
+          "hash": "f9b0edf",
+          "subject": "Updated spec to address #4."
+        },
+        {
+          "date": "2021-08-12",
+          "author": "iopopesc@microsoft.com",
+          "hash": "479b10c",
+          "subject": "Updated spec to address #5."
+        },
+        {
+          "date": "2021-08-11",
+          "author": "iopopesc@microsoft.com",
+          "hash": "108dde0",
+          "subject": "Update spec."
+        },
+        {
+          "date": "2021-08-10",
+          "author": "iopopesc@microsoft.com",
+          "hash": "64d0ce9",
+          "subject": "Add initial spec."
+        },
+        {
+          "date": "2021-08-09",
+          "author": "iopopesc@microsoft.com",
+          "hash": "bcfec74",
+          "subject": "Update links to match new location."
+        },
+        {
+          "date": "2021-08-09",
+          "author": "iopopesc@microsoft.com",
+          "hash": "8cfc7ac",
+          "subject": "Update README.md from explainer."
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "7357bda",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "2bb09f2",
+          "subject": "Create security-privacy.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "91ab063",
+          "subject": "Add files via upload"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "f295293",
+          "subject": "Create explainer.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "a01b7e8",
+          "subject": "Adding baseline w3c.json"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "92914b0",
+          "subject": "Adding baseline index.html"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "c927feb",
+          "subject": "Adding baseline CODE_OF_CONDUCT.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "b7efb41",
+          "subject": "Adding baseline README.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "d16ffc6",
+          "subject": "Adding baseline CONTRIBUTING.md"
+        },
+        {
+          "date": "2021-08-03",
+          "author": "travil@microsoft.com",
+          "hash": "c2dd1c9",
+          "subject": "Adding baseline LICENSE.md"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Fetch",
       "href": "https://fetch.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/fetch",
@@ -6245,34 +6918,6 @@
       ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gyroscope/blob/HEAD/CONTRIBUTING.md"
-    },
-    {
-      "name": "WebXR Hit Test",
-      "href": "https://immersive-web.github.io/hit-test/",
-      "specrepo": "https://github.com/immersive-web/hit-test",
-      "speclog": [
-        {
-          "date": "2021-08-28",
-          "author": "atsushi@himor.in",
-          "hash": "d882f57",
-          "subject": "added favicon files"
-        },
-        {
-          "date": "2021-08-28",
-          "author": "atsushi@himor.in",
-          "hash": "8796383",
-          "subject": "added TR for bikeshed"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2021-09-15",
-          "author": "philip@foolip.org",
-          "hash": "1a9d369d5b",
-          "subject": "Rename WebXR IDL files to match webref (#30793)"
-        }
-      ],
-      "testpolicy": "https://github.com/immersive-web/hit-test/blob/HEAD/README.md"
     },
     {
       "name": "High Resolution Time",
@@ -7715,6 +8360,13 @@
       "testlog": []
     },
     {
+      "name": "Ink API",
+      "href": "https://wicg.github.io/ink-enhancement/",
+      "specrepo": "https://github.com/WICG/ink-enhancement",
+      "speclog": [],
+      "testlog": []
+    },
+    {
       "name": "Input Device Capabilities",
       "href": "https://wicg.github.io/input-device-capabilities/",
       "specrepo": "https://github.com/WICG/input-device-capabilities",
@@ -8694,24 +9346,6 @@
           "author": "marcos@marcosc.com",
           "hash": "bd66908",
           "subject": "chore: revert previousPublishDate"
-        },
-        {
-          "date": "2021-07-22",
-          "author": "marcos@marcosc.com",
-          "hash": "53df427",
-          "subject": "chore: try different previousPublishDate"
-        },
-        {
-          "date": "2021-07-22",
-          "author": "marcos@marcosc.com",
-          "hash": "9ff0be2",
-          "subject": "Editorial: further word smithing of JSON-serialize"
-        },
-        {
-          "date": "2021-07-22",
-          "author": "marcos@marcosc.com",
-          "hash": "a7b4138",
-          "subject": "Editorial: simplify + export JSON-serialize"
         }
       ],
       "testlog": [
@@ -9952,6 +10586,285 @@
       "testlog": []
     },
     {
+      "name": "Secure Payment Confirmation",
+      "href": "https://w3c.github.io/secure-payment-confirmation",
+      "specrepo": "https://github.com/w3c/secure-payment-confirmation",
+      "speclog": [
+        {
+          "date": "2021-09-16",
+          "author": "rouslan@chromium.org",
+          "hash": "db561eb",
+          "subject": "Update spec.bs"
+        },
+        {
+          "date": "2021-09-16",
+          "author": "ij@w3.org",
+          "hash": "78f5b4b",
+          "subject": "minor editorial"
+        },
+        {
+          "date": "2021-09-16",
+          "author": "rouslan@chromium.org",
+          "hash": "a97486f",
+          "subject": "Update developer-guide.md"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "ae515e2",
+          "subject": "[Explainer] Add a diagram showing SPC authentication (#126)"
+        },
+        {
+          "date": "2021-08-30",
+          "author": "ij@w3.org",
+          "hash": "f93ad24",
+          "subject": "fixed link to webauthn3 accessibility considerations (but their anchor has a typo...leaving as is for now)"
+        },
+        {
+          "date": "2021-08-30",
+          "author": "ij@w3.org",
+          "hash": "c713891",
+          "subject": "Empty level (otherwise URL messed up for publication)"
+        },
+        {
+          "date": "2021-08-27",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "aad8ea7",
+          "subject": "[Spec] Address fixups from spec mentor review (#122)"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "e937e92",
+          "subject": "[Editorial] Format parts of spec.bs to 80-wide (#121)"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "0584229",
+          "subject": "[Spec] Write the 'transaction UX' section (#114)"
+        },
+        {
+          "date": "2021-08-25",
+          "author": "ij@w3.org",
+          "hash": "320ac6c",
+          "subject": "Address issue #119"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "24997c1",
+          "subject": "[README] Update the README (#117)"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "2767b01",
+          "subject": "[TAG] Update the security/privacy questionnaire (#116)"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "smcgruer@chromium.org",
+          "hash": "9519e16",
+          "subject": "[Infra] Correct typo in action file"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "smcgruer@chromium.org",
+          "hash": "2aad80e",
+          "subject": "[Infra] Fixup; specify the right destination for w3c/spec-prod"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "smcgruer@chromium.org",
+          "hash": "8426921",
+          "subject": "[Infra] Try switching to w3c/spec-prod action"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "73ddd72",
+          "subject": "[Editorial] Fix typo in explainer.md"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "ij@w3.org",
+          "hash": "0ba14d5",
+          "subject": "preparing for FPWD (and then auto-publishing) For TR publishing, need to manually adjust the Status in spec.bs; that will be done separately"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "7abc234",
+          "subject": "[Explainer] Re-write the explainer to best-practices, part 3/n (#113)"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "5906d61",
+          "subject": "[Explainer] Re-write the explainer to best-practices, part 2/n (#112)"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "ij@w3.org",
+          "hash": "9d60a47",
+          "subject": "In alignment with Web Authentication, use \"registration\" instead of \"enrollment\" https://w3c.github.io/webauthn/#sctn-usecase-registration"
+        },
+        {
+          "date": "2021-08-22",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "9f3e115",
+          "subject": "[Spec] Write up Security & Privacy sections (#111)"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "ij@w3.org",
+          "hash": "4c5e898",
+          "subject": "Edits to note for 104"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "ij@w3.org",
+          "hash": "44ef82b",
+          "subject": "[Explainer] Clarify start/end of API call (#110)"
+        },
+        {
+          "date": "2021-08-19",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "e4a2564",
+          "subject": "[Explainer] Re-write the explainer to best-practices, part 1/n (#108)"
+        },
+        {
+          "date": "2021-08-17",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "6579389",
+          "subject": "[Spec] Bugfix: rpOrigin --> rp (#107)"
+        },
+        {
+          "date": "2021-08-17",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "10f1b5d",
+          "subject": "[Spec] Require that `payeeOrigin` is fully qualified (#105)"
+        },
+        {
+          "date": "2021-08-17",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "6173bf7",
+          "subject": "[Spec] Minor fixups suggested by domfarolino (#106)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "ij@w3.org",
+          "hash": "89c7798",
+          "subject": "Speak to Gerhard's questions about reuse in both directions."
+        },
+        {
+          "date": "2021-08-13",
+          "author": "smcgruer@google.com",
+          "hash": "2205b0f",
+          "subject": "Enable PR previews of spec changes"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "ij@w3.org",
+          "hash": "28187b4",
+          "subject": "updated key requirement re: relaxing of same origin policy for credential usage"
+        },
+        {
+          "date": "2021-08-11",
+          "author": "smcgruer@google.com",
+          "hash": "139bac5",
+          "subject": "[Ignore] Empty commit to trigger spec build"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "stephen.mcgruer@gmail.com",
+          "hash": "3400bb7",
+          "subject": "[Spec] Various spec improvements (#100)"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "ij@w3.org",
+          "hash": "b5b238e",
+          "subject": "editorial"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "ij@w3.org",
+          "hash": "c9a962f",
+          "subject": "More RS feedback"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "ij@w3.org",
+          "hash": "5392333",
+          "subject": "shortened after RS feedback"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "ij@w3.org",
+          "hash": "814bb4b",
+          "subject": "New note with background on current shape of API and setting expectation it will change."
+        },
+        {
+          "date": "2021-07-27",
+          "author": "adrian@hopebailie.com",
+          "hash": "772adad",
+          "subject": "Remove custom CollectedClientData handling Don't set type to payment.create Remove note re getClientExtensionResults"
+        },
+        {
+          "date": "2021-07-23",
+          "author": "smcgruer@google.com",
+          "hash": "b24080d",
+          "subject": "[Explainer] Remove fallbackUrl entirely"
+        },
+        {
+          "date": "2021-07-22",
+          "author": "smcgruer@google.com",
+          "hash": "4d5373c",
+          "subject": "[Spec] Add payeeOrigin"
+        },
+        {
+          "date": "2021-07-22",
+          "author": "ij@w3.org",
+          "hash": "b73ec95",
+          "subject": "tweaks from SM"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2021-09-04",
+          "author": "smcgruer@chromium.org",
+          "hash": "27cce2fd19",
+          "subject": "[SPC] Remove WPT tests that involve PaymentOptions"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "smcgruer@chromium.org",
+          "hash": "96387bea0b",
+          "subject": "[SPC] Remove 'action' field from WPT tests"
+        },
+        {
+          "date": "2021-08-25",
+          "author": "maxlg@chromium.org",
+          "hash": "d10551f1cb",
+          "subject": "[SPCM95] Add WPT tests for payment credential creation"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "maxlg@chromium.org",
+          "hash": "0002587916",
+          "subject": "[SPCM95] Missing PayeeOrigin fails the WPTs"
+        },
+        {
+          "date": "2021-08-20",
+          "author": "maxlg@chromium.org",
+          "hash": "c049a2faf2",
+          "subject": "[SPCM95] Remove networkData from  tests"
+        }
+      ]
+    },
+    {
       "name": "Selection API",
       "href": "https://w3c.github.io/selection-api/",
       "specrepo": "https://github.com/w3c/selection-api",
@@ -10415,6 +11328,170 @@
       "testlog": []
     },
     {
+      "name": "Intl Locale Info Proposal",
+      "href": "https://tc39.es/proposal-intl-locale-info/",
+      "specrepo": "https://github.com/tc39/proposal-intl-locale-info",
+      "speclog": [
+        {
+          "date": "2021-09-09",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "ca24bfb",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "a3bdede",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "c953c0a",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "3d8244f",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "79cada0",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "611fdab",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "6d98edd",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "66888ca",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "f00a932",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "ftang@google.com",
+          "hash": "4183d5b",
+          "subject": "Update annexes.html"
+        },
+        {
+          "date": "2021-09-09",
+          "author": "rcintra@igalia.com",
+          "hash": "5e5117e",
+          "subject": "fix: change timezone and hourcycle to camelCase"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "966c5ef",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "ftang@google.com",
+          "hash": "50491d2",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "ftang@google.com",
+          "hash": "6e89f48",
+          "subject": "change README.md to sync with spec."
+        },
+        {
+          "date": "2021-09-07",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "5566dba",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "ftang@chromium.org",
+          "hash": "6398bb5",
+          "subject": "Change weekInfo to express non-continouse weekend"
+        },
+        {
+          "date": "2021-08-25",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "41fc12c",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-25",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "1b027ff",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "2ec2ac6",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "ftang@chromium.org",
+          "hash": "62711da",
+          "subject": "Add changes to Annex A Implementation Dependent Behaviour"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "cda5a3c",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "ftang@google.com",
+          "hash": "485f2ed",
+          "subject": "Rename ...AndPreferred to ...OrRestricted"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "1b0b941",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "ftang@google.com",
+          "hash": "7405401",
+          "subject": "Update locale.html"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "5f0f9ec",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "ftang@google.com",
+          "hash": "2d7c5b8",
+          "subject": "Editorial: Make all AOs take Intl.Locale"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "JSON modules",
       "href": "https://tc39.es/proposal-json-modules/",
       "specrepo": "https://github.com/tc39/proposal-json-modules",
@@ -10433,32 +11510,6 @@
       "href": "https://tc39.es/proposal-private-methods/",
       "specrepo": "https://github.com/tc39/proposal-private-methods",
       "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Realms API",
-      "href": "https://tc39.es/proposal-realms/",
-      "specrepo": "https://github.com/tc39/proposal-realms",
-      "speclog": [
-        {
-          "date": "2021-09-08",
-          "author": "leonardo.balter@gmail.com",
-          "hash": "cfea5f0",
-          "subject": "Meta: Fix Typo"
-        },
-        {
-          "date": "2021-09-08",
-          "author": "leonardo.balter@gmail.com",
-          "hash": "0ca0d87",
-          "subject": "Editorial: Rename HostInitializeSyntheticRealm to HostInitializeShadowRealm"
-        },
-        {
-          "date": "2021-09-08",
-          "author": "leonardo.balter@gmail.com",
-          "hash": "789874f",
-          "subject": "Normative: Rename Realm to ShadowRealm"
-        }
-      ],
       "testlog": []
     },
     {
@@ -10516,6 +11567,32 @@
           "author": "shu@rfrn.org",
           "hash": "6d5ad44",
           "subject": "Fix OOB checks in TA methods (#69)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "ShadowRealm API",
+      "href": "https://tc39.es/proposal-shadowrealm/",
+      "specrepo": "https://github.com/tc39/proposal-shadowrealm",
+      "speclog": [
+        {
+          "date": "2021-09-08",
+          "author": "leonardo.balter@gmail.com",
+          "hash": "cfea5f0",
+          "subject": "Meta: Fix Typo"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "leonardo.balter@gmail.com",
+          "hash": "0ca0d87",
+          "subject": "Editorial: Rename HostInitializeSyntheticRealm to HostInitializeShadowRealm"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "leonardo.balter@gmail.com",
+          "hash": "789874f",
+          "subject": "Normative: Rename Realm to ShadowRealm"
         }
       ],
       "testlog": []
@@ -11773,6 +12850,423 @@
       ]
     },
     {
+      "name": "URLPattern API",
+      "href": "https://wicg.github.io/urlpattern/",
+      "specrepo": "https://github.com/WICG/urlpattern",
+      "speclog": [
+        {
+          "date": "2021-09-08",
+          "author": "wanderview@chromium.org",
+          "hash": "13c9542",
+          "subject": "Do not insert leading slashes when canonicalizing pathnames. (Fixes #128)"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "wanderview@chromium.org",
+          "hash": "ee17c45",
+          "subject": "Use standard pathname canonicalization when the protocol is the empty string. (Fixes #122)"
+        },
+        {
+          "date": "2021-09-08",
+          "author": "wanderview@chromium.org",
+          "hash": "ad777fe",
+          "subject": "Add original baseURL string to result.inputs. (Fixes #133)"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "hello@lcas.dev",
+          "hash": "8f8080e",
+          "subject": "use `seek and get the next code point`"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "hello@lcas.dev",
+          "hash": "e8e6623",
+          "subject": "use &minus;"
+        },
+        {
+          "date": "2021-09-07",
+          "author": "hello@lcas.dev",
+          "hash": "af1a630",
+          "subject": "&minus; 1"
+        },
+        {
+          "date": "2021-09-06",
+          "author": "hello@lcas.dev",
+          "hash": "dcbb8a0",
+          "subject": "Add missing \"continue\" in pattern parser"
+        },
+        {
+          "date": "2021-09-06",
+          "author": "hello@lcas.dev",
+          "hash": "41bcf8d",
+          "subject": "Handle no baseURL + relative input failure case"
+        },
+        {
+          "date": "2021-09-06",
+          "author": "hello@lcas.dev",
+          "hash": "80fa5e7",
+          "subject": "Use exclusive substring in make component string"
+        },
+        {
+          "date": "2021-09-06",
+          "author": "hello@lcas.dev",
+          "hash": "5ac6eea",
+          "subject": "Fix constructor string parser `change state` algo"
+        },
+        {
+          "date": "2021-09-06",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "15b2e0b",
+          "subject": "Editorial: Align with Web IDL specification"
+        },
+        {
+          "date": "2021-09-04",
+          "author": "hello@lcas.dev",
+          "hash": "a820316",
+          "subject": "Fix"
+        },
+        {
+          "date": "2021-09-04",
+          "author": "hello@lcas.dev",
+          "hash": "47a8d7a",
+          "subject": "Do the same for regexp"
+        },
+        {
+          "date": "2021-09-04",
+          "author": "hello@lcas.dev",
+          "hash": "a9bc7a3",
+          "subject": "Reset the tokenizer next index before tokenizing"
+        },
+        {
+          "date": "2021-09-04",
+          "author": "hello@lcas.dev",
+          "hash": "c134e3b",
+          "subject": "Continue after tokenizing name"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "wanderview@chromium.org",
+          "hash": "0b0c53a",
+          "subject": "Support pattern syntax in ipv6 hostnames. (Fixes #115)"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "wanderview@chromium.org",
+          "hash": "39428c3",
+          "subject": "Make encoding callbacks short circuit on empty strings. (Fixes #118)"
+        },
+        {
+          "date": "2021-09-03",
+          "author": "wanderview@chromium.org",
+          "hash": "ed3d745",
+          "subject": "Convert null pattern strings to '*'. (Fixes #117)"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "wanderview@chromium.org",
+          "hash": "7715449",
+          "subject": "Add support for ipv6 hostnames to the constructor string parser. (Fixes #113)"
+        },
+        {
+          "date": "2021-09-01",
+          "author": "wanderview@chromium.org",
+          "hash": "bce1764",
+          "subject": "Replace 'should treat as standard URL' terminology. (Fixes #111)"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "dc5145b",
+          "subject": "Update spec text to match final implementation. (#99)"
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "7d8da85",
+          "subject": "Process relative pathnames in URLPatternInit. (Fixes #106) (#107)"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "wanderview@chromium.org",
+          "hash": "21aa220",
+          "subject": "Fix the regexp generated for some patterns. (Fixes #99)"
+        },
+        {
+          "date": "2021-08-26",
+          "author": "wanderview@chromium.org",
+          "hash": "4e4c669",
+          "subject": "Update text to clarify desired discussion usage."
+        },
+        {
+          "date": "2021-08-23",
+          "author": "wanderview@chromium.org",
+          "hash": "6caa741",
+          "subject": "Link to css-tricks article."
+        },
+        {
+          "date": "2021-08-17",
+          "author": "wanderview@chromium.org",
+          "hash": "96fb2ce",
+          "subject": "Throw on duplicate group names within a component pattern string. (Fixes #96)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "1d4b697",
+          "subject": "Fix typo in devtrials feedback."
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "50dbe61",
+          "subject": "Use code point substring algorithm. (#68)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "224b453",
+          "subject": "Add some missing \"is true\" text. (Fixes #89)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "bb67d03",
+          "subject": "Make protocol arg to \"canonicalize a port\" optional. (Fixes #90)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "aa2bbfa",
+          "subject": "Fix \"give\" to \"given\" in a number of places.  (Fixes #92)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "bca6cdf",
+          "subject": "Simplify \"change state\" algorithm. (Fixes #93)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "b9daee3",
+          "subject": "Fix formatting in step 2 of \"is a search prefix\".  (Fixes #94)"
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "0ebf7d1",
+          "subject": "Don't assert that part name is not null. (Fixes #95)"
+        },
+        {
+          "date": "2021-08-13",
+          "author": "wanderview@chromium.org",
+          "hash": "2daf29b",
+          "subject": "Link \"additional feedback\" to opening a new issue."
+        },
+        {
+          "date": "2021-08-13",
+          "author": "wanderview@chromium.org",
+          "hash": "c9d3506",
+          "subject": "Create a summary of dev-trial feedback so far."
+        },
+        {
+          "date": "2021-08-13",
+          "author": "wanderview@chromium.org",
+          "hash": "49f143c",
+          "subject": "Reference more code point literals using 'U+002A' notation."
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "49ed9b9",
+          "subject": "Update the domintro section. (Fixes #76) (#86)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "957f54b",
+          "subject": "Add status text indicating goal to move to WHATWG URL workstream. (Fixes #17)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "f0fde43",
+          "subject": "Add a note that implementations do not have to use regexps to match. (#85)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "125023f",
+          "subject": "Reorder argument to compile-a-component to match how they were actually getting passed. (Fixed #82)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "10e3f3a",
+          "subject": "Add missing arguments to is-a-non-special-pattern-char. (Fixes #81)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "ae1daac",
+          "subject": "Increment the index in escape a pattern string."
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "10b9f00",
+          "subject": "Fix an add-a-token to be add-a-token-with-default-position-and-length. (Fixes #72)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "261a622",
+          "subject": "Add missing index increment in escape a regexp string. (Fixes #71)"
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "bd172d6",
+          "subject": "Fix a small typo in a constructor string parser note."
+        },
+        {
+          "date": "2021-08-12",
+          "author": "wanderview@chromium.org",
+          "hash": "493de8e",
+          "subject": "Spec the constructor string parser."
+        },
+        {
+          "date": "2021-08-11",
+          "author": "wanderview@chromium.org",
+          "hash": "a685665",
+          "subject": "Spec the constructor except for the constructor string parser."
+        },
+        {
+          "date": "2021-08-11",
+          "author": "wanderview@chromium.org",
+          "hash": "e0a574f",
+          "subject": "Actually add the token to the list in 'Add a Token'. (Fixes #70)"
+        },
+        {
+          "date": "2021-08-10",
+          "author": "wanderview@chromium.org",
+          "hash": "83a6925",
+          "subject": "Restructure doc and fill out canonicalization section."
+        },
+        {
+          "date": "2021-07-29",
+          "author": "wanderview@chromium.org",
+          "hash": "9c549f9",
+          "subject": "Spec regular expression generation."
+        },
+        {
+          "date": "2021-07-29",
+          "author": "wanderview@chromium.org",
+          "hash": "2e0eae9",
+          "subject": "Spec generating a pattern string from a part list."
+        },
+        {
+          "date": "2021-07-29",
+          "author": "wanderview@chromium.org",
+          "hash": "7a58f60",
+          "subject": "Spec the pattern string parser."
+        },
+        {
+          "date": "2021-07-22",
+          "author": "wanderview@chromium.org",
+          "hash": "70b4308",
+          "subject": "Spec the pattern string tokenizer."
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2021-09-10",
+          "author": "wanderview@chromium.org",
+          "hash": "1455abb7c6",
+          "subject": "URLPattern: Make method URLPatternInit args optional."
+        },
+        {
+          "date": "2021-09-10",
+          "author": "wanderview@chromium.org",
+          "hash": "50f3e3a19f",
+          "subject": "URLPattern: Throw on more illegal hostname code points."
+        },
+        {
+          "date": "2021-09-08",
+          "author": "wanderview@chromium.org",
+          "hash": "9ed05ce5db",
+          "subject": "URLPattern: Support pattern syntax in IPv6 hostnames."
+        },
+        {
+          "date": "2021-09-02",
+          "author": "wanderview@chromium.org",
+          "hash": "4a8e1e0817",
+          "subject": "URLPattern: Support constructor strings with ipv6 addresses."
+        },
+        {
+          "date": "2021-09-01",
+          "author": "wanderview@chromium.org",
+          "hash": "72cebca780",
+          "subject": "URLPattern: Fix matched values for ':name*' patterns."
+        },
+        {
+          "date": "2021-09-01",
+          "author": "wanderview@chromium.org",
+          "hash": "c472b505c6",
+          "subject": "URLPattern: Test that bad URL inputs to match routines return failure."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "3a3861a77c",
+          "subject": "URLPattern: Add test covering construction using init and baseURL args."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "c9f62462d6",
+          "subject": "URLPattern: Add comparison tests for all components."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "0c53a8cd1a",
+          "subject": "URLPattern: Add more relative pathname pattern tests."
+        },
+        {
+          "date": "2021-08-31",
+          "author": "wanderview@chromium.org",
+          "hash": "045e9f6cdc",
+          "subject": "URLPattern: Test unnamed segment wildcards."
+        },
+        {
+          "date": "2021-08-17",
+          "author": "wanderview@chromium.org",
+          "hash": "90fa23d11b",
+          "subject": "URLPattern: Add WPT test case for empty string baseURL."
+        },
+        {
+          "date": "2021-08-17",
+          "author": "wanderview@chromium.org",
+          "hash": "dd1bd45104",
+          "subject": "URLPattern: Throw on duplicate group names."
+        },
+        {
+          "date": "2021-08-16",
+          "author": "wanderview@chromium.org",
+          "hash": "168fb01517",
+          "subject": "URLPattern: Use default options for cannot-be-a-base pathnames."
+        },
+        {
+          "date": "2021-07-28",
+          "author": "wanderview@chromium.org",
+          "hash": "2f4642d50f",
+          "subject": "URLPattern: Implement compareComponent() method."
+        }
+      ]
+    },
+    {
       "name": "User Preference Media Features Client Hints Headers",
       "href": "https://wicg.github.io/user-preference-media-features-headers/",
       "specrepo": "https://github.com/WICG/user-preference-media-features-headers",
@@ -11863,6 +13357,68 @@
       "href": "https://wicg.github.io/video-rvfc/",
       "specrepo": "https://github.com/WICG/video-rvfc",
       "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "VirtualKeyboard API",
+      "href": "https://w3c.github.io/virtual-keyboard/",
+      "specrepo": "https://github.com/w3c/virtual-keyboard",
+      "speclog": [
+        {
+          "date": "2021-08-23",
+          "author": "siusinng@gmail.com",
+          "hash": "5918ff4",
+          "subject": "add branch name"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "siusinng@gmail.com",
+          "hash": "2450073",
+          "subject": "div not allow in dl"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "siusinng@gmail.com",
+          "hash": "dee2bb4",
+          "subject": "update status"
+        },
+        {
+          "date": "2021-08-23",
+          "author": "siusinng@gmail.com",
+          "hash": "3c69a3f",
+          "subject": "fix typos"
+        },
+        {
+          "date": "2021-08-21",
+          "author": "siusinng@gmail.com",
+          "hash": "af0cc35",
+          "subject": "Adding baseline CODE_OF_CONDUCT.md"
+        },
+        {
+          "date": "2021-08-21",
+          "author": "siusinng@gmail.com",
+          "hash": "6e667da",
+          "subject": "update README"
+        },
+        {
+          "date": "2021-08-21",
+          "author": "siusinng@gmail.com",
+          "hash": "0503029",
+          "subject": "update README"
+        },
+        {
+          "date": "2021-08-21",
+          "author": "siusinng@gmail.com",
+          "hash": "1a4446b",
+          "subject": "setting"
+        },
+        {
+          "date": "2021-08-21",
+          "author": "siusinng@gmail.com",
+          "hash": "369dfa6",
+          "subject": "initialize"
+        }
+      ],
       "testlog": []
     },
     {
@@ -13339,6 +14895,18 @@
       "specrepo": "https://github.com/w3c/webdriver",
       "speclog": [
         {
+          "date": "2021-09-17",
+          "author": "mail@hskupin.info",
+          "hash": "34d0b5b",
+          "subject": "Update contentEditable link to official draft."
+        },
+        {
+          "date": "2021-09-17",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "8ea0018",
+          "subject": "Fix Respec errors"
+        },
+        {
           "date": "2021-09-10",
           "author": "james@hoppipolla.co.uk",
           "hash": "d8556ca",
@@ -14699,6 +16267,54 @@
       "testpolicy": "https://github.com/immersive-web/webxr-ar-module/blob/HEAD/README.md"
     },
     {
+      "name": "WebXR Depth Sensing",
+      "href": "https://immersive-web.github.io/depth-sensing/",
+      "specrepo": "https://github.com/immersive-web/depth-sensing",
+      "speclog": [
+        {
+          "date": "2021-08-30",
+          "author": "atsushi@himor.in",
+          "hash": "63080d1",
+          "subject": "added favicons (#28)"
+        },
+        {
+          "date": "2021-08-30",
+          "author": "atsushi@himor.in",
+          "hash": "bf1b283",
+          "subject": "added TR for bikeshed (#26)"
+        },
+        {
+          "date": "2021-08-30",
+          "author": "atsushi@himor.in",
+          "hash": "69c1783",
+          "subject": "fix image src (#27)"
+        },
+        {
+          "date": "2021-08-24",
+          "author": "atsushi@himor.in",
+          "hash": "b93012c",
+          "subject": "bikeshed to WG (#25)"
+        }
+      ],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/depth-sensing/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR DOM Overlays",
+      "href": "https://immersive-web.github.io/dom-overlays/",
+      "specrepo": "https://github.com/immersive-web/dom-overlays",
+      "speclog": [
+        {
+          "date": "2021-08-30",
+          "author": "klausw@users.noreply.github.com",
+          "hash": "ecaea2c",
+          "subject": "Update the abstract"
+        }
+      ],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/dom-overlays/blob/HEAD/README.md"
+    },
+    {
       "name": "WebXR Gamepads Module",
       "href": "https://immersive-web.github.io/webxr-gamepads-module/",
       "specrepo": "https://github.com/immersive-web/webxr-gamepads-module",
@@ -14757,6 +16373,34 @@
       ],
       "testlog": [],
       "testpolicy": "https://github.com/immersive-web/webxr-hand-input/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Hit Test",
+      "href": "https://immersive-web.github.io/hit-test/",
+      "specrepo": "https://github.com/immersive-web/hit-test",
+      "speclog": [
+        {
+          "date": "2021-08-28",
+          "author": "atsushi@himor.in",
+          "hash": "d882f57",
+          "subject": "added favicon files"
+        },
+        {
+          "date": "2021-08-28",
+          "author": "atsushi@himor.in",
+          "hash": "8796383",
+          "subject": "added TR for bikeshed"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2021-09-15",
+          "author": "philip@foolip.org",
+          "hash": "1a9d369d5b",
+          "subject": "Rename WebXR IDL files to match webref (#30793)"
+        }
+      ],
+      "testpolicy": "https://github.com/immersive-web/hit-test/blob/HEAD/README.md"
     },
     {
       "name": "WebXR Layers API",
