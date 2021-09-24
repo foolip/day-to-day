@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2021-07-28T07:21:56.910Z",
-  "until": "2021-09-23T07:21:56.910Z",
+  "since": "2021-07-29T07:21:35.090Z",
+  "until": "2021-09-24T07:21:35.090Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -72,6 +72,24 @@
       "href": "https://wicg.github.io/app-history/",
       "specrepo": "https://github.com/WICG/app-history",
       "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "d@domenic.me",
+          "hash": "f69e811",
+          "subject": "Editorial: move some stuff out of the Introspecting section"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "d@domenic.me",
+          "hash": "6f7b328",
+          "subject": "Disable most of the API on opaque origins"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "d@domenic.me",
+          "hash": "1d50439",
+          "subject": "Don't fire navigate for non-fetch-scheme cases"
+        },
         {
           "date": "2021-09-16",
           "author": "d@domenic.me",
@@ -239,24 +257,6 @@
           "author": "tbondwilkinson@gmail.com",
           "hash": "e0e5a64",
           "subject": "Add TypeScript type definitions"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "d@domenic.me",
-          "hash": "c91f863",
-          "subject": "Fix AppHistoryNavigateEvent constructor spec"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "d@domenic.me",
-          "hash": "e6cf661",
-          "subject": "Add missing \"readonly\" for appHistory.current IDL"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "d@domenic.me",
-          "hash": "8d28d2f",
-          "subject": "Add missing step to set post-navigate event signal"
         }
       ],
       "testlog": [
@@ -373,12 +373,6 @@
           "author": "domenic@chromium.org",
           "hash": "5227e9bc81",
           "subject": "Fix minor bugs in AppHistoryNavigateEventInit"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "zino@chromium.org",
-          "hash": "b8788faf1a",
-          "subject": "AppHistory: |canGo*| attributes should returns false if not fully active"
         }
       ]
     },
@@ -410,15 +404,15 @@
           "author": "marcos@marcosc.com",
           "hash": "0e886d1",
           "subject": "chore: fix link to incubation repo"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "marcos@marcosc.com",
-          "hash": "c34d432",
-          "subject": "Chore: move Mounir Lamouri to former editor"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-09-24",
+          "author": "songfangzhen@bytedance.com",
+          "hash": "fb94da4274",
+          "subject": "WPT: Update display-override-member tests to make them all promotable"
+        },
         {
           "date": "2021-09-20",
           "author": "songfangzhen@bytedance.com",
@@ -714,18 +708,6 @@
           "date": "2021-07-30",
           "author": "arichiv@chromium.org",
           "hash": "0ca8e98",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "arichiv@chromium.org",
-          "hash": "3607ee0",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "arichiv@chromium.org",
-          "hash": "c8c13d1",
           "subject": "Update index.bs"
         }
       ],
@@ -1158,6 +1140,18 @@
       "specrepo": "https://github.com/w3c/webappsec-csp",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-09-23",
+          "author": "rodneyding@google.com",
+          "hash": "f5d9b675bc",
+          "subject": "Add wpt tests for Document-Reporting Endpoints header"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "antoniosartori@chromium.org",
+          "hash": "4dbe5bcd69",
+          "subject": "[CSP] Fix WPT about worker violation event"
+        },
         {
           "date": "2021-08-24",
           "author": "antoniosartori@chromium.org",
@@ -1844,12 +1838,6 @@
           "author": "barret@brennie.ca",
           "hash": "159e56dfee",
           "subject": "Support color-mix() in non-sRGB color spaces"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "malexandru@mozilla.com",
-          "hash": "1d6ace2d5b",
-          "subject": "Backed out changeset d06a9296cfab (bug 1718934) for not fixing Bug 1718934 in its entirety."
         }
       ]
     },
@@ -2663,12 +2651,6 @@
           "author": "chris@w3.org",
           "hash": "efe65906f",
           "subject": "[css-fonts] add incremental to level 4 as well, see #6063"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "chris@w3.org",
-          "hash": "885f76976",
-          "subject": "[css-fonts-4] allow font-display in @font-feature-values. Fix #2973"
         }
       ],
       "testlog": [
@@ -3204,6 +3186,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-09-23",
+          "author": "mstensho@chromium.org",
+          "hash": "d625d30d9c",
+          "subject": "Don't expect any meaningful column stretch amount if already at \"infinity\"."
+        },
+        {
           "date": "2021-09-21",
           "author": "mstensho@chromium.org",
           "hash": "faa9a85d06",
@@ -3440,24 +3428,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "f021db675",
           "subject": "[css-overflow-3] Fix typo in example markup"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "b0eb5aaa5",
-          "subject": "[css-overflow-3] Add some guidance about mapping user input direction to scrolling in the presence of transforms. #5733"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "1de4f91f0",
-          "subject": "[css-overflow-3] Exclude zero-area border boxes from overflow contribution. #4791"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "1e556b133",
-          "subject": "[css-overflow-3] “sized to fit its contents” -> “intrinsically sized”"
         }
       ],
       "testlog": [
@@ -3691,6 +3661,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-09-23",
+          "author": "andruud@chromium.org",
+          "hash": "f781a1c2bd",
+          "subject": "Let Node::ParentComputedStyle return nullptr for Document"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dazabani@igalia.com",
+          "hash": "7e3250e827",
+          "subject": "[css-pseudo] remove duplicate reftests (#30921)"
+        },
         {
           "date": "2021-09-22",
           "author": "dazabani@igalia.com",
@@ -4250,6 +4232,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2021-09-23",
+          "author": "futhark@chromium.org",
+          "hash": "891bc0249b",
+          "subject": "Mark for whitespace reattachment based on layout object parent"
+        },
+        {
           "date": "2021-09-21",
           "author": "lauryn.menard@gmail.com",
           "hash": "0f6907dc33",
@@ -4290,12 +4278,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "006029222c",
           "subject": "HTML: test for UA style: li { text-align: match-parent; }"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "m_kato@ga2.so-net.ne.jp",
-          "hash": "84330c9dec",
-          "subject": "[css-text] Fix ID and PR rules. (#29781)"
         }
       ]
     },
@@ -4363,6 +4345,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2021-09-24",
+          "author": "dbaron@chromium.org",
+          "hash": "d55b1c5142",
+          "subject": "Fix transform-translatex-006.html. (#30934)"
+        },
+        {
+          "date": "2021-09-24",
+          "author": "dbaron@chromium.org",
+          "hash": "36cd887002",
+          "subject": "Fix svg-origin-relative-length-0{30,36,44,46}.html (#30930)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "8e4f321281",
+          "subject": "Fix transform-rotate-006.html. (#30931)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "5780f187c8",
+          "subject": "Fix ttwf-transform-translatex-001.html. (#30935)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "2ba76adeb8",
+          "subject": "Fix missing </style> in transform-table-008.html. (#30933)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "74023a71f0",
+          "subject": "Fix transform-scale-{001,002}.html and transform-scaley-001.html . (#30932)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "282d0d7fbd",
+          "subject": "Fix skew-test1.html. (#30929)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "dbaron@chromium.org",
+          "hash": "9021936ce4",
+          "subject": "Test the opposite behavior in css-transforms-transformlist.html. (#30928)"
+        },
         {
           "date": "2021-09-21",
           "author": "dbaron@chromium.org",
@@ -4446,12 +4476,6 @@
           "author": "mwoodrow@mozilla.com",
           "hash": "2a085b8573",
           "subject": "Return an infinite perspective in TransformOperation::Perspective::to_animated_zero."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "dbaron@chromium.org",
-          "hash": "f0c21a69ac",
-          "subject": "Don't pass transforms with negative M44 to MapEnclosedRectWith2dAxisAlignedTransform."
         }
       ]
     },
@@ -4553,8 +4577,21 @@
       "href": "https://drafts.csswg.org/css-values/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "eb91be8a6",
+          "subject": "[css-values-4] Ignore non-zero lengths when falling back to auto on table sizing #4389 #3482 #94"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2021-09-23",
+          "author": "n.mouchtaris@aol.com",
+          "hash": "87caf6dd1c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=229775 (#30901)"
+        },
         {
           "date": "2021-09-17",
           "author": "n.mouchtaris@aol.com",
@@ -4616,18 +4653,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "9c1effb4f",
           "subject": "[css-variables-1][editorial] Add a shorter local-lt for 'substitute a var()'."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "bcd9a9032",
-          "subject": "[css-variables-1][editorial] Add note calling out how things don't resolve in variables until they're subbed, talking about URLs explicitly. #757"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "320541b28",
-          "subject": "[css-variables-1][editorial] Add a little more context to the case-sensitivity note."
         }
       ],
       "testlog": [
@@ -4931,24 +4956,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "c324e5c620",
           "subject": "Correct tests for Unicode Language Identifier"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "247085f9d8",
-          "subject": "fixup! Add tests for proposal, \"Intl.DisplayNames v2\""
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "d93e7b08e7",
-          "subject": "Add tests for proposal, \"Intl.DisplayNames v2\""
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "1142ebee09",
-          "subject": "Remove extraneous feature flag"
         }
       ]
     },
@@ -4958,6 +4965,24 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2021-09-24",
+          "author": "bakkot@gmail.com",
+          "hash": "e4c9f63",
+          "subject": "Meta: Refer to Matrix rather than Freenode in README (#2533)"
+        },
+        {
+          "date": "2021-09-24",
+          "author": "bakkot@gmail.com",
+          "hash": "19451fc",
+          "subject": "Meta: Refer to Matrix rather than Freenode in \"About\" (#2533)"
+        },
+        {
+          "date": "2021-09-24",
+          "author": "bakkot@gmail.com",
+          "hash": "6897fd5",
+          "subject": "Meta: Keep old years in gh-pages (#2532)"
+        },
         {
           "date": "2021-09-22",
           "author": "shvaikalesh@gmail.com",
@@ -5341,27 +5366,33 @@
           "author": "bakkot@gmail.com",
           "hash": "fcabfe0",
           "subject": "Editorial: avoid duplicate SetFunctionName in {async,}generator methods (#2463)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bakkot@gmail.com",
-          "hash": "99b36f0",
-          "subject": "Editorial: consolidate method cases of PropertyDefinitionEvaluation (#2470)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bakkot@gmail.com",
-          "hash": "e3e5af6",
-          "subject": "Editorial: drop constant arguments for PropertyDefinitionEvaluation and ClassElementEvaluation (#2470)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "39a1ed5",
-          "subject": "Editorial: Split the \"TV and TRV\" clause into 2 clauses (#2375)"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-09-23",
+          "author": "86499+mhofman@users.noreply.github.com",
+          "hash": "5fee61c9e8",
+          "subject": "Add test for freezing of module namespace object (#3213)"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "mike@mikepennisi.com",
+          "hash": "8fad17a506",
+          "subject": "Focus tests for `copyWithin` methods"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "mike@mikepennisi.com",
+          "hash": "e6b64517a4",
+          "subject": "Correct assertion messages and improve coverage"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "mike@mikepennisi.com",
+          "hash": "1b72bcd857",
+          "subject": "Correct mistakes in support of proposal change"
+        },
         {
           "date": "2021-09-22",
           "author": "rwaldron@salesforce.com",
@@ -6033,168 +6064,6 @@
           "author": "meirblachman@gmail.com",
           "hash": "ad15eca476",
           "subject": "chore: migrate $ERROR -> throw new Test262Error in test/built-ins/parseFloat"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "ecf835778d",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/built-ins/Object (#3090)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "ee3597ed57",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/built-ins/RegExp (#3092)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "64a4b76c62",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/e* (#3098)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "e5ab3a572e",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/f* (#3099)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "0947f287ae",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/g* (#3101)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "f4914e133e",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/i* (#3102)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "77fe50f174",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/line-terminators/* (#3103)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "323233be54",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/l* (#3104)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "2dcd653272",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/t* (#3106)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "2581a439a5",
-          "subject": "chore: migrate $ERROR -> throw new Test262Error in test/language/white-space/* (#3107)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "915f7e79be",
-          "subject": "Fix incorrect case"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "74727cd4ed",
-          "subject": "Fix CR issues"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "6a6211e495",
-          "subject": "Fix format"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "3d82bd7ffb",
-          "subject": "Fix format"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "ed2addaa73",
-          "subject": "Fix format"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "5da8030779",
-          "subject": "Fix format"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "waldron.rick@gmail.com",
-          "hash": "4b54d54113",
-          "subject": "Fix copyrights and features metadata"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "41e946d00b",
-          "subject": "Fix format"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "642a180e62",
-          "subject": "Fix minor typo"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "f354da8ba4",
-          "subject": "Add typedarray findLastIndex"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "cb54d119e3",
-          "subject": "Add typedarray find last tests"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "6c5e421806",
-          "subject": "Add unscopable tests"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "a4aeea09ae",
-          "subject": "Avoid useless spec statement"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "3bb6d6480e",
-          "subject": "Add findLastIndex tests"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "wenlwan@microsoft.com",
-          "hash": "275e7f1595",
-          "subject": "Add tests for proposal array find from last"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "8428e70367",
-          "subject": "Correct tests and improve documentation"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "375cf1a40c",
-          "subject": "Correct typo in expected value"
         }
       ]
     },
@@ -6779,18 +6648,6 @@
           "author": "marcos@marcosc.com",
           "hash": "c85aa3307c",
           "subject": "Add non-fully active doc test for Geolocation (#29799)"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "marcos@marcosc.com",
-          "hash": "5dd2cefa91",
-          "subject": "Add reillyeon as reviewer for Geo API (#29829)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "marcos@marcosc.com",
-          "hash": "8620992daa",
-          "subject": "Update tests reviewers for the Geolocation API (#29816)"
         }
       ]
     },
@@ -7125,15 +6982,15 @@
           "author": "daniec@microsoft.com",
           "hash": "d554d6de",
           "subject": "Re-add JSON module scripts"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "jens@meiert.com",
-          "hash": "afc79501",
-          "subject": "Meta: compress PNG images"
         }
       ],
       "testlog": [
+        {
+          "date": "2021-09-24",
+          "author": "iopopesc@microsoft.com",
+          "hash": "e6b074b004",
+          "subject": "[SelectMenu] Ensure that controller code correctly handles slot changes."
+        },
         {
           "date": "2021-09-22",
           "author": "arthursonzogni@chromium.org",
@@ -7865,36 +7722,6 @@
           "author": "andruud@chromium.org",
           "hash": "e7d848ca78",
           "subject": "Handle font values that contain \"var()\" for OffscreenCanvas"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "yiyix@chromium.org",
-          "hash": "34cb7e900e",
-          "subject": "Rename Canvas2D.textLetterSpacing to Canvas2D.letterSpacing"
-        },
-        {
-          "date": "2021-07-29",
-          "author": "yiyix@chromium.org",
-          "hash": "7666067297",
-          "subject": "Rename Canvas2D.textWordSpacing to Canvas2D.wordSpacing"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "pdr@chromium.org",
-          "hash": "36129dcea3",
-          "subject": "Fix fuzzy matching on dynamic-content-change-rendering.html"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "4dea1e2657",
-          "subject": "Rewrite popup-coop-by-sw-from-coop."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "antoniosartori@chromium.org",
-          "hash": "f2813342c5",
-          "subject": "Add WPT for anonymous iframes service workers partitioning"
         }
       ]
     },
@@ -7930,6 +7757,18 @@
       "href": "https://w3c.github.io/html-aria/",
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
+        {
+          "date": "2021-09-24",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "fdcc869",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "f4d1376",
+          "subject": "Update README.md"
+        },
         {
           "date": "2021-09-05",
           "author": "scottaohara@gmail.com",
@@ -9584,12 +9423,6 @@
           "author": "marcos@marcosc.com",
           "hash": "5e35b9f",
           "subject": "Editorial: update Geolocation API ref"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "marcos@marcosc.com",
-          "hash": "dce7db7",
-          "subject": "chore: retire Mounir Lamouri as Editor"
         }
       ],
       "testlog": [
@@ -9958,6 +9791,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2021-09-23",
+          "author": "rodneyding@google.com",
+          "hash": "f5d9b675bc",
+          "subject": "Add wpt tests for Document-Reporting Endpoints header"
+        },
+        {
           "date": "2021-09-10",
           "author": "iclelland@chromium.org",
           "hash": "824f5aadae",
@@ -10111,12 +9950,6 @@
           "author": "tommckee@chromium.org",
           "hash": "a44637c654",
           "subject": "Fix WPT linter error"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "yoavweiss@chromium.org",
-          "hash": "72581357e1",
-          "subject": "[resource-timing] Clean up TAO reload test"
         }
       ]
     },
@@ -10177,12 +10010,6 @@
           "author": "504595380@qq.com",
           "hash": "3404bfa",
           "subject": "typo (#45)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "shaseley@chromium.org",
-          "hash": "0131271",
-          "subject": "Change TaskController constructor to take an optional dictionary (#48)"
         }
       ],
       "testlog": []
@@ -11130,7 +10957,26 @@
       "name": "Error Cause",
       "href": "https://tc39.es/proposal-error-cause/",
       "specrepo": "https://github.com/tc39/proposal-error-cause",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "legendecas@users.noreply.github.com",
+          "hash": "6f126b3",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "legendecas@gmail.com",
+          "hash": "6f9f6f6",
+          "subject": "[readme] list current implementation status"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "ljharb@gmail.com",
+          "hash": "6bbba04",
+          "subject": "[readme] add Implementations + Polyfills section"
+        }
+      ],
       "testlog": []
     },
     {
@@ -11422,6 +11268,12 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "Xenonym@users.noreply.github.com",
+          "hash": "d44e401d",
+          "subject": "docs: fix broken link in polyfill readme"
+        },
         {
           "date": "2021-09-22",
           "author": "justingrant@users.noreply.github.com",
@@ -12411,30 +12263,6 @@
           "author": "Ms2ger@gmail.com",
           "hash": "e43ddd43",
           "subject": "Drop some old-style structure tests."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "fe28b863",
-          "subject": "Editorial: document infallible AO invocations"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "3c0671fb",
-          "subject": "Editorial: document infallibility of abstract op."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "pchimento@igalia.com",
-          "hash": "4235f1b2",
-          "subject": "Add champions meeting minutes from March"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "mike@mikepennisi.com",
-          "hash": "34371061",
-          "subject": "Editorial: document infallability of AO invocation"
         }
       ],
       "testlog": []
@@ -12757,6 +12585,12 @@
       "href": "https://wicg.github.io/urlpattern/",
       "specrepo": "https://github.com/WICG/urlpattern",
       "speclog": [
+        {
+          "date": "2021-09-21",
+          "author": "d@domenic.me",
+          "hash": "e971524",
+          "subject": "Update Infra substring usage"
+        },
         {
           "date": "2021-09-08",
           "author": "wanderview@chromium.org",
@@ -13736,6 +13570,12 @@
       "specrepo": "https://github.com/w3c/web-nfc",
       "speclog": [
         {
+          "date": "2021-09-23",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "ef3a840",
+          "subject": "Throw TypeError if url is not valid for absolute-url records (#624)"
+        },
+        {
           "date": "2021-09-17",
           "author": "beaufort.francois@gmail.com",
           "hash": "f912769",
@@ -14103,6 +13943,12 @@
       "href": "https://w3c.github.io/webcodecs/",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "0dd2a71",
+          "subject": "Fix MP3 codec string list formatting"
+        },
         {
           "date": "2021-09-10",
           "author": "12439273+matthiasfostel@users.noreply.github.com",
@@ -14576,30 +14422,6 @@
           "author": "dalecurtis@chromium.org",
           "hash": "230aa31",
           "subject": "Add rejection step to config validation."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6aaa9da",
-          "subject": "Switch to lower case plus dashes for consistency."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "dalecurtis@chromium.org",
-          "hash": "c985f35",
-          "subject": "Revise hardwareAcceleration based on consensus decision."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "dalecurtis@chromium.org",
-          "hash": "bed76bb",
-          "subject": "Fix typo to address review comments."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "paul@paul.cx",
-          "hash": "9c89379",
-          "subject": "Fix copy/paste error in the AudioDecoder.decode definition"
         }
       ],
       "testlog": [
@@ -14680,12 +14502,6 @@
           "author": "dalecurtis@chromium.org",
           "hash": "3e24dc6b8c",
           "subject": "[WebCodecs] Revert workarounds for lack of [AllowShared] in IDL."
-        },
-        {
-          "date": "2021-07-28",
-          "author": "sandersd@chromium.org",
-          "hash": "2e0e4fe4b1",
-          "subject": "[webcodecs] Throw in allocationSize() if detached."
         }
       ]
     },
@@ -14928,6 +14744,18 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2021-09-23",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "3e619f5",
+          "subject": "Standardise a numbering style and indent level for lists"
+        },
+        {
+          "date": "2021-09-23",
+          "author": "8426945+sidvishnoi@users.noreply.github.com",
+          "hash": "ec58ee7",
+          "subject": "chore(.github/deploy): use spec-prod action (#54)"
+        },
         {
           "date": "2021-09-22",
           "author": "james@hoppipolla.co.uk",
@@ -15317,18 +15145,6 @@
           "author": "litherum@icloud.com",
           "hash": "09533d4",
           "subject": "The reference to Metal's coordinate system should be non-normative (#2011)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bclayton@google.com",
-          "hash": "7a2d148",
-          "subject": "wgsl: s/signficand/significand"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bclayton@google.com",
-          "hash": "6ba2267",
-          "subject": "wgsl: Change `modf` and `frexp` to return a structure"
         }
       ],
       "testlog": []
@@ -15681,12 +15497,6 @@
           "author": "hta@chromium.org",
           "hash": "f27b58a1d5",
           "subject": "Add test for SDP a=setup attribute"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "hbos@chromium.org",
-          "hash": "703b6682f0",
-          "subject": "Attempt to de-flake simulcast WPTs."
         }
       ]
     },
@@ -16008,6 +15818,12 @@
       ],
       "testlog": [
         {
+          "date": "2021-09-24",
+          "author": "yhirano@chromium.org",
+          "hash": "eeff4cd42c",
+          "subject": "Fix webtransport/constructor.any.js"
+        },
+        {
           "date": "2021-09-20",
           "author": "nidhijaju@chromium.org",
           "hash": "4c88c57b52",
@@ -16209,12 +16025,6 @@
           "author": "atsushi@himor.in",
           "hash": "27730e4",
           "subject": "updated CoC file to one in WebXR"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "atsushi@himor.in",
-          "hash": "006f300",
-          "subject": "added Rik as one of Editors"
         }
       ],
       "testlog": [],
@@ -16284,12 +16094,6 @@
           "author": "atsushi@himor.in",
           "hash": "d54d6dd",
           "subject": "updated CoC file to one in WebXR"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "atsushi@himor.in",
-          "hash": "d3106ed",
-          "subject": "added Rik (and Manish) to list of Editors"
         }
       ],
       "testlog": [],
@@ -16717,18 +16521,6 @@
           "author": "litherum@icloud.com",
           "hash": "09533d4",
           "subject": "The reference to Metal's coordinate system should be non-normative (#2011)"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bclayton@google.com",
-          "hash": "7a2d148",
-          "subject": "wgsl: s/signficand/significand"
-        },
-        {
-          "date": "2021-07-28",
-          "author": "bclayton@google.com",
-          "hash": "6ba2267",
-          "subject": "wgsl: Change `modf` and `frexp` to return a structure"
         }
       ],
       "testlog": []
