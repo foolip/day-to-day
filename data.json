@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2021-08-20T07:21:17.966Z",
-  "until": "2021-10-16T07:21:17.966Z",
+  "since": "2021-08-21T07:21:17.074Z",
+  "until": "2021-10-17T07:21:17.074Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -161,18 +161,6 @@
           "author": "d@domenic.me",
           "hash": "b2a3c88",
           "subject": "Fix ordering of transition becoming null vs. navigateerror events"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "d@domenic.me",
-          "hash": "ea6164e",
-          "subject": "Further improvements to ongoing navigation tracking"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "d@domenic.me",
-          "hash": "33af84b",
-          "subject": "Editorial: introduce and use the \"current entry\" algorithm"
         }
       ],
       "testlog": [
@@ -211,12 +199,6 @@
           "author": "japhet@chromium.org",
           "hash": "243ef1fd32",
           "subject": "Add a test for appHistory.goTo/back/forward navigating multiple frames simultaneously"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "japhet@chromium.org",
-          "hash": "614c5da7e4",
-          "subject": "Prevent double-navigateerror when detaching between a goTo()'s navigate and navigatesuccess"
         }
       ]
     },
@@ -852,14 +834,7 @@
       "name": "Cookie Store API",
       "href": "https://wicg.github.io/cookie-store/",
       "specrepo": "https://github.com/WICG/cookie-store",
-      "speclog": [
-        {
-          "date": "2021-08-20",
-          "author": "jsbell@chromium.org",
-          "hash": "e1a1cfa",
-          "subject": "Add status badge to README"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -1534,6 +1509,66 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "b9ec4cb35",
+          "subject": "[css-color-5] Add diagram showing hue-rotated color going oog"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "89a98ec12",
+          "subject": "[css-color-5] Clarify calculating contrast, based on D65 luminance"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "c35b9880e",
+          "subject": "[css-color-5] Update changes"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "67095997c",
+          "subject": "[css-color-5] tiny correction to calculated oklch values"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "19bbe4a2b",
+          "subject": "typo"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "464c6526e",
+          "subject": "[css-color-4] Update changes, again"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "1810e3d1a",
+          "subject": "[cs-color-4] Update changes"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "56f82a992",
+          "subject": "[css-color-4] update credits"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "0f046ee24",
+          "subject": "[css-color-4] update credits"
+        },
+        {
+          "date": "2021-10-16",
+          "author": "chris@w3.org",
+          "hash": "ba64b3f83",
+          "subject": "[css-color-4] Use OKLab XYZ <-> LMS recalculated for consistent whitepoint #6642"
+        },
+        {
           "date": "2021-10-15",
           "author": "jackalmage@gmail.com",
           "hash": "3f626a286",
@@ -1860,7 +1895,14 @@
       "href": "https://drafts.csswg.org/css-color-adjust/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2021-10-16",
+          "author": "emilio@crisal.io",
+          "hash": "80ca4f941",
+          "subject": "[css-color-adjust] Define color-scheme: normal to be hookable by HTML."
+        }
+      ],
       "testlog": [
         {
           "date": "2021-10-15",
@@ -2066,18 +2108,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "412f681a0f",
           "subject": "content-visibility: Force range base/extent when computing visual selection."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "vmpstr@chromium.org",
-          "hash": "a891d83900",
-          "subject": "content-visibility: Ensure that fragment nav doesn't happen for hidden elements."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "vmpstr@chromium.org",
-          "hash": "d97a9fc1e6",
-          "subject": "content-visibility: Avoid updating style in hidden subtrees for focus."
         }
       ]
     },
@@ -2781,18 +2811,6 @@
           "author": "filipp.riabchun@jetbrains.com",
           "hash": "0db7794bbe",
           "subject": "Add a test for absolutely positioned CSS Grid item reacting to track size changes"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "ansollan@microsoft.com",
-          "hash": "b5f54e4140",
-          "subject": "[GridNG] Fix offset caused by 'auto' margins for out of flow items"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "janewman@microsoft.com",
-          "hash": "e972a1d7ac",
-          "subject": "[GridNG] Fix Bug in Grid item sizing with replaced elements."
         }
       ]
     },
@@ -3157,18 +3175,6 @@
           "author": "mstensho@chromium.org",
           "hash": "5f817876b6",
           "subject": "Detect all unappealing breaks for column balancing."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "mstensho@chromium.org",
-          "hash": "570d622b80",
-          "subject": "Fix column spanner inline-size:auto issues."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "almaher@microsoft.com",
-          "hash": "7460ac895c",
-          "subject": "[LayoutNG] Unsplittable scrolling overflow in LayoutNG"
         }
       ]
     },
@@ -3911,12 +3917,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "f68d203a94",
           "subject": "[ReplacedNG] Fix saturation issue in ComputeReplacedSize with ratios."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "cbiesinger@chromium.org",
-          "hash": "6b617f0486",
-          "subject": "Implement contain-intrinsic-size as a shorthand"
         }
       ]
     },
@@ -5999,14 +5999,7 @@
       "name": "File and Directory Entries API",
       "href": "https://wicg.github.io/entries-api/",
       "specrepo": "https://github.com/WICG/entries-api",
-      "speclog": [
-        {
-          "date": "2021-08-20",
-          "author": "jsbell@chromium.org",
-          "hash": "3d3ab2b",
-          "subject": "Add status badge to README"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/WICG/entries-api/blob/HEAD/CONTRIBUTING.md"
     },
@@ -6256,12 +6249,6 @@
           "author": "yhirano@chromium.org",
           "hash": "2af53e681f",
           "subject": "Fix DCHECK failure on aborted response"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "titouan@chromium.org",
-          "hash": "8fd298ec1a",
-          "subject": "[Private Network Access] Add WPTs for WebSockets."
         }
       ]
     },
@@ -6400,14 +6387,7 @@
       "specrepo": "https://github.com/w3c/fxtf-drafts",
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2021-08-20",
-          "author": "fs@opera.com",
-          "hash": "d7722c8744",
-          "subject": "Check if a <fe*Lighting> has a light source before invalidating it"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Fingerprinting Guidance for Web Specification Authors (Draft)",
@@ -6557,12 +6537,6 @@
           "author": "marcos@marcosc.com",
           "hash": "f3b0326880",
           "subject": "Geolocation: fix waiting on wrong event + bool check (#30143)"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "eltociear@gmail.com",
-          "hash": "a06af784de",
-          "subject": "Fix typo in support.js (#30101)"
         }
       ]
     },
@@ -7758,24 +7732,6 @@
           "author": "fs@opera.com",
           "hash": "caebb46802",
           "subject": "Fix aspect-ratio mapping for <canvas>"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "daniec@microsoft.com",
-          "hash": "68f60fcfa5",
-          "subject": "[selectmenu] Add basic keyboard support"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "lyf@chromium.org",
-          "hash": "185c6063f7",
-          "subject": "[Anonymous Iframe] Fix popup test"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "ntim@apple.com",
-          "hash": "35e8a89614",
-          "subject": "Test that parent opacity does not affect top layer elements"
         }
       ]
     },
@@ -8361,14 +8317,7 @@
       "name": "Local Font Access API",
       "href": "https://wicg.github.io/local-font-access/",
       "specrepo": "https://github.com/WICG/local-font-access",
-      "speclog": [
-        {
-          "date": "2021-08-20",
-          "author": "jsbell@chromium.org",
-          "hash": "6b5176c",
-          "subject": "Add status badge to README"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -9164,12 +9113,6 @@
           "author": "yoavweiss@chromium.org",
           "hash": "8e4cf682fd",
           "subject": "[performance-timeline] Properly handle removed iframe"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "npm@chromium.org",
-          "hash": "6dc4d5921b",
-          "subject": "Ship droppedEntriesCount"
         }
       ]
     },
@@ -10452,18 +10395,6 @@
           "author": "stephen.mcgruer@gmail.com",
           "hash": "9f3e115",
           "subject": "[Spec] Write up Security & Privacy sections (#111)"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "ij@w3.org",
-          "hash": "4c5e898",
-          "subject": "Edits to note for 104"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "ij@w3.org",
-          "hash": "44ef82b",
-          "subject": "[Explainer] Clarify start/end of API call (#110)"
         }
       ],
       "testlog": [
@@ -10490,12 +10421,6 @@
           "author": "maxlg@chromium.org",
           "hash": "0002587916",
           "subject": "[SPCM95] Missing PayeeOrigin fails the WPTs"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "maxlg@chromium.org",
-          "hash": "c049a2faf2",
-          "subject": "[SPCM95] Remove networkData from  tests"
         }
       ]
     },
@@ -10504,14 +10429,7 @@
       "href": "https://w3c.github.io/selection-api/",
       "specrepo": "https://github.com/w3c/selection-api",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2021-08-20",
-          "author": "masayuki@d-toybox.com",
-          "hash": "27f64ca65a",
-          "subject": "part 3: Make `HTMLEditor::MaybeCollapseSelectionAtFirstEditableNode()` use `HTMLEditUtils::GetAncestorElement()"
-        }
-      ],
+      "testlog": [],
       "testpolicy": "https://github.com/w3c/selection-api/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -12207,12 +12125,6 @@
           "author": "ftang@google.com",
           "hash": "eb285e25",
           "subject": "Editoral: add \"or *null* if no such transition exists\""
-        },
-        {
-          "date": "2021-08-20",
-          "author": "Ms2ger@gmail.com",
-          "hash": "e3f66bbb",
-          "subject": "Move the legacy test for Object.keys(Temporal)."
         }
       ],
       "testlog": []
@@ -12843,12 +12755,6 @@
           "author": "marcos@marcosc.com",
           "hash": "e9621b1",
           "subject": "Editorial: rephrase method call match WebIDL's suggestion (#31)"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "marcos@marcosc.com",
-          "hash": "ca413d1",
-          "subject": "Editorial cleanup (#28)"
         }
       ],
       "testlog": []
@@ -12914,36 +12820,6 @@
           "author": "siusinng@gmail.com",
           "hash": "3c69a3f",
           "subject": "fix typos"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "siusinng@gmail.com",
-          "hash": "af0cc35",
-          "subject": "Adding baseline CODE_OF_CONDUCT.md"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "siusinng@gmail.com",
-          "hash": "6e667da",
-          "subject": "update README"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "siusinng@gmail.com",
-          "hash": "0503029",
-          "subject": "update README"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "siusinng@gmail.com",
-          "hash": "1a4446b",
-          "subject": "setting"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "siusinng@gmail.com",
-          "hash": "369dfa6",
-          "subject": "initialize"
         }
       ],
       "testlog": []
@@ -13087,12 +12963,6 @@
           "author": "jongund@illinois.edu",
           "hash": "5d4c2c8",
           "subject": "added validation text for heading role to have a valid aria-level at… (#1583)"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "jnurthen@users.noreply.github.com",
-          "hash": "6a9c96d",
-          "subject": "w3c.github.io/aria/ 404s (#1604)"
         }
       ],
       "testlog": []
@@ -13313,24 +13183,6 @@
           "author": "flackr@gmail.com",
           "hash": "1f280de32",
           "subject": "Fix bikeshed indentation errors in web-animations-2 diff spec. (#6565)"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "jackalmage@gmail.com",
-          "hash": "fb20b417b",
-          "subject": "[web-animations-1][editorial] A few more double quotes and dfn fixes."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "jackalmage@gmail.com",
-          "hash": "bb9a504f1",
-          "subject": "[web-animations-1][editorial] Just use double quotes for JS string values."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "jackalmage@gmail.com",
-          "hash": "0b0091e56",
-          "subject": "[web-animations-1][editorial] Fixed Bikeshed errors, fixed definitions and some links."
         }
       ],
       "testlog": [
@@ -13373,14 +13225,7 @@
       "name": "Web Locks API",
       "href": "https://wicg.github.io/web-locks/",
       "specrepo": "https://github.com/WICG/web-locks",
-      "speclog": [
-        {
-          "date": "2021-08-20",
-          "author": "jsbell@chromium.org",
-          "hash": "22b3662",
-          "subject": "Add status badge to README"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -13693,12 +13538,6 @@
           "author": "agl@imperialviolet.org",
           "hash": "05c93f1",
           "subject": "Define 1024 bytes to be the maximum credential ID length."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "emil@yubico.com",
-          "hash": "d24439d",
-          "subject": "Simplify to that just the authenticator chooses attestation type and format"
         }
       ],
       "testlog": [
@@ -13810,78 +13649,6 @@
           "author": "chcunningham@chromium.org",
           "hash": "8653195",
           "subject": "Add format to AudioDataCopyToOptions to convert"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "chcunningham@chromium.org",
-          "hash": "a70c028",
-          "subject": "Add rounding of computed display sizes"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "chcunningham@chromium.org",
-          "hash": "bf1702e",
-          "subject": "Add visibleRect and displayWidth|Height to VideoFrameInit"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "3d41cca",
-          "subject": "Replace remaining instances of rfc2119 words with english equivalent after rebase"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "cde0f2a",
-          "subject": "Add a bit of CSS to highlight RFC2119 words"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "56080e7",
-          "subject": "Put the RFC2119 words in <em class=\"rfc2119\"> tags and rewrap the paragraphs"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "587c6ae",
-          "subject": "Mark three sections as non-normative. Fix rfc2119 word usage in those sections."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "fec2acb",
-          "subject": "Make one occurence normative, keep the rfc2119 word"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "fdb7ccb",
-          "subject": "Rephrase occurences of rfc2119 words in non-normative sections"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "9f26fea",
-          "subject": "Activate lint for accidental rfc2119 in non-normative section of the spec"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "55d1848",
-          "subject": "Address review comments"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "e123244",
-          "subject": "Add AAC to the registry"
-        },
-        {
-          "date": "2021-08-20",
-          "author": "paul@paul.cx",
-          "hash": "fe8a639",
-          "subject": "Be explicit about Opus bitstream formats"
         }
       ],
       "testlog": [
@@ -13920,12 +13687,6 @@
           "author": "dalecurtis@chromium.org",
           "hash": "aedb48b0e2",
           "subject": "[WebCodecs] Implement support for converting AudioData to float32."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "chcunningham@chromium.org",
-          "hash": "1ef7e31589",
-          "subject": "Update colorSpace nullability and encoder config"
         }
       ]
     },
@@ -13999,18 +13760,6 @@
           "author": "dj.srivastava23@gmail.com",
           "hash": "6438d87",
           "subject": "Throw an OperationError in the PBKDF2 and HKDF derive bits operations if length is zero (#275)"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "marcos@marcosc.com",
-          "hash": "99dfe05",
-          "subject": "chore: fix destination for auto-publish"
-        },
-        {
-          "date": "2021-08-21",
-          "author": "marcos@marcosc.com",
-          "hash": "0708e1c",
-          "subject": "chore: auto-publish spec to gh-pages"
         }
       ],
       "testlog": [
@@ -14915,12 +14664,6 @@
           "author": "hta@chromium.org",
           "hash": "910290e492",
           "subject": "Add test that no candidates are emitted when adding m-sections."
-        },
-        {
-          "date": "2021-08-20",
-          "author": "hta@chromium.org",
-          "hash": "f27b58a1d5",
-          "subject": "Add test for SDP a=setup attribute"
         }
       ]
     },
