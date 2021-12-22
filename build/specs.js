@@ -152,12 +152,21 @@ async function main() {
   console.log('Reading browser-specs');
   const specs = browserSpecs
       .filter((entry) => {
+        const url = entry.nightly.url;
+        // Skip all HTTP specs
+        if (url.startsWith('https://httpwg.org/')) {
+          return false;
+        }
         // Skip all WebGL extensions
-        if (entry.url.startsWith('https://www.khronos.org/registry/webgl/extensions/')) {
+        if (url.startsWith('https://www.khronos.org/registry/webgl/extensions/')) {
           return false;
         }
         // Skip all RFCs
-        if (entry.url.startsWith('https://www.rfc-editor.org/rfc/')) {
+        if (url.startsWith('https://www.rfc-editor.org/rfc/')) {
+          return false;
+        }
+        // Skip other W3C documents (Patent Policy)
+        if (url.startsWith('https://www.w3.org/')) {
           return false;
         }
         // only include the latest level of any spec
