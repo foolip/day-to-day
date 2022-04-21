@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-02-22T17:08:29.235Z",
-  "until": "2022-04-20T17:08:29.235Z",
+  "since": "2022-02-23T07:13:21.258Z",
+  "until": "2022-04-21T07:13:21.258Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -605,12 +605,6 @@
           "author": "kenneth.r.christiansen@intel.com",
           "hash": "c6a4262",
           "subject": "Fix #19 and clean up frequency description"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "kenneth.r.christiansen@intel.com",
-          "hash": "226fca1",
-          "subject": "Fix life cycle by introducing registered observer lists"
         }
       ],
       "testlog": [
@@ -1260,6 +1254,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-20",
+          "author": "almaher@microsoft.com",
+          "hash": "a81cd3b22f",
+          "subject": "[FlexNG] Remove float DCHECK"
+        },
+        {
           "date": "2022-04-19",
           "author": "ikilpatrick@chromium.org",
           "hash": "b9410215bf",
@@ -1558,12 +1558,6 @@
           "author": "almaher@microsoft.com",
           "hash": "7300d87306",
           "subject": "[FlexNG] Handle break-before/after: avoid for rows"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "almaher@microsoft.com",
-          "hash": "8fa6e1db9b",
-          "subject": "[FlexNG] Column balancing with forced breaks"
         }
       ]
     },
@@ -1636,6 +1630,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-20",
+          "author": "andruud@chromium.org",
+          "hash": "eb7fd41fdd",
+          "subject": "[@scope] Parser support"
+        },
+        {
           "date": "2022-04-07",
           "author": "xiaochengh@chromium.org",
           "hash": "0aa6c88c54",
@@ -1673,6 +1673,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-04-20",
+          "author": "chris@w3.org",
+          "hash": "e3d22e566",
+          "subject": "[css-color-4][editorial] tidy up bikeshed definitions"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "chris@w3.org",
+          "hash": "ba1a5eea6",
+          "subject": "[css-color-4][editorial] update WPT"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "chris@w3.org",
+          "hash": "3b1b764f9",
+          "subject": "[css-color-4] Improved wording from @fantasai on not forcing system colors #6773"
+        },
         {
           "date": "2022-04-14",
           "author": "chris@w3.org",
@@ -2140,12 +2158,6 @@
           "author": "futhark@chromium.org",
           "hash": "14a35c1ed5",
           "subject": "[@container] Test for layout api on size container"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "futhark@chromium.org",
-          "hash": "99f02f165b",
-          "subject": "[@container] Test size containers which never match"
         }
       ]
     },
@@ -2926,18 +2938,6 @@
           "author": "almaher@microsoft.com",
           "hash": "a84741b874",
           "subject": "[LayoutNG] Add column balancing test with break-before:avoid"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "mstensho@chromium.org",
-          "hash": "468c68449d",
-          "subject": "Miss the cache on nested multicol with OOF."
-        },
-        {
-          "date": "2022-02-22",
-          "author": "mstensho@chromium.org",
-          "hash": "115e16c04b",
-          "subject": "Notify the flow thread about anonymous block removal in time."
         }
       ]
     },
@@ -3723,6 +3723,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-20",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "76179281dd",
+          "subject": "Fix 2d-axis-misaligned clip under opacity"
+        },
+        {
           "date": "2022-04-04",
           "author": "wangxianzhu@chromium.org",
           "hash": "bc351be47b",
@@ -3757,6 +3763,12 @@
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [
+        {
+          "date": "2022-04-20",
+          "author": "jackalmage@gmail.com",
+          "hash": "223258e",
+          "subject": "[css-typed-om] Remove .to() and the CSSColorValue.colorSpace, as conversion isn't really in Typed OM's remit. #1070"
+        },
         {
           "date": "2022-04-19",
           "author": "jackalmage@gmail.com",
@@ -3905,6 +3917,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-04-20",
+          "author": "seokho@chromium.org",
+          "hash": "6c23f020cc",
+          "subject": "EvaluateOperator() should return NaN if operands has NaN value"
+        },
         {
           "date": "2022-04-19",
           "author": "emilio@crisal.io",
@@ -4773,6 +4791,30 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2022-04-21",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "ad096b3",
+          "subject": "Editorial: Change many \"abrupt completion\" to \"throw completion\" (#2676)"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "bakkot@gmail.com",
+          "hash": "918e0e9",
+          "subject": "Normative: allow named capture groups in Annex B non-u regex grammar (#2729)"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "me@thejameskyle.com",
+          "hash": "deb2e45",
+          "subject": "Editorial: Note that StringNumericLiteral cannot contain NumericLiteralSeparator (#2727)"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "b5fc613",
+          "subject": "Editorial: Eliminate `_NcapturingParens_` from Early Error rules + grammar (#2625)"
+        },
         {
           "date": "2022-04-19",
           "author": "mail@linusgroh.de",
@@ -6257,6 +6299,18 @@
       "testlog": [
         {
           "date": "2022-04-20",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "207f788473",
+          "subject": "COEP test is using the wrong query parameter"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "masonf@chromium.org",
+          "hash": "0653bce707",
+          "subject": "Update a few <selectmenu> tests"
+        },
+        {
+          "date": "2022-04-20",
           "author": "masonf@chromium.org",
           "hash": "968798c6f2",
           "subject": "Enable the new selectmenu popup API usage by default"
@@ -6794,12 +6848,6 @@
           "author": "aaronhk@chromium.org",
           "hash": "015524b5fa",
           "subject": "Allow roundrect to work with no argument for radii"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "ntim@apple.com",
-          "hash": "b64788f3cb",
-          "subject": "Fix modal-dialog-in-table-column.html & modal-dialog-in-replaced-renderer.html to match Gecko & WebKit behavior"
         }
       ]
     },
@@ -7522,6 +7570,24 @@
       "href": "https://w3c.github.io/media-capabilities/",
       "specrepo": "https://github.com/w3c/media-capabilities",
       "speclog": [
+        {
+          "date": "2022-04-20",
+          "author": "kron@google.com",
+          "hash": "b3f50e6",
+          "subject": "Another ambiguous link"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "kron@google.com",
+          "hash": "be36dce",
+          "subject": "Fix other link errors"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "kron@google.com",
+          "hash": "07aaf4a",
+          "subject": "Fix broken RFC links."
+        },
         {
           "date": "2022-04-12",
           "author": "kron@google.com",
@@ -11382,12 +11448,6 @@
           "author": "jesse@igalia.com",
           "hash": "53dc34b2",
           "subject": "Don't force timezone offset"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "justingrant@users.noreply.github.com",
-          "hash": "b29a683f",
-          "subject": "Remove incorrect text from `withCalendar` docs"
         }
       ],
       "testlog": []
@@ -11727,12 +11787,6 @@
           "author": "zhin@google.com",
           "hash": "df228524",
           "subject": "Update document README to install six"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "rossberg@chromium.org",
-          "hash": "5257f137",
-          "subject": "[test] Fix section size in binary test (#1424)"
         }
       ],
       "testlog": []
@@ -11800,6 +11854,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-04-20",
+          "author": "kevers@google.com",
+          "hash": "ea75f14d4e",
+          "subject": "Fix crash due to null timeline during Animation::Update"
+        },
         {
           "date": "2022-03-23",
           "author": "boris.chiou@gmail.com",
@@ -12384,6 +12444,54 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "7863716",
+          "subject": "Make blankspaces a section"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "dneto@google.com",
+          "hash": "3e06562",
+          "subject": "wgsl: Define \"code point\" by normative reference to Unicode"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "36d4e22",
+          "subject": "Improve"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "463ae92",
+          "subject": "Improve"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "2663b2e",
+          "subject": "Deduplicate"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "3863268",
+          "subject": "Spell code point for underscores"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "21b3e1b",
+          "subject": "Adopt identical-to and further clarifications"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "dd19ca3",
+          "subject": "Adopt identical-to and further clarifications"
+        },
+        {
           "date": "2022-04-19",
           "author": "bajones@chromium.org",
           "hash": "468a957",
@@ -12946,18 +13054,6 @@
           "author": "dneto@google.com",
           "hash": "1d919ad",
           "subject": "WGSL style guide: in progress extensions developed outside main spec (#2616)"
-        },
-        {
-          "date": "2022-02-23",
-          "author": "84498356+jzm-intel@users.noreply.github.com",
-          "hash": "e0429ac",
-          "subject": "Fix a typo in FP32 internal layout (#2615)"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "alanbaker@google.com",
-          "hash": "69b8a3b",
-          "subject": "Update override examples (#2614)"
         }
       ],
       "testlog": []
@@ -13847,6 +13943,54 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "7863716",
+          "subject": "Make blankspaces a section"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "dneto@google.com",
+          "hash": "3e06562",
+          "subject": "wgsl: Define \"code point\" by normative reference to Unicode"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "36d4e22",
+          "subject": "Improve"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "463ae92",
+          "subject": "Improve"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "2663b2e",
+          "subject": "Deduplicate"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "3863268",
+          "subject": "Spell code point for underscores"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "21b3e1b",
+          "subject": "Adopt identical-to and further clarifications"
+        },
+        {
+          "date": "2022-04-20",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "dd19ca3",
+          "subject": "Adopt identical-to and further clarifications"
+        },
+        {
           "date": "2022-04-19",
           "author": "bajones@chromium.org",
           "hash": "468a957",
@@ -14409,18 +14553,6 @@
           "author": "dneto@google.com",
           "hash": "1d919ad",
           "subject": "WGSL style guide: in progress extensions developed outside main spec (#2616)"
-        },
-        {
-          "date": "2022-02-23",
-          "author": "84498356+jzm-intel@users.noreply.github.com",
-          "hash": "e0429ac",
-          "subject": "Fix a typo in FP32 internal layout (#2615)"
-        },
-        {
-          "date": "2022-02-22",
-          "author": "alanbaker@google.com",
-          "hash": "69b8a3b",
-          "subject": "Update override examples (#2614)"
         }
       ],
       "testlog": []
