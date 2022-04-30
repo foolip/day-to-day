@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-03-03T14:58:17.922Z",
-  "until": "2022-04-29T14:58:17.922Z",
+  "since": "2022-03-04T07:13:24.053Z",
+  "until": "2022-04-30T07:13:24.053Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -152,24 +152,6 @@
           "author": "mustaq@google.com",
           "hash": "4641cda",
           "subject": "Clarify consumption of user activation at the initiation step (#20)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "mustaq@google.com",
-          "hash": "d63c5ad",
-          "subject": "Test page: fix allow attribute."
-        },
-        {
-          "date": "2022-03-03",
-          "author": "mustaq@google.com",
-          "hash": "489041d",
-          "subject": "Same-origin test page: fix domain."
-        },
-        {
-          "date": "2022-03-03",
-          "author": "mustaq@google.com",
-          "hash": "a82c412",
-          "subject": "Test page for same-origin payment delegation."
         }
       ],
       "testlog": []
@@ -588,6 +570,24 @@
       "specrepo": "https://github.com/WICG/conversion-measurement-api",
       "speclog": [
         {
+          "date": "2022-04-29",
+          "author": "apaseltiner@google.com",
+          "hash": "fd75741",
+          "subject": "Specify top-level filter matching (#389)"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "apaseltiner@google.com",
+          "hash": "def5281",
+          "subject": "Specify distinct reporting-origin limits for attributions (#391)"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "apaseltiner@google.com",
+          "hash": "a079a70",
+          "subject": "Replace attribution rate-limit source-type scope with reporting endpoint (#387)"
+        },
+        {
           "date": "2022-04-27",
           "author": "apaseltiner@google.com",
           "hash": "c4231c8",
@@ -712,18 +712,6 @@
           "author": "40465606+johnivdel@users.noreply.github.com",
           "hash": "bbb8567",
           "subject": "Add source_registration_time to privacy budget key (#307)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "alexmt@google.com",
-          "hash": "eb304dd",
-          "subject": "Add alternative aggregation mode (#348)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "apaseltiner@google.com",
-          "hash": "b38ed47",
-          "subject": "Declare trigger debug keys via separate Attribution-Reporting-Trigger-Debug-Key header (#351)"
         }
       ],
       "testlog": []
@@ -842,36 +830,6 @@
           "author": "cbiesinger@chromium.org",
           "hash": "9ab272cde1",
           "subject": "Reland \"[FedCM] Split get() into get()+login()\""
-        },
-        {
-          "date": "2022-03-04",
-          "author": "keishi@chromium.org",
-          "hash": "3ed9146ffe",
-          "subject": "Revert \"[FedCM] Split get() into get()+login()\""
-        },
-        {
-          "date": "2022-03-04",
-          "author": "npm@chromium.org",
-          "hash": "cc245b4cb7",
-          "subject": "Reland \"[FedCM] Make privacy policy url required\""
-        },
-        {
-          "date": "2022-03-04",
-          "author": "cbiesinger@chromium.org",
-          "hash": "5ace2e6a4c",
-          "subject": "[FedCM] Split get() into get()+login()"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "lgrey@chromium.org",
-          "hash": "206491af1a",
-          "subject": "Revert \"[FedCM] Make privacy policy url required\""
-        },
-        {
-          "date": "2022-03-03",
-          "author": "npm@chromium.org",
-          "hash": "45b506b5ac",
-          "subject": "[FedCM] Make privacy policy url required"
         }
       ]
     },
@@ -918,12 +876,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "b9cb5056ed",
           "subject": "Test that consumption & preload of CSP-blocked resources are both reported (#33205)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "antoniosartori@chromium.org",
-          "hash": "aa5400a53c",
-          "subject": "[CSP] Fix flaky WPTs for history inheritance"
         }
       ]
     },
@@ -932,14 +884,7 @@
       "href": "https://w3c.github.io/webappsec-cspee/",
       "specrepo": "https://github.com/w3c/webappsec-cspee",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2022-03-03",
-          "author": "antoniosartori@chromium.org",
-          "hash": "aa5400a53c",
-          "subject": "[CSP] Fix flaky WPTs for history inheritance"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Scripting Policy",
@@ -1069,12 +1014,6 @@
           "author": "emilio@crisal.io",
           "hash": "629833fd0d",
           "subject": "Make keyframes for pseudo-elements inherit from the right style."
-        },
-        {
-          "date": "2022-03-03",
-          "author": "dbaron@chromium.org",
-          "hash": "d288a61b9f",
-          "subject": "Check compositor_state->effect_changed before deciding not to cancel/restart animation."
         }
       ]
     },
@@ -1176,6 +1115,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-04-29",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "4851bc6020",
+          "subject": "[GridFragmentation] Start align grid items if out of fragmentainer space"
+        },
         {
           "date": "2022-04-28",
           "author": "almaher@microsoft.com",
@@ -2363,24 +2308,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "61be66b1f",
           "subject": "[css-grid-2] Cross-reference subgrid alignment. #7078"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "jackalmage@gmail.com",
-          "hash": "93b039341",
-          "subject": "[css-grid-1] Rephrase 'distribute extra space' opening to be more algorithmic for clarity. #3648"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "feb7190e9",
-          "subject": "[css-grid] Distinguish no track preference vs empty preferred tracks. #3648"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "bb58d1998",
-          "subject": "[css-grid-1][css-grid-2] Fix auto minimum size to better handle percentage specified and maximum sizes. #6278"
         }
       ],
       "testlog": [
@@ -2621,6 +2548,30 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-04-29",
+          "author": "mstensho@chromium.org",
+          "hash": "b6bd8161f4",
+          "subject": "Pre-paint: Reset fragmentation at monolithic elements."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "mstensho@chromium.org",
+          "hash": "e61755a861",
+          "subject": "Finish overflowing content before placing the column spanner."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "mstensho@chromium.org",
+          "hash": "c9532c4417",
+          "subject": "When replacing a nested OOF multicol fragment, find the right parent."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "81bd2099fe",
+          "subject": "[BlockFragmentation] Split null/max MinimalSpaceShortage representation"
+        },
+        {
           "date": "2022-04-28",
           "author": "mstensho@chromium.org",
           "hash": "79cee60dbd",
@@ -2781,12 +2732,6 @@
           "author": "mstensho@chromium.org",
           "hash": "7af654b145",
           "subject": "Handle extra fragmentainers caused by OOF in nested OOF multicol."
-        },
-        {
-          "date": "2022-03-03",
-          "author": "mstensho@chromium.org",
-          "hash": "c0e87c409c",
-          "subject": "Set dummy available size on constraint space to avoid DCHECK."
         }
       ]
     },
@@ -3532,7 +3477,14 @@
           "subject": "[css-text-decor-3] Rewrap paragraph, mark last sentence as a note. #7088"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-04-29",
+          "author": "dazabani@igalia.com",
+          "hash": "fc305a833e",
+          "subject": "[css-text-decor] remove incorrect text-decoration-color-selection-001 (#33856)"
+        }
+      ]
     },
     {
       "name": "CSS Transforms",
@@ -3880,7 +3832,32 @@
       "href": "https://drafts.csswg.org/css-will-change/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2022-04-29",
+          "author": "chris@w3.org",
+          "hash": "e8a75fa0d",
+          "subject": "[css-will-change-1] Back to ED"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "chris@w3.org",
+          "hash": "84a329b93",
+          "subject": "[css-conditional-1] Added Security and Prvacy sections"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "chris@w3.org",
+          "hash": "4caf0f1d5",
+          "subject": "[css-will-change-1] Prepare for CRD"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "chris@w3.org",
+          "hash": "039c61706",
+          "subject": "[css-will-change-1] Update changes"
+        }
+      ],
       "testlog": []
     },
     {
@@ -4629,6 +4606,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-29",
+          "author": "Ms2ger@gmail.com",
+          "hash": "b649e6b22a",
+          "subject": "Temporal: Port some Duration.compare tests."
+        },
+        {
           "date": "2022-04-28",
           "author": "jesse@igalia.com",
           "hash": "dcd25e616d",
@@ -5118,6 +5101,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-04-29",
+          "author": "Ms2ger@gmail.com",
+          "hash": "b649e6b22a",
+          "subject": "Temporal: Port some Duration.compare tests."
+        },
         {
           "date": "2022-04-28",
           "author": "jesse@igalia.com",
@@ -6432,6 +6421,18 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-29",
+          "author": "masonf@chromium.org",
+          "hash": "06c581ae1c",
+          "subject": "Rename initiallyopen to defaultopen for popup"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "masonf@chromium.org",
+          "hash": "4c555ebf12",
+          "subject": "Add showpopup and hidepopup invoking attributes for popup"
+        },
+        {
           "date": "2022-04-28",
           "author": "bebeaudr@microsoft.com",
           "hash": "16f17bc5f6",
@@ -7084,12 +7085,6 @@
           "author": "cdumez@apple.com",
           "hash": "a8e347c802",
           "subject": "Add WPT test for case where an anchor has a click handler that navigates back and a target that does a fragment navigation (#33053)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "juanmihd@chromium.org",
-          "hash": "83c9ce52fc",
-          "subject": "Fixing issue with alpha/shadow/filter in multiple layers"
         }
       ]
     },
@@ -7098,6 +7093,12 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2022-04-29",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "1ca9da8",
+          "subject": "add back in caption labeling relationships"
+        },
         {
           "date": "2022-04-13",
           "author": "scottaohara@users.noreply.github.com",
@@ -7316,30 +7317,6 @@
           "author": "scottaohara@users.noreply.github.com",
           "hash": "8d76d31",
           "subject": "Update index.html"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "faulkner.steve@gmail.com",
-          "hash": "f43d09c",
-          "subject": "add rule for dl > div (#403)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "5a49e5b",
-          "subject": "Editorial reordering"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "eea25c8",
-          "subject": "Editorial: further alphabetizing fixes"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "2b6eff7",
-          "subject": "Editorial: correct alphabetical ordering"
         }
       ],
       "testlog": [],
@@ -9552,12 +9529,6 @@
           "author": "pmeenan@chromium.org",
           "hash": "9288860e39",
           "subject": "Fixed camel case of fetchPriority IDL attribute"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "pmeenan@chromium.org",
-          "hash": "3404ba04e5",
-          "subject": "Renamed importance to fetchpriority/priority"
         }
       ]
     },
@@ -10958,6 +10929,48 @@
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
         {
+          "date": "2022-04-29",
+          "author": "richard.gibson@gmail.com",
+          "hash": "3e5ef6a3",
+          "subject": "Editorial: Conform with ECMA-262 conventions for infinity"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "richard.gibson@gmail.com",
+          "hash": "11327e67",
+          "subject": "Editorial: Conform with ECMA-262 conventions for inequality"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "richard.gibson@gmail.com",
+          "hash": "adbbae1f",
+          "subject": "Editorial: Conform with ECMA-262 conventions for loose inequality"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "richard.gibson@gmail.com",
+          "hash": "16a55875",
+          "subject": "Editorial: Conform with ECMA-262 conventions for multiplication"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "richard.gibson@gmail.com",
+          "hash": "bbcd37b2",
+          "subject": "Editorial: Conform with ECMA-262 conventions for subtraction and negation"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "Ms2ger@gmail.com",
+          "hash": "632d4c5e",
+          "subject": "Editorial: Update to current ECMA402."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "ftang@google.com",
+          "hash": "9dee6411",
+          "subject": "Editorial: Fix errors introduced by pull/1928 (#2163)"
+        },
+        {
           "date": "2022-04-28",
           "author": "ryzokuken@disroot.org",
           "hash": "9cdbb732",
@@ -12296,6 +12309,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-04-29",
+          "author": "dbaron@chromium.org",
+          "hash": "dd1250ade8",
+          "subject": "Avoid calling CompositorPropertyAnimationsHaveNoEffect when effect->IsCurrent() is false."
+        },
+        {
           "date": "2022-04-22",
           "author": "dbaron@chromium.org",
           "hash": "1170cc4ded",
@@ -12538,12 +12557,6 @@
           "author": "cdumez@apple.com",
           "hash": "a0180c73a0",
           "subject": "Increase the tolerance a bit in webaudio/the-audio-api/the-biquadfilternode-interface/no-dezippering.html (#33642)"
-        },
-        {
-          "date": "2022-03-03",
-          "author": "hongchan@chromium.org",
-          "hash": "82a23e3592",
-          "subject": "Remove audit.js from pannernode-basic.html test"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -12756,6 +12769,30 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2022-04-29",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "f286d8e",
+          "subject": "Remove setting of fixed fields"
+        },
+        {
+          "date": "2022-04-29",
+          "author": "brwalder@microsoft.com",
+          "hash": "5a78946",
+          "subject": "Remove GenericRealmInfo."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "brwalder@microsoft.com",
+          "hash": "c75839b",
+          "subject": "Extract global object into variable."
+        },
+        {
+          "date": "2022-04-29",
+          "author": "brwalder@microsoft.com",
+          "hash": "a40d58a",
+          "subject": "Additional info for specific Realm types."
+        },
         {
           "date": "2022-04-29",
           "author": "mathias@qiwi.be",
@@ -13451,12 +13488,6 @@
           "author": "bajones@chromium.org",
           "hash": "aef549c",
           "subject": "Reland: Only allow depth/stencil load/store ops when they have an effect"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "84498356+jzm-intel@users.noreply.github.com",
-          "hash": "356706a",
-          "subject": "Fix typos of accuracy of exp and exp2 (#2634)"
         }
       ],
       "testlog": []
@@ -13481,6 +13512,18 @@
       "specrepo": "https://github.com/whatwg/webidl",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-04-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "271cff8",
+          "subject": "Remove the concept of \"type name\""
+        },
+        {
+          "date": "2022-04-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "b6bc081",
+          "subject": "Meta: export getter/setter/method/constructor steps"
+        },
         {
           "date": "2022-04-19",
           "author": "jackalmage@gmail.com",
@@ -13702,18 +13745,6 @@
           "author": "hayato@google.com",
           "hash": "0e3236f",
           "subject": "Editorial changes to subresoruce-loading spec #708"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "hayato@google.com",
-          "hash": "e7cecda",
-          "subject": "Editorial changes to subresource-loading spec #708"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "ksakamoto@chromium.org",
-          "hash": "37472e4",
-          "subject": "Enable PR preview for subresource loading spec"
         }
       ],
       "testlog": []
@@ -14993,12 +15024,6 @@
           "author": "bajones@chromium.org",
           "hash": "aef549c",
           "subject": "Reland: Only allow depth/stencil load/store ops when they have an effect"
-        },
-        {
-          "date": "2022-03-04",
-          "author": "84498356+jzm-intel@users.noreply.github.com",
-          "hash": "356706a",
-          "subject": "Fix typos of accuracy of exp and exp2 (#2634)"
         }
       ],
       "testlog": []
