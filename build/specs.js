@@ -4,7 +4,7 @@ const browserSpecs = require('browser-specs');
 const fs = require('fs');
 
 // infer some additional information for an entry
-function completeEntry(entry, mode) {
+function completeEntry(entry) {
   const {id, name, href} = entry;
 
   function entryFromGitHubIO(url) {
@@ -124,11 +124,8 @@ function completeEntry(entry, mode) {
     });
   }
 
-  if (mode == 'manual') {
-    return entry;
-  }
-
-  throw new Error(`Unmatched spec URL pattern: ${href}`);
+  // Unmatched spec URL
+  return undefined;
 }
 
 function uniqueMap(entries, prop) {
@@ -150,39 +147,26 @@ async function main() {
   console.assert(specsPath);
 
   console.log('Reading browser-specs');
-  const specs = browserSpecs
-      .filter((entry) => {
-        const url = entry.nightly.url;
-        // Skip all HTTP specs
-        if (url.startsWith('https://httpwg.org/')) {
-          return false;
-        }
-        // Skip all WebGL extensions
-        if (url.startsWith('https://www.khronos.org/registry/webgl/extensions/')) {
-          return false;
-        }
-        // Skip all RFCs
-        if (url.startsWith('https://www.rfc-editor.org/rfc/')) {
-          return false;
-        }
-        // Skip other W3C documents (Patent Policy)
-        if (url.startsWith('https://www.w3.org/')) {
-          return false;
-        }
-        // only include the latest level of any spec
-        if (entry.shortname != entry.series.currentSpecification) {
-          return false;
-        }
-        return true;
-      })
-      .map((entry) => {
-        return completeEntry({
-          id: entry.series.shortname,
-          name: entry.title,
-          href: entry.nightly.url,
-          specrepo: entry.nightly.repository,
-        }, 'auto');
-      });
+  const specs = [];
+  for (const spec of browserSpecs) {
+    // only include the latest level of any spec
+    if (spec.shortname != spec.series.currentSpecification) {
+      continue;
+    }
+
+    const entry = completeEntry({
+      id: spec.series.shortname,
+      name: spec.title,
+      href: spec.nightly.url,
+      specrepo: spec.nightly.repository,
+    });
+
+    if (entry) {
+      specs.push(entry);
+    } else {
+      console.warn(`Ignoring ${spec.nightly.url}`);
+    }
+  }
 
   console.log('Applying specs-fixes.json');
   const idMap = uniqueMap(specs, 'id');
