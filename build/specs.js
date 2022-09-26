@@ -77,7 +77,7 @@ function completeEntry(entry) {
     case 'svgwg.org':
       return entryFromSvgwgOrg(url);
     case 'tc39.es':
-    case 'www.khronos.org':
+    case 'registry.khronos.org':
       return entry;
   }
 
