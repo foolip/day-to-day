@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-07-31T20:01:37.951Z",
-  "until": "2022-09-26T20:01:37.951Z",
+  "since": "2022-08-01T07:24:41.662Z",
+  "until": "2022-09-27T07:24:41.662Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -591,12 +591,6 @@
           "author": "miketaylr@chromium.org",
           "hash": "7fc0fd8",
           "subject": "Improve Safari User-Agent patterns (#188) (#209)"
-        },
-        {
-          "date": "2022-08-01",
-          "author": "miketaylr@chromium.org",
-          "hash": "e450ea5",
-          "subject": "Define \"decompose\" and \"constant\" (#210)"
         }
       ],
       "testlog": [
@@ -3175,7 +3169,14 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-26",
+          "author": "obrufau@igalia.com",
+          "hash": "6df47cbe0f",
+          "subject": "Fix typo explict -> explicit (#36087)"
+        }
+      ]
     },
     {
       "name": "CSS Mobile Text Size Adjustment",
@@ -3205,6 +3206,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-09-27",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "a87703f996",
+          "subject": "[aspect-ratio] Fix legacy aspect-ratio code interference."
+        },
         {
           "date": "2022-09-23",
           "author": "wptsync@mozilla.com",
@@ -3469,6 +3476,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-27",
+          "author": "kojii@chromium.org",
+          "hash": "bbb36fc05e",
+          "subject": "[text-decorations] Uncull if the first child has `vertical-align`"
+        },
+        {
           "date": "2022-09-05",
           "author": "git@florian.rivoal.net",
           "hash": "249e1eb8e6",
@@ -3496,6 +3509,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-09-26",
+          "author": "pdr@chromium.org",
+          "hash": "fcc1c7ead1",
+          "subject": "Limit fast-path transform updates to just transform property changes"
+        },
         {
           "date": "2022-09-19",
           "author": "philip@foolip.org",
@@ -4061,6 +4080,36 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2022-09-27",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "231f270",
+          "subject": "Editorial: Define alias before reference (#2916)"
+        },
+        {
+          "date": "2022-09-27",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "2600c07",
+          "subject": "Meta: update ecmarkup (#2848)"
+        },
+        {
+          "date": "2022-09-27",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "fdf0aad",
+          "subject": "Editorial: consistency in phrasing of ranges and inclusivity/exclusivity (#2848)"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "77256bf",
+          "subject": "Editorial: Make \"Abstract Operations for RegExp Matching\" (#2850)"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "abee2e6",
+          "subject": "Editorial: Make \"Abstract Operations for RegExp Creation\" (#2850)"
+        },
         {
           "date": "2022-09-26",
           "author": "jmdyck@ibiblio.org",
@@ -6416,6 +6465,12 @@
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
         {
+          "date": "2022-09-26",
+          "author": "goto@chromium.org",
+          "hash": "47d4530",
+          "subject": "Move the PDF for the timing attack to the meetings folder"
+        },
+        {
           "date": "2022-09-23",
           "author": "samuelgoto@gmail.com",
           "hash": "87f2030",
@@ -7105,6 +7160,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-09-26",
+          "author": "obrufau@igalia.com",
+          "hash": "6df47cbe0f",
+          "subject": "Fix typo explict -> explicit (#36087)"
+        },
         {
           "date": "2022-09-26",
           "author": "philip@foolip.org",
@@ -7909,12 +7970,6 @@
           "author": "estade@chromium.org",
           "hash": "d5050832b6",
           "subject": "Storage buckets: implement StorageBucket::indexedDB."
-        },
-        {
-          "date": "2022-07-31",
-          "author": "asutherland@asutherland.org",
-          "hash": "fa1662706c",
-          "subject": "Mark new test as \"long\" timeout and reduce runtime."
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -8213,6 +8268,12 @@
       "href": "https://w3c.github.io/mathml-core/",
       "specrepo": "https://github.com/w3c/mathml-core",
       "speclog": [
+        {
+          "date": "2022-09-27",
+          "author": "fwang@igalia.com",
+          "hash": "f671ceb",
+          "subject": "Make the \"algorithm for determining the properties of an embellished operator\" [1] try fallback forms in the order infix, postfix, prefix. This is consistent with MathML 4 and older versions and implementations in WebKit and Firefox. With the new version of the operator dictionary the order prefix/postfix does not matter and this change is not testable. For details, see [2]."
+        },
         {
           "date": "2022-09-21",
           "author": "fwang@igalia.com",
@@ -8531,7 +8592,14 @@
       "specrepo": "https://github.com/w3c/fxtf-drafts",
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-26",
+          "author": "pdr@chromium.org",
+          "hash": "fcc1c7ead1",
+          "subject": "Limit fast-path transform updates to just transform property changes"
+        }
+      ]
     },
     {
       "name": "MediaStreamTrack Content Hints",
@@ -10257,7 +10325,14 @@
       "specrepo": "https://github.com/whatwg/quirks",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-27",
+          "author": "kojii@chromium.org",
+          "hash": "bbb36fc05e",
+          "subject": "[text-decorations] Uncull if the first child has `vertical-align`"
+        }
+      ]
     },
     {
       "name": "Referrer Policy",
@@ -10425,6 +10500,12 @@
       "specrepo": "https://github.com/w3c/resource-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-09-27",
+          "author": "36098125+abinpaul1@users.noreply.github.com",
+          "hash": "e298ac6",
+          "subject": "Explainer for Resource response status (#347)"
+        },
         {
           "date": "2022-09-26",
           "author": "36098125+abinpaul1@users.noreply.github.com",
@@ -10606,7 +10687,14 @@
           "subject": "Update requestFullscreen section (#344)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-27",
+          "author": "cdumez@apple.com",
+          "hash": "23e74fc68f",
+          "subject": "Use get-host-info.sub.js in screen-wake-lock tests (#36088)"
+        }
+      ]
     },
     {
       "name": "Scroll-linked Animations",
@@ -11314,6 +11402,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-09-27",
+          "author": "schenney@chromium.org",
+          "hash": "997e131b3f",
+          "subject": "[WPT] Fix currentScale-change-repaint test"
+        },
+        {
           "date": "2022-09-23",
           "author": "rbuis@igalia.com",
           "hash": "456b3676f5",
@@ -11861,6 +11955,60 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "b25fee9a",
+          "subject": "Polyfill: Change dateAdd to a required parameter of MoveRelativeDate"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "968d0dde",
+          "subject": "Polyfill: Remove remaining dateAdd lookups"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "3b1f69a2",
+          "subject": "Polyfill: Implement dateAdd as parameter to MoveRelativeDate"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "7afcd5d2",
+          "subject": "Polyfill: Fix observable call of CalendarDateFromFields in DifferenceTemporalPlainYearMonth"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "5644cbd8",
+          "subject": "Polyfill: Fix observable call of ToRelativeTemporalObject in Duration.p.total"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "pchimento@igalia.com",
+          "hash": "a00d9593",
+          "subject": "Polyfill: Fix observable call of ToTemporalTimeZone in ToTemporalZonedDateTime"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "andre.bargull@gmail.com",
+          "hash": "45d90792",
+          "subject": "Editorial: Change `dateAdd` to a required parameter of MoveRelativeDate"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "andre.bargull@gmail.com",
+          "hash": "a48838a2",
+          "subject": "Normative: Perform a single \"dateAdd\" lookup for the remaining MoveRelativeDate calls"
+        },
+        {
+          "date": "2022-09-26",
+          "author": "andre.bargull@gmail.com",
+          "hash": "891060f1",
+          "subject": "Normative: Add optional `dateAdd` parameter to MoveRelativeDate"
+        },
         {
           "date": "2022-09-22",
           "author": "richard.gibson@gmail.com",
@@ -13195,6 +13343,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-09-27",
+          "author": "dalecurtis@chromium.org",
+          "hash": "8dc1f958e4",
+          "subject": "Add timestamps to blink::ImageDecoder implementations."
+        },
         {
           "date": "2022-09-01",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -16031,6 +16185,12 @@
       "specrepo": "https://github.com/WICG/webpackage",
       "speclog": [
         {
+          "date": "2022-09-27",
+          "author": "ksakamoto@chromium.org",
+          "hash": "4dd11fc",
+          "subject": "Fix broken link in go/bundle/README.md"
+        },
+        {
           "date": "2022-08-26",
           "author": "hayato@google.com",
           "hash": "d3c8567",
@@ -16256,7 +16416,14 @@
           "subject": "Review Draft Publication: September 2022"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-26",
+          "author": "obrufau@igalia.com",
+          "hash": "6df47cbe0f",
+          "subject": "Fix typo explict -> explicit (#36087)"
+        }
+      ]
     },
     {
       "name": "WebTransport",
