@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-08-03T07:21:50.055Z",
-  "until": "2022-09-29T07:21:50.055Z",
+  "since": "2022-08-04T07:24:00.545Z",
+  "until": "2022-09-30T07:24:00.545Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -16,6 +16,12 @@
       "href": "https://w3c.github.io/accname/",
       "specrepo": "https://github.com/w3c/accname",
       "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "bryan.garaventa@whatsock.com",
+          "hash": "bb65de3",
+          "subject": "Temporary revert within step 2H to reference 2F.i instead of 2F until logic can be drafted to correctly handle roles that should not be traversed."
+        },
         {
           "date": "2022-09-20",
           "author": "bryan.garaventa@whatsock.com",
@@ -185,12 +191,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -207,6 +207,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "80365263+linnan-github@users.noreply.github.com",
+          "hash": "7deae4b",
+          "subject": "Add aggregatable_deduplication_key trigger field to header validator (#564)"
+        },
         {
           "date": "2022-09-28",
           "author": "60107815+lbdvt@users.noreply.github.com",
@@ -344,12 +350,6 @@
           "author": "apaseltiner@google.com",
           "hash": "4e7f552",
           "subject": "Validate list/object lengths (#530)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "apaseltiner@google.com",
-          "hash": "ebe3fe0",
-          "subject": "Make source_event_id field optional (#518)"
         }
       ],
       "testlog": []
@@ -428,14 +428,7 @@
       "href": "https://w3c.github.io/beacon/",
       "specrepo": "https://github.com/w3c/beacon",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2022-08-03",
-          "author": "iclelland@chromium.org",
-          "hash": "9e4dc33",
-          "subject": "Remove deps section, properly cross-reference links"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -526,6 +519,12 @@
       "href": "https://wicg.github.io/client-hints-infrastructure/",
       "specrepo": "https://github.com/WICG/client-hints-infrastructure",
       "speclog": [
+        {
+          "date": "2022-09-30",
+          "author": "arichiv@chromium.org",
+          "hash": "9c77cba",
+          "subject": "Add WoW64 UA CH to spec (#129)"
+        },
         {
           "date": "2022-09-19",
           "author": "miketaylr@chromium.org",
@@ -625,6 +624,18 @@
       "href": "https://wicg.github.io/compute-pressure/",
       "specrepo": "https://github.com/WICG/compute-pressure",
       "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "3161c4e",
+          "subject": "Fix Raphael's comment"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "ced3ad6",
+          "subject": "Use dictionary notation when referring to PressureRecord members, fixed #133"
+        },
         {
           "date": "2022-09-21",
           "author": "kenneth.r.christiansen@intel.com",
@@ -1084,6 +1095,24 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "mstensho@chromium.org",
+          "hash": "ac1f612b76",
+          "subject": "Store actual fragmentainer offset in constraint space."
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mstensho@chromium.org",
+          "hash": "58c963f081",
+          "subject": "Avoid invalid class C break when a first inflow child fits beside float."
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mstensho@chromium.org",
+          "hash": "e215f48ec6",
+          "subject": "Add constraint space flag for being pushed by floats."
+        },
+        {
           "date": "2022-09-27",
           "author": "mstensho@chromium.org",
           "hash": "2fa24e23d0",
@@ -1541,12 +1570,6 @@
           "author": "jkew@mozilla.com",
           "hash": "bf7d2c034b",
           "subject": "Add WPT tests for @supports font-format() and font-tech() functions."
-        },
-        {
-          "date": "2022-08-04",
-          "author": "gsnedders@apple.com",
-          "hash": "46be2a9302",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=217802 (#33518)"
         }
       ]
     },
@@ -1911,12 +1934,6 @@
           "author": "andruud@chromium.org",
           "hash": "4f6c409008",
           "subject": "[@container] Don't upgrade for nodes that aren't connected"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "futhark@chromium.org",
-          "hash": "95f60596db",
-          "subject": "Support for the CSS ic length unit"
         }
       ]
     },
@@ -2037,6 +2054,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-09-29",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "1d9f9d7a86",
+          "subject": "[last-baseline] Propagate last baslines from flexbox."
+        },
         {
           "date": "2022-09-28",
           "author": "ikilpatrick@chromium.org",
@@ -2440,6 +2463,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "1d9f9d7a86",
+          "subject": "[last-baseline] Propagate last baslines from flexbox."
+        },
+        {
           "date": "2022-09-28",
           "author": "ikilpatrick@chromium.org",
           "hash": "cfc42c544a",
@@ -2554,6 +2583,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-30",
+          "author": "drobertson@mozilla.com",
+          "hash": "a2f844a044",
+          "subject": "Cross origin image request should not respect image orientation."
+        },
+        {
           "date": "2022-09-16",
           "author": "futhark@chromium.org",
           "hash": "7612b58be2",
@@ -2599,7 +2634,14 @@
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2022-09-29",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "1d9f9d7a86",
+          "subject": "[last-baseline] Propagate last baslines from flexbox."
+        }
+      ]
     },
     {
       "name": "CSS Line Grid",
@@ -3023,12 +3065,6 @@
           "author": "rniwa@webkit.org",
           "hash": "06292b8a5b",
           "subject": "Add tests for specifying dir content attribute on bdi and :dir pseudo class. (#35352)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "dazabani@igalia.com",
-          "hash": "0592bb24e5",
-          "subject": "[css-pseudo] rework highlight currentColor tests (#35320)"
         }
       ]
     },
@@ -3318,18 +3354,6 @@
           "author": "oriol-bugzilla@hotmail.com",
           "hash": "2c60a96709",
           "subject": "Obey contain-intrinsic-size in scroll containers."
-        },
-        {
-          "date": "2022-08-03",
-          "author": "dgrogan@chromium.org",
-          "hash": "4dc29427ab",
-          "subject": "[css] Increase fuzzy parameters to fix flaky test"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "rbuis@igalia.com",
-          "hash": "8e5c6c20c3",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=243369 (#35281)"
         }
       ]
     },
@@ -3461,12 +3485,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "249e1eb8e6",
           "subject": "Add test for underline edge skipping"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "kojii@chromium.org",
-          "hash": "948b674150",
-          "subject": "[text-decorations] Fix |StyleVariant| of an empty line"
         }
       ]
     },
@@ -3554,6 +3572,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "graouts@apple.com",
+          "hash": "0ee0bf473a",
+          "subject": "Export made from a WebKit repository (#36153)"
+        },
+        {
           "date": "2022-08-15",
           "author": "futhark@chromium.org",
           "hash": "0635d67173",
@@ -3630,6 +3654,18 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-30",
+          "author": "futhark@chromium.org",
+          "hash": "fc8da1e365",
+          "subject": "Add test for lh unit affected by loading web font"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "futhark@chromium.org",
+          "hash": "c18e539b7e",
+          "subject": "Do not use base style optimization for lh/line-height dependency"
+        },
+        {
           "date": "2022-09-23",
           "author": "emilio@crisal.io",
           "hash": "9bfed22643",
@@ -3694,12 +3730,6 @@
           "author": "futhark@chromium.org",
           "hash": "3cd617562c",
           "subject": "Add separate test reference for ic-unit-012.html"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "seokho@chromium.org",
-          "hash": "fdb7dbe0c5",
-          "subject": "Add tan() function for CSSTrigonometrcFunctions"
         }
       ]
     },
@@ -3771,12 +3801,6 @@
           "author": "emilio@crisal.io",
           "hash": "76ad9950b7",
           "subject": "Improve CSS OM for CSSContainerRule."
-        },
-        {
-          "date": "2022-08-04",
-          "author": "gsnedders@apple.com",
-          "hash": "46be2a9302",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=217802 (#33518)"
         }
       ]
     },
@@ -3791,18 +3815,6 @@
           "author": "argyle@google.com",
           "hash": "669f10d4e",
           "subject": "[cssom-1] adds explicit note about when to not emit scrollend"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "dom@w3.org",
-          "hash": "5eb1ca833",
-          "subject": "Align phrasing for change event firing with DOM spec"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "fd@tidoust.net",
-          "hash": "763e6ce92",
-          "subject": "[cssom-view-1] Fix dfns for events that target VisualViewport"
         }
       ],
       "testlog": [
@@ -4605,78 +4617,6 @@
           "author": "bakkot@gmail.com",
           "hash": "f512200",
           "subject": "Normative: only coerce once in BigInt constructor (#2812)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "richard.gibson@gmail.com",
-          "hash": "35b7eb2",
-          "subject": "Normative: Always check regular expression flags by \"flags\" (#2791)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "ljharb@gmail.com",
-          "hash": "0981442",
-          "subject": "Meta: use specific github token for IPR check"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "ljharb@gmail.com",
-          "hash": "42a19dd",
-          "subject": "Meta: fix ipr-check; incorporate emeriti (#2832)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "eric@pagefault.se",
-          "hash": "8edfa9b",
-          "subject": "Normative: Clarify validity of negative expanded year 0 (#2550)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "mficarra@shapesecurity.com",
-          "hash": "b017a80",
-          "subject": "Editorial: change dfn for \"mathematical value\" and add \"mathematical value of\" (#2822)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "87d94a1",
-          "subject": "Editorial: Clarify that the `HostResolveImportedModule` cache is per-Realm (#2806)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "df65a85",
-          "subject": "Editorial: Bugfix: Prevent mis-application of Implicit Normal Completion (#2744)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "a5e5daf",
-          "subject": "Editorial: Mark invocations of Evaluation with `?` or `Completion()` (#2744)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "220cdd4",
-          "subject": "Editorial: Change \"the result of evaluating X\" to \"Evaluation of X\" (#2744)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "a947f97",
-          "subject": "Editorial: Make a 'home' section for Evaluation (#2744)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "2d3ecad",
-          "subject": "Editorial: Consistify prose for intrinsic functions (#2592)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "539a242",
-          "subject": "Editorial: Fix a few function preambles (#2592)"
         }
       ],
       "testlog": [
@@ -4997,18 +4937,6 @@
           "author": "aditisingh1400@gmail.com",
           "hash": "e9f424b6fc",
           "subject": "Remove duplicate timezone tests"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "ysuzuki@apple.com",
-          "hash": "f74cee5f59",
-          "subject": "Rename Array#groupBy and Array#groupByToMap to Array#group and Array#groupToMap"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "pchimento@igalia.com",
-          "hash": "10a5c4f784",
-          "subject": "Temporal: Adjust and expand tests for observable calls to ToString(calendar)"
         }
       ]
     },
@@ -5179,12 +5107,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5271,12 +5193,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5363,12 +5279,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5455,12 +5365,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5547,12 +5451,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5639,12 +5537,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5731,12 +5623,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5823,12 +5709,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -5915,12 +5795,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6007,12 +5881,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6099,12 +5967,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6191,12 +6053,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6283,12 +6139,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6375,12 +6225,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -6809,6 +6653,12 @@
       "specrepo": "https://github.com/whatwg/fs",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "ekrivoy@gmail.com",
+          "hash": "4785589",
+          "subject": "Add Access Handles to spec (#21)"
+        },
         {
           "date": "2022-09-20",
           "author": "annevk@annevk.nl",
@@ -7764,18 +7614,6 @@
           "author": "cdumez@apple.com",
           "hash": "71e460e053",
           "subject": "Make sure html/semantics/forms/the-input-element/range-restore-oninput-onchange-event.html doesn't trigger bfcache (#35341)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "masonf@chromium.org",
-          "hash": "f78e28e21a",
-          "subject": "Add a test of dialog autofocus"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "masonf@chromium.org",
-          "hash": "8222ceeeeb",
-          "subject": "[pop-up] Fix the case where clicking an invoker closes the invokee"
         }
       ]
     },
@@ -8128,12 +7966,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -8149,12 +7981,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "a97a6d8398",
           "subject": "Constructed service-worker responses are TAO-OK"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "sohom.datta@learner.manipal.edu",
-          "hash": "122960422c",
-          "subject": "Fix wpt test for css-generated text on inline element"
         }
       ]
     },
@@ -8513,12 +8339,6 @@
           "author": "rniwa@webkit.org",
           "hash": "53126bba27",
           "subject": "Add tests for viewport dependent media queries inside iframe (#35349)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "futhark@chromium.org",
-          "hash": "95f60596db",
-          "subject": "Support for the CSS ic length unit"
         }
       ]
     },
@@ -8757,12 +8577,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -8849,12 +8663,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -8941,12 +8749,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9033,12 +8835,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9125,12 +8921,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9217,12 +9007,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9309,12 +9093,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9401,12 +9179,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9493,12 +9265,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -9660,12 +9426,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -10326,6 +10086,54 @@
       "specrepo": "https://github.com/w3c/remote-playback",
       "speclog": [
         {
+          "date": "2022-09-29",
+          "author": "mfoltz@chromium.org",
+          "hash": "c6601d0",
+          "subject": "Define IDL terms in prose."
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@chromium.org",
+          "hash": "791185f",
+          "subject": "Fix line wrapping"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@google.com",
+          "hash": "5119824",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@google.com",
+          "hash": "05afda7",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@google.com",
+          "hash": "39cf592",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@chromium.org",
+          "hash": "ac74c5e",
+          "subject": "Fix line wrapping"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "mfoltz@chromium.org",
+          "hash": "4d82fe8",
+          "subject": "Fix more WebIDL references"
+        },
+        {
+          "date": "2022-09-28",
+          "author": "mfoltz@chromium.org",
+          "hash": "b66498b",
+          "subject": "Fix various ReSpec issues"
+        },
+        {
           "date": "2022-09-02",
           "author": "johannhof@chromium.org",
           "hash": "4e2dc79",
@@ -10436,12 +10244,6 @@
           "author": "obrufau@igalia.com",
           "hash": "dedfeb6e4",
           "subject": "[resize-observer] Avoid link error when referencing resize event"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "emilio@crisal.io",
-          "hash": "c47db82bf",
-          "subject": "[resize-observer] Replace editors as per resolution in #7539"
         }
       ],
       "testlog": [
@@ -10479,6 +10281,30 @@
       "specrepo": "https://github.com/w3c/resource-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "carine@w3.org",
+          "hash": "b48a42e",
+          "subject": "Update README.md (#353)"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "carine@w3.org",
+          "hash": "d041bb7",
+          "subject": "Update README.md (#352)"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "41898282+github-actions[bot]@users.noreply.github.com",
+          "hash": "9fcb5fc",
+          "subject": "chore: tidy up index.html (#351)"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "carine@w3.org",
+          "hash": "1c579b5",
+          "subject": "Update index.html (#350)"
+        },
         {
           "date": "2022-09-27",
           "author": "36098125+abinpaul1@users.noreply.github.com",
@@ -10613,8 +10439,39 @@
       "name": "Screen Capture",
       "href": "https://w3c.github.io/mediacapture-screen-share/",
       "specrepo": "https://github.com/w3c/mediacapture-screen-share",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "elad.alon@gmail.com",
+          "hash": "14821a5",
+          "subject": "Add controller dictionary elaboration"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "elad.alon@gmail.com",
+          "hash": "73770e4",
+          "subject": "Incorporate review feedback"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "elad.alon@gmail.com",
+          "hash": "fbd5ebc",
+          "subject": "Add CaptureController to the spec"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2022-09-29",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "9320d46f9d",
+          "subject": "Add web platform tests for screen sharing controls"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "c549f547c3",
+          "subject": "Add eladalon1983 as reviewer (#36066)"
+        },
         {
           "date": "2022-09-09",
           "author": "beaufort.francois@gmail.com",
@@ -10934,12 +10791,6 @@
           "author": "andruud@chromium.org",
           "hash": "157ce7cdcb",
           "subject": "[scroll-animations] Enforce new lookup rules on @scroll-timeline"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "kevers@google.com",
-          "hash": "f6d82a8ce2",
-          "subject": "[view-timeline] remove clamping"
         }
       ]
     },
@@ -11340,6 +11191,12 @@
       "speclog": [
         {
           "date": "2022-09-29",
+          "author": "hober@apple.com",
+          "hash": "ded3dc7",
+          "subject": "Add Anne as an editor. Remove John. (#119)"
+        },
+        {
+          "date": "2022-09-29",
           "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
           "hash": "66a794d",
           "subject": "Reject with NotAllowedError DomException (#118)"
@@ -11412,6 +11269,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "fs@opera.com",
+          "hash": "06c8b5be09",
+          "subject": "Move a couple of hit-testing related SVG tests to WPT"
+        },
+        {
           "date": "2022-09-28",
           "author": "fs@opera.com",
           "hash": "84092fa606",
@@ -11452,12 +11315,6 @@
           "author": "longsonr@gmail.com",
           "hash": "349f44dfc0",
           "subject": "Add epsilon allowance to transform-dynamic-update.html wpt as we pass it except for rounding."
-        },
-        {
-          "date": "2022-08-03",
-          "author": "futhark@chromium.org",
-          "hash": "95f60596db",
-          "subject": "Support for the CSS ic length unit"
         }
       ]
     },
@@ -11672,168 +11529,6 @@
           "author": "ftang@google.com",
           "hash": "ac7e184",
           "subject": "Normative: Pass 0 as fallback for fractionalDigits (#113)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "ryzokuken@users.noreply.github.com",
-          "hash": "cd4de4f",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "8ad7a89",
-          "subject": "Add missing dots"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "0d72618",
-          "subject": "Use correct markup for throwing a RangeError"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "a6492d9",
-          "subject": "Use correct markup for null and number values"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "a6c414a",
-          "subject": "Use correct markup for string literals"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "3a46ee3",
-          "subject": "Use \"numeric\" as the default style when the previous style is \"numeric\" or \"2-digit\""
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "843fc40",
-          "subject": "Add a TODO note about incorrect handling of the time separator symbol"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "b454c8c",
-          "subject": "Only append time separator when the next value will be displayed"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "f4ecb46",
-          "subject": "Remove `next row` which is undefined for the last row"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "d4b35bb",
-          "subject": "Enumerate Record fields for iteration to match ECMA-402"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "d0cc6fa",
-          "subject": "Change the operations from Temporal to be more like the rest of ECMA-402"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "71b291b",
-          "subject": "Use 'of' instead of 'in' to match ECMA-402"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "f947239",
-          "subject": "Rename DurationSign to DurationRecordSign to avoid clashing with Temporal"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "527ea58",
-          "subject": "Make ToDurationRecord more similar to ToTemporalDurationRecord/ToTemporalPartialDurationRecord"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "3e9358e",
-          "subject": "Don't append [[Unit]] field to the result list"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "47a3a69",
-          "subject": "Add missing definition for 'display' variable"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "a1d7876",
-          "subject": "Invert the condition instead of using 'Skip to the next iteration'"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "2d51d64",
-          "subject": "Follow PartitionDateTimeRangePattern instead of using 'Stop iteration'"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "955d87b",
-          "subject": "Add a note that CreatePartsFromList will need to be changed"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "64cc5db",
-          "subject": "Use computed slot names"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "2ed31b8",
-          "subject": "Correctly call MakePartsList with a List of Records"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "e2e18d1",
-          "subject": "Use correct NumberFormat variable"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "44da9cc",
-          "subject": "Add missing Oxford comma"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "cea3b68",
-          "subject": "Creating internal Intl objects is infallible"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "f1e8ed3",
-          "subject": "Remove unnecessary initialisation for value and pass value as a Number where necessary"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "62ee645",
-          "subject": "GetDurationUnitOptions requires that prevStyle is a String value"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "63a9202",
-          "subject": "Add missing check that 'numberingSystem' is not undefined"
         }
       ],
       "testlog": []
@@ -11843,6 +11538,36 @@
       "href": "https://tc39.es/proposal-intl-enumeration/",
       "specrepo": "https://github.com/tc39/proposal-intl-enumeration",
       "speclog": [
+        {
+          "date": "2022-09-30",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "8264fee",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2022-09-30",
+          "author": "ftang@google.com",
+          "hash": "302eecd",
+          "subject": "remove polyfill of outdated spec"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "15ee78c",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "ftang@chromium.org",
+          "hash": "96a2383",
+          "subject": "Fix section id"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "ftang@chromium.org",
+          "hash": "807b444",
+          "subject": "Editorial: Rename AvailableX to AvailableCanonicalX"
+        },
         {
           "date": "2022-09-09",
           "author": "ryzokuken@users.noreply.github.com",
@@ -12408,36 +12133,6 @@
           "author": "mail@linusgroh.de",
           "hash": "f47d57d9",
           "subject": "Editorial: Fix duplicate 'Let newRelativeTo' in BalanceDurationRelative"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "pchimento@igalia.com",
-          "hash": "59b1bffd",
-          "subject": "Update test262"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "pchimento@igalia.com",
-          "hash": "6bd09e6d",
-          "subject": "Polyfill: Avoid `ToString(calendar)` when the calendar-id is unused"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "pchimento@igalia.com",
-          "hash": "cf586bc5",
-          "subject": "Editorial: Refactor calendar formatting operations"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "andre.bargull@gmail.com",
-          "hash": "6122f4e1",
-          "subject": "Normative: Avoid `ToString(calendar)` when the calendar-id is unused"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "aditisingh1400@gmail.com",
-          "hash": "08d13592",
-          "subject": "Remove tests ported to test262"
         }
       ],
       "testlog": []
@@ -12655,20 +12350,7 @@
       "href": "https://w3c.github.io/user-timing/",
       "specrepo": "https://github.com/w3c/user-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2022-08-03",
-          "author": "carine@w3.org",
-          "hash": "bff9090",
-          "subject": "Update auto-publish.yml"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "carine@w3.org",
-          "hash": "a4d0d0d",
-          "subject": "Update auto-publish.yml"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2022-09-11",
@@ -12962,12 +12644,6 @@
           "author": "asumu@igalia.com",
           "hash": "40dca738",
           "subject": "[interpreter] Build wast.js with Js_of_ocaml (#1507)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "rossberg@chromium.org",
-          "hash": "81595418",
-          "subject": "[spec] Trivial editorial fix"
         }
       ],
       "testlog": []
@@ -13517,6 +13193,18 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-30",
+          "author": "aborovova@mozilla.com",
+          "hash": "7f19a7130c",
+          "subject": "[wdspec] Add tests for internal ids."
+        },
+        {
+          "date": "2022-09-30",
+          "author": "mail@hskupin.info",
+          "hash": "1daa81be64",
+          "subject": "[remote] Make TabManager.removeTab asynchronous."
+        },
+        {
           "date": "2022-09-24",
           "author": "james@hoppipolla.co.uk",
           "hash": "1f8be424ae",
@@ -13806,12 +13494,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -13898,12 +13580,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -13990,12 +13666,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14082,12 +13752,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14174,12 +13838,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14266,12 +13924,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14358,12 +14010,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14450,12 +14096,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14542,12 +14182,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14634,12 +14268,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14726,12 +14354,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14818,12 +14440,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -14910,12 +14526,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -15002,12 +14612,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -15094,12 +14698,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -15186,12 +14784,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "2ee735a12",
           "subject": "Clarify TRANSFORM_FEEDBACK_BUFFER bindings (#3470)"
-        },
-        {
-          "date": "2022-08-04",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "d8bb49750",
-          "subject": "Add HEVC version of transparent video test (#3467)"
         }
       ],
       "testlog": []
@@ -16032,24 +15624,6 @@
           "author": "dsinclair@google.com",
           "hash": "8c1c3798",
           "subject": "Move non-type keywords into the other keyword section. (#3284)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "kainino@chromium.org",
-          "hash": "5678d813",
-          "subject": "Allow using depth textures with 'unfilterable-float' bindings (#3230)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "rharrison@google.com",
-          "hash": "3f6b66ae",
-          "subject": "wgsl: Fix typo in cosh(x) accuracy definition (#3282)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "dneto@google.com",
-          "hash": "b6c065df",
-          "subject": "Clarify effect of @builtin struct member when not an entry point IO (#3275)"
         }
       ],
       "testlog": []
@@ -16067,6 +15641,18 @@
       "specrepo": "https://github.com/whatwg/webidl",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-09-30",
+          "author": "mgiuca@chromium.org",
+          "hash": "9c49ede",
+          "subject": "Make PaintOptions example a better role model"
+        },
+        {
+          "date": "2022-09-29",
+          "author": "Ms2ger@gmail.com",
+          "hash": "106f261",
+          "subject": "Expose DOMException everywhere"
+        },
         {
           "date": "2022-09-28",
           "author": "annevk@annevk.nl",
@@ -16106,6 +15692,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "Ms2ger@gmail.com",
+          "hash": "eedbdb7a3f",
+          "subject": "Expose DOMException everywhere."
+        },
+        {
           "date": "2022-09-19",
           "author": "shvaikalesh@gmail.com",
           "hash": "fc45362454",
@@ -16133,6 +15725,18 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2022-09-26",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "780c3ae",
+          "subject": "Update API comparison table for WebNN API and Model Loader API"
+        },
+        {
+          "date": "2022-09-07",
+          "author": "anssi.kostiainen@intel.com",
+          "hash": "272efcb",
+          "subject": "Fix non-existing WebGPU anchor"
+        },
         {
           "date": "2022-09-05",
           "author": "ningxin.hu@intel.com",
@@ -16303,6 +15907,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-09-29",
+          "author": "hta@chromium.org",
+          "hash": "ccda3be6b1",
+          "subject": "Add test for manipulation of RID entries in offer/answer"
+        },
+        {
           "date": "2022-09-21",
           "author": "toprice@chromium.org",
           "hash": "f01d2688a4",
@@ -16338,7 +15948,32 @@
       "name": "WebRTC Encoded Transform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/",
       "specrepo": "https://github.com/w3c/webrtc-encoded-transform",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2022-09-29",
+          "author": "phancke@microsoft.com",
+          "hash": "d4e42eb",
+          "subject": "idl: synchronizationsource is a *unsigned* long"
+        },
+        {
+          "date": "2022-09-12",
+          "author": "youennf@gmail.com",
+          "hash": "187b314",
+          "subject": "Remove unused RTCInsertableStreams dictionary"
+        },
+        {
+          "date": "2022-09-12",
+          "author": "youennf@gmail.com",
+          "hash": "6486d3d",
+          "subject": "Make use of SFrame WG spec link"
+        },
+        {
+          "date": "2022-09-12",
+          "author": "phancke@microsoft.com",
+          "hash": "3116893",
+          "subject": "intro: remove funny hats"
+        }
+      ],
       "testlog": []
     },
     {
@@ -17526,24 +17161,6 @@
           "author": "dsinclair@google.com",
           "hash": "8c1c3798",
           "subject": "Move non-type keywords into the other keyword section. (#3284)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "kainino@chromium.org",
-          "hash": "5678d813",
-          "subject": "Allow using depth textures with 'unfilterable-float' bindings (#3230)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "rharrison@google.com",
-          "hash": "3f6b66ae",
-          "subject": "wgsl: Fix typo in cosh(x) accuracy definition (#3282)"
-        },
-        {
-          "date": "2022-08-03",
-          "author": "dneto@google.com",
-          "hash": "b6c065df",
-          "subject": "Clarify effect of @builtin struct member when not an entry point IO (#3275)"
         }
       ],
       "testlog": []
