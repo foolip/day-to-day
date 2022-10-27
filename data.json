@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-08-30T07:14:05.637Z",
-  "until": "2022-10-26T07:14:05.637Z",
+  "since": "2022-08-31T07:13:39.801Z",
+  "until": "2022-10-27T07:13:39.801Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -86,12 +86,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "fbf1e7d247",
           "subject": "[Sensors] Add rounding & significance test for ALS"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "juha.j.vainio@intel.com",
-          "hash": "9716462c68",
-          "subject": "[Sensors] Move ALS-specific web test to runGenericSensorTests()"
         }
       ],
       "testpolicy": "https://github.com/w3c/ambient-light/blob/HEAD/CONTRIBUTING.md"
@@ -168,12 +162,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -197,6 +185,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "csharrison@chromium.org",
+          "hash": "ad74087",
+          "subject": "Remove landing page restriction for nav sources (#592)"
+        },
         {
           "date": "2022-10-25",
           "author": "csharrison@chromium.org",
@@ -614,7 +608,14 @@
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "estade@chromium.org",
+          "hash": "e1202389f7",
+          "subject": "Merge two clipboard WPTs (both named async-navigator-clipboard-basics )"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -778,6 +779,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-27",
+          "author": "wei4.wang@intel.com",
+          "hash": "bfd9ac3764",
+          "subject": "[ComputePressure] Add Permissions Policy integration"
+        },
         {
           "date": "2022-10-13",
           "author": "arnaud.mandy@intel.com",
@@ -950,12 +957,6 @@
           "author": "scottaohara@users.noreply.github.com",
           "hash": "fbad1bd",
           "subject": "remove reference to whitespace (#135)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "jnurthen@users.noreply.github.com",
-          "hash": "11e02ec",
-          "subject": "editorial: fix terminology references (#122)"
         }
       ],
       "testlog": []
@@ -983,12 +984,6 @@
           "author": "johannhof@chromium.org",
           "hash": "41505fe",
           "subject": "Remove custom anchors for FedCM (#208)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "johannhof@chromium.org",
-          "hash": "05f4402",
-          "subject": "Add permissions policy check for FedCM (#204)"
         }
       ],
       "testlog": [
@@ -1429,14 +1424,7 @@
           "subject": "[css-values][css-cascade] Refactor CSS-wide keyword definitions #7439"
         }
       ],
-      "testlog": [
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "4085d86790",
-          "subject": "[scroll-animations] Remove @scroll-timeline-specific tests"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Color",
@@ -1444,6 +1432,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "10573c917",
+          "subject": "[css-color-4] Remove hue interpolation 'specified', fix #7750"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f6c95c4ec",
+          "subject": "[css-color-4] Define hue interpolation angle precisely, maintain differences of 360deg."
+        },
+        {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "ab0d8e92d",
+          "subject": "[css-color-4] Add example of carried forward alpha for premultiplication, fix #7536"
+        },
         {
           "date": "2022-10-25",
           "author": "chris@w3.org",
@@ -1793,18 +1799,6 @@
           "author": "aaronhk@chromium.org",
           "hash": "b270d4230b",
           "subject": "Parse color function"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "aaronhk@chromium.org",
-          "hash": "0e75a8e6ca",
-          "subject": "Parse oklab color"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "aaronhk@chromium.org",
-          "hash": "e1a0d70faa",
-          "subject": "Parse lab color"
         }
       ]
     },
@@ -1887,6 +1881,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "git@florian.rivoal.net",
+          "hash": "b397a8306",
+          "subject": "[css-contain] Test triage"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "git@florian.rivoal.net",
+          "hash": "b75f8ac7f",
+          "subject": "[css-contain] content-visibility affects contain at used value time"
+        },
         {
           "date": "2022-10-21",
           "author": "chris@w3.org",
@@ -2088,6 +2094,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-10-26",
+          "author": "git@florian.rivoal.net",
+          "hash": "52627e8be0",
+          "subject": "Make some tests more self descriptive"
+        },
+        {
           "date": "2022-10-25",
           "author": "rbuis@igalia.com",
           "hash": "d23f313f21",
@@ -2212,12 +2224,6 @@
           "author": "emilio@crisal.io",
           "hash": "76ad9950b7",
           "subject": "Improve CSS OM for CSSContainerRule."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "futhark@chromium.org",
-          "hash": "d1b1cf0ef4",
-          "subject": "[@container] Invalidation tests for registered custom properties"
         }
       ]
     },
@@ -2461,6 +2467,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "b23e298fb",
+          "subject": "Revert \"[css-fonts-4] Add emoji as a keyword to unicode‑range #4573\""
+        },
+        {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "1853cadf2",
+          "subject": "[css-fonts-4] Add emoji as a keyword to unicode‑range #4573"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "cc8ab6bf9",
+          "subject": "[css-fonts-4] May ignore turning required features off. Fix #7634"
+        },
+        {
           "date": "2022-10-15",
           "author": "mmaxfield@apple.com",
           "hash": "83ca76972",
@@ -2603,15 +2627,15 @@
           "author": "drott@chromium.org",
           "hash": "abfb7674c",
           "subject": "[css-fonts] Update src: explainer to new syntax"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "chris@w3.org",
-          "hash": "d98e99d7c",
-          "subject": "[css-fonts-4][css-fonts-5] make feature-* plural for consistency with Conditional 5 and 11.1 Font tech, fix #7663"
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-27",
+          "author": "jkew@mozilla.com",
+          "hash": "40772b846a",
+          "subject": "Add a WPT test for serialization of font-variant."
+        },
         {
           "date": "2022-10-25",
           "author": "nt1m@users.noreply.github.com",
@@ -2743,18 +2767,6 @@
           "author": "fred.wang@free.fr",
           "hash": "ae5bd331f0",
           "subject": "Use ScriptPercentScaleDown and ScriptScriptPercentScaleDown constants."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "drott@chromium.org",
-          "hash": "bf62f6bbc6",
-          "subject": "[css-fonts] src: line tech() parsing allows rejecting components"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "drott@chromium.org",
-          "hash": "7bbe5a734c",
-          "subject": "Update parsing of @font-face src: line format() component"
         }
       ]
     },
@@ -3293,6 +3305,60 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "dbaron@dbaron.org",
+          "hash": "c8eb0af8f",
+          "subject": "[css-nesting-1] Update my votes on proposals"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "flackr@google.com",
+          "hash": "2da7527d2",
+          "subject": "Switch 2nd/3rd vote order"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "lea@verou.me",
+          "hash": "db097da5d",
+          "subject": "[css-nesting-1] Update vote counts"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "jaffathecake@gmail.com",
+          "hash": "a8ae0e4bd",
+          "subject": "Voting for nesting"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "flackr@google.com",
+          "hash": "2d538f8e7",
+          "subject": "Update proposals.md"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "atanassov@users.noreply.github.com",
+          "hash": "eaca10054",
+          "subject": "Update proposals.md"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "a5928ea22",
+          "subject": "[css-nesting-1-notes] Add back accidentally deleted jensimmons"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "d8475aa6b",
+          "subject": "Clarify empty declaration block only applies to 4.iii"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "108474+jensimmons@users.noreply.github.com",
+          "hash": "327a87392",
+          "subject": "adding vote from Jen Simmons"
+        },
         {
           "date": "2022-10-21",
           "author": "dev@valtlai.fi",
@@ -3897,7 +3963,14 @@
       "href": "https://drafts.csswg.org/css-sizing/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "git@florian.rivoal.net",
+          "hash": "b397a8306",
+          "subject": "[css-contain] Test triage"
+        }
+      ],
       "testlog": [
         {
           "date": "2022-10-24",
@@ -4766,12 +4839,6 @@
           "author": "emilio@crisal.io",
           "hash": "57fa55b67f",
           "subject": "Don't apply scroll padding on the sticky sides for a stuck element."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "philip@foolip.org",
-          "hash": "b016b6ad02",
-          "subject": "Sync interfaces/ with @webref/idl 3.14.0 (#35691)"
         }
       ]
     },
@@ -4832,6 +4899,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "6b3f055",
+          "subject": "Meta: my employer changed"
+        },
+        {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
           "hash": "bf5f6c2",
@@ -4886,12 +4959,6 @@
           "author": "james@hoppipolla.co.uk",
           "hash": "060a580296",
           "subject": "Wait for scrollOffset to be updated in test"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "brandonstewart@apple.com",
-          "hash": "d0a5784e97",
-          "subject": "Verify event handlers for <body> and <frameset> elements"
         }
       ]
     },
@@ -4929,6 +4996,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "85373b4ce1",
+          "subject": "Temporal: Fix PlainDateTime construct args"
+        },
         {
           "date": "2022-10-18",
           "author": "pchimento@igalia.com",
@@ -5995,6 +6068,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "3721bec",
+          "subject": "Meta: my employer changed"
+        },
+        {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
           "hash": "67e3665",
@@ -6110,12 +6189,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6160,12 +6233,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6210,12 +6277,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6260,12 +6321,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6310,12 +6365,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6360,12 +6409,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6410,12 +6453,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6460,12 +6497,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6510,12 +6541,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6560,12 +6585,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6610,12 +6629,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6660,12 +6673,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6710,12 +6717,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6760,12 +6761,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -6948,6 +6943,36 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "9d17d81",
+          "subject": "Meta: slightly tweak employer and reformat"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "3ab48bf",
+          "subject": "Meta: my employer changed"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "8a241ca",
+          "subject": "Editorial: WebSockets is its own standard now"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "ee85da2",
+          "subject": "Editorial: minor cleanup in fetch() around aborting"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "6128ca3",
+          "subject": "Refactor scheme fetch"
+        },
+        {
           "date": "2022-10-25",
           "author": "annevk@annevk.nl",
           "hash": "b56692a",
@@ -7075,6 +7100,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "smayya@mozilla.com",
+          "hash": "5de01fc4ef",
+          "subject": "update WPT tests for request headers in XHR/Fetch."
+        },
         {
           "date": "2022-10-22",
           "author": "drobertson@mozilla.com",
@@ -7218,12 +7249,6 @@
           "author": "phao@chromium.org",
           "hash": "b81e70b86e",
           "subject": "[Private Network Access] Fix service worker new script wpt test"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "phao@chromium.org",
-          "hash": "22a6c41ac0",
-          "subject": "[Private Network Access] service worker new script fetch"
         }
       ]
     },
@@ -7364,6 +7389,12 @@
       "specrepo": "https://github.com/whatwg/fs",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "100442186+dslee414@users.noreply.github.com",
+          "hash": "b345282",
+          "subject": "Update FileSystemSyncAccessHandle async methods to sync (#55)"
+        },
         {
           "date": "2022-10-21",
           "author": "tomac@google.com",
@@ -7551,12 +7582,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "123b35aa7a",
           "subject": "sensors: Simplify MockSensor.setSensorReading()."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "juha.j.vainio@intel.com",
-          "hash": "9716462c68",
-          "subject": "[Sensors] Move ALS-specific web test to runGenericSensorTests()"
         }
       ],
       "testpolicy": "https://github.com/w3c/sensors/blob/HEAD/CONTRIBUTING.md"
@@ -7660,6 +7685,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "07eab5c1",
+          "subject": "Meta: my employer changed"
+        },
         {
           "date": "2022-10-26",
           "author": "ThoseGrapefruits@users.noreply.github.com",
@@ -7884,6 +7915,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-27",
+          "author": "emilio@crisal.io",
+          "hash": "db915e7aaf",
+          "subject": "Don't propagate bits for children invalidated under display:none/not in the flat tree."
+        },
+        {
+          "date": "2022-10-26",
+          "author": "kevers@google.com",
+          "hash": "c6c8e99a29",
+          "subject": "Make worker raf time relative to worker load time."
+        },
+        {
+          "date": "2022-10-26",
+          "author": "emilio@crisal.io",
+          "hash": "0fea3b0180",
+          "subject": "Don't null out l10n from destructor()."
+        },
         {
           "date": "2022-10-25",
           "author": "miketaylr@chromium.org",
@@ -8537,18 +8586,6 @@
           "author": "fserb@chromium.org",
           "hash": "e21ed4af6c",
           "subject": "Increase tolerance for Canvas ConicGradient WPT tests"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "aaronhk@chromium.org",
-          "hash": "e1a0d70faa",
-          "subject": "Parse lab color"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "antoniosartori@chromium.org",
-          "hash": "de23a6e37c",
-          "subject": "[CSP] Fix typo in WPT comment"
         }
       ]
     },
@@ -8557,6 +8594,18 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "a5ada74",
+          "subject": "accessible description computation revision (#433)"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "96ab938",
+          "subject": "Adds language to expand 'not mapped' definition (#430)"
+        },
         {
           "date": "2022-10-04",
           "author": "scottaohara@users.noreply.github.com",
@@ -8666,6 +8715,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-10-26",
+          "author": "benjaminwagner@google.com",
+          "hash": "ea0d2260dc",
+          "subject": "Bind a task runner to destructor callback for MakeScopedWebCallbacks"
+        },
+        {
           "date": "2022-09-26",
           "author": "philip@foolip.org",
           "hash": "5bcea268ec",
@@ -8713,7 +8768,14 @@
           "subject": "Editorial: List new support in Safari 15"
         }
       ],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "memmott@chromium.org",
+          "hash": "8ce3ff8d1c",
+          "subject": "Update IndexedDB web tests to durability relaxed"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -8722,6 +8784,18 @@
       "specrepo": "https://github.com/whatwg/infra",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "59e0d16",
+          "subject": "Update reference instructions to account for modern taste"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "f25ebeb",
+          "subject": "Meta: my employer changed"
+        },
         {
           "date": "2022-10-26",
           "author": "jyasskin@google.com",
@@ -8849,12 +8923,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9522,6 +9590,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "ed277b3",
+          "subject": "Meta: my employer changed"
+        },
+        {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
           "hash": "9832a40",
@@ -9576,12 +9650,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9626,12 +9694,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9676,12 +9738,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9726,12 +9782,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9776,12 +9826,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9826,12 +9870,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9876,12 +9914,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9926,12 +9958,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -9976,12 +10002,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -10143,12 +10163,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -10199,18 +10213,6 @@
           "author": "marcos@marcosc.com",
           "hash": "d8f252e",
           "subject": "Editorial: fix errata"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "marcos@marcosc.com",
-          "hash": "cb5c343",
-          "subject": "Editorial: fix link"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "marcos@marcosc.com",
-          "hash": "7b7bcc4",
-          "subject": "chore: add errata"
         }
       ],
       "testlog": []
@@ -10256,12 +10258,6 @@
           "author": "marcos@marcosc.com",
           "hash": "ca8b6a5",
           "subject": "Editorial: use different global (#997)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "marcos@marcosc.com",
-          "hash": "b9bf709",
-          "subject": "chore: create errata.html"
         }
       ],
       "testlog": []
@@ -10390,6 +10386,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-10-27",
+          "author": "wei4.wang@intel.com",
+          "hash": "bfd9ac3764",
+          "subject": "[ComputePressure] Add Permissions Policy integration"
+        },
+        {
           "date": "2022-10-10",
           "author": "arichiv@chromium.org",
           "hash": "cf87cf25d5",
@@ -10442,6 +10444,12 @@
       "href": "https://w3c.github.io/PNG-spec/",
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "chris@w3.org",
+          "hash": "b034eea",
+          "subject": "Update shortname, date, back to ED"
+        },
         {
           "date": "2022-10-25",
           "author": "chris@w3.org",
@@ -11558,12 +11566,6 @@
           "author": "liuwilliam@chromium.org",
           "hash": "31e0a719bc",
           "subject": "Populate `deliveryType` with the value \"cache\"."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "9e8b0dbba9",
-          "subject": "Add response status code to Resource Timing (#34828)"
         }
       ]
     },
@@ -12152,6 +12154,18 @@
       "href": "https://w3c.github.io/screen-orientation/",
       "specrepo": "https://github.com/w3c/screen-orientation",
       "speclog": [
+        {
+          "date": "2022-10-27",
+          "author": "marcos@marcosc.com",
+          "hash": "206c506",
+          "subject": "Editorial: flip step order so return is last"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "marcos@marcosc.com",
+          "hash": "975c556",
+          "subject": "Only unlock top-level docs (#229)"
+        },
         {
           "date": "2022-10-25",
           "author": "marcos@marcosc.com",
@@ -12844,36 +12858,6 @@
           "author": "andruud@chromium.org",
           "hash": "47f26b365a",
           "subject": "[scroll-animations] Modernize at-scroll-timeline-inactive-phase.html"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "4085d86790",
-          "subject": "[scroll-animations] Remove @scroll-timeline-specific tests"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "9c316c9bb7",
-          "subject": "[scroll-animations] Modernize at-scroll-timeline-multi-pass...html"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "cd2db03875",
-          "subject": "[scroll-animations] Modernize at-scroll-timeline-orientation.html"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "2e67da09bf",
-          "subject": "[scroll-animations] Modernize at-scroll-timeline-frame-size-changed.html"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "andruud@chromium.org",
-          "hash": "527425c9a9",
-          "subject": "[scroll-animations] Recalculate siblings for display:none and similar"
         }
       ]
     },
@@ -13090,12 +13074,6 @@
           "author": "rniwa@webkit.org",
           "hash": "1dc941f801",
           "subject": "Adjsut fuzzy match parameters to unbreak Firefox. (#35731)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "rniwa@webkit.org",
-          "hash": "7f6c616764",
-          "subject": "Add fuzzy matching to css/selectors/dir-style-01a.html and css/selectors/dir-style-01a.html (#35723)"
         }
       ]
     },
@@ -13103,14 +13081,7 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [
-        {
-          "date": "2022-08-30",
-          "author": "45840+spookyvision@users.noreply.github.com",
-          "hash": "48854b3",
-          "subject": "fix IDL syntax error (#170)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -13208,6 +13179,12 @@
       "specrepo": "https://github.com/whatwg/storage",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "bae46a5",
+          "subject": "Meta: my employer changed"
+        },
         {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
@@ -13485,6 +13462,12 @@
       "specrepo": "https://github.com/tc39/proposal-intl-numberformat-v3",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "shane@unicode.org",
+          "hash": "abb95a7",
+          "subject": "Update HTML again"
+        },
+        {
           "date": "2022-09-13",
           "author": "romulocintra@users.noreply.github.com",
           "hash": "c5f13ae",
@@ -13569,18 +13552,6 @@
           "author": "ftang@chromium.org",
           "hash": "12ba9df",
           "subject": "Delegate to NumberFormat to handle unit formattting"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "ryzokuken@users.noreply.github.com",
-          "hash": "8583540",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "ftang@google.com",
-          "hash": "b289494",
-          "subject": "Normative: Default style to \"short\" per Stage 3 agreement (#121)"
         }
       ],
       "testlog": []
@@ -13649,6 +13620,12 @@
       "specrepo": "https://github.com/tc39/proposal-intl-numberformat-v3",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "shane@unicode.org",
+          "hash": "abb95a7",
+          "subject": "Update HTML again"
+        },
+        {
           "date": "2022-09-13",
           "author": "romulocintra@users.noreply.github.com",
           "hash": "c5f13ae",
@@ -13669,6 +13646,12 @@
       "specrepo": "https://github.com/tc39/proposal-intl-numberformat-v3",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "shane@unicode.org",
+          "hash": "abb95a7",
+          "subject": "Update HTML again"
+        },
+        {
           "date": "2022-09-13",
           "author": "romulocintra@users.noreply.github.com",
           "hash": "c5f13ae",
@@ -13688,6 +13671,12 @@
       "href": "https://tc39.es/proposal-intl-numberformat-v3/out/pluralrules/proposed.html",
       "specrepo": "https://github.com/tc39/proposal-intl-numberformat-v3",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "shane@unicode.org",
+          "hash": "abb95a7",
+          "subject": "Update HTML again"
+        },
         {
           "date": "2022-09-13",
           "author": "romulocintra@users.noreply.github.com",
@@ -13760,6 +13749,78 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "8e80575a",
+          "subject": "Editorial: Unroll loops over Record fields"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "07673d3d",
+          "subject": "Editorial: Reorder table of PlainTime fields by magnitude"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "f2d56423",
+          "subject": "Editorial: Reorder table of Duration fields by magnitude"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "e3f6a906",
+          "subject": "Editorial: Create abstract operation for sorting Lists of Strings"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "fbaf6166",
+          "subject": "Docs: Remove remark about sorting ZonedDateTime strings alphabetically"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "5a52cf61",
+          "subject": "Editorial: Add return types to ToTemporal{,Partial}DurationRecord"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "7d068d42",
+          "subject": "Editorial: Fix return type of ToTemporalTimeRecord"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "96e0e3ec",
+          "subject": "Editorial: Use ToIntegerWithTruncation in ParseTemporalDurationString"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "239ada3c",
+          "subject": "Editorial: Fix incorrect note in PrepareTemporalFields"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "1dceb57e",
+          "subject": "Editorial: Rename ToIntegerWithoutRounding to ToIntegerIfIntegral"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "768b9163",
+          "subject": "Editorial: Rename ToPositiveInteger to ToPositiveIntegerWithTruncation"
+        },
+        {
+          "date": "2022-10-26",
+          "author": "pchimento@igalia.com",
+          "hash": "f2746783",
+          "subject": "Editorial: Rename ToIntegerThrowOnInfinity to ToIntegerWithTruncation"
+        },
         {
           "date": "2022-10-24",
           "author": "a.d.bergi@web.de",
@@ -14621,6 +14682,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "a46cb91",
+          "subject": "Meta: my employer changed"
+        },
+        {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
           "hash": "6827fbe",
@@ -14762,12 +14829,6 @@
           "author": "james@hoppipolla.co.uk",
           "hash": "1f0190470a",
           "subject": "Ensure we pass integer coordinates to actions"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "philip@foolip.org",
-          "hash": "b016b6ad02",
-          "subject": "Sync interfaces/ with @webref/idl 3.14.0 (#35691)"
         }
       ]
     },
@@ -14776,6 +14837,12 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "cd9b5c4f",
+          "subject": "Editorial: remove trailing whitespace (#1841)"
+        },
         {
           "date": "2022-10-14",
           "author": "jnurthen@users.noreply.github.com",
@@ -14853,48 +14920,6 @@
           "author": "scottaohara@users.noreply.github.com",
           "hash": "e9a88f0e",
           "subject": "Update index.html (#1745)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "jnurthen@users.noreply.github.com",
-          "hash": "2617046a",
-          "subject": "Add accessibility tree definition (#1784)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "72063a0e",
-          "subject": "remove overly prescriptive distinctions from aria-current values. (#1660)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "8ef7dde9",
-          "subject": "proposed rewording for the complementary landmark (#1698)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "ariellalgilmore@gmail.com",
-          "hash": "d9255966",
-          "subject": "fix(reword): use 'on a page' instead of 'within any document or application' (#1754)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "06c3f3d0",
-          "subject": "editorial changes for translatable attrs (#1762)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "483334db",
-          "subject": "add [CEReactions] to IDL. (#1766)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "82bd83fd",
-          "subject": "Resolving user agent must not statement and whitespace defs (#1778)"
         }
       ],
       "testlog": []
@@ -14999,12 +15024,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "fa8aacd5",
           "subject": "[spec] Fix language config"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "rossberg@chromium.org",
-          "hash": "4bb213a5",
-          "subject": "[spec/test] Fix scoping of non-imported globals (#1525)"
         }
       ],
       "testlog": []
@@ -15169,18 +15188,6 @@
           "author": "marcos@marcosc.com",
           "hash": "3d2ee38",
           "subject": "Editorial: use relevant global (#251)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "marcos@marcosc.com",
-          "hash": "d2110af",
-          "subject": "chore: add crEnd date"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "marcos@marcosc.com",
-          "hash": "fdd28b1",
-          "subject": "chore: auto-publish as CRD (#249)"
         }
       ],
       "testlog": []
@@ -15725,15 +15732,15 @@
           "author": "paul@paul.cx",
           "hash": "814b6c5",
           "subject": "Fix visible rect comparison to use strict equality to allow for visible rect of the same size as coded size"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "chcunningham@chromium.org",
-          "hash": "a2d2b53",
-          "subject": "Move common samples files to library/"
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "44f8f61b5d",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=247003 (#36666)"
+        },
         {
           "date": "2022-10-20",
           "author": "youennf@users.noreply.github.com",
@@ -16037,6 +16044,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "jdescottes@mozilla.com",
+          "hash": "5673d2a",
+          "subject": "Add missing `|` in \"get a realm from a target\""
+        },
+        {
           "date": "2022-10-19",
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "85191bc",
@@ -16223,12 +16236,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16273,12 +16280,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16323,12 +16324,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16373,12 +16368,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16423,12 +16412,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16473,12 +16456,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16523,12 +16500,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16573,12 +16544,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16623,12 +16588,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16673,12 +16632,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16723,12 +16676,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16773,12 +16720,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16823,12 +16764,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16873,12 +16808,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16923,12 +16852,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -16973,12 +16896,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "33150301a",
           "subject": "Add EXT_provoking_vertex test (#3490)"
-        },
-        {
-          "date": "2022-08-31",
-          "author": "112023605+bsheedy-work@users.noreply.github.com",
-          "hash": "d1b65aa5a",
-          "subject": "Cache window values (#3491)"
         }
       ],
       "testlog": []
@@ -17004,6 +16921,12 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "pixcai@163.com",
+          "hash": "4048adbf",
+          "subject": "Update samples to the latest spec (#3551)"
+        },
         {
           "date": "2022-10-26",
           "author": "shaobo.yan@intel.com",
@@ -17615,36 +17538,6 @@
           "author": "alanbaker@google.com",
           "hash": "9e229561",
           "subject": "Errors for constant out-of-bounds accesses (#3400)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "kainino@chromium.org",
-          "hash": "8f31717f",
-          "subject": "Make error reporting unordered (#3362)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "22d22d10",
-          "subject": "Preview includes"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "312e4a2f",
-          "subject": "Do previews preview includes?"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "dneto@google.com",
-          "hash": "98ed5d0a",
-          "subject": "Clarify units for trig and hyperbolic functions (#3392)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "kainino@chromium.org",
-          "hash": "acf2fe52",
-          "subject": "[editorial] highlight data-link-type=idl too"
         }
       ],
       "testlog": []
@@ -17817,12 +17710,6 @@
           "author": "anssi.kostiainen@gmail.com",
           "hash": "0740090",
           "subject": "Address PING review feedback"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "f0f576b",
-          "subject": "Fix split() code sample"
         }
       ],
       "testlog": [
@@ -17889,6 +17776,12 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "hbos@google.com",
+          "hash": "14e3ef7",
+          "subject": "Move framesDropped"
+        },
         {
           "date": "2022-10-20",
           "author": "jan-ivar@users.noreply.github.com",
@@ -18288,6 +18181,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-10-26",
+          "author": "hbos@chromium.org",
+          "hash": "90d94dae0a",
+          "subject": "Delete WPTs of obsolete 'track' stats."
+        },
+        {
           "date": "2022-10-21",
           "author": "eshr@google.com",
           "hash": "053b74dd29",
@@ -18316,12 +18215,6 @@
           "author": "orphis@chromium.org",
           "hash": "1032dbd859",
           "subject": "Remove references to RTCIceCredentialType from WPT tests"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "dom@w3.org",
-          "hash": "ffb6a1e861",
-          "subject": "Align WebRTC MTI stats with specs (#35703)"
         }
       ]
     },
@@ -18654,24 +18547,6 @@
           "author": "dom@w3.org",
           "hash": "c42342a",
           "subject": "Update link to websockets spec"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "3f4b036",
-          "subject": "lack of implementation in browsers"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "wingboy@gmail.com",
-          "hash": "e13cc0b",
-          "subject": "Update readonly attribute prose to reveal support."
-        },
-        {
-          "date": "2022-08-30",
-          "author": "wingboy@gmail.com",
-          "hash": "3b42a94",
-          "subject": "Make readonly value survive only if supported."
         }
       ],
       "testlog": [
@@ -18831,6 +18706,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2022-10-26",
+          "author": "pixcai@163.com",
+          "hash": "4048adbf",
+          "subject": "Update samples to the latest spec (#3551)"
+        },
         {
           "date": "2022-10-26",
           "author": "shaobo.yan@intel.com",
@@ -19442,36 +19323,6 @@
           "author": "alanbaker@google.com",
           "hash": "9e229561",
           "subject": "Errors for constant out-of-bounds accesses (#3400)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "kainino@chromium.org",
-          "hash": "8f31717f",
-          "subject": "Make error reporting unordered (#3362)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "22d22d10",
-          "subject": "Preview includes"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "312e4a2f",
-          "subject": "Do previews preview includes?"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "dneto@google.com",
-          "hash": "98ed5d0a",
-          "subject": "Clarify units for trig and hyperbolic functions (#3392)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "kainino@chromium.org",
-          "hash": "acf2fe52",
-          "subject": "[editorial] highlight data-link-type=idl too"
         }
       ],
       "testlog": []
@@ -19492,12 +19343,6 @@
           "author": "46299415+sonkkeli@users.noreply.github.com",
           "hash": "c30049f",
           "subject": "Add mdn attribute for the spec (#62)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "46299415+sonkkeli@users.noreply.github.com",
-          "hash": "6d80299",
-          "subject": "Add shortname to be able to reference the spec from another spec (#61)"
         }
       ],
       "testlog": []
@@ -19518,36 +19363,6 @@
           "author": "fd@tidoust.net",
           "hash": "9ecedc0",
           "subject": "Fix shortname, update permanent redirects, improve xref (#107)"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "b0a1aba",
-          "subject": "Add Example Code"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "f2879cd",
-          "subject": "Answer security & privacy questionnaire for initiating-multi-screen-experiences"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "e4b5c08",
-          "subject": "Explain relationship to existing popup controls"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "d804c57",
-          "subject": "Call out inherent security considerations"
-        },
-        {
-          "date": "2022-08-30",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "846d141",
-          "subject": "Link spec changes; add security and privacy sections"
         }
       ],
       "testlog": [
@@ -19586,6 +19401,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "545cdd5",
+          "subject": "Meta: my employer changed"
+        },
+        {
           "date": "2022-10-17",
           "author": "annevk@annevk.nl",
           "hash": "112c3bb",
@@ -19599,6 +19420,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-10-26",
+          "author": "smayya@mozilla.com",
+          "hash": "5de01fc4ef",
+          "subject": "update WPT tests for request headers in XHR/Fetch."
+        },
         {
           "date": "2022-10-19",
           "author": "raphael.kubo.da.costa@intel.com",
