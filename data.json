@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-10-25T07:12:54.704Z",
-  "until": "2022-12-21T07:12:54.704Z",
+  "since": "2022-10-25T14:51:04.582Z",
+  "until": "2022-12-21T14:51:04.582Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -747,6 +747,30 @@
       "specrepo": "https://github.com/WICG/compute-pressure",
       "speclog": [
         {
+          "date": "2022-12-21",
+          "author": "arnaud.mandy@intel.com",
+          "hash": "3f2e9a1",
+          "subject": "README: Fix examples"
+        },
+        {
+          "date": "2022-12-21",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "0714ac5",
+          "subject": "Fix nits"
+        },
+        {
+          "date": "2022-12-21",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "2591e9a",
+          "subject": "Update ReSpec config"
+        },
+        {
+          "date": "2022-12-21",
+          "author": "w3cbot-gh@w3.org",
+          "hash": "f01a41d",
+          "subject": "Advance Compute Pressure to Rec Track under DAS WG"
+        },
+        {
           "date": "2022-12-20",
           "author": "kenneth.r.christiansen@intel.com",
           "hash": "452e3cd",
@@ -913,7 +937,14 @@
       "name": "Contact Picker API",
       "href": "https://w3c.github.io/contact-api/spec/",
       "specrepo": "https://github.com/w3c/contact-api",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2022-12-21",
+          "author": "vivien@w3.org",
+          "hash": "92aef0b",
+          "subject": "Update link to editor's draft as contact-api repo was renamed in contact-picker"
+        }
+      ],
       "testlog": []
     },
     {
@@ -1177,6 +1208,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "8073ec1e56",
+          "subject": "Fix \"shuld\" typos (#37621)"
+        },
         {
           "date": "2022-12-16",
           "author": "33187212+darinadler@users.noreply.github.com",
@@ -1833,12 +1870,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "52627e8be0",
           "subject": "Make some tests more self descriptive"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "rbuis@igalia.com",
-          "hash": "d23f313f21",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=246216 (#36559)"
         }
       ]
     },
@@ -2516,6 +2547,27 @@
       "testlog": []
     },
     {
+      "name": "CSS Linked Parameters",
+      "href": "https://drafts.csswg.org/css-link-params/",
+      "specrepo": "https://github.com/w3c/csswg-drafts",
+      "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
+      "speclog": [
+        {
+          "date": "2022-12-16",
+          "author": "peter@linss.com",
+          "hash": "3942d163d",
+          "subject": "Move css-link-params to css-link-params-1"
+        },
+        {
+          "date": "2022-12-13",
+          "author": "sebastianzartner@gmail.com",
+          "hash": "344f57386",
+          "subject": "[css-link-params] Renamed index.bs to Overview.bs (#8217)"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "CSS Lists and Counters",
       "href": "https://drafts.csswg.org/css-lists/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
@@ -2860,18 +2912,6 @@
           "author": "sesse@chromium.org",
           "hash": "b0c95fefa6",
           "subject": "[css-nesting] Move towards syntax proposal 3."
-        },
-        {
-          "date": "2022-10-25",
-          "author": "sesse@chromium.org",
-          "hash": "7806005171",
-          "subject": "[css-nesting] Serialize declarations in conditional group rules."
-        },
-        {
-          "date": "2022-10-25",
-          "author": "sesse@chromium.org",
-          "hash": "7c43cc2248",
-          "subject": "[css-nesting] Disallow nested non-conditional group rules in CSSOM."
         }
       ]
     },
@@ -3194,14 +3234,6 @@
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=247093 (#36697)"
         }
       ]
-    },
-    {
-      "name": "CSS Shared Element Transitions",
-      "href": "https://drafts.csswg.org/css-shared-element-transitions/",
-      "specrepo": "https://github.com/w3c/csswg-drafts",
-      "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
-      "testlog": []
     },
     {
       "name": "CSS Mobile Text Size Adjustment",
@@ -3601,6 +3633,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-12-21",
+          "author": "andruud@chromium.org",
+          "hash": "9b3bbd53a2",
+          "subject": "Apply length conversion flags for incremental styles"
+        },
+        {
           "date": "2022-12-01",
           "author": "seokho@chromium.org",
           "hash": "3cc4b3e6e8",
@@ -3638,6 +3676,292 @@
           "author": "33187212+darinadler@users.noreply.github.com",
           "hash": "fe0a93ddb5",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=247008 (#36714)"
+        }
+      ]
+    },
+    {
+      "name": "CSS View Transitions",
+      "href": "https://drafts.csswg.org/css-view-transitions/",
+      "specrepo": "https://github.com/w3c/csswg-drafts",
+      "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
+      "speclog": [
+        {
+          "date": "2022-11-24",
+          "author": "jaffathecake@gmail.com",
+          "hash": "2d40b0584",
+          "subject": "[css-view-transitions-1] Update date"
+        },
+        {
+          "date": "2022-11-24",
+          "author": "jaffathecake@gmail.com",
+          "hash": "b7574ef90",
+          "subject": "Update image paths for echidna"
+        },
+        {
+          "date": "2022-11-21",
+          "author": "jaffathecake@gmail.com",
+          "hash": "d3ac58974",
+          "subject": "Use inset()"
+        },
+        {
+          "date": "2022-11-21",
+          "author": "jaffathecake@gmail.com",
+          "hash": "847a8085a",
+          "subject": "Feedback from review"
+        },
+        {
+          "date": "2022-11-21",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "aafb44ccf",
+          "subject": "Update header format"
+        },
+        {
+          "date": "2022-11-21",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "775e7b0f9",
+          "subject": "Update date to publish"
+        },
+        {
+          "date": "2022-11-21",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "17deb17c2",
+          "subject": "Update status to WD to publish"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "1e1e53473",
+          "subject": "Apply mix-blend-mode and isolation in algo steps"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "1b9fc28a7",
+          "subject": "Fix heading id"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "8b0a2a6bc",
+          "subject": "Add issues for a couple of incorrectly applied styles"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "3953af941",
+          "subject": "Clean up use of style modifications"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "4e8335ab3",
+          "subject": "Progress on handling styles correctly"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "8152680ea",
+          "subject": "Set up UA styles"
+        },
+        {
+          "date": "2022-11-17",
+          "author": "jaffathecake@gmail.com",
+          "hash": "65cc54bc9",
+          "subject": "tmp"
+        },
+        {
+          "date": "2022-11-16",
+          "author": "jaffathecake@gmail.com",
+          "hash": "be01ea443",
+          "subject": "[css-view-transitions-1] Add snapshot viewport concept (#8037)"
+        },
+        {
+          "date": "2022-11-10",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "dfdc48fbc",
+          "subject": "Update Overview.bs"
+        },
+        {
+          "date": "2022-11-10",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "8de80910b",
+          "subject": "Update spec based on resolved issues"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "3255cfbc5",
+          "subject": "Update css-view-transitions-1/Overview.bs"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "khushalsagar@chromium.org",
+          "hash": "7e29c4500",
+          "subject": ".."
+        },
+        {
+          "date": "2022-11-04",
+          "author": "khushalsagar@chromium.org",
+          "hash": "6b595b9e4",
+          "subject": "format"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "28dfa43d4",
+          "subject": "Update Overview.bs"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "jaffathecake@gmail.com",
+          "hash": "3cf99f652",
+          "subject": "The big reformat"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "jaffathecake@gmail.com",
+          "hash": "29c06f390",
+          "subject": "Update references to animation spec"
+        },
+        {
+          "date": "2022-11-04",
+          "author": "jaffathecake@gmail.com",
+          "hash": "f4b4722b6",
+          "subject": "Remove resolved issues"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "c9303450e",
+          "subject": "Rename all CSS properties and associated concepts"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "jaffathecake@gmail.com",
+          "hash": "5151ae807",
+          "subject": "[css-view-transitions-1] Fix warnings, add issues for currently unfixable warnings (#8005)"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "vmpstr@chromium.org",
+          "hash": "081f5f51f",
+          "subject": "Update css-view-transitions-1/Overview.bs"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "vmpstr@chromium.org",
+          "hash": "debd2a1e9",
+          "subject": "Update css-view-transitions-1/Overview.bs"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "vmpstr@chromium.org",
+          "hash": "e34c1ca35",
+          "subject": "Update"
+        },
+        {
+          "date": "2022-10-31",
+          "author": "vmpstr@chromium.org",
+          "hash": "573982b6c",
+          "subject": "Rename starting function and add callback instead of opts dict"
+        },
+        {
+          "date": "2022-10-31",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "472258acf",
+          "subject": "Split privacy/security into separate sections"
+        },
+        {
+          "date": "2022-10-31",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "f718c67e9",
+          "subject": "Fix typo in privacy/security section."
+        },
+        {
+          "date": "2022-10-28",
+          "author": "63884798+khushalsagar@users.noreply.github.com",
+          "hash": "bdbef68f7",
+          "subject": "Add security/privacy considerations to View Transitions"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2022-12-12",
+          "author": "vmpstr@chromium.org",
+          "hash": "fd4a24ce05",
+          "subject": "VT: Use geometry mapper for ancestor rect mapping."
+        },
+        {
+          "date": "2022-12-09",
+          "author": "vmpstr@chromium.org",
+          "hash": "74b130a856",
+          "subject": "VT: Ensure all layers that recalculate their draw props push props too"
+        },
+        {
+          "date": "2022-12-05",
+          "author": "vmpstr@chromium.org",
+          "hash": "1215d4124b",
+          "subject": "VT: Fix inline with filter overflow calculation."
+        },
+        {
+          "date": "2022-12-02",
+          "author": "vmpstr@chromium.org",
+          "hash": "0f3b4089fb",
+          "subject": "VT: Ensure to propagate opacity changes to the active tree"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "2858f2cdc3",
+          "subject": "Add preconditions to css-view-transitions tests"
+        },
+        {
+          "date": "2022-11-27",
+          "author": "khushalsagar@chromium.org",
+          "hash": "88f2d5b5e0",
+          "subject": "view-transitions: Add test for style query outside transitions."
+        },
+        {
+          "date": "2022-11-27",
+          "author": "khushalsagar@chromium.org",
+          "hash": "6b31c47847",
+          "subject": "view-transition: Support only-child pseudo class."
+        },
+        {
+          "date": "2022-11-22",
+          "author": "vmpstr@chromium.org",
+          "hash": "f910727161",
+          "subject": "VT: Use inherit for animation duration and fill mode on old/new"
+        },
+        {
+          "date": "2022-11-18",
+          "author": "khushalsagar@chromium.org",
+          "hash": "6f17011f29",
+          "subject": "view-transitions: Correctly handle aborted transitions."
+        },
+        {
+          "date": "2022-11-18",
+          "author": "khushalsagar@chromium.org",
+          "hash": "88502245d3",
+          "subject": "view-transitions: Ensure getComputedStyle regenerates UA stylesheet."
+        },
+        {
+          "date": "2022-11-16",
+          "author": "khushalsagar@chromium.org",
+          "hash": "792d8bf831",
+          "subject": "blink: Handle transitions while elements in top layer."
+        },
+        {
+          "date": "2022-11-11",
+          "author": "vmpstr@chromium.org",
+          "hash": "e2177e1954",
+          "subject": "VT: Don't consider c-v locked elements as shared"
+        },
+        {
+          "date": "2022-11-10",
+          "author": "vmpstr@chromium.org",
+          "hash": "2554c0637e",
+          "subject": "VT: Move WPTs from internal to external"
         }
       ]
     },
@@ -4268,6 +4592,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-12-21",
+          "author": "Ms2ger@igalia.com",
+          "hash": "920a567b72",
+          "subject": "Improve is/toWellFormedString coverage."
+        },
+        {
           "date": "2022-12-19",
           "author": "me@gus.host",
           "hash": "06b982d2f0",
@@ -4506,12 +4836,6 @@
           "author": "pchimento@igalia.com",
           "hash": "d77d9b2b85",
           "subject": "Duplicate named capture groups: Syntax tests"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "syg@chromium.org",
-          "hash": "ade328d530",
-          "subject": "Fix toSpliced mutate-while-iterating test"
         }
       ]
     },
@@ -5699,12 +6023,6 @@
           "author": "annevk@annevk.nl",
           "hash": "6128ca3",
           "subject": "Refactor scheme fetch"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "annevk@annevk.nl",
-          "hash": "b56692a",
-          "subject": "Describe filtered responses better"
         }
       ],
       "testlog": [
@@ -6332,6 +6650,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "045b5c2a",
+          "subject": "Move oncopy/oncut/onpaste to GlobalEventHandlers"
+        },
+        {
           "date": "2022-12-17",
           "author": "jaffathecake@gmail.com",
           "hash": "085d4d14",
@@ -6582,15 +6906,15 @@
           "author": "ThoseGrapefruits@users.noreply.github.com",
           "hash": "fe9c99d3",
           "subject": "Fix example in HTMLElement constructor steps"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "jens@meiert.com",
-          "hash": "7d8951c0",
-          "subject": "Add missing value for `hidden` in the index"
         }
       ],
       "testlog": [
+        {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "cae0fb2a51",
+          "subject": "Merge oncopy/oncut/onpaste into GlobalEventHandlers (#36398)"
+        },
         {
           "date": "2022-12-20",
           "author": "annevk@annevk.nl",
@@ -7414,20 +7738,6 @@
       "testlog": []
     },
     {
-      "name": "Import Maps",
-      "href": "https://wicg.github.io/import-maps/",
-      "specrepo": "https://github.com/WICG/import-maps",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2022-11-10",
-          "author": "gsnedders@apple.com",
-          "hash": "69475a9ed4",
-          "subject": "Workaround WebKit differences with load events & document.open"
-        }
-      ]
-    },
-    {
       "name": "Indexed Database API",
       "href": "https://w3c.github.io/IndexedDB/",
       "specrepo": "https://github.com/w3c/IndexedDB",
@@ -7472,6 +7782,12 @@
       "specrepo": "https://github.com/whatwg/infra",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2022-12-21",
+          "author": "dan@dlrobertson.com",
+          "hash": "eb68213",
+          "subject": "Add documentation for tuple multiple assignment"
+        },
         {
           "date": "2022-11-23",
           "author": "annevk@annevk.nl",
@@ -7710,7 +8026,7 @@
       ]
     },
     {
-      "name": "Local Font Access API",
+      "name": "Local Font Access",
       "href": "https://wicg.github.io/local-font-access/",
       "specrepo": "https://github.com/WICG/local-font-access",
       "speclog": [
@@ -7755,32 +8071,7 @@
       "name": "Web App Manifest - Application Information",
       "href": "https://w3c.github.io/manifest-app-info/",
       "specrepo": "https://github.com/w3c/manifest-app-info",
-      "speclog": [
-        {
-          "date": "2022-10-25",
-          "author": "marcos@marcosc.com",
-          "hash": "3a1f37f",
-          "subject": "Editorial: remove broken iTunes link"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "marcos@marcosc.com",
-          "hash": "8c203c0",
-          "subject": "chore(action.yml): use NOTE status"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "marcos@marcosc.com",
-          "hash": "b095ad8",
-          "subject": "chore(action.yml): fix a few more props"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "marcos@marcosc.com",
-          "hash": "6cf1a27",
-          "subject": "chore(action.yml): fixup pub workflow"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -7809,6 +8100,24 @@
       "href": "https://w3c.github.io/mathml-core/",
       "specrepo": "https://github.com/w3c/mathml-core",
       "speclog": [
+        {
+          "date": "2022-12-21",
+          "author": "fwang@igalia.com",
+          "hash": "8d85dc0",
+          "subject": "Add more detailed description of the mtext layout"
+        },
+        {
+          "date": "2022-12-21",
+          "author": "fwang@igalia.com",
+          "hash": "87833fa",
+          "subject": "Introduce a 'math content box'"
+        },
+        {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "644db57",
+          "subject": "Stop using the DocumentAndElementEventHandlers interface mixin (#171)"
+        },
         {
           "date": "2022-12-07",
           "author": "fwang@igalia.com",
@@ -10168,12 +10477,6 @@
           "author": "abin.paul1@gmail.com",
           "hash": "77eadc1dc5",
           "subject": "WPT for testing content-type parsing"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "abin.paul1@gmail.com",
-          "hash": "4c8e480994",
-          "subject": "Add content-type to PerformanceResourceTiming"
         }
       ]
     },
@@ -10358,12 +10661,6 @@
           "author": "beaufort.francois@gmail.com",
           "hash": "37954d47c5",
           "subject": "Remove unnecessary includes (#36728)"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "de5e6d86ee",
-          "subject": "[Conditional Focus] Add CaptureController to getDisplayMedia options"
         }
       ]
     },
@@ -11206,6 +11503,12 @@
       ],
       "testlog": [
         {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "8073ec1e56",
+          "subject": "Fix \"shuld\" typos (#37621)"
+        },
+        {
           "date": "2022-12-12",
           "author": "nrosenthal@chromium.org",
           "hash": "998e292d3e",
@@ -11714,6 +12017,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2022-12-21",
+          "author": "philip@foolip.org",
+          "hash": "cae0fb2a51",
+          "subject": "Merge oncopy/oncut/onpaste into GlobalEventHandlers (#36398)"
+        },
+        {
           "date": "2022-12-20",
           "author": "cdumez@apple.com",
           "hash": "5f656d50f1",
@@ -11908,6 +12217,116 @@
       "href": "https://tc39.es/proposal-decorators/",
       "specrepo": "https://github.com/tc39/proposal-decorators",
       "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "ECMAScript Explicit Resource Management",
+      "href": "https://tc39.es/proposal-explicit-resource-management/",
+      "specrepo": "https://github.com/tc39/proposal-explicit-resource-management",
+      "speclog": [
+        {
+          "date": "2022-12-01",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "9e3cc8b",
+          "subject": "Bump decode-uri-component from 0.2.0 to 0.2.2 (#132)"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "82f464b",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "74bb6ab",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "babd116",
+          "subject": "Bump minimatch from 3.0.4 to 3.1.2 (#127)"
+        },
+        {
+          "date": "2022-11-28",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "3c3cb89",
+          "subject": "Bump copy-props from 2.0.4 to 2.0.5 (#85)"
+        },
+        {
+          "date": "2022-11-28",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "c84ba2c",
+          "subject": "Remove unneeded algorithm steps from AsyncDisposableStack.prototype[@@asyncDispose] (#126)"
+        },
+        {
+          "date": "2022-11-28",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "9c29be5",
+          "subject": "Fix indentation in DisposeResources (#125)"
+        },
+        {
+          "date": "2022-11-28",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "abcdaf5",
+          "subject": "Fix validation order in DisposableStack.defer (#124)"
+        },
+        {
+          "date": "2022-11-28",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "ca3eb3f",
+          "subject": "Fix missing promise resolution in AsyncIteratorPrototype[@@asyncDispose] (#123)"
+        },
+        {
+          "date": "2022-11-24",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "1d340b2",
+          "subject": "Remove auto-bound 'dispose' and 'disposeAsync' getters (#115)"
+        },
+        {
+          "date": "2022-11-24",
+          "author": "jlhwung@gmail.com",
+          "hash": "48e4fd4",
+          "subject": "Update spec.emu (#118)"
+        },
+        {
+          "date": "2022-11-24",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "5cc6af0",
+          "subject": "Adds a 'disposed' property to DisposableStack and AsyncDisposableStack (#116)"
+        },
+        {
+          "date": "2022-11-24",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "4408fbf",
+          "subject": "Adds SuppressedError (#117)"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "2df6c9e",
+          "subject": "Split 'use' overloads into multiple methods (#103)"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "4a0f3d4",
+          "subject": "Remove Symbol.species support (#114)"
+        },
+        {
+          "date": "2022-11-14",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "58946bb",
+          "subject": "Mark DisposableStack as disposed after .move() (#110)"
+        },
+        {
+          "date": "2022-11-14",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "a412e9c",
+          "subject": "disallow 'for (using of of ...)' (#108)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -12167,6 +12586,70 @@
       "testlog": []
     },
     {
+      "name": "Well-Formed Unicode Strings",
+      "href": "https://tc39.es/proposal-is-usv-string/",
+      "specrepo": "https://github.com/tc39/proposal-is-usv-string",
+      "speclog": [
+        {
+          "date": "2022-11-30",
+          "author": "ljharb@gmail.com",
+          "hash": "4e1a5e9",
+          "subject": "add polyfills to readme (#27)"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "61617e5",
+          "subject": "stage 3! (#26)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Iterator Helpers",
+      "href": "https://tc39.es/proposal-iterator-helpers/",
+      "specrepo": "https://github.com/tc39/proposal-iterator-helpers",
+      "speclog": [
+        {
+          "date": "2022-12-13",
+          "author": "ljharb@gmail.com",
+          "hash": "ef4471f",
+          "subject": "spec: rename predicate arguments to \"predicate\" (#260)"
+        },
+        {
+          "date": "2022-12-12",
+          "author": "axel@rauschma.de",
+          "hash": "bdb4883",
+          "subject": "Remove subsection on `.indexed()` (#258)"
+        },
+        {
+          "date": "2022-12-01",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "c907620",
+          "subject": "fixes #247: throw in GetIteratorFlattenable when iterator is non-Object (#253)"
+        },
+        {
+          "date": "2022-12-01",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "2496da5",
+          "subject": "array iterators can't be closed; don't use them in examples (#252)"
+        },
+        {
+          "date": "2022-12-01",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "6054e75",
+          "subject": "stage 3 (#251)"
+        },
+        {
+          "date": "2022-12-01",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "05b0c26",
+          "subject": "support String parameters in Iterator.from and AsyncIterator.from (#250)"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "JSON modules",
       "href": "https://tc39.es/proposal-json-modules/",
       "specrepo": "https://github.com/tc39/proposal-json-modules",
@@ -12227,6 +12710,13 @@
           "subject": "Meta: Constrain README examples"
         }
       ],
+      "testlog": []
+    },
+    {
+      "name": "Regular Expression Pattern Modifiers for ECMAScript",
+      "href": "https://tc39.es/proposal-regexp-modifiers/",
+      "specrepo": "https://github.com/tc39/proposal-regexp-modifiers",
+      "speclog": [],
       "testlog": []
     },
     {
@@ -12323,6 +12813,26 @@
           "author": "valentinium@gmail.com",
           "hash": "fa94799",
           "subject": "README: `maximumByteLength` → `maxByteLength` (#101)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Set methods",
+      "href": "https://tc39.es/proposal-set-methods/",
+      "specrepo": "https://github.com/tc39/proposal-set-methods",
+      "speclog": [
+        {
+          "date": "2022-11-30",
+          "author": "bakkot@gmail.com",
+          "hash": "b67c7a2",
+          "subject": "link september meeting notes"
+        },
+        {
+          "date": "2022-11-30",
+          "author": "bakkot@gmail.com",
+          "hash": "26d0b6c",
+          "subject": "stage 3!"
         }
       ],
       "testlog": []
@@ -13183,6 +13693,44 @@
       ]
     },
     {
+      "name": "Web App Launch Handler API",
+      "href": "https://wicg.github.io/web-app-launch/",
+      "specrepo": "https://github.com/WICG/web-app-launch",
+      "speclog": [
+        {
+          "date": "2022-11-10",
+          "author": "alancutter@chromium.org",
+          "hash": "cdfd0b9",
+          "subject": "Do not allow URLs to leak outside of the app scope (#85)"
+        },
+        {
+          "date": "2022-11-08",
+          "author": "alancutter@chromium.org",
+          "hash": "6860bf5",
+          "subject": "Replace appmanifest's launch algorithm with one that has launch_handler behaviors (#79)"
+        },
+        {
+          "date": "2022-11-03",
+          "author": "alancutter@chromium.org",
+          "hash": "87313c2",
+          "subject": "Branch: sw-launch-rename"
+        },
+        {
+          "date": "2022-10-31",
+          "author": "alancutter@chromium.org",
+          "hash": "f458b3c",
+          "subject": "Branch: cease-using-sw-client"
+        },
+        {
+          "date": "2022-10-28",
+          "author": "alancutter@chromium.org",
+          "hash": "0dbc37d",
+          "subject": "Branch: rename-sw-launch-urls"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Web Bluetooth",
       "href": "https://webbluetoothcg.github.io/web-bluetooth/",
       "specrepo": "https://github.com/WebBluetoothCG/web-bluetooth",
@@ -13720,6 +14268,2806 @@
       ]
     },
     {
+      "name": "AAC WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "A-law PCM WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "AV1 WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "AVC (H.264) WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "WebCodecs Codec Registry",
+      "href": "https://w3c.github.io/webcodecs/codec_registry.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "FLAC WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "HEVC (H.265) WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "MP3 WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Opus WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Linear PCM WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "u-law PCM WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Vorbis WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "VP8 WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/vp8_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "VP9 WebCodecs Registration",
+      "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
+      "specrepo": "https://github.com/w3c/webcodecs",
+      "speclog": [
+        {
+          "date": "2022-12-12",
+          "author": "bclayton@google.com",
+          "hash": "cd72b11",
+          "subject": "Update WGSL of renderer_webgpu.js"
+        },
+        {
+          "date": "2022-11-22",
+          "author": "mfoltz@chromium.org",
+          "hash": "6b3c09e",
+          "subject": "Mark Chris as a former editor of WebCodecs specs."
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "71b75a6",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "29513fa",
+          "subject": "Clarify metadata entry requirements"
+        },
+        {
+          "date": "2022-11-15",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "779fe18",
+          "subject": "Add requirements to metadata registry definition"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "648c3be",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "a7d690e",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "8f41712",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "755ac99",
+          "subject": "Remove text description of defaults"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "3fe2b0e",
+          "subject": "Add more defaults, notes"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "68222f0",
+          "subject": "Add defaults to booleans"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "tguilbert@chromium.org",
+          "hash": "f53f75b",
+          "subject": "Add OpusEncoderConfig parameters"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "paul@paul.cx",
+          "hash": "4a54fed",
+          "subject": "When serializing some WebCodecs objects with forStorage=true, throw DataCloneError instead of TypeError"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "ee8abc0",
+          "subject": "Move VideoFrameMetadata dfn to WebCodecs"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "dom@w3.org",
+          "hash": "20d9e16",
+          "subject": "Move note on meaningful timestamp to VideoFrame constructor"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "2964cbc",
+          "subject": "Add null defaults to VideoColorSpaceInit members"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "fd@tidoust.net",
+          "hash": "8a5149a",
+          "subject": "Add VideoFrame Metadata Registry to local biblio"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "8deadb0",
+          "subject": "Address Chris comments"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "d7bea22",
+          "subject": "Update .github/workflows/auto-publish.yml"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "71210b9",
+          "subject": "Update video_frame_metadata_registry.src.html"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b5207ac",
+          "subject": "Address some of Chris's feedback"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "cf0f849",
+          "subject": "Introduce metadata registry"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "74729a4",
+          "subject": "Throw when calling metadata() in case VideoFrame is closed"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b013d2d",
+          "subject": "Fix build error and rename getMetadata to metadata"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "f4fc7c7",
+          "subject": "Additional nit"
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "9ea2703",
+          "subject": "Copy metadata from HTMLVideoElement if init metadata is absent. Fix some additional nits."
+        },
+        {
+          "date": "2022-11-01",
+          "author": "youennf@gmail.com",
+          "hash": "b4249be",
+          "subject": "Introduce VideoFrame metadata"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "dfa7fb8",
+          "subject": "Change type to long long"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "419a72f",
+          "subject": "Address minor comment"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "76dc5c5",
+          "subject": "Expand acronyms"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "2341ea5",
+          "subject": "Linkify to Opus RFC 6716"
+        },
+        {
+          "date": "2022-10-27",
+          "author": "tguilbert@chromium.org",
+          "hash": "32dfcdd",
+          "subject": "Change frameDuration to microseconds"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Secure Curves in the Web Cryptography API",
       "href": "https://wicg.github.io/webcrypto-secure-curves/",
       "specrepo": "https://github.com/WICG/webcrypto-secure-curves",
@@ -13787,18 +17135,6 @@
           "author": "davidben@chromium.org",
           "hash": "e80bfdf737",
           "subject": "Migrate WebCrypto ecdsa.json tests to WPT"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "panva.ip@gmail.com",
-          "hash": "0042d42ee6",
-          "subject": "WebCryptoAPI: add default generated HMAC key length tests (#36348)"
-        },
-        {
-          "date": "2022-10-25",
-          "author": "panva.ip@gmail.com",
-          "hash": "9978756397",
-          "subject": "fix(WebCryptoAPI): remove unhandled rejections (#36249)"
         }
       ]
     },
@@ -16250,14 +19586,7 @@
       "href": "https://websockets.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/websockets",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2022-10-25",
-          "author": "annevk@annevk.nl",
-          "hash": "e589bf2",
-          "subject": "Meta: export obtain a WebSocket connection"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
