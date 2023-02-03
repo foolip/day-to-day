@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-12-07T07:12:48.390Z",
-  "until": "2023-02-02T07:12:48.390Z",
+  "since": "2022-12-08T07:12:57.408Z",
+  "until": "2023-02-03T07:12:57.408Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -332,12 +332,6 @@
           "author": "32398678+ThomasQuesadilla@users.noreply.github.com",
           "hash": "e4e5bf8",
           "subject": "Fix unexpired destinations limit return to handle new algorithm. (#650)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "apaseltiner@google.com",
-          "hash": "dffccaf",
-          "subject": "Add note about header-validator query params (#646)"
         }
       ],
       "testlog": []
@@ -602,6 +596,36 @@
       "href": "https://wicg.github.io/compute-pressure/",
       "specrepo": "https://github.com/WICG/compute-pressure",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "2e5d949",
+          "subject": "Define \"meet their specific needs\" better"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "321d7e2",
+          "subject": "Add \"current pressure state\" internal slot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "71cd685",
+          "subject": "Add a \"change in contributing factors is substantial\" check"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "2bcfae6",
+          "subject": "Clarify an implementation-defined change threshold exceeded check"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "a0ac164",
+          "subject": "Add an implementation-defined change threshold exceeded check"
+        },
         {
           "date": "2023-01-31",
           "author": "anssi.kostiainen@intel.com",
@@ -1015,6 +1039,42 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-02-03",
+          "author": "jkew@mozilla.com",
+          "hash": "8436a4b92f",
+          "subject": "Fixes for font-language-override parsing and tests."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "tcaptan@chromium.org",
+          "hash": "e4df810482",
+          "subject": "Add resolution units support in css image-set"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "aaronhk@chromium.org",
+          "hash": "d3e8b7b15f",
+          "subject": "Isolate CSS Color 4/5 Gamut Mapping Tests"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "graouts@apple.com",
+          "hash": "2cc4bf5359",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251578 (#38324)"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "sesse@chromium.org",
+          "hash": "c82c73555b",
+          "subject": "[css-nesting] Make & in top-level rules behave like :scope."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "graouts@apple.com",
+          "hash": "230dcd1d14",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251499 (#38297)"
+        },
         {
           "date": "2023-02-02",
           "author": "kschmi@microsoft.com",
@@ -2760,48 +2820,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "705d8645df",
           "subject": "Add test for :has(:fullscreen) invalidation (#37396)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "2ae111b066",
-          "subject": "Make :has() unforgiving (#37392)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "41ee6a1436",
-          "subject": "Make :has() unforgiving (#37391)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "kojii@chromium.org",
-          "hash": "1d6b02fa2c",
-          "subject": "Remove the CSS line-height-step property"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "sammy.gill@apple.com",
-          "hash": "2f2fa4f92e",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=247507 (#36830)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "jkew@mozilla.com",
-          "hash": "55a2c10293",
-          "subject": "Parse errors in individual @font-face src components should cause only the bad component to be dropped, not the entire descriptor."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "bfa55126f7",
-          "subject": "container(width:0) shouldn't match elements with no box."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "7eda8fb5a2",
-          "subject": "Implement Kleene logic for query feature expressions."
         }
       ]
     },
@@ -2955,15 +2973,21 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "85f456ad2",
           "subject": "[css-animations-2] Integrate scroll animations into animation-timeline #7579"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a37af7e0c",
-          "subject": "[css-animations-2] Bikeshed fixup"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "graouts@apple.com",
+          "hash": "2cc4bf5359",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251578 (#38324)"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "graouts@apple.com",
+          "hash": "230dcd1d14",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251499 (#38297)"
+        },
         {
           "date": "2023-01-31",
           "author": "graouts@apple.com",
@@ -3264,6 +3288,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "fd@tidoust.net",
+          "hash": "6704a9dc9",
+          "subject": "[css-color-5] Fix \"custom-color-space\" grammar, add autolinks"
+        },
+        {
           "date": "2023-02-01",
           "author": "chris@w3.org",
           "hash": "d62992159",
@@ -3481,6 +3511,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "aaronhk@chromium.org",
+          "hash": "d3e8b7b15f",
+          "subject": "Isolate CSS Color 4/5 Gamut Mapping Tests"
+        },
         {
           "date": "2023-01-31",
           "author": "tlouw@mozilla.com",
@@ -3759,18 +3795,6 @@
           "author": "mrobinson@igalia.com",
           "hash": "c4c82da3ca",
           "subject": "Add a test verifying the behavior of offscreen elements in the top layer with `content-visibility: auto"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "bfa55126f7",
-          "subject": "container(width:0) shouldn't match elements with no box."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "7eda8fb5a2",
-          "subject": "Implement Kleene logic for query feature expressions."
         }
       ]
     },
@@ -3864,18 +3888,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "7b2678387",
           "subject": "[css-display-4] Initial draft copied from L3, adding 'reading-order' #7387"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e0ef5ffd7",
-          "subject": "[css-display-3] Update Changes, DoC"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a79f53998",
-          "subject": "[css-display-3] Define root element term and display type. #7786 #6480 #7207"
         }
       ],
       "testlog": [
@@ -4030,6 +4042,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-03",
+          "author": "jkew@mozilla.com",
+          "hash": "8436a4b92f",
+          "subject": "Fixes for font-language-override parsing and tests."
+        },
+        {
           "date": "2023-01-30",
           "author": "jkew@mozilla.com",
           "hash": "3adbbbb7ca",
@@ -4148,12 +4166,6 @@
           "author": "jkew@mozilla.com",
           "hash": "81df647c3a",
           "subject": "Remove 'font-palette' from the 'font' shorthand."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "jkew@mozilla.com",
-          "hash": "55a2c10293",
-          "subject": "Parse errors in individual @font-face src components should cause only the bad component to be dropped, not the entire descriptor."
         }
       ]
     },
@@ -4297,21 +4309,15 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "04f557d95",
           "subject": "[css-images-3] Bring prose more in line with original spec text, + editorial clean-up. #6038"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "jackalmage@gmail.com",
-          "hash": "162def98f",
-          "subject": "[css-images-3][editorial] Fix Bikeshed errors."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "jackalmage@gmail.com",
-          "hash": "5dfb6d179",
-          "subject": "[css-images-3] Per WG resolution, restore crisp-edges' ability to use a non-NN algorithm. #6038"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "tcaptan@chromium.org",
+          "hash": "e4df810482",
+          "subject": "Add resolution units support in css image-set"
+        },
         {
           "date": "2023-01-18",
           "author": "tcaptan@chromium.org",
@@ -4624,6 +4630,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-02",
+          "author": "sesse@chromium.org",
+          "hash": "c82c73555b",
+          "subject": "[css-nesting] Make & in top-level rules behave like :scope."
+        },
+        {
           "date": "2023-01-31",
           "author": "sesse@chromium.org",
           "hash": "bbb24b5a2d",
@@ -4661,6 +4673,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "git@florian.rivoal.net",
+          "hash": "eb583c80f",
+          "subject": "[css-overflow] Move line-clamp and longhands from L3 to L4"
+        },
         {
           "date": "2023-02-02",
           "author": "git@florian.rivoal.net",
@@ -5376,12 +5394,6 @@
           "author": "cathiechen@igalia.com",
           "hash": "ecaf16dc6b",
           "subject": "The target using last remembered size could be sliced (#37685)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "sammy.gill@apple.com",
-          "hash": "2f2fa4f92e",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=247507 (#36830)"
         }
       ]
     },
@@ -6050,12 +6062,6 @@
           "author": "xiaochengh@chromium.org",
           "hash": "f8579f36b0",
           "subject": "Fix a bug in CSSNumericValue parsing"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "kojii@chromium.org",
-          "hash": "1d6b02fa2c",
-          "subject": "Remove the CSS line-height-step property"
         }
       ]
     },
@@ -6587,6 +6593,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-02",
+          "author": "mehdika@chromium.org",
+          "hash": "c821e5c4e8",
+          "subject": "Remove redundant test for scrollend"
+        },
+        {
           "date": "2023-02-01",
           "author": "mehdika@chromium.org",
           "hash": "0f4a4aeb06",
@@ -7111,14 +7123,7 @@
       "name": "Event Timing API",
       "href": "https://w3c.github.io/event-timing",
       "specrepo": "https://github.com/w3c/event-timing",
-      "speclog": [
-        {
-          "date": "2022-12-07",
-          "author": "yoav@yoav.ws",
-          "hash": "5b74410",
-          "subject": "Fix links"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2023-01-20",
@@ -7931,6 +7936,12 @@
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "yigu@google.com",
+          "hash": "07de5b2",
+          "subject": "Add Auto re-authentication API explainer (#417)"
+        },
+        {
           "date": "2023-02-01",
           "author": "npm@chromium.org",
           "hash": "a1f1897",
@@ -8256,18 +8267,6 @@
           "author": "drobertson@mozilla.com",
           "hash": "bec03e6",
           "subject": "Editorial: various nits and more <div algorithm> wrappers"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "dan@dlrobertson.com",
-          "hash": "f6e9b8d",
-          "subject": "Editorial: <div algorithm> wrappers for more definitions"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "e8b67b0",
-          "subject": "Editorial: remove redundant timingInfo variables"
         }
       ],
       "testlog": [
@@ -8557,18 +8556,6 @@
           "author": "marcos@marcosc.com",
           "hash": "e3ef610db0",
           "subject": "fullscreen: convert manual tests to automated tests (#37223)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "philip@foolip.org",
-          "hash": "897b406f29",
-          "subject": "Test that element.requestFullscreen() consumes user activation (#36969)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "ed61f373bc",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=248712 (#37339)"
         }
       ]
     },
@@ -8646,12 +8633,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "0829d7b",
           "subject": "Fix broken references to WebDriver definitions."
-        },
-        {
-          "date": "2022-12-07",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "bee4a2e",
-          "subject": "Use \"exists\" rather than \"is present\" in dictionary checks."
         }
       ],
       "testlog": [
@@ -8983,15 +8964,15 @@
           "author": "d@domenic.me",
           "hash": "66bc0c4e",
           "subject": "Re-spec <meta name=\"referrer\"> to match browsers"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "syg@chromium.org",
-          "hash": "a22deaef",
-          "subject": "Integrate with resizable buffers"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-03",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "762a5fb8c0",
+          "subject": "Allow speculative parser to see inside DSD templates (#38239)"
+        },
         {
           "date": "2023-02-02",
           "author": "mathias@qiwi.be",
@@ -9525,24 +9506,6 @@
           "author": "xiaochengh@chromium.org",
           "hash": "85ef51bdd5",
           "subject": "[anchor-position] Allow top-layer elements to anchor to abspos elements"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "masonf@chromium.org",
-          "hash": "90aec8c944",
-          "subject": "Combine the popoverhide/popovershow events into one beforetoggle event"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "masonf@chromium.org",
-          "hash": "999a3a15a3",
-          "subject": "Add the shadowrootmode attribute, and trigger streaming only if present"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "alwu@mozilla.com",
-          "hash": "71b04341a6",
-          "subject": "part3 : enable wpt 'autoplay-hidden.optional.html'."
         }
       ]
     },
@@ -9551,6 +9514,12 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "cookiecrook@users.noreply.github.com",
+          "hash": "0323bc1",
+          "subject": "m. typo correction. AXtextArea -> AXTextArea (#459)"
+        },
         {
           "date": "2023-01-30",
           "author": "spectranaut@gmail.com",
@@ -9578,6 +9547,30 @@
       "href": "https://w3c.github.io/html-aria/",
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
+        {
+          "date": "2022-12-14",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "be65185",
+          "subject": "typo fixes per steve's review"
+        },
+        {
+          "date": "2022-12-14",
+          "author": "faulkner.steve@gmail.com",
+          "hash": "bb71069",
+          "subject": "typo"
+        },
+        {
+          "date": "2022-12-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "731b935",
+          "subject": "add in more example content"
+        },
+        {
+          "date": "2022-12-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "c3621ec",
+          "subject": "Editorial: update and expand section 3"
+        },
         {
           "date": "2022-12-08",
           "author": "scottaohara@users.noreply.github.com",
@@ -9614,32 +9607,7 @@
       "name": "MediaStream Image Capture",
       "href": "https://w3c.github.io/mediacapture-image/",
       "specrepo": "https://github.com/w3c/mediacapture-image",
-      "speclog": [
-        {
-          "date": "2022-12-07",
-          "author": "fd@tidoust.net",
-          "hash": "28fab85",
-          "subject": "Drop most explicit anchors from Bikeshed settings"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "dom@w3.org",
-          "hash": "4855418",
-          "subject": "Fix formatting to fix HTML validation errors"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "dom@w3.org",
-          "hash": "f0f69f9",
-          "subject": "Fix link to camera permission name"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "dom@w3.org",
-          "hash": "a93cbbe",
-          "subject": "Allow workflow dispatch to republish spec"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2023-02-01",
@@ -9885,12 +9853,6 @@
           "author": "haoliuk@chromium.org",
           "hash": "3b0e272c7f",
           "subject": "Fix LCP start time logic for non TAO images"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "haoliuk@chromium.org",
-          "hash": "7005b1f855",
-          "subject": "Implement LCP type DataURI for videos."
         }
       ]
     },
@@ -10030,12 +9992,6 @@
           "author": "philip@foolip.org",
           "hash": "644db57",
           "subject": "Stop using the DocumentAndElementEventHandlers interface mixin (#171)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fwang@igalia.com",
-          "hash": "4d42b2b",
-          "subject": "float ignored on elements whose parent has a math display, rather than children of MathML elements"
         }
       ],
       "testlog": []
@@ -10101,6 +10057,12 @@
       "href": "https://w3c.github.io/mediacapture-main/",
       "specrepo": "https://github.com/w3c/mediacapture-main",
       "speclog": [
+        {
+          "date": "2023-01-31",
+          "author": "phancke@microsoft.com",
+          "hash": "044bfdc",
+          "subject": "Split device sanitation note into separate paragraph"
+        },
         {
           "date": "2023-01-12",
           "author": "wingboy@gmail.com",
@@ -10170,6 +10132,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-02",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "41ba61f3c0",
+          "subject": "Revert \"Reland \"Reject getDisplayMedia calls without user activation\"\""
+        },
+        {
           "date": "2023-01-24",
           "author": "tovep@chromium.org",
           "hash": "36365cf494",
@@ -10224,6 +10192,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-02",
+          "author": "tcaptan@chromium.org",
+          "hash": "e4df810482",
+          "subject": "Add resolution units support in css image-set"
+        },
+        {
           "date": "2023-01-25",
           "author": "antti@apple.com",
           "hash": "551f57bc54",
@@ -10260,14 +10234,7 @@
       "href": "https://w3c.github.io/mediasession/",
       "specrepo": "https://github.com/w3c/mediasession",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2022-12-07",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "20232ccfda",
-          "subject": "Add new slides media session actions to Picture-in-Picture window"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "MediaStream Recording",
@@ -11460,45 +11427,15 @@
           "author": "ari.c@icloud.com",
           "hash": "81dcf77",
           "subject": "Fix `Define an inherited policy for feature in container at origin` (#501)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "b44d905",
-          "subject": "Fix TR build"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "403afd8",
-          "subject": "Fix TR build"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "962c361",
-          "subject": "Fix TR build"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "2ba3867",
-          "subject": "Fix TR build"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "31a79e6",
-          "subject": "Update GH Actions for TR autopublishing"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mike@w3.org",
-          "hash": "04184e0",
-          "subject": "Update index.bs for TR autopublishing"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "41ba61f3c0",
+          "subject": "Revert \"Reland \"Reject getDisplayMedia calls without user activation\"\""
+        },
         {
           "date": "2023-01-23",
           "author": "beaufort.francois@gmail.com",
@@ -12255,7 +12192,14 @@
       "name": "Save Data API",
       "href": "https://wicg.github.io/savedata/",
       "specrepo": "https://github.com/WICG/savedata",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-01",
+          "author": "arichiv@chromium.org",
+          "hash": "d251acc",
+          "subject": "Fix NetInfo Anchor Link"
+        }
+      ],
       "testlog": []
     },
     {
@@ -12277,20 +12221,7 @@
           "subject": "Fix default allowlist link that broke."
         }
       ],
-      "testlog": [
-        {
-          "date": "2022-12-07",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "4047d18232",
-          "subject": "Screen Capture: Fix getdisplaymedia-framerate.https.html test"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "21b6094665",
-          "subject": "Screen Capture: Fix getdisplaymedia-framerate.https.html test"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Screen Orientation API",
@@ -12374,24 +12305,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "d50d75668",
           "subject": "[scroll-animations-1] Publication fixes"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "500f6b433",
-          "subject": "[scroll-animations-1] partial interface to avoid conflicting definitions #8013"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "21ab7339f",
-          "subject": "[scroll-animations-1] Fix grammar error again"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "6c958c3ea",
-          "subject": "[scroll-animations-1] Clarify syntactic interaction of scroll()/view() and animation-timeline. #7579"
         }
       ],
       "testlog": [
@@ -12544,18 +12457,6 @@
           "author": "andruud@chromium.org",
           "hash": "f12151ee06",
           "subject": "[scroll-animations] Support animation-duration:auto"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "andruud@chromium.org",
-          "hash": "8a7a1a5f7b",
-          "subject": "[scroll-animations] Tree-scoped timeline lookups"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "mehdika@chromium.org",
-          "hash": "e186d905e4",
-          "subject": "Support timeline offsets in animation keyframes"
         }
       ]
     },
@@ -12909,12 +12810,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "e7244b11b",
           "subject": "[selectors-4] Allow logical combination pseudos wherever their arguments are themselves valid. #7085 (#8041)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "4756df80d",
-          "subject": "[selectors-4] Per WG resolution, make :has() and :nth-child()/:nth-last-child() unforgiving. #7676"
         }
       ],
       "testlog": [
@@ -13031,18 +12926,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "705d8645df",
           "subject": "Add test for :has(:fullscreen) invalidation (#37396)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "2ae111b066",
-          "subject": "Make :has() unforgiving (#37392)"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "41ee6a1436",
-          "subject": "Make :has() unforgiving (#37391)"
         }
       ]
     },
@@ -13085,12 +12968,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "998e292d3e",
           "subject": "Update encoded/decoded body length for service-worker responses"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "estade@chromium.org",
-          "hash": "127eb87d88",
-          "subject": "Storage buckets: make sure `caches` handles a deleted bucket properly"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -13255,6 +13132,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "41ba61f3c0",
+          "subject": "Revert \"Reland \"Reject getDisplayMedia calls without user activation\"\""
+        },
         {
           "date": "2023-01-23",
           "author": "jbroman@chromium.org",
@@ -13570,12 +13453,6 @@
           "author": "tkent@chromium.org",
           "hash": "2d8060eaf9",
           "subject": "SVG Text NG: Fix rendering with inconsistent textLength values"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "longsonr@gmail.com",
-          "hash": "264eddcdc8",
-          "subject": "Disable SVGGraphicsElement.{nearest,farthest}ViewportElement in early beta"
         }
       ]
     },
@@ -13642,14 +13519,7 @@
       "name": "Change Array by copy",
       "href": "https://tc39.es/proposal-change-array-by-copy/",
       "specrepo": "https://github.com/tc39/proposal-change-array-by-copy",
-      "speclog": [
-        {
-          "date": "2022-12-07",
-          "author": "mathias@qiwi.be",
-          "hash": "e877139",
-          "subject": "Link to more implementation tracking bugs (#104)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -13664,6 +13534,12 @@
       "href": "https://tc39.es/proposal-explicit-resource-management/",
       "specrepo": "https://github.com/tc39/proposal-explicit-resource-management",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "7eeb420",
+          "subject": "Remove ForBodyEvaluation/CreatePerIterationEnvironment (#140)"
+        },
         {
           "date": "2023-01-31",
           "author": "ron.buckton@microsoft.com",
@@ -15011,48 +14887,6 @@
           "author": "richard.gibson@gmail.com",
           "hash": "bbcdf7b",
           "subject": "Meta: Fix TOC auto-expansion"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "gibson042@users.noreply.github.com",
-          "hash": "32277ed",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "richard.gibson@gmail.com",
-          "hash": "831f523",
-          "subject": "Meta: Fix TOC auto-expansion"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "gibson042@users.noreply.github.com",
-          "hash": "3e73588",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "richard.gibson@gmail.com",
-          "hash": "fa59eaa",
-          "subject": "Meta: Rebase on latest ECMA-262"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "richard.gibson@gmail.com",
-          "hash": "a7025af",
-          "subject": "Meta: Adopt template-for-proposals .gitignore contents"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "gibson042@users.noreply.github.com",
-          "hash": "205cc92",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "richard.gibson@gmail.com",
-          "hash": "f8426e9",
-          "subject": "Meta: Render spec automatically"
         }
       ],
       "testlog": []
@@ -15068,7 +14902,20 @@
       "name": "Resizable ArrayBuffer and growable SharedArrayBuffer",
       "href": "https://tc39.es/proposal-resizablearraybuffer/",
       "specrepo": "https://github.com/tc39/proposal-resizablearraybuffer",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "syg@chromium.org",
+          "hash": "779f33f",
+          "subject": "Update render"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "ljharb@gmail.com",
+          "hash": "d0f002f",
+          "subject": "[spec] fix assertions to allow either an AB or an SAB (#117)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -15141,6 +14988,12 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "justingrant@users.noreply.github.com",
+          "hash": "536f91d9",
+          "subject": "Fix code in plain{Date|Time}.toZonedDateTime docs"
+        },
         {
           "date": "2023-02-01",
           "author": "pchimento@igalia.com",
@@ -15579,14 +15432,7 @@
       "href": "https://w3c.github.io/uievents/",
       "specrepo": "https://github.com/w3c/uievents",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2022-12-07",
-          "author": "mustaq@google.com",
-          "hash": "295326a595",
-          "subject": "[Interop] Add a WPT that canceling mousemove doesn't affect drag."
-        }
-      ],
+      "testlog": [],
       "testpolicy": "https://github.com/w3c/uievents/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -15928,12 +15774,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "937fc7d6",
           "subject": "[spec] Eps"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "rossberg@chromium.org",
-          "hash": "62aa16e9",
-          "subject": "[spec] Fix minor errors and inconsistencies (#1564)"
         }
       ],
       "testlog": []
@@ -16082,12 +15922,6 @@
           "author": "jsbell@chromium.org",
           "hash": "9ce4a6482a",
           "subject": "Web Locks: If aborted due to an AbortSignal, use signal's reason"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "krosylight@mozilla.com",
-          "hash": "a996174386",
-          "subject": "Delay full worker shutdown until LockManagerChild is destructed"
         }
       ]
     },
@@ -16295,6 +16129,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16338,6 +16286,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "fcc3154d4d",
+          "subject": "[WebCodecs] Fix crossOriginSource VideoFrame tests."
+        },
         {
           "date": "2023-02-02",
           "author": "dalecurtis@chromium.org",
@@ -16412,6 +16366,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16461,6 +16529,120 @@
       "href": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -16512,6 +16694,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16561,6 +16857,120 @@
       "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -16612,6 +17022,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16661,6 +17185,120 @@
       "href": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -16712,6 +17350,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16761,6 +17513,120 @@
       "href": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -16812,6 +17678,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16861,6 +17841,120 @@
       "href": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -16912,6 +18006,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -16961,6 +18169,120 @@
       "href": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -17012,6 +18334,120 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
+        {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
           "hash": "d1df0f8",
@@ -17061,6 +18497,120 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "dalecurtis@chromium.org",
+          "hash": "c846f98",
+          "subject": "Fix close algorithm for non-null VideoFrame timestamps."
+        },
+        {
+          "date": "2023-02-02",
+          "author": "1167575+josephrocca@users.noreply.github.com",
+          "hash": "adf65f4",
+          "subject": "Add nixxquality's fixes"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "e8fc435",
+          "subject": "Add WebCodecs in Worker link on samples page"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec35f0a",
+          "subject": "Adjust default bitrate"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1db4e3b",
+          "subject": "Add bitrate mode selection"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "aa55239",
+          "subject": "Fix cfg.svc bug"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9f26adc",
+          "subject": "Restore queue size metrics, change default bitrate and GoP size"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4ccbf3b",
+          "subject": "Remove encoder and decoder metrics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "ec63e32",
+          "subject": "Update encode/decode and queue depth statistics"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "4c1070b",
+          "subject": "Renove hard coded HEVC error"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "6536037",
+          "subject": "Remove remaining \"var\" usage"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "913402d",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "2c74a38",
+          "subject": "Fix HEVC codec string"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "65d7ddf",
+          "subject": "Add CSS, update codec configuration"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "964af81",
+          "subject": "Add more granular error messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "8526db4",
+          "subject": "Cleanup debug messages"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "9a92fb5",
+          "subject": "Add WebCodecs in Worker sample"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "f3ac20f",
+          "subject": "restore 3 wrong fixes according to the comments of @padenot"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "webrtc@bytedance.com",
+          "hash": "c5cdcb4",
+          "subject": "fix several typoes"
+        },
         {
           "date": "2023-02-01",
           "author": "fd@tidoust.net",
@@ -18340,6 +19890,18 @@
       "speclog": [
         {
           "date": "2023-02-02",
+          "author": "28601907+teoxoy@users.noreply.github.com",
+          "hash": "c1553c9b",
+          "subject": "Fix outdated `maxTextureArrayLayers` description (#3801)"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "dneto@google.com",
+          "hash": "ee03bb28",
+          "subject": "grammar analyzer: Fix first and follow sets for degenerate rules (#3797)"
+        },
+        {
+          "date": "2023-02-02",
           "author": "kainino@chromium.org",
           "hash": "c7c3816a",
           "subject": "Use automatic expiry for imported textures, remove .expired (#3633)"
@@ -19347,12 +20909,6 @@
           "author": "phancke@microsoft.com",
           "hash": "c29a0343e9",
           "subject": "webrtc wpt: add more tests for msid parsing"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "phancke@microsoft.com",
-          "hash": "749e04ef7b",
-          "subject": "webrtc wpt: assert that setParameters implements the transaction model"
         }
       ]
     },
@@ -19369,6 +20925,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-02",
+          "author": "phancke@microsoft.com",
+          "hash": "7815492dc6",
+          "subject": "insertable streams: add rtp sequence number to incoming audio metadata"
+        },
         {
           "date": "2023-01-26",
           "author": "toprice@chromium.org",
@@ -19475,12 +21037,6 @@
           "author": "fredrikhernqvist96@gmail.com",
           "hash": "398ad3d",
           "subject": "Change RTCAudioPlayoutStats::totalSamplesCount to unsigned long long (#720)"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "evanshrubsole@gmail.com",
-          "hash": "d0dc3aa",
-          "subject": "Remove fullscreen contexts hardware capability exposure (#713)"
         }
       ],
       "testlog": [
@@ -19705,18 +21261,6 @@
           "author": "wilaw@akamai.com",
           "hash": "0b5007c",
           "subject": "Update explainer.md"
-        },
-        {
-          "date": "2022-12-08",
-          "author": "wingboy@gmail.com",
-          "hash": "97dc5c9",
-          "subject": "Use USVString for closeInfo.reason"
-        },
-        {
-          "date": "2022-12-07",
-          "author": "wingboy@gmail.com",
-          "hash": "d40fceb",
-          "subject": "Reword send priorities around starvation and [[SendOrder]]."
         }
       ],
       "testlog": [
@@ -19854,6 +21398,18 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-02-02",
+          "author": "28601907+teoxoy@users.noreply.github.com",
+          "hash": "c1553c9b",
+          "subject": "Fix outdated `maxTextureArrayLayers` description (#3801)"
+        },
+        {
+          "date": "2023-02-02",
+          "author": "dneto@google.com",
+          "hash": "ee03bb28",
+          "subject": "grammar analyzer: Fix first and follow sets for degenerate rules (#3797)"
+        },
         {
           "date": "2023-02-02",
           "author": "kainino@chromium.org",
@@ -20195,6 +21751,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-03",
+          "author": "jonj@netflix.com",
+          "hash": "181fc870ae",
+          "subject": "Add optional submitter argument to FormData constructor"
+        },
         {
           "date": "2023-01-27",
           "author": "jenseng@gmail.com",
