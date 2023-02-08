@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-12-12T07:12:56.024Z",
-  "until": "2023-02-07T07:12:56.024Z",
+  "since": "2022-12-13T07:13:07.923Z",
+  "until": "2023-02-08T07:13:07.923Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -22,7 +22,14 @@
       "name": "Accessible Name and Description Computation",
       "href": "https://w3c.github.io/accname/",
       "specrepo": "https://github.com/w3c/accname",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "cookiecrook@users.noreply.github.com",
+          "hash": "9c71070",
+          "subject": "Add better permalinks for AccName computation. (#186)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -494,7 +501,14 @@
       "href": "https://w3c.github.io/webappsec-clear-site-data/",
       "specrepo": "https://github.com/w3c/webappsec-clear-site-data",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "cdumez@apple.com",
+          "hash": "c13156a7a9",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251821 (#38380)"
+        }
+      ]
     },
     {
       "name": "Client Hints Infrastructure",
@@ -1011,6 +1025,12 @@
       "testlog": [
         {
           "date": "2023-02-07",
+          "author": "yigu@chromium.org",
+          "hash": "e0e8e7f933",
+          "subject": "[FedCM] Add wpt test for auto re-authn"
+        },
+        {
+          "date": "2023-02-07",
           "author": "goto@chromium.org",
           "hash": "52ac01498f",
           "subject": "[fedcm] IdP Registration API Part 1: The Write Part"
@@ -1082,6 +1102,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-02-08",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "26c352b219",
+          "subject": "Fix fixed-position visual rect expansion with additional transforms/clips"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "sesse@chromium.org",
+          "hash": "005712c0d3",
+          "subject": "Fix incorrect :nth-child(... of S) with many children."
+        },
+        {
+          "date": "2023-02-07",
+          "author": "sakhapov@chromium.org",
+          "hash": "71895a98a6",
+          "subject": "Support offset-path: ray() function <size> and <contain>."
+        },
+        {
+          "date": "2023-02-07",
+          "author": "kschmi@microsoft.com",
+          "hash": "b215e3d1c0",
+          "subject": "[GridNG] Clamp auto-placement to subgrid area"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "tlin@mozilla.com",
+          "hash": "a23065b401",
+          "subject": "Part 2 - Ignore \"break-inside:avoid\" for content in a nested top-of-page multicol in last balancing reflow."
+        },
+        {
+          "date": "2023-02-07",
+          "author": "xiaochengh@chromium.org",
+          "hash": "342f336faf",
+          "subject": "Add tree scope hash into MatchedPropertiesCache key"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "philip@foolip.org",
+          "hash": "7b06f9e24c",
+          "subject": "Remove duplicate color(srgb) invalid value test"
+        },
         {
           "date": "2023-02-07",
           "author": "khushalsagar@chromium.org",
@@ -2773,30 +2835,6 @@
           "author": "cdumez@apple.com",
           "hash": "d36ee66c91",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=249177 (#37463)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "bd8ba88c89",
-          "subject": "Implement baseline-source."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "vmpstr@chromium.org",
-          "hash": "fd4a24ce05",
-          "subject": "VT: Use geometry mapper for ancestor rect mapping."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "andruud@chromium.org",
-          "hash": "91b581bc9b",
-          "subject": "Use ComputedStyle to determine CQ containers in ancestors"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "16dd20fd16",
-          "subject": "Add test for nested query containers."
         }
       ]
     },
@@ -2881,6 +2919,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-08",
+          "author": "jackalmage@gmail.com",
+          "hash": "15fcd3d2b",
+          "subject": "[css-anchor-1] Whoops, forgot that position fallback immediately overrides base styles, rather than using base styles as the first entry. #7757"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "jackalmage@gmail.com",
+          "hash": "5b063f5ac",
+          "subject": "[css-anchor-1] Specify that auto/auto-same in @try expands to multiple entries."
+        },
+        {
+          "date": "2023-02-08",
+          "author": "jackalmage@gmail.com",
+          "hash": "503cb67cc",
+          "subject": "[css-anchor-1] Add auto-same keyword. #7757"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "jackalmage@gmail.com",
+          "hash": "dd4a553e4",
+          "subject": "[css-anchor-1] Make it clearer that the automatic anchor positioning stuff only applies when the anchor(auto) is used validly."
+        },
+        {
           "date": "2023-02-03",
           "author": "jackalmage@gmail.com",
           "hash": "27a5bfa13",
@@ -2921,12 +2983,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "5d26c7456",
           "subject": "[css-anchor-1] Add an issue pointing to #8180"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "a5eb357e6",
-          "subject": "[css-anchor-1] Define how top layer and anchors interact."
         }
       ],
       "testlog": []
@@ -3051,6 +3107,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-08",
+          "author": "obrufau@igalia.com",
+          "hash": "fd50f90d2",
+          "subject": "[css-backgrounds-3] Add Oriol's variant and testcases to radius-expansion.html"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "obrufau@igalia.com",
+          "hash": "b76c5669c",
+          "subject": "[css-backgrounds-3] Make radius-expansion.html show red outline for invalid values"
+        },
         {
           "date": "2023-02-01",
           "author": "dbaron@dbaron.org",
@@ -3270,6 +3338,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "chris@w3.org",
+          "hash": "1c2132c4e",
+          "subject": "[css-color-4] Allow all color spaces for interpolation method, fix #7907"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris@w3.org",
+          "hash": "d5a9d6eba",
+          "subject": "[css-color-5] Clarify un-named components are still valid."
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris@w3.org",
+          "hash": "4f09d0500",
+          "subject": "[css-color-5] channel keywords havea single type, same as css-color-4."
+        },
         {
           "date": "2023-02-02",
           "author": "fd@tidoust.net",
@@ -3494,6 +3580,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "philip@foolip.org",
+          "hash": "7b06f9e24c",
+          "subject": "Remove duplicate color(srgb) invalid value test"
+        },
         {
           "date": "2023-02-02",
           "author": "aaronhk@chromium.org",
@@ -3742,18 +3834,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "b221f8c0d6",
           "subject": "CV: Ensure that there is only one state change observation on insertion"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "andruud@chromium.org",
-          "hash": "91b581bc9b",
-          "subject": "Use ComputedStyle to determine CQ containers in ancestors"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "oriol-bugzilla@hotmail.com",
-          "hash": "16dd20fd16",
-          "subject": "Add test for nested query containers."
         }
       ]
     },
@@ -4127,6 +4207,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-07",
+          "author": "kschmi@microsoft.com",
+          "hash": "b215e3d1c0",
+          "subject": "[GridNG] Clamp auto-placement to subgrid area"
+        },
+        {
           "date": "2023-02-02",
           "author": "kschmi@microsoft.com",
           "hash": "c5a6dbc25b",
@@ -4321,12 +4407,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "d12505b978",
           "subject": "[baseline-source] Set baseline-source to auto when vertical-align set."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "bd8ba88c89",
-          "subject": "Implement baseline-source."
         }
       ]
     },
@@ -4391,6 +4471,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-02-08",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "26c352b219",
+          "subject": "Fix fixed-position visual rect expansion with additional transforms/clips"
+        },
+        {
           "date": "2022-12-19",
           "author": "clchambers@microsoft.com",
           "hash": "2f935370cc",
@@ -4424,6 +4510,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "tlin@mozilla.com",
+          "hash": "a23065b401",
+          "subject": "Part 2 - Ignore \"break-inside:avoid\" for content in a nested top-of-page multicol in last balancing reflow."
+        },
         {
           "date": "2023-02-06",
           "author": "tkent@chromium.org",
@@ -4727,12 +4819,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "193898d74",
           "subject": "[css-overflow-3] Cross-reference open issues on replaced element overflow"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "moonset20@gmail.com",
-          "hash": "5879f705e",
-          "subject": "[css-overflow-3] Fix typo in example 6 #8190 (#8215)"
         }
       ],
       "testlog": [
@@ -6331,12 +6417,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "8ff38c54ff",
           "subject": "VT: End the transition only if animation is not running or paused"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "vmpstr@chromium.org",
-          "hash": "fd4a24ce05",
-          "subject": "VT: Use geometry mapper for ancestor rect mapping."
         }
       ]
     },
@@ -6667,6 +6747,18 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-08",
+          "author": "romulocintra@gmail.com",
+          "hash": "780b7b806e",
+          "subject": "Add test to approximately format"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "trflynn89@pm.me",
+          "hash": "f5e2214b30",
+          "subject": "Swap call order of NumberFormat's notation and roundingIncrement options"
+        },
+        {
           "date": "2023-02-01",
           "author": "richard.gibson@gmail.com",
           "hash": "788bc809bf",
@@ -6713,12 +6805,6 @@
           "author": "ftang@chromium.org",
           "hash": "dac6956348",
           "subject": "sync with duration-format PR130 (#3752)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "trflynn89@pm.me",
-          "hash": "e6c6460a5b",
-          "subject": "Update Intl.NumberFormat test with recent reorder of option evaluation"
         }
       ]
     },
@@ -6826,6 +6912,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "syg@chromium.org",
+          "hash": "d03f11a81b",
+          "subject": "Fix ArrayBuffer#transfer tests to preserve maxByteLength"
+        },
         {
           "date": "2023-02-01",
           "author": "pchimento@igalia.com",
@@ -7655,6 +7747,30 @@
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
         {
+          "date": "2023-02-07",
+          "author": "npm@chromium.org",
+          "hash": "97004a2",
+          "subject": "Remove unaddressed use-cases from explainer (#421)"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "samuelgoto@gmail.com",
+          "hash": "05f1d36",
+          "subject": "Update README.md"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
+          "hash": "9d6851a",
+          "subject": "Major restructuring pass of non-core elements of the specification (#418)"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "yigu@google.com",
+          "hash": "bb97791",
+          "subject": "Add `mediation: silent` to auto re-authn explainer (#420)"
+        },
+        {
           "date": "2023-02-02",
           "author": "yigu@google.com",
           "hash": "07de5b2",
@@ -7851,18 +7967,6 @@
           "author": "goto@chromium.org",
           "hash": "d224bb9",
           "subject": "Fix typo on the /well-known -> /.well-known example"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "npm@chromium.org",
-          "hash": "1724b7e",
-          "subject": "Update iframe_support.md"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "npm@chromium.org",
-          "hash": "33af32a",
-          "subject": "Update iframe_support.md"
         }
       ],
       "testlog": []
@@ -7980,12 +8084,6 @@
           "author": "drobertson@mozilla.com",
           "hash": "897c560",
           "subject": "Editorial: more nits and more <div algorithm> wrappers"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "drobertson@mozilla.com",
-          "hash": "bec03e6",
-          "subject": "Editorial: various nits and more <div algorithm> wrappers"
         }
       ],
       "testlog": [
@@ -8628,6 +8726,42 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-08",
+          "author": "rniwa@webkit.org",
+          "hash": "fabe6dac48",
+          "subject": "Fix shadow-dom/focus-navigation/focus-nested-slots.html for Safari (#38409)"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "rniwa@webkit.org",
+          "hash": "687911b503",
+          "subject": "Fix shadow-dom/focus-navigation/focus-navigation-slot-nested-2levels.html for Safari (#38407)"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "rniwa@webkit.org",
+          "hash": "3c08ffc0d7",
+          "subject": "Fix shadow-dom/focus-navigation/focus-navigation-slots-in-slot.html for Safari (#38408)"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "dizhangg@chromium.org",
+          "hash": "d427544df9",
+          "subject": "Unload cancelled by script should include calling preventDefault"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "jarhar@chromium.org",
+          "hash": "ebdcad7249",
+          "subject": "Delay event dispatch in HTMLElement::setInnerText"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "jpgravel@chromium.org",
+          "hash": "44fdb6b93f",
+          "subject": "Add support for generated canvas WPT reference test."
+        },
+        {
           "date": "2023-02-07",
           "author": "rniwa@webkit.org",
           "hash": "6bfff41e9a",
@@ -9130,24 +9264,6 @@
           "author": "emilio@crisal.io",
           "hash": "c196035a24",
           "subject": "Implement details and summary styling in a UA sheet."
-        },
-        {
-          "date": "2022-12-13",
-          "author": "avandolder@mozilla.com",
-          "hash": "ca5c046611",
-          "subject": "Sanitize multiple values in an email input correctly."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jarhar@chromium.org",
-          "hash": "eed89e3016",
-          "subject": "Make popover initial focus use GetFocusDelegate"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "lingqi@chromium.org",
-          "hash": "59b6f67864",
-          "subject": "Revert \"Fix the popover-attribute-basic.tentative.html test\""
         }
       ]
     },
@@ -9167,12 +9283,6 @@
           "author": "spectranaut@gmail.com",
           "hash": "65891f6",
           "subject": "Remove references to \"sectioning root\" (#456)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "2de152d",
-          "subject": "update s element mapping (#442)"
         }
       ],
       "testlog": [],
@@ -9183,6 +9293,18 @@
       "href": "https://w3c.github.io/html-aria/",
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "8a7d4cb",
+          "subject": "Update summary-allowances.html"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "e1fafd2",
+          "subject": "Create summary-allowances.html"
+        },
         {
           "date": "2023-02-03",
           "author": "scottaohara@users.noreply.github.com",
@@ -9518,7 +9640,14 @@
       "href": "https://w3c.github.io/longtasks/",
       "specrepo": "https://github.com/w3c/longtasks",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "ddaaab5",
+          "subject": "Fix broken refs"
+        }
+      ],
       "testlog": [
         {
           "date": "2023-01-18",
@@ -10040,7 +10169,14 @@
           "subject": "[css-motion-1] Move Shane to Former Editor, add myself as editor, sort editors by name."
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "sakhapov@chromium.org",
+          "hash": "71895a98a6",
+          "subject": "Support offset-path: ray() function <size> and <contain>."
+        }
+      ]
     },
     {
       "name": "MediaStreamTrack Content Hints",
@@ -10079,12 +10215,6 @@
           "author": "japhet@chromium.org",
           "hash": "6be8927b9a",
           "subject": "Move renderer-side same-url-replacement enforcement to LocalFrame::NavigationShouldReplaceCurrentHistoryEntry"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "japhet@chromium.org",
-          "hash": "189bf4cb04",
-          "subject": "Suppress navigate event on cross-origin traversal"
         }
       ]
     },
@@ -10780,6 +10910,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-02-07",
+          "author": "yuzus@chromium.org",
+          "hash": "5bddb01716",
+          "subject": "[bfcache] NotRestoredReasons return null for non-history/successful bfcache navigation"
+        },
+        {
           "date": "2023-02-01",
           "author": "haoliuk@chromium.org",
           "hash": "531d5a41a2",
@@ -10832,12 +10968,6 @@
           "author": "jaspreetsandhu@google.com",
           "hash": "65d52cb43b",
           "subject": "Use SecurityOrigin when getting cross-frame same-origin performance entries"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "yoavweiss@chromium.org",
-          "hash": "ea3d597f0c",
-          "subject": "GetEntriesWithChildFrames to handle detached frames"
         }
       ]
     },
@@ -10991,6 +11121,48 @@
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
         {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "94a30ab",
+          "subject": "Added a better description of the exceptions for mLUm"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "e26aabe",
+          "subject": "added fixes for all comments"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "7c3bcb9",
+          "subject": "Optimized HDR and SDR examples of mASt"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "5dde3fb",
+          "subject": "Added mLum chunk and examples"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "b340bec",
+          "subject": "Additional info on MDCV (mAST)"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "4bbdafc",
+          "subject": "Defined ST. 2086 with specific language"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "chris.seeger@nbcuni.com",
+          "hash": "5394f05",
+          "subject": "Changed minimum display luminance to UHD Alliance Premium (mAST)"
+        },
+        {
           "date": "2023-01-23",
           "author": "ProgramMax@gmail.com",
           "hash": "50d5938",
@@ -11096,12 +11268,6 @@
           "author": "mustaq@google.com",
           "hash": "2dd16ce0e2",
           "subject": "[Interop] WPT for capturing boundary event handler at UA Shadow DOM"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "mustaq@google.com",
-          "hash": "5f9a2b41f2",
-          "subject": "[Interop] WPT for pointercancel coordinates."
         }
       ]
     },
@@ -11209,12 +11375,6 @@
           "author": "d@domenic.me",
           "hash": "ff6f1e7",
           "subject": "Decode key strings when parsing No-Vary-Search"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "toyoshim@chromium.org",
-          "hash": "280ded3",
-          "subject": "script-src-elem also accepts 'inline-speculation-rules' (#223)"
         }
       ],
       "testlog": []
@@ -11301,12 +11461,6 @@
           "author": "d@domenic.me",
           "hash": "ff6f1e7",
           "subject": "Decode key strings when parsing No-Vary-Search"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "toyoshim@chromium.org",
-          "hash": "280ded3",
-          "subject": "script-src-elem also accepts 'inline-speculation-rules' (#223)"
         }
       ],
       "testlog": []
@@ -11762,12 +11916,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "19e56ae5f",
           "subject": "[scroll-animations-1] Fix typo #8203"
-        },
-        {
-          "date": "2022-12-13",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "c57ee4f2b",
-          "subject": "[scroll-animations-1] Restrict scroll/view-timeline value reordering to avoid parse ambiguity #7626"
         }
       ],
       "testlog": [
@@ -12060,12 +12208,6 @@
           "author": "pdr@chromium.org",
           "hash": "72517000dd",
           "subject": "Ensure changes to painted caret property state cause a full update"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "vepomoc@gmail.com",
-          "hash": "3b6b8de232",
-          "subject": "Add tests for contenteditable=false elements inside contenteditable=true elements and for selection in empty elements (#35862)"
         }
       ],
       "testpolicy": "https://github.com/w3c/selection-api/blob/HEAD/CONTRIBUTING.md"
@@ -12153,45 +12295,15 @@
           "author": "jackalmage@gmail.com",
           "hash": "cdda267e0",
           "subject": "[selectors-4] Return :has() to using <relative-selector-list> rather than *-real-*, as we explicitly say :has() can *theoretically* take pseudo-elements."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "a66ab2a32",
-          "subject": "[selectors-4][editorial] Logical combos after a pseudo-el restrict more than just what pseudo-classes are allowed in their args. #7085"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "173a602cb",
-          "subject": "[selectors-4] Refer to the correct *-real-* productions in a few more places. #7085"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "2a639d5f6",
-          "subject": "[selectors-4] Amend the whitespace prohibitions to take <pseudo-compound-selector> into account. #7085"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "448f9a66d",
-          "subject": "Added :blank to at-risk and removed :read-write and :has() from it (#8170)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "f7a95bd16",
-          "subject": "[selectors-4][editorial] Rephrase the pseudo-compound and complex selector parts a bit. #5676"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "10780675+SpikyC@users.noreply.github.com",
-          "hash": "032f25182",
-          "subject": "[selectors-4] Fix typo: pseudo-eleent → pseudo-element (#8216)"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-07",
+          "author": "sesse@chromium.org",
+          "hash": "005712c0d3",
+          "subject": "Fix incorrect :nth-child(... of S) with many children."
+        },
         {
           "date": "2023-01-16",
           "author": "zach@zrhoffman.net",
@@ -12323,12 +12435,6 @@
           "author": "philip@foolip.org",
           "hash": "8073ec1e56",
           "subject": "Fix \"shuld\" typos (#37621)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "nrosenthal@chromium.org",
-          "hash": "998e292d3e",
-          "subject": "Update encoded/decoded body length for service-worker responses"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -12478,12 +12584,6 @@
           "author": "d@domenic.me",
           "hash": "ff6f1e7",
           "subject": "Decode key strings when parsing No-Vary-Search"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "toyoshim@chromium.org",
-          "hash": "280ded3",
-          "subject": "script-src-elem also accepts 'inline-speculation-rules' (#223)"
         }
       ],
       "testlog": [
@@ -12570,30 +12670,6 @@
           "author": "mstensho@chromium.org",
           "hash": "ece42fe567",
           "subject": "Revert \"WPT: label csp-script-src-inline-speculation-rules.html with tentative\""
-        },
-        {
-          "date": "2022-12-13",
-          "author": "toyoshim@chromium.org",
-          "hash": "9a6e6ee793",
-          "subject": "WPT: label csp-script-src-inline-speculation-rules.html with tentative"
-        },
-        {
-          "date": "2022-12-13",
-          "author": "toyoshim@chromium.org",
-          "hash": "3f6f35f720",
-          "subject": "Reland \"Prerender2 CSP: Implement script-src 'inline-speculation-rules'\""
-        },
-        {
-          "date": "2022-12-12",
-          "author": "liuwilliam@chromium.org",
-          "hash": "cd240becc7",
-          "subject": "Set requestStart/responseStart to connectEnd for prefetch."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "toyoshim@chromium.org",
-          "hash": "ee3d894eeb",
-          "subject": "WPT: make prerender/resource/utils.js error proof"
         }
       ]
     },
@@ -14101,18 +14177,6 @@
           "author": "bakkot@gmail.com",
           "hash": "11dd1e4",
           "subject": "split async helpers into their own repo (#263)"
-        },
-        {
-          "date": "2022-12-13",
-          "author": "ljharb@gmail.com",
-          "hash": "ef4471f",
-          "subject": "spec: rename predicate arguments to \"predicate\" (#260)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "axel@rauschma.de",
-          "hash": "bdb4883",
-          "subject": "Remove subsection on `.indexed()` (#258)"
         }
       ],
       "testlog": []
@@ -14798,18 +14862,6 @@
           "author": "annevk@annevk.nl",
           "hash": "a05ee27",
           "subject": "Clarify that percent-encoding does not always roundtrip"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "annevk@annevk.nl",
-          "hash": "50f0b09",
-          "subject": "Clarify the web uses UTS46 and not IDNA2008"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "annevk@annevk.nl",
-          "hash": "c81722b",
-          "subject": "Editorial: clarify constructor example"
         }
       ],
       "testlog": [
@@ -14969,6 +15021,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2023-02-07",
+          "author": "bongjun.jang@kaist.ac.kr",
+          "hash": "947badf4",
+          "subject": "[spec] Fix typo (#1587)"
+        },
+        {
           "date": "2023-01-31",
           "author": "31069474+candymate@users.noreply.github.com",
           "hash": "45f9845d",
@@ -15027,12 +15085,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "a54a1d85",
           "subject": "[spec] Remove dead piece of grammar"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "rossberg@chromium.org",
-          "hash": "ef01de5e",
-          "subject": "[interpreter] Refactor parser to handle select & call_indirect correctly (#1567)"
         }
       ],
       "testlog": []
@@ -15059,6 +15111,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "birtles@gmail.com",
+          "hash": "0050554a7",
+          "subject": "[web-animations-2] Fix some broken links"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "birtles@gmail.com",
+          "hash": "1287c016b",
+          "subject": "[web-animations-1] Fix a few more broken links"
+        },
         {
           "date": "2023-02-07",
           "author": "birtles@gmail.com",
@@ -15120,12 +15184,6 @@
           "author": "graouts@apple.com",
           "hash": "9565baf729",
           "subject": "Fix tests for clamping to 0 with keyframes with calc() values (addresses issue #37053). (#37457)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "graouts@apple.com",
-          "hash": "2bc4bb0ff4",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=248944 (#37456)"
         }
       ]
     },
@@ -15282,7 +15340,14 @@
           "subject": "Fix capitalisation of heading (#257)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-02-08",
+          "author": "marcos@marcosc.com",
+          "hash": "2ef4c88367",
+          "subject": "web share: change feature-policy-listed.html to tentative (#38132)"
+        }
+      ]
     },
     {
       "name": "Web Share Target API",
@@ -15530,12 +15595,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": [
@@ -15773,12 +15832,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -15937,12 +15990,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16101,12 +16148,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16265,12 +16306,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16429,12 +16464,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16593,12 +16622,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16757,12 +16780,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -16921,12 +16938,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17085,12 +17096,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17249,12 +17254,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17413,12 +17412,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17577,12 +17570,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17741,12 +17728,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17905,12 +17886,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "47b8051",
           "subject": " Add a way of specifying blockSize and compressLevel to FLAC encoder"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "bclayton@google.com",
-          "hash": "cd72b11",
-          "subject": "Update WGSL of renderer_webgpu.js"
         }
       ],
       "testlog": []
@@ -17919,14 +17894,7 @@
       "name": "Secure Curves in the Web Cryptography API",
       "href": "https://wicg.github.io/webcrypto-secure-curves/",
       "specrepo": "https://github.com/WICG/webcrypto-secure-curves",
-      "speclog": [
-        {
-          "date": "2022-12-12",
-          "author": "d.huigens@protonmail.com",
-          "hash": "0874265",
-          "subject": "Link to the implementation status in the README"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -17946,18 +17914,6 @@
           "author": "panva.ip@gmail.com",
           "hash": "a976727425",
           "subject": "WebCryptoAPI: remove test for OperationError for tagLength 256 (#37734)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "panva.ip@gmail.com",
-          "hash": "84456654f4",
-          "subject": "WebCryptoAPI: add EC public key raw and spki import vectors (#37319)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "panva.ip@gmail.com",
-          "hash": "ce56d1177d",
-          "subject": "WebCryptoAPI: add CFRG public keys raw import vectors (#37318)"
         }
       ]
     },
@@ -18155,6 +18111,18 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "a0d9ee0",
+          "subject": "Update to latest releases of workflow actions (#364)"
+        },
+        {
+          "date": "2023-02-07",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "7a32d50",
+          "subject": "Fix some references to infra types (e.g. set, map)."
+        },
         {
           "date": "2023-02-06",
           "author": "69349599+sadym-chromium@users.noreply.github.com",
@@ -18950,6 +18918,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2023-02-07",
+          "author": "dneto@google.com",
+          "hash": "398dc572",
+          "subject": "wgsl: Fix description of truncate and trunc (#3811)"
+        },
+        {
           "date": "2023-02-06",
           "author": "mehmetoguzderin@mehmetoguzderin.com",
           "hash": "780baa59",
@@ -19218,18 +19192,6 @@
           "author": "dneto@google.com",
           "hash": "093b63a5",
           "subject": "wgsl: add predeclared type aliases for matrices (#3674)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "kainino@chromium.org",
-          "hash": "912b8286",
-          "subject": "begin pass: only generate error on incorrect state (#3665)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "eliemichel@users.noreply.github.com",
-          "hash": "9ae70466",
-          "subject": "Small typo in explainer (#3679)"
         }
       ],
       "testlog": []
@@ -19364,33 +19326,15 @@
           "author": "zoltan.kis@intel.com",
           "hash": "6c5b11b",
           "subject": "Fix review comments: false instead failure, title of MLContext validation section."
-        },
-        {
-          "date": "2022-12-12",
-          "author": "zoltan.kis@intel.com",
-          "hash": "f4a7f13",
-          "subject": "Fix #311: use [=map/exist=] instead of exist"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "zoltan.kis@intel.com",
-          "hash": "eed627b",
-          "subject": "Use map-get convention in createContext()"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "zoltan.kis@intel.com",
-          "hash": "a3f3ecc",
-          "subject": "Re-align if clauses in createContext()"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "zoltan.kis@intel.com",
-          "hash": "396327f",
-          "subject": "Make 'then' clauses a sub-step in createContext()"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-08",
+          "author": "feng.dai@intel.com",
+          "hash": "9baa894114",
+          "subject": "[webnn] Support MLActivation interface (#38406)"
+        },
         {
           "date": "2023-02-06",
           "author": "feng.dai@intel.com",
@@ -19916,12 +19860,6 @@
           "author": "docfaraday@gmail.com",
           "hash": "642de96833",
           "subject": "Support RTCRtpEncodingParameters.active"
-        },
-        {
-          "date": "2022-12-13",
-          "author": "phancke@microsoft.com",
-          "hash": "c29a0343e9",
-          "subject": "webrtc wpt: add more tests for msid parsing"
         }
       ]
     },
@@ -20322,6 +20260,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-07",
+          "author": "rogerdis@microsoft.com",
+          "hash": "9d1228a8d1",
+          "subject": "Add test for xrSession.updateRenderState with layers"
+        },
+        {
           "date": "2023-01-03",
           "author": "alcooper@chromium.org",
           "hash": "82659d4571",
@@ -20405,6 +20349,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-02-07",
+          "author": "dneto@google.com",
+          "hash": "398dc572",
+          "subject": "wgsl: Fix description of truncate and trunc (#3811)"
+        },
         {
           "date": "2023-02-06",
           "author": "mehmetoguzderin@mehmetoguzderin.com",
@@ -20674,18 +20624,6 @@
           "author": "dneto@google.com",
           "hash": "093b63a5",
           "subject": "wgsl: add predeclared type aliases for matrices (#3674)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "kainino@chromium.org",
-          "hash": "912b8286",
-          "subject": "begin pass: only generate error on incorrect state (#3665)"
-        },
-        {
-          "date": "2022-12-12",
-          "author": "eliemichel@users.noreply.github.com",
-          "hash": "9ae70466",
-          "subject": "Small typo in explainer (#3679)"
         }
       ],
       "testlog": []
