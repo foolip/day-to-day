@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2022-12-18T07:13:03.008Z",
-  "until": "2023-02-13T07:13:03.008Z",
+  "since": "2022-12-19T07:13:09.442Z",
+  "until": "2023-02-14T07:13:09.442Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -123,6 +123,18 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-02-13",
+          "author": "80365263+linnan-github@users.noreply.github.com",
+          "hash": "b0c6fec",
+          "subject": "Move aggregatable deduplication check earlier (#699)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "anthony.garant@keenoa.co",
+          "hash": "0f00f01",
+          "subject": "Support multiple sets of OR'd filters (#634)"
+        },
         {
           "date": "2023-02-09",
           "author": "41194547+alois-bissuel@users.noreply.github.com",
@@ -448,24 +460,6 @@
           "author": "deniak@users.noreply.github.com",
           "hash": "733ac88",
           "subject": "Chore: Switch WebApps WG (#96)"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "marcos@marcosc.com",
-          "hash": "23b5620",
-          "subject": "chore: update README"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "marcos@marcosc.com",
-          "hash": "7d7be86",
-          "subject": "Editorial: fixup global/this usage (#91)"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "miketaylr@google.com",
-          "hash": "a8490c2",
-          "subject": "Editorial: use associated Document in place of responsible document (#86)"
         }
       ],
       "testlog": []
@@ -1066,6 +1060,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-02-14",
+          "author": "tcaptan@chromium.org",
+          "hash": "467366ae4b",
+          "subject": "Add css image-set gradient images parsing tests"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "tcaptan@chromium.org",
+          "hash": "c2e38c05d8",
+          "subject": "Add css image-set gradient images rendering tests"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "github@gtalbot.org",
+          "hash": "f334d23380",
+          "subject": "Correct background-size-001 test (#38470)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "graouts@apple.com",
+          "hash": "03515566f3",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=252158 (#38464)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "yosin@chromium.org",
+          "hash": "5d3caa9dcd",
+          "subject": "[user-select] Add `user-select: contain` in CSS"
+        },
         {
           "date": "2023-02-12",
           "author": "github@gtalbot.org",
@@ -2739,12 +2763,6 @@
           "author": "rbuis@igalia.com",
           "hash": "a0194a3a61",
           "subject": "Make content-visibility-080.html output visible (#37552)"
-        },
-        {
-          "date": "2022-12-18",
-          "author": "sammy.gill@apple.com",
-          "hash": "7c349a39c8",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=249205 (#37512)"
         }
       ]
     },
@@ -2782,6 +2800,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f8c8212e6",
+          "subject": "[css-align-3] Fix links"
+        },
         {
           "date": "2023-01-20",
           "author": "fantasai.bugs@inkedblade.net",
@@ -3036,6 +3060,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f6b48c147",
+          "subject": "[css-backgrounds-3] Fix metadata"
+        },
+        {
           "date": "2023-02-08",
           "author": "obrufau@igalia.com",
           "hash": "fd50f90d2",
@@ -3055,6 +3085,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-13",
+          "author": "github@gtalbot.org",
+          "hash": "f334d23380",
+          "subject": "Correct background-size-001 test (#38470)"
+        },
         {
           "date": "2023-02-12",
           "author": "github@gtalbot.org",
@@ -3110,7 +3146,20 @@
       "href": "https://drafts.csswg.org/css-box/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "d558cf922",
+          "subject": "[css-box-4] Clarify that only descendant margins are trimmed by margin-trim. #8283"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "889fcae7a",
+          "subject": "[css-box-3] Mark application to internal ruby boxes as undefined. https://github.com/w3c/transitions/issues/469#issuecomment-1398465136"
+        }
+      ],
       "testlog": [
         {
           "date": "2023-01-19",
@@ -3123,12 +3172,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "8e8075e9b5",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=249206 (#37652)"
-        },
-        {
-          "date": "2022-12-18",
-          "author": "sammy.gill@apple.com",
-          "hash": "7c349a39c8",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=249205 (#37512)"
         }
       ]
     },
@@ -4221,6 +4264,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "1291c9a86",
+          "subject": "[css-images-4] Fix metadata"
+        },
+        {
           "date": "2023-01-27",
           "author": "gui.lebas@gmail.com",
           "hash": "dcbdd6d55",
@@ -4288,6 +4337,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-14",
+          "author": "tcaptan@chromium.org",
+          "hash": "467366ae4b",
+          "subject": "Add css image-set gradient images parsing tests"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "tcaptan@chromium.org",
+          "hash": "c2e38c05d8",
+          "subject": "Add css image-set gradient images rendering tests"
+        },
         {
           "date": "2023-02-10",
           "author": "rreno@apple.com",
@@ -4433,6 +4494,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "gui.lebas@gmail.com",
+          "hash": "79936f81b",
+          "subject": "[css-multicol-1] Define column-count with animation type (#8418)"
+        },
+        {
           "date": "2023-01-20",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "46df453a9",
@@ -4524,6 +4591,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "fdf88f2ff",
+          "subject": "[css-nesting-1] Add issue about lookahead per WG resolution"
+        },
         {
           "date": "2023-02-01",
           "author": "jackalmage@gmail.com",
@@ -4829,6 +4902,30 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "49fea3b6a",
+          "subject": "[css-position-3] Fix links"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "0efc1d7c1",
+          "subject": "[css-position-3] Shift dfn higher in the section"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "2cf60565b",
+          "subject": "[css-position-3] Fix metadata"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f82bd610c",
+          "subject": "[css-position-3] Update Changes list"
+        },
         {
           "date": "2023-01-19",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5318,7 +5415,26 @@
       "href": "https://drafts.csswg.org/css-speech/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b9d8155ff",
+          "subject": "[css-speech-1] Add tink's w3cid"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "ff5f57744",
+          "subject": "[css-speech-1] Note editorial changes"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f209d74c1",
+          "subject": "[css-speech-1] Fix bikeshed errors"
+        }
+      ],
       "testlog": []
     },
     {
@@ -5378,6 +5494,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-13",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "614b76c39",
+          "subject": "[css-text-3] Update Changes list"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "git@florian.rivoal.net",
+          "hash": "f015ce167",
+          "subject": "[css-text-3] Strengthen language about conformant use of text-transform"
+        },
         {
           "date": "2023-01-31",
           "author": "me@peterfritz.dev",
@@ -5797,7 +5925,14 @@
           "subject": "[css-transitions-1] Remove duplicate animation type values"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-02-13",
+          "author": "graouts@apple.com",
+          "hash": "03515566f3",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=252158 (#38464)"
+        }
+      ]
     },
     {
       "name": "CSS Typed OM",
@@ -5978,6 +6113,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-02-13",
+          "author": "yosin@chromium.org",
+          "hash": "5d3caa9dcd",
+          "subject": "[user-select] Add `user-select: contain` in CSS"
+        },
         {
           "date": "2023-01-20",
           "author": "tcaptan@chromium.org",
@@ -6681,6 +6822,24 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2023-02-13",
+          "author": "richard.gibson@gmail.com",
+          "hash": "6aa7ba8",
+          "subject": "Editorial: Remove _entries_ aliases (#2947)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "richard.gibson@gmail.com",
+          "hash": "fa1fb80",
+          "subject": "Editorial: For clarity, alter _record_.[[Field]] rather than an alias of it (#2947)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "richard.gibson@gmail.com",
+          "hash": "3ba46e0",
+          "subject": "Editorial: Add aliases for Agent Events Records when working with [[EventList]]s (#2947)"
+        },
         {
           "date": "2023-02-08",
           "author": "richard.gibson@gmail.com",
@@ -7479,6 +7638,12 @@
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
+          "hash": "10c8d09",
+          "subject": "Restructuring pass of core spec information (IDP and Browser APIs) (#424)"
+        },
+        {
           "date": "2023-02-09",
           "author": "cbiesinger@chromium.org",
           "hash": "8a33eb4",
@@ -7820,6 +7985,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-13",
+          "author": "phao@chromium.org",
+          "hash": "517c78fb33",
+          "subject": "[Private Network Access] Do not enforce preflights in http tests"
+        },
+        {
           "date": "2023-02-10",
           "author": "pmeenan@chromium.org",
           "hash": "027bf08ade",
@@ -7978,6 +8149,18 @@
       "href": "https://wicg.github.io/first-party-sets/",
       "specrepo": "https://github.com/WICG/first-party-sets",
       "speclog": [
+        {
+          "date": "2023-02-13",
+          "author": "54452408+krgovind@users.noreply.github.com",
+          "hash": "55f4387",
+          "subject": "Update FPS-tester-list.md"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "54452408+krgovind@users.noreply.github.com",
+          "hash": "d91d03b",
+          "subject": "Add First-Party Sets testers list"
+        },
         {
           "date": "2023-02-06",
           "author": "89418275+shuranhuang@users.noreply.github.com",
@@ -8601,6 +8784,24 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-14",
+          "author": "mathias@qiwi.be",
+          "hash": "f5d24c1c5d",
+          "subject": "Add tests for <input pattern> enabling the RegExp `v` flag (#38325)"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "masonf@chromium.org",
+          "hash": "191f5949e7",
+          "subject": "Remove `.tentative` from Popover WPTs"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "ben.freist@gmail.com",
+          "hash": "fb6ee09666",
+          "subject": "Fix insertion of already selected options"
+        },
+        {
           "date": "2023-02-10",
           "author": "tristan.fraipont@gmail.com",
           "hash": "774793190e",
@@ -9151,6 +9352,30 @@
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "86a96ce",
+          "subject": "typo fix"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "0160102",
+          "subject": "Update summary-allowances.html"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "44103c1",
+          "subject": "Update summary-allowances.html"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "0f29858",
+          "subject": "Addition: update figure role allowances (#415)"
+        },
+        {
           "date": "2023-02-07",
           "author": "scottaohara@users.noreply.github.com",
           "hash": "8a7d4cb",
@@ -9577,6 +9802,18 @@
       "specrepo": "https://github.com/w3c/mathml-core",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "fwang@igalia.com",
+          "hash": "4634157",
+          "subject": "Remove mathvariant from core (except 'normal')"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "fwang@igalia.com",
+          "hash": "b239a9c",
+          "subject": "fix section organization"
+        },
+        {
           "date": "2023-02-10",
           "author": "d.p.carlisle@gmail.com",
           "hash": "11f8b36",
@@ -9730,12 +9967,6 @@
           "author": "dontcallmedom@users.noreply.github.com",
           "hash": "8ceb50c",
           "subject": "Update to ReSpec version 32.6.0"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "dontcallmedom@users.noreply.github.com",
-          "hash": "2b01f7d",
-          "subject": "Update to ReSpec version 32.5.1"
         }
       ],
       "testlog": [
@@ -11368,6 +11599,24 @@
       "specrepo": "https://github.com/privacycg/requestStorageAccessForOrigin",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "matthew.reichhoff@gmail.com",
+          "hash": "7524602",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2023-02-10",
+          "author": "mreichhoff@chromium.org",
+          "hash": "d477391",
+          "subject": "Add permission key comparison algorithm"
+        },
+        {
+          "date": "2023-02-08",
+          "author": "mreichhoff@chromium.org",
+          "hash": "b90407d",
+          "subject": "Modify permission key specification"
+        },
+        {
           "date": "2023-02-06",
           "author": "mreichhoff@chromium.org",
           "hash": "9c28d88",
@@ -11965,6 +12214,12 @@
       "specrepo": "https://github.com/w3c/selection-api",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "rniwa@webkit.org",
+          "hash": "941fa81",
+          "subject": "Rename getComposedRange to getComposedRanges and make it return an array of StaticRange."
+        },
+        {
           "date": "2023-02-09",
           "author": "rniwa@webkit.org",
           "hash": "cd5148f",
@@ -12327,6 +12582,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-02-13",
+          "author": "asamidoi@chromium.org",
+          "hash": "a33eb75d4d",
+          "subject": "Prerender: Add assertions to make sure if the page is/is not prerendered"
+        },
+        {
           "date": "2023-02-11",
           "author": "nrosenthal@chromium.org",
           "hash": "021d1b5eb0",
@@ -12538,12 +12799,6 @@
           "author": "cdumez@apple.com",
           "hash": "5f656d50f1",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=249510 (#37588)"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "tkent@chromium.org",
-          "hash": "694b540e9f",
-          "subject": "SVG Text NG: Fix text scaling by :root scaling changes"
         }
       ]
     },
@@ -14623,6 +14878,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-02-13",
+          "author": "zero-one@zer0-one.net",
+          "hash": "42c4f93",
+          "subject": "Editorial: clarify return value of the IPv4 number parser"
+        },
+        {
           "date": "2023-02-08",
           "author": "yagiz@nizipli.com",
           "hash": "8653878",
@@ -14743,12 +15004,6 @@
           "author": "philip@foolip.org",
           "hash": "2f096ab504",
           "subject": "Subset URL tests by file/javascript/mailto schemes (#37372)"
-        },
-        {
-          "date": "2022-12-18",
-          "author": "rmisev3@gmail.com",
-          "hash": "2f61a65a06",
-          "subject": "URL: fix invalid test"
         }
       ]
     },
@@ -14839,6 +15094,18 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2023-02-13",
+          "author": "bongjun.jang@kaist.ac.kr",
+          "hash": "0f068801",
+          "subject": "[spec] Style eps (#1601)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "f8ae6b24",
+          "subject": "[spec] Style tweak for cross-refs"
+        },
         {
           "date": "2023-02-11",
           "author": "jimb@red-bean.com",
@@ -14948,6 +15215,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "3f8bb03fa",
+          "subject": "[web-animations-2] Link to issue"
+        },
+        {
+          "date": "2023-02-14",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "7b6366dd8",
+          "subject": "[web-animations-2] Mark up custom effects as tentative"
+        },
         {
           "date": "2023-02-07",
           "author": "birtles@gmail.com",
@@ -18908,6 +19187,18 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2023-02-14",
+          "author": "jiawei.shao@intel.com",
+          "hash": "662eda19",
+          "subject": "Support STORAGE usage on bgra8unorm as an extension (#3800)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "dneto@google.com",
+          "hash": "6679a897",
+          "subject": "wgsl: discover template lists early (Lookahead disambiguation of less-than vs template argument list (v2)) (#3803)"
+        },
+        {
           "date": "2023-02-09",
           "author": "alanbaker@google.com",
           "hash": "ae8b4a2c",
@@ -19542,12 +19833,6 @@
           "author": "henbos@users.noreply.github.com",
           "hash": "9b8ed12",
           "subject": "Update to ReSpec version 32.6.0"
-        },
-        {
-          "date": "2022-12-19",
-          "author": "henbos@users.noreply.github.com",
-          "hash": "255bd02",
-          "subject": "Update to ReSpec version 32.5.1"
         }
       ],
       "testlog": [
@@ -20170,6 +20455,18 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-02-14",
+          "author": "jiawei.shao@intel.com",
+          "hash": "662eda19",
+          "subject": "Support STORAGE usage on bgra8unorm as an extension (#3800)"
+        },
+        {
+          "date": "2023-02-13",
+          "author": "dneto@google.com",
+          "hash": "6679a897",
+          "subject": "wgsl: discover template lists early (Lookahead disambiguation of less-than vs template argument list (v2)) (#3803)"
+        },
         {
           "date": "2023-02-09",
           "author": "alanbaker@google.com",
