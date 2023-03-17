@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-01-18T07:12:58.494Z",
-  "until": "2023-03-16T07:12:58.494Z",
+  "since": "2023-01-19T07:13:09.151Z",
+  "until": "2023-03-17T07:13:09.151Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -96,6 +96,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -196,6 +208,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-03-16",
+          "author": "akashnadan@gmail.com",
+          "hash": "f371279",
+          "subject": "Change name from trigger attestation to report verification (#720)"
+        },
         {
           "date": "2023-03-10",
           "author": "apaseltiner@google.com",
@@ -441,24 +459,6 @@
           "author": "80365263+linnan-github@users.noreply.github.com",
           "hash": "bdfa8a8",
           "subject": "Spec change for updating attribution rate limit for noised source (#671)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "apaseltiner@google.com",
-          "hash": "c2394f3",
-          "subject": "Remove obsolete scheme issue (#674)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "apaseltiner@google.com",
-          "hash": "57375df",
-          "subject": "Replace erroneous map-iteration links with set iteration (#673)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "anthony.garant@keenoa.co",
-          "hash": "ba0897a",
-          "subject": "clarify filters (#636)"
         }
       ],
       "testlog": []
@@ -888,6 +888,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-03-17",
+          "author": "arnaud.mandy@intel.com",
+          "hash": "19d1015623",
+          "subject": "compute pressure: Add support for Workers"
+        },
+        {
           "date": "2023-03-15",
           "author": "wei4.wang@intel.com",
           "hash": "77f6cca6d9",
@@ -1036,6 +1042,12 @@
       "specrepo": "https://github.com/w3c/core-aam",
       "speclog": [
         {
+          "date": "2023-03-16",
+          "author": "spectranaut@gmail.com",
+          "hash": "9ebe286",
+          "subject": "Update pull_request_template.md"
+        },
+        {
           "date": "2023-02-01",
           "author": "cookiecrook@users.noreply.github.com",
           "hash": "2b40d0e",
@@ -1174,6 +1186,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-03-17",
+          "author": "tlouw@mozilla.com",
+          "hash": "ed1380e21b",
+          "subject": "Allow 'none' keyword in color components"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4f3b67b7a3",
+          "subject": "Tweak scroll-snap-type-on-root-element.html to run the test as expected on mobile environments."
+        },
+        {
+          "date": "2023-03-16",
+          "author": "jarhar@chromium.org",
+          "hash": "afdce893ed",
+          "subject": "CSSTransitionDiscrete: Fix text-decor related crashes"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "lingqi@chromium.org",
+          "hash": "1eb5a3613d",
+          "subject": "InlineLayout: add parsing logic for the text-box-trim property"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "jarhar@chromium.org",
+          "hash": "286d2ea3aa",
+          "subject": "Make animations to display:none also apply inert"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "mstensho@chromium.org",
+          "hash": "e385e89cfc",
+          "subject": "Only add trailing border/padding to the right fragment."
+        },
+        {
+          "date": "2023-03-16",
+          "author": "dan@danburzo.ro",
+          "hash": "490fc650da",
+          "subject": "[css-color] unwrap lab/oklab and lch/oklch for-loops (#39029)"
+        },
         {
           "date": "2023-03-15",
           "author": "fantasai.bugs@inkedblade.net",
@@ -2817,48 +2871,6 @@
           "author": "rbuis@igalia.com",
           "hash": "31083fa841",
           "subject": "Fix content-visibility-035.html on WebKit iOS (#38037)"
-        },
-        {
-          "date": "2023-01-19",
-          "author": "jkew@mozilla.com",
-          "hash": "154df0ab34",
-          "subject": "Make GetFirstValidFont() check whether the required character is supported by the font."
-        },
-        {
-          "date": "2023-01-19",
-          "author": "jkew@mozilla.com",
-          "hash": "863ebf930a",
-          "subject": "Add WPT tests for 'ch' and 'ic' units when the relevant font is not first in the list."
-        },
-        {
-          "date": "2023-01-19",
-          "author": "vmpstr@chromium.org",
-          "hash": "ad7fcb9336",
-          "subject": "VT: Rename domUpdated to updateCallbackDone"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "tcaptan@chromium.org",
-          "hash": "2bc6950659",
-          "subject": "Fix -webkit-image-set serialization"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "moonira@google.com",
-          "hash": "775f81f34a",
-          "subject": "Reset font subproperties to their initial value"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "andruud@chromium.org",
-          "hash": "708d6b8250",
-          "subject": "[scroll-timeline] Implement animation-range"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "jkew@mozilla.com",
-          "hash": "ade4b929b2",
-          "subject": "Make css-fonts/animations/font-variation-settings-composition.html less finicky about serialization order for font-variation-settings."
         }
       ]
     },
@@ -3152,12 +3164,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "1a5c61d2ca",
           "subject": "Add support for the animation-composition property."
-        },
-        {
-          "date": "2023-01-18",
-          "author": "andruud@chromium.org",
-          "hash": "708d6b8250",
-          "subject": "[scroll-timeline] Implement animation-range"
         }
       ]
     },
@@ -3167,6 +3173,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "cfb14c06d",
+          "subject": "[css-backgrounds-3] Fix computed value line of 'background-image' #8604"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "sebastianzartner@gmail.com",
+          "hash": "d971aaf5f",
+          "subject": "[css-backgrounds-4] Fixed id of Drop Shadows section #8593"
+        },
         {
           "date": "2023-03-14",
           "author": "sebastianzartner@gmail.com",
@@ -3386,6 +3404,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-03-16",
+          "author": "mstensho@chromium.org",
+          "hash": "e385e89cfc",
+          "subject": "Only add trailing border/padding to the right fragment."
+        },
         {
           "date": "2023-03-15",
           "author": "almaher@microsoft.com",
@@ -3809,6 +3833,18 @@
       ],
       "testlog": [
         {
+          "date": "2023-03-17",
+          "author": "tlouw@mozilla.com",
+          "hash": "ed1380e21b",
+          "subject": "Allow 'none' keyword in color components"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "dan@danburzo.ro",
+          "hash": "490fc650da",
+          "subject": "[css-color] unwrap lab/oklab and lch/oklch for-loops (#39029)"
+        },
+        {
           "date": "2023-03-03",
           "author": "sesse@chromium.org",
           "hash": "2715c7b13c",
@@ -4047,6 +4083,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "48cbb562c",
+          "subject": "[css-display-3] Fix indentation"
+        },
         {
           "date": "2023-03-14",
           "author": "fantasai.bugs@inkedblade.net",
@@ -4331,24 +4373,6 @@
           "author": "jkew@mozilla.com",
           "hash": "d140f80042",
           "subject": "Test/metadata updates for corrected font-{feature,variation}-settings computed style and interpolation behaviors."
-        },
-        {
-          "date": "2023-01-19",
-          "author": "jkew@mozilla.com",
-          "hash": "154df0ab34",
-          "subject": "Make GetFirstValidFont() check whether the required character is supported by the font."
-        },
-        {
-          "date": "2023-01-18",
-          "author": "moonira@google.com",
-          "hash": "775f81f34a",
-          "subject": "Reset font subproperties to their initial value"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "jkew@mozilla.com",
-          "hash": "ade4b929b2",
-          "subject": "Make css-fonts/animations/font-variation-settings-composition.html less finicky about serialization order for font-variation-settings."
         }
       ]
     },
@@ -4541,12 +4565,6 @@
           "author": "tcaptan@chromium.org",
           "hash": "e4df810482",
           "subject": "Add resolution units support in css image-set"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "tcaptan@chromium.org",
-          "hash": "2bc6950659",
-          "subject": "Fix -webkit-image-set serialization"
         }
       ]
     },
@@ -4564,6 +4582,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-03-16",
+          "author": "lingqi@chromium.org",
+          "hash": "1eb5a3613d",
+          "subject": "InlineLayout: add parsing logic for the text-box-trim property"
+        },
         {
           "date": "2023-01-26",
           "author": "ikilpatrick@chromium.org",
@@ -4871,6 +4895,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "git@florian.rivoal.net",
+          "hash": "9381b07ef",
+          "subject": "[css-overflow-3] Add overflow:overlay as a legacy value alias"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "0f1d31b40",
+          "subject": "[css-overflow-3] Give corner clipping its own subsection"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "3f48b54ad",
+          "subject": "[css-overflow-3] Remove stray reference to replaced elements"
+        },
         {
           "date": "2023-03-03",
           "author": "gui.lebas@gmail.com",
@@ -5302,6 +5344,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-03-17",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4f3b67b7a3",
+          "subject": "Tweak scroll-snap-type-on-root-element.html to run the test as expected on mobile environments."
+        },
+        {
           "date": "2023-03-13",
           "author": "kevers@google.com",
           "hash": "753acf1734",
@@ -5502,6 +5550,30 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "bcb48c59a",
+          "subject": "[css-text-4] Update Changes list"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "310083b97",
+          "subject": "[css-text-4] Example for 'discard-inner'"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4b5444f34",
+          "subject": "[css-text-4] Reorder white-space-trim values, add line-breaking note"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "54c3e0cee",
+          "subject": "[css-text-4] Rename text-space-trim to white-space-trim. #8436 #8273"
+        },
         {
           "date": "2023-03-14",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5730,6 +5802,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-03-16",
+          "author": "jarhar@chromium.org",
+          "hash": "afdce893ed",
+          "subject": "CSSTransitionDiscrete: Fix text-decor related crashes"
+        },
+        {
           "date": "2023-02-14",
           "author": "ikilpatrick@chromium.org",
           "hash": "d9f90057f1",
@@ -5814,6 +5892,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-03-16",
+          "author": "jarhar@chromium.org",
+          "hash": "286d2ea3aa",
+          "subject": "Make animations to display:none also apply inert"
+        },
         {
           "date": "2023-03-10",
           "author": "jarhar@chromium.org",
@@ -6125,18 +6209,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "12852aa09f",
           "subject": "Fix syntax typo in acos-asin-atan-atan2-computed.html"
-        },
-        {
-          "date": "2023-01-19",
-          "author": "jkew@mozilla.com",
-          "hash": "154df0ab34",
-          "subject": "Make GetFirstValidFont() check whether the required character is supported by the font."
-        },
-        {
-          "date": "2023-01-19",
-          "author": "jkew@mozilla.com",
-          "hash": "863ebf930a",
-          "subject": "Add WPT tests for 'ch' and 'ic' units when the relevant font is not first in the list."
         }
       ]
     },
@@ -6238,12 +6310,6 @@
           "author": "63884798+khushalsagar@users.noreply.github.com",
           "hash": "8706306d2",
           "subject": "[css-view-transitions-1] Fix spec text for suppressing rendering. (#8328)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "bokan@chromium.org",
-          "hash": "537adc84b",
-          "subject": "[css-view-transitions-1] Replace 'snapshot viewport' with 'snapshot root' (#8324)"
         }
       ],
       "testlog": [
@@ -6420,12 +6486,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "0aa89372ec",
           "subject": "VT: Make view-transition-name be a grouping property with a stacking context"
-        },
-        {
-          "date": "2023-01-19",
-          "author": "vmpstr@chromium.org",
-          "hash": "ad7fcb9336",
-          "subject": "VT: Rename domUpdated to updateCallbackDone"
         }
       ]
     },
@@ -6611,12 +6671,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "8e07a869b4",
           "subject": "XML: comment and PI in doctype internal subset"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "mehdika@chromium.org",
-          "hash": "978487b551",
-          "subject": "Test for scrollend for mandatory snap point after load"
         }
       ]
     },
@@ -6634,6 +6688,12 @@
       "specrepo": "https://github.com/tc39/ecma402",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2023-03-16",
+          "author": "justingrant@users.noreply.github.com",
+          "hash": "6bac978",
+          "subject": "Update notes again to clarify discussion"
+        },
         {
           "date": "2023-03-14",
           "author": "justingrant@users.noreply.github.com",
@@ -6764,6 +6824,12 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2023-03-16",
+          "author": "a669815580@qq.com",
+          "hash": "6a1b8f75",
+          "subject": "Editorial: fix the Unary - Operator's description (#3025)"
+        },
         {
           "date": "2023-03-15",
           "author": "mficarra@shapesecurity.com",
@@ -7084,7 +7150,14 @@
       "specrepo": "https://github.com/whatwg/encoding",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-03-16",
+          "author": "krosylight@mozilla.com",
+          "hash": "517df9c730",
+          "subject": "Do not create a promise from an uncatchable exception"
+        }
+      ]
     },
     {
       "name": "Encrypted Media Extensions",
@@ -7120,6 +7193,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -7201,6 +7286,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -7280,6 +7377,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -7361,6 +7470,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -7440,6 +7561,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -7521,6 +7654,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -7600,6 +7745,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -7681,6 +7838,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -7760,6 +7929,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -7841,6 +8022,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -7920,6 +8113,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -8001,6 +8206,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -8080,6 +8297,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -8401,6 +8630,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-03-17",
+          "author": "mych@chromium.org",
+          "hash": "37bb8d987c",
+          "subject": "Refactor fetch keepalive-related WPT tests and add a basic one."
+        },
+        {
           "date": "2023-03-10",
           "author": "phao@chromium.org",
           "hash": "d7f32fa18f",
@@ -8555,12 +8790,6 @@
           "author": "krosylight@mozilla.com",
           "hash": "7b49c547d4",
           "subject": "Part 2: Add tests for BYOB readers from Response"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "smayya@mozilla.com",
-          "hash": "bffc15bfc4",
-          "subject": "remove auth header from redirected cross-origin requests."
         }
       ]
     },
@@ -8757,6 +8986,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-03-16",
+          "author": "asully@chromium.org",
+          "hash": "bb07d59",
+          "subject": "Editorial: use <code> formatting for class names in some algorithms"
+        },
+        {
           "date": "2023-03-02",
           "author": "tomac@google.com",
           "hash": "2d0b5c8",
@@ -8787,12 +9022,6 @@
           "author": "asully@chromium.org",
           "hash": "fd37d07189",
           "subject": "FSA: Fix create-sync-access-handle test flakiness"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "asully@chromium.org",
-          "hash": "ad88d36028",
-          "subject": "FSA: Implement a cursor for SyncAccessHandles"
         }
       ]
     },
@@ -8917,12 +9146,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "6a492f9",
           "subject": "editorial: Export \"sensor reading\" <dfn>."
-        },
-        {
-          "date": "2023-01-18",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "11aa4ee",
-          "subject": "editorial: Export all Abstract Operation definitions."
         }
       ],
       "testlog": [
@@ -9060,6 +9283,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-03-16",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "16c74645",
+          "subject": "Define the processing model for dns-prefetch"
+        },
         {
           "date": "2023-03-14",
           "author": "annevk@annevk.nl",
@@ -9293,12 +9522,6 @@
           "author": "d@domenic.me",
           "hash": "0ea88cf4",
           "subject": "Document exactly what works with the Link header"
-        },
-        {
-          "date": "2023-01-19",
-          "author": "d@domenic.me",
-          "hash": "f519475d",
-          "subject": "Rename \"nested navigable\" to \"content navigable\""
         }
       ],
       "testlog": [
@@ -10258,6 +10481,12 @@
       "specrepo": "https://github.com/w3c/mediacapture-image",
       "speclog": [
         {
+          "date": "2023-03-16",
+          "author": "eero.hakkinen@intel.com",
+          "hash": "23ebc38",
+          "subject": "Amend and fix implementation status on Windows"
+        },
+        {
           "date": "2023-02-24",
           "author": "beaufort.francois@gmail.com",
           "hash": "60523d6",
@@ -10436,6 +10665,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -10556,6 +10797,18 @@
       "href": "https://wicg.github.io/local-network-access/",
       "specrepo": "https://github.com/WICG/local-network-access",
       "speclog": [
+        {
+          "date": "2023-03-16",
+          "author": "phao@chromium.org",
+          "hash": "a7579dc",
+          "subject": "Move same-origin exemption to the secure context section"
+        },
+        {
+          "date": "2023-03-13",
+          "author": "phao@chromium.org",
+          "hash": "0436aea",
+          "subject": "Allow potentially trustworthy same-origin requests"
+        },
         {
           "date": "2023-03-02",
           "author": "titouan@google.com",
@@ -11040,14 +11293,7 @@
       "name": "Mixed Content",
       "href": "https://w3c.github.io/webappsec-mixed-content/",
       "specrepo": "https://github.com/w3c/webappsec-mixed-content",
-      "speclog": [
-        {
-          "date": "2023-01-18",
-          "author": "105853975+moztomer@users.noreply.github.com",
-          "hash": "dca188f",
-          "subject": "Update index.bs"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2023-01-27",
@@ -11417,6 +11663,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -11496,6 +11754,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -11577,6 +11847,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -11656,6 +11938,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -11737,6 +12031,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -11816,6 +12122,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -11897,6 +12215,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -11977,6 +12307,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -12056,6 +12398,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -12198,6 +12552,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -12330,30 +12696,6 @@
           "author": "rouslan@chromium.org",
           "hash": "6460d0e17c",
           "subject": "[Web Platform Test] Just-in-time install for can-make-payment test"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "rouslan@chromium.org",
-          "hash": "76c0115e80",
-          "subject": "[Web Platform Test] Remove extra indent from shipping-option test"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "rouslan@chromium.org",
-          "hash": "227281e2ec",
-          "subject": "[Web Platform Test] Remove extra indents from delegations tests"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "rouslan@chromium.org",
-          "hash": "5ee22324f2",
-          "subject": "[Web Platform Test] Just-in-time install for shipping-option test"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "rouslan@chromium.org",
-          "hash": "4d2568512e",
-          "subject": "[Web Platform Test] Just-in-time install for delegations test"
         }
       ]
     },
@@ -13239,20 +13581,7 @@
           "subject": "[resize-observer-1][editorial] Fix broken \"viewport\" reference"
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-01-18",
-          "author": "cathiechen@igalia.com",
-          "hash": "f4656d2d59",
-          "subject": "ResizeObserver: Element with size 0x0 should be notified -- part 2 (#38042)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "cathiechen@igalia.com",
-          "hash": "145460415c",
-          "subject": "ResizeObserver: Element with size 0x0 should be notified (#38041)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Resource Hints",
@@ -13767,24 +14096,6 @@
           "author": "kevers@google.com",
           "hash": "5bdf2ce9f3",
           "subject": "[view-timeline]: Add Support for range(Start|End) as <name> <length-percent>"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "andruud@chromium.org",
-          "hash": "708d6b8250",
-          "subject": "[scroll-timeline] Implement animation-range"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "andruud@chromium.org",
-          "hash": "ceac1f2827",
-          "subject": "[scroll-timeline] Reverse scroll-timeline-axis/name"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "andruud@chromium.org",
-          "hash": "53f463f88e",
-          "subject": "[scroll-timeline] Hide support for tree-scoped timeline behind a flag"
         }
       ]
     },
@@ -14298,24 +14609,6 @@
           "author": "matthew.reichhoff@gmail.com",
           "hash": "b494970",
           "subject": "Clarify SameSite restrictions (#158)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "johannhof@chromium.org",
-          "hash": "7f29ac9",
-          "subject": "Remove outdated issues"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "johannhof@chromium.org",
-          "hash": "07bd598",
-          "subject": "Fix sandboxing flag set reference"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "cfredric@users.noreply.github.com",
-          "hash": "69e3e26",
-          "subject": "Modify Storage Access to use a \"per-frame\" model (#141)"
         }
       ],
       "testlog": []
@@ -14361,6 +14654,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-03-17",
+          "author": "zach@zrhoffman.net",
+          "hash": "8bf95e3722",
+          "subject": "Add reftests for :nth-child(... of <selector list>) in SVG"
+        },
         {
           "date": "2023-03-02",
           "author": "longsonr@gmail.com",
@@ -14497,12 +14796,6 @@
           "author": "syg@chromium.org",
           "hash": "984d6a1",
           "subject": "Editorial: \"reserve the right to\" -> \"may\""
-        },
-        {
-          "date": "2023-01-18",
-          "author": "ljharb@gmail.com",
-          "hash": "7fc0042",
-          "subject": "[spec] use accurate section numbers"
         }
       ],
       "testlog": []
@@ -15689,42 +15982,6 @@
           "author": "justingrant@users.noreply.github.com",
           "hash": "6fb1052d",
           "subject": "Update polyfill dependencies"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "dcdc47f4",
-          "subject": "Polyfill: Fix CalendarEquals in difference operations"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "fba1df29",
-          "subject": "Polyfill: Rename variables"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "d24a4a5a",
-          "subject": "Polyfill: Remove dead code"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "a23e3919",
-          "subject": "Editorial: Move unobservable steps in ZonedDateTime.p.with"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "ecbe4f5f",
-          "subject": "Editorial: Update language in CalendarDateToISO"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "pchimento@igalia.com",
-          "hash": "d21d8cd5",
-          "subject": "Polyfill: Fix Number imprecision in RoundDuration"
         }
       ],
       "testlog": []
@@ -16156,6 +16413,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2023-03-16",
+          "author": "f52985@gmail.com",
+          "hash": "be820b2e",
+          "subject": "[spec] Add missing access to current frame in prose (#1624)"
+        },
+        {
           "date": "2023-03-15",
           "author": "rossberg@mpi-sws.org",
           "hash": "c3e62e2d",
@@ -16382,18 +16645,6 @@
           "author": "rossberg@chromium.org",
           "hash": "f54b5b81",
           "subject": "[spec] Remove an obsolete exec step (#1580)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "tlively@google.com",
-          "hash": "4c249c5a",
-          "subject": "Update interpreter README (#1571)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "ngzhian@gmail.com",
-          "hash": "ca1d7924",
-          "subject": "Fix typos in SIMD exec/instructions"
         }
       ],
       "testlog": []
@@ -16536,12 +16787,6 @@
           "author": "ninevra@gmail.com",
           "hash": "7b5658933",
           "subject": "fix: in example, handle finished with .then()"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "bokan@chromium.org",
-          "hash": "88af5be73",
-          "subject": "[css-animations-1] Export 'pending animation event queue'"
         }
       ],
       "testlog": [
@@ -17080,12 +17325,6 @@
           "author": "dalecurtis@chromium.org",
           "hash": "668e382cff",
           "subject": "[WebCodecs] Upgrade to AVC level 3.1 for 800x600 encoding tests."
-        },
-        {
-          "date": "2023-01-18",
-          "author": "chun.m.chang@gmail.com",
-          "hash": "21c79ae8b9",
-          "subject": "Add tests for [Transferable] VideoFrame"
         }
       ]
     },
@@ -19567,6 +19806,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-03-16",
+          "author": "jfernandez@igalia.com",
+          "hash": "1406b5c0d0",
+          "subject": "Initial implementation of the X25519 algorithm"
+        },
+        {
           "date": "2023-03-08",
           "author": "panva.ip@gmail.com",
           "hash": "ee30029d47",
@@ -19595,18 +19840,6 @@
           "author": "panva.ip@gmail.com",
           "hash": "47b53fe644",
           "subject": "WebCryptoAPI: test remaining CFRG algorithms in wrapKey and unwrapKey (#38247)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "panva.ip@gmail.com",
-          "hash": "450f829d25",
-          "subject": "WebCryptoAPI: check that CryptoKey instances have the expected Symbol.toStringTag (#37716)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "panva.ip@gmail.com",
-          "hash": "a976727425",
-          "subject": "WebCryptoAPI: remove test for OperationError for tagLength 256 (#37734)"
         }
       ]
     },
@@ -19635,6 +19868,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-03-17",
+          "author": "jdescottes@mozilla.com",
+          "hash": "c91984c1f3",
+          "subject": "[wdspec] Add wdspec test for cached responseCompleted events"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "wptsync@mozilla.com",
+          "hash": "38e3dabff4",
+          "subject": "Mark async fixtures explicitly"
+        },
         {
           "date": "2023-03-15",
           "author": "jdescottes@mozilla.com",
@@ -19849,6 +20094,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -19928,6 +20185,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20009,6 +20278,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20088,6 +20369,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20169,6 +20462,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20248,6 +20553,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20329,6 +20646,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20408,6 +20737,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20489,6 +20830,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20568,6 +20921,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20649,6 +21014,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20728,6 +21105,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20809,6 +21198,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -20888,6 +21289,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -20969,6 +21382,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -21048,6 +21473,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -21129,6 +21566,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
+        {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
           "hash": "abaa6eb03",
@@ -21208,6 +21657,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "539037fd2",
+          "subject": "Simplify framebufferPixelLocalClearValue* overloads. (#3529)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "ff74361b3",
+          "subject": "Update WEBGL_shader_pixel_local_storage (#3528)"
+        },
         {
           "date": "2023-03-09",
           "author": "kbrussel@alum.mit.edu",
@@ -21304,6 +21765,54 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "d9589681",
+          "subject": "Specify behavior of onSubmittedWorkDone/mapAsync on device loss (#3937)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "9683560e",
+          "subject": "Make GPUPipelineError constructor `message` pseudo-optional (#3710)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "1af4b31d",
+          "subject": "Expire GPUAdapter on the first successful requestDevice (#3936)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "cab48a1b",
+          "subject": "Simplify timestampWrites API (#3930)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "97df7cbd",
+          "subject": "Fix up expiry timing definitions (#3955)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "97d7e50a",
+          "subject": "Add accessors for GPUColor, define the sequence order (#3958)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "dneto@google.com",
+          "hash": "8e3c2806",
+          "subject": "editorial: Texel format and access mode are not context-dependent names (#3965)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "rharrison@google.com",
+          "hash": "ab93821a",
+          "subject": "Make frexp fract ranges explicit (#3969)"
+        },
         {
           "date": "2023-03-15",
           "author": "dneto@google.com",
@@ -21897,48 +22406,6 @@
           "author": "rharrison@google.com",
           "hash": "59cb09c0",
           "subject": "Incorporate the restrictions on division into `atan2` (#3763)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "kainino@chromium.org",
-          "hash": "9d897a4b",
-          "subject": "Fix cross-refs for new Bikeshed changes (#3760)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "b8a62318",
-          "subject": "Use IANA-MEDIA-TYPES as informative reference (#3745)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "47c0733d",
-          "subject": "grammar analyzer: simplify lookahead test (#3757)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "82476380",
-          "subject": "Reserve static_assert from C++ (#3759)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "alanbaker@google.com",
-          "hash": "8ea67398",
-          "subject": "Rename static_assert to const_assert (#3758)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "134cb1cf",
-          "subject": "grammar analyzer: fix computation of lookahead sets (#3754)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "vincent.isambart@gmail.com",
-          "hash": "ed4e1a2e",
-          "subject": "Fix comment in Alias analysis example (#3755)"
         }
       ],
       "testlog": []
@@ -22201,6 +22668,36 @@
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
         {
+          "date": "2023-03-16",
+          "author": "dom@w3.org",
+          "hash": "d95d66c",
+          "subject": "Document change as candidate correction"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "hbos@google.com",
+          "hash": "3d1f48c",
+          "subject": "Make RTCRtpHeaderExtensionCapability.uri required"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "73b3a93",
+          "subject": "s/considered//"
+        },
+        {
+          "date": "2023-03-13",
+          "author": "florent.castelli@gmail.com",
+          "hash": "9d7c8e8",
+          "subject": "Merge definition of RTCRtpCodecParameters with RTCRtpCodecCapability"
+        },
+        {
+          "date": "2023-03-10",
+          "author": "wingboy@gmail.com",
+          "hash": "61fad8f",
+          "subject": "Fix scaleResolutionDownBy explanatory prose to match normative algorithm."
+        },
+        {
           "date": "2023-03-10",
           "author": "dom@w3.org",
           "hash": "ef49a06",
@@ -22316,6 +22813,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-03-16",
+          "author": "hbos@chromium.org",
+          "hash": "d70009880e",
+          "subject": "Add test coverage for VP9 simulcast in WPTs."
+        },
         {
           "date": "2023-03-15",
           "author": "docfaraday@gmail.com",
@@ -22877,12 +23380,6 @@
           "author": "bernard.aboba@gmail.com",
           "hash": "4b50a93",
           "subject": "Fix link"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "florent.castelli@gmail.com",
-          "hash": "f997c19",
-          "subject": "Remove extension to getCapabilties() in favor of MediaCapabilities"
         }
       ],
       "testlog": [
@@ -23405,6 +23902,54 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "d9589681",
+          "subject": "Specify behavior of onSubmittedWorkDone/mapAsync on device loss (#3937)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "9683560e",
+          "subject": "Make GPUPipelineError constructor `message` pseudo-optional (#3710)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "1af4b31d",
+          "subject": "Expire GPUAdapter on the first successful requestDevice (#3936)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "cab48a1b",
+          "subject": "Simplify timestampWrites API (#3930)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "97df7cbd",
+          "subject": "Fix up expiry timing definitions (#3955)"
+        },
+        {
+          "date": "2023-03-17",
+          "author": "kainino@chromium.org",
+          "hash": "97d7e50a",
+          "subject": "Add accessors for GPUColor, define the sequence order (#3958)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "dneto@google.com",
+          "hash": "8e3c2806",
+          "subject": "editorial: Texel format and access mode are not context-dependent names (#3965)"
+        },
+        {
+          "date": "2023-03-16",
+          "author": "rharrison@google.com",
+          "hash": "ab93821a",
+          "subject": "Make frexp fract ranges explicit (#3969)"
+        },
         {
           "date": "2023-03-15",
           "author": "dneto@google.com",
@@ -23998,48 +24543,6 @@
           "author": "rharrison@google.com",
           "hash": "59cb09c0",
           "subject": "Incorporate the restrictions on division into `atan2` (#3763)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "kainino@chromium.org",
-          "hash": "9d897a4b",
-          "subject": "Fix cross-refs for new Bikeshed changes (#3760)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "b8a62318",
-          "subject": "Use IANA-MEDIA-TYPES as informative reference (#3745)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "47c0733d",
-          "subject": "grammar analyzer: simplify lookahead test (#3757)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "82476380",
-          "subject": "Reserve static_assert from C++ (#3759)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "alanbaker@google.com",
-          "hash": "8ea67398",
-          "subject": "Rename static_assert to const_assert (#3758)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "dneto@google.com",
-          "hash": "134cb1cf",
-          "subject": "grammar analyzer: fix computation of lookahead sets (#3754)"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "vincent.isambart@gmail.com",
-          "hash": "ed4e1a2e",
-          "subject": "Fix comment in Alias analysis example (#3755)"
         }
       ],
       "testlog": []
@@ -24135,12 +24638,6 @@
           "author": "jenseng@gmail.com",
           "hash": "0986c76392",
           "subject": "Add FormData constructor submitter tests"
-        },
-        {
-          "date": "2023-01-18",
-          "author": "smayya@mozilla.com",
-          "hash": "bffc15bfc4",
-          "subject": "remove auth header from redirected cross-origin requests."
         }
       ]
     }
