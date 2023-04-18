@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-02-20T07:12:39.793Z",
-  "until": "2023-04-18T07:12:39.793Z",
+  "since": "2023-02-20T13:56:12.281Z",
+  "until": "2023-04-18T13:56:12.281Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -857,6 +857,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-04-18",
+          "author": "arnaud.mandy@intel.com",
+          "hash": "3aa23689da",
+          "subject": "compute pressure: Remove Factors from compute pressure"
+        },
         {
           "date": "2023-04-14",
           "author": "wei4.wang@intel.com",
@@ -2774,12 +2780,6 @@
           "author": "emilio@crisal.io",
           "hash": "19d9c0af00",
           "subject": "Tweak how we handle animation restyles on bind/unbind."
-        },
-        {
-          "date": "2023-02-20",
-          "author": "sakhapov@chromium.org",
-          "hash": "54cd00c275",
-          "subject": "Implement linear timing function."
         }
       ]
     },
@@ -4117,12 +4117,6 @@
           "author": "wptsync@mozilla.com",
           "hash": "fa53b6f86f",
           "subject": "linear()` easing function should not consider less than 2 linear stop arguments valid. (#38569)"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "sakhapov@chromium.org",
-          "hash": "54cd00c275",
-          "subject": "Implement linear timing function."
         }
       ]
     },
@@ -5945,12 +5939,6 @@
           "author": "jarhar@chromium.org",
           "hash": "005d050d16",
           "subject": "Implement CSSTransitionDiscrete which enables transitions on discrete properties."
-        },
-        {
-          "date": "2023-02-20",
-          "author": "sakhapov@chromium.org",
-          "hash": "54cd00c275",
-          "subject": "Implement linear timing function."
         }
       ]
     },
@@ -6664,12 +6652,6 @@
           "author": "annevk@annevk.nl",
           "hash": "ea4728a",
           "subject": "Editorial: minor reflect cleanup"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "d34d52d",
-          "subject": "Correct MutationObserver ownership story"
         }
       ],
       "testlog": [
@@ -8448,6 +8430,12 @@
       "specrepo": "https://github.com/WICG/fenced-frame",
       "speclog": [
         {
+          "date": "2023-04-18",
+          "author": "garretttanzer@gmail.com",
+          "hash": "256b2bf",
+          "subject": "Specify FencedFrameConfig and supporting concepts (#67)"
+        },
+        {
           "date": "2023-04-17",
           "author": "blu2.5@me.com",
           "hash": "fa7833d",
@@ -8659,24 +8647,6 @@
           "author": "jaffathecake@gmail.com",
           "hash": "cbfb5aa",
           "subject": "Meta: export terms for Service Workers"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "drobertson@mozilla.com",
-          "hash": "dc0f9e7",
-          "subject": "Add support for blob: URL range requests"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "drobertson@mozilla.com",
-          "hash": "e4f6c00",
-          "subject": "Add HTTP OWS handling to single range header parsing"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "saschanaz@outlook.com",
-          "hash": "67d4cde",
-          "subject": "Support byte streams (BYOB)"
         }
       ],
       "testlog": [
@@ -8847,18 +8817,6 @@
           "author": "abotella@igalia.com",
           "hash": "8f28d8feef",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=251194"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "drobertson@mozilla.com",
-          "hash": "edc7cac3a3",
-          "subject": "Fetch: blob: URL range requests"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "drobertson@mozilla.com",
-          "hash": "62897e7726",
-          "subject": "Fetch (CORS): Range header with HTTP OWS results in preflight"
         }
       ]
     },
@@ -13069,8 +13027,8 @@
     },
     {
       "name": "requestStorageAccessFor API",
-      "href": "https://privacycg.github.io/requestStorageAccessForOrigin/",
-      "specrepo": "https://github.com/privacycg/requestStorageAccessForOrigin",
+      "href": "https://privacycg.github.io/requestStorageAccessFor/",
+      "specrepo": "https://github.com/privacycg/requestStorageAccessFor",
       "speclog": [
         {
           "date": "2023-03-29",
@@ -13089,12 +13047,6 @@
           "author": "mreichhoff@chromium.org",
           "hash": "dc38a72",
           "subject": "Rename rSAForOrigin --> rSAFor"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "mreichhoff@chromium.org",
-          "hash": "0915b47",
-          "subject": "Clean references to rSA and requestedOrigin name"
         }
       ],
       "testlog": []
@@ -13300,7 +13252,7 @@
       ]
     },
     {
-      "name": "Scroll-linked Animations",
+      "name": "Scroll-driven Animations",
       "href": "https://drafts.csswg.org/scroll-animations/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
@@ -13572,6 +13524,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-04-18",
+          "author": "andruud@chromium.org",
+          "hash": "0db23bf056",
+          "subject": "[scroll-animations] Propagate style recalc when attachment changes"
+        },
+        {
           "date": "2023-04-13",
           "author": "andruud@chromium.org",
           "hash": "0bfffd48d1",
@@ -13712,7 +13670,7 @@
       ]
     },
     {
-      "name": "Text Fragments",
+      "name": "URL Fragment Text Directives",
       "href": "https://wicg.github.io/scroll-to-text-fragment/",
       "specrepo": "https://github.com/WICG/scroll-to-text-fragment",
       "speclog": [
@@ -14327,12 +14285,6 @@
           "author": "annevk@annevk.nl",
           "hash": "d5dbe0b",
           "subject": "Meta: update repository files"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "5835e14",
-          "subject": "Review Draft Publication: February 2023"
         }
       ],
       "testlog": [
@@ -14387,18 +14339,6 @@
           "author": "saschanaz@outlook.com",
           "hash": "2942e89",
           "subject": "Add an other-specs abstraction to pull from bytes"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "b45c0c5",
-          "subject": "Review Draft Publication: February 2023"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "3d63a7b",
-          "subject": "Editorial: reference constructor steps instead of constructor operation"
         }
       ],
       "testlog": [
@@ -14512,12 +14452,6 @@
           "author": "longsonr@gmail.com",
           "hash": "8741686208",
           "subject": "Fix lang-attribute-dynamic web platform tests"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "tkent@chromium.org",
-          "hash": "c0ab2081a0",
-          "subject": "SVG Text NG: Fix text scaling after stacking context changes"
         }
       ]
     },
@@ -14578,6 +14512,80 @@
       "href": "https://tc39.es/proposal-arraybuffer-transfer/",
       "specrepo": "https://github.com/tc39/proposal-arraybuffer-transfer",
       "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "ECMAScript Async Explicit Resource Management",
+      "href": "https://tc39.es/proposal-async-explicit-resource-management/",
+      "specrepo": "https://github.com/tc39/proposal-async-explicit-resource-management",
+      "speclog": [
+        {
+          "date": "2023-04-12",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "731b42a",
+          "subject": "Update explainer to reflect syntax choice for stage 3"
+        },
+        {
+          "date": "2023-04-11",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "89c07e2",
+          "subject": "Update stage advancement"
+        },
+        {
+          "date": "2023-04-10",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "4e5be66",
+          "subject": "PR feedback"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "9dc7b2f",
+          "subject": "Clean up supplemental syntax"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "c07aa35",
+          "subject": "Simplify cover grammar"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "01dd08d",
+          "subject": "Add missing Return"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "88bf9c7",
+          "subject": "add missing nonterminal argument"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "52e6603",
+          "subject": "SDO and syntax cleanup"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "555c1a9",
+          "subject": "Rename IsUsingAwaitDeclaration"
+        },
+        {
+          "date": "2023-03-22",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "cfe38b9",
+          "subject": "Add missing semantics"
+        },
+        {
+          "date": "2023-03-21",
+          "author": "ron.buckton@microsoft.com",
+          "hash": "e5b393f",
+          "subject": "Add cover grammar for 'await using'"
+        }
+      ],
       "testlog": []
     },
     {
@@ -14649,128 +14657,6 @@
           "author": "ron.buckton@microsoft.com",
           "hash": "f03a9f2",
           "subject": "Switch back to a production parameter (#152)"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "Import Assertions",
-      "href": "https://tc39.es/proposal-import-assertions/",
-      "specrepo": "https://github.com/tc39/proposal-import-assertions",
-      "speclog": [
-        {
-          "date": "2023-04-06",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "2b161db",
-          "subject": "Add `<ins>` tags to new notes"
-        },
-        {
-          "date": "2023-04-04",
-          "author": "nribaudo@igalia.com",
-          "hash": "78446d3",
-          "subject": "Fixes for jridgewell's review (#139)"
-        },
-        {
-          "date": "2023-03-31",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "5039ea1",
-          "subject": "Fix"
-        },
-        {
-          "date": "2023-03-31",
-          "author": "bakkot@gmail.com",
-          "hash": "19be0e2",
-          "subject": "Fix most linting errors (#138)"
-        },
-        {
-          "date": "2023-03-31",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "fe686d9",
-          "subject": "More readme updates"
-        },
-        {
-          "date": "2023-03-31",
-          "author": "nicolo-ribaudo@users.noreply.github.com",
-          "hash": "5529900",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-03-31",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "0ca6f0f",
-          "subject": "Update readme"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "nribaudo@igalia.com",
-          "hash": "6cd1c64",
-          "subject": "Rename from \"assertions\" to \"attributes\" (#134)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "51f5364",
-          "subject": "Finish updating readme"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "nicolo-ribaudo@users.noreply.github.com",
-          "hash": "804bc28",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "nicolo.ribaudo@gmail.com",
-          "hash": "aed6c59",
-          "subject": "Update readme to reflect current semantics of the proposal"
-        },
-        {
-          "date": "2023-03-14",
-          "author": "nicolo-ribaudo@users.noreply.github.com",
-          "hash": "ec46bae",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-03-14",
-          "author": "nribaudo@igalia.com",
-          "hash": "0fbeef7",
-          "subject": "Allow assertions affect module loading change keyword to `with` (#131)"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nribaudo@igalia.com",
-          "hash": "abca602",
-          "subject": "Add missing `Completion(...)` annotations"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nribaudo@igalia.com",
-          "hash": "2696327",
-          "subject": "Add myself (Nicolò Ribaudo) as a contributor"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nicolo-ribaudo@users.noreply.github.com",
-          "hash": "8105a10",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nribaudo@igalia.com",
-          "hash": "a962314",
-          "subject": "Minor fixes"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nicolo-ribaudo@users.noreply.github.com",
-          "hash": "57aeacf",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-03-02",
-          "author": "nribaudo@igalia.com",
-          "hash": "d4272a0",
-          "subject": "Match editorial choices and structure from the main spec"
         }
       ],
       "testlog": []
@@ -15006,6 +14892,12 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2023-04-18",
+          "author": "justingrant@users.noreply.github.com",
+          "hash": "43c6be13",
+          "subject": "Refactor ES object into exported functions"
+        },
         {
           "date": "2023-04-17",
           "author": "pchimento@igalia.com",
@@ -15722,12 +15614,6 @@
           "author": "dvorak42@mit.edu",
           "hash": "ae7df38",
           "subject": "Add description of looking up key commitments."
-        },
-        {
-          "date": "2023-02-20",
-          "author": "johannhof@chromium.org",
-          "hash": "da9e4b3",
-          "subject": "Un-skip validating markup"
         }
       ],
       "testlog": []
@@ -16938,18 +16824,6 @@
           "author": "annevk@annevk.nl",
           "hash": "12b6f0c",
           "subject": "Add a size getter to URLSearchParams"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "d9fd0e7",
-          "subject": "Review Draft Publication: February 2023"
-        },
-        {
-          "date": "2023-02-20",
-          "author": "trevor.rowbotham@pm.me",
-          "hash": "d84610f",
-          "subject": "Named validation errors"
         }
       ],
       "testlog": [
@@ -18623,6 +18497,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2023-04-18",
+          "author": "tperrotta@chromium.org",
+          "hash": "9763a32",
+          "subject": "Remove unused \"OwnershipModel\" definition"
+        },
         {
           "date": "2023-04-13",
           "author": "aborovova@mozilla.com",
@@ -23005,9 +22885,9 @@
       "testlog": []
     },
     {
-      "name": "Multi-Screen Window Placement",
-      "href": "https://w3c.github.io/window-placement/",
-      "specrepo": "https://github.com/w3c/window-placement",
+      "name": "Window Management",
+      "href": "https://w3c.github.io/window-management/",
+      "specrepo": "https://github.com/w3c/window-management",
       "speclog": [
         {
           "date": "2023-04-05",
@@ -23047,7 +22927,7 @@
         }
       ],
       "testlog": [],
-      "testpolicy": "https://github.com/w3c/window-placement/blob/HEAD/CONTRIBUTING.md"
+      "testpolicy": "https://github.com/w3c/window-management/blob/HEAD/CONTRIBUTING.md"
     },
     {
       "name": "WOFF File Format",
@@ -23061,14 +22941,7 @@
       "href": "https://xhr.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/xhr",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-02-20",
-          "author": "annevk@annevk.nl",
-          "hash": "1cccb46",
-          "subject": "Review Draft Publication: February 2023"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     }
   ]
