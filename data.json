@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-03-23T07:12:44.529Z",
-  "until": "2023-05-19T07:12:44.529Z",
+  "since": "2023-03-24T07:12:24.042Z",
+  "until": "2023-05-20T07:12:24.042Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -65,6 +65,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -104,6 +110,18 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "akashnadan@gmail.com",
+          "hash": "21b98ca",
+          "subject": "Update 1 reporting origin per reporting site limit (#796)"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "akashnadan@gmail.com",
+          "hash": "732b709",
+          "subject": "Update max destinations covered by unexpired sources and max attributions per rate limit window limits to be per-site (#792)"
+        },
         {
           "date": "2023-05-18",
           "author": "csharrison@chromium.org",
@@ -463,12 +481,6 @@
           "author": "csharrison@chromium.org",
           "hash": "dbe7a65",
           "subject": "Add flexible_event_config.md (#737)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "c9c2231",
-          "subject": "Add aggregation coordinator identifier to aggregatable report (#728)"
         }
       ],
       "testlog": []
@@ -485,14 +497,7 @@
           "subject": "Use the [=creating a device info object=] algorithm."
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-03-23",
-          "author": "karlt+@karlt.net",
-          "hash": "44f0b2d70f",
-          "subject": "test setSinkId() on paused and playing video"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Autoplay Policy Detection",
@@ -549,12 +554,6 @@
           "author": "marcos@marcosc.com",
           "hash": "498291d",
           "subject": "Editorial: split priv/sec sections"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "marcos@marcosc.com",
-          "hash": "32bbf60",
-          "subject": "Spec rewrite to address open issues (#98)"
         }
       ],
       "testlog": [
@@ -666,12 +665,6 @@
           "author": "kojii@chromium.org",
           "hash": "f62def0ab5",
           "subject": "[white-space] Fix `EditingStyle`"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "ansollan@microsoft.com",
-          "hash": "03b36d59fa",
-          "subject": "[Clipboard API] Read unsanitized HTML content to the clipboard"
         }
       ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
@@ -1124,7 +1117,14 @@
       "href": "https://w3c.github.io/webappsec-cspee/",
       "specrepo": "https://github.com/w3c/webappsec-cspee",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-05-19",
+          "author": "antoniosartori@chromium.org",
+          "hash": "b1aad9555f",
+          "subject": "[WPT, CSP] Fix flaky CSPEE allow_csp_from-header.html test"
+        }
+      ]
     },
     {
       "name": "Scripting Policy",
@@ -2645,72 +2645,6 @@
           "author": "andruud@chromium.org",
           "hash": "508476a649",
           "subject": "[scroll-animations] Make <length-percentage> optional in animation-range"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "dc23a29ef2",
-          "subject": "Add calc() resolution parsing support"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "1a3bfb1f60",
-          "subject": "Add CSSMathExpressionNumericLiteral canonical units eager simplification"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jarhar@chromium.org",
-          "hash": "94fb2031f5",
-          "subject": "CSSTransitionDiscrete: Fix CounterRulesEqual"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jarhar@chromium.org",
-          "hash": "1c7c03b58d",
-          "subject": "CSSDisplayAnimation: Transition none at beginning or end"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "ecd818f9f5",
-          "subject": "[css-color-4] `calc(infinity)` and `calc(NaN)` serialization/computed value tests (#39137)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "ff0503efa6",
-          "subject": "[css-color-5] add extra tests for color-mix() with the transparent keyword (#39139)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "87e344fb91",
-          "subject": "view-transitions: Clip snapshots to max texture size/viewport. (#38946)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "bokan@chromium.org",
-          "hash": "ffd1922936",
-          "subject": "vt: Input targets documentElement while render-blocked"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "sakhapov@chromium.org",
-          "hash": "f36421b353",
-          "subject": "[motion-1] Make <ray-size> of ray() function optional"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "e0b7c6c71a",
-          "subject": "Annotate skewY web-platform-tests as having 2 barely-fuzzy pixels."
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "5dd0478693",
-          "subject": "part 2: When handling a content-visibility change, don't insert already-completed animations into the timeline's sampling-order list."
         }
       ]
     },
@@ -3136,12 +3070,6 @@
           "author": "andruud@chromium.org",
           "hash": "508476a649",
           "subject": "[scroll-animations] Make <length-percentage> optional in animation-range"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jarhar@chromium.org",
-          "hash": "1c7c03b58d",
-          "subject": "CSSDisplayAnimation: Transition none at beginning or end"
         }
       ]
     },
@@ -3876,18 +3804,6 @@
           "author": "11521496+romainmenke@users.noreply.github.com",
           "hash": "7c9c76e4ee",
           "subject": "[css-color-4] fix incorrect copy/paste from https://github.com/web-platform-tests/wpt/pull/39137 (#39174)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "ecd818f9f5",
-          "subject": "[css-color-4] `calc(infinity)` and `calc(NaN)` serialization/computed value tests (#39137)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "ff0503efa6",
-          "subject": "[css-color-5] add extra tests for color-mix() with the transparent keyword (#39139)"
         }
       ]
     },
@@ -4182,18 +4098,6 @@
           "author": "jarhar@chromium.org",
           "hash": "047d587229",
           "subject": "CSSDisplayAnimation: Add content-visibility support"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "dc23a29ef2",
-          "subject": "Add calc() resolution parsing support"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "5dd0478693",
-          "subject": "part 2: When handling a content-visibility change, don't insert already-completed animations into the timeline's sampling-order list."
         }
       ]
     },
@@ -4756,12 +4660,6 @@
           "author": "mike@w3.org",
           "hash": "e7eb9e224",
           "subject": "Temporary fix for w3c.github.io redirect breakage"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "chris@w3.org",
-          "hash": "b2938b7d0",
-          "subject": "[css-fonts-4][editorial] Update changes"
         }
       ],
       "testlog": [
@@ -5133,12 +5031,6 @@
           "author": "fs@opera.com",
           "hash": "821a97aa21",
           "subject": "Fix a few of image-set() parsing issues"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "dc23a29ef2",
-          "subject": "Add calc() resolution parsing support"
         }
       ]
     },
@@ -5383,12 +5275,6 @@
           "author": "tkent@chromium.org",
           "hash": "13106aa29f",
           "subject": "css-lists: Improve inline-block-list*.html"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jarhar@chromium.org",
-          "hash": "94fb2031f5",
-          "subject": "CSSTransitionDiscrete: Fix CounterRulesEqual"
         }
       ]
     },
@@ -6910,6 +6796,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "2b944b412",
+          "subject": "[css-syntax-3][editorial] Fix bikeshed errors."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "356068025",
+          "subject": "[css-syntax-3][editorial] Remove the concept of 'representation' from number tokens, now that urange doesn't need it. Record whether a number had a sign, instead."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "afaa732a1",
+          "subject": "[css-syntax-3][editorial] Add another explanatory note to the unicode-range tokenizer."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "12149ddf3",
+          "subject": "[css-syntax-3][editorial] Update the railroad diagrams."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "a6ee408d4",
+          "subject": "[css-syntax-3] First attempt at rewriting the handling of unicode-range. #8835"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "d681c0e9e",
+          "subject": "[css-syntax-3][editorial] Link to the algo in question."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "jackalmage@gmail.com",
+          "hash": "39da9b195",
+          "subject": "[css-syntax-3][editorial] Fix heading text"
+        },
+        {
           "date": "2023-05-18",
           "author": "jackalmage@gmail.com",
           "hash": "9b8ce4e8e",
@@ -7303,12 +7231,6 @@
           "author": "jarhar@chromium.org",
           "hash": "b71817b929",
           "subject": "CSSTransitionDiscrete: Add tests part 1"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "e0b7c6c71a",
-          "subject": "Annotate skewY web-platform-tests as having 2 barely-fuzzy pixels."
         }
       ]
     },
@@ -7394,12 +7316,6 @@
           "author": "tkent@chromium.org",
           "hash": "06fdaf1899",
           "subject": "css-multiple-display: Update serialization"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "1a3bfb1f60",
-          "subject": "Add CSSMathExpressionNumericLiteral canonical units eager simplification"
         }
       ]
     },
@@ -7884,18 +7800,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "16914b8918",
           "subject": "VT: Make transitioning elements be \"grouping\""
-        },
-        {
-          "date": "2023-03-23",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "87e344fb91",
-          "subject": "view-transitions: Clip snapshots to max texture size/viewport. (#38946)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "bokan@chromium.org",
-          "hash": "ffd1922936",
-          "subject": "vt: Input targets documentElement while render-blocked"
         }
       ]
     },
@@ -8524,12 +8428,6 @@
           "author": "justingrant@users.noreply.github.com",
           "hash": "aed56d9fa6",
           "subject": "Add test to validate fix to proposal-temporal#2383"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jedel0124@gmail.com",
-          "hash": "4a6439e4a7",
-          "subject": "Add `Array.prototype.includes` and `exponentiation` features (#3799)"
         }
       ]
     },
@@ -8539,6 +8437,18 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2023-05-20",
+          "author": "devrendilek@gmail.com",
+          "hash": "25f97441",
+          "subject": "Normative: Disallow ArrayBuffers bigger than 2**53 (#3052)"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "syg@chromium.org",
+          "hash": "11530039",
+          "subject": "Editorial: add [[AgentSignifier]] to Realm Record (#3058)"
+        },
         {
           "date": "2023-05-17",
           "author": "mficarra@shapesecurity.com",
@@ -8918,12 +8828,6 @@
           "author": "ljharb@gmail.com",
           "hash": "910a2764d8",
           "subject": "Object.prototype.toString: avoid over-DRYness, and add preconditions"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jedel0124@gmail.com",
-          "hash": "4a6439e4a7",
-          "subject": "Add `Array.prototype.includes` and `exponentiation` features (#3799)"
         }
       ]
     },
@@ -8932,6 +8836,12 @@
       "href": "https://w3c.github.io/edit-context/",
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "daniec@microsoft.com",
+          "hash": "a44f9e0",
+          "subject": "Clarify that updateCharacterBounds can be called async. Expand and move section describing events."
+        },
         {
           "date": "2023-05-09",
           "author": "daniec@microsoft.com",
@@ -9005,6 +8915,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9018,6 +8934,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9033,6 +8955,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9046,6 +8974,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9061,6 +8995,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9074,6 +9014,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9089,6 +9035,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9102,6 +9054,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9117,6 +9075,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9130,6 +9094,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9145,6 +9115,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9159,6 +9135,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -9172,6 +9154,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -9476,18 +9464,6 @@
           "author": "domfarolino@gmail.com",
           "hash": "522841b",
           "subject": "Introduce unfenced parent"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "domfarolino@gmail.com",
-          "hash": "5dc4a17",
-          "subject": "Add urn configuration mapping"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "domfarolino@gmail.com",
-          "hash": "5d09acf",
-          "subject": "Correct grammar for variable name usage"
         }
       ],
       "testlog": [
@@ -9624,24 +9600,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "ca10f49",
           "subject": "Have HTTP-redirect fetch call main fetch with recursive=false sometimes"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "d@domenic.me",
-          "hash": "8f10983",
-          "subject": "Use a basic filtered response for redirect navigations"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "annevk@annevk.nl",
-          "hash": "e1f8129",
-          "subject": "Correct blob: URL range requests"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dan@dlrobertson.com",
-          "hash": "764714d",
-          "subject": "Editorial: add <div algorithm> wrappers to data URLs"
         }
       ],
       "testlog": [
@@ -9861,6 +9819,12 @@
       "specrepo": "https://github.com/whatwg/fs",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "100442186+dslee414@users.noreply.github.com",
+          "hash": "d564a9e",
+          "subject": "Editorial: Fix stance for multiple readers and writers proposal"
+        },
         {
           "date": "2023-05-18",
           "author": "100442186+dslee414@users.noreply.github.com",
@@ -10164,6 +10128,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "jarhar@chromium.org",
+          "hash": "b00e1851",
+          "subject": "Don't restore popover focus for manual popovers"
+        },
+        {
           "date": "2023-05-17",
           "author": "domfarolino@gmail.com",
           "hash": "e368541d",
@@ -10462,27 +10432,15 @@
           "author": "d@domenic.me",
           "hash": "a3ddbb00",
           "subject": "Remove now-unnecessary COOP-specific navigation redirect fix"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "nribaudo@igalia.com",
-          "hash": "d131bfa1",
-          "subject": "Update references from \"import assertions\" to \"import attributes\""
-        },
-        {
-          "date": "2023-03-24",
-          "author": "rakina@google.com",
-          "hash": "e9bb6cf8",
-          "subject": "Add other spec integration notes for back/forward cache"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "d@domenic.me",
-          "hash": "c598ff02",
-          "subject": "Add the <search> element"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-05-19",
+          "author": "dbaron@chromium.org",
+          "hash": "d52465faa2",
+          "subject": "Expose IDL property for name attribute for details element."
+        },
         {
           "date": "2023-05-18",
           "author": "jpgravel@chromium.org",
@@ -11286,42 +11244,6 @@
           "author": "jarhar@chromium.org",
           "hash": "c5c18c817d",
           "subject": "Fix selectmenu's button for writing-mode"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "zcorpan@gmail.com",
-          "hash": "c49cf0a72f",
-          "subject": "Add rendering tests for the <search> element"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "fd7ffa75cd",
-          "subject": "Reland \"[anchor-position] Make `anchor` attribute work for non-popovers\" (#39114)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dtapuska@chromium.org",
-          "hash": "4887e6d074",
-          "subject": "Fix MicrotaskCheckpoint completion steps"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "cathiechen@igalia.com",
-          "hash": "1d178d5ee5",
-          "subject": "Update UA stylesheet for popover."
-        },
-        {
-          "date": "2023-03-23",
-          "author": "gsnedders@apple.com",
-          "hash": "e5b8591a2a",
-          "subject": "Update built html5lib tests"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "gsnedders@apple.com",
-          "hash": "95c1106fd0",
-          "subject": "Unlink html5lib-tests revision from the html5lib-python submodule"
         }
       ]
     },
@@ -11330,6 +11252,18 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "105b6fc",
+          "subject": "Clarify mappings for contenteditable (#463)"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "3c6988f",
+          "subject": "further clarifications for li role mapping (#476)"
+        },
         {
           "date": "2023-05-15",
           "author": "github-actions[bot]@users.noreply.github.com",
@@ -11651,6 +11585,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -11784,12 +11724,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "3322396",
           "subject": "Make this closer to implementation"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "1f921ea",
-          "subject": "Follow up on some feedback"
         }
       ],
       "testlog": [
@@ -11828,6 +11762,12 @@
       "href": "https://wicg.github.io/manifest-incubations/",
       "specrepo": "https://github.com/WICG/manifest-incubations",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "46299415+sonkkeli@users.noreply.github.com",
+          "hash": "bd41020",
+          "subject": "Add borderless mode explainer (#73)"
+        },
         {
           "date": "2023-05-05",
           "author": "80441278+loubrett@users.noreply.github.com",
@@ -12149,12 +12089,6 @@
           "author": "oj@oojmed.com",
           "hash": "b39dd325f1",
           "subject": "Add WPT tests for scripting media feature"
-        },
-        {
-          "date": "2023-03-24",
-          "author": "tcaptan@chromium.org",
-          "hash": "dc23a29ef2",
-          "subject": "Add calc() resolution parsing support"
         }
       ]
     },
@@ -12313,12 +12247,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "d08278735c",
           "subject": "Implement motion path <basic-shape> circle() and ellipse()"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "sakhapov@chromium.org",
-          "hash": "f36421b353",
-          "subject": "[motion-1] Make <ray-size> of ray() function optional"
         }
       ]
     },
@@ -12420,7 +12348,14 @@
       "href": "https://notifications.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/notifications",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "marcos@marcosc.com",
+          "hash": "3f9fdde",
+          "subject": "Default silent to platform convention"
+        }
+      ],
       "testlog": []
     },
     {
@@ -12428,6 +12363,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12443,6 +12384,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -12456,6 +12403,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12471,6 +12424,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -12484,6 +12443,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12499,6 +12464,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -12512,6 +12483,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12527,6 +12504,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -12540,6 +12523,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12603,6 +12592,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -12870,12 +12865,6 @@
           "author": "pal@palemieux.com",
           "hash": "0087526",
           "subject": "Address comments"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "chris@w3.org",
-          "hash": "f2d9e20",
-          "subject": "Add pnger"
         }
       ],
       "testlog": []
@@ -13037,12 +13026,6 @@
           "author": "adithya.14@gmail.com",
           "hash": "4363f1e",
           "subject": "Use hyperlink url instead of href (#256)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jbroman@chromium.org",
-          "hash": "2f19d44",
-          "subject": "Revert \"Fix the spec build. (#257)\" (#258)"
         }
       ],
       "testlog": []
@@ -13093,12 +13076,6 @@
           "author": "adithya.14@gmail.com",
           "hash": "4363f1e",
           "subject": "Use hyperlink url instead of href (#256)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jbroman@chromium.org",
-          "hash": "2f19d44",
-          "subject": "Revert \"Fix the spec build. (#257)\" (#258)"
         }
       ],
       "testlog": []
@@ -13221,12 +13198,6 @@
           "author": "miketaylr@chromium.org",
           "hash": "e20ef79",
           "subject": "Rename last instances of rSAForOrigin"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "mreichhoff@chromium.org",
-          "hash": "39f323d",
-          "subject": "Update rejection errors and activation consumption"
         }
       ],
       "testlog": []
@@ -13644,6 +13615,36 @@
       ],
       "testlog": [
         {
+          "date": "2023-05-19",
+          "author": "flackr@chromium.org",
+          "hash": "02400d32d4",
+          "subject": "[scroll-animations] Use dashed-ident name."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "flackr@chromium.org",
+          "hash": "aaabaa9e7c",
+          "subject": "[scroll-animations] Commit start time and fix pause calculation."
+        },
+        {
+          "date": "2023-05-19",
+          "author": "andruud@chromium.org",
+          "hash": "c74341fd94",
+          "subject": "[scroll-animations] Require <dashed-ident> for timeline names"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "andruud@chromium.org",
+          "hash": "4db8427e2e",
+          "subject": "[scroll-animations] Attach Scroll/ViewTimelines and DeferredTimelines"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "andruud@chromium.org",
+          "hash": "29f410631a",
+          "subject": "[scroll-animations] Rename vertical/horizontal => y/x"
+        },
+        {
           "date": "2023-05-16",
           "author": "andruud@chromium.org",
           "hash": "25eb85091b",
@@ -13989,42 +13990,6 @@
           "author": "smcgruer@chromium.org",
           "hash": "4a9d883",
           "subject": "[Spec] Only allow SPC authentication if in a foreground tab (#238)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "ij@w3.org",
-          "hash": "2dbfb0a",
-          "subject": "tweak to include UA and possibly other consumers"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "ij@w3.org",
-          "hash": "753b5bf",
-          "subject": "does this spacing help?"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "ij@w3.org",
-          "hash": "a810063",
-          "subject": "adjustments to respond to Stephen comments"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "smcgruer@chromium.org",
-          "hash": "103f090",
-          "subject": "Fix consumer reference"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "ij@w3.org",
-          "hash": "4be3893",
-          "subject": "tweak to i18n considerations based on https://github.com/w3c/secure-payment-confirmation/pull/232#pullrequestreview-1343877232"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "smcgruer@chromium.org",
-          "hash": "9b4ec43",
-          "subject": "Editorial: Spec fixup for new bikeshed HTML parser"
         }
       ],
       "testlog": [
@@ -14359,18 +14324,6 @@
           "author": "cammie@chromium.org",
           "hash": "510c919",
           "subject": "Replace k-anonymity requirement for `selectURL()` input URLs with per-page-load entropy bit budgets"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "cammie@chromium.org",
-          "hash": "e50ae93",
-          "subject": "Add sub-header above specification link"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "cammie@chromium.org",
-          "hash": "f45b570",
-          "subject": "Update spec.bs"
         }
       ],
       "testlog": [
@@ -14435,12 +14388,6 @@
           "author": "adithya.14@gmail.com",
           "hash": "4363f1e",
           "subject": "Use hyperlink url instead of href (#256)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jbroman@chromium.org",
-          "hash": "2f19d44",
-          "subject": "Revert \"Fix the spec build. (#257)\" (#258)"
         }
       ],
       "testlog": [
@@ -14538,14 +14485,7 @@
       "href": "https://storage.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/storage",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-03-23",
-          "author": "annevk@annevk.nl",
-          "hash": "d5dbe0b",
-          "subject": "Meta: update repository files"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2023-05-16",
@@ -15178,6 +15118,36 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "cf737249",
+          "subject": "Editorial: Fix invalid comparison of Number to mathematical value"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "pchimento@igalia.com",
+          "hash": "53a7f2d3",
+          "subject": "Editorial: Rename ResolveISOMonth → ISOResolveMonth"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "pchimento@igalia.com",
+          "hash": "8ab5181d",
+          "subject": "Editorial: Replace CalendarDateAdd + DaysUntil with MoveRelativeDate"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "pchimento@igalia.com",
+          "hash": "93e9861d",
+          "subject": "Avoid observable Duration property access"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "justingrant@users.noreply.github.com",
+          "hash": "d1591e79",
+          "subject": "Editorial: Fix typo"
+        },
         {
           "date": "2023-05-18",
           "author": "justingrant@users.noreply.github.com",
@@ -15828,6 +15798,36 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "190fed6",
+          "subject": "mention seller too"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "e92e386",
+          "subject": "spec: add link to priority section (#584)"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "06d481d",
+          "subject": "suggested change"
+        },
+        {
+          "date": "2023-05-18",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "5e79d5b",
+          "subject": "try [==]"
+        },
+        {
+          "date": "2023-05-18",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "6dd512b",
+          "subject": "fix promise fulfillment"
+        },
+        {
           "date": "2023-05-18",
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "568c4bf",
@@ -15858,6 +15858,18 @@
           "subject": "Address comments."
         },
         {
+          "date": "2023-05-17",
+          "author": "domfarolino@gmail.com",
+          "hash": "9642ab6",
+          "subject": "Use Promise IDL type"
+        },
+        {
+          "date": "2023-05-15",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "fea694a",
+          "subject": "spec: allow auctionSignals to be a promise"
+        },
+        {
           "date": "2023-05-15",
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "bda291d",
@@ -15886,6 +15898,12 @@
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "c542431",
           "subject": "address some comments and try to fix build error"
+        },
+        {
+          "date": "2023-05-15",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "b7416c8",
+          "subject": "Rename perBuyerCumulativeBiddingTimeouts -> perBuyerCumulativeTimeouts"
         },
         {
           "date": "2023-05-11",
@@ -15982,6 +16000,12 @@
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "2eb014c",
           "subject": "spec: expand ad URL validation"
+        },
+        {
+          "date": "2023-05-05",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "b71760d",
+          "subject": "Mention same-origin requirement"
         },
         {
           "date": "2023-05-05",
@@ -17697,6 +17721,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-05-19",
+          "author": "jnurthen@users.noreply.github.com",
+          "hash": "5d3676cd07",
+          "subject": "Role Changes to Support section 9.1 of ARIA spec (#40071)"
+        },
+        {
           "date": "2023-05-16",
           "author": "jnurthen@users.noreply.github.com",
           "hash": "9321945c0d",
@@ -19318,6 +19348,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-05-19",
+          "author": "tperrotta@chromium.org",
+          "hash": "01d38a0473",
+          "subject": "Fix browsingContext.create tests to be spec compliant (#40034)"
+        },
+        {
           "date": "2023-05-16",
           "author": "ncsoregi@mozilla.com",
           "hash": "738838e8c3",
@@ -19577,6 +19613,18 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "cc806ae",
+          "subject": "Fix the references to children"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "02df6fd",
+          "subject": "Fix the references to navigable"
+        },
+        {
           "date": "2023-04-26",
           "author": "mathias@qiwi.be",
           "hash": "635b8e8",
@@ -19723,6 +19771,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19736,6 +19790,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19751,6 +19811,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19764,6 +19830,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19779,6 +19851,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19792,6 +19870,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19807,6 +19891,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19820,6 +19910,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19835,6 +19931,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19848,6 +19950,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19863,6 +19971,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19876,6 +19990,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19891,6 +20011,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19904,6 +20030,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19919,6 +20051,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19932,6 +20070,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -19947,6 +20091,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
+        {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
           "hash": "6ed46aaee",
@@ -19960,6 +20110,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "99840794+csmartdalton@users.noreply.github.com",
+          "hash": "b934957d2",
+          "subject": "Initial conformance tests for WEBGL_shader_pixel_local_storage (#3530)"
+        },
         {
           "date": "2023-05-02",
           "author": "jdashg@gmail.com",
@@ -20355,24 +20511,6 @@
           "author": "dneto@google.com",
           "hash": "9dc30897",
           "subject": "Unpack bulitins don't have f16 counterparts (#4000)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dneto@google.com",
-          "hash": "266fd4a6",
-          "subject": "Fix when return value is ignored in a function call statement (#3998)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "zhaoming.jiang@intel.com",
-          "hash": "21497412",
-          "subject": "Weaken asin & acos accuracy rule for f16 (#3990)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "kainino@chromium.org",
-          "hash": "295cbe13",
-          "subject": "Move all `<xmp>` to start on their own line (#3997)"
         }
       ],
       "testlog": []
@@ -20576,6 +20714,12 @@
           "subject": "Add the builder.input() method steps"
         },
         {
+          "date": "2023-05-15",
+          "author": "ningxin.hu@intel.com",
+          "hash": "b94adf7",
+          "subject": "Acknowledge Jiewei Qian for Chromium implementation review and feedback"
+        },
+        {
           "date": "2023-05-14",
           "author": "zoltan.kis@intel.com",
           "hash": "dad23d1",
@@ -20682,18 +20826,6 @@
           "author": "dom@w3.org",
           "hash": "00d3cdd",
           "subject": "Disable echidna in preparation for CR snapshot publication"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "feng.dai@intel.com",
-          "hash": "db53c2f",
-          "subject": "Update newShape with null value for reshape operation"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dom@w3.org",
-          "hash": "93b6890",
-          "subject": "Fix native API name"
         }
       ],
       "testlog": [
@@ -20871,18 +21003,6 @@
           "author": "46299415+sonkkeli@users.noreply.github.com",
           "hash": "2b6ddd7",
           "subject": "JS CLI: Add support for using password-encrypted PKCS#8 keys (#852)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "46299415+sonkkeli@users.noreply.github.com",
-          "hash": "2279908",
-          "subject": "Bump wbn version to 0.0.9 (#851)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "46299415+sonkkeli@users.noreply.github.com",
-          "hash": "5e19ab7",
-          "subject": "Add override headers support to the CLI tool (#850)"
         }
       ],
       "testlog": []
@@ -21059,24 +21179,6 @@
           "author": "henbos@users.noreply.github.com",
           "hash": "fa44c65",
           "subject": "Update to ReSpec version 32.8.0"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "05a4f0c",
-          "subject": "remove trailing whitespace"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "3753dc5",
-          "subject": "amendment typo"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "cdf629e",
-          "subject": "s/29/31/"
         }
       ],
       "testlog": [
@@ -22014,24 +22116,6 @@
           "author": "dneto@google.com",
           "hash": "9dc30897",
           "subject": "Unpack bulitins don't have f16 counterparts (#4000)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "dneto@google.com",
-          "hash": "266fd4a6",
-          "subject": "Fix when return value is ignored in a function call statement (#3998)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "zhaoming.jiang@intel.com",
-          "hash": "21497412",
-          "subject": "Weaken asin & acos accuracy rule for f16 (#3990)"
-        },
-        {
-          "date": "2023-03-23",
-          "author": "kainino@chromium.org",
-          "hash": "295cbe13",
-          "subject": "Move all `<xmp>` to start on their own line (#3997)"
         }
       ],
       "testlog": []
