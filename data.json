@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-03-27T07:12:47.861Z",
-  "until": "2023-05-23T07:12:47.861Z",
+  "since": "2023-03-27T14:24:55.633Z",
+  "until": "2023-05-23T14:24:55.633Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -791,18 +791,6 @@
           "author": "kenneth.r.christiansen@intel.com",
           "hash": "f0fe6cc",
           "subject": "Introduce 'thermals' source type"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "kenneth.r.christiansen@intel.com",
-          "hash": "6af82a4",
-          "subject": "Fix nits"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "kenneth.r.christiansen@intel.com",
-          "hash": "8e0fcf7",
-          "subject": "Slightly modify use-cases after discussion with Anssi"
         }
       ],
       "testlog": [
@@ -1085,6 +1073,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-05-23",
+          "author": "sakhapov@chromium.org",
+          "hash": "56b866cdc4",
+          "subject": "Change motion path wpt test"
+        },
+        {
+          "date": "2023-05-23",
+          "author": "kojii@chromium.org",
+          "hash": "0c1bc91031",
+          "subject": "Make `break-spaces-{006,011}.html` more robust"
+        },
+        {
+          "date": "2023-05-23",
+          "author": "zach@zrhoffman.net",
+          "hash": "7404b6d4ca",
+          "subject": "[css-properties-values-api] Implement parsing and serialization for @property at-rule"
+        },
+        {
+          "date": "2023-05-23",
+          "author": "hyoputer.kim@samsung.com",
+          "hash": "eb55eef546",
+          "subject": "Make shorthand serializer for \"column-rule\""
+        },
         {
           "date": "2023-05-23",
           "author": "nt1m@users.noreply.github.com",
@@ -2578,18 +2590,6 @@
           "author": "mstensho@chromium.org",
           "hash": "dae18f9f51",
           "subject": "Set the right fragmentation type in OOF fragmentainer relayout."
-        },
-        {
-          "date": "2023-03-27",
-          "author": "tlin@mozilla.com",
-          "hash": "dfa8e72424",
-          "subject": "Add a web-platform test to exercise text-align-last for a block split in multicol."
-        },
-        {
-          "date": "2023-03-27",
-          "author": "andruud@chromium.org",
-          "hash": "d2a103e01e",
-          "subject": "[scroll-animations] Reset animation-range-* in animation shorthand"
         }
       ]
     },
@@ -3021,12 +3021,6 @@
           "author": "jarhar@chromium.org",
           "hash": "ea6c0f9e17",
           "subject": "CSSDisplayAnimation: Don't cancel display:none animations"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "andruud@chromium.org",
-          "hash": "d2a103e01e",
-          "subject": "[scroll-animations] Reset animation-range-* in animation shorthand"
         }
       ]
     },
@@ -5455,6 +5449,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-05-23",
+          "author": "hyoputer.kim@samsung.com",
+          "hash": "eb55eef546",
+          "subject": "Make shorthand serializer for \"column-rule\""
+        },
+        {
           "date": "2023-04-20",
           "author": "kojii@chromium.org",
           "hash": "8b08b16b78",
@@ -6022,6 +6022,12 @@
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-05-23",
+          "author": "zach@zrhoffman.net",
+          "hash": "7404b6d4ca",
+          "subject": "[css-properties-values-api] Implement parsing and serialization for @property at-rule"
+        },
         {
           "date": "2023-04-20",
           "author": "andruud@chromium.org",
@@ -7045,6 +7051,12 @@
       "testlog": [
         {
           "date": "2023-05-23",
+          "author": "kojii@chromium.org",
+          "hash": "0c1bc91031",
+          "subject": "Make `break-spaces-{006,011}.html` more robust"
+        },
+        {
+          "date": "2023-05-23",
           "author": "nt1m@users.noreply.github.com",
           "hash": "57c5006103",
           "subject": "Replace w3c.github.io/csswg-drafts links with drafts.csswg.org (#40148)"
@@ -7102,12 +7114,6 @@
           "author": "kojii@chromium.org",
           "hash": "c5dc05f232",
           "subject": "[white-space] Turn `white-space` to a shorthand"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "tlin@mozilla.com",
-          "hash": "dfa8e72424",
-          "subject": "Add a web-platform test to exercise text-align-last for a block split in multicol."
         }
       ]
     },
@@ -8114,6 +8120,140 @@
       "testlog": []
     },
     {
+      "name": "Document Picture-in-Picture",
+      "href": "https://wicg.github.io/document-picture-in-picture/",
+      "specrepo": "https://github.com/WICG/document-picture-in-picture",
+      "speclog": [
+        {
+          "date": "2023-05-19",
+          "author": "steimel@chromium.org",
+          "hash": "bbff359",
+          "subject": "Don't explicitly set bubbles to false"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "steimel@chromium.org",
+          "hash": "ea8a8f8",
+          "subject": "Create a top-level traversable"
+        },
+        {
+          "date": "2023-05-19",
+          "author": "steimel@chromium.org",
+          "hash": "0bfe3ae",
+          "subject": "Add \"last-opened window\" to the DocumentPictureInPicture object"
+        },
+        {
+          "date": "2023-05-16",
+          "author": "steimel@chromium.org",
+          "hash": "ee1085e",
+          "subject": "Update \"One PiP Window\" section"
+        },
+        {
+          "date": "2023-05-16",
+          "author": "steimel@chromium.org",
+          "hash": "b3f6afc",
+          "subject": "Remove relative-urls section"
+        },
+        {
+          "date": "2023-05-12",
+          "author": "steimel@chromium.org",
+          "hash": "db0b395",
+          "subject": "Improve CSS copying definitions"
+        },
+        {
+          "date": "2023-05-12",
+          "author": "steimel@chromium.org",
+          "hash": "4124310",
+          "subject": "Clearer definitions of concepts, don't treat browsing contexts as windows"
+        },
+        {
+          "date": "2023-05-11",
+          "author": "steimel@chromium.org",
+          "hash": "bdeb4b8",
+          "subject": "Don't bubble the enter event"
+        },
+        {
+          "date": "2023-05-11",
+          "author": "steimel@chromium.org",
+          "hash": "ed66eb4",
+          "subject": "Give the Window as an argument to \"Consume user activation\""
+        },
+        {
+          "date": "2023-05-10",
+          "author": "steimel@chromium.org",
+          "hash": "59951a6",
+          "subject": "Don't call RangeError a DOMException"
+        },
+        {
+          "date": "2023-05-10",
+          "author": "steimel@chromium.org",
+          "hash": "8b0f171",
+          "subject": "Remove unnecessary \"and abort these steps\""
+        },
+        {
+          "date": "2023-05-10",
+          "author": "steimel@chromium.org",
+          "hash": "3142723",
+          "subject": "Use top-level traversable instead of top-level browsing context"
+        },
+        {
+          "date": "2023-05-10",
+          "author": "steimel@chromium.org",
+          "hash": "fd3ccea",
+          "subject": "Make \"Document Picture-in-Picture Support\" owned by the user agent"
+        },
+        {
+          "date": "2023-05-10",
+          "author": "steimel@chromium.org",
+          "hash": "c42beae",
+          "subject": "Set the status as \"Draft Community Group Report\""
+        },
+        {
+          "date": "2023-05-01",
+          "author": "steimel@chromium.org",
+          "hash": "ff653e7",
+          "subject": "Remove initialAspectRatio"
+        },
+        {
+          "date": "2023-05-01",
+          "author": "steimel@chromium.org",
+          "hash": "0e94e36",
+          "subject": "Use normative language in spoofing section"
+        },
+        {
+          "date": "2023-05-01",
+          "author": "steimel@chromium.org",
+          "hash": "c55f995",
+          "subject": "fix tab"
+        },
+        {
+          "date": "2023-03-31",
+          "author": "steimel@chromium.org",
+          "hash": "c13357e",
+          "subject": "Update spoofing section with an example"
+        },
+        {
+          "date": "2023-03-31",
+          "author": "steimel@chromium.org",
+          "hash": "8e8732d",
+          "subject": "Clarify lifetime and multi-pip"
+        },
+        {
+          "date": "2023-03-31",
+          "author": "steimel@chromium.org",
+          "hash": "c4df26c",
+          "subject": "Fix broken and missing links"
+        },
+        {
+          "date": "2023-03-31",
+          "author": "steimel@chromium.org",
+          "hash": "ed187f1",
+          "subject": "Update requestWindow() to throw a RangeError if only width or height is specified"
+        }
+      ],
+      "testlog": []
+    },
+    {
       "name": "Document Policy",
       "href": "https://wicg.github.io/document-policy/",
       "specrepo": "https://github.com/WICG/document-policy",
@@ -8839,12 +8979,6 @@
           "author": "syg@chromium.org",
           "hash": "9964fa962a",
           "subject": "Add V8 tests for JSON.parse with source to staging/ (#3806)"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "ljharb@gmail.com",
-          "hash": "910a2764d8",
-          "subject": "Object.prototype.toString: avoid over-DRYness, and add preconditions"
         }
       ]
     },
@@ -9662,6 +9796,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-05-23",
+          "author": "krosylight@mozilla.com",
+          "hash": "91061d09ba",
+          "subject": "Add test for accessing .body after cancellation"
+        },
         {
           "date": "2023-05-17",
           "author": "krosylight@mozilla.com",
@@ -10484,6 +10624,12 @@
       "testlog": [
         {
           "date": "2023-05-23",
+          "author": "vhilla@mozilla.com",
+          "hash": "12f23f16c4",
+          "subject": "Fix dir=auto for textarea with rtl text."
+        },
+        {
+          "date": "2023-05-23",
           "author": "nt1m@users.noreply.github.com",
           "hash": "57c5006103",
           "subject": "Replace w3c.github.io/csswg-drafts links with drafts.csswg.org (#40148)"
@@ -11291,12 +11437,6 @@
           "author": "jarhar@chromium.org",
           "hash": "2f5784f5fe",
           "subject": "selectmenu: Add support for :open and :closed"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "delan@azabani.com",
-          "hash": "a10581823a",
-          "subject": "HTML: interactions between indexed and named access on the Window object"
         }
       ]
     },
@@ -11753,12 +11893,6 @@
           "author": "pdr@chromium.org",
           "hash": "0fb81c3",
           "subject": "Fix spelling errors in loaf-explainer.md"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "865201c",
-          "subject": "Remove 'blocking'"
         }
       ],
       "testlog": [
@@ -12236,6 +12370,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-05-23",
+          "author": "sakhapov@chromium.org",
+          "hash": "56b866cdc4",
+          "subject": "Change motion path wpt test"
+        },
+        {
           "date": "2023-05-18",
           "author": "boris.chiou@gmail.com",
           "hash": "add9df8e7a",
@@ -12385,7 +12525,14 @@
           "subject": "Default silent to platform convention"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-05-23",
+          "author": "caceres_m@apple.com",
+          "hash": "ac2c4415f6",
+          "subject": "Notifications: test that silent defaults to null"
+        }
+      ]
     },
     {
       "name": "WebGL OES_draw_buffers_indexed Extension Specification",
@@ -13870,12 +14017,6 @@
           "author": "kevers@google.com",
           "hash": "756212ae27",
           "subject": "Ignore CSS property animation-range-* after setting via web-animation API"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "andruud@chromium.org",
-          "hash": "d2a103e01e",
-          "subject": "[scroll-animations] Reset animation-range-* in animation shorthand"
         }
       ]
     },
@@ -14906,6 +15047,26 @@
           "author": "ron.buckton@microsoft.com",
           "hash": "2c837e7",
           "subject": "Revert 'await' restriction (#153)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Float16Array",
+      "href": "https://tc39.es/proposal-float16array/",
+      "specrepo": "https://github.com/tc39/proposal-float16array",
+      "speclog": [
+        {
+          "date": "2023-05-16",
+          "author": "bakkot@gmail.com",
+          "hash": "916f1b2",
+          "subject": "stage 3! (#8)"
+        },
+        {
+          "date": "2023-04-12",
+          "author": "bakkot@gmail.com",
+          "hash": "6da0b69",
+          "subject": "remove filler words per ecma262#3040"
         }
       ],
       "testlog": []
@@ -17550,18 +17711,6 @@
           "author": "travisleithead@hotmail.com",
           "hash": "5abcd96",
           "subject": "Updating Travis Leithead affiliation"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "siusinng@gmail.com",
-          "hash": "ad4c4f7",
-          "subject": "update the reference to UAX15"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "siusinng@gmail.com",
-          "hash": "f1d0627",
-          "subject": "use uppercase hex for code points"
         }
       ],
       "testlog": []
@@ -18246,12 +18395,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": [
@@ -18345,12 +18488,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18419,12 +18556,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18493,12 +18624,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18567,12 +18692,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18641,12 +18760,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18715,12 +18828,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18789,12 +18896,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18863,12 +18964,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -18937,12 +19032,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19011,12 +19100,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19085,12 +19168,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19159,12 +19236,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19233,12 +19304,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19307,12 +19372,6 @@
           "author": "webrtc@bytedance.com",
           "hash": "4d2c5df",
           "subject": "Move the attribute of bitrateMode from to OpusEncoderConfigAudioEncoderConfig"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "webrtc@bytedance.com",
-          "hash": "55094ea",
-          "subject": "support specify audio encode bitrateMode interface"
         }
       ],
       "testlog": []
@@ -19399,6 +19458,12 @@
       "specrepo": "https://github.com/w3c/webdriver",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-05-23",
+          "author": "jdescottes@mozilla.com",
+          "hash": "d572129490",
+          "subject": "[wdspec] Add test for NoSuchElement error with input.ElementOrigin"
+        },
         {
           "date": "2023-05-22",
           "author": "101637635+jrandolf@users.noreply.github.com",
@@ -19664,6 +19729,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2023-05-23",
+          "author": "git@bromann.dev",
+          "hash": "51b4e52",
+          "subject": "(cddl): fix ScriptCommand (#419)"
+        },
         {
           "date": "2023-05-19",
           "author": "james@hoppipolla.co.uk",
@@ -20860,12 +20931,6 @@
           "author": "anssi.kostiainen@gmail.com",
           "hash": "3899a2d",
           "subject": "Add Status of this document note for Candidate Recommendation"
-        },
-        {
-          "date": "2023-03-27",
-          "author": "dom@w3.org",
-          "hash": "00d3cdd",
-          "subject": "Disable echidna in preparation for CR snapshot publication"
         }
       ],
       "testlog": [
