@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-05-10T07:13:12.311Z",
-  "until": "2023-07-06T07:13:12.311Z",
+  "since": "2023-05-11T07:13:03.945Z",
+  "until": "2023-07-07T07:13:03.945Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -76,6 +76,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -187,6 +199,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "apaseltiner@google.com",
+          "hash": "c42e8ee",
+          "subject": "Add caveat about event-level trigger priority to reporting-delay-concern mitigations (#881)"
+        },
         {
           "date": "2023-07-05",
           "author": "32398678+ThomasQuesadilla@users.noreply.github.com",
@@ -612,30 +630,6 @@
           "author": "yoav@yoav.ws",
           "hash": "fa907c0",
           "subject": "Typo fix (#794)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "apaseltiner@google.com",
-          "hash": "2aa8f51",
-          "subject": "Rename reporting endpoint to reporting origin (#788)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "akashnadan@gmail.com",
-          "hash": "203c813",
-          "subject": "Limit on the number of aggregatable reports per source (#774)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "e6cc912",
-          "subject": "Specify limiting number of aggregatable reports per source (#778)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "csharrison@chromium.org",
-          "hash": "9044fce",
-          "subject": "Make a few rate limits per-site (#787)"
         }
       ],
       "testlog": []
@@ -1242,6 +1236,72 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-07-07",
+          "author": "dgrogan@chromium.org",
+          "hash": "505c82a0a8",
+          "subject": "[css-flex] Fix percentage inline size for column wrap sizing"
+        },
+        {
+          "date": "2023-07-07",
+          "author": "changseok.oh@bytedance.com",
+          "hash": "83607d4c83",
+          "subject": "Avoid null dereference of font data from FontCache."
+        },
+        {
+          "date": "2023-07-06",
+          "author": "xiaochengh@chromium.org",
+          "hash": "87ad9e390e",
+          "subject": "[anchor-position] Implement 'position-fallback-bounds'"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "dizhangg@chromium.org",
+          "hash": "94ebf348ec",
+          "subject": "Allow input type date etc to have vertical writign mode"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "091efadedd",
+          "subject": "Rewrite waitForScrollEnd to be less flaky."
+        },
+        {
+          "date": "2023-07-06",
+          "author": "aaronhk@chromium.org",
+          "hash": "207ddbd913",
+          "subject": "Parse rgb() like other color functions"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "dgrogan@chromium.org",
+          "hash": "53b0a75124",
+          "subject": "[css-flex] Fix arithmetic underflow causing ~infinite flexbox width"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "vmpstr@chromium.org",
+          "hash": "d7f8976dc6",
+          "subject": "VTonNav: Serialize writing_mode and add a WPT for it."
+        },
+        {
+          "date": "2023-07-06",
+          "author": "andruud@chromium.org",
+          "hash": "159c9d1f39",
+          "subject": "[@scope] Support @scope nested within style rules"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "5c3f62d66d",
+          "subject": "Fix reference case for WPT positioned-grid-items-025.html to avoid depending on the width of a space character."
+        },
+        {
+          "date": "2023-07-06",
+          "author": "andruud@chromium.org",
+          "hash": "3ad1cce294",
+          "subject": "[@scope] Semicolons should not abort selector parsing for @scope"
+        },
         {
           "date": "2023-07-05",
           "author": "emilio@crisal.io",
@@ -2747,48 +2807,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "3cbba1da3e",
           "subject": "Remove step_timeout workaround when waiting for scroll coordinates to update (#39954)"
-        },
-        {
-          "date": "2023-05-11",
-          "author": "kschmi@microsoft.com",
-          "hash": "90830a4fef",
-          "subject": "[GridNG] Handle opposite writing direction subgrids"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "aaronhk@chromium.org",
-          "hash": "e88c468b19",
-          "subject": "Add epsilon for color rounding."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "mstensho@chromium.org",
-          "hash": "06c34efac3",
-          "subject": "Pre-paint: Use ancestor fragments when walking a missed child."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "andruud@chromium.org",
-          "hash": "ec49f0a0b6",
-          "subject": "[scroll-animations] Make 'auto' the initial value of 'animation-duration'"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "sakhapov@chromium.org",
-          "hash": "654d234056",
-          "subject": "Implement motion path <coord-box>"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "graouts@apple.com",
-          "hash": "1143898e3e",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=145136 (#39920)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "tlin@mozilla.com",
-          "hash": "2f90ca29fe",
-          "subject": "Fix fragmentation for blocks with auto height and fixed max-height."
         }
       ]
     },
@@ -2889,6 +2907,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "1c0f77bbf",
+          "subject": "[css-anchor-position-1][editorial] ASCII art"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "xiaochengh@chromium.org",
+          "hash": "a1fa1a5e5",
+          "subject": "[css-anchor-position-1] Add CSSOM interfaces (#9005)"
+        },
+        {
           "date": "2023-07-05",
           "author": "xiaochengh@chromium.org",
           "hash": "7649a8dc1",
@@ -2962,6 +2992,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "xiaochengh@chromium.org",
+          "hash": "87ad9e390e",
+          "subject": "[anchor-position] Implement 'position-fallback-bounds'"
+        },
         {
           "date": "2023-06-30",
           "author": "xiaochengh@chromium.org",
@@ -3147,12 +3183,6 @@
           "author": "andruud@chromium.org",
           "hash": "433738547e",
           "subject": "[scroll-animations] Disable CSSAnimationDelayStartEnd"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "andruud@chromium.org",
-          "hash": "ec49f0a0b6",
-          "subject": "[scroll-animations] Make 'auto' the initial value of 'animation-duration'"
         }
       ]
     },
@@ -3278,18 +3308,6 @@
           "author": "tlin@mozilla.com",
           "hash": "b09d34ff03",
           "subject": "Consider multicol container in paginated context when setting mIsTopOfPage bit."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "mstensho@chromium.org",
-          "hash": "06c34efac3",
-          "subject": "Pre-paint: Use ancestor fragments when walking a missed child."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "tlin@mozilla.com",
-          "hash": "2f90ca29fe",
-          "subject": "Fix fragmentation for blocks with auto height and fixed max-height."
         }
       ]
     },
@@ -3313,6 +3331,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "andruud@chromium.org",
+          "hash": "159c9d1f39",
+          "subject": "[@scope] Support @scope nested within style rules"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "andruud@chromium.org",
+          "hash": "3ad1cce294",
+          "subject": "[@scope] Semicolons should not abort selector parsing for @scope"
+        },
         {
           "date": "2023-07-05",
           "author": "andruud@chromium.org",
@@ -3393,6 +3423,36 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "chris@w3.org",
+          "hash": "96be9333a",
+          "subject": "[css-color-4] remove incorrect assertions of powerlessness #8609"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "chris@w3.org",
+          "hash": "4ef4ad102",
+          "subject": "[css-color-4] Display as black or whete when L=0% or 100% is due to gamut mapping #8794"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "chris@w3.org",
+          "hash": "699d3721a",
+          "subject": "[css-color-4] Drop the \"representing black\" and \"representing white\", #8794"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "chris@w3.org",
+          "hash": "787d665d1",
+          "subject": "[css-color-5] Clarify that RCS origin colors include optional alpha"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "chris@w3.org",
+          "hash": "b6cb09a38",
+          "subject": "typo"
+        },
         {
           "date": "2023-07-05",
           "author": "chris@w3.org",
@@ -3560,51 +3620,15 @@
           "author": "chris@w3.org",
           "hash": "8ce38ded4",
           "subject": "[css-color-4] Back-port Color 5 HWB number-percent to Color 4, fix #8322"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "8c4867dda",
-          "subject": "[css-color-5] Add example, #8499"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "b4c7ee44c",
-          "subject": "[css-color-5][editorial] grammar"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "6ffb6cbb4",
-          "subject": "[css-color-4] Clarified, color components must not be mixed, #8231"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "b612514a2",
-          "subject": "[css-color-4][editorial] Update changes"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "e888d92ff",
-          "subject": "[css-color-4][editorial] wpt"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "e62966924",
-          "subject": "[css-color-4] Add example of specified out of range alpha, both with and without calc #8318"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "d4ef154fc",
-          "subject": "[css-color-4][editorial] put trailing zero prose and examples next to each other"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "aaronhk@chromium.org",
+          "hash": "207ddbd913",
+          "subject": "Parse rgb() like other color functions"
+        },
         {
           "date": "2023-06-28",
           "author": "aaronhk@chromium.org",
@@ -3664,12 +3688,6 @@
           "author": "aaronhk@chromium.org",
           "hash": "3ad99784f4",
           "subject": "Fix color valid color mix test (#36668)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "aaronhk@chromium.org",
-          "hash": "e88c468b19",
-          "subject": "Add epsilon for color rounding."
         }
       ]
     },
@@ -3944,6 +3962,18 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-07-07",
+          "author": "dgrogan@chromium.org",
+          "hash": "505c82a0a8",
+          "subject": "[css-flex] Fix percentage inline size for column wrap sizing"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "dgrogan@chromium.org",
+          "hash": "53b0a75124",
+          "subject": "[css-flex] Fix arithmetic underflow causing ~infinite flexbox width"
+        },
+        {
           "date": "2023-06-30",
           "author": "dholbert@cs.stanford.edu",
           "hash": "04e713bc5b",
@@ -4058,6 +4088,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-07",
+          "author": "changseok.oh@bytedance.com",
+          "hash": "83607d4c83",
+          "subject": "Avoid null dereference of font data from FontCache."
+        },
+        {
           "date": "2023-06-26",
           "author": "drott@chromium.org",
           "hash": "52fa9640ad",
@@ -4148,6 +4184,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-06",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "5c3f62d66d",
+          "subject": "Fix reference case for WPT positioned-grid-items-025.html to avoid depending on the width of a space character."
+        },
+        {
           "date": "2023-06-29",
           "author": "emilio@crisal.io",
           "hash": "9984ce9e3c",
@@ -4236,12 +4278,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "fdb27efe8f",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=256611 (#39934)"
-        },
-        {
-          "date": "2023-05-11",
-          "author": "kschmi@microsoft.com",
-          "hash": "90830a4fef",
-          "subject": "[GridNG] Handle opposite writing direction subgrids"
         }
       ]
     },
@@ -4510,6 +4546,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "jackalmage@gmail.com",
+          "hash": "9cd3851f6",
+          "subject": "[css-nesting-1] Clarify that the nesting selector can match featureless elements."
+        },
         {
           "date": "2023-05-12",
           "author": "jackalmage@gmail.com",
@@ -4874,6 +4916,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-06",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "091efadedd",
+          "subject": "Rewrite waitForScrollEnd to be less flaky."
+        },
+        {
           "date": "2023-06-26",
           "author": "botond@mozilla.com",
           "hash": "a7435c8963",
@@ -5023,7 +5071,14 @@
       "href": "https://drafts.csswg.org/css-sizing/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "vmpstr@chromium.org",
+          "hash": "69acb598f",
+          "subject": "[css-sizing-4] Add contain-intrinsic-size: auto none syntax (#8989)"
+        }
+      ],
       "testlog": [
         {
           "date": "2023-06-19",
@@ -5415,12 +5470,6 @@
           "author": "futhark@chromium.org",
           "hash": "a5a4ea37cb",
           "subject": "Move the tests for @starting-style to wpt"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "graouts@apple.com",
-          "hash": "1143898e3e",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=145136 (#39920)"
         }
       ]
     },
@@ -5800,6 +5849,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-06",
+          "author": "vmpstr@chromium.org",
+          "hash": "d7f8976dc6",
+          "subject": "VTonNav: Serialize writing_mode and add a WPT for it."
+        },
+        {
           "date": "2023-07-05",
           "author": "vmpstr@chromium.org",
           "hash": "f88f96eaba",
@@ -5880,6 +5935,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "dizhangg@chromium.org",
+          "hash": "94ebf348ec",
+          "subject": "Allow input type date etc to have vertical writign mode"
+        },
         {
           "date": "2023-06-17",
           "author": "dizhangg@chromium.org",
@@ -6131,36 +6192,6 @@
           "author": "steimel@chromium.org",
           "hash": "ed66eb4",
           "subject": "Give the Window as an argument to \"Consume user activation\""
-        },
-        {
-          "date": "2023-05-10",
-          "author": "steimel@chromium.org",
-          "hash": "59951a6",
-          "subject": "Don't call RangeError a DOMException"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "steimel@chromium.org",
-          "hash": "8b0f171",
-          "subject": "Remove unnecessary \"and abort these steps\""
-        },
-        {
-          "date": "2023-05-10",
-          "author": "steimel@chromium.org",
-          "hash": "3142723",
-          "subject": "Use top-level traversable instead of top-level browsing context"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "steimel@chromium.org",
-          "hash": "fd3ccea",
-          "subject": "Make \"Document Picture-in-Picture Support\" owned by the user agent"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "steimel@chromium.org",
-          "hash": "c42beae",
-          "subject": "Set the status as \"Draft Community Group Report\""
         }
       ],
       "testlog": [
@@ -6590,18 +6621,6 @@
           "author": "mficarra@shapesecurity.com",
           "hash": "38e3cf9e",
           "subject": "Editorial: fix the type of Iterator Record [[NextMethod]] (#3067)"
-        },
-        {
-          "date": "2023-05-11",
-          "author": "devrendilek@gmail.com",
-          "hash": "f682cffb",
-          "subject": "Editorial: String.prototype.normalize now references the Unicode Standard instead of Annex 15 (#3051)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "928a953f",
-          "subject": "Editorial: In ObjectDefineProperties, use a Record (#3056)"
         }
       ],
       "testlog": [
@@ -6933,6 +6952,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -7036,6 +7067,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -7141,6 +7184,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -7244,6 +7299,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -7349,6 +7416,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -7452,6 +7531,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -7557,6 +7648,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -7660,6 +7763,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -7765,6 +7880,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -7868,6 +7995,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -7973,6 +8112,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -8077,6 +8228,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -8180,6 +8343,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -8291,6 +8466,12 @@
       "href": "https://fedidcg.github.io/FedCM/",
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "npm@chromium.org",
+          "hash": "32217b4",
+          "subject": "Fix color example (#484)"
+        },
         {
           "date": "2023-06-20",
           "author": "cbiesinger@chromium.org",
@@ -8914,19 +9095,20 @@
       "name": "Generic Sensor API",
       "href": "https://w3c.github.io/sensors/",
       "specrepo": "https://github.com/w3c/sensors",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "75e66cf",
+          "subject": "editorial: Fix some Bikeshed warnings about ambiguous references (#460)"
+        }
+      ],
       "testlog": [
         {
           "date": "2023-06-08",
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "99f37e54b8",
           "subject": "sensors: Reset sensor state on context destruction."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "684c504bbe",
-          "subject": "sensors: Remove |referenceFrame| validation test from generic-sensor-tests.js."
         }
       ],
       "testpolicy": "https://github.com/w3c/sensors/blob/HEAD/CONTRIBUTING.md"
@@ -9351,6 +9533,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-07",
+          "author": "xiaochengh@chromium.org",
+          "hash": "5580cae2a2",
+          "subject": "[anchor-position] Allow ::backdrop to use originating element's implicit anchor"
+        },
         {
           "date": "2023-07-05",
           "author": "dom@chromium.org",
@@ -10226,24 +10414,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "3cbba1da3e",
           "subject": "Remove step_timeout workaround when waiting for scroll coordinates to update (#39954)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "emilio@crisal.io",
-          "hash": "12de87576a",
-          "subject": "Stop mapping <dir type> to list-style-type."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "mbrodesser@igalia.com",
-          "hash": "4a123dcb21",
-          "subject": "mark <popover-open-overflow-display.html> as intermitently failing on Linux and rename it to <[...].tentative.html>."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "surkov.alexander@gmail.com",
-          "hash": "6af64a286a",
-          "subject": "polyfill the declarative shadow DOM feature in popover-light-dismiss.html test"
         }
       ]
     },
@@ -10331,12 +10501,6 @@
           "author": "cookiecrook@users.noreply.github.com",
           "hash": "93efd04980",
           "subject": "Add notes pointing each test file to the relevant portion of the spec it tests. (#40159)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "e0dbe07cdd",
-          "subject": "roll back to generic for b and i based on HTML-AAM 482 (#39911)"
         }
       ],
       "testpolicy": "https://github.com/w3c/html-aam/blob/HEAD/CONTRIBUTING.md"
@@ -10519,30 +10683,6 @@
           "author": "chris@w3.org",
           "hash": "1083c9d",
           "subject": "Add QUERY issue"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "20aa7f2",
-          "subject": "add the cross origin issue"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "02474f3",
-          "subject": "update TOC"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "f26114e",
-          "subject": "first draft explainer #124"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "chris@w3.org",
-          "hash": "ead3218",
-          "subject": "First draft of explainer"
         }
       ],
       "testlog": []
@@ -10674,6 +10814,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -11014,6 +11166,12 @@
       "href": "https://wicg.github.io/manifest-incubations/",
       "specrepo": "https://github.com/WICG/manifest-incubations",
       "speclog": [
+        {
+          "date": "2023-07-07",
+          "author": "alancutter@chromium.org",
+          "hash": "6602f0c",
+          "subject": "Update scope_extensions-explainer.md to match current state (#79)"
+        },
         {
           "date": "2023-06-27",
           "author": "46299415+sonkkeli@users.noreply.github.com",
@@ -11534,12 +11692,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "e0d083772d",
           "subject": "Correct wpt tests titles for motion path"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "sakhapov@chromium.org",
-          "hash": "654d234056",
-          "subject": "Implement motion path <coord-box>"
         }
       ]
     },
@@ -11737,6 +11889,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -11840,6 +12004,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -11945,6 +12121,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -12048,6 +12236,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -12153,6 +12353,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -12256,6 +12468,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -12361,6 +12585,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -12465,6 +12701,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -12568,6 +12816,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -12702,6 +12962,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -13834,6 +14106,12 @@
       "specrepo": "https://github.com/w3c/mediacapture-screen-share",
       "speclog": [
         {
+          "date": "2023-07-05",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "4a6226c",
+          "subject": "Avoid data race on controller.[[FocusBehavior]]."
+        },
+        {
           "date": "2023-06-29",
           "author": "elad.alon@gmail.com",
           "hash": "bc38153",
@@ -14164,12 +14442,6 @@
           "author": "kevers@google.com",
           "hash": "1d178dc8de",
           "subject": "Update scroll-timeline-multi-pass.tentative.html"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "kevers@google.com",
-          "hash": "696f1288e3",
-          "subject": "Invalidate animation timing if layout change detected when updating the timeline snapshot."
         }
       ]
     },
@@ -14264,12 +14536,6 @@
           "author": "smcgruer@chromium.org",
           "hash": "a1a1980",
           "subject": "[Spec] Remove a redundant TODO"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "ij@w3.org",
-          "hash": "f1f750a",
-          "subject": "Editorial: Mention WebAuthn Level 3 is expected to support cross-orgin registration #243"
         }
       ],
       "testlog": [
@@ -14636,18 +14902,6 @@
           "author": "lingqi@chromium.org",
           "hash": "e39e1da5d1",
           "subject": "Prerender: fix wrong title of some web tests"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "liviutinta@chromium.org",
-          "hash": "8f7ae0d868",
-          "subject": "[no-vary-search-hint] Add WPT test for No-Vary-Search hint functionality"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "hiroshige@chromium.org",
-          "hash": "7f4a7427ec",
-          "subject": "[WPT] add long timeout for prefetch/different-initiators* tests"
         }
       ]
     },
@@ -14697,12 +14951,6 @@
           "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
           "hash": "69042e6",
           "subject": "Editorial: fix list numbering and variable names"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "johannhof@chromium.org",
-          "hash": "f6e5261",
-          "subject": "Specify behavior in A > * > A scenarios (#169)"
         }
       ],
       "testlog": []
@@ -15053,6 +15301,18 @@
       "specrepo": "https://github.com/tc39/proposal-explicit-resource-management",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "papb1996@gmail.com",
+          "hash": "40f272f",
+          "subject": "Improve readme on nullish values in `await using` (#183)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "papb1996@gmail.com",
+          "hash": "2af9787",
+          "subject": "Fix grammar description for `await using` declarations (#184)"
+        },
+        {
           "date": "2023-06-27",
           "author": "ron.buckton@microsoft.com",
           "hash": "3b576c0",
@@ -15264,7 +15524,14 @@
       "name": "Resizable ArrayBuffer and growable SharedArrayBuffer",
       "href": "https://tc39.es/proposal-resizablearraybuffer/",
       "specrepo": "https://github.com/tc39/proposal-resizablearraybuffer",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-07-07",
+          "author": "andre.bargull@gmail.com",
+          "hash": "4d6f85e",
+          "subject": "Normative: Correct buffer limit checks in TypedArray.p.copyWithin (#126)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -16469,42 +16736,6 @@
           "author": "caraitto@chromium.org",
           "hash": "695e9a4",
           "subject": "renderUrl -> renderURL"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "qingxinwu@google.com",
-          "hash": "772fcf6",
-          "subject": "Address a few comments."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "f0640cc",
-          "subject": "Add madeHighestScoringOtherBid. (#569)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "fb62414",
-          "subject": "Spec: Fix sendReportTo() (#563)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "caraitto@chromium.org",
-          "hash": "ec38da6",
-          "subject": "[Spec] Plumb topWindowOrigin"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "jmgoldman@google.com",
-          "hash": "70b2f31",
-          "subject": "Describe return type in prose instead of TypeScript style"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "qingxinwu@google.com",
-          "hash": "e61d1d4",
-          "subject": "Validate wasm response."
         }
       ],
       "testlog": []
@@ -16800,30 +17031,6 @@
           "author": "clemensb@google.com",
           "hash": "2e8912e8",
           "subject": "Allow test for module size limit to fail (#1653)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "clemensb@google.com",
-          "hash": "fe355113",
-          "subject": "Move more LEB128 tests to binary-leb128 (#1651)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "clemensb@google.com",
-          "hash": "86b6a183",
-          "subject": "Make binary-leb128 test memory64-ready (#1650)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "clemensb@google.com",
-          "hash": "0a190c98",
-          "subject": "Remove duplicated binary tests (#1649)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "clemensb@google.com",
-          "hash": "b72a1aae",
-          "subject": "[test] Disable tests that become valid with memory64 (#1648)"
         }
       ],
       "testlog": []
@@ -17064,6 +17271,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-07-06",
+          "author": "hongchan@chromium.org",
+          "hash": "bb71e72a94",
+          "subject": "Update warning messages for an invalid sink ID"
+        },
+        {
           "date": "2023-06-27",
           "author": "karlt+@karlt.net",
           "hash": "87005245a3",
@@ -17165,6 +17378,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17175,6 +17394,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17199,21 +17454,15 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "zhusida@bytedance.com",
+          "hash": "1deddd3d4d",
+          "subject": "Video: Add WPT webcodecs H.265 encode/decode tests."
+        },
         {
           "date": "2023-07-03",
           "author": "youennf@users.noreply.github.com",
@@ -17264,6 +17513,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17274,6 +17529,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17298,18 +17589,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17320,6 +17599,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17330,6 +17615,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17354,18 +17675,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17376,6 +17685,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17386,6 +17701,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17410,18 +17761,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17432,6 +17771,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17442,6 +17787,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17466,18 +17847,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17488,6 +17857,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17498,6 +17873,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17522,18 +17933,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17544,6 +17943,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17554,6 +17959,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17578,18 +18019,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17600,6 +18029,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17610,6 +18045,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17634,18 +18105,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17656,6 +18115,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17666,6 +18131,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17690,18 +18191,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17712,6 +18201,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17722,6 +18217,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17746,18 +18277,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17768,6 +18287,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17778,6 +18303,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17802,18 +18363,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17824,6 +18373,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17834,6 +18389,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17858,18 +18449,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17880,6 +18459,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17890,6 +18475,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17914,18 +18535,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17936,6 +18545,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -17946,6 +18561,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -17970,18 +18621,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -17992,6 +18631,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "46e8e16",
+          "subject": "Remove stable from codec registry requirements"
+        },
+        {
           "date": "2023-07-05",
           "author": "zhusidayoyo@hotmail.com",
           "hash": "446d831",
@@ -18002,6 +18647,42 @@
           "author": "e.zemtsov@gmail.com",
           "hash": "cad5683",
           "subject": "Fix typo"
+        },
+        {
+          "date": "2023-06-27",
+          "author": "eugene@chromium.org",
+          "hash": "4b6dac0",
+          "subject": "Add ImageDecoderInit.transfer"
+        },
+        {
+          "date": "2023-06-24",
+          "author": "zhusida@bytedance.com",
+          "hash": "089757d",
+          "subject": "Fix HEVC registration text"
+        },
+        {
+          "date": "2023-06-23",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f0dc749",
+          "subject": "Add to codec registry requirements"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "f648a57",
+          "subject": "Replace RFC2119 wording in Security Connsiderations"
+        },
+        {
+          "date": "2023-06-22",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "a3db9af",
+          "subject": "Remaining normative language issues"
+        },
+        {
+          "date": "2023-06-21",
+          "author": "eugene@chromium.org",
+          "hash": "f535233",
+          "subject": "Add AudioDataInit.transfer"
         },
         {
           "date": "2023-06-15",
@@ -18026,18 +18707,6 @@
           "author": "chunbo.hua@intel.com",
           "hash": "119eb19",
           "subject": "Define videoSource before videoSelect.onchange to avoid ReferenceError."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "052d98c",
-          "subject": "Address review comment."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "paul@paul.cx",
-          "hash": "76d9e77",
-          "subject": "Clone configuration should perform a deep copy"
         }
       ],
       "testlog": []
@@ -18076,6 +18745,36 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-06",
+          "author": "tperrotta@chromium.org",
+          "hash": "a435b3169d",
+          "subject": "miscellaneous lint, clean-up and modernization changes to webdriver: part II (#40643)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "jdescottes@mozilla.com",
+          "hash": "07f8a582cf",
+          "subject": "[wdspec] Add WebDriver classic tests for actions on elements in ShadowRoot"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "nerli@mozilla.com",
+          "hash": "ca92d33f8c",
+          "subject": "Backed out 2 changesets (bug 1806897, bug 1824230) for causing webredenr failures CLOSED TREE"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "jdescottes@mozilla.com",
+          "hash": "5d553d8c2d",
+          "subject": "[wdspec] Add WebDriver classic tests for actions on elements in ShadowRoot"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "mail@hskupin.info",
+          "hash": "718047e88a",
+          "subject": "[wdspec] \"new_tab\" fixture should not raise \"NoSuchFrameError\" when trying to close the tab."
+        },
         {
           "date": "2023-07-06",
           "author": "OrKoN@users.noreply.github.com",
@@ -18345,24 +19044,6 @@
           "author": "mail@hskupin.info",
           "hash": "6e469740f3",
           "subject": "[webdriver-bidi] Update Navigable's seen nodes map for known nodes."
-        },
-        {
-          "date": "2023-05-10",
-          "author": "jdescottes@mozilla.com",
-          "hash": "f86425063c",
-          "subject": "[wdspec] Add more tests for invalid origin arguments for bidi perform actions"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "jdescottes@mozilla.com",
-          "hash": "3c9e2409d8",
-          "subject": "[wdspec] Fix wrong helper name in bidi pointer_touch.py test"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "jdescottes@mozilla.com",
-          "hash": "6f5a410527",
-          "subject": "[wdspec] Fix element origin arguments used for bidi performActions tests"
         }
       ]
     },
@@ -18530,6 +19211,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -18633,6 +19326,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -18738,6 +19443,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -18841,6 +19558,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -18946,6 +19675,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -19049,6 +19790,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -19154,6 +19907,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -19257,6 +20022,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -19362,6 +20139,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -19465,6 +20254,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -19570,6 +20371,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -19673,6 +20486,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -19778,6 +20603,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -19881,6 +20718,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -19986,6 +20835,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -20089,6 +20950,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -20194,6 +21067,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
+        {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
           "hash": "5904159f1",
@@ -20297,6 +21182,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "0343b5704",
+          "subject": "Call finishTest() when PLS isn't supported. (#3563)"
+        },
+        {
+          "date": "2023-07-06",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "795e62c08",
+          "subject": "Fix async portions of PLS test. (#3562)"
+        },
         {
           "date": "2023-06-30",
           "author": "kbrussel@alum.mit.edu",
@@ -20680,18 +21577,6 @@
           "author": "kainino@chromium.org",
           "hash": "cd03f0d5",
           "subject": "Fix more [EnforceRange]s (#4120)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "kainino@chromium.org",
-          "hash": "f16b36d0",
-          "subject": "Remove [EnforceRange] from GPUBuffer/Texture reflection attributes (#4102)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "kainino@chromium.org",
-          "hash": "70b37526",
-          "subject": "Validate types of fragment outputs (#4103)"
         }
       ],
       "testlog": []
@@ -21028,12 +21913,6 @@
           "author": "46299415+sonkkeli@users.noreply.github.com",
           "hash": "3026a44",
           "subject": "Add support for using PKCS#8 passphrase encrypted keys in Golang tool (#867)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "46299415+sonkkeli@users.noreply.github.com",
-          "hash": "18f69fb",
-          "subject": "wbn-sign: Bump version to 0.1.0 (#869)"
         }
       ],
       "testlog": []
@@ -21182,12 +22061,6 @@
           "author": "phancke@microsoft.com",
           "hash": "d9b951832e",
           "subject": "webrtc wpt: fix bundle test"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "docfaraday@gmail.com",
-          "hash": "f64103e718",
-          "subject": "Test-case for bug."
         }
       ]
     },
@@ -21855,18 +22728,6 @@
           "author": "kainino@chromium.org",
           "hash": "cd03f0d5",
           "subject": "Fix more [EnforceRange]s (#4120)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "kainino@chromium.org",
-          "hash": "f16b36d0",
-          "subject": "Remove [EnforceRange] from GPUBuffer/Texture reflection attributes (#4102)"
-        },
-        {
-          "date": "2023-05-10",
-          "author": "kainino@chromium.org",
-          "hash": "70b37526",
-          "subject": "Validate types of fragment outputs (#4103)"
         }
       ],
       "testlog": []
