@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-06-01T07:12:26.626Z",
-  "until": "2023-07-28T07:12:26.626Z",
+  "since": "2023-06-02T07:12:15.786Z",
+  "until": "2023-07-29T07:12:15.786Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -77,6 +77,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -236,6 +242,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-07-28",
+          "author": "apaseltiner@google.com",
+          "hash": "bd0512d",
+          "subject": "Port flexible_event_privacy.py to TypeScript (#917)"
+        },
         {
           "date": "2023-07-27",
           "author": "csharrison@chromium.org",
@@ -631,12 +643,6 @@
           "author": "80365263+linnan-github@users.noreply.github.com",
           "hash": "c996b99",
           "subject": "Use aggregation coordinator origin instead of identifier (#829)"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "csharrison@chromium.org",
-          "hash": "138c8b0",
-          "subject": "Add a few sections to the security considerations (#831)"
         }
       ],
       "testlog": []
@@ -763,6 +769,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-28",
+          "author": "estade@chromium.org",
+          "hash": "e07cf32b2c",
+          "subject": "Clear media licenses along with dom storage types."
+        },
+        {
           "date": "2023-07-12",
           "author": "arichiv@chromium.org",
           "hash": "a2f6ad55b2",
@@ -829,6 +841,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "domenic@chromium.org",
+          "hash": "9b740580f5",
+          "subject": "CloseWatcher: factor out and expand Esc key tests"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "domenic@chromium.org",
+          "hash": "d5c4e9b3ef",
+          "subject": "CloseWatcher: split up basic.html web platform test"
+        },
         {
           "date": "2023-07-28",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -1057,7 +1081,14 @@
           "subject": "Normative: get()'s promise should resolve to null, not undefined (#217)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-07-29",
+          "author": "42721308+RupinMittal@users.noreply.github.com",
+          "hash": "b840531e90",
+          "subject": "Cookie Store: Add testing for checks on path and domain length when setting cookies (#41236)"
+        }
+      ]
     },
     {
       "name": "Core Accessibility API Mappings",
@@ -1226,6 +1257,42 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-07-29",
+          "author": "vmpstr@chromium.org",
+          "hash": "dcf353e284",
+          "subject": "VT: Copy text-orientation to the pseudo elements"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "emilio@crisal.io",
+          "hash": "e4e534a9b4",
+          "subject": "Fix another nesting expectaation. (#41225)"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "ethavar@microsoft.com",
+          "hash": "d44b962631",
+          "subject": "[GridNG] Respect a subgridded item's standalone placement"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "afafd42907",
+          "subject": "Remove non-round result test in acos-asin-atan-atan2-serialize.html (#41233)"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "777bad7896",
+          "subject": "CSSTransitionDiscrete: add transition-animation-type to transition shorthand"
+        },
         {
           "date": "2023-07-27",
           "author": "jackalmage@gmail.com",
@@ -2731,30 +2798,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "983934daa4",
           "subject": "Make motion path ray() `at position` interpolable"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "schenney@chromium.org",
-          "hash": "2cb403201d",
-          "subject": "Ink Overflow for CSS pseudo highlights."
-        },
-        {
-          "date": "2023-06-01",
-          "author": "sakhapov@chromium.org",
-          "hash": "d438bdbf5b",
-          "subject": "Change wpt tests for circle() and ellipse() serialization"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "jkew@mozilla.com",
-          "hash": "3f2843fa9a",
-          "subject": "CSS ::first-letter should select Dutch 'ij' or 'IJ' as a unit, but not mixed-case 'Ij'."
-        },
-        {
-          "date": "2023-06-01",
-          "author": "futhark@chromium.org",
-          "hash": "30a0ef9643",
-          "subject": "[@container] Always create ContainerQueryEvaluator on demand"
         }
       ]
     },
@@ -3046,33 +3089,15 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "cb93c6401",
           "subject": "[css-animations-2] Fix animation-timeline computed value line"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "43b6c48a9",
-          "subject": "[css-animations-2] Fix markup"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "70cc404d9",
-          "subject": "[css-animations-2] Update Changes list"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "5feda7de0",
-          "subject": "[css-animations-2] Allow 'auto' for 'animation-duration' in 'animation' shorthand. #8656"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "efe537bce",
-          "subject": "[css-animations-1] Fix notes: these are normative statements."
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
         {
           "date": "2023-07-12",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -3430,24 +3455,6 @@
           "author": "chris@w3.org",
           "hash": "71478e811",
           "subject": "[css-color-5][editorial] Update changes"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "chris@w3.org",
-          "hash": "513a7c4fb",
-          "subject": "[css-color-4] Make Lab/LCH/Oklab/Oklch tutorial sections non-normative"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "f82d356c0",
-          "subject": "[css-color-4][editorial] export term absolute color function"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "2392b69b9",
-          "subject": "[css-color-4] use reference ranges"
         }
       ],
       "testlog": [
@@ -3538,6 +3545,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
         {
           "date": "2023-07-27",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -3639,12 +3652,6 @@
           "author": "jihye@igalia.com",
           "hash": "5fbe8220d6",
           "subject": "Make content-visibility: auto forces contain-intrinsic-size to gain an auto value"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "futhark@chromium.org",
-          "hash": "30a0ef9643",
-          "subject": "[@container] Always create ContainerQueryEvaluator on demand"
         }
       ]
     },
@@ -3992,6 +3999,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-28",
+          "author": "ethavar@microsoft.com",
+          "hash": "d44b962631",
+          "subject": "[GridNG] Respect a subgridded item's standalone placement"
+        },
+        {
           "date": "2023-07-06",
           "author": "dholbert@cs.stanford.edu",
           "hash": "5c3f62d66d",
@@ -4065,12 +4078,6 @@
           "author": "cheungje@usc.edu",
           "hash": "83f738b68b",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=257517 (#40348)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "schenney@chromium.org",
-          "hash": "2cb403201d",
-          "subject": "Ink Overflow for CSS pseudo highlights."
         }
       ]
     },
@@ -4322,12 +4329,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "f620b1e4b2",
           "subject": "Fix invalid HTML: /> syntax on non-void elements"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "sakhapov@chromium.org",
-          "hash": "d438bdbf5b",
-          "subject": "Change wpt tests for circle() and ellipse() serialization"
         }
       ]
     },
@@ -4388,6 +4389,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "emilio@crisal.io",
+          "hash": "e4e534a9b4",
+          "subject": "Fix another nesting expectaation. (#41225)"
+        },
         {
           "date": "2023-07-27",
           "author": "jackalmage@gmail.com",
@@ -4524,6 +4531,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
+        {
           "date": "2023-07-12",
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "cb9e7c8367",
@@ -4556,6 +4569,18 @@
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "777bad7896",
+          "subject": "CSSTransitionDiscrete: add transition-animation-type to transition shorthand"
+        },
         {
           "date": "2023-07-20",
           "author": "zach@zrhoffman.net",
@@ -4601,12 +4626,6 @@
           "author": "emilio@crisal.io",
           "hash": "86b4ccd399",
           "subject": "Simplify first-line reparenting a bit."
-        },
-        {
-          "date": "2023-06-01",
-          "author": "jkew@mozilla.com",
-          "hash": "3f2843fa9a",
-          "subject": "CSS ::first-letter should select Dutch 'ij' or 'IJ' as a unit, but not mixed-case 'Ij'."
         }
       ]
     },
@@ -4799,12 +4818,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "df612d19a9",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=253274 (#40937)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "sakhapov@chromium.org",
-          "hash": "d438bdbf5b",
-          "subject": "Change wpt tests for circle() and ellipse() serialization"
         }
       ]
     },
@@ -5087,6 +5100,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-07-28",
+          "author": "dbaron@dbaron.org",
+          "hash": "0d6fd5aef",
+          "subject": "[css-transitions-2] Change one occurrence of animatable to transitionable."
+        },
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "cff92a69f",
+          "subject": "[css-transitions-2] Add transition-behavior property to specify whether transitions happen on properties with discrete animation type (#9101)"
+        },
+        {
           "date": "2023-06-22",
           "author": "rune.lillesveen@gmail.com",
           "hash": "c9f5f544d",
@@ -5094,6 +5119,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "d4c199f7f9",
+          "subject": "CSSTransitionDiscrete: Rename transition-animation-type to transition-behavior"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "jarhar@chromium.org",
+          "hash": "777bad7896",
+          "subject": "CSSTransitionDiscrete: add transition-animation-type to transition shorthand"
+        },
         {
           "date": "2023-07-12",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -5178,39 +5215,15 @@
           "author": "jackalmage@gmail.com",
           "hash": "745fde598",
           "subject": "[css-values-4][editorial] Add a note explaining why position serialization violates the shortest-serialization-principle. #8996"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "chris@w3.org",
-          "hash": "3876cc077",
-          "subject": "typo"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "f4646bdad",
-          "subject": "[css-values-4][editorial] update changes"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "21f695b97",
-          "subject": "[css-values-4][editorial] correct autolink for color functions"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "f82d356c0",
-          "subject": "[css-color-4][editorial] export term absolute color function"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "chris@w3.org",
-          "hash": "327110f01",
-          "subject": "[css-values-4] Color type not additive, fix #8576"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "afafd42907",
+          "subject": "Remove non-round result test in acos-asin-atan-atan2-serialize.html (#41233)"
+        },
         {
           "date": "2023-07-09",
           "author": "nt1m@users.noreply.github.com",
@@ -5566,6 +5579,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-29",
+          "author": "vmpstr@chromium.org",
+          "hash": "dcf353e284",
+          "subject": "VT: Copy text-orientation to the pseudo elements"
+        },
         {
           "date": "2023-07-25",
           "author": "vmpstr@chromium.org",
@@ -6142,12 +6161,6 @@
           "author": "benallen@igalia.com",
           "hash": "81b682a",
           "subject": "Editorial: Add links and section identifications to UTS 35 references"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "sffc@google.com",
-          "hash": "74ca709",
-          "subject": "Create notes-2023-06-01.md"
         }
       ],
       "testlog": [
@@ -6416,12 +6429,6 @@
           "author": "justingrant@users.noreply.github.com",
           "hash": "73926a53",
           "subject": "Editorial: refactor time zone identifier spec text (#3035)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "bakkot@gmail.com",
-          "hash": "902c08f5",
-          "subject": "Editorial: fix capitalization of \"Object type\" (#3086)"
         }
       ],
       "testlog": [
@@ -6551,12 +6558,6 @@
           "author": "daniec@microsoft.com",
           "hash": "fb4918f",
           "subject": "Clarify editing host behaviors (#49)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "daniec@microsoft.com",
-          "hash": "b1bc5d9",
-          "subject": "Define the concept of an EditContext's 'associated element' (#48)"
         }
       ],
       "testlog": []
@@ -6755,6 +6756,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -6906,6 +6913,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -7059,6 +7072,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -7210,6 +7229,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -7363,6 +7388,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -7514,6 +7545,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -7667,6 +7704,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -7818,6 +7861,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -7971,6 +8020,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -8122,6 +8177,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -8275,6 +8336,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -8427,6 +8494,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -8578,6 +8651,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -8846,18 +8925,6 @@
           "author": "domfarolino@gmail.com",
           "hash": "fb89d8c",
           "subject": "Last round of small editorial feedback (#99)"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "domfarolino@gmail.com",
-          "hash": "baf75f5",
-          "subject": "Editorial: Address almost all remaining editorial feedback (#98)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "domfarolino@gmail.com",
-          "hash": "8c8d9ec",
-          "subject": "Port some intro from the explainer to the spec (#97)"
         }
       ],
       "testlog": [
@@ -8949,6 +9016,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "xiaochenzh@chromium.org",
+          "hash": "cec8d856b5",
+          "subject": "Fenced frames: Remove FencedFrameConfig constructor in web platform tests."
+        },
         {
           "date": "2023-07-26",
           "author": "phao@chromium.org",
@@ -9765,21 +9838,27 @@
           "author": "zcorpan@gmail.com",
           "hash": "8a2375aa",
           "subject": "Add sizes=auto to lazy-loaded <img>"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "d@domenic.me",
-          "hash": "5a8eba76",
-          "subject": "Add empty string special case for pushState/replaceState"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "41948741+nidhijaju@users.noreply.github.com",
-          "hash": "47d65469",
-          "subject": "Clarify WebTransport back/forward cache interaction"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-07-28",
+          "author": "yiyix@google.com",
+          "hash": "f8fd86246f",
+          "subject": "Migrate text.yaml to new test generator."
+        },
+        {
+          "date": "2023-07-28",
+          "author": "pkotwicz@chromium.org",
+          "hash": "239d211588",
+          "subject": "Fix <selectmenu> button text color"
+        },
+        {
+          "date": "2023-07-28",
+          "author": "dom@chromium.org",
+          "hash": "d1a0f72487",
+          "subject": "WPT: about:srcdoc?query is an unresolvable URL"
+        },
         {
           "date": "2023-07-27",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -10415,42 +10494,6 @@
           "author": "d@domenic.me",
           "hash": "26d5ce16a6",
           "subject": "Test history.{pushState,replaceState}() with empty string URL"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "yukishiino@chromium.org",
-          "hash": "05ca4823d3",
-          "subject": "Revert \"Fix failed test offscreencanvas_transferrable.html\""
-        },
-        {
-          "date": "2023-06-02",
-          "author": "leimy@chromium.org",
-          "hash": "65879f9a5e",
-          "subject": "Add BFCache WPT for pages with WebSocket/WebTransport/WebRTC"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "yiyix@google.com",
-          "hash": "681bbfa562",
-          "subject": "Fix failed test offscreencanvas_transferrable.html"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "phao@chromium.org",
-          "hash": "a83811425d",
-          "subject": "Split COOP:RP iframe-popup-to-so"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "arthursonzogni@chromium.org",
-          "hash": "d435ba1b62",
-          "subject": "Move to WPT security-context-grandchildren-alias.html"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "phao@chromium.org",
-          "hash": "45671da4f4",
-          "subject": "Run COOP iframe-tests in parallel"
         }
       ]
     },
@@ -10728,6 +10771,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-07-28",
+          "author": "estade@chromium.org",
+          "hash": "a02414f05f",
+          "subject": "WPT: remove redundant test."
+        },
+        {
           "date": "2023-07-26",
           "author": "estade@chromium.org",
           "hash": "c514f20854",
@@ -10833,6 +10882,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -11498,14 +11553,7 @@
       "name": "Viewport Capture",
       "href": "https://w3c.github.io/mediacapture-viewport/",
       "specrepo": "https://github.com/w3c/mediacapture-viewport",
-      "speclog": [
-        {
-          "date": "2023-06-01",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "0246870",
-          "subject": "comma"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -11969,6 +12017,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -12120,6 +12174,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -12273,6 +12333,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -12424,6 +12490,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -12577,6 +12649,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -12728,6 +12806,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -12881,6 +12965,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -13033,6 +13123,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -13184,6 +13280,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -13366,6 +13468,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -13901,30 +14009,6 @@
           "author": "arichiv@chromium.org",
           "hash": "0c85584",
           "subject": "Update index.bs"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "arichiv@chromium.org",
-          "hash": "2575dc8",
-          "subject": "fix"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "arichiv@chromium.org",
-          "hash": "53e1817",
-          "subject": "scope"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "arichiv@chromium.org",
-          "hash": "bb095ec",
-          "subject": "define grammar"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "arichiv@chromium.org",
-          "hash": "c00825f",
-          "subject": "Wildcards in Permissions Policy Origins"
         }
       ],
       "testlog": [
@@ -14572,12 +14656,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "aef0f99b0",
           "subject": "[scroll-animations-1] Replace timeline-attachment with timeline-scope #7759"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "587e89a96",
-          "subject": "[scroll-animations-1] Clarify that animation-range can expand the range. #8578"
         }
       ],
       "testlog": [
@@ -14664,12 +14742,6 @@
           "author": "kevers@google.com",
           "hash": "21c2acff4e",
           "subject": "SDA: Fix start time calculation when changing timelines."
-        },
-        {
-          "date": "2023-06-01",
-          "author": "flackr@chromium.org",
-          "hash": "b5125eeb66",
-          "subject": "[scroll-animations] Respect fill behavior on compositor"
         }
       ]
     },
@@ -15068,12 +15140,6 @@
           "author": "lingqi@chromium.org",
           "hash": "7c5c26cd2e",
           "subject": "Prerender: Allow prerendering pages to create blob URL"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "lingqi@chromium.org",
-          "hash": "e39e1da5d1",
-          "subject": "Prerender: fix wrong title of some web tests"
         }
       ]
     },
@@ -15104,14 +15170,7 @@
       "name": "The Storage Access API",
       "href": "https://privacycg.github.io/storage-access/",
       "specrepo": "https://github.com/privacycg/storage-access",
-      "speclog": [
-        {
-          "date": "2023-06-01",
-          "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
-          "hash": "69042e6",
-          "subject": "Editorial: fix list numbering and variable names"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -15473,30 +15532,6 @@
           "author": "ryzokuken@disroot.org",
           "hash": "a63ee7f",
           "subject": "editorial: simplify PartitionDurationFormatPattern"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "ryzokuken@disroot.org",
-          "hash": "4c7efed",
-          "subject": "make separator numberingSystem dependent"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "benallen@igalia.com",
-          "hash": "c7ba55c",
-          "subject": "correctly use numberingSystem"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "ryzokuken@users.noreply.github.com",
-          "hash": "9b5905c",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "benallen@igalia.com",
-          "hash": "6c7b6bb",
-          "subject": "replaced unwieldy Table 1 at top with multiple narrower tables where they're used"
         }
       ],
       "testlog": []
@@ -15960,12 +15995,6 @@
           "author": "justingrant@users.noreply.github.com",
           "hash": "88b406fb",
           "subject": "Fix Test262 timeout for debugging"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "richard.gibson@gmail.com",
-          "hash": "d63ea4e2",
-          "subject": "Editorial: Fix up minor issues in FormatTimeZoneOffsetString"
         }
       ],
       "testlog": []
@@ -16267,6 +16296,12 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2023-07-28",
+          "author": "pmccann@cafemedia.com",
+          "hash": "4cedcc3",
+          "subject": "Update CafeMedia to Raptive in fledge-tester-list.md (#737)"
+        },
         {
           "date": "2023-07-27",
           "author": "caraitto@chromium.org",
@@ -16734,12 +16769,6 @@
           "author": "isaac.z.foster@gmail.com",
           "hash": "00c4a9a",
           "subject": "Update fledge-tester-list.md for MSFT (#603)"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "JensenPaul@users.noreply.github.com",
-          "hash": "6a7b731",
-          "subject": "address comments"
         }
       ],
       "testlog": []
@@ -17128,24 +17157,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "07802e06e",
           "subject": "[web-animations-1][editorial] Reformat"
-        },
-        {
-          "date": "2023-06-05",
-          "author": "birtles@gmail.com",
-          "hash": "f39c68d9f",
-          "subject": "[web-animations-1] Add link to previous version"
-        },
-        {
-          "date": "2023-06-05",
-          "author": "birtles@gmail.com",
-          "hash": "f94c72bb1",
-          "subject": "[web-animations-1] Update changes since last publication section"
-        },
-        {
-          "date": "2023-06-05",
-          "author": "birtles@gmail.com",
-          "hash": "20577a738",
-          "subject": "[web-animations-1] Disambiguate descendant"
         }
       ],
       "testlog": [
@@ -19518,6 +19529,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-07-28",
+          "author": "wptsync@mozilla.com",
+          "hash": "cbfd5c6b13",
+          "subject": "[wdspec] Add tests for \"clip\" argument for \"browsingContext.captureScreenshot\" command."
+        },
+        {
           "date": "2023-07-21",
           "author": "tperrotta@chromium.org",
           "hash": "be1b6f661e",
@@ -20081,12 +20098,6 @@
           "author": "mail@hskupin.info",
           "hash": "5d3ee40",
           "subject": "Add \"session.NewResult\" to \"SessionResult\". (#439)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "tperrotta@chromium.org",
-          "hash": "b2d1e2d",
-          "subject": "style: add whitespace to optional params: `?param` -> `? param` (#437)"
         }
       ],
       "testlog": []
@@ -20096,6 +20107,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -20249,6 +20266,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -20400,6 +20423,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -20553,6 +20582,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -20704,6 +20739,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -20857,6 +20898,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -21008,6 +21055,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -21161,6 +21214,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -21312,6 +21371,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -21465,6 +21530,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -21616,6 +21687,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -21769,6 +21846,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -21920,6 +22003,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -22073,6 +22162,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -22224,6 +22319,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -22377,6 +22478,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -22529,6 +22636,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
+        {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
@@ -22680,6 +22793,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-07-29",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "d64884eae",
+          "subject": "Address new tests feedback (#3574)"
+        },
         {
           "date": "2023-07-27",
           "author": "kbrussel@alum.mit.edu",
@@ -23123,24 +23242,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "f761c811",
           "subject": "s/importTexture/importExternalTexture/ (#4170)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "github@greggman.com",
-          "hash": "70c20d32",
-          "subject": "Update browser template (#4156)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "fd@tidoust.net",
-          "hash": "7644945b",
-          "subject": "Really fix link for localizable text (#4157)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "kainino@chromium.org",
-          "hash": "c317fef2",
-          "subject": "[editorial] Fix GPUPipelineError constructor signature (#4160)"
         }
       ],
       "testlog": []
@@ -23383,18 +23484,6 @@
           "author": "wingboy@gmail.com",
           "hash": "c26c426",
           "subject": "Don't fire connectionstatechange on pc.close()."
-        },
-        {
-          "date": "2023-06-01",
-          "author": "phancke@microsoft.com",
-          "hash": "64f60c7",
-          "subject": "{{}} -> [==]"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "fippo@goodadvice.pages.de",
-          "hash": "bfae7a3",
-          "subject": "Update webrtc.html"
         }
       ],
       "testlog": [
@@ -23421,24 +23510,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "f620b1e4b2",
           "subject": "Fix invalid HTML: /> syntax on non-void elements"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "leimy@chromium.org",
-          "hash": "65879f9a5e",
-          "subject": "Add BFCache WPT for pages with WebSocket/WebTransport/WebRTC"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "phancke@microsoft.com",
-          "hash": "b7961aa4d1",
-          "subject": "webrtc wpt: include mid extension in hardcoded sdp offer"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "phancke@microsoft.com",
-          "hash": "0b432def95",
-          "subject": "webrtc wpt: use unused extension id for mid when offering to receive simulcast"
         }
       ]
     },
@@ -23607,12 +23678,6 @@
           "author": "ricea@chromium.org",
           "hash": "4b1b05d5bd",
           "subject": "WebSocket: add wpt for sending 50 65K messages"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "leimy@chromium.org",
-          "hash": "65879f9a5e",
-          "subject": "Add BFCache WPT for pages with WebSocket/WebTransport/WebRTC"
         }
       ]
     },
@@ -23688,12 +23753,6 @@
           "author": "leimy@chromium.org",
           "hash": "d8b86fb0f1",
           "subject": "CCNS BFCache: do not cache CCNS page if WebRTC/Transport/Socket used"
-        },
-        {
-          "date": "2023-06-02",
-          "author": "leimy@chromium.org",
-          "hash": "65879f9a5e",
-          "subject": "Add BFCache WPT for pages with WebSocket/WebTransport/WebRTC"
         }
       ]
     },
@@ -24128,24 +24187,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "f761c811",
           "subject": "s/importTexture/importExternalTexture/ (#4170)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "github@greggman.com",
-          "hash": "70c20d32",
-          "subject": "Update browser template (#4156)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "fd@tidoust.net",
-          "hash": "7644945b",
-          "subject": "Really fix link for localizable text (#4157)"
-        },
-        {
-          "date": "2023-06-01",
-          "author": "kainino@chromium.org",
-          "hash": "c317fef2",
-          "subject": "[editorial] Fix GPUPipelineError constructor signature (#4160)"
         }
       ],
       "testlog": []
