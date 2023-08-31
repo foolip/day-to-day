@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-07-04T07:12:43.216Z",
-  "until": "2023-08-30T07:12:43.216Z",
+  "since": "2023-07-05T07:12:38.269Z",
+  "until": "2023-08-31T07:12:38.269Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -164,6 +164,18 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "apaseltiner@google.com",
+          "hash": "dd837b0",
+          "subject": "Replace explicit undefined-handling with monadic Maybe type (#976)"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "apaseltiner@google.com",
+          "hash": "883f545",
+          "subject": "Replace continuation functions with return values (#973)"
+        },
         {
           "date": "2023-08-29",
           "author": "apaseltiner@google.com",
@@ -859,7 +871,14 @@
           "subject": "[css-compositing][css-masking] Force rendering whitespaces around combinators"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "dbaron@chromium.org",
+          "hash": "808ba394dd",
+          "subject": "Add canvas-based test for composite modes."
+        }
+      ]
     },
     {
       "name": "Compression Streams",
@@ -1069,12 +1088,6 @@
           "author": "luke@warlow.dev",
           "hash": "c009d69",
           "subject": "Fix return type of CredentialsContainer.store"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mt@lowentropy.net",
-          "hash": "fd9b9e6",
-          "subject": "Fix typo (#212)"
         }
       ],
       "testlog": [
@@ -1174,6 +1187,66 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-08-31",
+          "author": "qjw@chromium.org",
+          "hash": "17ea600a39",
+          "subject": "Revert \"Invalidation on stylesheet changes using selector matching\""
+        },
+        {
+          "date": "2023-08-31",
+          "author": "jarhar@chromium.org",
+          "hash": "307d066be9",
+          "subject": "Add invalidation for :user-valid and :user-invalid"
+        },
+        {
+          "date": "2023-08-31",
+          "author": "sesse@chromium.org",
+          "hash": "1aaf432aa8",
+          "subject": "Invalidation on stylesheet changes using selector matching"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "dbaron@chromium.org",
+          "hash": "808ba394dd",
+          "subject": "Add canvas-based test for composite modes."
+        },
+        {
+          "date": "2023-08-30",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "ac71f8ee1d",
+          "subject": "WebKit export: [css-masking] Implement mask-border properties (#41717)"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "xiaochengh@chromium.org",
+          "hash": "b831e0389a",
+          "subject": "[anchor-position] Support margin properties in position fallback"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "aaronhk@chromium.org",
+          "hash": "f78f1aa35b",
+          "subject": "Permuting types is not invalid for relative color syntax"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "aaronhk@chromium.org",
+          "hash": "76a3f72ff6",
+          "subject": "Use the custom epsilons for color tests and make failure messages better"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "tlouw@mozilla.com",
+          "hash": "d9b04a8150",
+          "subject": "Remove tests that assert asymptote tan results should be +/- infinity"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "00976fe9ca",
+          "subject": "WebKit export: [css-typed-om] Add factory functions for all font relative units (#41705)"
+        },
         {
           "date": "2023-08-30",
           "author": "tlouw@mozilla.com",
@@ -2733,12 +2806,6 @@
           "author": "andruud@chromium.org",
           "hash": "6a2e412e80",
           "subject": "[@scope] Add WPT for :visited/:link privacy"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "lingqi@chromium.org",
-          "hash": "b01e8eb8ca",
-          "subject": "InlineLayout: Make text-box-trim respect writing mode"
         }
       ]
     },
@@ -2883,6 +2950,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "xiaochengh@chromium.org",
+          "hash": "b831e0389a",
+          "subject": "[anchor-position] Support margin properties in position fallback"
+        },
         {
           "date": "2023-08-25",
           "author": "xiaochengh@chromium.org",
@@ -3322,6 +3395,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "aaronhk@chromium.org",
+          "hash": "f78f1aa35b",
+          "subject": "Permuting types is not invalid for relative color syntax"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "aaronhk@chromium.org",
+          "hash": "76a3f72ff6",
+          "subject": "Use the custom epsilons for color tests and make failure messages better"
+        },
         {
           "date": "2023-08-30",
           "author": "tlouw@mozilla.com",
@@ -4103,12 +4188,6 @@
           "author": "dshin@mozilla.com",
           "hash": "52808e4cfd",
           "subject": "Line participants use block start ascent, instead of not-yet stored baseline."
-        },
-        {
-          "date": "2023-07-05",
-          "author": "lingqi@chromium.org",
-          "hash": "b01e8eb8ca",
-          "subject": "InlineLayout: Make text-box-trim respect writing mode"
         }
       ]
     },
@@ -4201,6 +4280,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "ac71f8ee1d",
+          "subject": "WebKit export: [css-masking] Implement mask-border properties (#41717)"
+        },
         {
           "date": "2023-08-27",
           "author": "nt1m@users.noreply.github.com",
@@ -4675,12 +4760,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "86f9e7739",
           "subject": "[meta] Affiliation change"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "2ea98994a",
-          "subject": "[css-pseudo-4][editorial] Fixed formatting in example 2"
         }
       ],
       "testlog": [
@@ -5094,6 +5173,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "git@florian.rivoal.net",
+          "hash": "09cf7fbcf",
+          "subject": "[css-text-4] Simplify phrasing in changelog"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "git@florian.rivoal.net",
+          "hash": "3a1eb8567",
+          "subject": "[css-text-4] split text-wrap mode into sub-properties"
+        },
         {
           "date": "2023-08-28",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5607,8 +5698,21 @@
       "href": "https://drafts.css-houdini.org/css-typed-om/",
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "4a4c20f",
+          "subject": "[css-typed-om] Add missing font units to CSS numeric factory (#1107)"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "00976fe9ca",
+          "subject": "WebKit export: [css-typed-om] Add factory functions for all font relative units (#41705)"
+        },
         {
           "date": "2023-08-02",
           "author": "nt1m@users.noreply.github.com",
@@ -5719,6 +5823,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "tlouw@mozilla.com",
+          "hash": "d9b04a8150",
+          "subject": "Remove tests that assert asymptote tan results should be +/- infinity"
+        },
         {
           "date": "2023-08-28",
           "author": "nt1m@users.noreply.github.com",
@@ -6129,6 +6239,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "gui.lebas@gmail.com",
+          "hash": "a578439a2",
+          "subject": "[cssom-1] Throw explicit SyntaxError DOMException (#9272)"
+        },
         {
           "date": "2023-07-14",
           "author": "jackalmage@gmail.com",
@@ -6573,6 +6689,12 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2023-08-31",
+          "author": "syg@chromium.org",
+          "hash": "b12a244f",
+          "subject": "Editorial: Make all spec enums lower kebab-case (#3154)"
+        },
         {
           "date": "2023-08-23",
           "author": "mficarra@shapesecurity.com",
@@ -8843,6 +8965,18 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-08-30",
+          "author": "s.h.h.n.j.k@gmail.com",
+          "hash": "8b9a6755",
+          "subject": "Ignore possible markup in target attribute"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "fbraun+gh@mozilla.com",
+          "hash": "083c58dc",
+          "subject": "Editorial: replace unique origin with opaque origin"
+        },
+        {
           "date": "2023-08-29",
           "author": "annevk@annevk.nl",
           "hash": "ad94bbee",
@@ -9069,15 +9203,33 @@
           "author": "d@domenic.me",
           "hash": "c7bd706a",
           "subject": "Editorial: fix popover attribute index entries"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "nribaudo@igalia.com",
-          "hash": "bff19fb8",
-          "subject": "Editorial: fix links to fetch request initiator type"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-30",
+          "author": "emilio@crisal.io",
+          "hash": "5fb8e04649",
+          "subject": "Make editable states not intrinsic."
+        },
+        {
+          "date": "2023-08-30",
+          "author": "jkokatsu@google.com",
+          "hash": "1b0f7bb302",
+          "subject": "Rename dangling-markup-window-name test"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "mrobinson@igalia.com",
+          "hash": "854961c3d9",
+          "subject": "Convert /_mozilla/css/iframe/multiple_external.html into a WPT crashtest"
+        },
+        {
+          "date": "2023-08-30",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "e58a5f29e9",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=260865 (#41698)"
+        },
         {
           "date": "2023-08-29",
           "author": "jarhar@chromium.org",
@@ -9683,18 +9835,6 @@
           "author": "jarhar@chromium.org",
           "hash": "26d5781e00",
           "subject": "Wait for animation in reportValidity-bubble reftest (#40836)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "zsun@igalia.com",
-          "hash": "b824809c2e",
-          "subject": "Wait for the rendering done before calling hidepopover()."
-        },
-        {
-          "date": "2023-07-04",
-          "author": "vhilla@mozilla.com",
-          "hash": "ed83740f5e",
-          "subject": "Implement oncancel idl attribute."
         }
       ]
     },
@@ -10242,6 +10382,18 @@
       "href": "https://w3c.github.io/mathml-aam/",
       "specrepo": "https://github.com/w3c/mathml-aam",
       "speclog": [
+        {
+          "date": "2023-08-29",
+          "author": "spectranaut@igalia.com",
+          "hash": "d70ae52",
+          "subject": "Remove empty section"
+        },
+        {
+          "date": "2023-08-29",
+          "author": "spectranaut@igalia.com",
+          "hash": "9a978e6",
+          "subject": "Editorial: remove giant table in favor of headings"
+        },
         {
           "date": "2023-08-29",
           "author": "fwang@igalia.com",
@@ -12015,6 +12167,12 @@
       "testpolicy": "https://github.com/w3c/pointerevents/blob/gh-pages/README.markdown#editing-process",
       "speclog": [
         {
+          "date": "2023-08-30",
+          "author": "mustaq@chromium.org",
+          "hash": "978bfa2",
+          "subject": "Update README.md to point to latest editor's draft (#479)"
+        },
+        {
           "date": "2023-08-03",
           "author": "redux@splintered.co.uk",
           "hash": "9b958f4",
@@ -12031,18 +12189,6 @@
           "author": "mustaq@chromium.org",
           "hash": "2f613d9",
           "subject": "Editorial changes: move tilt calculation section, normalize header tags (#476)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mustaq@chromium.org",
-          "hash": "90c71b2",
-          "subject": "Clarify pointercancel coordinates (#473)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mustaq@chromium.org",
-          "hash": "300cca0",
-          "subject": "Define target and event-order for click, auxclick and contextmenu events (#474)"
         }
       ],
       "testlog": [
@@ -12140,12 +12286,6 @@
           "author": "jbroman@chromium.org",
           "hash": "d16e7f9",
           "subject": "Restrict updated credentials checks to cross-partition. (#279)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mcnee@chromium.org",
-          "hash": "c1f4946",
-          "subject": "Add spec for No-Vary-Search hint in speculation rules (#278)"
         }
       ],
       "testlog": []
@@ -12160,12 +12300,6 @@
           "author": "jbroman@chromium.org",
           "hash": "d16e7f9",
           "subject": "Restrict updated credentials checks to cross-partition. (#279)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mcnee@chromium.org",
-          "hash": "c1f4946",
-          "subject": "Add spec for No-Vary-Search hint in speculation rules (#278)"
         }
       ],
       "testlog": []
@@ -12479,6 +12613,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-08-30",
+          "author": "kevers@google.com",
+          "hash": "c7638cd483",
+          "subject": "[SDA] Avoid initializing a deferred start time based on a potentially stale timeline."
+        },
+        {
           "date": "2023-08-25",
           "author": "andruud@chromium.org",
           "hash": "4d70d25121",
@@ -12626,6 +12766,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-08-31",
+          "author": "qjw@chromium.org",
+          "hash": "17ea600a39",
+          "subject": "Revert \"Invalidation on stylesheet changes using selector matching\""
+        },
+        {
+          "date": "2023-08-31",
+          "author": "jarhar@chromium.org",
+          "hash": "307d066be9",
+          "subject": "Add invalidation for :user-valid and :user-invalid"
+        },
+        {
+          "date": "2023-08-31",
+          "author": "sesse@chromium.org",
+          "hash": "1aaf432aa8",
+          "subject": "Invalidation on stylesheet changes using selector matching"
+        },
         {
           "date": "2023-08-29",
           "author": "nt1m@users.noreply.github.com",
@@ -12902,12 +13060,6 @@
           "author": "jbroman@chromium.org",
           "hash": "d16e7f9",
           "subject": "Restrict updated credentials checks to cross-partition. (#279)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mcnee@chromium.org",
-          "hash": "c1f4946",
-          "subject": "Add spec for No-Vary-Search hint in speculation rules (#278)"
         }
       ],
       "testlog": [
@@ -13012,12 +13164,6 @@
           "author": "krosylight@mozilla.com",
           "hash": "b6cddc4617",
           "subject": "Add test"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "evilpies@gmail.com",
-          "hash": "b9a5d6d163",
-          "subject": "Implement ReadableStream.from."
         }
       ]
     },
@@ -13082,12 +13228,6 @@
           "author": "longsonr@gmail.com",
           "hash": "3a91a862e1",
           "subject": "support async defer and module scripts"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "longsonr@gmail.com",
-          "hash": "9a3737daff",
-          "subject": "SVG patternTransform translate uses wrong units"
         }
       ]
     },
@@ -13323,18 +13463,6 @@
           "author": "benallen@igalia.com",
           "hash": "6649e65",
           "subject": "Editorial: changed \"string\" to ~string~ as type in calls to GetOption (#160)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "ryzokuken@users.noreply.github.com",
-          "hash": "cb1bbb9",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "ryzokuken@disroot.org",
-          "hash": "a63ee7f",
-          "subject": "editorial: simplify PartitionDurationFormatPattern"
         }
       ],
       "testlog": []
@@ -14628,6 +14756,12 @@
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
         {
+          "date": "2023-08-30",
+          "author": "106394951+giacomo-petri@users.noreply.github.com",
+          "hash": "7bedf9bc",
+          "subject": "Typo issue: accessibility children definition contains wrong li closing tag (#2020)"
+        },
+        {
           "date": "2023-08-23",
           "author": "spectranaut@igalia.com",
           "hash": "bf10d800",
@@ -15083,30 +15217,6 @@
           "author": "agl@chromium.org",
           "hash": "c5064ef",
           "subject": "Clarify that the platform authenticator must be local."
-        },
-        {
-          "date": "2023-07-05",
-          "author": "sbweeden@users.noreply.github.com",
-          "hash": "a165fab",
-          "subject": "Accept suggested from @emlun"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "sbweeden@users.noreply.github.com",
-          "hash": "836dfb5",
-          "subject": "Acc"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "sbweeden@users.noreply.github.com",
-          "hash": "39c1354",
-          "subject": "Accept suggested from @emlun"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "sbweeden@users.noreply.github.com",
-          "hash": "ce3e33e",
-          "subject": "Accept suggested from @emlun"
         }
       ],
       "testlog": []
@@ -16682,7 +16792,14 @@
       "name": "Secure Curves in the Web Cryptography API",
       "href": "https://wicg.github.io/webcrypto-secure-curves/",
       "specrepo": "https://github.com/WICG/webcrypto-secure-curves",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "d.huigens@protonmail.com",
+          "hash": "c9eaaac",
+          "subject": "Remove JWK \"alg\" field (#24)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -16945,24 +17062,6 @@
           "author": "tperrotta@chromium.org",
           "hash": "0374f9101e",
           "subject": "script: add missing serialization tests: iterator, generator, proxy (#40814)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "jdescottes@mozilla.com",
-          "hash": "e5b6ea9b6d",
-          "subject": "[wdspec] Add WebDriver BiDi tests for actions on elements in ShadowRoot"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mail@hskupin.info",
-          "hash": "7be690e980",
-          "subject": "[wdspec] Extend timeout for classic/perform_actions/invalid.py."
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mail@hskupin.info",
-          "hash": "2bc347c0e9",
-          "subject": "[wdspec] Add tests for parsing of actions messages."
         }
       ]
     },
@@ -17144,54 +17243,6 @@
           "author": "mail@hskupin.info",
           "hash": "d454e13",
           "subject": "Switch to new rust-toolchain because actions-rs/toolchain is unmaintained (#470)"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "jrandolf@chromium.org",
-          "hash": "4f6ffa4",
-          "subject": "Update missing script event"
-        },
-        {
-          "date": "2023-07-05",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "22bd00f",
-          "subject": "Update misspelling (#468)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "mathias@qiwi.be",
-          "hash": "9e7c555",
-          "subject": "Update phrasing in README (#464)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "8f39d8a",
-          "subject": "Use * for DisownParameters (#467)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "f864c0f",
-          "subject": "Update error codes (#466)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "38d2aa7",
-          "subject": "Add generation for all types (#465)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "jrandolf@chromium.org",
-          "hash": "6a9ce86",
-          "subject": "Use `.and` instead of composition"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "e6a76e8",
-          "subject": "Use parenthesis for base types (#460)"
         }
       ],
       "testlog": []
@@ -18766,6 +18817,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2023-08-30",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "32f56d43",
+          "subject": "Adjust Makefile to Handle wgsl Dependency Issues (#4276)"
+        },
+        {
           "date": "2023-08-18",
           "author": "28601907+teoxoy@users.noreply.github.com",
           "hash": "635ae9a1",
@@ -18950,18 +19007,6 @@
           "author": "alanbaker@google.com",
           "hash": "4cfa94bf",
           "subject": "Always connect the uniformity graph after a function call. (#4218)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "dneto@google.com",
-          "hash": "65bfe0fd",
-          "subject": "Clarify rounding of an overflow intermediate value (#4184)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "cartersnook04@gmail.com",
-          "hash": "ddd62176",
-          "subject": "fix(wgsl): typo in example (#4209)"
         }
       ],
       "testlog": []
@@ -19027,6 +19072,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2023-08-30",
+          "author": "dom@w3.org",
+          "hash": "b68550f",
+          "subject": "Do not include metadata collapsible into expand/collapse all button (#460)"
+        },
         {
           "date": "2023-08-25",
           "author": "zoltan.kis@intel.com",
@@ -19848,6 +19899,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2023-08-30",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "32f56d43",
+          "subject": "Adjust Makefile to Handle wgsl Dependency Issues (#4276)"
+        },
+        {
           "date": "2023-08-18",
           "author": "28601907+teoxoy@users.noreply.github.com",
           "hash": "635ae9a1",
@@ -20032,18 +20089,6 @@
           "author": "alanbaker@google.com",
           "hash": "4cfa94bf",
           "subject": "Always connect the uniformity graph after a function call. (#4218)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "dneto@google.com",
-          "hash": "65bfe0fd",
-          "subject": "Clarify rounding of an overflow intermediate value (#4184)"
-        },
-        {
-          "date": "2023-07-04",
-          "author": "cartersnook04@gmail.com",
-          "hash": "ddd62176",
-          "subject": "fix(wgsl): typo in example (#4209)"
         }
       ],
       "testlog": []
