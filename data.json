@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-07-25T07:12:42.895Z",
-  "until": "2023-09-20T07:12:42.895Z",
+  "since": "2023-07-26T07:12:43.469Z",
+  "until": "2023-09-21T07:12:43.469Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -64,6 +64,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -175,6 +181,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "apaseltiner@google.com",
+          "hash": "31f8bf8",
+          "subject": "Make default event-level attributions per source a spec constant (#1022)"
+        },
         {
           "date": "2023-09-19",
           "author": "csharrison@chromium.org",
@@ -792,36 +804,6 @@
           "author": "apaseltiner@google.com",
           "hash": "c9e6f4a",
           "subject": "Allow integer duration fields in schema and header validator (#909)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "csharrison@chromium.org",
-          "hash": "28f138b",
-          "subject": "Dynamic epsilon computation (#913)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "apaseltiner@google.com",
-          "hash": "ef2ae61",
-          "subject": "Propagate source_type to get_config function (#912)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "csharrison@chromium.org",
-          "hash": "3a53134",
-          "subject": "Minor fixes to flex api script (#910)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "csharrison@chromium.org",
-          "hash": "cad9329",
-          "subject": "Flex lite schema and header validator (#898)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "paul.goldbaum@gmail.com",
-          "hash": "5b46928",
-          "subject": "Add Seedtag to the testers list (#906)"
         }
       ],
       "testlog": []
@@ -1372,6 +1354,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "xiaochengh@chromium.org",
+          "hash": "5f32eebc09",
+          "subject": "Revert \"[anchor-position] Support margin properties in position fallback\""
+        },
+        {
+          "date": "2023-09-20",
+          "author": "mstensho@chromium.org",
+          "hash": "3f1830341f",
+          "subject": "Correct fragmentation of floats inside inlines."
+        },
+        {
+          "date": "2023-09-20",
+          "author": "awogbemila@chromium.org",
+          "hash": "be778b527a",
+          "subject": "Bail if clamp limits are invalid"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "fs@opera.com",
+          "hash": "4497b5926b",
+          "subject": "Fix 'currentcolor' handling for drop-shadow(...) filter functions"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "fantasai.cvs@inkedblade.net",
+          "hash": "92848498cc",
+          "subject": "Tests for alignment properties in blocks."
+        },
         {
           "date": "2023-09-20",
           "author": "mstensho@chromium.org",
@@ -3201,42 +3213,6 @@
           "author": "fred.wang@free.fr",
           "hash": "b0e44bd8f1",
           "subject": "Implement CSS font-size: math and math-depth properties."
-        },
-        {
-          "date": "2023-07-26",
-          "author": "109102217+mdubet@users.noreply.github.com",
-          "hash": "8d4bc62bb0",
-          "subject": "Fix css-nesting parsing typo (#41172)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "vmpstr@chromium.org",
-          "hash": "be8d01a069",
-          "subject": "VT: Add mix-blend-mode to the list of items copied to the group"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "vmpstr@chromium.org",
-          "hash": "dfe3689ef4",
-          "subject": "VT: Avoid optimization clips for VT element and subtrees (except root)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "emilio@crisal.io",
-          "hash": "c665e0a1a3",
-          "subject": "Add a WPT for the counter scoping issue mentioned in comment 9."
-        },
-        {
-          "date": "2023-07-25",
-          "author": "boris.chiou@gmail.com",
-          "hash": "9a13f4bc0c",
-          "subject": "Add rect() tests for clip-path."
-        },
-        {
-          "date": "2023-07-25",
-          "author": "boris.chiou@gmail.com",
-          "hash": "bcfcf0d58d",
-          "subject": "Support rect() function."
         }
       ]
     },
@@ -3293,7 +3269,14 @@
           "subject": "[meta] Affiliation change"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "fantasai.cvs@inkedblade.net",
+          "hash": "92848498cc",
+          "subject": "Tests for alignment properties in blocks."
+        }
+      ]
     },
     {
       "name": "CSS Anchor Positioning",
@@ -3327,6 +3310,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "xiaochengh@chromium.org",
+          "hash": "5f32eebc09",
+          "subject": "Revert \"[anchor-position] Support margin properties in position fallback\""
+        },
         {
           "date": "2023-09-06",
           "author": "xiaochengh@chromium.org",
@@ -3510,6 +3499,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-20",
+          "author": "mstensho@chromium.org",
+          "hash": "3f1830341f",
+          "subject": "Correct fragmentation of floats inside inlines."
+        },
+        {
           "date": "2023-09-19",
           "author": "aethanyc@gmail.com",
           "hash": "f97de030cf",
@@ -3629,6 +3624,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "chris@w3.org",
+          "hash": "721551821",
+          "subject": "[css-color-5][editorial] wpt"
+        },
         {
           "date": "2023-09-11",
           "author": "chris@w3.org",
@@ -3766,18 +3767,6 @@
           "author": "nschonni@gmail.com",
           "hash": "11b6b73f6",
           "subject": "fix: typos across specs (#9164)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "chris@w3.org",
-          "hash": "b1ed09f09",
-          "subject": "[css-color-5][editorial] more highlighting"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "chris@w3.org",
-          "hash": "d3434ef27",
-          "subject": "[css-color-5] Fix syntax highlighting in example, see #8499"
         }
       ],
       "testlog": [
@@ -4060,12 +4049,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "45dca2414d",
           "subject": "CV: Add a test for first visibility determination (#41205)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "emilio@crisal.io",
-          "hash": "c665e0a1a3",
-          "subject": "Add a WPT for the counter scoping issue mentioned in comment 9."
         }
       ]
     },
@@ -4207,6 +4190,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "gui.lebas@gmail.com",
+          "hash": "97dc112bb",
+          "subject": "Fix Bikeshed error"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "gui.lebas@gmail.com",
+          "hash": "3f5b6ead6",
+          "subject": "[css-fonts-4] Remove duplicate definition of <palette-mix()> as a type"
+        },
         {
           "date": "2023-09-16",
           "author": "chris@w3.org",
@@ -4873,12 +4868,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "54bd8b0ebd",
           "subject": "Remove tests involving `mask-origin: margin-box` (#41279)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "boris.chiou@gmail.com",
-          "hash": "9a13f4bc0c",
-          "subject": "Add rect() tests for clip-path."
         }
       ]
     },
@@ -5011,12 +5000,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "4026105f17",
           "subject": "Fix nesting (#41213)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "109102217+mdubet@users.noreply.github.com",
-          "hash": "8d4bc62bb0",
-          "subject": "Fix css-nesting parsing typo (#41172)"
         }
       ]
     },
@@ -5026,6 +5009,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "sebastianzartner@gmail.com",
+          "hash": "8b6c9e698",
+          "subject": "[css-overflow-4] Rephrased description of `max-lines` to avoid double negative"
+        },
         {
           "date": "2023-08-28",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5068,6 +5057,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "c52f1408a",
+          "subject": "[css-page-3] Update former editors"
+        },
         {
           "date": "2023-09-13",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5378,6 +5373,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "awogbemila@chromium.org",
+          "hash": "be778b527a",
+          "subject": "Bail if clamp limits are invalid"
+        },
         {
           "date": "2023-09-12",
           "author": "hikezoe.birchill@mozilla.com",
@@ -6759,18 +6760,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "dcf353e284",
           "subject": "VT: Copy text-orientation to the pseudo elements"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "vmpstr@chromium.org",
-          "hash": "be8d01a069",
-          "subject": "VT: Add mix-blend-mode to the list of items copied to the group"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "vmpstr@chromium.org",
-          "hash": "dfe3689ef4",
-          "subject": "VT: Avoid optimization clips for VT element and subtrees (except root)"
         }
       ]
     },
@@ -7751,18 +7740,6 @@
           "author": "justingrant@users.noreply.github.com",
           "hash": "425716345f",
           "subject": "Test Temporal.Instant w/ trailing zeroes in offset"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "justingrant@users.noreply.github.com",
-          "hash": "c84752415d",
-          "subject": "Test PlainTime without full ISO strings"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "justingrant@users.noreply.github.com",
-          "hash": "e8bbfe704f",
-          "subject": "Ensure that non-string TimeZone IDs will throw"
         }
       ]
     },
@@ -7887,14 +7864,7 @@
       "name": "Encrypted Media Extensions",
       "href": "https://w3c.github.io/encrypted-media/",
       "specrepo": "https://github.com/w3c/encrypted-media",
-      "speclog": [
-        {
-          "date": "2023-07-25",
-          "author": "gregwf@netflix.com",
-          "hash": "2a7f0c1",
-          "subject": "498 naming inconsistency for monitor for cdm state changes (#509)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -7917,6 +7887,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -8022,6 +7998,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -8125,6 +8107,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -8230,6 +8218,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -8333,6 +8327,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -8438,6 +8438,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -8541,6 +8547,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -8646,6 +8658,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -8749,6 +8767,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -8854,6 +8878,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -8957,6 +8987,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -9062,6 +9098,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -9165,6 +9207,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -9355,15 +9403,15 @@
           "author": "blu2.5@me.com",
           "hash": "eb6b50e",
           "subject": "Add scroll bubbling monkeypatches (#71)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "domfarolino@gmail.com",
-          "hash": "03267d0",
-          "subject": "Add remaining step number fix to permissions policy integration"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "xtlsheep@google.com",
+          "hash": "a48e5b6594",
+          "subject": "Rename X-Allow-FLEDGE to Ad-Auction-Allowed"
+        },
         {
           "date": "2023-09-11",
           "author": "xtlsheep@google.com",
@@ -9453,12 +9501,6 @@
           "author": "lbrady@google.com",
           "hash": "7ba5e0498f",
           "subject": "Fenced frames: add WPT for scrollIntoView() bubbling."
-        },
-        {
-          "date": "2023-07-25",
-          "author": "gtanzer@chromium.org",
-          "hash": "18f69d13d7",
-          "subject": "Fenced frames: Add reporting to custom destination urls [1/N]"
         }
       ]
     },
@@ -9479,21 +9521,15 @@
           "author": "drobertson@mozilla.com",
           "hash": "f64d43f",
           "subject": "Editorial: create the build a content range algorithm"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "johnathan79717@gmail.com",
-          "hash": "53e4c3d",
-          "subject": "Editorial: fix typo"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "drobertson@mozilla.com",
-          "hash": "b01c8c9",
-          "subject": "Editorial: add structure to create a connection"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "phao@chromium.org",
+          "hash": "54fce811de",
+          "subject": "[Private Network Access] Separate PNA header WPTs out as tentative"
+        },
         {
           "date": "2023-09-19",
           "author": "farre@mozilla.com",
@@ -9571,12 +9607,6 @@
           "author": "phao@chromium.org",
           "hash": "87ca4f6a0e",
           "subject": "Split iframe PNA test"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "mych@chromium.org",
-          "hash": "e46c434cd0",
-          "subject": "[fetch-later] Implement skeleton of fetchLater API"
         }
       ]
     },
@@ -9657,6 +9687,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "fs@opera.com",
+          "hash": "4497b5926b",
+          "subject": "Fix 'currentcolor' handling for drop-shadow(...) filter functions"
+        },
         {
           "date": "2023-09-19",
           "author": "mattwoodrow@apple.com",
@@ -9757,6 +9793,18 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-21",
+          "author": "asully@chromium.org",
+          "hash": "ac9a1fd042",
+          "subject": "FSA: Remove tentative label on FileSystemSyncAccessHandle wpts"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "asully@chromium.org",
+          "hash": "df65e48efa",
+          "subject": "FSA: Allow use of ArrayBuffer for SyncAccessHandle.read and .write"
+        },
+        {
           "date": "2023-09-07",
           "author": "memmott@chromium.org",
           "hash": "f0df2a4527",
@@ -9847,12 +9895,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "34a23e2",
           "subject": "Clean up some <dfn>s that were not referenced (#465)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "d3431b7",
-          "subject": "Clean up spec metadata (#464)"
         }
       ],
       "testlog": [],
@@ -10185,27 +10227,21 @@
           "author": "barrypollard@google.com",
           "hash": "27a0b5d3",
           "subject": "Clarify the HTTP notation used in the early hints examples"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "domfarolino@gmail.com",
-          "hash": "b729c065",
-          "subject": "Use matches about:blank in more cases"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "jarhar@chromium.org",
-          "hash": "eed5c0e2",
-          "subject": "Remove erroneous break in hide popover algorithm"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "redux@splintered.co.uk",
-          "hash": "02a45c96",
-          "subject": "Adjust thead description to clarify it can contain non-header cells"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "tkent@chromium.org",
+          "hash": "f8b45b803f",
+          "subject": "Implement form-sizing behavior for <textarea> and text <input>"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "zsun@igalia.com",
+          "hash": "82e338daae",
+          "subject": "Use polyfill the declarative shadow DOM function for related popover tests."
+        },
         {
           "date": "2023-09-19",
           "author": "hsivonen@hsivonen.fi",
@@ -10805,12 +10841,6 @@
           "author": "fred.wang@free.fr",
           "hash": "b0e44bd8f1",
           "subject": "Implement CSS font-size: math and math-depth properties."
-        },
-        {
-          "date": "2023-07-25",
-          "author": "pkotwicz@chromium.org",
-          "hash": "b8294eb4bd",
-          "subject": "Make <selectmenu> use flex-inline instead of line-block"
         }
       ]
     },
@@ -11057,12 +11087,6 @@
           "author": "estade@chromium.org",
           "hash": "a02414f05f",
           "subject": "WPT: remove redundant test."
-        },
-        {
-          "date": "2023-07-26",
-          "author": "estade@chromium.org",
-          "hash": "c514f20854",
-          "subject": "IndexedDB: Remove experimental method `batchGetAll`"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -11208,6 +11232,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -11757,12 +11787,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "b4ffc4e862",
           "subject": "[motion] `offset-position` initial value is `normal`"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "boris.chiou@gmail.com",
-          "hash": "bcfcf0d58d",
-          "subject": "Support rect() function."
         }
       ]
     },
@@ -11865,6 +11889,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_draw_buffers_indexed/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -11970,6 +12000,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -12073,6 +12109,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_fbo_render_mipmap/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -12178,6 +12220,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -12281,6 +12329,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -12386,6 +12440,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -12489,6 +12549,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -12594,6 +12660,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -12697,6 +12769,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -12864,6 +12942,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -14118,20 +14202,7 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [
-        {
-          "date": "2023-07-25",
-          "author": "mattreynolds@google.com",
-          "hash": "59de5c4",
-          "subject": "Add support for Bluetooth serial ports (#189)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "jesse.melhuish@gmail.com",
-          "hash": "d8e484f",
-          "subject": "Update EXPLAINER_BLUETOOTH.md (#192)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -14148,6 +14219,12 @@
       "specrepo": "https://github.com/w3c/ServiceWorker",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "annevk@annevk.nl",
+          "hash": "4711a07",
+          "subject": "Editorial: remove API URL character encoding"
+        },
+        {
           "date": "2023-09-12",
           "author": "mike@mikepennisi.com",
           "hash": "d122445",
@@ -14155,6 +14232,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "tnak@chromium.org",
+          "hash": "36de8d08de",
+          "subject": "Add WPT on RequestMode condition in ServiceWorker Static Routing API"
+        },
         {
           "date": "2023-08-02",
           "author": "yyanagisawa@chromium.org",
@@ -14182,6 +14265,12 @@
       "href": "https://wicg.github.io/shared-storage/",
       "specrepo": "https://github.com/WICG/shared-storage",
       "speclog": [
+        {
+          "date": "2023-09-14",
+          "author": "cammie@chromium.org",
+          "hash": "f969924",
+          "subject": "Change From Per-Origin to Per-Site Budgets"
+        },
         {
           "date": "2023-09-12",
           "author": "cammie@chromium.org",
@@ -14423,12 +14512,6 @@
           "author": "adithyas@chromium.org",
           "hash": "17a2a4e9c1",
           "subject": "DocumentRules: Add WPTs to test the document's baseURI changing"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "liviutinta@chromium.org",
-          "hash": "f105323407",
-          "subject": "[no-vary-search-hint] Invalid NVS hint equals default URL variance"
         }
       ]
     },
@@ -15431,6 +15514,12 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "74069328+psposito@users.noreply.github.com",
+          "hash": "b70b046",
+          "subject": "Including CNN Brasil (#819)"
+        },
+        {
           "date": "2023-09-15",
           "author": "39124986+kodaikureishi@users.noreply.github.com",
           "hash": "a5f6630",
@@ -15858,6 +15947,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "annevk@annevk.nl",
+          "hash": "9057992",
+          "subject": "Editorial: rename host parser's isNotSpecial to isOpaque"
+        },
+        {
           "date": "2023-09-19",
           "author": "annevk@annevk.nl",
           "hash": "b86ab66",
@@ -15951,32 +16046,7 @@
       "name": "User Preference Media Features Client Hints Headers",
       "href": "https://wicg.github.io/user-preference-media-features-headers/",
       "specrepo": "https://github.com/WICG/user-preference-media-features-headers",
-      "speclog": [
-        {
-          "date": "2023-07-25",
-          "author": "tomac@google.com",
-          "hash": "d128f0d",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "tomac@google.com",
-          "hash": "d115a86",
-          "subject": "ACK Mike"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "tomac@google.com",
-          "hash": "b136e69",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "tomac@google.com",
-          "hash": "f6fa77a",
-          "subject": "Add privacy considerations"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -16079,12 +16149,6 @@
           "author": "106394951+giacomo-petri@users.noreply.github.com",
           "hash": "411bd508",
           "subject": "Updated the characteristics table of \"caption\" role (#1975)"
-        },
-        {
-          "date": "2023-07-25",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "dc191883",
-          "subject": "Clarification for exposure of generic elements (#1949)"
         }
       ],
       "testlog": [
@@ -16149,6 +16213,18 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2023-09-21",
+          "author": "tlively@google.com",
+          "hash": "0c5b9c00",
+          "subject": "[test] Test that atypical folded if conditions are parsed correctly (#1682)"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "keithw@cs.stanford.edu",
+          "hash": "cf73a6d5",
+          "subject": "[test] text format: drop support for some pre-standard keywords (#1680)"
+        },
         {
           "date": "2023-09-08",
           "author": "yamamoto@midokura.com",
@@ -16373,6 +16449,12 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "mjwilson@chromium.org",
+          "hash": "3260be36",
+          "subject": "Specify AnalyserNode treatment of non-finite values."
+        },
+        {
           "date": "2023-09-11",
           "author": "hongchan.choi@gmail.com",
           "hash": "cc19b6f8",
@@ -16410,6 +16492,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "karlt+@karlt.net",
+          "hash": "9a48e8108c",
+          "subject": "use last value of previous event for start of SetTargetAtTime() curves"
+        },
         {
           "date": "2023-09-18",
           "author": "chrisguttandin@media-codings.com",
@@ -16483,6 +16571,12 @@
           "author": "mmiller@duosecurity.com",
           "hash": "6b9a840",
           "subject": "Suggest empty string for displayName when needed"
+        },
+        {
+          "date": "2023-08-24",
+          "author": "shinkieun@gmail.com",
+          "hash": "4800133",
+          "subject": "Fix inconsistent usage of options variable"
         },
         {
           "date": "2023-08-23",
@@ -16596,6 +16690,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-20",
+          "author": "dalecurtis@chromium.org",
+          "hash": "fda8482a03",
+          "subject": "Improve WebCodecs spec compliance; fix WPT regressions."
+        },
         {
           "date": "2023-09-11",
           "author": "gsnedders@apple.com",
@@ -17191,6 +17291,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-20",
+          "author": "mail@hskupin.info",
+          "hash": "3d3046f012",
+          "subject": "[wdspec] Add and refactor tests for parsing of action messages for WebDriver BiDi."
+        },
+        {
           "date": "2023-09-14",
           "author": "nvitkov@chromium.org",
           "hash": "52c05f7a64",
@@ -17403,6 +17509,12 @@
       "speclog": [
         {
           "date": "2023-09-20",
+          "author": "tperrotta@chromium.org",
+          "hash": "18e0fcc",
+          "subject": "editorial: sort references and add periods (#553)"
+        },
+        {
+          "date": "2023-09-20",
           "author": "mike@mikepennisi.com",
           "hash": "6d01649",
           "subject": "Editorial: use \"Date.prototype.toISOString\" as defined by ECMA262 (#539)"
@@ -17566,6 +17678,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -17669,6 +17787,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -17774,6 +17898,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -17877,6 +18007,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -17982,6 +18118,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -18085,6 +18227,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -18190,6 +18338,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -18293,6 +18447,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -18398,6 +18558,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -18501,6 +18667,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -18606,6 +18778,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -18709,6 +18887,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -18814,6 +18998,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -18917,6 +19107,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -19022,6 +19218,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -19125,6 +19327,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
@@ -19230,6 +19438,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
+        {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
           "hash": "0ca2eac35",
@@ -19333,6 +19547,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-20",
+          "author": "kainino@chromium.org",
+          "hash": "9cec5e271",
+          "subject": "Add smoke test that texImage2D doesn't lose bit depth (#3578)"
+        },
         {
           "date": "2023-09-08",
           "author": "kbrussel@alum.mit.edu",
