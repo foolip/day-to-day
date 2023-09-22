@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-07-26T07:12:43.469Z",
-  "until": "2023-09-21T07:12:43.469Z",
+  "since": "2023-07-27T07:12:39.614Z",
+  "until": "2023-09-22T07:12:39.614Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -64,6 +64,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
         {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
@@ -129,42 +141,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -181,6 +157,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2023-09-21",
+          "author": "apaseltiner@google.com",
+          "hash": "be54195",
+          "subject": "Clarify summary-value computation (#1035)"
+        },
         {
           "date": "2023-09-20",
           "author": "apaseltiner@google.com",
@@ -792,18 +774,6 @@
           "author": "apaseltiner@google.com",
           "hash": "0f2917d",
           "subject": "Add separate verbose debug report for event report window not started (#916)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "csharrison@chromium.org",
-          "hash": "88e3e8c",
-          "subject": "Support top level event_report_windows in flex api script (#915)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "apaseltiner@google.com",
-          "hash": "c9e6f4a",
-          "subject": "Allow integer duration fields in schema and header validator (#909)"
         }
       ],
       "testlog": []
@@ -952,6 +922,12 @@
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
       "speclog": [
+        {
+          "date": "2023-09-21",
+          "author": "dom@w3.org",
+          "hash": "39b067c",
+          "subject": "Scope events to GlobalEventHandlers  (#196)"
+        },
         {
           "date": "2023-09-18",
           "author": "45411397+snianu@users.noreply.github.com",
@@ -1354,6 +1330,60 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-09-22",
+          "author": "kojii@chromium.org",
+          "hash": "ba70881d5c",
+          "subject": "[text-spacing-trim] Add a test font that has `halt`"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "2985a9997f",
+          "subject": "WebKit export: CSS <position> should never serialize to a single value (#42112)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "xiaochengh@chromium.org",
+          "hash": "5c64599f92",
+          "subject": "Make sure fixed-length getComputedStyle() inset values roundtrip"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "86693b117d",
+          "subject": "Fix css/css-transforms/transform-2d-getComputedStyle-001.html"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "kevers@google.com",
+          "hash": "6e5d0de739",
+          "subject": "Fix all-with-discrete transition test"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "fs@opera.com",
+          "hash": "983ffcf78c",
+          "subject": "Add drop-shadow() currentcolor test for filter on SVG content"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "sakhapov@chromium.org",
+          "hash": "98a8e0b28f",
+          "subject": "Fix tests and expectations for css counters"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "oj@oojmed.com",
+          "hash": "27a15a6ffb",
+          "subject": "Implement CSS attr() fallback"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "adf335defc",
+          "subject": "WebKit export: [motion-path] Offset path inset shape tests with border-radius are failing (#42052)"
+        },
         {
           "date": "2023-09-21",
           "author": "xiaochengh@chromium.org",
@@ -3201,18 +3231,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "45dca2414d",
           "subject": "CV: Add a test for first visibility determination (#41205)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "spectranaut@igalia.com",
-          "hash": "ed878e93c0",
-          "subject": "Correct CSS system color Highlight and HighlightText"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "fred.wang@free.fr",
-          "hash": "b0e44bd8f1",
-          "subject": "Implement CSS font-size: math and math-depth properties."
         }
       ]
     },
@@ -3871,12 +3889,6 @@
           "author": "tlouw@mozilla.com",
           "hash": "d234d864b5",
           "subject": "Clamp and normalize color values to appropriate ranges."
-        },
-        {
-          "date": "2023-07-26",
-          "author": "spectranaut@igalia.com",
-          "hash": "ed878e93c0",
-          "subject": "Correct CSS system color Highlight and HighlightText"
         }
       ]
     },
@@ -4383,12 +4395,6 @@
           "author": "109102217+mdubet@users.noreply.github.com",
           "hash": "125540f94b",
           "subject": "WebKit export: Allow matching of empty font-family names for web fonts (#41259)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "fred.wang@free.fr",
-          "hash": "b0e44bd8f1",
-          "subject": "Implement CSS font-size: math and math-depth properties."
         }
       ]
     },
@@ -4714,6 +4720,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-21",
+          "author": "sakhapov@chromium.org",
+          "hash": "98a8e0b28f",
+          "subject": "Fix tests and expectations for css counters"
+        },
+        {
           "date": "2023-09-15",
           "author": "sakhapov@chromium.org",
           "hash": "525e3fc5cc",
@@ -4761,6 +4773,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-09-22",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "2985a9997f",
+          "subject": "WebKit export: CSS <position> should never serialize to a single value (#42112)"
+        },
         {
           "date": "2023-09-15",
           "author": "pdr@chromium.org",
@@ -5938,6 +5956,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-22",
+          "author": "kojii@chromium.org",
+          "hash": "ba70881d5c",
+          "subject": "[text-spacing-trim] Add a test font that has `halt`"
+        },
+        {
           "date": "2023-09-19",
           "author": "kojii@chromium.org",
           "hash": "0be354b45c",
@@ -6252,6 +6276,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-21",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "86693b117d",
+          "subject": "Fix css/css-transforms/transform-2d-getComputedStyle-001.html"
+        },
+        {
           "date": "2023-09-14",
           "author": "mattwoodrow@apple.com",
           "hash": "a7337a8628",
@@ -6387,6 +6417,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "kevers@google.com",
+          "hash": "6e5d0de739",
+          "subject": "Fix all-with-discrete transition test"
+        },
         {
           "date": "2023-08-02",
           "author": "nt1m@users.noreply.github.com",
@@ -6573,6 +6609,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "oj@oojmed.com",
+          "hash": "27a15a6ffb",
+          "subject": "Implement CSS attr() fallback"
+        },
         {
           "date": "2023-09-01",
           "author": "jkew@mozilla.com",
@@ -6842,6 +6884,24 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-22",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "2985a9997f",
+          "subject": "WebKit export: CSS <position> should never serialize to a single value (#42112)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "xiaochengh@chromium.org",
+          "hash": "5c64599f92",
+          "subject": "Make sure fixed-length getComputedStyle() inset values roundtrip"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "oj@oojmed.com",
+          "hash": "27a15a6ffb",
+          "subject": "Implement CSS attr() fallback"
+        },
+        {
           "date": "2023-09-13",
           "author": "xiaochengh@chromium.org",
           "hash": "b12ab0e217",
@@ -6998,12 +7058,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "ecb17f7844",
           "subject": "Increase timeout for scrollend event wait"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "masonf@chromium.org",
-          "hash": "e03faa12a8",
-          "subject": "Fix cloning of templates with DOM Parts, and improve testing"
         }
       ]
     },
@@ -7068,24 +7122,6 @@
           "author": "richard.gibson@gmail.com",
           "hash": "3eeee82",
           "subject": "Editorial: Remove extraneous periods"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "ftang@chromium.org",
-          "hash": "2ea99aa",
-          "subject": "Editorial: Fix --lint-spec --strict build error"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "richard.gibson@gmail.com",
-          "hash": "0fbf16c",
-          "subject": "Normative: Reorder NF resolved option \"roundingPriority\""
-        },
-        {
-          "date": "2023-07-26",
-          "author": "richard.gibson@gmail.com",
-          "hash": "c28118e",
-          "subject": "Editorial: Move computation of NF resolved option \"roundingPriority\" to initialization"
         }
       ],
       "testlog": [
@@ -7248,6 +7284,24 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "bakkot@gmail.com",
+          "hash": "10d44bfc",
+          "subject": "Markup: dfn \"integer-indexed\" (#3182)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "a651255e",
+          "subject": "Editorial: Refactor 10.3 \"Built-in Function Objects\" (#3145)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "644e586c",
+          "subject": "Editorial: Don't say that a built-in function can be an ECMAScript function (#3145)"
+        },
+        {
           "date": "2023-09-19",
           "author": "bakkot@gmail.com",
           "hash": "f2a24f86",
@@ -7378,42 +7432,6 @@
           "author": "jmdyck@ibiblio.org",
           "hash": "f57619ad",
           "subject": "Editorial: Define each `thisFooValue` AO in its own section (#3063)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "ljharb@gmail.com",
-          "hash": "f688c6f3",
-          "subject": "Meta: update github actions (#3133)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "3690f294",
-          "subject": "Editorial: Eliminate `thisTimeValue` & `this Date object` (#3123)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "1983c427",
-          "subject": "Editorial: Eliminate \"this time value\" term (#3123)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "1cc4d4e9",
-          "subject": "Editorial: Express Date.prototype.toISOString as an emu-alg (#3123)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "ljharb@gmail.com",
-          "hash": "d1059d1e",
-          "subject": "Meta: one final tweak to the IPR check"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "ljharb@gmail.com",
-          "hash": "a524f33e",
-          "subject": "Meta: fail IPR check on commits with unknown authors (#3128)"
         }
       ],
       "testlog": [
@@ -7749,6 +7767,12 @@
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "daniec@microsoft.com",
+          "hash": "057df4a",
+          "subject": "Add entrypoint for input-events spec (#67)"
+        },
+        {
           "date": "2023-09-18",
           "author": "daniec@microsoft.com",
           "hash": "dabe2de",
@@ -7888,6 +7912,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -7952,42 +7988,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -7998,6 +7998,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8062,42 +8074,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8108,6 +8084,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8172,42 +8160,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8218,6 +8170,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8282,42 +8246,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8328,6 +8256,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8392,42 +8332,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8438,6 +8342,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8502,42 +8418,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8548,6 +8428,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8612,42 +8504,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8658,6 +8514,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8722,42 +8590,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8768,6 +8600,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8832,42 +8676,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8878,6 +8686,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -8942,42 +8762,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -8988,6 +8772,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -9052,42 +8848,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -9098,6 +8858,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -9162,42 +8934,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -9208,6 +8944,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -9272,42 +9020,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -9601,12 +9313,6 @@
           "author": "xiaochenzh@chromium.org",
           "hash": "cec8d856b5",
           "subject": "Fenced frames: Remove FencedFrameConfig constructor in web platform tests."
-        },
-        {
-          "date": "2023-07-26",
-          "author": "phao@chromium.org",
-          "hash": "87ca4f6a0e",
-          "subject": "Split iframe PNA test"
         }
       ]
     },
@@ -9687,6 +9393,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "fs@opera.com",
+          "hash": "983ffcf78c",
+          "subject": "Add drop-shadow() currentcolor test for filter on SVG content"
+        },
         {
           "date": "2023-09-20",
           "author": "fs@opera.com",
@@ -9795,6 +9507,12 @@
         {
           "date": "2023-09-21",
           "author": "asully@chromium.org",
+          "hash": "88263fb2b7",
+          "subject": "FSA: Reset mojo pipe on encountering any WritableFileStream error"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "asully@chromium.org",
           "hash": "ac9a1fd042",
           "subject": "FSA: Remove tentative label on FileSystemSyncAccessHandle wpts"
         },
@@ -9889,12 +9607,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "2ea4fef",
           "subject": "Reword the \"Sensor Type\" section, move permission revocation algorithm (#466)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "34a23e2",
-          "subject": "Clean up some <dfn>s that were not referenced (#465)"
         }
       ],
       "testlog": [],
@@ -10230,6 +9942,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-22",
+          "author": "yiyix@google.com",
+          "hash": "932ddbf627",
+          "subject": "Prepare cl to move the-canvas-element to new test generator"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "dbaron@chromium.org",
+          "hash": "ce9459e524",
+          "subject": "Rewrite (behind a flag) HTML direction inheritance and invalidation for dir=auto"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "annevk@annevk.nl",
+          "hash": "2cd449b9df",
+          "subject": "HTML: align XHR URL encoding expectations with the specification"
+        },
         {
           "date": "2023-09-21",
           "author": "tkent@chromium.org",
@@ -10829,18 +10559,6 @@
           "author": "ricea@chromium.org",
           "hash": "3bdd1a1562",
           "subject": "WebSocketStream: Rename \"connection\" to \"opened\""
-        },
-        {
-          "date": "2023-07-26",
-          "author": "dom@chromium.org",
-          "hash": "9a325877b0",
-          "subject": "Matches about:blank WPTs"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "fred.wang@free.fr",
-          "hash": "b0e44bd8f1",
-          "subject": "Implement CSS font-size: math and math-depth properties."
         }
       ]
     },
@@ -11233,6 +10951,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -11297,42 +11027,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -11554,6 +11248,36 @@
       "specrepo": "https://github.com/w3c/mediacapture-main",
       "speclog": [
         {
+          "date": "2023-09-21",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "eb4e0c8",
+          "subject": "Add link to User Agent"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "23ee27e",
+          "subject": "s/navigable/application outside the User Agent/"
+        },
+        {
+          "date": "2023-09-20",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "4e151a0",
+          "subject": "Allow upscaling to conceal concurrent use in one more place."
+        },
+        {
+          "date": "2023-09-20",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "6e360d7",
+          "subject": "Allow upscaling to conceal concurrent use."
+        },
+        {
+          "date": "2023-09-20",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "f4e73c5",
+          "subject": "Note deviceId & groupId capabilities being DOMString for historical reasons."
+        },
+        {
           "date": "2023-09-18",
           "author": "dontcallmedom@users.noreply.github.com",
           "hash": "d4e3b2a",
@@ -11735,6 +11459,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-21",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "adf335defc",
+          "subject": "WebKit export: [motion-path] Offset path inset shape tests with border-radius are failing (#42052)"
+        },
+        {
           "date": "2023-09-19",
           "author": "nt1m@users.noreply.github.com",
           "hash": "febf92d6a9",
@@ -11890,6 +11620,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -11954,42 +11696,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12000,6 +11706,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12064,42 +11782,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12110,6 +11792,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12174,42 +11868,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12220,6 +11878,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12284,42 +11954,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12330,6 +11964,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12394,42 +12040,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12440,6 +12050,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12504,42 +12126,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12550,6 +12136,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12614,42 +12212,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12660,6 +12222,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12724,42 +12298,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12770,6 +12308,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -12834,42 +12384,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -12943,6 +12457,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -13007,42 +12533,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -13995,7 +13485,14 @@
           "subject": "Fix bikeshed errors (#231)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "bokan@chromium.org",
+          "hash": "fd5c6b6738",
+          "subject": "scroll-to: Improve handling for invalid percent encoding"
+        }
+      ]
     },
     {
       "name": "Secure Contexts",
@@ -14390,12 +13887,6 @@
           "author": "xyaof3@126.com",
           "hash": "ab187d5",
           "subject": "Create .pr-preview.json"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "cammie@chromium.org",
-          "hash": "c5da5df",
-          "subject": "Update spec.bs"
         }
       ],
       "testlog": [
@@ -14472,12 +13963,6 @@
           "author": "artem.kobzar@jetbrains.com",
           "hash": "d4f7a43",
           "subject": "Eliminate ambiguity for the Wasm line description"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "artem.kobzar@jetbrains.com",
-          "hash": "559013d",
-          "subject": "Introduce a definition for Wasm columns"
         }
       ],
       "testlog": []
@@ -14608,6 +14093,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-09-21",
+          "author": "longsonr@gmail.com",
+          "hash": "90fef76e99",
+          "subject": "elements that map to style and are not animated do not print correctly"
+        },
         {
           "date": "2023-09-19",
           "author": "longsonr@gmail.com",
@@ -14945,20 +14436,7 @@
       "name": "ShadowRealm API",
       "href": "https://tc39.es/proposal-shadowrealm/",
       "specrepo": "https://github.com/tc39/proposal-shadowrealm",
-      "speclog": [
-        {
-          "date": "2023-07-26",
-          "author": "chengzhong.wcz@alibaba-inc.com",
-          "hash": "042f618",
-          "subject": "Editorial: Fix ecmarkup typecheck errors (#385)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "woodsja@vcu.edu",
-          "hash": "c31935c",
-          "subject": "explainer.md: miscellaneous grammatical updates (#388)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -15842,12 +15320,6 @@
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "6179a6b",
           "subject": "spec: remove old reporting TODO that doesn't apply (#722)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "be6c4d0",
-          "subject": "Fix a few small mistakes in spec. (#704)"
         }
       ],
       "testlog": []
@@ -15963,12 +15435,6 @@
           "author": "d@domenic.me",
           "hash": "d2ca75f",
           "subject": "Review Draft Publication: August 2023"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "annevk@annevk.nl",
-          "hash": "fff33c3",
-          "subject": "Keep blob: URLs containing file: origins as an exercise for the reader"
         }
       ],
       "testlog": [
@@ -16214,6 +15680,18 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "tlively@google.com",
+          "hash": "bfb21e96",
+          "subject": "[interpreter] Update Makefile to ignore output of `cd` (#1683)"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "b174a7d5",
+          "subject": "[interpreter] Run unittests with partest"
+        },
+        {
           "date": "2023-09-21",
           "author": "tlively@google.com",
           "hash": "0c5b9c00",
@@ -16248,12 +15726,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "b78e1d07",
           "subject": "Fix and clean up Makefile"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "leo@ndrs.fr",
-          "hash": "653938a8",
-          "subject": "[interpreter] Use dune instead of ocamlbuild (#1665)"
         }
       ],
       "testlog": []
@@ -16449,6 +15921,12 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2023-09-21",
+          "author": "paul@paul.cx",
+          "hash": "940d58d2",
+          "subject": "Regenerate expected-errs.txt after changes in format in bikeshed"
+        },
+        {
           "date": "2023-09-20",
           "author": "mjwilson@chromium.org",
           "hash": "3260be36",
@@ -16619,42 +16097,6 @@
           "author": "mmiller@duosecurity.com",
           "hash": "f09e3d8",
           "subject": "Clarify that displayName can be the same as name"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "344821+nicksteele@users.noreply.github.com",
-          "hash": "aff97c2",
-          "subject": "update with feedback"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "mmiller@duosecurity.com",
-          "hash": "a87aa30",
-          "subject": "Define intended use case for displayName"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "mmiller@duosecurity.com",
-          "hash": "ec9dd1b",
-          "subject": "Emphasize user.name as primary identifier"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "emil@yubico.com",
-          "hash": "5ecbf28",
-          "subject": "Explain why RP origin validation helps even with scoping rules"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "344821+nicksteele@users.noreply.github.com",
-          "hash": "1047330",
-          "subject": "Update Authenticator definition"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "emil@yubico.com",
-          "hash": "9135767",
-          "subject": "Add security consideration section \"Validating the origin of a credential\""
         }
       ],
       "testlog": []
@@ -17291,6 +16733,18 @@
       ],
       "testlog": [
         {
+          "date": "2023-09-21",
+          "author": "101637635+jrandolf@users.noreply.github.com",
+          "hash": "233990108a",
+          "subject": "[WebDriver BiDi] Use `Meta` instead of `OS` (#40992)"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "mail@hskupin.info",
+          "hash": "121854d0de",
+          "subject": "[wdspec] Extend timeout for /webdriver/tests/bidi/input/perform_actions/invalid.py."
+        },
+        {
           "date": "2023-09-20",
           "author": "mail@hskupin.info",
           "hash": "3d3046f012",
@@ -17508,6 +16962,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2023-09-21",
+          "author": "tperrotta@chromium.org",
+          "hash": "4361bea",
+          "subject": "editorial: network intercept: fail request: remove issue from action (#554)"
+        },
+        {
           "date": "2023-09-20",
           "author": "tperrotta@chromium.org",
           "hash": "18e0fcc",
@@ -17644,30 +17104,6 @@
           "author": "damzcodes@gmail.com",
           "hash": "dbca1e3",
           "subject": "Fix use of for-in on ECMAScript Iterator"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "2d97074",
-          "subject": "Explicitly define type for userActivation (#503)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "3eb2ec7",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "b9de147",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "alexrudenko@chromium.org",
-          "hash": "7119043",
-          "subject": "Add userActivation parameter to script evaluation"
         }
       ],
       "testlog": []
@@ -17678,6 +17114,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -17742,42 +17190,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -17788,6 +17200,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -17852,42 +17276,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -17898,6 +17286,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -17962,42 +17362,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18008,6 +17372,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18072,42 +17448,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18118,6 +17458,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18182,42 +17534,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18228,6 +17544,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18292,42 +17620,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18338,6 +17630,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18402,42 +17706,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18448,6 +17716,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18512,42 +17792,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18558,6 +17802,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18622,42 +17878,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18668,6 +17888,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18732,42 +17964,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18778,6 +17974,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18842,42 +18050,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18888,6 +18060,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -18952,42 +18136,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -18998,6 +18146,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19062,42 +18222,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19108,6 +18232,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19172,42 +18308,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19218,6 +18318,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19282,42 +18394,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19328,6 +18404,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19392,42 +18480,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19438,6 +18490,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19502,42 +18566,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19548,6 +18576,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-09-22",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a06b04b80",
+          "subject": "In new WebGL 2-only Wasm tests, fetch WebGL 2.0 context directly. (#3594)"
+        },
+        {
+          "date": "2023-09-22",
+          "author": "jujjyl@gmail.com",
+          "hash": "77bd9ad0e",
+          "subject": "Add tests for gl.readPixels(), gl.texImage2D() and gl.texSubImage2D() from Wasm Memories of 4GB and 16GB in size. (#3592)"
+        },
+        {
           "date": "2023-09-20",
           "author": "kainino@chromium.org",
           "hash": "9cec5e271",
@@ -19612,42 +18652,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "cc7ba1c6e",
           "subject": "Reject WEBGL_texture_source_iframe. (#3567)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "ff92a3c1c",
-          "subject": "Move multisampling shader extensions to draft; add tests (#3573)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "aca3000bc",
-          "subject": "Move NV_shader_noperspective_interpolation to draft; add tests (#3572)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "6801ea4e2",
-          "subject": "Move EXT_conservative_depth to draft; add tests (#3571)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "c890aa987",
-          "subject": "Move WEBGL_polygon_mode to draft; add tests (#3570)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "195710d17",
-          "subject": "Move EXT_depth_clamp to draft; add tests (#3569)"
-        },
-        {
-          "date": "2023-07-27",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "be635ccf7",
-          "subject": "Move EXT_clip_control to draft; add tests (#3568)"
         }
       ],
       "testlog": []
@@ -19673,6 +18677,18 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2023-09-21",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "010e7caa",
+          "subject": "Regen logo in Codespaces for deterministic output (#4301)"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "88332b74",
+          "subject": "Add the favicon for webgpu-notext (#4299)"
+        },
         {
           "date": "2023-09-12",
           "author": "beaufortfrancois@gmail.com",
@@ -19768,30 +18784,6 @@
           "author": "dneto@google.com",
           "hash": "cd005cb1",
           "subject": "Clarify frexp: result for denorm are indeterminate (#4250)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "d05b2d80",
-          "subject": "add `rgb10a2uint` texture format (#4245)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "eead1835",
-          "subject": "Add HTMLImageElement and ImageData to copyExternalImageToTexture (#3430)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "dneto@google.com",
-          "hash": "8756759b",
-          "subject": "Delete TODO: made dfn nodes for predclared types (#4249)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "dneto@google.com",
-          "hash": "de40a4ea",
-          "subject": "Clarify fp accuracy, remove redundant overflow text (#4247)"
         }
       ],
       "testlog": []
@@ -19924,6 +18916,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2023-09-21",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "5b7363a",
+          "subject": "Bump actions/checkout from 3 to 4 (#461)"
+        },
         {
           "date": "2023-08-30",
           "author": "dom@w3.org",
@@ -20656,6 +19654,18 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2023-09-21",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "010e7caa",
+          "subject": "Regen logo in Codespaces for deterministic output (#4301)"
+        },
+        {
+          "date": "2023-09-21",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "88332b74",
+          "subject": "Add the favicon for webgpu-notext (#4299)"
+        },
+        {
           "date": "2023-09-12",
           "author": "beaufortfrancois@gmail.com",
           "hash": "fd07e114",
@@ -20750,30 +19760,6 @@
           "author": "dneto@google.com",
           "hash": "cd005cb1",
           "subject": "Clarify frexp: result for denorm are indeterminate (#4250)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "d05b2d80",
-          "subject": "add `rgb10a2uint` texture format (#4245)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "eead1835",
-          "subject": "Add HTMLImageElement and ImageData to copyExternalImageToTexture (#3430)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "dneto@google.com",
-          "hash": "8756759b",
-          "subject": "Delete TODO: made dfn nodes for predclared types (#4249)"
-        },
-        {
-          "date": "2023-07-26",
-          "author": "dneto@google.com",
-          "hash": "de40a4ea",
-          "subject": "Clarify fp accuracy, remove redundant overflow text (#4247)"
         }
       ],
       "testlog": []
