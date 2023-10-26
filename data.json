@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-08-29T07:12:43.148Z",
-  "until": "2023-10-25T07:12:43.148Z",
+  "since": "2023-08-30T07:12:40.137Z",
+  "until": "2023-10-26T07:12:40.137Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -795,12 +795,6 @@
           "author": "apaseltiner@google.com",
           "hash": "883f545",
           "subject": "Replace continuation functions with return values (#973)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "apaseltiner@google.com",
-          "hash": "4d7cbf9",
-          "subject": "Move aggregation-key limit to vendor-specific values (#972)"
         }
       ],
       "testlog": []
@@ -1254,6 +1248,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "cbiesinger@chromium.org",
+          "hash": "060646cd58",
+          "subject": "[FedCM] Add a test that we ignore ISS headers in fenced frames"
+        },
+        {
           "date": "2023-10-23",
           "author": "yigu@chromium.org",
           "hash": "f85d8d37c4",
@@ -1324,12 +1324,6 @@
           "author": "yigu@chromium.org",
           "hash": "7bb53b7fc7",
           "subject": "[FedCM] Update wpt tests for AccountAutoSelectedFlag API"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "yigu@chromium.org",
-          "hash": "edd2fbbee1",
-          "subject": "[FedCM] Rename AutoReauthnFlag to AccountAutoSelectedFlag"
         }
       ]
     },
@@ -1406,6 +1400,66 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "futhark@chromium.org",
+          "hash": "8a717e3fa0",
+          "subject": "Add interpolation type for custom <transform-list>"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "schenney@chromium.org",
+          "hash": "33aec14902",
+          "subject": "[Highlight Pseudo Painting] Reduce offset calculations"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "kizmarh@ya.ru",
+          "hash": "5225257ea5",
+          "subject": "Tests for round(), mod(), and rem() that has % only for one value (#42676)"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "7549afde3b",
+          "subject": "Handle scroll anchor adjustments as an absolute scroll position updates behind a pref."
+        },
+        {
+          "date": "2023-10-25",
+          "author": "sakhapov@chromium.org",
+          "hash": "e2bd718591",
+          "subject": "Revert \"Fix the counters scope removal\""
+        },
+        {
+          "date": "2023-10-25",
+          "author": "tlouw@mozilla.com",
+          "hash": "79c26e1b48",
+          "subject": "Fix serialization of <position> elements in computed gradient values"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "awogbemila@chromium.org",
+          "hash": "ae3d6e3e0e",
+          "subject": "[scroll-start] scroll-start-target should align with scroll-snap-align"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "darklightdusk@gmail.com",
+          "hash": "d349a1f1a1",
+          "subject": "Add a test for system color support (#42718)"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "futhark@chromium.org",
+          "hash": "ece4312d56",
+          "subject": "Add test crashing :dir() invalidation with document.fonts access"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "fs@opera.com",
+          "hash": "17756de7b9",
+          "subject": "Add fuzzy matching data to a couple of mask-image tests"
+        },
         {
           "date": "2023-10-24",
           "author": "clchambers@microsoft.com",
@@ -3439,42 +3493,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "00976fe9ca",
           "subject": "WebKit export: [css-typed-om] Add factory functions for all font relative units (#41705)"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "tlouw@mozilla.com",
-          "hash": "858fffe3d2",
-          "subject": "Fix test values for lch conversion test"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "vmpstr@chromium.org",
-          "hash": "acf7f0c219",
-          "subject": "CIS: Switch intrinsic length type to Length instead of LayoutUnit."
-        },
-        {
-          "date": "2023-08-29",
-          "author": "obrufau@igalia.com",
-          "hash": "2282bf0b4d",
-          "subject": "Avoid crash in PlacementAmongFloats"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "rbuis@igalia.com",
-          "hash": "36ce9f9072",
-          "subject": "Add test for c-v and getClientRects (#41688)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "aaronhk@chromium.org",
-          "hash": "78a049065c",
-          "subject": "Correct some invalid relative color tests"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "89bf11b5a5",
-          "subject": "Remove unnecessary div wrapper from some grid ::first-letter/::first-line WPTs, to avoid tripping over an unrelated-to-grid Firefox bug."
         }
       ]
     },
@@ -3502,12 +3520,6 @@
           "author": "obrufau@igalia.com",
           "hash": "e357f7f93f",
           "subject": "Fix PlacementAmongFloats to avoid missing some bands"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "obrufau@igalia.com",
-          "hash": "2282bf0b4d",
-          "subject": "Avoid crash in PlacementAmongFloats"
         }
       ]
     },
@@ -4052,15 +4064,15 @@
           "author": "chris@w3.org",
           "hash": "f46b5d401",
           "subject": "[css-color-4] Correct range of hue angles, #8838"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "9ef4e2545",
-          "subject": "[css-color-5] fix typo (#9262)"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "darklightdusk@gmail.com",
+          "hash": "d349a1f1a1",
+          "subject": "Add a test for system color support (#42718)"
+        },
         {
           "date": "2023-10-24",
           "author": "tlouw@mozilla.com",
@@ -4144,18 +4156,6 @@
           "author": "aaronhk@chromium.org",
           "hash": "76a3f72ff6",
           "subject": "Use the custom epsilons for color tests and make failure messages better"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "tlouw@mozilla.com",
-          "hash": "858fffe3d2",
-          "subject": "Fix test values for lch conversion test"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "aaronhk@chromium.org",
-          "hash": "78a049065c",
-          "subject": "Correct some invalid relative color tests"
         }
       ]
     },
@@ -4327,12 +4327,6 @@
           "author": "rbuis@igalia.com",
           "hash": "621aee9f8c",
           "subject": "Improve content-visibility svg testing (#41689)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "rbuis@igalia.com",
-          "hash": "36ce9f9072",
-          "subject": "Add test for c-v and getClientRects (#41688)"
         }
       ]
     },
@@ -4838,12 +4832,6 @@
           "author": "kschmi@microsoft.com",
           "hash": "f279e81f0d",
           "subject": "[GridNG] Update test expectation for grid-template-shorthand-valid.html"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "89bf11b5a5",
-          "subject": "Remove unnecessary div wrapper from some grid ::first-letter/::first-line WPTs, to avoid tripping over an unrelated-to-grid Firefox bug."
         }
       ]
     },
@@ -4854,6 +4842,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "schenney@chromium.org",
+          "hash": "33aec14902",
+          "subject": "[Highlight Pseudo Painting] Reduce offset calculations"
+        },
         {
           "date": "2023-10-13",
           "author": "spectranaut@igalia.com",
@@ -4882,6 +4876,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "tlouw@mozilla.com",
+          "hash": "79c26e1b48",
+          "subject": "Fix serialization of <position> elements in computed gradient values"
+        },
         {
           "date": "2023-09-12",
           "author": "aaronhk@chromium.org",
@@ -4943,6 +4943,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "sakhapov@chromium.org",
+          "hash": "e2bd718591",
+          "subject": "Revert \"Fix the counters scope removal\""
+        },
+        {
           "date": "2023-10-23",
           "author": "sakhapov@chromium.org",
           "hash": "73b565383d",
@@ -5002,6 +5008,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "fs@opera.com",
+          "hash": "17756de7b9",
+          "subject": "Add fuzzy matching data to a couple of mask-image tests"
+        },
         {
           "date": "2023-10-24",
           "author": "clchambers@microsoft.com",
@@ -5443,6 +5455,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "futhark@chromium.org",
+          "hash": "8a717e3fa0",
+          "subject": "Add interpolation type for custom <transform-list>"
+        },
+        {
           "date": "2023-10-20",
           "author": "fwang@igalia.com",
           "hash": "0d569c25cc",
@@ -5592,6 +5610,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "7549afde3b",
+          "subject": "Handle scroll anchor adjustments as an absolute scroll position updates behind a pref."
+        },
+        {
           "date": "2023-10-03",
           "author": "hikezoe.birchill@mozilla.com",
           "hash": "e9faf2cebd",
@@ -5618,6 +5642,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "awogbemila@chromium.org",
+          "hash": "ae3d6e3e0e",
+          "subject": "[scroll-start] scroll-start-target should align with scroll-snap-align"
+        },
         {
           "date": "2023-09-20",
           "author": "awogbemila@chromium.org",
@@ -5745,12 +5775,6 @@
           "author": "dalecurtis@chromium.org",
           "hash": "8c1a575e31",
           "subject": "Replace another batch of Theora tests with vp8/vp9."
-        },
-        {
-          "date": "2023-08-30",
-          "author": "vmpstr@chromium.org",
-          "hash": "acf7f0c219",
-          "subject": "CIS: Switch intrinsic length type to Length instead of LayoutUnit."
         }
       ]
     },
@@ -5825,6 +5849,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-10-26",
+          "author": "git@florian.rivoal.net",
+          "hash": "38c5b517d",
+          "subject": "[css-text-4] Fix typo"
+        },
         {
           "date": "2023-10-20",
           "author": "git@florian.rivoal.net",
@@ -6740,6 +6770,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "kizmarh@ya.ru",
+          "hash": "5225257ea5",
+          "subject": "Tests for round(), mod(), and rem() that has % only for one value (#42676)"
+        },
+        {
           "date": "2023-10-19",
           "author": "brandon@dreamthinkbuild.com",
           "hash": "47d5fbd094",
@@ -7004,6 +7040,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "futhark@chromium.org",
+          "hash": "ece4312d56",
+          "subject": "Add test crashing :dir() invalidation with document.fonts access"
+        },
+        {
           "date": "2023-10-12",
           "author": "futhark@chromium.org",
           "hash": "4443408555",
@@ -7132,7 +7174,14 @@
       "name": "Document Picture-in-Picture",
       "href": "https://wicg.github.io/document-picture-in-picture/",
       "specrepo": "https://github.com/WICG/document-picture-in-picture",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2023-10-26",
+          "author": "steimel@chromium.org",
+          "hash": "91a6cf9",
+          "subject": "Add link to spec into README"
+        }
+      ],
       "testlog": []
     },
     {
@@ -7275,12 +7324,6 @@
           "author": "annevk@annevk.nl",
           "hash": "9dafa89214",
           "subject": "Meta: remove zqzhang as reviewer"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "masonf@chromium.org",
-          "hash": "43b0d742a7",
-          "subject": "Rationalize the behavior of SupportsFocus, Is{keybd|mouse}Focusable"
         }
       ]
     },
@@ -8109,6 +8152,12 @@
       "href": "https://w3c.github.io/edit-context/",
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
+        {
+          "date": "2023-10-25",
+          "author": "daniec@microsoft.com",
+          "hash": "3c4a827",
+          "subject": "Update security-privacy.md (#78)"
+        },
         {
           "date": "2023-10-16",
           "author": "daniec@microsoft.com",
@@ -9587,6 +9636,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-10-26",
+          "author": "mych@chromium.org",
+          "hash": "0a1448724c",
+          "subject": "[fetch-later] Add more WPTs"
+        },
+        {
           "date": "2023-10-23",
           "author": "mych@chromium.org",
           "hash": "c973f6fcbe",
@@ -9880,7 +9935,14 @@
           "subject": "Meta: update repository files"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-10-26",
+          "author": "domenic@chromium.org",
+          "hash": "a1463fbaff",
+          "subject": "WPT: consolidate top layer helpers"
+        }
+      ]
     },
     {
       "name": "Gamepad",
@@ -10073,7 +10135,14 @@
       "specrepo": "https://github.com/w3c/hr-time",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "nrosenthal@chromium.org",
+          "hash": "b561be3c42",
+          "subject": "Coarsen timestamp for rAF callback and web animations"
+        }
+      ]
     },
     {
       "name": "HTML",
@@ -10081,6 +10150,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2023-10-26",
+          "author": "dbaron@dbaron.org",
+          "hash": "aec62609",
+          "subject": "Make language of a node consider lang attribute on SVG elements"
+        },
         {
           "date": "2023-10-24",
           "author": "dbaron@dbaron.org",
@@ -10434,15 +10509,63 @@
           "author": "fbraun+gh@mozilla.com",
           "hash": "083c58dc",
           "subject": "Editorial: replace unique origin with opaque origin"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "annevk@annevk.nl",
-          "hash": "ad94bbee",
-          "subject": "Make the directionality account for missing parent element"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-26",
+          "author": "domenic@chromium.org",
+          "hash": "de8c2d4866",
+          "subject": "WPT: clean up dialog-cancel-events.html"
+        },
+        {
+          "date": "2023-10-26",
+          "author": "domenic@chromium.org",
+          "hash": "a1463fbaff",
+          "subject": "WPT: consolidate top layer helpers"
+        },
+        {
+          "date": "2023-10-26",
+          "author": "domenic@chromium.org",
+          "hash": "84683e862b",
+          "subject": "Ship close requests and the CloseWatcher API"
+        },
+        {
+          "date": "2023-10-26",
+          "author": "domenic@chromium.org",
+          "hash": "db1c3396f0",
+          "subject": "Port popover test to WPT and adjust for close requests"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "bokan@chromium.org",
+          "hash": "862b69cf21",
+          "subject": "Add long timeout to pagereveal WPT"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "dbaron@chromium.org",
+          "hash": "6148c29da5",
+          "subject": "Implement updated HTML language inheritance rules."
+        },
+        {
+          "date": "2023-10-25",
+          "author": "dbaron@chromium.org",
+          "hash": "8cc01fc73b",
+          "subject": "Revert \"Give <slot> element default unicode-bidi: isolate style.\""
+        },
+        {
+          "date": "2023-10-25",
+          "author": "djmitche@chromium.org",
+          "hash": "0cad1a7810",
+          "subject": "Revert \"Represent form-factor client hint as a list\""
+        },
+        {
+          "date": "2023-10-25",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "21dc7156fb",
+          "subject": "view-transition: Move pagereveal tests to WPT (#42669)"
+        },
         {
           "date": "2023-10-25",
           "author": "emilio@crisal.io",
@@ -11090,30 +11213,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "e58a5f29e9",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=260865 (#41698)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "jarhar@chromium.org",
-          "hash": "6ea4ba583e",
-          "subject": "selectlist: add <selectedoption> element"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "yiyix@google.com",
-          "hash": "707a2a4ae6",
-          "subject": "Remove letterSpacing test for unit 'ch'"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "jarhar@chromium.org",
-          "hash": "d9e648d19d",
-          "subject": "selectlist: support <button type=selectlist>"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "jarhar@chromium.org",
-          "hash": "b1b4dfc4b1",
-          "subject": "selectlist: default slot nodes into the button slot"
         }
       ]
     },
@@ -11288,36 +11387,6 @@
           "author": "grieger@google.com",
           "hash": "7640dbe",
           "subject": "Revamp the FeatureTagSet encoding scheme."
-        },
-        {
-          "date": "2023-08-29",
-          "author": "grieger@google.com",
-          "hash": "9568adc",
-          "subject": "Update the server handling section to use compression dictionary transport headers."
-        },
-        {
-          "date": "2023-08-29",
-          "author": "grieger@google.com",
-          "hash": "ab66d1f",
-          "subject": "Update 'Handling Server Response' section to ref compression dictionary transport headers."
-        },
-        {
-          "date": "2023-08-29",
-          "author": "grieger@google.com",
-          "hash": "0e5b4bd",
-          "subject": "Update 'Extending the Font Subset' section to use compression dictionary transport headers."
-        },
-        {
-          "date": "2023-08-29",
-          "author": "grieger@google.com",
-          "hash": "e036edf",
-          "subject": "Change 'brdiff' to 'sbr' to match https://github.com/WICG/compression-dictionary-transport"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "grieger@google.com",
-          "hash": "f1cfed7",
-          "subject": "Switch response code 412 to 409 for the case of unrecognized ordering."
         }
       ],
       "testlog": []
@@ -11772,12 +11841,6 @@
           "author": "46299415+sonkkeli@users.noreply.github.com",
           "hash": "3f2c869",
           "subject": "borderless: Add a section about accessibility risks (#84)"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "80441278+loubrett@users.noreply.github.com",
-          "hash": "43332f0",
-          "subject": "Update tabbed-mode-explainer.md (#82)"
         }
       ],
       "testlog": []
@@ -11798,24 +11861,6 @@
           "author": "spectranaut@igalia.com",
           "hash": "ebe0829",
           "subject": "Update editors"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "spectranaut@igalia.com",
-          "hash": "d70ae52",
-          "subject": "Remove empty section"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "spectranaut@igalia.com",
-          "hash": "9a978e6",
-          "subject": "Editorial: remove giant table in favor of headings"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "fwang@igalia.com",
-          "hash": "06223fa",
-          "subject": "Add ATK and AX API mapping for <mphantom>"
         }
       ],
       "testlog": []
@@ -11902,6 +11947,24 @@
       "href": "https://w3c.github.io/media-source/",
       "specrepo": "https://github.com/w3c/media-source",
       "speclog": [
+        {
+          "date": "2023-10-25",
+          "author": "marcos@marcosc.com",
+          "hash": "9fd0218",
+          "subject": "Editorial: fix in doc section linking (#332)"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "marcos@marcosc.com",
+          "hash": "0909542",
+          "subject": "Editorial: fix up event summaries and tables (#330)"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "marcos@marcosc.com",
+          "hash": "8348025",
+          "subject": "Editorial: clean up enum markup (#331)"
+        },
         {
           "date": "2023-10-23",
           "author": "marcos@marcosc.com",
@@ -13202,6 +13265,12 @@
       "specrepo": "https://github.com/w3c/orientation-sensor",
       "speclog": [
         {
+          "date": "2023-10-25",
+          "author": "juha.j.vainio@intel.com",
+          "hash": "aff9350",
+          "subject": "Rewrite Automation section after w3c/sensors#470 (#78)"
+        },
+        {
           "date": "2023-10-24",
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "07f7a4b",
@@ -13617,6 +13686,18 @@
       "specrepo": "https://github.com/w3c/pointerevents",
       "testpolicy": "https://github.com/w3c/pointerevents/blob/gh-pages/README.markdown#editing-process",
       "speclog": [
+        {
+          "date": "2023-10-25",
+          "author": "redux@splintered.co.uk",
+          "hash": "24de93c",
+          "subject": "Add Robert Flack as co-editor (#488)"
+        },
+        {
+          "date": "2023-10-25",
+          "author": "redux@splintered.co.uk",
+          "hash": "242f201",
+          "subject": "Update reference from WCAG 2.1 to WCAG 2.2 (#489)"
+        },
         {
           "date": "2023-10-02",
           "author": "redux@splintered.co.uk",
@@ -14341,6 +14422,12 @@
       ],
       "testlog": [
         {
+          "date": "2023-10-25",
+          "author": "sguelton@mozilla.com",
+          "hash": "261fe7bbff",
+          "subject": "Get rid of deprecated imp python module in favor of importlib  CLOSED TREE"
+        },
+        {
           "date": "2023-10-19",
           "author": "dalecurtis@chromium.org",
           "hash": "8c1a575e31",
@@ -14522,36 +14609,6 @@
           "author": "cammie@chromium.org",
           "hash": "c5af05c",
           "subject": "Update spec.bs to include Permissions Policy"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "cammie@chromium.org",
-          "hash": "6a945b9",
-          "subject": "Update spec.bs"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "cammie@chromium.org",
-          "hash": "ddc3aad",
-          "subject": "Update spec.bs"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "cammie@chromium.org",
-          "hash": "14c7d4c",
-          "subject": "Update spec.bs"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "cammie@chromium.org",
-          "hash": "5b2637c",
-          "subject": "Update spec.bs"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "cammie@chromium.org",
-          "hash": "07d40e5",
-          "subject": "Delete .github/workflows/preview.yml"
         }
       ],
       "testlog": [
@@ -14691,12 +14748,6 @@
           "author": "ayui@chromium.org",
           "hash": "942cce3ad3",
           "subject": "WebSQL: Update web_tests for WebSQL removal"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "jbroman@chromium.org",
-          "hash": "84cd5e2362",
-          "subject": "speculation rules: Drop self-referential fragment URLs in the renderer."
         }
       ]
     },
@@ -15753,6 +15804,12 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2023-10-25",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "07960ec",
+          "subject": "Add an algorithm of storage maintenance (IG Cap). (#859)"
+        },
+        {
           "date": "2023-10-24",
           "author": "JensenPaul@users.noreply.github.com",
           "hash": "503311e",
@@ -16183,12 +16240,6 @@
           "author": "isaac.z.foster@gmail.com",
           "hash": "fce92f3",
           "subject": "Make Explicit that updateUrl does not affect TTL"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "kleber@google.com",
-          "hash": "f872ec4",
-          "subject": "Create 2023-08-23-FLEDGE-call-minutes.md"
         }
       ],
       "testlog": []
@@ -16554,6 +16605,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2023-10-25",
+          "author": "rossberg@chromium.org",
+          "hash": "43d405f5",
+          "subject": "[spec/interpreter/test] Align definition of newline with Unicode recommendation (#1684)"
+        },
+        {
           "date": "2023-10-24",
           "author": "rossberg@chromium.org",
           "hash": "b39baf77",
@@ -16874,27 +16931,15 @@
           "author": "hongchan.choi@gmail.com",
           "hash": "52263a29",
           "subject": "Update user-selectable-render-size.md"
-        },
-        {
-          "date": "2023-08-30",
-          "author": "mjwilson@chromium.org",
-          "hash": "3f09f527",
-          "subject": "Fix bad revert"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "mjwilson@chromium.org",
-          "hash": "3b8ff38b",
-          "subject": "Revert unreviewed change"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "mjwilson@chromium.org",
-          "hash": "d4a83d24",
-          "subject": "Specify AnalyserNode treatment of non-finite values."
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "chrisguttandin@media-codings.com",
+          "hash": "b2a38f9f6f",
+          "subject": "[webaudio] Convert test to testharness"
+        },
         {
           "date": "2023-10-17",
           "author": "hongchan@chromium.org",
@@ -17112,18 +17157,6 @@
           "author": "emil@yubico.com",
           "hash": "f6bbe77",
           "subject": "Remove outdated spec reference anchors"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "tim@cloudauth.dev",
-          "hash": "ae0786d",
-          "subject": "rogue text change"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "tim@cloudauth.dev",
-          "hash": "11429ca",
-          "subject": "initial text for compound attestation format"
         }
       ],
       "testlog": [
@@ -18419,12 +18452,6 @@
           "author": "tperrotta@chromium.org",
           "hash": "6b2b25c",
           "subject": "pip: run with python3 -m (#524)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "34244704+Lightning00Blade@users.noreply.github.com",
-          "hash": "ec67d1d",
-          "subject": "add `contexts` to `script.addPreloadScript` (#517)"
         }
       ],
       "testlog": []
@@ -21094,12 +21121,6 @@
           "author": "103072903+bradtriebwasser@users.noreply.github.com",
           "hash": "56f8e00",
           "subject": "Rename open questions to considerations. Add some additional considerations. (#141)"
-        },
-        {
-          "date": "2023-08-29",
-          "author": "103072903+bradtriebwasser@users.noreply.github.com",
-          "hash": "b439243",
-          "subject": "Add Fullscreen popups explainer and related doc (#140)"
         }
       ],
       "testlog": [
@@ -21139,6 +21160,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-10-25",
+          "author": "sguelton@mozilla.com",
+          "hash": "261fe7bbff",
+          "subject": "Get rid of deprecated imp python module in favor of importlib  CLOSED TREE"
+        },
         {
           "date": "2023-09-19",
           "author": "33023300+JannisBush@users.noreply.github.com",
