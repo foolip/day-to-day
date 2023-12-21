@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-10-24T07:12:07.143Z",
-  "until": "2023-12-20T07:12:07.143Z",
+  "since": "2023-10-25T07:12:45.862Z",
+  "until": "2023-12-21T07:12:45.862Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -19,24 +19,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "99ba593",
           "subject": "Rewrite Automation section after changes in Generic Sensor API spec"
-        },
-        {
-          "date": "2023-10-25",
-          "author": "anssi.kostiainen@intel.com",
-          "hash": "bc4ff6b",
-          "subject": "Gravity Sensor reported acceleration is due to gravity"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "0d6981a",
-          "subject": "Split Model section up, export policy-controlled feature name"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "729e647",
-          "subject": "Modernize object construction steps"
         }
       ],
       "testlog": [
@@ -188,6 +170,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -467,24 +467,6 @@
           "author": "csharrison@chromium.org",
           "hash": "69565eb",
           "subject": "Create 2023-10-16-minutes.md"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "apaseltiner@google.com",
-          "hash": "35a730e",
-          "subject": "Validate trigger specs with respect to matching mode"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "apaseltiner@google.com",
-          "hash": "659c7a3",
-          "subject": "Fix var reference typo"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "apaseltiner@google.com",
-          "hash": "db4b29f",
-          "subject": "Use range algorithms in spec"
         }
       ],
       "testlog": []
@@ -634,20 +616,14 @@
           "author": "45411397+snianu@users.noreply.github.com",
           "hash": "c1d37ae",
           "subject": "Add `unsanitized` option to async clipboard API. (#197)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "45411397+snianu@users.noreply.github.com",
-          "hash": "ad65071",
-          "subject": "Add 'starts with' to web custom format prefix. (#195)"
         }
       ],
       "testlog": [
         {
-          "date": "2023-10-24",
-          "author": "snianu@microsoft.com",
-          "hash": "d1bd5741a6",
-          "subject": "[Async Clipboard API] Add supports method to async clipboard API."
+          "date": "2023-12-20",
+          "author": "philip@foolip.org",
+          "hash": "823b734366",
+          "subject": "Map async clipboard tests to web-features (#43388)"
         }
       ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
@@ -877,6 +853,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2023-12-20",
+          "author": "tanzachary@chromium.org",
+          "hash": "c84ca70108",
+          "subject": "[FedCM] Add more WPT tests for error API"
+        },
+        {
           "date": "2023-12-19",
           "author": "npm@chromium.org",
           "hash": "cb5696c95d",
@@ -1099,12 +1081,6 @@
           "author": "nribaudo@igalia.com",
           "hash": "40db1c8a35",
           "subject": "Add tests for CSS/JSON imports fetch destination and CSP"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "antoniosartori@chromium.org",
-          "hash": "ff0bbb0242",
-          "subject": "[WPT] [CSP] Increase timeout of CSP prefetch test"
         }
       ]
     },
@@ -1136,6 +1112,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-12-21",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "fcabdd4ee2",
+          "subject": "part 3: Add a few variants of the WPT for grid synthesized baselines."
+        },
+        {
+          "date": "2023-12-21",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "9b6b977ffb",
+          "subject": "part 2: Add a WPT to check some grid synthesized baseline behavior."
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "b12ce07e54",
+          "subject": "Adjust behavior of existing tests to match CSS spec change"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "028df8b0a1",
+          "subject": "Adjust syntax of text-spacing[-trim] to match CSSWG resolution"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "github@gtalbot.org",
+          "hash": "2dbeed7c0d",
+          "subject": "Created 4 background-attachment: [ local | fixed ] tests on [ block | inline ] with scroll() method (#43530)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "mstensho@chromium.org",
+          "hash": "71de0efe88",
+          "subject": "Notify the flow thread about style change for inlines as well."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "4caec78765",
+          "subject": "Don't inadvertently clobber masonry bits just because a nested grid can't be a subgrid."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "mstensho@chromium.org",
+          "hash": "2dbbdc316f",
+          "subject": "Clone and update multicol fragments properly when adding OOFs."
+        },
         {
           "date": "2023-12-20",
           "author": "git@florian.rivoal.net",
@@ -2899,36 +2923,6 @@
           "author": "fs@opera.com",
           "hash": "17756de7b9",
           "subject": "Add fuzzy matching data to a couple of mask-image tests"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "clchambers@microsoft.com",
-          "hash": "9b3a85b8a0",
-          "subject": "[CompositeClipPathAnimations] Add tests for additional shape types"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "tlouw@mozilla.com",
-          "hash": "892583e4ad",
-          "subject": "none values should be treated as 0 during conversion"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "aaronhk@chromium.org",
-          "hash": "d56cd8ed5d",
-          "subject": "Map lightness 0/100 to black/white just before drawing"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "annevk@annevk.nl",
-          "hash": "364c325f65",
-          "subject": "HTML: make dir=auto and dirname apply to more form controls"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "moonira@google.com",
-          "hash": "00f51f3a13",
-          "subject": "Implement replace behaviour in InterpolableFontPalette::Add()"
         }
       ]
     },
@@ -3238,6 +3232,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-12-20",
+          "author": "github@gtalbot.org",
+          "hash": "2dbeed7c0d",
+          "subject": "Created 4 background-attachment: [ local | fixed ] tests on [ block | inline ] with scroll() method (#43530)"
+        },
         {
           "date": "2023-12-15",
           "author": "github@gtalbot.org",
@@ -3883,18 +3883,6 @@
           "author": "darklightdusk@gmail.com",
           "hash": "d349a1f1a1",
           "subject": "Add a test for system color support (#42718)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "tlouw@mozilla.com",
-          "hash": "892583e4ad",
-          "subject": "none values should be treated as 0 during conversion"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "aaronhk@chromium.org",
-          "hash": "d56cd8ed5d",
-          "subject": "Map lightness 0/100 to black/white just before drawing"
         }
       ]
     },
@@ -4480,12 +4468,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "e89438cfba",
           "subject": "Fix font-palette-animation-not-specified-edpoints flaky test (#42785)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "moonira@google.com",
-          "hash": "00f51f3a13",
-          "subject": "Implement replace behaviour in InterpolableFontPalette::Add()"
         }
       ]
     },
@@ -4572,6 +4554,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-12-21",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "fcabdd4ee2",
+          "subject": "part 3: Add a few variants of the WPT for grid synthesized baselines."
+        },
+        {
+          "date": "2023-12-21",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "9b6b977ffb",
+          "subject": "part 2: Add a WPT to check some grid synthesized baseline behavior."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "4caec78765",
+          "subject": "Don't inadvertently clobber masonry bits just because a nested grid can't be a subgrid."
+        },
         {
           "date": "2023-12-18",
           "author": "philip@foolip.org",
@@ -5052,12 +5052,6 @@
           "author": "fs@opera.com",
           "hash": "17756de7b9",
           "subject": "Add fuzzy matching data to a couple of mask-image tests"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "clchambers@microsoft.com",
-          "hash": "9b3a85b8a0",
-          "subject": "[CompositeClipPathAnimations] Add tests for additional shape types"
         }
       ]
     },
@@ -5068,6 +5062,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2023-12-20",
+          "author": "mstensho@chromium.org",
+          "hash": "71de0efe88",
+          "subject": "Notify the flow thread about style change for inlines as well."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "mstensho@chromium.org",
+          "hash": "2dbbdc316f",
+          "subject": "Clone and update multicol fragments properly when adding OOFs."
+        },
         {
           "date": "2023-12-12",
           "author": "mstensho@chromium.org",
@@ -5733,6 +5739,60 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "c5fc54207",
+          "subject": "[css-text-4] Update test coverage information"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "e10cf0217",
+          "subject": "[css-text-4] Remove the explicit normal value for text-spacing"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "c749f9692",
+          "subject": "[css-text] Make bikeshed happy"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "d684b710d",
+          "subject": "[css-text] Add informal summary of text-spacing-trim"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "9326e57cd",
+          "subject": "[css-text] Reorder values in text-spacing-trim"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "dbd877862",
+          "subject": "[css-text] Make normal the initial value of text-spacing-trim"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "418fe641e",
+          "subject": "[css-text] Update comment about test coverage"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "b6acc51f3",
+          "subject": "[css-text-4] Editorial clarification"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "4d94b9a4c",
+          "subject": "[css-text-4] Adjust value space of text-spacing-trim"
+        },
+        {
           "date": "2023-11-13",
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "ad6bf50c3",
@@ -5758,6 +5818,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "b12ce07e54",
+          "subject": "Adjust behavior of existing tests to match CSS spec change"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "git@florian.rivoal.net",
+          "hash": "028df8b0a1",
+          "subject": "Adjust syntax of text-spacing[-trim] to match CSSWG resolution"
+        },
         {
           "date": "2023-12-20",
           "author": "git@florian.rivoal.net",
@@ -7173,12 +7245,6 @@
           "author": "doehyunbaek@gmail.com",
           "hash": "cc632909",
           "subject": "Editorial: Make parameter of EvaluatePropertyAccessWithExpressionKey more precise (#3164)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "shvaikalesh@gmail.com",
-          "hash": "3d7c44ce",
-          "subject": "Editorial: Remove duplicate \"current Realm\" variable from CreateDynamicFunction (#3177)"
         }
       ],
       "testlog": [
@@ -7370,6 +7436,12 @@
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "daniec@microsoft.com",
+          "hash": "dcf8246",
+          "subject": "Add client coordinate definition and note on usage during scroll (#85)"
+        },
+        {
           "date": "2023-12-19",
           "author": "daniec@microsoft.com",
           "hash": "01d8a77",
@@ -7555,12 +7627,6 @@
           "author": "mmocny@gmail.com",
           "hash": "d956e62",
           "subject": "Update interactionID-explainer.md"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "zuoaoyuan@google.com",
-          "hash": "1859cdc",
-          "subject": "Update the explainer with current state"
         }
       ],
       "testlog": [
@@ -7583,6 +7649,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -7622,6 +7706,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -7659,6 +7761,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -7698,6 +7818,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -7735,6 +7873,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -7774,6 +7930,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -7811,6 +7985,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -7850,6 +8042,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -7887,6 +8097,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -7926,6 +8154,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -7963,6 +8209,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -8002,6 +8266,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -8039,6 +8321,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -8143,12 +8443,6 @@
           "author": "npm@chromium.org",
           "hash": "8253c9f",
           "subject": "b (#513)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "yigu@google.com",
-          "hash": "c827f57",
-          "subject": "Update the auto selected flag API name (#509)"
         }
       ],
       "testlog": []
@@ -8158,6 +8452,12 @@
       "href": "https://wicg.github.io/fenced-frame/",
       "specrepo": "https://github.com/WICG/fenced-frame",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "xiaochenzh@chromium.org",
+          "hash": "354e694",
+          "subject": "Add ad component event reporting algorithms. (#135)"
+        },
         {
           "date": "2023-12-14",
           "author": "shivanisha@chromium.org",
@@ -8709,12 +9009,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "c80e900",
           "subject": "Fix tag issue. Remove not needed definition in code. Change map to list mode."
-        },
-        {
-          "date": "2023-10-25",
-          "author": "juha.j.vainio@intel.com",
-          "hash": "fd1f0d3",
-          "subject": "Rewrite Automation section after w3c/sensors#470"
         }
       ],
       "testlog": [
@@ -8780,24 +9074,6 @@
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "22d42f9",
           "subject": "Adapt to virtual sensor changes in w3c/sensors#475"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "75a8439",
-          "subject": "Clean up Model section, export permission and policy-controlled feature name"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "070547c",
-          "subject": "Modernize Gyroscope constructor steps"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "189287b",
-          "subject": "Remove \"sensor permission name\" custom anchor"
         }
       ],
       "testlog": [
@@ -9088,21 +9364,21 @@
           "author": "dbaron@dbaron.org",
           "hash": "aec62609",
           "subject": "Make language of a node consider lang attribute on SVG elements"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "dbaron@dbaron.org",
-          "hash": "2e54ab55",
-          "subject": "Fix errors related to <slot> elements in auto directionality traversal"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "annevk@annevk.nl",
-          "hash": "11114d09",
-          "subject": "Make dir=auto and dirname apply to more form controls"
         }
       ],
       "testlog": [
+        {
+          "date": "2023-12-20",
+          "author": "dbaron@chromium.org",
+          "hash": "cf0e998b16",
+          "subject": "Remove experimental ::details-summary pseudo-element."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "2d4b51aead",
+          "subject": "Revert \"User activation: Fixes and improvements to utils (#43700)\""
+        },
         {
           "date": "2023-12-20",
           "author": "vhilla@mozilla.com",
@@ -9702,42 +9978,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "21dc7156fb",
           "subject": "view-transition: Move pagereveal tests to WPT (#42669)"
-        },
-        {
-          "date": "2023-10-25",
-          "author": "emilio@crisal.io",
-          "hash": "4600f2b6f3",
-          "subject": "Make sure frameloader is initialized after lazy-loading if there's a frame."
-        },
-        {
-          "date": "2023-10-25",
-          "author": "djmitche@chromium.org",
-          "hash": "257e3619dd",
-          "subject": "Represent form-factor client hint as a list"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "dbaron@chromium.org",
-          "hash": "a79306e066",
-          "subject": "Give <slot> element default unicode-bidi: isolate style."
-        },
-        {
-          "date": "2023-10-24",
-          "author": "jarhar@chromium.org",
-          "hash": "4945ce495e",
-          "subject": "Fix document.baseURI for about:blank documents"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "jarhar@chromium.org",
-          "hash": "a7bd5eabd3",
-          "subject": "Fix IDL URL bindings"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "annevk@annevk.nl",
-          "hash": "364c325f65",
-          "subject": "HTML: make dir=auto and dirname apply to more form controls"
         }
       ]
     },
@@ -9833,14 +10073,7 @@
       "href": "https://wicg.github.io/idle-detection/",
       "specrepo": "https://github.com/WICG/idle-detection",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-10-24",
-          "author": "philip@foolip.org",
-          "hash": "579ce39db1",
-          "subject": "Create idle-detection/WEB_FEATURES.yml (#42709)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Incremental Font Transfer",
@@ -10072,6 +10305,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -10174,18 +10425,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "6a3f921",
           "subject": "LoAF initial commit"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "14a5d97",
-          "subject": "nits"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "a69c200",
-          "subject": "Add RUMVision story"
         }
       ],
       "testlog": [
@@ -10225,24 +10464,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "e6bd640",
           "subject": "Rewrite Automation section after w3c/sensors#470"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "2b7d081",
-          "subject": "Modernize construction steps"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "746e6c9",
-          "subject": "Define and export \"magnetometer\" permission"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "96f7b56",
-          "subject": "Define a separate \"Uncalibrated Magnetometer\" sensor type, tighten definitions"
         }
       ],
       "testlog": [
@@ -10367,18 +10588,6 @@
           "author": "d.p.carlisle@gmail.com",
           "hash": "0f227fe",
           "subject": "WD"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "d.p.carlisle@gmail.com",
-          "hash": "a0f15c4",
-          "subject": "in not to"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "d.p.carlisle@gmail.com",
-          "hash": "7178d8a",
-          "subject": "update acknowledgements"
         }
       ],
       "testlog": []
@@ -10416,6 +10625,36 @@
       "href": "https://w3c.github.io/media-source/",
       "specrepo": "https://github.com/w3c/media-source",
       "speclog": [
+        {
+          "date": "2023-12-21",
+          "author": "marcos@marcosc.com",
+          "hash": "0f27243",
+          "subject": "Editorial: fixup more ReSpec usage/linking (#340)"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "marcos@marcosc.com",
+          "hash": "404e461",
+          "subject": "Editorial: remove redundant tables (#327)"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "saschanaz+autokagami@outlook.com",
+          "hash": "9f216ef",
+          "subject": "Editorial: Align with Web IDL specification (#342)"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "fd@tidoust.net",
+          "hash": "4b094da",
+          "subject": "Editorial: Fix broken SOTD structure and duplicate text, and 2 typos (#343)"
+        },
+        {
+          "date": "2023-12-21",
+          "author": "fd@tidoust.net",
+          "hash": "1a2275b",
+          "subject": "Fix the interface of the bufferedchange event in the summary table (#344)"
+        },
         {
           "date": "2023-12-18",
           "author": "marcos@marcosc.com",
@@ -10653,6 +10892,12 @@
       "specrepo": "https://github.com/w3c/mse-byte-stream-format-isobmff",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "fd@w3.org",
+          "hash": "7339379",
+          "subject": "Refresh list of editors and SOTD (#13)"
+        },
+        {
           "date": "2023-12-06",
           "author": "fd@w3.org",
           "hash": "0bf95e0",
@@ -10666,6 +10911,12 @@
       "href": "https://w3c.github.io/mse-byte-stream-format-mp2t/",
       "specrepo": "https://github.com/w3c/mse-byte-stream-format-mp2t",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "fd@w3.org",
+          "hash": "eb1502d",
+          "subject": "Refresh list of editors and SOTD (#6)"
+        },
         {
           "date": "2023-12-06",
           "author": "fd@w3.org",
@@ -10687,6 +10938,12 @@
       "specrepo": "https://github.com/w3c/mse-byte-stream-format-mpeg-audio",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "fd@w3.org",
+          "hash": "a923e52",
+          "subject": "Refresh list of editors and SOTD (#6)"
+        },
+        {
           "date": "2023-12-06",
           "author": "fd@w3.org",
           "hash": "e9e8e8d",
@@ -10707,6 +10964,12 @@
       "specrepo": "https://github.com/w3c/mse-byte-stream-format-registry",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "fd@w3.org",
+          "hash": "b933770",
+          "subject": "Refresh list of editors and SOTD (#5)"
+        },
+        {
           "date": "2023-12-06",
           "author": "fd@w3.org",
           "hash": "1e22f15",
@@ -10720,6 +10983,12 @@
       "href": "https://w3c.github.io/mse-byte-stream-format-webm/",
       "specrepo": "https://github.com/w3c/mse-byte-stream-format-webm",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "fd@w3.org",
+          "hash": "ac2315c",
+          "subject": "Refresh list of editors and SOTD (#7)"
+        },
         {
           "date": "2023-12-06",
           "author": "fd@w3.org",
@@ -10754,32 +11023,7 @@
       "href": "https://w3c.github.io/navigation-timing/",
       "specrepo": "https://github.com/w3c/navigation-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "7f45fb6",
-          "subject": "Extend box"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "c12f7fa",
-          "subject": "Extend box"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "a02d585",
-          "subject": "Add interimResponseStart"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "3ec8d31",
-          "subject": "Update diagram to make unload parallel"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -10893,6 +11137,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -10930,6 +11192,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -10969,6 +11249,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -11006,6 +11304,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -11045,6 +11361,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -11082,6 +11416,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -11121,6 +11473,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -11159,6 +11529,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -11196,6 +11584,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -11370,18 +11776,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "aff9350",
           "subject": "Rewrite Automation section after w3c/sensors#470 (#78)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "07f7a4b",
-          "subject": "Fix exception name used in permissions example (#79)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "ac00222",
-          "subject": "Define the Absolute/Relative Orientation Sensor sensor types in this spec"
         }
       ],
       "testlog": [
@@ -11406,6 +11800,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -11817,6 +12229,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2023-12-20",
+          "author": "flackr@chromium.org",
+          "hash": "a014594610",
+          "subject": "Lose pointer capture if capture target is removed by gotpointercapture."
+        },
         {
           "date": "2023-11-21",
           "author": "flackr@chromium.org",
@@ -12688,12 +13106,6 @@
           "author": "dshin@mozilla.com",
           "hash": "1ca8417fcb",
           "subject": "Don't collapse invalidations from selectors shared by nesting."
-        },
-        {
-          "date": "2023-10-24",
-          "author": "annevk@annevk.nl",
-          "hash": "364c325f65",
-          "subject": "HTML: make dir=auto and dirname apply to more form controls"
         }
       ]
     },
@@ -13083,12 +13495,6 @@
           "author": "estade@chromium.org",
           "hash": "dd377f7d26",
           "subject": "Storage buckets: move internal WPT to external WPT"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "estade@chromium.org",
-          "hash": "446b9bce1c",
-          "subject": "Deduplicate some WPT."
         }
       ]
     },
@@ -13891,6 +14297,12 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "orrb@google.com",
+          "hash": "d512d45",
+          "subject": "Add iframe support for adAuctionHeaders to spec. (#918)"
+        },
+        {
           "date": "2023-12-19",
           "author": "kleber@google.com",
           "hash": "d6cd564",
@@ -14165,24 +14577,6 @@
           "author": "6334674+qingxinwu@users.noreply.github.com",
           "hash": "07960ec",
           "subject": "Add an algorithm of storage maintenance (IG Cap). (#859)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "JensenPaul@users.noreply.github.com",
-          "hash": "503311e",
-          "subject": "Move lifetime to IG attribute (#870)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "garretttanzer@gmail.com",
-          "hash": "919f106",
-          "subject": "Explain reportEvent to custom destination urls (with macro substitution) (#763)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "gwhitehawk@gmail.com",
-          "hash": "647a2e6",
-          "subject": "Updating k-anonymity params (#753)"
         }
       ],
       "testlog": []
@@ -14300,12 +14694,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "0343b0b",
           "subject": "Editorial: Fix property descriptions in the quick reference"
-        },
-        {
-          "date": "2023-10-25",
-          "author": "d@domenic.me",
-          "hash": "c8d5072",
-          "subject": "Meta: update Twitter account"
         }
       ],
       "testlog": [
@@ -14566,12 +14954,6 @@
           "author": "rossberg@chromium.org",
           "hash": "43d405f5",
           "subject": "[spec/interpreter/test] Align definition of newline with Unicode recommendation (#1684)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "rossberg@chromium.org",
-          "hash": "b39baf77",
-          "subject": "[spec] Fix definition of iextend (#1696)"
         }
       ],
       "testlog": []
@@ -14761,9 +15143,21 @@
         },
         {
           "date": "2023-12-04",
+          "author": "michael_b_jones@hotmail.com",
+          "hash": "586642d",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2023-12-04",
           "author": "emil@yubico.com",
           "hash": "c034bd9",
           "subject": "Disambiguate \"this value\" in authenticatorDisplayName description"
+        },
+        {
+          "date": "2023-11-30",
+          "author": "michael_b_jones@hotmail.com",
+          "hash": "def2363",
+          "subject": "Reference CTAP 2.1 errata spec"
         },
         {
           "date": "2023-11-29",
@@ -15021,12 +15415,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "b58b951dba",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=263584 (#42715)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "padenot@mozilla.com",
-          "hash": "204c3f3db5",
-          "subject": "Add Mozilla reviewers to WebCodecs directory (#42714)"
         }
       ]
     },
@@ -15866,6 +16254,24 @@
       ],
       "testlog": [
         {
+          "date": "2023-12-21",
+          "author": "aborovova@mozilla.com",
+          "hash": "401fa2160f",
+          "subject": "[wdspec] Add more tests for \"browsingContext.locateNodes\" command."
+        },
+        {
+          "date": "2023-12-21",
+          "author": "aborovova@mozilla.com",
+          "hash": "3e5c64fb48",
+          "subject": "[wdspec] Fix tests and update metadata for \"browsingContext.locateNodes\" command."
+        },
+        {
+          "date": "2023-12-20",
+          "author": "jdescottes@mozilla.com",
+          "hash": "093bbd790e",
+          "subject": "[wdspec] Do not assert each responseCompleted event in continue with auth tests"
+        },
+        {
           "date": "2023-12-20",
           "author": "james@hoppipolla.co.uk",
           "hash": "b50d89c345",
@@ -16218,24 +16624,6 @@
           "author": "aborovova@mozilla.com",
           "hash": "64d5f5b0f3",
           "subject": "[wdspec] Add tests for browsingContext.contextDestroyed event."
-        },
-        {
-          "date": "2023-10-24",
-          "author": "wptsync@mozilla.com",
-          "hash": "c1f15edf91",
-          "subject": "[wdspec] Add test case with an empty string as `defaultValue`."
-        },
-        {
-          "date": "2023-10-24",
-          "author": "wptsync@mozilla.com",
-          "hash": "e8681e0cfa",
-          "subject": "[wdspec] Add proper support for tests to use WebFrame and WebWindow."
-        },
-        {
-          "date": "2023-10-24",
-          "author": "mail@hskupin.info",
-          "hash": "f41dd06f6c",
-          "subject": "Add WebDriver test for pointer move to different viewport targets."
         }
       ]
     },
@@ -16244,6 +16632,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "jdescottes@mozilla.com",
+          "hash": "d3ec8cb",
+          "subject": "Move update-the-response algorithm to Network Intercepts section"
+        },
         {
           "date": "2023-12-19",
           "author": "mike@mikepennisi.com",
@@ -16447,24 +16841,6 @@
           "author": "34244704+Lightning00Blade@users.noreply.github.com",
           "hash": "409761f",
           "subject": "Extend `browsingContext.close` params with `promptUnload` (#518)"
-        },
-        {
-          "date": "2023-10-25",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "38ba606",
-          "subject": "Serialize entire browsing context tree for contextDestroyed events (#578)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "jdescottes@mozilla.com",
-          "hash": "a086566",
-          "subject": "typo in update the response section (#581)"
-        },
-        {
-          "date": "2023-10-24",
-          "author": "34244704+Lightning00Blade@users.noreply.github.com",
-          "hash": "f509668",
-          "subject": "[PreloadScripts] Block empty contexts list (#577)"
         }
       ],
       "testlog": []
@@ -16474,6 +16850,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16513,6 +16907,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16550,6 +16962,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16589,6 +17019,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16626,6 +17074,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16665,6 +17131,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16702,6 +17186,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16741,6 +17243,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16778,6 +17298,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16817,6 +17355,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16854,6 +17410,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16893,6 +17467,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -16930,6 +17522,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -16969,6 +17579,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -17006,6 +17634,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
@@ -17045,6 +17691,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -17083,6 +17747,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
+        {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
           "hash": "5a1217d4d",
@@ -17120,6 +17802,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "036f5207b",
+          "subject": "Fix \"code\" tags causing incorrect HTML rendering. (#3607)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "a8e07708a",
+          "subject": "Upgrade extract-idl.py for Python3; regenerate IDLs. (#3606)"
+        },
+        {
+          "date": "2023-12-20",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1025e7616",
+          "subject": "Spec glrc.drawingBufferStorage. (#3222)"
+        },
         {
           "date": "2023-11-20",
           "author": "keaukraine@gmail.com",
