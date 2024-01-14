@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-11-17T07:12:35.668Z",
-  "until": "2024-01-13T07:12:35.668Z",
+  "since": "2023-11-18T07:12:46.809Z",
+  "until": "2024-01-14T07:12:46.809Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -814,6 +814,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-01-14",
+          "author": "cathiechen@igalia.com",
+          "hash": "d15c7e2904",
+          "subject": "Intermittent /css/css-contain/content-visibility/content-visibility-vs-scrollIntoView-003.html"
+        },
+        {
+          "date": "2024-01-14",
+          "author": "cathiechen@igalia.com",
+          "hash": "6f08ac21ba",
+          "subject": "Intermittent /css/css-contain/content-visibility/content-visibility-auto-state-changed-removed.html"
+        },
+        {
+          "date": "2024-01-13",
+          "author": "masonf@chromium.org",
+          "hash": "5049a31d2a",
+          "subject": "Fix content-visibility-095.html expectation"
+        },
+        {
+          "date": "2024-01-13",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "46ebceba00",
+          "subject": "Fix WPT content-computed.html to not send actual image requests to example.com."
+        },
         {
           "date": "2024-01-12",
           "author": "yotha@chromium.org",
@@ -2067,18 +2091,6 @@
           "author": "jkew@mozilla.com",
           "hash": "00f2d3447e",
           "subject": "Ensure we never try to add letter-spacing to a preserved newline."
-        },
-        {
-          "date": "2023-11-17",
-          "author": "jpgravel@chromium.org",
-          "hash": "0cde829cc0",
-          "subject": "Fix PaintRenderingContext2D reset in highdpi"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "boris.chiou@gmail.com",
-          "hash": "58406da908",
-          "subject": "Fix the serialization of <grid-line> when using span."
         }
       ]
     },
@@ -2930,6 +2942,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-14",
+          "author": "cathiechen@igalia.com",
+          "hash": "d15c7e2904",
+          "subject": "Intermittent /css/css-contain/content-visibility/content-visibility-vs-scrollIntoView-003.html"
+        },
+        {
+          "date": "2024-01-14",
+          "author": "cathiechen@igalia.com",
+          "hash": "6f08ac21ba",
+          "subject": "Intermittent /css/css-contain/content-visibility/content-visibility-auto-state-changed-removed.html"
+        },
+        {
+          "date": "2024-01-13",
+          "author": "masonf@chromium.org",
+          "hash": "5049a31d2a",
+          "subject": "Fix content-visibility-095.html expectation"
+        },
+        {
           "date": "2024-01-11",
           "author": "schenney@chromium.org",
           "hash": "217ab9f148",
@@ -3047,6 +3077,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-01-13",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "46ebceba00",
+          "subject": "Fix WPT content-computed.html to not send actual image requests to example.com."
+        },
         {
           "date": "2023-12-23",
           "author": "nt1m@users.noreply.github.com",
@@ -3539,12 +3575,6 @@
           "author": "ethavar@microsoft.com",
           "hash": "e27f4c2f5e",
           "subject": "[GridNG] Honor specified intrinsic sizes in CompleteTrackSizingAlgorithm"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "boris.chiou@gmail.com",
-          "hash": "58406da908",
-          "subject": "Fix the serialization of <grid-line> when using span."
         }
       ]
     },
@@ -3779,7 +3809,14 @@
       "href": "https://drafts.fxtf.org/css-masking/",
       "specrepo": "https://github.com/w3c/fxtf-drafts",
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-01-13",
+          "author": "alkor.sx@gmail.com",
+          "hash": "4664773",
+          "subject": "remove reference to previously-removed margin-box value of mask-clip (#535)"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-01-02",
@@ -3991,14 +4028,7 @@
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-11-17",
-          "author": "jpgravel@chromium.org",
-          "hash": "0cde829cc0",
-          "subject": "Fix PaintRenderingContext2D reset in highdpi"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Parser API",
@@ -4907,30 +4937,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "4bd35613b",
           "subject": "[css-view-transitions-1] Correct typo in example"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "63884798+khushalsagar@users.noreply.github.com",
-          "hash": "1213a4d71",
-          "subject": "[css-view-transitions-1] Refactor skip during cross-doc transition on old Document (#9611)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "3499ece70",
-          "subject": "[css-view-transitions-2] cross-document transition preceeds startViewTransition on outgoing page (#9609)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "eaf7fdd06",
-          "subject": "[css-view-transitions-2] UA may apply implementation-defined timeout o cross-document view transition (#9608)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "9ac9b465a",
-          "subject": "[css-view-transitions-2] Tighten view-transition rule resolving (#9602)"
         }
       ],
       "testlog": [
@@ -5238,24 +5244,6 @@
           "author": "steimel@chromium.org",
           "hash": "4e3ff0d",
           "subject": "Add maximum size security consideration"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "steimel@chromium.org",
-          "hash": "dffd6de",
-          "subject": "fix bugs in examples"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "steimel@chromium.org",
-          "hash": "390d4bd",
-          "subject": "Add examples to spec and explainer"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "steimel@chromium.org",
-          "hash": "561d628",
-          "subject": "Allow usage of resizeTo() and resizeBy() APIs via user gesture"
         }
       ],
       "testlog": [
@@ -5399,12 +5387,6 @@
           "author": "sffc@google.com",
           "hash": "bb207e7",
           "subject": "Create notes-2023-12-14.md"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "sffc@google.com",
-          "hash": "d54d69b",
-          "subject": "Update notes-2023-11-16.md"
         }
       ],
       "testlog": [
@@ -6845,14 +6827,7 @@
           "subject": "Meta: Add \"readwrite-unsafe\" example to MultipleReadersWriters proposal"
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-11-18",
-          "author": "memmott@chromium.org",
-          "hash": "4d050239d6",
-          "subject": "FSA: Return LockHandle after eviction"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Fullscreen API",
@@ -7675,30 +7650,6 @@
           "author": "obrufau@igalia.com",
           "hash": "5dc471a6ea",
           "subject": "Allow currentColor in canvas context's shadowColor"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "jarhar@chromium.org",
-          "hash": "bc50ea2014",
-          "subject": "selectlist: Add test for <option label> rendering"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "tcaptan@chromium.org",
-          "hash": "bae0cb01d9",
-          "subject": "Add lazy load scroll margin wpt tests"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "nribaudo@igalia.com",
-          "hash": "6593bded6f",
-          "subject": "Replace missed `assert` in import attributes tests"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "zsun@igalia.com",
-          "hash": "8a260bbfe3",
-          "subject": "Add focus navigation support for popover."
         }
       ]
     },
@@ -7932,12 +7883,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "4c48fa3be8",
           "subject": "Allow intersectionObserver to calculate smaller fractions. (#43073)"
-        },
-        {
-          "date": "2023-11-18",
-          "author": "yotha@chromium.org",
-          "hash": "351988b0e8",
-          "subject": "Fix bug in IntersectionObserver for SVG elements with viewbox"
         }
       ],
       "testpolicy": "https://github.com/w3c/IntersectionObserver/blob/HEAD/CONTRIBUTING.md"
@@ -10438,12 +10383,6 @@
           "author": "sisidovski@chromium.org",
           "hash": "ffe06ef95d",
           "subject": "Add baseURL to the URLPattern condition while routing rule registration"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "sisidovski@chromium.org",
-          "hash": "9a4dbf80eb",
-          "subject": "Refactor WPTs for SW Static Routing API"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -10707,12 +10646,6 @@
           "author": "nhiroki@chromium.org",
           "hash": "52fd04dab8",
           "subject": "Prerender: Run WPT for background fetch and sync with target hint"
-        },
-        {
-          "date": "2023-11-18",
-          "author": "japhet@chromium.org",
-          "hash": "d6f956b4a7",
-          "subject": "Update navigation.entries() and navigation.activation on prerender activation"
         }
       ]
     },
@@ -11733,18 +11666,6 @@
           "author": "kleber@google.com",
           "hash": "e5fd3d9",
           "subject": "Create 2023-11-15-FLEDGE-call-minutes.md"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "caraitto@chromium.org",
-          "hash": "c7aa129",
-          "subject": "Header directFromSellerSignals uses most recent response (#890)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "garretttanzer@gmail.com",
-          "hash": "b29142b",
-          "subject": "Note registerAdMacro input sanitization (#913)"
         }
       ],
       "testlog": []
@@ -12049,14 +11970,7 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "testrepo": "web-platform-tests/wpt",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-11-17",
-          "author": "gbedford@fastly.com",
-          "hash": "8b18dd1fa4",
-          "subject": "[wasm] Source Phase Imports for ESM Integration (#42467)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Animations",
@@ -12772,6 +12686,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-14",
+          "author": "jdescottes@mozilla.com",
+          "hash": "08dabbbb3c",
+          "subject": "[wdspec] Add tests for BiDi network.failRequest"
+        },
+        {
           "date": "2024-01-12",
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "aee3194b90",
@@ -12980,24 +12900,6 @@
           "author": "tperrotta@chromium.org",
           "hash": "b6f2ffec79",
           "subject": "[wdspec] fix C-s typo override on wait_for_future_safe (#43239)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "tperrotta@chromium.org",
-          "hash": "605a199916",
-          "subject": "infra: address flake8 findings in webdriver/"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "tperrotta@chromium.org",
-          "hash": "0588affde3",
-          "subject": "[wdspec] Adopt `wait_for_future_safe` in even more tests (#43232)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "tperrotta@chromium.org",
-          "hash": "b2b4baed01",
-          "subject": "[wdspec] Adopt `wait_for_future_safe` in more tests (#43208)"
         }
       ]
     },
@@ -13119,24 +13021,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "a730cfa",
           "subject": "Editorial: correct typos (#608)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "tperrotta@chromium.org",
-          "hash": "a827e75",
-          "subject": "editorial: remove trailing whitespace (#607)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "101637635+jrandolf@users.noreply.github.com",
-          "hash": "19777fa",
-          "subject": "Use `text` for `webSocketUrl`. (#606)"
-        },
-        {
-          "date": "2023-11-17",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "7fd451d",
-          "subject": "Call console steps only for printed messages (#595)"
         }
       ],
       "testlog": []
@@ -14448,12 +14332,6 @@
           "author": "jib@mozilla.com",
           "hash": "f994e2f8f5",
           "subject": "Test that open non-referenced datachannels aren't GCed."
-        },
-        {
-          "date": "2023-11-17",
-          "author": "youennf@users.noreply.github.com",
-          "hash": "2ff8cd8556",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=260225 (#43153)"
         }
       ]
     },
