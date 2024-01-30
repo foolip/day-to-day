@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-12-03T07:12:45.577Z",
-  "until": "2024-01-29T07:12:45.577Z",
+  "since": "2023-12-04T07:12:58.281Z",
+  "until": "2024-01-30T07:12:58.281Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -151,14 +151,7 @@
       "name": "Iframe credentialless",
       "href": "https://wicg.github.io/anonymous-iframe/",
       "specrepo": "https://github.com/WICG/anonymous-iframe",
-      "speclog": [
-        {
-          "date": "2023-12-03",
-          "author": "fd@tidoust.net",
-          "hash": "4037421",
-          "subject": "Use `partial` definitions for monkey-patched Web IDL (#21)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -959,6 +952,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-01-29",
+          "author": "kschmi@microsoft.com",
+          "hash": "30cb5d5d68",
+          "subject": "[Grid] Fix layout with max-content, aspect ratio, and alignment"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "dizhangg@chromium.org",
+          "hash": "7f56feea53",
+          "subject": "Add WPT tests for WM vertical and direction RTL for progress, meter, range"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "nrosenthal@chromium.org",
+          "hash": "c8fa0edb36",
+          "subject": "View transitions: parse pseudo-element selectors with classes"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "futhark@chromium.org",
+          "hash": "30daa7e4a5",
+          "subject": "[css-anchor-position] Style contain anchor-name"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "tkent@chromium.org",
+          "hash": "0788ac11b5",
+          "subject": "Layout: Re-apply text-transform if element's locale is changed"
+        },
         {
           "date": "2024-01-29",
           "author": "nt1m@users.noreply.github.com",
@@ -2230,18 +2253,6 @@
           "author": "keithamus@users.noreply.github.com",
           "hash": "5ddf095c38",
           "subject": "allow :state() after ::part()"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "mstensho@chromium.org",
-          "hash": "cce26e3757",
-          "subject": "Never break at a resumed parallel block flow inline node."
-        },
-        {
-          "date": "2023-12-03",
-          "author": "emilio@crisal.io",
-          "hash": "cb2a2966d8",
-          "subject": "Fix up cssRules when calling replace() repeatedly."
         }
       ]
     },
@@ -2301,6 +2312,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "b5b59a6c0",
+          "subject": "[css-anchor-position-1] Rather than adjusting double-auto insets to achieve centering, just zero them and adjust available space instead."
+        },
+        {
+          "date": "2024-01-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "c35d053bf",
+          "subject": "[css-anchor-position-1] Remove text about anchor-center causing the element to shift to stay in view; we want that for other alignments, too."
+        },
+        {
+          "date": "2024-01-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "ab03dd7bf",
+          "subject": "[css-anchor-position-1][editorial] Fix remaining big headings."
+        },
+        {
+          "date": "2024-01-29",
+          "author": "rune.lillesveen@gmail.com",
+          "hash": "9c8b825df",
+          "subject": "[css-anchor-position-1] Make anchor-name style contained #9100 (#9863)"
+        },
+        {
           "date": "2024-01-27",
           "author": "jackalmage@gmail.com",
           "hash": "ac1363b1c",
@@ -2320,6 +2355,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-01-29",
+          "author": "futhark@chromium.org",
+          "hash": "30daa7e4a5",
+          "subject": "[css-anchor-position] Style contain anchor-name"
+        },
         {
           "date": "2024-01-26",
           "author": "ikilpatrick@chromium.org",
@@ -2612,12 +2653,6 @@
           "author": "tlin@mozilla.com",
           "hash": "920d1a8f9c",
           "subject": "Part 6 - Add more flexbox fragmentation web-platform-tests."
-        },
-        {
-          "date": "2023-12-03",
-          "author": "mstensho@chromium.org",
-          "hash": "cce26e3757",
-          "subject": "Never break at a resumed parallel block flow inline node."
         }
       ]
     },
@@ -2654,6 +2689,54 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "b22856f3b",
+          "subject": "[css-color-4][editorial] Add WPT for PNG cICP in apng"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "67fa3c9e0",
+          "subject": "[css-color-4][editorial] Historical reasons"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "c23c6ad3b",
+          "subject": "Restored parse-time clamping of HSL negative saturation to 0, which is current interop behavior from CSS Color 3. #9222"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "be48b10d6",
+          "subject": "[css-color-4] Restored parse-time clamping of HSL negative saturation to 0, which is current interop behavior from CSS Color 3. #9222"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "1b3a4bf62",
+          "subject": "[css-color-4] When interpolating, always convert colorspace,  so that powerless components become missing #8609"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "461e559e2",
+          "subject": "[css-color-4] Consistently distinguished opacity from alpha, #8311"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "c332f16b3",
+          "subject": "[css-color-4][editorial] typo"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chris@w3.org",
+          "hash": "9d07962f5",
+          "subject": "[css-color-4] Clarified when alpha 1 is omitted from serialization, #8311"
+        },
         {
           "date": "2024-01-24",
           "author": "chris@w3.org",
@@ -3567,6 +3650,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "kschmi@microsoft.com",
+          "hash": "30cb5d5d68",
+          "subject": "[Grid] Fix layout with max-content, aspect ratio, and alignment"
+        },
+        {
           "date": "2024-01-20",
           "author": "ikilpatrick@chromium.org",
           "hash": "3c8963da9a",
@@ -4017,12 +4106,6 @@
           "author": "mstensho@chromium.org",
           "hash": "2b7772078c",
           "subject": "Never put an \"outside\" list-item marker in an anonymous block."
-        },
-        {
-          "date": "2023-12-03",
-          "author": "mstensho@chromium.org",
-          "hash": "cce26e3757",
-          "subject": "Never break at a resumed parallel block flow inline node."
         }
       ]
     },
@@ -4700,6 +4783,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "tkent@chromium.org",
+          "hash": "0788ac11b5",
+          "subject": "Layout: Re-apply text-transform if element's locale is changed"
+        },
+        {
           "date": "2024-01-25",
           "author": "kojii@chromium.org",
           "hash": "2036f94ae3",
@@ -5119,6 +5208,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "nrosenthal@chromium.org",
+          "hash": "c8fa0edb36",
+          "subject": "View transitions: parse pseudo-element selectors with classes"
+        },
+        {
           "date": "2024-01-26",
           "author": "vmpstr@chromium.org",
           "hash": "21246f3ddf",
@@ -5224,6 +5319,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "dizhangg@chromium.org",
+          "hash": "7f56feea53",
+          "subject": "Add WPT tests for WM vertical and direction RTL for progress, meter, range"
+        },
+        {
           "date": "2024-01-03",
           "author": "futhark@chromium.org",
           "hash": "a8eb8ed41d",
@@ -5298,12 +5399,6 @@
           "author": "futhark@chromium.org",
           "hash": "c7d33084c6",
           "subject": "Traverse custom properties for cssText when expanding 'all' property"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "emilio@crisal.io",
-          "hash": "cb2a2966d8",
-          "subject": "Fix up cssRules when calling replace() repeatedly."
         }
       ]
     },
@@ -5522,6 +5617,18 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "dom@chromium.org",
+          "hash": "8359d2b920",
+          "subject": "DOM: Implement the `takeUntil()` Observable operator"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "chromium@keithcirkel.co.uk",
+          "hash": "a2f5974250",
+          "subject": "Add more Observable tests."
+        },
+        {
           "date": "2024-01-26",
           "author": "awogbemila@chromium.org",
           "hash": "c762bf8094",
@@ -5631,6 +5738,18 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2024-01-30",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "691d5488",
+          "subject": "Editorial: move emu-note relating to floor next to definition of floor (#3270)"
+        },
+        {
+          "date": "2024-01-30",
+          "author": "ljharb@gmail.com",
+          "hash": "448d3cd8",
+          "subject": "Meta: add an IPR exception"
+        },
         {
           "date": "2024-01-25",
           "author": "zhangenming@qq.com",
@@ -6793,12 +6912,6 @@
           "author": "negibokken@gmail.com",
           "hash": "e8d57f52b6",
           "subject": "Fix handling invalid date for Expires header value \"0\" as expired"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "saschanaz@outlook.com",
-          "hash": "9560182213",
-          "subject": "Reverse the check order in Fetch::SetBodyUsed"
         }
       ]
     },
@@ -6896,7 +7009,20 @@
       "name": "User Agent Interaction with Related Website Sets",
       "href": "https://wicg.github.io/first-party-sets/",
       "specrepo": "https://github.com/WICG/first-party-sets",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "cfredric@google.com",
+          "hash": "c05b321",
+          "subject": "Fix bikeshed warnings/errors"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "isaac.z.foster@gmail.com",
+          "hash": "2db6375",
+          "subject": "Update max associated domains from 3 --> 5 (#203)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -7370,6 +7496,18 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-30",
+          "author": "alice@igalia.com",
+          "hash": "cb7a5506d6",
+          "subject": "Use FrozenArray<Element>* everywhere for Element array IDL attributes."
+        },
+        {
+          "date": "2024-01-29",
+          "author": "zcorpan@gmail.com",
+          "hash": "eef173b5b9",
+          "subject": "HTML/SVG: <svg><script/> should run the script"
+        },
+        {
           "date": "2024-01-27",
           "author": "masonf@chromium.org",
           "hash": "adc1ac02e6",
@@ -7734,12 +7872,6 @@
           "author": "murakinonoka@chromium.org",
           "hash": "746807e7a5",
           "subject": "Unload: reject promise on pagehide instead of unload"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "luke@warlow.dev",
-          "hash": "b75d9d7ecb",
-          "subject": "Fix invoker light dismiss handling for popover"
         }
       ]
     },
@@ -8365,12 +8497,6 @@
           "author": "marcos@marcosc.com",
           "hash": "be0d251",
           "subject": "Editorial: let ReSpec handle id assignment (#337)"
-        },
-        {
-          "date": "2023-12-04",
-          "author": "marcos@marcosc.com",
-          "hash": "6f69e59",
-          "subject": "Editorial: modernize example (#339)"
         }
       ],
       "testlog": []
@@ -9206,6 +9332,12 @@
       "specrepo": "https://github.com/w3c/deviceorientation",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "anssi.kostiainen@intel.com",
+          "hash": "c87f8a6",
+          "subject": "Add Security and Privacy Self-Review Questionnaire (#126)"
+        },
+        {
           "date": "2024-01-22",
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "0b538e9",
@@ -9745,6 +9877,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "e29c9b8888",
+          "subject": "Move toElement and fromElement tests into a seperate variant"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "kevers@google.com",
+          "hash": "6d5a75c520",
+          "subject": "Consolidate pointer attribute testing"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "e219351947",
+          "subject": "Revert \"Consolidate pointer attribute testing\""
+        },
+        {
           "date": "2024-01-28",
           "author": "masayuki@d-toybox.com",
           "hash": "93cb4324c4",
@@ -9798,7 +9948,14 @@
       "name": "Pointer Lock",
       "href": "https://w3c.github.io/pointerlock/",
       "specrepo": "https://github.com/w3c/pointerlock",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "mustaq@google.com",
+          "hash": "79bbc6e",
+          "subject": "Make scheib a co-editor. (#86)"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/pointerlock/blob/HEAD/CONTRIBUTING.md"
     },
@@ -10429,6 +10586,12 @@
         {
           "date": "2024-01-29",
           "author": "sisidovski@chromium.org",
+          "hash": "c4285542f3",
+          "subject": "Add request destination tests"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "sisidovski@chromium.org",
           "hash": "5a284380b9",
           "subject": "Add reuqest method WPTs for the SW static routing API"
         },
@@ -10840,6 +11003,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "longsonr@gmail.com",
+          "hash": "c2923314cd",
+          "subject": "fix lengthAdjust when applied to vertical text"
+        },
+        {
           "date": "2024-01-10",
           "author": "longsonr@gmail.com",
           "hash": "dc568e9ec1",
@@ -10874,12 +11043,6 @@
           "author": "hong.zheng@intel.com",
           "hash": "85a07eb846",
           "subject": "Disable svg animation throttling for use elements"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "tschuster@mozilla.com",
-          "hash": "3c31bc7086",
-          "subject": "Restrict SVG <use> to prevent usage of data: URLs."
         }
       ]
     },
@@ -11199,14 +11362,7 @@
       "name": "Set methods",
       "href": "https://tc39.es/proposal-set-methods/",
       "specrepo": "https://github.com/tc39/proposal-set-methods",
-      "speclog": [
-        {
-          "date": "2023-12-03",
-          "author": "bakkot@gmail.com",
-          "hash": "a52031f",
-          "subject": "Bugfix: update index after use in Set.prototype.difference (#104)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -11214,6 +11370,12 @@
       "href": "https://tc39.es/proposal-shadowrealm/",
       "specrepo": "https://github.com/tc39/proposal-shadowrealm",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "github@michael.ficarra.me",
+          "hash": "9321d6f",
+          "subject": "update README.md to correct current stage (#395)"
+        },
         {
           "date": "2024-01-25",
           "author": "caridy@gmail.com",
@@ -11254,6 +11416,30 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "mohammadkeyvanzade94@gmail.com",
+          "hash": "35732cbc",
+          "subject": "Editorial: update deps and fix issues"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "pchimento@igalia.com",
+          "hash": "116788b9",
+          "subject": "Editorial: Structured headers for spec/intl.html"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "pchimento@igalia.com",
+          "hash": "26e4b828",
+          "subject": "Editorial: Update ECMA-402 original text to latest snapshot"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "pchimento@igalia.com",
+          "hash": "59e5879e",
+          "subject": "Editorial: Update ECMA-262 original text to latest snapshot"
+        },
         {
           "date": "2024-01-22",
           "author": "pchimento@igalia.com",
@@ -11898,6 +12084,12 @@
       "specrepo": "https://github.com/w3c/uievents",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "garykac@gmail.com",
+          "hash": "ad612cb",
+          "subject": "Experimental split version of the spec"
+        },
+        {
           "date": "2023-12-04",
           "author": "jrandolf@chromium.org",
           "hash": "32b6dba",
@@ -11998,6 +12190,18 @@
       "specrepo": "https://github.com/whatwg/urlpattern",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "jbroman@chromium.org",
+          "hash": "1259680",
+          "subject": "Serialize the next numeric name"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "jbroman@chromium.org",
+          "hash": "c9c56ee",
+          "subject": "Do not initialize a URLPatternInit member to null in \"initialize a URLPattern\""
+        },
         {
           "date": "2024-01-24",
           "author": "annevk@annevk.nl",
@@ -12526,6 +12730,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12533,6 +12743,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-01-30",
+          "author": "dalecurtis@chromium.org",
+          "hash": "a406d24af6",
+          "subject": "Implement 4:4:4 encoding for AV1 high profile w/ WebCodecs."
+        },
         {
           "date": "2024-01-26",
           "author": "dalecurtis@chromium.org",
@@ -12559,6 +12775,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12572,6 +12794,12 @@
       "href": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12587,6 +12815,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12600,6 +12834,12 @@
       "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12615,6 +12855,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12628,6 +12874,12 @@
       "href": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12643,6 +12895,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12656,6 +12914,12 @@
       "href": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12671,6 +12935,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12684,6 +12954,12 @@
       "href": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12699,6 +12975,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12712,6 +12994,12 @@
       "href": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12727,6 +13015,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
+        {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
           "hash": "21e4a15",
@@ -12740,6 +13034,12 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "youennf@gmail.com",
+          "hash": "9e0f22e",
+          "subject": "Export Close VideoFrame as it is used in mediacapture-transform spec"
+        },
         {
           "date": "2024-01-08",
           "author": "chris.needham@bbc.co.uk",
@@ -12819,6 +13119,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-01-29",
+          "author": "OrKoN@users.noreply.github.com",
+          "hash": "1e0f296b5d",
+          "subject": "[wdspec] add a test to get_tree/frames.py to validate user_context (#44224)"
+        },
+        {
+          "date": "2024-01-29",
+          "author": "OrKoN@users.noreply.github.com",
+          "hash": "9b91f81961",
+          "subject": "[wdspec] add user context checks in browsing context created/destroyed events (#44223)"
+        },
         {
           "date": "2024-01-26",
           "author": "OrKoN@users.noreply.github.com",
@@ -13046,18 +13358,6 @@
           "author": "jdescottes@mozilla.com",
           "hash": "2754e5b27e",
           "subject": "Introduce shared constants for webdriver bidi network tests"
-        },
-        {
-          "date": "2023-12-03",
-          "author": "aborovova@mozilla.com",
-          "hash": "fafc25e2cd",
-          "subject": "[wdspec] Add more tests for \"origin\" argument of \"browsingContext.captureScreenshot\" command."
-        },
-        {
-          "date": "2023-12-03",
-          "author": "aborovova@mozilla.com",
-          "hash": "f2d6aea322",
-          "subject": "[wdspec] Add test cases for serialization of cross-origin iframes."
         }
       ]
     },
@@ -13066,6 +13366,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2024-01-29",
+          "author": "aborovova@mozilla.com",
+          "hash": "19a7921",
+          "subject": "Serialize a cookie before trying to match it to filter."
+        },
         {
           "date": "2024-01-23",
           "author": "OrKoN@users.noreply.github.com",
@@ -14547,6 +14853,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-01-29",
+          "author": "phancke@microsoft.com",
+          "hash": "c13693ef81",
+          "subject": "webrtc wpt: modernize RTCRtpReceiver/RTCRtpSender getStats tests"
+        },
+        {
           "date": "2024-01-25",
           "author": "phancke@microsoft.com",
           "hash": "501b929d04",
@@ -14778,6 +15090,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-01-29",
+          "author": "phancke@microsoft.com",
+          "hash": "c13693ef81",
+          "subject": "webrtc wpt: modernize RTCRtpReceiver/RTCRtpSender getStats tests"
+        },
         {
           "date": "2024-01-24",
           "author": "phancke@microsoft.com",
