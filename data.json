@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-12-18T07:12:49.994Z",
-  "until": "2024-02-13T07:12:49.994Z",
+  "since": "2023-12-19T07:12:57.957Z",
+  "until": "2024-02-14T07:12:57.957Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -418,14 +418,7 @@
       "href": "https://wicg.github.io/background-fetch/",
       "specrepo": "https://github.com/WICG/background-fetch",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Background Synchronization",
@@ -528,7 +521,14 @@
       "name": "Clipboard API and events",
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-02-14",
+          "author": "45411397+snianu@users.noreply.github.com",
+          "hash": "c858eb2",
+          "subject": "Add non-normative and optional texts. (#208)"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-02-12",
@@ -562,12 +562,6 @@
           "author": "annevk@annevk.nl",
           "hash": "c14eafe",
           "subject": "Meta: update repository files"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "miketaylr@chromium.org",
-          "hash": "080795f",
-          "subject": "Meta: fix border-bottom-* and border-top-* linking errors (#260)"
         }
       ],
       "testlog": []
@@ -851,6 +845,60 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-14",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "938e843163",
+          "subject": "Add test case for crbug.com/41490395"
+        },
+        {
+          "date": "2024-02-14",
+          "author": "clchambers@microsoft.com",
+          "hash": "93fb47cecd",
+          "subject": "[CompositeClipPathAnimation] Resolve flakey tests."
+        },
+        {
+          "date": "2024-02-13",
+          "author": "abotella@igalia.com",
+          "hash": "dfd8ddb9fa",
+          "subject": "Fix min-content related crash in `LineBreaker::SplitTrailingBidiPreservedSpace`"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "8fa356c9a6",
+          "subject": "Add support for math expressions for font-size-adjust interpolation"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "6b359c7647",
+          "subject": "Add support for math expressions for font-stretch interpolation"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "279a195a53",
+          "subject": "Add support for math expressions for border-image-width interpolation"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "futhark@chromium.org",
+          "hash": "a900d16280",
+          "subject": "Do feature detection in @starting-style tests"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "mstensho@chromium.org",
+          "hash": "f127a46d47",
+          "subject": "Add @page (CSSPageRule) CSSOM test for adding / removing properties."
+        },
+        {
+          "date": "2024-02-13",
+          "author": "dshin@mozilla.com",
+          "hash": "a7f0a17492",
+          "subject": "Part 2 - Add `:has` to revalidation selector."
+        },
         {
           "date": "2024-02-13",
           "author": "vmpstr@chromium.org",
@@ -2038,30 +2086,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "967023d1dc",
           "subject": "Reland \"Support number producing css math functions in ConvertScale\""
-        },
-        {
-          "date": "2023-12-19",
-          "author": "dshin@mozilla.com",
-          "hash": "2422c68237",
-          "subject": "Prevent rule-based style sharing on elements that considered a relative selector."
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fs@opera.com",
-          "hash": "168eca073a",
-          "subject": "Use BackgroundImageGeometry in SVGMaskPainter"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fs@opera.com",
-          "hash": "ca1ca1e8bc",
-          "subject": "Fix reference box computation for SVG <clipPath> on <foreignObject>"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -2070,14 +2094,7 @@
       "href": "https://drafts.csswg.org/css2/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "dc8c9a88c",
-          "subject": "[meta] Consistent spelling of lowercase/uppercase"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-02-02",
@@ -2337,12 +2354,6 @@
           "author": "futhark@chromium.org",
           "hash": "149fd81726",
           "subject": "[@position-fallback] Avoid two-pass without fallback styles"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -2434,24 +2445,6 @@
           "author": "sebastianzartner@gmail.com",
           "hash": "aaa2783ac",
           "subject": "[css-backgrounds-3][css-borders-4] Fixed definition for where box shadows apply (#9296)"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "3ffefcc5a",
-          "subject": "[css-backgrounds-3] Shift Bert to Former Editor since he's no longer in the WG :("
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "5427b3ccc",
-          "subject": "[css-backgrounds-3] Update Changes section"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "9fdc16319",
-          "subject": "[css-backgrounds-3] Update Changes section"
         }
       ],
       "testlog": [
@@ -2506,7 +2499,14 @@
           "subject": "[css-backgrounds-3][css-borders-4] Fixed definition for where box shadows apply (#9296)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "279a195a53",
+          "subject": "Add support for math expressions for border-image-width interpolation"
+        }
+      ]
     },
     {
       "name": "CSS Box Model",
@@ -2583,6 +2583,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-14",
+          "author": "chris@w3.org",
+          "hash": "2bdb4897a",
+          "subject": "[css-color-4][editorial] back to ED"
+        },
         {
           "date": "2024-02-12",
           "author": "chris@w3.org",
@@ -2798,36 +2804,6 @@
           "author": "chris@w3.org",
           "hash": "8a7af261c",
           "subject": "[css-color-5][editorial] Update abstract to mention light-dark()"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "dc8c9a88c",
-          "subject": "[meta] Consistent spelling of lowercase/uppercase"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "chris@w3.org",
-          "hash": "6a5df9fb9",
-          "subject": "[css-color-4] Revert changes from https://github.com/w3c/csswg-drafts/commit/06748226bb73a7fee401ba0d00c4e4655ec17555 #9715"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "chris@w3.org",
-          "hash": "36b2394ec",
-          "subject": "[css-color-4][editorial] Remove extra pipe character, #9651"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "901356b86",
-          "subject": "[css-color-4] Reverted the replacement of \"animation\" by \"interpolation\""
-        },
-        {
-          "date": "2023-12-18",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "fbbfcf962",
-          "subject": "[css-color-4] Fixed a few issues regarding hue interpolation"
         }
       ],
       "testlog": [
@@ -3076,12 +3052,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "5a160eb77c",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=266506 (#43719)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -3184,14 +3154,7 @@
       "href": "https://drafts.csswg.org/css-counter-styles/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "dc8c9a88c",
-          "subject": "[meta] Consistent spelling of lowercase/uppercase"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -3477,7 +3440,20 @@
           "subject": "[css-fonts-4] Add more generics samples #8128"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "8fa356c9a6",
+          "subject": "Add support for math expressions for font-size-adjust interpolation"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "sakhapov@chromium.org",
+          "hash": "6b359c7647",
+          "subject": "Add support for math expressions for font-stretch interpolation"
+        }
+      ]
     },
     {
       "name": "CSS Generated Content for Paged Media",
@@ -3620,12 +3596,6 @@
           "author": "dholbert@cs.stanford.edu",
           "hash": "4caec78765",
           "subject": "Don't inadvertently clobber masonry bits just because a nested grid can't be a subgrid."
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -3739,40 +3709,9 @@
           "author": "frances_c@cox.net",
           "hash": "614369822",
           "subject": "[css-images-4] Add two png images to example 33 to the stripes() function."
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "7d30833ba",
-          "subject": "[css-images-4] Make radial-gradient() and <<basic-shape>> consistent. #824"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "8a5608c1e",
-          "subject": "[css-images-3][editorial] Fix markup error"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e089b7129",
-          "subject": "[css-images-3] Update Changes list"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "69197fb53",
-          "subject": "[css-images-3][editorial] Use radial- rather than rg-"
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Inline Layout",
@@ -3787,14 +3726,7 @@
           "subject": "[editorial] Add separate Security and Privacy appendices to .bs specs that didn't have them, #207"
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Layout API",
@@ -3872,6 +3804,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-14",
+          "author": "clchambers@microsoft.com",
+          "hash": "93fb47cecd",
+          "subject": "[CompositeClipPathAnimation] Resolve flakey tests."
+        },
+        {
           "date": "2024-01-16",
           "author": "fs@opera.com",
           "hash": "d27018b2bc",
@@ -3882,18 +3820,6 @@
           "author": "pdr@chromium.org",
           "hash": "89eaf4b4b1",
           "subject": "Allow calc() values in xywh/rect"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fs@opera.com",
-          "hash": "168eca073a",
-          "subject": "Use BackgroundImageGeometry in SVGMaskPainter"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "fs@opera.com",
-          "hash": "ca1ca1e8bc",
-          "subject": "Fix reference box computation for SVG <clipPath> on <foreignObject>"
         }
       ]
     },
@@ -3984,12 +3910,6 @@
           "author": "andruud@chromium.org",
           "hash": "a363c3c27f",
           "subject": "[css-nesting] Fix @scope part of conditional-rules.html"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -4013,6 +3933,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-14",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "938e843163",
+          "subject": "Add test case for crbug.com/41490395"
+        },
         {
           "date": "2024-02-08",
           "author": "mstensho@chromium.org",
@@ -4060,6 +3986,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "mstensho@chromium.org",
+          "hash": "f127a46d47",
+          "subject": "Add @page (CSSPageRule) CSSOM test for adding / removing properties."
+        },
         {
           "date": "2024-02-12",
           "author": "mstensho@chromium.org",
@@ -4531,14 +4463,7 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Table",
@@ -4630,6 +4555,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "abotella@igalia.com",
+          "hash": "dfd8ddb9fa",
+          "subject": "Fix min-content related crash in `LineBreaker::SplitTrailingBidiPreservedSpace`"
+        },
         {
           "date": "2024-02-07",
           "author": "jkew@mozilla.com",
@@ -4725,12 +4656,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "a41c93e155",
           "subject": "[css-text] balance and pretty are not values of white-space"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -4771,6 +4696,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "futhark@chromium.org",
+          "hash": "a900d16280",
+          "subject": "Do feature detection in @starting-style tests"
+        },
         {
           "date": "2024-02-07",
           "author": "boris.chiou@gmail.com",
@@ -4875,36 +4806,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "a2e9a3ab8",
           "subject": "[css-values-5] Define calc-size(). #626"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e438b41d0",
-          "subject": "[css-values-4] Fix status"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "jackalmage@gmail.com",
-          "hash": "38b702a93",
-          "subject": "[css-values-4] Fix <calc-constant> ref to be <calc-keyword>, and allow for keywords to resolve to non-numeric values"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "b2b8ffd5c",
-          "subject": "[css-values-4] Fix bikeshed errors"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "f3c32dc54",
-          "subject": "[css-values-4] Update Changes list"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "dc8c9a88c",
-          "subject": "[meta] Consistent spelling of lowercase/uppercase"
         }
       ],
       "testlog": [
@@ -4957,26 +4858,13 @@
       "href": "https://drafts.csswg.org/css-variables/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2023-12-18",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "dc8c9a88c",
-          "subject": "[meta] Consistent spelling of lowercase/uppercase"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-02-12",
           "author": "sakhapov@chromium.org",
           "hash": "1c79b1b8cf",
           "subject": "Add support for math expressions in custom properties angle interpolation"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -4986,6 +4874,30 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "8271e96b2",
+          "subject": "[css-view-transitions-2] Skip cross-document view-transitions when hidden or not-yet-revealed (#9948)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "1315f6aa6",
+          "subject": "Fix merge error from previous commit (#9947)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "6b3259fa3",
+          "subject": "[css-view-transitions-2] Editorial: refactor L2 concerns out of L1 (#9892)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "fbb66f719",
+          "subject": "[css-view-transitions-1] Auto-skip a view-transition if document is hidden (#9942)"
+        },
         {
           "date": "2024-02-09",
           "author": "63884798+khushalsagar@users.noreply.github.com",
@@ -5105,12 +5017,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "506917232",
           "subject": "Fix warnings and broken refs (#9725)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "939ad3dbc",
-          "subject": "Remove pagereveal (#9718)"
         }
       ],
       "testlog": [
@@ -5173,12 +5079,6 @@
           "author": "annevk@annevk.nl",
           "hash": "3d8c4cd8fe",
           "subject": "Correct assorted issues with standalone pseudo elements"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -5499,14 +5399,7 @@
       "href": "https://wicg.github.io/document-picture-in-picture/",
       "specrepo": "https://github.com/WICG/document-picture-in-picture",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Document Policy",
@@ -5538,12 +5431,6 @@
           "author": "masonfreed@chromium.org",
           "hash": "d94ce87",
           "subject": "Reset declarative to false when calling attachShadow()"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "annevk@annevk.nl",
-          "hash": "da484da",
-          "subject": "Review Draft Publication: December 2023"
         }
       ],
       "testlog": [
@@ -5630,6 +5517,12 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2024-02-13",
+          "author": "ftang@google.com",
+          "hash": "8d1a057",
+          "subject": "Normative: Allow locale based ignorePunctuation default (#833)"
+        },
+        {
           "date": "2024-02-05",
           "author": "benallen@igalia.com",
           "hash": "3c6d295",
@@ -5687,6 +5580,12 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2024-02-12",
+          "author": "mficarra@shapesecurity.com",
+          "hash": "509620e6",
+          "subject": "Editorial: update links to Ecma specs and update ECMA-402 descriptor (#3013)"
+        },
         {
           "date": "2024-02-05",
           "author": "mficarra@shapesecurity.com",
@@ -5970,12 +5869,6 @@
           "author": "ljharb@gmail.com",
           "hash": "4393acd575",
           "subject": "Array length: add test ensuring RangeError is thrown"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "lgalfaso@gmail.com",
-          "hash": "b628e4b054",
-          "subject": "Update single-line-html-close.js"
         }
       ]
     },
@@ -5984,6 +5877,18 @@
       "href": "https://w3c.github.io/edit-context/",
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
+        {
+          "date": "2024-02-14",
+          "author": "daniec@microsoft.com",
+          "hash": "e8463fc",
+          "subject": "Remove 'double' UnderlineStyle (#91)"
+        },
+        {
+          "date": "2024-02-14",
+          "author": "daniec@microsoft.com",
+          "hash": "06467f3",
+          "subject": "Add note that updateText can have rangeStart > rangeEnd (#90)"
+        },
         {
           "date": "2024-01-23",
           "author": "daniec@microsoft.com",
@@ -6001,18 +5906,6 @@
           "author": "daniec@microsoft.com",
           "hash": "01d8a77",
           "subject": "Remove codepoint locations struct (#84)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "daniec@microsoft.com",
-          "hash": "22a1807",
-          "subject": "Clarify designMode corner case (#83)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "daniec@microsoft.com",
-          "hash": "0116e53",
-          "subject": "Remove secure context requirement (#82)"
         }
       ],
       "testlog": []
@@ -6078,7 +5971,56 @@
       "name": "Encrypted Media Extensions",
       "href": "https://w3c.github.io/encrypted-media/",
       "specrepo": "https://github.com/w3c/encrypted-media",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "86f1e27",
+          "subject": "Fix HDCP version numbers"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "c39e274",
+          "subject": "Added HDCP specification references"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "7568ee0",
+          "subject": "Remove comments"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "d5d8cfb",
+          "subject": "Include HDCP spec link where available"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "1409788",
+          "subject": "Shorten reference names"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "8d2f241",
+          "subject": "Update editors"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "6f5ba8a",
+          "subject": "Remove LCWD comment"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "214b069",
+          "subject": "Add draft HDCP version registry"
+        }
+      ],
       "testlog": []
     },
     {
@@ -7022,12 +6964,6 @@
           "author": "npm@chromium.org",
           "hash": "828e96b",
           "subject": "Add domainHint to the spec (#512)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "jackalmage@gmail.com",
-          "hash": "87e8ca6",
-          "subject": "Make typogram diagrams work in dark mode (#528)"
         }
       ],
       "testlog": []
@@ -7166,12 +7102,6 @@
           "author": "annevk@annevk.nl",
           "hash": "8dd73db",
           "subject": "Meta: update repository files"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "annevk@annevk.nl",
-          "hash": "8d0d207",
-          "subject": "Review Draft Publication: December 2023"
         }
       ],
       "testlog": [
@@ -7565,6 +7495,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-02-13",
+          "author": "masonfreed@chromium.org",
+          "hash": "531e50de",
+          "subject": "Add shadowrootclonable attribute"
+        },
+        {
           "date": "2024-02-09",
           "author": "akaster@serenityos.org",
           "hash": "12b0d582",
@@ -7803,15 +7739,39 @@
           "author": "dbaron@dbaron.org",
           "hash": "8027fc5a",
           "subject": "Forbid nesting <details> in the same exclusive accordion"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "emilio@crisal.io",
-          "hash": "f33d8b04",
-          "subject": "Use UA styles rather than prose to define <input> clip"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-14",
+          "author": "yotha@chromium.org",
+          "hash": "02823cfd8e",
+          "subject": "Use scroll margin for iframes' lazy loader."
+        },
+        {
+          "date": "2024-02-13",
+          "author": "andresrperez@chromium.org",
+          "hash": "fe09a18307",
+          "subject": "Add WPT test validating that drawImage writes to the layer"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "jarhar@chromium.org",
+          "hash": "4aa22e701c",
+          "subject": "Fix <select> manual assignment crash"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "arichiv@chromium.org",
+          "hash": "f6b79c6184",
+          "subject": "[SAA] Implementing SharedWorker support (Part 3: Implement same-site cookie filtering)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "emilio@crisal.io",
+          "hash": "cfd5b3ce91",
+          "subject": "Clean up CompareTreePosition and related code."
+        },
         {
           "date": "2024-02-13",
           "author": "yotha@chromium.org",
@@ -8291,30 +8251,6 @@
           "author": "luke@warlow.dev",
           "hash": "67141e8e3d",
           "subject": "Make showPicker() throw NotSupportedError if select isn't being rendered"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "caceres_m@apple.com",
-          "hash": "5114ff33a3",
-          "subject": "User activation: Fixes and improvements to utils (#43700)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "annevk@annevk.nl",
-          "hash": "05633f02c5",
-          "subject": "HTML: attribute selectors with case-insensitive values"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "annevk@annevk.nl",
-          "hash": "d44d043ebc",
-          "subject": "HTML: correct typo in <area> hit testing"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -8992,18 +8928,6 @@
           "author": "fd@tidoust.net",
           "hash": "1a2275b",
           "subject": "Fix the interface of the bufferedchange event in the summary table (#344)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "marcos@marcosc.com",
-          "hash": "6bb43ff",
-          "subject": "Editorial: switch MediaSource to using headings (#328)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "jya@apple.com",
-          "hash": "2cb6b9a",
-          "subject": "Add Managed Media Source Extensions API (#329)"
         }
       ],
       "testlog": []
@@ -10431,14 +10355,7 @@
       "name": "Permissions Policy",
       "href": "https://w3c.github.io/webappsec-permissions-policy/",
       "specrepo": "https://github.com/w3c/webappsec-permissions-policy",
-      "speclog": [
-        {
-          "date": "2023-12-18",
-          "author": "michaelwasserman@users.noreply.github.com",
-          "hash": "7a2bc78",
-          "subject": "Update features.md for `window-management` nee `window-placement` (#534)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-01-03",
@@ -10475,14 +10392,7 @@
       "href": "https://w3c.github.io/picture-in-picture/",
       "specrepo": "https://github.com/w3c/picture-in-picture",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Portable Network Graphics (PNG) Specification (Third Edition)",
@@ -10984,14 +10894,7 @@
       "href": "https://wicg.github.io/sanitizer-api/",
       "specrepo": "https://github.com/WICG/sanitizer-api",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Save Data API",
@@ -11188,6 +11091,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-13",
+          "author": "dshin@mozilla.com",
+          "hash": "a7f0a17492",
+          "subject": "Part 2 - Add `:has` to revalidation selector."
+        },
+        {
           "date": "2024-02-09",
           "author": "jarhar@chromium.org",
           "hash": "495dfa9fe2",
@@ -11288,12 +11197,6 @@
           "author": "vhilla@mozilla.com",
           "hash": "11e8cba1b8",
           "subject": "Make dir=auto and dirname apply to more input types."
-        },
-        {
-          "date": "2023-12-19",
-          "author": "dshin@mozilla.com",
-          "hash": "2422c68237",
-          "subject": "Prevent rule-based style sharing on elements that considered a relative selector."
         }
       ]
     },
@@ -11693,14 +11596,7 @@
       "name": "Storage Buckets API",
       "href": "https://wicg.github.io/storage-buckets/",
       "specrepo": "https://github.com/WICG/storage-buckets",
-      "speclog": [
-        {
-          "date": "2023-12-19",
-          "author": "estade@gmail.com",
-          "hash": "d87656b",
-          "subject": "Remove nullability from StorageBucketOptions members. (#118)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -11744,6 +11640,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-02-13",
+          "author": "fs@opera.com",
+          "hash": "2380ac024c",
+          "subject": "Add fuzzy metadata to wpt/svg/painting/reftests/marker-path-001.svg"
+        },
+        {
           "date": "2024-02-09",
           "author": "fs@opera.com",
           "hash": "703bd88d0d",
@@ -11784,12 +11686,6 @@
           "author": "longsonr@gmail.com",
           "hash": "7c711e9d51",
           "subject": "unescape refs before tracking"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "longsonr@gmail.com",
-          "hash": "306536acfb",
-          "subject": "implement color-interpolation: linearRGB for gradients"
         }
       ]
     },
@@ -12092,6 +11988,12 @@
       "href": "https://tc39.es/proposal-shadowrealm/",
       "specrepo": "https://github.com/tc39/proposal-shadowrealm",
       "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "philip.chimento@gmail.com",
+          "hash": "fa39ea4",
+          "subject": "Editorial: Remove erroneous handling of ~return~ completion type (#399)"
+        },
         {
           "date": "2024-02-07",
           "author": "caridy@gmail.com",
@@ -12701,6 +12603,12 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2024-02-13",
+          "author": "kleber@google.com",
+          "hash": "eeb0649",
+          "subject": "Create 2024-02-07-FLEDGE-call-minutes.md"
+        },
+        {
           "date": "2024-02-09",
           "author": "6334674+qingxinwu@users.noreply.github.com",
           "hash": "adf5cd4",
@@ -13245,18 +13153,6 @@
           "author": "jnurthen@users.noreply.github.com",
           "hash": "4d3fefe2",
           "subject": "Fix link to definition of accessibility child"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "p.krautzberger@gmail.com",
-          "hash": "8f62bf66",
-          "subject": "editorial: improve role index introduction (#2083)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "p.krautzberger@gmail.com",
-          "hash": "8e6d67e5",
-          "subject": "editorial: a few markup tweaks (#2081)"
         }
       ],
       "testlog": [
@@ -13406,12 +13302,6 @@
           "author": "annevk@annevk.nl",
           "hash": "3d8c4cd8fe",
           "subject": "Correct assorted issues with standalone pseudo elements"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
         }
       ]
     },
@@ -13484,6 +13374,12 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "paul@paul.cx",
+          "hash": "0f31a8c81d",
+          "subject": "Relax slightly the SNR test for the OscillatorNode to account for all build configuration."
+        },
         {
           "date": "2024-02-09",
           "author": "paul@paul.cx",
@@ -13637,12 +13533,6 @@
           "author": "martinkr@google.com",
           "hash": "7dac8f9947",
           "subject": "webauthn: implement PublicKeyCredential.parseCreationOptionsFromJSON()"
-        },
-        {
-          "date": "2023-12-19",
-          "author": "jschanck@mozilla.com",
-          "hash": "51f1ba3a72",
-          "subject": "remove the webauthn conditional mediation unsupported wpt."
         }
       ]
     },
@@ -14390,6 +14280,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-13",
+          "author": "mail@hskupin.info",
+          "hash": "da43d3211e",
+          "subject": "[wdspec] Fix escaping in test_shadow_root_slot[default hidden]."
+        },
+        {
           "date": "2024-02-09",
           "author": "jdescottes@mozilla.com",
           "hash": "1837411472",
@@ -14682,12 +14578,6 @@
           "author": "james@hoppipolla.co.uk",
           "hash": "b50d89c345",
           "subject": "Send full codepoints when creating key events"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "jdescottes@mozilla.com",
-          "hash": "c51a4b31bb",
-          "subject": "[wdspec] Add wdspec tests for network.continueWithAuth"
         }
       ]
     },
@@ -14803,12 +14693,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "77463df",
           "subject": "Normalize types of values returned by locators (#626)"
-        },
-        {
-          "date": "2023-12-18",
-          "author": "aborovova@mozilla.com",
-          "hash": "46d0bc1",
-          "subject": "Update serialization steps for return value of \"browsingContext.locateNodes\" command"
         }
       ],
       "testlog": []
@@ -16200,10 +16084,10 @@
       "speclog": [],
       "testlog": [
         {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
+          "date": "2024-02-13",
+          "author": "alvinji@chromium.org",
+          "hash": "2329ca005f",
+          "subject": "Migrate WebHID MojoJS based tests to internal folder"
         }
       ]
     },
@@ -16213,6 +16097,12 @@
       "specrepo": "https://github.com/whatwg/webidl",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "649348+MattiasBuelens@users.noreply.github.com",
+          "hash": "400ce04",
+          "subject": "Update ongoing promise in async iterator return() method"
+        },
         {
           "date": "2024-01-24",
           "author": "annevk@annevk.nl",
@@ -16266,6 +16156,18 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "jsbell@chromium.org",
+          "hash": "8503e24",
+          "subject": "Content change: Add definitions for MLOperand's shape and dataType (#555)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "anssi.kostiainen@intel.com",
+          "hash": "d48e394",
+          "subject": "Update Status of this document for CR Snapshot (#532)"
+        },
         {
           "date": "2024-02-13",
           "author": "jsbell@chromium.org",
@@ -16646,7 +16548,26 @@
       "name": "Loading Signed Exchanges",
       "href": "https://wicg.github.io/webpackage/loading.html",
       "specrepo": "https://github.com/WICG/webpackage",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-02-13",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "50c7664",
+          "subject": "Bump golang.org/x/crypto from 0.6.0 to 0.17.0 (#886)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "30084c9",
+          "subject": "Bump golang.org/x/net from 0.7.0 to 0.17.0 (#882)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "502436d",
+          "subject": "Bump github.com/influxdata/influxdb from 1.6.3 to 1.7.6 (#881)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -16692,6 +16613,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "f664d06d7d",
+          "subject": "webrtc wpt: update more tests to use receiver capabilities for setCodecPreferences (#44554)"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "902c80cf7a",
+          "subject": "webrtc wpt: fix and re-enable getStats WPT (#44553)"
+        },
         {
           "date": "2024-02-12",
           "author": "docfaraday@gmail.com",
@@ -16931,7 +16864,14 @@
           "subject": "Use canonical AV1-RTP-SPEC reference"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-02-13",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "f664d06d7d",
+          "subject": "webrtc wpt: update more tests to use receiver capabilities for setCodecPreferences (#44554)"
+        }
+      ]
     },
     {
       "name": "WebSockets",
@@ -16960,6 +16900,54 @@
       "href": "https://w3c.github.io/webtransport/",
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
+        {
+          "date": "2024-02-14",
+          "author": "41948741+nidhijaju@users.noreply.github.com",
+          "hash": "25b7202",
+          "subject": "Revert whitespace fixes"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "b97265b",
+          "subject": "update whitespace"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "1d2b0a6",
+          "subject": "update credentials ref"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "fa8dce2",
+          "subject": "convert tabs to spaces"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "a9edf00",
+          "subject": "add condition for locked readables for draining"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "41948741+nidhijaju@users.noreply.github.com",
+          "hash": "0614c72",
+          "subject": "Apply suggestions from code review"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "bff9118",
+          "subject": "fix"
+        },
+        {
+          "date": "2024-02-13",
+          "author": "nidhijaju@chromium.org",
+          "hash": "7281cba",
+          "subject": "garbage collection conditions"
+        },
         {
           "date": "2024-01-31",
           "author": "jan-ivar@users.noreply.github.com",
@@ -17075,14 +17063,7 @@
           "subject": "Error the stream with AbortError at the point where reordering would otherwise occur"
         }
       ],
-      "testlog": [
-        {
-          "date": "2023-12-18",
-          "author": "philip@foolip.org",
-          "hash": "6495c91853",
-          "subject": "Map even more tests to web-features (#43390)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "WebUSB API",
