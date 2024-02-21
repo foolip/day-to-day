@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2023-12-25T07:12:56.157Z",
-  "until": "2024-02-20T07:12:56.157Z",
+  "since": "2023-12-26T07:12:42.397Z",
+  "until": "2024-02-21T07:12:42.397Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -153,6 +153,24 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "akashnadan@gmail.com",
+          "hash": "7481d1e",
+          "subject": "Update pending sources per source origin limit (#1127)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "apaseltiner@google.com",
+          "hash": "fe27f6f",
+          "subject": "Fix cooldown link (#1169)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "apaseltiner@google.com",
+          "hash": "83f6afb",
+          "subject": "Fix JS issues in report_verification.md (#1167)"
+        },
         {
           "date": "2024-02-15",
           "author": "apaseltiner@google.com",
@@ -808,6 +826,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-21",
+          "author": "lwarlow@igalia.com",
+          "hash": "e7ef6d0868",
+          "subject": "Correctly invalidate styles when UsesStandardScrollbarStyle changes"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "mstensho@chromium.org",
+          "hash": "614a8646f9",
+          "subject": "Only handle OOF-infested nested multicols once."
+        },
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "6dfa45a5ee",
+          "subject": "Use only sign() function and don't mark tests as tentative"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "b5362c8f6f",
+          "subject": "Add support for math expressions for border-image-slice interpolation"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "andruud@chromium.org",
+          "hash": "9b1f75c7e9",
+          "subject": "[anchor] Anchor queries on non-OOF must use fallback"
+        },
         {
           "date": "2024-02-19",
           "author": "nt1m@users.noreply.github.com",
@@ -1971,24 +2019,6 @@
           "author": "eliotj12@gmail.com",
           "hash": "b45d1a748d",
           "subject": "Fix round() with negative step returning incorrect value"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "73caf71654",
-          "subject": "Generalize ::marker getComputedStyle test to cover more pseudo elements"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "3d8c4cd8fe",
-          "subject": "Correct assorted issues with standalone pseudo elements"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "00a6dd067b",
-          "subject": "getComputedStyle() uses the CSS parser for pseudo-elements"
         }
       ]
     },
@@ -2181,6 +2211,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-20",
+          "author": "andruud@chromium.org",
+          "hash": "9b1f75c7e9",
+          "subject": "[anchor] Anchor queries on non-OOF must use fallback"
+        },
+        {
           "date": "2024-02-16",
           "author": "futhark@chromium.org",
           "hash": "196f4a5666",
@@ -2336,12 +2372,6 @@
           "author": "sebastianzartner@gmail.com",
           "hash": "520f7c0d9",
           "subject": "[css-backgrounds-4] Fixed logical background-position-* longhands syntaxes (#9758)"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "aaa2783ac",
-          "subject": "[css-backgrounds-3][css-borders-4] Fixed definition for where box shadows apply (#9296)"
         }
       ],
       "testlog": [
@@ -2382,15 +2412,15 @@
           "author": "sebastianzartner@gmail.com",
           "hash": "f7103f55f",
           "subject": "[css-borders-4] Moved all border- and box-decoration-related images from CSS Backgrounds 4 to CSS Borders 4 (#9765)"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "aaa2783ac",
-          "subject": "[css-backgrounds-3][css-borders-4] Fixed definition for where box shadows apply (#9296)"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "6dfa45a5ee",
+          "subject": "Use only sign() function and don't mark tests as tentative"
+        },
         {
           "date": "2024-02-13",
           "author": "sakhapov@chromium.org",
@@ -2468,6 +2498,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "chris@w3.org",
+          "hash": "415365102",
+          "subject": "Clarified when results from hslToRgb will be in [0,1] #9222"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "chris@w3.org",
+          "hash": "db0969dbe",
+          "subject": "[css-color-4] Clarified that once linearized, RGB spaces are additive. Fix #9977"
+        },
         {
           "date": "2024-02-16",
           "author": "lea@verou.me",
@@ -3229,6 +3271,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "gui.lebas@gmail.com",
+          "hash": "888fd1c6b",
+          "subject": "[css-fonts-4] Fix markup #9969"
+        },
+        {
           "date": "2024-02-12",
           "author": "chris@w3.org",
           "hash": "9eab1c788",
@@ -3380,6 +3428,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "6dfa45a5ee",
+          "subject": "Use only sign() function and don't mark tests as tentative"
+        },
         {
           "date": "2024-02-13",
           "author": "sakhapov@chromium.org",
@@ -3590,7 +3644,14 @@
           "subject": "[css-images-4][editorial] Improved examples for stripes() function (#9749)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "b5362c8f6f",
+          "subject": "Add support for math expressions for border-image-slice interpolation"
+        }
+      ]
     },
     {
       "name": "CSS Inline Layout",
@@ -3728,6 +3789,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "mstensho@chromium.org",
+          "hash": "614a8646f9",
+          "subject": "Only handle OOF-infested nested multicols once."
+        },
         {
           "date": "2024-02-12",
           "author": "ikilpatrick@chromium.org",
@@ -4199,6 +4266,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-21",
+          "author": "lwarlow@igalia.com",
+          "hash": "e7ef6d0868",
+          "subject": "Correctly invalidate styles when UsesStandardScrollbarStyle changes"
+        },
+        {
           "date": "2024-01-26",
           "author": "git@florian.rivoal.net",
           "hash": "2fbd554eca",
@@ -4232,6 +4305,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "chris@w3.org",
+          "hash": "d43de75ff",
+          "subject": "[css-shapes-1] Use opacity-value (the value) not opacity (the property) as value of shape-image-threshold. Fix #8311"
+        },
         {
           "date": "2024-01-24",
           "author": "chris@w3.org",
@@ -4662,6 +4741,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "6dfa45a5ee",
+          "subject": "Use only sign() function and don't mark tests as tentative"
+        },
+        {
           "date": "2024-02-12",
           "author": "sakhapov@chromium.org",
           "hash": "1c79b1b8cf",
@@ -4898,12 +4983,6 @@
           "author": "bokan@chromium.org",
           "hash": "50f932c6ba",
           "subject": "view-transition: Fix RuleSet invalidation for VT pseudos"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "3d8c4cd8fe",
-          "subject": "Correct assorted issues with standalone pseudo elements"
         }
       ]
     },
@@ -5043,18 +5122,6 @@
           "author": "annevk@annevk.nl",
           "hash": "714dcd5574",
           "subject": "CSS: more pseudo-element tests"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "73caf71654",
-          "subject": "Generalize ::marker getComputedStyle test to cover more pseudo elements"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "00a6dd067b",
-          "subject": "getComputedStyle() uses the CSS parser for pseudo-elements"
         }
       ]
     },
@@ -5194,6 +5261,12 @@
       "href": "https://wicg.github.io/document-picture-in-picture/",
       "specrepo": "https://github.com/WICG/document-picture-in-picture",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "beaufort.francois@gmail.com",
+          "hash": "2e49dbc",
+          "subject": "Add CSS picture-in-picture display mode"
+        },
         {
           "date": "2024-02-14",
           "author": "steimel@chromium.org",
@@ -7078,6 +7151,12 @@
       "specrepo": "https://github.com/w3c/sensors",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "aab0ee4",
+          "subject": "editorial: Fix requestedSamplingFrequency's description (#485)"
+        },
+        {
           "date": "2024-02-17",
           "author": "raphael.kubo.da.costa@intel.com",
           "hash": "738e124",
@@ -7243,6 +7322,18 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-02-21",
+          "author": "abotella@igalia.com",
+          "hash": "30ca507b",
+          "subject": "Meta: Dark mode fixes"
+        },
+        {
+          "date": "2024-02-21",
+          "author": "yuzus@google.com",
+          "hash": "b979bc3a",
+          "subject": "Add back/forward cache NotRestoredReasons API"
+        },
         {
           "date": "2024-02-15",
           "author": "masonfreed@chromium.org",
@@ -7485,6 +7576,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "masonf@chromium.org",
+          "hash": "503ce0a4b4",
+          "subject": "Adjust getHTML behavior to match recent consensus"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "masonf@chromium.org",
+          "hash": "c00ad32611",
+          "subject": "Split out popover tests using `anchor` into tentative test"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "jarhar@chromium.org",
+          "hash": "307a83c61f",
+          "subject": "De-flake dialog-open.html"
+        },
         {
           "date": "2024-02-19",
           "author": "luke@warlow.dev",
@@ -8600,6 +8709,12 @@
       "specrepo": "https://github.com/w3c/mathml-aam",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "spectranaut@igalia.com",
+          "hash": "448891f",
+          "subject": "Editorial: Push to gh-pages, remove file, fix references (#32)"
+        },
+        {
           "date": "2024-01-23",
           "author": "github-actions[bot]@users.noreply.github.com",
           "hash": "8288925",
@@ -8939,6 +9054,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "sakhapov@chromium.org",
+          "hash": "6dfa45a5ee",
+          "subject": "Use only sign() function and don't mark tests as tentative"
+        },
         {
           "date": "2024-02-12",
           "author": "sakhapov@chromium.org",
@@ -10001,6 +10122,12 @@
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "chris@w3.org",
+          "hash": "0ef99d4",
+          "subject": "Space not allowed in bibref"
+        },
+        {
           "date": "2024-02-17",
           "author": "chris@w3.org",
           "hash": "61ba3cc",
@@ -10844,6 +10971,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-21",
+          "author": "yyanagisawa@chromium.org",
+          "hash": "44c02e3339",
+          "subject": "Make a SharedWorker blob URL inherits the parent controller."
+        },
+        {
           "date": "2024-02-08",
           "author": "sisidovski@chromium.org",
           "hash": "4c4bec5ff5",
@@ -11215,6 +11348,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "649348+MattiasBuelens@users.noreply.github.com",
+          "hash": "1086884",
+          "subject": "Add explainer for ReadableStream async iteration"
+        },
+        {
           "date": "2024-02-19",
           "author": "annevk@annevk.nl",
           "hash": "64c545d",
@@ -11254,6 +11393,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "longsonr@gmail.com",
+          "hash": "0947007ed2",
+          "subject": "Remove SVGAElement.prototype.text"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "fs@opera.com",
+          "hash": "1d3b89629e",
+          "subject": "Dedupe and export svg/paintorder"
+        },
         {
           "date": "2024-02-15",
           "author": "fs@opera.com",
@@ -11679,6 +11830,12 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "pchimento@igalia.com",
+          "hash": "737baf2d",
+          "subject": "Editorial: Fix copy-paste errors in Calendar Methods Record ops"
+        },
         {
           "date": "2024-02-15",
           "author": "pchimento@igalia.com",
@@ -12173,6 +12330,18 @@
       "specrepo": "https://github.com/w3c/trusted-types",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "lwarlow@igalia.com",
+          "hash": "b0fb053",
+          "subject": "Make gitignore more exhaustive (#439)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "lwarlow@igalia.com",
+          "hash": "11874f6",
+          "subject": "Remove pre-commit hooks (#443)"
+        },
+        {
           "date": "2024-02-19",
           "author": "koto@google.com",
           "hash": "84a6a50",
@@ -12349,6 +12518,42 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "e209d63",
+          "subject": "Add downsampling debug reports section to explainer. (#1020)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "081fad9",
+          "subject": "Pull forDebuggingOnly to main explainer. (#1019)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "brusshamilton@gmail.com",
+          "hash": "419cce6",
+          "subject": "Add description of Consented Debugging and multiseller auctions for B&A (#960)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "9ad4ac8",
+          "subject": "Advice about keys for publicly accessible servers (#1034)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "morlovich@google.com",
+          "hash": "d60fd28",
+          "subject": "Explainer: increase limit on ad components to 40 and add a feature detection mechanism (#1003)"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "mmenke@google.com",
+          "hash": "8faea94",
+          "subject": "In explainer, replace renderUrl with renderURL (#991)"
+        },
         {
           "date": "2024-02-20",
           "author": "kleber@google.com",
@@ -12948,6 +13153,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2024-02-21",
+          "author": "sbc@chromium.org",
+          "hash": "c2c2e711",
+          "subject": "[ci] Trigger CI when workflows change (#1732)"
+        },
+        {
           "date": "2024-02-17",
           "author": "rod@vagg.org",
           "hash": "360141b0",
@@ -13092,12 +13303,6 @@
           "author": "bokan@chromium.org",
           "hash": "29468d7e3b",
           "subject": "In-effect animations should force a stacking context"
-        },
-        {
-          "date": "2023-12-25",
-          "author": "annevk@annevk.nl",
-          "hash": "3d8c4cd8fe",
-          "subject": "Correct assorted issues with standalone pseudo elements"
         }
       ]
     },
@@ -14402,6 +14607,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "OrKoN@users.noreply.github.com",
+          "hash": "42abefe",
+          "subject": "Support enabling an interception for a top-level browsing context (#653)"
+        },
+        {
           "date": "2024-02-14",
           "author": "aborovova@mozilla.com",
           "hash": "0a11647",
@@ -15410,6 +15621,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2024-02-20",
+          "author": "jrprice@google.com",
+          "hash": "de2e123c",
+          "subject": "[wgsl] Assume `bool` is 4 bytes for array limits (#4487)"
+        },
+        {
           "date": "2024-02-16",
           "author": "github@greggman.com",
           "hash": "c796f07d",
@@ -15920,6 +16137,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-02-20",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "0e308a6246",
+          "subject": "Reland \"webnn: Remove sync methods\" (#44626)"
+        },
+        {
           "date": "2024-02-18",
           "author": "feng.dai@intel.com",
           "hash": "32864fa9c0",
@@ -16044,6 +16267,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-02-20",
+          "author": "phancke@microsoft.com",
+          "hash": "8d72cdeb97",
+          "subject": "webrtc wpt: add test for direction-based filtering of codecs"
+        },
+        {
+          "date": "2024-02-20",
+          "author": "phancke@microsoft.com",
+          "hash": "2898a8f1b5",
+          "subject": "webrtc wpt: add test for codecs in subsequent offers"
+        },
         {
           "date": "2024-02-16",
           "author": "yuzus@chromium.org",
@@ -16677,6 +16912,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-02-20",
+          "author": "jrprice@google.com",
+          "hash": "de2e123c",
+          "subject": "[wgsl] Assume `bool` is 4 bytes for array limits (#4487)"
+        },
         {
           "date": "2024-02-16",
           "author": "github@greggman.com",
