@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-02-08T07:12:46.176Z",
-  "until": "2024-04-05T07:12:46.176Z",
+  "since": "2024-02-09T07:12:37.166Z",
+  "until": "2024-04-06T07:12:37.166Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -147,12 +147,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -183,6 +177,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-04-06",
+          "author": "80365263+linnan-github@users.noreply.github.com",
+          "hash": "92f2c4f",
+          "subject": "Spec verbose debug report for max channel capacity and max trigger states cardinality (#1223)"
+        },
         {
           "date": "2024-04-04",
           "author": "vikassahu2904@gmail.com",
@@ -895,6 +895,18 @@
       "specrepo": "https://github.com/w3c/compute-pressure",
       "speclog": [
         {
+          "date": "2024-04-05",
+          "author": "arnaud.mandy@intel.com",
+          "hash": "849e89a",
+          "subject": "Fix documentation: Options to observe method (#260)"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "41ec61b",
+          "subject": "Move options to observe()"
+        },
+        {
           "date": "2024-03-21",
           "author": "arnaud.mandy@intel.com",
           "hash": "42f1fcd",
@@ -1266,6 +1278,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-04-06",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "c15ab7c785",
+          "subject": "[css-anchor-position] Don't use LayoutBox::FindTargetAnchor during layout"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "m_kato@ga2.so-net.ne.jp",
+          "hash": "e733e65472",
+          "subject": "Add web platform tests."
+        },
+        {
+          "date": "2024-04-05",
+          "author": "pdr@chromium.org",
+          "hash": "4c956c00f0",
+          "subject": "[css-anchor-position] Test visibility with fixed anchored element"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "philip@foolip.org",
+          "hash": "101ed5a117",
+          "subject": "Map CSS fonts tests to web-features"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "andruud@chromium.org",
+          "hash": "8784f75488",
+          "subject": "[anchor] Add WPTs for transitions triggered by anchor changes"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "745129ad22",
+          "subject": "Add a test for OOF under opacity under non-containing clip"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "andruud@chromium.org",
+          "hash": "9d46525e57",
+          "subject": "[anchor] Add WPTs for transitions triggered by position-try-options"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "abotella@igalia.com",
+          "hash": "eef6b7e5a9",
+          "subject": "[line-clamp] Hide out of flow positioned boxes after the clamp point"
+        },
         {
           "date": "2024-04-05",
           "author": "wangxianzhu@chromium.org",
@@ -2987,66 +3047,6 @@
           "author": "emilio@crisal.io",
           "hash": "15110b07bf",
           "subject": "Make Element.{client,scroll} APIs zoom aware."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "futhark@chromium.org",
-          "hash": "b9c905d2f0",
-          "subject": "[css-anchor-position] Add interpolation tests for all properties"
-        },
-        {
-          "date": "2024-02-09",
-          "author": "dbaron@chromium.org",
-          "hash": "da25e93244",
-          "subject": "Add tests for animation of CSS calc-size()."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "dbaron@chromium.org",
-          "hash": "f628754b73",
-          "subject": "Add tests for CSS calc-size() function."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "jarhar@chromium.org",
-          "hash": "495dfa9fe2",
-          "subject": "Implement :open and :closed pseudo classes"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "ethavar@microsoft.com",
-          "hash": "cc83935a03",
-          "subject": "[Grid] Fix resolution of alignment properties for subgridded items"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "vmpstr@chromium.org",
-          "hash": "bd7709893d",
-          "subject": "VT: Handle document shutdown gracefully."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "nrosenthal@chromium.org",
-          "hash": "50cdae7b23",
-          "subject": "Implement view-transition-class selector matching"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "mstensho@chromium.org",
-          "hash": "a79f9cb445",
-          "subject": "Establish display item fragment scope for atomic inlines."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "futhark@chromium.org",
-          "hash": "929d1339ab",
-          "subject": "[css-anchor-position] Parsing and computing position-try-options"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "emilio@crisal.io",
-          "hash": "cd9d5a2eb2",
-          "subject": "Fix offset* APIs on tables with captions."
         }
       ]
     },
@@ -3171,6 +3171,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-04-05",
+          "author": "jackalmage@gmail.com",
+          "hash": "dcc8029a1",
+          "subject": "[css-anchor-position] Fix the definitions for position-visibility: anchors-visible"
+        },
         {
           "date": "2024-04-04",
           "author": "jackalmage@gmail.com",
@@ -3338,63 +3344,33 @@
           "author": "jackalmage@gmail.com",
           "hash": "a5cc63d23",
           "subject": "[css-anchor-position] Generalize the pseudo-elements; no reason to be restrictive here. #8913"
-        },
-        {
-          "date": "2024-02-09",
-          "author": "jackalmage@gmail.com",
-          "hash": "5d1b999a6",
-          "subject": "[css-anchor-positon][editorial] Fix markup #9180"
-        },
-        {
-          "date": "2024-02-09",
-          "author": "jackalmage@gmail.com",
-          "hash": "4b7709cf9",
-          "subject": "[css-anchor-position][editorial] Fix headings. #9179"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "c66925ad7",
-          "subject": "[css-anchor-position] First draft of animation support, and interleaving concept. #9598"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "c3218577d",
-          "subject": "[css-anchor-position] Fix the OM to the new @position-try rule"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "7b9bdf0b4",
-          "subject": "[css-anchor-position][editorial] Add more headings"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "ab022274a",
-          "subject": "[css-anchor-position] Rewrite the 'applying fallback' a bit to talk about interleaving and styles better."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "9c16a3b40",
-          "subject": "[css-anchor-position][editorial] remove whitespace from the multiplier syntax"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "f7b4eb416",
-          "subject": "[css-anchor-position] Add issue about position-fallback-bounds being a more generic ability"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "aab83ec2a",
-          "subject": "[css-anchor-position] Allow applying try-tactic to a named try block, for simplicity"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-04-06",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "c15ab7c785",
+          "subject": "[css-anchor-position] Don't use LayoutBox::FindTargetAnchor during layout"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "pdr@chromium.org",
+          "hash": "4c956c00f0",
+          "subject": "[css-anchor-position] Test visibility with fixed anchored element"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "andruud@chromium.org",
+          "hash": "8784f75488",
+          "subject": "[anchor] Add WPTs for transitions triggered by anchor changes"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "andruud@chromium.org",
+          "hash": "9d46525e57",
+          "subject": "[anchor] Add WPTs for transitions triggered by position-try-options"
+        },
         {
           "date": "2024-04-05",
           "author": "wangxianzhu@chromium.org",
@@ -3670,18 +3646,6 @@
           "author": "andruud@chromium.org",
           "hash": "ddef01b95b",
           "subject": "[anchor] Remove anchor(auto), anchor(auto-same)"
-        },
-        {
-          "date": "2024-02-09",
-          "author": "futhark@chromium.org",
-          "hash": "b9c905d2f0",
-          "subject": "[css-anchor-position] Add interpolation tests for all properties"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "futhark@chromium.org",
-          "hash": "929d1339ab",
-          "subject": "[css-anchor-position] Parsing and computing position-try-options"
         }
       ]
     },
@@ -4246,6 +4210,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "745129ad22",
+          "subject": "Add a test for OOF under opacity under non-containing clip"
+        },
+        {
           "date": "2024-04-04",
           "author": "philip@foolip.org",
           "hash": "d8635a2565",
@@ -4560,12 +4530,6 @@
           "author": "miriam@oddbird.net",
           "hash": "ed383b552",
           "subject": "[css-contain-3] Allow var() references inside container size queries #8088"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "0b132f328",
-          "subject": "[css-contain-3] Export “container query length unit”"
         }
       ],
       "testlog": [
@@ -4783,6 +4747,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "philip@foolip.org",
+          "hash": "101ed5a117",
+          "subject": "Map CSS fonts tests to web-features"
+        },
+        {
           "date": "2024-02-20",
           "author": "sakhapov@chromium.org",
           "hash": "6dfa45a5ee",
@@ -4876,12 +4846,6 @@
           "author": "futhark@chromium.org",
           "hash": "34dd07ed48",
           "subject": "New implementation for finding ::first-letter text"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "ethavar@microsoft.com",
-          "hash": "cc83935a03",
-          "subject": "[Grid] Fix resolution of alignment properties for subgridded items"
         }
       ]
     },
@@ -5242,6 +5206,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "abotella@igalia.com",
+          "hash": "eef6b7e5a9",
+          "subject": "[line-clamp] Hide out of flow positioned boxes after the clamp point"
+        },
+        {
           "date": "2024-04-03",
           "author": "abotella@igalia.com",
           "hash": "2efef6ffa6",
@@ -5264,12 +5234,6 @@
           "author": "wangxianzhu@chromium.org",
           "hash": "938e843163",
           "subject": "Add test case for crbug.com/41490395"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "mstensho@chromium.org",
-          "hash": "a79f9cb445",
-          "subject": "Establish display item fragment scope for atomic inlines."
         }
       ]
     },
@@ -5670,12 +5634,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "4307fe643",
           "subject": "[css-scrollbars] Scrollbars don't have to be flat"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "git@florian.rivoal.net",
-          "hash": "8281770c9",
-          "subject": "Update test coverage"
         }
       ],
       "testlog": [
@@ -5952,6 +5910,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-04-05",
+          "author": "m_kato@ga2.so-net.ne.jp",
+          "hash": "e733e65472",
+          "subject": "Add web platform tests."
+        },
         {
           "date": "2024-04-04",
           "author": "philip@foolip.org",
@@ -6262,18 +6226,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "7055dbeb9",
           "subject": "[css-ui-4] Disregarding a property means ignoring it, not overriding it"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "git@florian.rivoal.net",
-          "hash": "77eea6a15",
-          "subject": "[css-ui] Move text block"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "git@florian.rivoal.net",
-          "hash": "58d739bbe",
-          "subject": "[css-ui] Add the caret-animation property"
         }
       ],
       "testlog": [
@@ -6604,18 +6556,6 @@
           "author": "dbaron@chromium.org",
           "hash": "ac566fe54a",
           "subject": "In a few cases, check whether calc() values have percents rather than assuming they do."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "dbaron@chromium.org",
-          "hash": "da25e93244",
-          "subject": "Add tests for animation of CSS calc-size()."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "dbaron@chromium.org",
-          "hash": "f628754b73",
-          "subject": "Add tests for CSS calc-size() function."
         }
       ]
     },
@@ -6778,18 +6718,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "fbb66f719",
           "subject": "[css-view-transitions-1] Auto-skip a view-transition if document is hidden (#9942)"
-        },
-        {
-          "date": "2024-02-09",
-          "author": "63884798+khushalsagar@users.noreply.github.com",
-          "hash": "ce1efa463",
-          "subject": "Fix heading indentation (#9929)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "d1156bc02",
-          "subject": "[css-view-transitions-1] Inherit to the UA stylesheet rules for animation-delay in vt pseudo-elements (#9924)"
         }
       ],
       "testlog": [
@@ -6882,18 +6810,6 @@
           "author": "vmpstr@chromium.org",
           "hash": "623aa54ebb",
           "subject": "VT: Add class list as a specificity consideration for view transitions."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "vmpstr@chromium.org",
-          "hash": "bd7709893d",
-          "subject": "VT: Handle document shutdown gracefully."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "nrosenthal@chromium.org",
-          "hash": "50cdae7b23",
-          "subject": "Implement view-transition-class selector matching"
         }
       ]
     },
@@ -7079,12 +6995,6 @@
           "author": "emilio@crisal.io",
           "hash": "15110b07bf",
           "subject": "Make Element.{client,scroll} APIs zoom aware."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "emilio@crisal.io",
-          "hash": "cd9d5a2eb2",
-          "subject": "Fix offset* APIs on tables with captions."
         }
       ]
     },
@@ -8723,12 +8633,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -8797,12 +8701,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -8871,12 +8769,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -8945,12 +8837,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9019,12 +8905,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9093,12 +8973,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9167,12 +9041,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9241,12 +9109,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9315,12 +9177,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9389,12 +9245,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9463,12 +9313,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9537,12 +9381,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -9611,12 +9449,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -10075,7 +9907,14 @@
       "specrepo": "https://github.com/whatwg/fs",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-04-05",
+          "author": "saschanaz@outlook.com",
+          "hash": "642d9fee5d",
+          "subject": "Part 1: Wrap WriteCallback in UnderlyingSinkAlgorithmsWrapper"
+        }
+      ]
     },
     {
       "name": "Fullscreen API",
@@ -10205,12 +10044,6 @@
           "author": "juha.j.vainio@intel.com",
           "hash": "4d4c6b8a08",
           "subject": "Remove the unused generic_sensor_mocks.js and all references to it"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "effd91d0c3",
-          "subject": "sensors: Make virtual sensors always remember and report the latest reading"
         }
       ],
       "testpolicy": "https://github.com/w3c/sensors/blob/HEAD/CONTRIBUTING.md"
@@ -10294,6 +10127,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-04-05",
+          "author": "zcorpan@gmail.com",
+          "hash": "999fb6ac",
+          "subject": "Remove duplicate requirement for 'overflow' for marquee"
+        },
         {
           "date": "2024-04-04",
           "author": "simon.wuelker@arcor.de",
@@ -10503,15 +10342,51 @@
           "author": "d@domenic.me",
           "hash": "5b5c167e",
           "subject": "Fix off-by-one error in navigation.canGoForward"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "dom@w3.org",
-          "hash": "4d6411b9",
-          "subject": "Meta: deduplicate export of HTMLImageElement's width and height"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-04-06",
+          "author": "lwarlow@igalia.com",
+          "hash": "f8fb78a2c2",
+          "subject": "Implement stepUp and stepDown invoke actions"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "masonf@chromium.org",
+          "hash": "02832a39b0",
+          "subject": "Augment getHTML testing to include light DOM and inner element"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "lwarlow@igalia.com",
+          "hash": "f5f8239b2e",
+          "subject": "Add interest invokers \"gain interest\" concept and defaults"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "jpgravel@chromium.org",
+          "hash": "e1a96e36db",
+          "subject": "Add sync/async test types for generated canvas tests"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "jpgravel@chromium.org",
+          "hash": "74c033bd2b",
+          "subject": "Fix canvas type YAML key for 2d.gradient.colormix WPT test"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "andypaicu@chromium.org",
+          "hash": "68b66f4714",
+          "subject": "[PEPC] Limit letter-spacing based on font-size"
+        },
+        {
+          "date": "2024-04-05",
+          "author": "jarhar@chromium.org",
+          "hash": "d49e524e3b",
+          "subject": "Rename appearance:bikeshed to appearance:base-select"
+        },
         {
           "date": "2024-04-05",
           "author": "daniec@microsoft.com",
@@ -11435,12 +11310,6 @@
           "author": "sefeng@mozilla.com",
           "hash": "a757293d22",
           "subject": "Fix focus gets incorrectly cleared by PresShell::FixUpFocus if the focus is on area element"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "11f539a39c",
-          "subject": "Test to account for links wrapped in `svg` (#44461)"
         }
       ]
     },
@@ -11454,12 +11323,6 @@
           "author": "scottaohara@users.noreply.github.com",
           "hash": "e644368",
           "subject": "Update: change UIA control type for label element (#530)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "3a5bd10",
-          "subject": "Computed role re-add (#519)"
         }
       ],
       "testlog": [
@@ -11978,12 +11841,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -11993,7 +11850,14 @@
       "href": "https://w3c.github.io/largest-contentful-paint/",
       "specrepo": "https://github.com/w3c/largest-contentful-paint",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-04-05",
+          "author": "haoliuk@chromium.org",
+          "hash": "72d57123cc",
+          "subject": "Fix LCP for transparent color texts"
+        }
+      ]
     },
     {
       "name": "Layout Instability",
@@ -12307,12 +12171,6 @@
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "cfa9807",
           "subject": "Add clarification on ended as well as mute"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "eb0513b",
-          "subject": "typo fix"
         }
       ],
       "testlog": [
@@ -12352,18 +12210,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "1d46287",
           "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "4add3b1",
-          "subject": "Explicitly clone/close VideoFrames in generator and processor This ensures that all the properties of a VideoFrame are kept when enqueuing it in generator and reading in processor."
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "8655a06",
-          "subject": "Update Detached slot to link to html spec Remove also the close video frame specific link now that it is exported in WebCodecs spec"
         }
       ],
       "testlog": []
@@ -12416,12 +12262,6 @@
           "author": "chris@w3.org",
           "hash": "361add8cc",
           "subject": "Add security and privacy sections to old (non-bikeshed) specs #207"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "1fa191e67",
-          "subject": "Add picture-in-picture display mode (#9920)"
         }
       ],
       "testlog": [
@@ -12848,12 +12688,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -12922,12 +12756,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -12996,12 +12824,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13070,12 +12892,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13144,12 +12960,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13218,12 +13028,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13292,12 +13096,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13366,12 +13164,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13440,12 +13232,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -13624,12 +13410,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -14326,20 +14106,7 @@
       "href": "https://w3c.github.io/resource-timing/",
       "specrepo": "https://github.com/w3c/resource-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-02-08",
-          "author": "41898282+github-actions[bot]@users.noreply.github.com",
-          "hash": "c75a9f5",
-          "subject": "chore: tidy up index.html (#384)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "6cc33a0",
-          "subject": "WebIDL fix: initialize PerformanceEntry instead of shadowing (#383)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-04-04",
@@ -14671,12 +14438,6 @@
           "author": "dshin@mozilla.com",
           "hash": "a7f0a17492",
           "subject": "Part 2 - Add `:has` to revalidation selector."
-        },
-        {
-          "date": "2024-02-09",
-          "author": "jarhar@chromium.org",
-          "hash": "495dfa9fe2",
-          "subject": "Implement :open and :closed pseudo classes"
         }
       ]
     },
@@ -14991,6 +14752,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "japhet@chromium.org",
+          "hash": "cb7c664958",
+          "subject": "Revert \"Reapply \"Use typed promises/resolvers for ReadableStream and related classes\"\""
+        },
+        {
           "date": "2024-04-03",
           "author": "japhet@chromium.org",
           "hash": "be2693965b",
@@ -15295,7 +15062,14 @@
       "name": "Iterator Helpers",
       "href": "https://tc39.es/proposal-iterator-helpers/",
       "specrepo": "https://github.com/tc39/proposal-iterator-helpers",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-04-05",
+          "author": "bakkot@gmail.com",
+          "hash": "b4ccc31",
+          "subject": "Editorial: use new IteratorStepValue AO (#292)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -15941,12 +15715,6 @@
           "author": "lwarlow@igalia.com",
           "hash": "3c5355d",
           "subject": "Remove `fromLiteral` from spec. (#405)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "lwarlow@igalia.com",
-          "hash": "c8aae12",
-          "subject": "Fix issue with default policy handling when callback function is missing (#433)"
         }
       ],
       "testlog": [
@@ -16400,12 +16168,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "7dcb66eb7a",
           "subject": "UIEvents: Test the textInput event"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "54a180f690",
-          "subject": "Add coverage for `webkit` prefixed historical interface (#44462)"
         }
       ],
       "testpolicy": "https://github.com/w3c/uievents/blob/HEAD/CONTRIBUTING.md"
@@ -17152,12 +16914,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": [
@@ -17281,12 +17037,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17367,12 +17117,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17453,12 +17197,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17539,12 +17277,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17625,12 +17357,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17711,12 +17437,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17797,12 +17517,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17883,12 +17597,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -17969,12 +17677,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18055,12 +17757,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18141,12 +17837,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18227,12 +17917,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18313,12 +17997,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18399,12 +18077,6 @@
           "author": "sandersd@google.com",
           "hash": "c4fa8df",
           "subject": "Add HBD YUV Planar pixel formats"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "youennf@gmail.com",
-          "hash": "ff09dbe",
-          "subject": "Export clone video frame algorithm as it is useful in other specs like mediacapture transform"
         }
       ],
       "testlog": []
@@ -18974,12 +18646,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19048,12 +18714,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19122,12 +18782,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19196,12 +18850,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19270,12 +18918,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19344,12 +18986,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19418,12 +19054,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19492,12 +19122,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19566,12 +19190,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19640,12 +19258,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19714,12 +19326,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19788,12 +19394,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19862,12 +19462,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -19936,12 +19530,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -20010,12 +19598,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -20084,12 +19666,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -20158,12 +19734,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -20232,12 +19802,6 @@
           "author": "kbrussel@alum.mit.edu",
           "hash": "5c61c3941",
           "subject": "Remove default value for interface attributes. (#3624)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "paul@paul.cx",
-          "hash": "8f01dfe34",
-          "subject": "Remove usage of the Theora codec (#3617)"
         }
       ],
       "testlog": []
@@ -20441,6 +20005,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2024-04-05",
+          "author": "jsbell@chromium.org",
+          "hash": "1f60107",
+          "subject": "README: Fix badge image URL (#635)"
+        },
         {
           "date": "2024-04-04",
           "author": "fdwr@hotmail.com",
@@ -20848,18 +20418,6 @@
           "author": "fdwr@hotmail.com",
           "hash": "d25f23a",
           "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "asully@chromium.org",
-          "hash": "5c94a45",
-          "subject": "Remove MLCommandEncoder (#546)"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "anssi.kostiainen@intel.com",
-          "hash": "ea85c88",
-          "subject": "Editor change (#561)"
         }
       ],
       "testlog": [
@@ -21465,6 +21023,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "saschanaz@outlook.com",
+          "hash": "642d9fee5d",
+          "subject": "Part 1: Wrap WriteCallback in UnderlyingSinkAlgorithmsWrapper"
+        },
+        {
           "date": "2024-03-15",
           "author": "agpalak@chromium.org",
           "hash": "ecf94e7e3b",
@@ -21744,6 +21308,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-04-05",
+          "author": "saschanaz@outlook.com",
+          "hash": "642d9fee5d",
+          "subject": "Part 1: Wrap WriteCallback in UnderlyingSinkAlgorithmsWrapper"
+        },
+        {
           "date": "2024-02-21",
           "author": "vasilvv@chromium.org",
           "hash": "ccf5325d4d",
@@ -21771,20 +21341,7 @@
       "name": "WebXR Device API",
       "href": "https://immersive-web.github.io/webxr/",
       "specrepo": "https://github.com/immersive-web/webxr",
-      "speclog": [
-        {
-          "date": "2024-02-08",
-          "author": "cabanier@meta.com",
-          "hash": "656e17e",
-          "subject": "Clarify rgb/rgba behavior"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "cabanier@meta.com",
-          "hash": "cd1083d",
-          "subject": "Fix some bikeshed warnings"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/immersive-web/webxr/blob/HEAD/README.md"
     },
@@ -21854,20 +21411,7 @@
       "name": "WebXR Layers API",
       "href": "https://immersive-web.github.io/layers/",
       "specrepo": "https://github.com/immersive-web/layers",
-      "speclog": [
-        {
-          "date": "2024-02-09",
-          "author": "cabanier@meta.com",
-          "hash": "805f743",
-          "subject": "address review comments"
-        },
-        {
-          "date": "2024-02-08",
-          "author": "cabanier@meta.com",
-          "hash": "4e96a40",
-          "subject": "Clarify rgb/srgb behavior"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/immersive-web/layers/blob/HEAD/README.md"
     },
