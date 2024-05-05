@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-03-08T07:12:56.427Z",
-  "until": "2024-05-04T07:12:56.427Z",
+  "since": "2024-03-09T07:12:36.862Z",
+  "until": "2024-05-05T07:12:36.862Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -88,6 +88,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -1189,24 +1195,6 @@
           "author": "pkotwicz@chromium.org",
           "hash": "583a35fd06",
           "subject": "[RWI] Make navigator.identity.get() return DigitalCredential object"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "yigu@chromium.org",
-          "hash": "92088377f8",
-          "subject": "[FedCM] Split button flow web tests into multiple files"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "npm@chromium.org",
-          "hash": "85e057d427",
-          "subject": "[FedCM] Fix new_account_idp setup"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "pkotwicz@chromium.org",
-          "hash": "70c44a6c34",
-          "subject": "Add Web-Platform-Tests for Real-World-Identity part 2/2"
         }
       ]
     },
@@ -1275,6 +1263,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "5e8f71d730",
+          "subject": "Part 5 - Add WPT for forced break value propagation from flex items in multicol."
+        },
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "718cae2d14",
+          "subject": "Part 4 - Add WPT for forced break value propagation from flex items in printing."
+        },
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "6d7d1ab2b7",
+          "subject": "Part 3 - Add WPT for forced break value on flex items in printing."
+        },
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "6386f9f9a8",
+          "subject": "Part 2 - Use margin-box with 'auto' margin resolved as zero when computing the sticky limits."
+        },
         {
           "date": "2024-05-04",
           "author": "wangxianzhu@chromium.org",
@@ -3278,48 +3290,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "ffdd147b19",
           "subject": "Revert \"Skip static animations on compositor and main\" (#44970)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "futhark@chromium.org",
-          "hash": "69e720aae1",
-          "subject": "[css-anchor-position] Apply position-try-options, not position-fallback"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "stearns@adobe.com",
-          "hash": "24d1ed3dd1",
-          "subject": "@font-face tests for shadow dom (#44993)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "d7a387d1d8",
-          "subject": "WebKit export: [view-transitions] Support chaining :only-child after pseudo-elements (#44960)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "kevers@google.com",
-          "hash": "bfc7e56fbe",
-          "subject": "Migrate animation-offscreen-to-onscreen to WPT"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "takuya004869@gmail.com",
-          "hash": "36fd14f2f0",
-          "subject": "Ensure the -webkit-text-stroke property is computed properly."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "graouts@apple.com",
-          "hash": "58f0382f8c",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=269051 (#44984)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "azhar.botbayeva@gmail.com",
-          "hash": "2ef716fcff",
-          "subject": "Fix inheritance.sub.html WPT to work on Servo"
         }
       ]
     },
@@ -3665,48 +3635,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "f786720fe",
           "subject": "[css-anchor-position] Simplify introductory example"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "149f6f5cc",
-          "subject": "[css-anchor-position] Explicitly specify that fallback styles are applied as part of a new origin, to make it clearer they win over element-attached styles. #9149"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "1bbd57745",
-          "subject": "[css-anchor-position] Specify when last remembered position options are forgotten. Remove issue."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "96865cb51",
-          "subject": "[css-anchor-position] Rephrase the text specifying that later positioned elements can't cause earlier ones to relitigate their fallback position. Remove issue about this."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "b6bf95a26",
-          "subject": "[css-anchor-position][editorial] typo"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "c94e5ae49",
-          "subject": "[css-anchor-position] Layout containment also scopes anchor names. #9349"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "e5cd5fa60",
-          "subject": "[css-anchor-position] Comment out the animation section, since we're punting it to level 2."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "dc2973aff",
-          "subject": "[css-anchor-position][editorial] Replace the struck-out text with new intro, now that we've settled on the design."
         }
       ],
       "testlog": [
@@ -4105,12 +4033,6 @@
           "author": "futhark@chromium.org",
           "hash": "87604bd2b2",
           "subject": "[css-anchor-position] Fall back to no options applied"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "futhark@chromium.org",
-          "hash": "69e720aae1",
-          "subject": "[css-anchor-position] Apply position-try-options, not position-fallback"
         }
       ]
     },
@@ -4171,18 +4093,6 @@
           "author": "kevers@google.com",
           "hash": "acaaacf2be",
           "subject": "Port flaky animations/stability tests to WPT crashtests"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "kevers@google.com",
-          "hash": "bfc7e56fbe",
-          "subject": "Migrate animation-offscreen-to-onscreen to WPT"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "graouts@apple.com",
-          "hash": "58f0382f8c",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=269051 (#44984)"
         }
       ]
     },
@@ -4203,12 +4113,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "647eac89b",
           "subject": "[css-backgrounds-3][editorial] small wording tweaks"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "d661b595f",
-          "subject": "[css-backgrounds-3][editorial] Reformat"
         }
       ],
       "testlog": [
@@ -4241,12 +4145,6 @@
           "author": "gastonr@microsoft.com",
           "hash": "7557e87f66",
           "subject": "Fuzz Fluent failing wpt tests."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "azhar.botbayeva@gmail.com",
-          "hash": "2ef716fcff",
-          "subject": "Fix inheritance.sub.html WPT to work on Servo"
         }
       ]
     },
@@ -4336,6 +4234,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "5e8f71d730",
+          "subject": "Part 5 - Add WPT for forced break value propagation from flex items in multicol."
+        },
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "718cae2d14",
+          "subject": "Part 4 - Add WPT for forced break value propagation from flex items in printing."
+        },
+        {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "6d7d1ab2b7",
+          "subject": "Part 3 - Add WPT for forced break value on flex items in printing."
+        },
         {
           "date": "2024-04-24",
           "author": "tkent@chromium.org",
@@ -4526,12 +4442,6 @@
           "author": "chris@w3.org",
           "hash": "1b70a1736",
           "subject": "[css-color-4][editorial] broken link in previous version"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "chris@w3.org",
-          "hash": "1368cedb9",
-          "subject": "[css-color-5][editorial] wpt"
         }
       ],
       "testlog": [
@@ -5214,24 +5124,6 @@
           "author": "chris@w3.org",
           "hash": "d445cdf0b",
           "subject": "[css-images-4][editorial] Mark as delta spec, fix #5804"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "chris@w3.org",
-          "hash": "64b245030",
-          "subject": "[css-images-4][editorial] All examples have stable IDs #3355"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "chris@w3.org",
-          "hash": "d32c8d047",
-          "subject": "[css-images-4][editorial] Add missing wpt"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "chris@w3.org",
-          "hash": "b46033b5a",
-          "subject": "[css-images-4] Fixed incorrect example of overlaid radial and conic gradients, #3355"
         }
       ],
       "testlog": [
@@ -5644,6 +5536,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-05-04",
+          "author": "tlin@mozilla.com",
+          "hash": "6386f9f9a8",
+          "subject": "Part 2 - Use margin-box with 'auto' margin resolved as zero when computing the sticky limits."
+        },
+        {
           "date": "2024-04-27",
           "author": "tlin@mozilla.com",
           "hash": "00cd0f2d2b",
@@ -5853,12 +5751,6 @@
           "author": "emilio@crisal.io",
           "hash": "7ebe316824",
           "subject": "Make a test reliable by waiting for font loads."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "stearns@adobe.com",
-          "hash": "24d1ed3dd1",
-          "subject": "@font-face tests for shadow dom (#44993)"
         }
       ]
     },
@@ -6339,12 +6231,6 @@
           "author": "gastonr@microsoft.com",
           "hash": "7557e87f66",
           "subject": "Fuzz Fluent failing wpt tests."
-        },
-        {
-          "date": "2024-03-08",
-          "author": "takuya004869@gmail.com",
-          "hash": "36fd14f2f0",
-          "subject": "Ensure the -webkit-text-stroke property is computed properly."
         }
       ]
     },
@@ -6353,14 +6239,7 @@
       "href": "https://drafts.csswg.org/css-text-decor/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-03-08",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "977de1647",
-          "subject": "[css-text-decor-4] Fix error wrt percentages in Computed Value lines #10044"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-04-09",
@@ -6659,12 +6538,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "1be2f9499",
           "subject": "[css-values-4][editorial] bikeshed fixes"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "d90d999d0",
-          "subject": "[css-values-4][editorial] Update changes list"
         }
       ],
       "testlog": [
@@ -7027,12 +6900,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "98be2c7140",
           "subject": "Apply standard parsing of pseudo-elements for web animations"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "d7a387d1d8",
-          "subject": "WebKit export: [view-transitions] Support chaining :only-child after pseudo-elements (#44960)"
         }
       ]
     },
@@ -7264,7 +7131,14 @@
       "href": "https://wicg.github.io/deprecation-reporting/",
       "specrepo": "https://github.com/WICG/deprecation-reporting",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-05-04",
+          "author": "jmaher@mozilla.com",
+          "hash": "095a13c034",
+          "subject": "Add bugzilla components for wpt tests and adjust implementation status as needed."
+        }
+      ]
     },
     {
       "name": "Device Posture API",
@@ -7402,42 +7276,6 @@
           "author": "alexis.menard@intel.com",
           "hash": "110d513",
           "subject": "Remove additional logos to keep consistent with other W3C specs. (#121)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "d88a411",
-          "subject": "Modernize algorithms in \"Algorithm\" section (#120)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "52d8775",
-          "subject": "editorial: Reference the \"visibility state\" definition in S&P considerations (#118)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "b4de6ab",
-          "subject": "editorial: Do not define Navigator, just reference it (#117)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "raphael.kubo.da.costa@intel.com",
-          "hash": "553f9ba",
-          "subject": "editorial: Use navigables, not browsing contexts, in CSS media feature (#119)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "alexis.menard@intel.com",
-          "hash": "8d38b2a",
-          "subject": "Update explainer. (#115)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "alexis.menard@intel.com",
-          "hash": "c5bc680",
-          "subject": "Remove the policy control part from the spec. (#114)"
         }
       ],
       "testlog": [
@@ -7452,12 +7290,6 @@
           "author": "philip@foolip.org",
           "hash": "1ad481db40",
           "subject": "Map tests to web-features for simple cases (#45470)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "alexis.menard@intel.com",
-          "hash": "b1a25081e5",
-          "subject": "[Device Posture] Add IDLHarness test for Device Posture."
         }
       ]
     },
@@ -8039,12 +7871,6 @@
           "author": "benallen@igalia.com",
           "hash": "af3890a10a",
           "subject": "update to reflect numeric minutes handling after https://github.com/tc39/proposal-intl-duration-format/pull/180"
-        },
-        {
-          "date": "2024-03-09",
-          "author": "andre.bargull@gmail.com",
-          "hash": "263ed65292",
-          "subject": "Remove locales with explicit u-hc Unicode extension"
         }
       ]
     },
@@ -8486,6 +8312,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -8577,6 +8409,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -8670,6 +8508,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -8761,6 +8605,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -8854,6 +8704,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -8945,6 +8801,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -9038,6 +8900,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -9129,6 +8997,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -9222,6 +9096,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -9313,6 +9193,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -9406,6 +9292,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -9498,6 +9390,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -9589,6 +9487,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -9995,12 +9899,6 @@
           "author": "yoichio@chromium.org",
           "hash": "c607c11635",
           "subject": "Revert \"Reapply \"ReadableStream should be cancelled on aborting fetch streaming upload\"\""
-        },
-        {
-          "date": "2024-03-08",
-          "author": "yoichio@chromium.org",
-          "hash": "0afe5891f7",
-          "subject": "Reapply \"ReadableStream should be cancelled on aborting fetch streaming upload\""
         }
       ]
     },
@@ -10125,14 +10023,7 @@
       "name": "User Agent Interaction with Related Website Sets",
       "href": "https://wicg.github.io/first-party-sets/",
       "specrepo": "https://github.com/WICG/first-party-sets",
-      "speclog": [
-        {
-          "date": "2024-03-08",
-          "author": "johannhof@chromium.org",
-          "hash": "c42b351",
-          "subject": "Update link to RWS submission guidelines"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -10683,6 +10574,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-05-05",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "536297144c",
+          "subject": "Fuzzy rule for .../selectlist-option-arbitrary-content-displayed.tentative.html"
+        },
         {
           "date": "2024-05-04",
           "author": "jarhar@chromium.org",
@@ -12140,6 +12037,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13026,6 +12929,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13117,6 +13026,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -13210,6 +13125,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13301,6 +13222,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -13394,6 +13321,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13485,6 +13418,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -13578,6 +13517,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13670,6 +13615,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -13761,6 +13712,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -13989,6 +13946,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -14177,12 +14140,6 @@
           "author": "OrKoN@users.noreply.github.com",
           "hash": "4d38a40",
           "subject": "Editorial: Fix wrong cddl syntax used for optionality of the user context (#448)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "645867d",
-          "subject": "Add userContext field to WebDriver BiDi's setPermission (#438)"
         }
       ],
       "testlog": []
@@ -15502,6 +15459,12 @@
       "href": "https://tc39.es/source-map-spec/",
       "specrepo": "https://github.com/tc39/source-map-spec",
       "speclog": [
+        {
+          "date": "2024-04-19",
+          "author": "krinkle@fastmail.com",
+          "hash": "22c43e6",
+          "subject": "Archive with pointer to https://github.com/tc39/source-map"
+        },
         {
           "date": "2024-03-13",
           "author": "tobias.koppers@googlemail.com",
@@ -17011,24 +16974,6 @@
           "author": "kleber@google.com",
           "hash": "e8e2235",
           "subject": "Create 2024-03-06-FLEDGE-call-minutes.md"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "127498189+ads-marketing-cloud@users.noreply.github.com",
-          "hash": "4fb7639",
-          "subject": "Update fledge-tester-list.md (#1081)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "64027993+jurjendewal@users.noreply.github.com",
-          "hash": "8cac7d3",
-          "subject": "Update fledge-tester-list.md (#1078)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "131692252+HabibiYou@users.noreply.github.com",
-          "hash": "7a0d227",
-          "subject": "[Spec] Add deprecatedRenderURLReplacements (#1051)"
         }
       ],
       "testlog": []
@@ -19293,12 +19238,6 @@
           "author": "james@hoppipolla.co.uk",
           "hash": "6c86972",
           "subject": "Fix timeouts configuration (#1802)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "44031be",
-          "subject": "Fix unreferenced definitions"
         }
       ],
       "testlog": [
@@ -19511,12 +19450,6 @@
           "author": "jdescottes@mozilla.com",
           "hash": "98376f5b41",
           "subject": "[wdspec] Check browsingContext.contextCreated emitted before browsingContext.create resolves"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "34244704+Lightning00Blade@users.noreply.github.com",
-          "hash": "5f87351e8b",
-          "subject": "[WebDriverBiDi] Change test to match current spec (#45001)"
         }
       ]
     },
@@ -19590,12 +19523,6 @@
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "430df16",
           "subject": "Add missing `invalid selector` error code (#682)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "c99dd87",
-          "subject": "Fix order of groups in script.Target (#680)"
         }
       ],
       "testlog": []
@@ -19605,6 +19532,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -19698,6 +19631,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -19789,6 +19728,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -19882,6 +19827,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -19973,6 +19924,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20066,6 +20023,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -20157,6 +20120,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20250,6 +20219,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -20341,6 +20316,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20434,6 +20415,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -20525,6 +20512,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20618,6 +20611,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -20709,6 +20708,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20802,6 +20807,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -20893,6 +20904,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -20986,6 +21003,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -21078,6 +21101,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
+        {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
           "hash": "992583db2",
@@ -21169,6 +21198,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-05-04",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "1b6371436",
+          "subject": "Fix image-decoder-to-texture in WebGL 2 mode. (#3652)"
+        },
         {
           "date": "2024-04-23",
           "author": "kbrussel@alum.mit.edu",
@@ -21602,12 +21637,6 @@
           "author": "philip@foolip.org",
           "hash": "1ad481db40",
           "subject": "Map tests to web-features for simple cases (#45470)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "mjwilson@chromium.org",
-          "hash": "d84308e8d4",
-          "subject": "Block or allow all MIDI using the existing SysEx permission"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-midi-api/blob/HEAD/README.md"
@@ -21617,6 +21646,18 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2024-05-03",
+          "author": "asully@google.com",
+          "hash": "16f4de0",
+          "subject": "conversion"
+        },
+        {
+          "date": "2024-05-03",
+          "author": "asully@google.com",
+          "hash": "2f01d1f",
+          "subject": "add note about graph construction"
+        },
         {
           "date": "2024-05-02",
           "author": "jsbell@chromium.org",
@@ -21628,6 +21669,12 @@
           "author": "jsbell@chromium.org",
           "hash": "aa5fac9",
           "subject": "Simplify, correct, and add validation for GRU/LSTM and friends (#659)"
+        },
+        {
+          "date": "2024-05-01",
+          "author": "asully@google.com",
+          "hash": "cbb4009",
+          "subject": "add back return"
         },
         {
           "date": "2024-05-01",
@@ -21646,6 +21693,12 @@
           "author": "jsbell@chromium.org",
           "hash": "1c9948d",
           "subject": "Add note about no-op graphs. (#665)"
+        },
+        {
+          "date": "2024-04-29",
+          "author": "asully@chromium.org",
+          "hash": "250ad19",
+          "subject": "remove MLActivation parameters used for op fusion"
         },
         {
           "date": "2024-04-29",
@@ -21916,12 +21969,6 @@
           "author": "jsbell@chromium.org",
           "hash": "1d1b531",
           "subject": "Content: Define operand concept, simplify graph connection steps (#591)"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "jsbell@chromium.org",
-          "hash": "28c1a6e",
-          "subject": "Bugfix: Duplicate word, variable name consistency (#597)"
         }
       ],
       "testlog": [
@@ -22218,12 +22265,6 @@
           "author": "shiyi.zou@intel.com",
           "hash": "8d35c8c143",
           "subject": "webnn: add gather validation tests in WPT"
-        },
-        {
-          "date": "2024-03-08",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "942e52025b",
-          "subject": "WebNN: Implement MLBuffer creation/destroy."
         }
       ]
     },
