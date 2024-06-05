@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-04-08T07:13:09.079Z",
-  "until": "2024-06-04T07:13:09.079Z",
+  "since": "2024-04-09T07:13:10.140Z",
+  "until": "2024-06-05T07:13:10.140Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -201,6 +201,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "apaseltiner@google.com",
+          "hash": "dbfa6a4",
+          "subject": "Move JSON-irrelevant functions to separate file (#1317)"
+        },
         {
           "date": "2024-06-03",
           "author": "apaseltiner@google.com",
@@ -512,18 +518,6 @@
           "author": "80365263+linnan-github@users.noreply.github.com",
           "hash": "00505ad",
           "subject": "Update spec to not sending debug reports for fenced frames (#1238)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "apaseltiner@google.com",
-          "hash": "932c677",
-          "subject": "Add event-level report validator (#1182)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "40465606+johnivdel@users.noreply.github.com",
-          "hash": "823b201",
-          "subject": "Create 2024-04-01-minutes.md"
         }
       ],
       "testlog": []
@@ -714,7 +708,14 @@
       "name": "Clipboard API and events",
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "45411397+snianu@users.noreply.github.com",
+          "hash": "03f35a1",
+          "subject": "Add SVG format to the spec. (#216)"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-05-30",
@@ -809,20 +810,31 @@
           "subject": "Meta: initial spec-factory run Compression standard"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Compute Pressure",
       "href": "https://w3c.github.io/compute-pressure/",
       "specrepo": "https://github.com/w3c/compute-pressure",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "bb6a3d7",
+          "subject": "editorial: Use more precise algorithmic steps in unobserve() and disconnect() (#278)"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "851626f",
+          "subject": "editorial: fully active checks: Refer to specific registered observer list (#277)"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "raphael.kubo.da.costa@intel.com",
+          "hash": "0c7812f",
+          "subject": "Rework handling of fully active status (#276)"
+        },
         {
           "date": "2024-05-01",
           "author": "raphael.kubo.da.costa@intel.com",
@@ -1151,18 +1163,6 @@
           "author": "npm@chromium.org",
           "hash": "b1eacf12d9",
           "subject": "Reland \"[FedCM] Enable CORS in ID assertion endpoint\""
-        },
-        {
-          "date": "2024-04-08",
-          "author": "cbiesinger@chromium.org",
-          "hash": "3776d976b2",
-          "subject": "[FedCM] Better test disconnect"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "cbiesinger@chromium.org",
-          "hash": "82ca18d82a",
-          "subject": "[FedCM] Better error handling in OnTokenRequestParsed"
         }
       ]
     },
@@ -1231,6 +1231,42 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-06-05",
+          "author": "tkent@chromium.org",
+          "hash": "98092b7f7a",
+          "subject": "css-ruby: Reorganize a text-wrap test"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "szager@chromium.org",
+          "hash": "0fd9af963b",
+          "subject": "Apply CSS zoom to letter-spacing"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "philip@foolip.org",
+          "hash": "c43a2c6c14",
+          "subject": "Map another test for sign() (#46614)"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "emilio@crisal.io",
+          "hash": "e3935a4b3c",
+          "subject": "Fix container query WPT tests to reflect recent WG resolution."
+        },
+        {
+          "date": "2024-06-04",
+          "author": "sesse@chromium.org",
+          "hash": "f5127b51e9",
+          "subject": "Fix !important parsing on contain-type."
+        },
+        {
+          "date": "2024-06-04",
+          "author": "tkent@chromium.org",
+          "hash": "55b8d9e9a6",
+          "subject": "ruby-align: Implement the layout behavior"
+        },
         {
           "date": "2024-06-03",
           "author": "dbaron@chromium.org",
@@ -3096,66 +3132,6 @@
           "author": "emilio@crisal.io",
           "hash": "d7b9fab501",
           "subject": "Fix button-as-subgrid border/padding computations."
-        },
-        {
-          "date": "2024-04-09",
-          "author": "andruud@chromium.org",
-          "hash": "78a681be78",
-          "subject": "[anchor] Handle inset-area() in OutOfFlowLayoutPart"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "masonf@chromium.org",
-          "hash": "fc96c5033f",
-          "subject": "Mark scroll chaining tests non-tentative"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "andruud@chromium.org",
-          "hash": "4f93141b46",
-          "subject": "[anchor] Add WPTs for inset-area in @position-try"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "futhark@chromium.org",
-          "hash": "d751f2f0b6",
-          "subject": "[css-anchor-position] Support inset-area in @position-try"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "smolnar@mozilla.com",
-          "hash": "7a0548ac47",
-          "subject": "Backed out 4 changesets (bug 1522790) - backout the remaining changesets. CLOSED TREE"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "futhark@chromium.org",
-          "hash": "5d15ed08d4",
-          "subject": "[css-anchor-position] Add test for anchor-center with scroll"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "philip@foolip.org",
-          "hash": "badb27d35b",
-          "subject": "Map @scope tests to web-features (#45600)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "kojii@chromium.org",
-          "hash": "d1b4f7aab8",
-          "subject": "[text-spacing-trim] Support when required glyphs are missing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "mail@hskupin.info",
-          "hash": "19320f2a3f",
-          "subject": "[wpt] Fix intermittent failures in font-face-[003, 004].html."
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jkew@mozilla.com",
-          "hash": "b93b79f021",
-          "subject": "Add a WPT reftest for a case where text-wrap:balance interacted badly with float."
         }
       ]
     },
@@ -3392,24 +3368,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "04736d232",
           "subject": "[css-anchor-position] Specify how flipping exactly works. #10049"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "jackalmage@gmail.com",
-          "hash": "79e05b69b",
-          "subject": "[css-anchor-position] Take other scroll adjustments into account. #9071"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "74c1986fd",
-          "subject": "[css-anchor-position] Rephrase comment to be more explicit. #8191"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "bed3a61ea",
-          "subject": "[css-anchor-position] Make strongly-hidden elements also trigger hiding of things depending on them. #7758"
         }
       ],
       "testlog": [
@@ -3598,36 +3556,6 @@
           "author": "masonf@chromium.org",
           "hash": "5baae3e112",
           "subject": "Mark position-visibility tests non-tentative"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "andruud@chromium.org",
-          "hash": "78a681be78",
-          "subject": "[anchor] Handle inset-area() in OutOfFlowLayoutPart"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "masonf@chromium.org",
-          "hash": "fc96c5033f",
-          "subject": "Mark scroll chaining tests non-tentative"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "andruud@chromium.org",
-          "hash": "4f93141b46",
-          "subject": "[anchor] Add WPTs for inset-area in @position-try"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "futhark@chromium.org",
-          "hash": "d751f2f0b6",
-          "subject": "[css-anchor-position] Support inset-area in @position-try"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "futhark@chromium.org",
-          "hash": "5d15ed08d4",
-          "subject": "[css-anchor-position] Add test for anchor-center with scroll"
         }
       ]
     },
@@ -3799,12 +3727,6 @@
           "author": "andruud@chromium.org",
           "hash": "e70c25a525",
           "subject": "[@scope] Treat kScopeActivation as a special kSubSelector"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "philip@foolip.org",
-          "hash": "badb27d35b",
-          "subject": "Map @scope tests to web-features (#45600)"
         }
       ]
     },
@@ -3867,18 +3789,6 @@
           "author": "chris@w3.org",
           "hash": "14ae1ab2a",
           "subject": "[css-color-4][editorial] Add a couple more examples where colors are interpolated"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "c4626ddee",
-          "subject": "[css-color-5] Force a text color for the deltaE table, as the chosen colors are light and assume black text"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jackalmage@gmail.com",
-          "hash": "b98918088",
-          "subject": "[css-color-4] Force a text color for the deltaE table, as the chosen colors are light and assume black text"
         }
       ],
       "testlog": [
@@ -4086,6 +3996,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "emilio@crisal.io",
+          "hash": "e3935a4b3c",
+          "subject": "Fix container query WPT tests to reflect recent WG resolution."
+        },
+        {
+          "date": "2024-06-04",
+          "author": "sesse@chromium.org",
+          "hash": "f5127b51e9",
+          "subject": "Fix !important parsing on contain-type."
+        },
         {
           "date": "2024-05-29",
           "author": "vmpstr@chromium.org",
@@ -5431,6 +5353,18 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-06-05",
+          "author": "tkent@chromium.org",
+          "hash": "98092b7f7a",
+          "subject": "css-ruby: Reorganize a text-wrap test"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "tkent@chromium.org",
+          "hash": "55b8d9e9a6",
+          "subject": "ruby-align: Implement the layout behavior"
+        },
+        {
           "date": "2024-05-27",
           "author": "tkent@chromium.org",
           "hash": "dba739b1cd",
@@ -5522,18 +5456,6 @@
           "author": "futhark@chromium.org",
           "hash": "6eb4b61b01",
           "subject": "Await web font loading in css-scoping tests"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "smolnar@mozilla.com",
-          "hash": "7a0548ac47",
-          "subject": "Backed out 4 changesets (bug 1522790) - backout the remaining changesets. CLOSED TREE"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "mail@hskupin.info",
-          "hash": "19320f2a3f",
-          "subject": "[wpt] Fix intermittent failures in font-face-[003, 004].html."
         }
       ]
     },
@@ -5957,18 +5879,6 @@
           "author": "philip@foolip.org",
           "hash": "3d081f72b6",
           "subject": "Map hyphens tests to web-features (#46036)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "kojii@chromium.org",
-          "hash": "d1b4f7aab8",
-          "subject": "[text-spacing-trim] Support when required glyphs are missing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jkew@mozilla.com",
-          "hash": "b93b79f021",
-          "subject": "Add a WPT reftest for a case where text-wrap:balance interacted badly with float."
         }
       ]
     },
@@ -5994,6 +5904,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "philip@foolip.org",
+          "hash": "c43a2c6c14",
+          "subject": "Map another test for sign() (#46614)"
+        },
         {
           "date": "2024-06-03",
           "author": "sakhapov@chromium.org",
@@ -6305,24 +6221,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "e0805b706",
           "subject": "[css-view-transitions-1] Use snapshot containing block for new root (#10181)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "f4abc2886",
-          "subject": "[css-view-transitions-2] Make some syntax clarifications (#10158)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "38044b3a5",
-          "subject": "[css-view-transitions-2] Add example and note for render-blocking (#10170)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "f9c16229e",
-          "subject": "[css-view-transitions-1] Perform the visibility change steps in own task (#10168)"
         }
       ],
       "testlog": [
@@ -6457,6 +6355,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-06-04",
+          "author": "szager@chromium.org",
+          "hash": "0fd9af963b",
+          "subject": "Apply CSS zoom to letter-spacing"
+        },
+        {
           "date": "2024-06-02",
           "author": "emilio@crisal.io",
           "hash": "82df32a30a",
@@ -6551,6 +6455,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-06-04",
+          "author": "44512924+siliu1@users.noreply.github.com",
+          "hash": "ce0c83bd4",
+          "subject": "Change `shadowRoots` from rest parameter to a dictionary with an array of shadow roots."
+        },
+        {
           "date": "2024-05-15",
           "author": "44512924+siliu1@users.noreply.github.com",
           "hash": "e2ab70611",
@@ -6641,18 +6551,6 @@
           "author": "anssi.kostiainen@gmail.com",
           "hash": "057458d",
           "subject": "Update Privacy considerations (#145)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "41898282+github-actions[bot]@users.noreply.github.com",
-          "hash": "3e95240",
-          "subject": "chore: tidy up index.html (#144)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "alexis.menard@intel.com",
-          "hash": "c29a647",
-          "subject": "Remove the extremely unstable wording. (#143)"
         }
       ],
       "testlog": [
@@ -6934,6 +6832,12 @@
       "specrepo": "https://github.com/tc39/ecma402",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "pchimento@igalia.com",
+          "hash": "c35b0ff",
+          "subject": "Editorial: Replace AvailableCanonicalCalendars with AvailableCalendars (#889)"
+        },
         {
           "date": "2024-06-03",
           "author": "trflynn89@pm.me",
@@ -7341,6 +7245,18 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2024-06-05",
+          "author": "richard.gibson@gmail.com",
+          "hash": "623e2c8f",
+          "subject": "Editorial: Better align GroupBy keyCoercion with CanonicalizeKeyedCollectionKey (#3343)"
+        },
+        {
+          "date": "2024-06-05",
+          "author": "bakkot@gmail.com",
+          "hash": "a78d5041",
+          "subject": "Normative: add set methods (#3306)"
+        },
+        {
           "date": "2024-05-30",
           "author": "bakkot@gmail.com",
           "hash": "30257dd2",
@@ -7605,18 +7521,6 @@
           "author": "pchimento@igalia.com",
           "hash": "9537de33af",
           "subject": "Remove performance logging from non-iso-calendars.js staging test"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "arshaw@users.noreply.github.com",
-          "hash": "6c60904d42",
-          "subject": "test for all overflow/underflow scenarios"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "arshaw@users.noreply.github.com",
-          "hash": "6c35fba9b2",
-          "subject": "adjust tests for round-zdt-day bugfix"
         }
       ]
     },
@@ -7648,14 +7552,7 @@
       "specrepo": "https://github.com/whatwg/encoding",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Encrypted Media Extensions",
@@ -8778,6 +8675,18 @@
       "specrepo": "https://github.com/WICG/fenced-frame",
       "speclog": [
         {
+          "date": "2024-06-04",
+          "author": "131692252+HabibiYou@users.noreply.github.com",
+          "hash": "4966a9e",
+          "subject": "Spec `adAuctionComponents` (#163)"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "cd9d57c",
+          "subject": "Fix TODO for calling \"on navigate callback\" (#162)"
+        },
+        {
           "date": "2024-05-21",
           "author": "blu2.5@me.com",
           "hash": "e67a4f9",
@@ -8904,6 +8813,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-06-05",
+          "author": "mych@chromium.org",
+          "hash": "cdd00c8bc0",
+          "subject": "Reland \"[fetch-later] Define new permissions policy `deferred-fetch`\""
+        },
+        {
           "date": "2024-05-23",
           "author": "evilpies@gmail.com",
           "hash": "596bc0c8c1",
@@ -9016,12 +8931,6 @@
           "author": "horo@chromium.org",
           "hash": "73b5c24746",
           "subject": "Deflake compression-dictionary WPT"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
         }
       ]
     },
@@ -9088,12 +8997,6 @@
           "author": "bakkot@gmail.com",
           "hash": "cceaf3628d",
           "subject": "Add tests for Blob.prototype.bytes()"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
         }
       ],
       "testpolicy": "https://github.com/w3c/FileAPI/blob/HEAD/CONTRIBUTING.md"
@@ -9234,6 +9137,18 @@
       "href": "https://w3c.github.io/geolocation-api/",
       "specrepo": "https://github.com/w3c/geolocation-api",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "caceres_m@apple.com",
+          "hash": "b358dad",
+          "subject": "Editorial: fix latestVersion link in ED"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "atsushi@himor.in",
+          "hash": "71242b6",
+          "subject": "Chore: Disable /TR/ publication for errata.html (#158)"
+        },
         {
           "date": "2024-06-04",
           "author": "marcos@marcosc.com",
@@ -9681,15 +9596,21 @@
           "author": "annevk@annevk.nl",
           "hash": "f2089ab6",
           "subject": "Closed shadow roots can be serializable too"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "tristan.fraipont@gmail.com",
-          "hash": "11ea4a2f",
-          "subject": "Fix typo in MessagePort's postMessage()"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-05",
+          "author": "weizhong@google.com",
+          "hash": "0a2dc15a51",
+          "subject": "Move reftests/crashtests that use testdriver to wpt_internal"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "clamy@chromium.org",
+          "hash": "5eb9e1b1a6",
+          "subject": "[DIP] Implement CORP checks on subresources"
+        },
         {
           "date": "2024-06-04",
           "author": "jpgravel@chromium.org",
@@ -10475,36 +10396,6 @@
           "author": "emilio@crisal.io",
           "hash": "7e64f31fc3",
           "subject": "Use transform animations to implement marquee."
-        },
-        {
-          "date": "2024-04-08",
-          "author": "smolnar@mozilla.com",
-          "hash": "7a0548ac47",
-          "subject": "Backed out 4 changesets (bug 1522790) - backout the remaining changesets. CLOSED TREE"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "jpgravel@chromium.org",
-          "hash": "72023ba965",
-          "subject": "Add support for generating multiple canvas test cases in the same file"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "56492da0c5",
-          "subject": "Convert all layer WPT tests to synchronous testharness tests (#45559)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "ef70df47c2",
-          "subject": "[wpt] Fix intermittent test failures for short timer."
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
         }
       ]
     },
@@ -10518,12 +10409,6 @@
           "author": "adam@adampage.net",
           "hash": "ff5bdf3",
           "subject": "normalize “an empty string” to “the empty string” (#544)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "abdi.abdirahim@gmail.com",
-          "hash": "f7e96ed",
-          "subject": "Add missing space for img role \"wai-aria\" mapping (#542)"
         }
       ],
       "testlog": [],
@@ -10582,6 +10467,24 @@
       "href": "https://w3c.github.io/IFT/Overview.html",
       "specrepo": "https://github.com/w3c/IFT",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "grieger@google.com",
+          "hash": "ed55a68",
+          "subject": "Fix typo."
+        },
+        {
+          "date": "2024-06-04",
+          "author": "grieger@google.com",
+          "hash": "0c13916",
+          "subject": "Adjust wording."
+        },
+        {
+          "date": "2024-06-04",
+          "author": "grieger@google.com",
+          "hash": "6081786",
+          "subject": "Note the mitigations for limiting the number of requests in security considerations."
+        },
         {
           "date": "2024-05-30",
           "author": "grieger@google.com",
@@ -10976,12 +10879,6 @@
           "author": "estade@chromium.org",
           "hash": "50396a2ab6",
           "subject": "IndexedDB: fix structured-clone.any.js WPT"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -11854,6 +11751,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "saschanaz@outlook.com",
+          "hash": "7e9d726640",
+          "subject": "Add a test for SWR assocation with notifications"
+        },
         {
           "date": "2024-05-23",
           "author": "saschanaz@outlook.com",
@@ -12935,12 +12838,6 @@
           "author": "arichiv@chromium.org",
           "hash": "6818346ef8",
           "subject": "[WPT] fix feature/privacy-policy-frame-policy-timing"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "caceres_m@apple.com",
-          "hash": "c975e22fc3",
-          "subject": "Payment Request: fix permission policy tests (#45443)"
         }
       ],
       "testpolicy": "https://github.com/w3c/webappsec-permissions-policy/blob/HEAD/CONTRIBUTING.md"
@@ -13020,72 +12917,6 @@
           "author": "chris.needham@bbc.co.uk",
           "hash": "771fe37",
           "subject": "Replace image with PNG image in cHRM section"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris@w3.org",
-          "hash": "d5b059a",
-          "subject": "Link implementation report"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris@w3.org",
-          "hash": "4664841",
-          "subject": "blockquote"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris@w3.org",
-          "hash": "7c45274",
-          "subject": "comment cleanup"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris.seeger@nbcuni.com",
-          "hash": "84a7c77",
-          "subject": "corrected 2nd 48-bit not back to 32-bit and added full-range-flag note"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris.seeger@nbcuni.com",
-          "hash": "29d96d2",
-          "subject": "changed 32-bit to 48-bit (16x3) RGB"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris.seeger@nbcuni.com",
-          "hash": "ae086ad",
-          "subject": "Added detail to cICP, mDCv, cLLi sections"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "Chris.seeger@nbcuni.com",
-          "hash": "92e6db4",
-          "subject": "Update Implementation_Report_3e/index.html"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "Chris.seeger@nbcuni.com",
-          "hash": "f3a2cf2",
-          "subject": "Update Implementation_Report_3e/index.html"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "Chris.seeger@nbcuni.com",
-          "hash": "9890a58",
-          "subject": "Update Implementation_Report_3e/index.html"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris.seeger@nbcuni.com",
-          "hash": "87b1acc",
-          "subject": "Added MediaInfo Image, changed MaxFALL value to 300 cd/m2"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "chris@w3.org",
-          "hash": "17681a0",
-          "subject": "first draft of impl report"
         }
       ],
       "testlog": []
@@ -13657,14 +13488,7 @@
           "subject": "Move fully active check and check also in parallel (#367)"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-04-09",
-          "author": "caceres_m@apple.com",
-          "hash": "0b846b5062",
-          "subject": "Screen Wake Lock: Add test for non-fully active doc (#45599)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Scroll-driven Animations",
@@ -13925,14 +13749,7 @@
       "name": "Accelerated Shape Detection in Images",
       "href": "https://wicg.github.io/shape-detection-api/",
       "specrepo": "https://github.com/WICG/shape-detection-api",
-      "speclog": [
-        {
-          "date": "2024-04-08",
-          "author": "reillyeon@users.noreply.github.com",
-          "hash": "b0cb76a",
-          "subject": "Replace FrozenArray<T> with sequence<T> (#101)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -14123,6 +13940,18 @@
       ],
       "testlog": [
         {
+          "date": "2024-06-05",
+          "author": "nhiroki@chromium.org",
+          "hash": "cff8519911",
+          "subject": "Prerender: Add WPTs for No-Vary-Search hint"
+        },
+        {
+          "date": "2024-06-04",
+          "author": "jbroman@chromium.org",
+          "hash": "76920a10f6",
+          "subject": "Validate Cookie-Indices when serving prefetch responses."
+        },
+        {
           "date": "2024-05-30",
           "author": "nhiroki@chromium.org",
           "hash": "5930e386a5",
@@ -14264,6 +14093,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "pdr@chromium.org",
+          "hash": "2b475fcc5e",
+          "subject": "Add fuzzy matching to marker-007.svg"
+        },
         {
           "date": "2024-06-02",
           "author": "longsonr@gmail.com",
@@ -14619,12 +14454,6 @@
           "author": "guybedford@gmail.com",
           "hash": "4ef9cb2",
           "subject": "remove PR link (#63)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "guybedford@gmail.com",
-          "hash": "c5fe265",
-          "subject": "Non-normative layering fix for #59 (#62)"
         }
       ],
       "testlog": []
@@ -14997,14 +14826,7 @@
       "name": "Accelerated Text Detection in Images",
       "href": "https://wicg.github.io/shape-detection-api/text.html",
       "specrepo": "https://github.com/WICG/shape-detection-api",
-      "speclog": [
-        {
-          "date": "2024-04-08",
-          "author": "reillyeon@users.noreply.github.com",
-          "hash": "b0cb76a",
-          "subject": "Replace FrozenArray<T> with sequence<T> (#101)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -15240,12 +15062,6 @@
           "author": "129945747+mbrodesser-Igalia@users.noreply.github.com",
           "hash": "560c8d6dc5",
           "subject": "Trusted Types: check that the policy is obtained from the correct global"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "lwarlow@igalia.com",
-          "hash": "200bd3984e",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=271824 (#45495)"
         }
       ]
     },
@@ -15487,12 +15303,6 @@
           "author": "blu2.5@me.com",
           "hash": "6ab755c",
           "subject": "Clarify that headers can be used to send beacons without data (#1014)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "JensenPaul@users.noreply.github.com",
-          "hash": "da5b2ef",
-          "subject": "Clarify k-anonymity guarantees (#1118)"
         }
       ],
       "testlog": []
@@ -15547,6 +15357,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "valentin.gosu@gmail.com",
+          "hash": "b906e6e302",
+          "subject": "Add WPT for 0x0A character embedded in HTML data URL getting stripped"
+        },
         {
           "date": "2024-05-02",
           "author": "philip@foolip.org",
@@ -16065,57 +15881,15 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "chun.m.chang@gmail.com",
+          "hash": "53a1437dcf",
+          "subject": "Extend timeout for temporal SVC encoding WPT"
+        },
         {
           "date": "2024-05-16",
           "author": "sandersd@chromium.org",
@@ -16200,54 +15974,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16286,54 +16012,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16372,54 +16050,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16458,54 +16088,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16544,54 +16126,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16630,54 +16164,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16716,54 +16202,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16802,54 +16240,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16888,54 +16278,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -16974,54 +16316,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -17060,54 +16354,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -17146,54 +16392,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -17232,54 +16430,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -17318,54 +16468,6 @@
           "author": "eugene@chromium.org",
           "hash": "33f79ae",
           "subject": "Rewritten \"Convert to RGB frame\" algo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "83a92e4",
-          "subject": "Addressing review comments"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "875bc88",
-          "subject": "Allow for color space conversion to p3 and sRGB for RGB frames as well"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "51dbdad",
-          "subject": "Editorial changes from Chris Needham"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ee8cd68",
-          "subject": "More specific language around VideoFrameCopyToOptions.colorSpace"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "36a7447",
-          "subject": "More clear handling of |rect| in RGB branch of VideoFrame.copyTo"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "8e5f883",
-          "subject": "cab -> can"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "ce2d6ae",
-          "subject": "More clear writing"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "eugene@chromium.org",
-          "hash": "cc00c96",
-          "subject": "Spec optional conversion to RGB in VideoFrame.copyTo()"
         }
       ],
       "testlog": []
@@ -17382,14 +16484,7 @@
       "href": "https://w3c.github.io/webcrypto/",
       "specrepo": "https://github.com/w3c/webcrypto",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "WebDriver",
@@ -17631,18 +16726,6 @@
           "author": "aborovova@mozilla.com",
           "hash": "0a07acc30a",
           "subject": "[wdspec] Add tests for \"storage.getCookies\" command with network event."
-        },
-        {
-          "date": "2024-04-08",
-          "author": "mail@hskupin.info",
-          "hash": "9d115c1708",
-          "subject": "[wdspec] Fix race condition in switch to parent frame if parent was removed."
-        },
-        {
-          "date": "2024-04-08",
-          "author": "mail@hskupin.info",
-          "hash": "3aaaf69393",
-          "subject": "[wdspec] Move classic vs bidi interop tests to /webdriver/tests/interop."
         }
       ]
     },
@@ -17651,6 +16734,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "69349599+sadym-chromium@users.noreply.github.com",
+          "hash": "4e162b9",
+          "subject": "Update `browsingContext.locateNodes` (#713)"
+        },
         {
           "date": "2024-05-24",
           "author": "OrKoN@users.noreply.github.com",
@@ -17722,12 +16811,6 @@
           "author": "james@hoppipolla.co.uk",
           "hash": "a08c9c2",
           "subject": "Don't use RFC 2119 keyword in non-normative text"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "aborovova@mozilla.com",
-          "hash": "243d53b",
-          "subject": "Throw 'UnsupportedOperation' error if unable to set the files with 'input.setFiles' command."
         }
       ],
       "testlog": []
@@ -19101,6 +18184,12 @@
       "speclog": [
         {
           "date": "2024-06-04",
+          "author": "munsocket@protonmail.com",
+          "hash": "61a383a1",
+          "subject": "Adjusts subgroups built-in to atomics operations (#4627)"
+        },
+        {
+          "date": "2024-06-04",
           "author": "28601907+teoxoy@users.noreply.github.com",
           "hash": "b468f37a",
           "subject": "Make `unmap()` device timeline validation explicit (#4679)"
@@ -19570,14 +18659,7 @@
       "href": "https://webidl.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/webidl",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "ca9d63d",
-          "subject": "Add Float16Array"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-04-25",
@@ -19600,6 +18682,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2024-06-05",
+          "author": "jsbell@chromium.org",
+          "hash": "f133ff0",
+          "subject": "Bug fix: Correct a handful of typos/JS errors in decompositions (#699)"
+        },
         {
           "date": "2024-06-04",
           "author": "jsbell@chromium.org",
@@ -19842,6 +18930,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-05",
+          "author": "shiyi.zou@intel.com",
+          "hash": "2779fd44df",
+          "subject": "webnn: add WPT conformance test cases of gather's out-of-bound indices"
+        },
         {
           "date": "2024-06-03",
           "author": "lisha.guo@intel.com",
@@ -20147,12 +19241,6 @@
           "author": "lisha.guo@intel.com",
           "hash": "13056cf344",
           "subject": "WebNN: Add XNN_FLAG_KEEP_DIMS flag for XNNPACK"
-        },
-        {
-          "date": "2024-04-09",
-          "author": "ningxin.hu@intel.com",
-          "hash": "822ba04527",
-          "subject": "WebNN: Respect ArrayBufferView's byte offset and length for MLGraphMojo"
         }
       ]
     },
@@ -20327,6 +19415,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "docfaraday@gmail.com",
+          "hash": "0a17913e94",
+          "subject": "Test cases for RTCRtpParameters.codecs."
+        },
         {
           "date": "2024-05-30",
           "author": "dom@w3.org",
@@ -20518,12 +19612,6 @@
           "author": "mail@hskupin.info",
           "hash": "a7a594d8c0",
           "subject": "Bump pywebsocket3 to 4.0.2 from PyPI (#45711)"
-        },
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
         }
       ]
     },
@@ -20532,6 +19620,18 @@
       "href": "https://w3c.github.io/webtransport/",
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
+        {
+          "date": "2024-06-03",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "cc70595",
+          "subject": "s/http3Only/requireUnreliable/"
+        },
+        {
+          "date": "2024-06-03",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "eb7e505",
+          "subject": "Give datagrams priority over streams but don't starve them"
+        },
         {
           "date": "2024-05-21",
           "author": "jan-ivar@users.noreply.github.com",
@@ -20620,6 +19720,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-06-04",
+          "author": "alcooper@chromium.org",
+          "hash": "65ba9a606e",
+          "subject": "Add unsigned-short as a supported depth format"
+        },
         {
           "date": "2024-06-04",
           "author": "alcooper@chromium.org",
@@ -20749,6 +19855,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-06-04",
+          "author": "munsocket@protonmail.com",
+          "hash": "61a383a1",
+          "subject": "Adjusts subgroups built-in to atomics operations (#4627)"
+        },
         {
           "date": "2024-06-04",
           "author": "28601907+teoxoy@users.noreply.github.com",
@@ -21236,14 +20348,7 @@
       "specrepo": "https://github.com/whatwg/xhr",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-04-08",
-          "author": "bakkot@gmail.com",
-          "hash": "5aa50dd415",
-          "subject": "Update tests which are generic across all TypedArrays for Float16Array"
-        }
-      ]
+      "testlog": []
     }
   ]
 }
