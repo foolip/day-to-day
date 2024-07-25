@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-05-28T07:13:22.079Z",
-  "until": "2024-07-24T07:13:22.079Z",
+  "since": "2024-05-29T07:14:00.003Z",
+  "until": "2024-07-25T07:14:00.003Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -77,6 +77,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -459,42 +477,6 @@
           "author": "apaseltiner@google.com",
           "hash": "24276de",
           "subject": "Allow collection functions to be used with structured headers (#1308)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "apaseltiner@google.com",
-          "hash": "0ecdd53",
-          "subject": "Allow \"enumerated\" utility to be used with structured headers (#1307)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "5ee2c71",
-          "subject": "Move note about report id to where it's set (#1306)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "1dfec7d",
-          "subject": "Set aggregatable report version explicitly (#1305)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "apaseltiner@google.com",
-          "hash": "53d3fbf",
-          "subject": "Parse OS-item parameters using struct utility (#1304)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "b2f438e",
-          "subject": "Rename attribution debug reports to verbose debug reports (#1303)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "apaseltiner@google.com",
-          "hash": "7b86e4f",
-          "subject": "Share array-validation logic for JSON and structured headers (#1302)"
         }
       ],
       "testlog": []
@@ -767,12 +749,6 @@
           "author": "d@domenic.me",
           "hash": "7905255",
           "subject": "Meta: update Twitter account"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "annevk@annevk.nl",
-          "hash": "a6ec498",
-          "subject": "Compression is a WHATWG standard now"
         }
       ],
       "testlog": [
@@ -974,6 +950,12 @@
       "specrepo": "https://github.com/w3c/webappsec-credential-management",
       "speclog": [
         {
+          "date": "2024-07-24",
+          "author": "marcos@marcosc.com",
+          "hash": "ee91210",
+          "subject": "Use credential type registry for permissions + digital credentials (#242)"
+        },
+        {
           "date": "2024-06-13",
           "author": "marcos@marcosc.com",
           "hash": "75bcf50",
@@ -1103,6 +1085,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-07-25",
+          "author": "dbaron@chromium.org",
+          "hash": "c7e66b8135",
+          "subject": "Add support for calc-size() and interpolate-size to flex-basis."
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "232390587e",
+          "subject": "[css-grid-2][masonry] Create variants for opposite masonry axis"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4f3f92b797",
+          "subject": "[css-grid-3][masonry] Add track sizing tests with fixed widths"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b33b93de37",
+          "subject": "[css-grid-2][masonry][editorial] Improve test labels"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "88115264b2",
+          "subject": "[css-grid-2][masonry] Use reverse spans for some tests"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "tkent@chromium.org",
+          "hash": "2c86d4806e",
+          "subject": "css-anchor-position: Fix inset-area behavior in the sideways-lr wirting-mode"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "valadaptive@protonmail.com",
+          "hash": "b839367eb1",
+          "subject": "Add WPT tests for box-sizing with aspect-ratio"
+        },
         {
           "date": "2024-07-23",
           "author": "emilio@crisal.io",
@@ -2260,48 +2284,6 @@
           "author": "zach@zrhoffman.net",
           "hash": "84ab40102e",
           "subject": "Allow transitioning from a custom property to None."
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "448fee1581",
-          "subject": "Rename trim-auto to trim-both"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "ff521e564f",
-          "subject": "Test for line-clamp with balancing"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "jkew@mozilla.com",
-          "hash": "1c59e649e4",
-          "subject": "patch 4 - Remove failure annotation for first-letter-width test that now passes."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "philip@foolip.org",
-          "hash": "5acc693b4d",
-          "subject": "Map scrollbar-gutter tests to web-features (#46512)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "philip@foolip.org",
-          "hash": "51ca39187c",
-          "subject": "Map :modal tests to web-features (#46351)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "48a8364e19",
-          "subject": "Added initial set of tests for properties of CSS Borders 4 (#42345)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "futhark@chromium.org",
-          "hash": "eb9c7e6a7f",
-          "subject": "Count references to adopted sheets in tree scopes"
         }
       ]
     },
@@ -2447,6 +2429,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-07-24",
+          "author": "tkent@chromium.org",
+          "hash": "2c86d4806e",
+          "subject": "css-anchor-position: Fix inset-area behavior in the sideways-lr wirting-mode"
+        },
+        {
           "date": "2024-07-05",
           "author": "andruud@chromium.org",
           "hash": "54100d54cd",
@@ -2570,12 +2558,6 @@
           "author": "sebastianzartner@gmail.com",
           "hash": "a14e908e1f",
           "subject": "Fixed two small mistakes related to CSS corner-shape tests (#46574)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "48a8364e19",
-          "subject": "Added initial set of tests for properties of CSS Borders 4 (#42345)"
         }
       ]
     },
@@ -2714,6 +2696,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "chris@w3.org",
+          "hash": "8995e6043",
+          "subject": "[css-color-4][editorial] wpt"
+        },
         {
           "date": "2024-07-08",
           "author": "gui.lebas@gmail.com",
@@ -2873,6 +2861,24 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-07-24",
+          "author": "fd@tidoust.net",
+          "hash": "8c597b103",
+          "subject": "[css-conditional-3] Fix Web IDL, `bool` should have been `boolean`"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "chris@w3.org",
+          "hash": "a024dd4f8",
+          "subject": "[css-conditional-3] Clarified that a processor must support both the property and the value #8795"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "chris@w3.org",
+          "hash": "7f539cfe2",
+          "subject": "[css-conditional-3][editorial] Update changes"
+        },
         {
           "date": "2024-07-23",
           "author": "chris@w3.org",
@@ -3230,7 +3236,20 @@
       "href": "https://drafts.csswg.org/css-exclusions/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-07-24",
+          "author": "alkor.sx@gmail.com",
+          "hash": "ee1d13728",
+          "subject": "[css-exclusions-1]  Fix spurious / in <img> (#10603)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "alkor.sx@gmail.com",
+          "hash": "6685aa173",
+          "subject": "[css-exclusions-1] Fix bikeshed errors (#10604)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -3376,6 +3395,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "232390587e",
+          "subject": "[css-grid-2][masonry] Create variants for opposite masonry axis"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4f3f92b797",
+          "subject": "[css-grid-3][masonry] Add track sizing tests with fixed widths"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b33b93de37",
+          "subject": "[css-grid-2][masonry][editorial] Improve test labels"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "88115264b2",
+          "subject": "[css-grid-2][masonry] Use reverse spans for some tests"
+        },
         {
           "date": "2024-06-19",
           "author": "andruud@chromium.org",
@@ -3798,12 +3841,6 @@
           "author": "gastonr@microsoft.com",
           "hash": "a822e3518c",
           "subject": "Fuzzing wpt tests to deal with scrollbar anti-alias."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "philip@foolip.org",
-          "hash": "5acc693b4d",
-          "subject": "Map scrollbar-gutter tests to web-features (#46512)"
         }
       ]
     },
@@ -4072,12 +4109,6 @@
           "author": "jkew@mozilla.com",
           "hash": "2a6d10e9a7",
           "subject": "Backed out 9 changesets (aec1be189f68, f9c2e5707d43, fe82d67b63ef, 07004e2608f3, f6022837406b, 36fc4e06713d, 30718580670d, 82242b2d942d, 5cd51f055a1a) due to reported regressions."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "jkew@mozilla.com",
-          "hash": "1c59e649e4",
-          "subject": "patch 4 - Remove failure annotation for first-letter-width test that now passes."
         }
       ]
     },
@@ -4284,6 +4315,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-07-24",
+          "author": "valadaptive@protonmail.com",
+          "hash": "b839367eb1",
+          "subject": "Add WPT tests for box-sizing with aspect-ratio"
+        },
+        {
           "date": "2024-07-23",
           "author": "aethanyc@gmail.com",
           "hash": "366df3222e",
@@ -4397,54 +4434,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "9b51281f5",
           "subject": "[css-text-4] Changelog update"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "8d718308a",
-          "subject": "[css-text-4] Update changelog"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "377fe27fb",
-          "subject": "[css-text-4] Test coverage"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "78ae39c44",
-          "subject": "[css-text-4] Use single | for  math-auto"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "8929227f8",
-          "subject": "[css-text-4] Add math-auto value"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "3a594c566",
-          "subject": "[css-text-4] Update changelog"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "1276b4c35",
-          "subject": "[css-text-4] Add test info"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "41d5bbfa1",
-          "subject": "[css-text] Test coverage"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "32dee0358",
-          "subject": "[css-text-4] Clamp then balance"
         }
       ],
       "testlog": [
@@ -4465,18 +4454,6 @@
           "author": "gastonr@microsoft.com",
           "hash": "a822e3518c",
           "subject": "Fuzzing wpt tests to deal with scrollbar anti-alias."
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "448fee1581",
-          "subject": "Rename trim-auto to trim-both"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "git@florian.rivoal.net",
-          "hash": "ff521e564f",
-          "subject": "Test for line-clamp with balancing"
         }
       ]
     },
@@ -4674,15 +4651,15 @@
           "author": "dbaron@chromium.org",
           "hash": "ff353bd7a",
           "subject": "[css-values-5] Simplify example in calc-size() explainer."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "bc815b4fc",
-          "subject": "[css-values-5] Specify calc-size() simplification. #10220"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-07-25",
+          "author": "dbaron@chromium.org",
+          "hash": "c7e66b8135",
+          "subject": "Add support for calc-size() and interpolate-size to flex-basis."
+        },
         {
           "date": "2024-07-17",
           "author": "dbaron@chromium.org",
@@ -5014,12 +4991,6 @@
           "author": "futhark@chromium.org",
           "hash": "46cc5c1b6e",
           "subject": "Fix spec links in css-conditional/container-queries"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "futhark@chromium.org",
-          "hash": "eb9c7e6a7f",
-          "subject": "Count references to adopted sheets in tree scopes"
         }
       ]
     },
@@ -5118,12 +5089,6 @@
           "author": "alexis.menard@intel.com",
           "hash": "830a942",
           "subject": "Add two new comments from the accessibility review. (#149)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "057458d",
-          "subject": "Update Privacy considerations (#145)"
         }
       ],
       "testlog": []
@@ -5352,6 +5317,18 @@
       ],
       "testlog": [
         {
+          "date": "2024-07-24",
+          "author": "ftang@chromium.org",
+          "hash": "12416e0fa9",
+          "subject": "Add tests for DurationFormat PR 172 and 167"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "trflynn89@pm.me",
+          "hash": "d8aa2e4ef7",
+          "subject": "Update NumberFormat.prototype.useGrouping test for CLDR 45"
+        },
+        {
           "date": "2024-07-11",
           "author": "ftang@chromium.org",
           "hash": "753d502e9a",
@@ -5512,12 +5489,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "efe0b1871f",
           "subject": "Split yearMonthFromFields/reference-day.js into calendar specific files"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "aosukeke@gmail.com",
-          "hash": "c00830acef",
-          "subject": "Fix description of `fractionalDigits` tests"
         }
       ]
     },
@@ -5649,6 +5620,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-07-24",
+          "author": "9728696+ioannad@users.noreply.github.com",
+          "hash": "18ebac8122",
+          "subject": " RAB: Integrate staging tests for the .reverse method (#4160)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "9728696+ioannad@users.noreply.github.com",
+          "hash": "1dd1b91d14",
+          "subject": "RAB: Integrate staging tests for the .reduceRight method (#4157)"
+        },
         {
           "date": "2024-07-23",
           "author": "9728696+ioannad@users.noreply.github.com",
@@ -5913,6 +5896,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -5938,6 +5939,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -5965,6 +5984,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -5990,6 +6027,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -6017,6 +6072,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -6042,6 +6115,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -6069,6 +6160,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -6094,6 +6203,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -6121,6 +6248,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -6146,6 +6291,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -6173,6 +6336,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -6199,6 +6380,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -6224,6 +6423,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -6818,6 +7035,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "annevk@annevk.nl",
+          "hash": "4f3ac961",
+          "subject": "Make navigation.navigate() use UTF-8 in the URL parser"
+        },
+        {
           "date": "2024-07-19",
           "author": "lwarlow@igalia.com",
           "hash": "5deef84f",
@@ -7050,21 +7273,15 @@
           "author": "akaster@serenityos.org",
           "hash": "2312c6b5",
           "subject": "Pass a global object when consuming history-action user activation"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "lwarlow@igalia.com",
-          "hash": "feb379d3",
-          "subject": "Update Trusted Types enforcement for document.write/writeln"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "honk@goose.icu",
-          "hash": "71eee30f",
-          "subject": "Consume user activation in show the picker"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-07-24",
+          "author": "dom@chromium.org",
+          "hash": "aaebcf1563",
+          "subject": "HTML: Test that removing src attr does not execute script"
+        },
         {
           "date": "2024-07-23",
           "author": "yiyix@chromium.org",
@@ -7484,30 +7701,6 @@
           "author": "sefeng@mozilla.com",
           "hash": "04e0f3e72f",
           "subject": "Make selection.direction returns none when the selection is collapsed"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "philip@foolip.org",
-          "hash": "88729f299d",
-          "subject": "Map loading=\"lazy\" tests to web-features (#46349)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "masonf@chromium.org",
-          "hash": "09341e98c2",
-          "subject": "Clean up anchor attribute display test and test for `auto` value"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "honk@goose.icu",
-          "hash": "3a85f98daa",
-          "subject": "Cleanup \"check show the picker consumes user activation\" (#46513)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "honk@goose.icu",
-          "hash": "ad94245219",
-          "subject": "Show the picker consumes activation"
         }
       ]
     },
@@ -7752,48 +7945,6 @@
           "author": "grieger@google.com",
           "hash": "b659d21",
           "subject": "Fix incorrect link."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "grieger@google.com",
-          "hash": "91c52b0",
-          "subject": "First pass at adding iteration limits to the extension algorithm."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "github@skef.org",
-          "hash": "7479aca",
-          "subject": "Code review feedback"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "github@skef.org",
-          "hash": "d52c7be",
-          "subject": "A different try of the encoding section"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "grieger@google.com",
-          "hash": "ab3dd16",
-          "subject": "Remove TODO for list formatting."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "grieger@google.com",
-          "hash": "60fea42",
-          "subject": "Add encoding guidance on limiting the number of patches."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "grieger@google.com",
-          "hash": "83101eb",
-          "subject": "Add section on preloading."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "grieger@google.com",
-          "hash": "f80e81f",
-          "subject": "Add a section of glyph closure and glyph keyed patches."
         }
       ],
       "testlog": []
@@ -7818,6 +7969,12 @@
       "specrepo": "https://github.com/w3c/IndexedDB",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-07-24",
+          "author": "garimachadha@microsoft.com",
+          "hash": "bc4ee2a313",
+          "subject": "IDB WPTs: Expand IDBObjectStore.createIndex() to run on workers"
+        },
         {
           "date": "2024-07-16",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -7877,12 +8034,6 @@
           "author": "rahsin@microsoft.com",
           "hash": "2f355a6b58",
           "subject": "IDB WPTs: Combine idbcursor_advance_objectstore WPTs and run on workers"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "rahsin@microsoft.com",
-          "hash": "fd2e974a4f",
-          "subject": "IDB WPTs: Run bindings-inject-keys/bindings-inject-values on workers"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -8016,6 +8167,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -8165,6 +8334,12 @@
       "specrepo": "https://github.com/w3c/mathml-core",
       "speclog": [
         {
+          "date": "2024-07-24",
+          "author": "fwang@igalia.com",
+          "hash": "0bacaf4",
+          "subject": "Use shorthand padding-line for mfrac's rule in User Agent stylesheet closes #251"
+        },
+        {
           "date": "2024-07-10",
           "author": "fwang@igalia.com",
           "hash": "6ea67a5",
@@ -8184,6 +8359,12 @@
       "href": "https://w3c.github.io/media-capabilities/",
       "specrepo": "https://github.com/w3c/media-capabilities",
       "speclog": [
+        {
+          "date": "2024-07-24",
+          "author": "chris.needham@bbc.co.uk",
+          "hash": "a5b96e1",
+          "subject": "Minor editorial tweak to spatialRendering definition"
+        },
         {
           "date": "2024-07-18",
           "author": "chrisn@users.noreply.github.com",
@@ -8779,6 +8960,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -8804,6 +9003,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -8831,6 +9048,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -8856,6 +9091,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -8883,6 +9136,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -8908,6 +9179,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -8935,6 +9224,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -8961,6 +9268,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -8986,6 +9311,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -9049,6 +9392,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -9167,6 +9528,12 @@
       "href": "https://w3c.github.io/webappsec-permissions-policy/",
       "specrepo": "https://github.com/w3c/webappsec-permissions-policy",
       "speclog": [
+        {
+          "date": "2024-07-24",
+          "author": "simon.hangl@student.uibk.ac.at",
+          "hash": "f15a454",
+          "subject": "Add all-screens-capture permissions policy (#553)"
+        },
         {
           "date": "2024-07-23",
           "author": "pkotwicz@chromium.org",
@@ -9449,12 +9816,6 @@
           "author": "mustaq@google.com",
           "hash": "b8aab6837b",
           "subject": "WPT coverage for Pointer Events for slotted elements."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "Olli.Pettay@helsinki.fi",
-          "hash": "2fba14f69a",
-          "subject": "Add a test for the target of coalesced and predicted events"
         }
       ]
     },
@@ -9778,18 +10139,6 @@
           "author": "shaseley@chromium.org",
           "hash": "0a23970",
           "subject": "yield: Update security section (#91)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "shaseley@chromium.org",
-          "hash": "e6c47f5",
-          "subject": "Add specification for scheduler.yield() method (#88)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "shaseley@chromium.org",
-          "hash": "a3b0d5c",
-          "subject": "Add a meta explainer (#82)"
         }
       ],
       "testlog": []
@@ -10043,12 +10392,6 @@
           "author": "emilio@crisal.io",
           "hash": "f95840c54a",
           "subject": "Check for namespace properly when looking for class / id attributes for invalidation."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "philip@foolip.org",
-          "hash": "51ca39187c",
-          "subject": "Map :modal tests to web-features (#46351)"
         }
       ]
     },
@@ -10318,6 +10661,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-07-24",
+          "author": "domenic@chromium.org",
+          "hash": "16a0c5a3a2",
+          "subject": "Do not fire popstate during No-Vary-Search prerender activation"
+        },
+        {
           "date": "2024-06-14",
           "author": "nhiroki@chromium.org",
           "hash": "60c7e9d7b5",
@@ -10583,12 +10932,6 @@
           "author": "fs@opera.com",
           "hash": "c8838c8f59",
           "subject": "Referenced SVG elements in an external resource document match :target"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "fs@opera.com",
-          "hash": "ce170e7068",
-          "subject": "Remove restriction on document root for SVG resource documents"
         }
       ]
     },
@@ -11191,24 +11534,6 @@
           "author": "bakkot@gmail.com",
           "hash": "31be9630",
           "subject": "address some minor markup inconsistencies"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "b.afatah@yahoo.com",
-          "hash": "26e4cebe",
-          "subject": "fix: reduce bundle size even more"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "b.afatah@yahoo.com",
-          "hash": "008e4b78",
-          "subject": "fix: use a simpler patch"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "b.afatah@yahoo.com",
-          "hash": "47437897",
-          "subject": "fix: patching era for Hijri dates"
         }
       ],
       "testlog": []
@@ -11442,6 +11767,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-07-24",
+          "author": "lwarlow@igalia.com",
+          "hash": "7def7eee73",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=276881 (#47228)"
+        },
+        {
           "date": "2024-07-17",
           "author": "lwarlow@igalia.com",
           "hash": "3195f45f7c",
@@ -11496,6 +11827,12 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2024-07-24",
+          "author": "JensenPaul@users.noreply.github.com",
+          "hash": "4417b49",
+          "subject": "Rename FLEDGE to Protected Audience in B&A explainer"
+        },
         {
           "date": "2024-07-23",
           "author": "alexmt@chromium.org",
@@ -11657,12 +11994,6 @@
           "author": "morlovich@google.com",
           "hash": "0435e7e",
           "subject": "Spec: Fix error and not requested cases around trusted bidding signals (#1180)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "kleber@google.com",
-          "hash": "22d3be9",
-          "subject": "Create 2024-05-22-FLEDGE-call-minutes.md"
         }
       ],
       "testlog": []
@@ -12177,18 +12508,6 @@
           "author": "49305434+daniel-montalvo@users.noreply.github.com",
           "hash": "2f2e3daa",
           "subject": "[Monorepo] Editors-draft-actions (#2227)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "spectranaut@users.noreply.github.com",
-          "hash": "b5c143d5",
-          "subject": "chore: prettier"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "spectranaut@users.noreply.github.com",
-          "hash": "11466abc",
-          "subject": "chore: prettier"
         }
       ],
       "testlog": [
@@ -14220,12 +14539,6 @@
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "a66ff7e59d",
           "subject": "[WebDriver BiDi] fix `browsingContext.contextCreated` tests (#46548)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "jdescottes@mozilla.com",
-          "hash": "e2fa1905e5",
-          "subject": "[wdspec] Add wdspec tests for network.continueRequest"
         }
       ]
     },
@@ -14351,6 +14664,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14376,6 +14707,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14403,6 +14752,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14428,6 +14795,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14455,6 +14840,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14480,6 +14883,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14507,6 +14928,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14532,6 +14971,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14559,6 +15016,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14584,6 +15059,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14611,6 +15104,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14636,6 +15147,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14663,6 +15192,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14688,6 +15235,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14715,6 +15280,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14740,6 +15323,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -14767,6 +15368,24 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
+        {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
           "hash": "8a1bf5671",
@@ -14792,6 +15411,24 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-07-25",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "2d0e7f879",
+          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "0ee1bedc1",
+          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "7cbaa0be5",
+          "subject": "Add drawingBufferStorage to known context methods (#3670)"
+        },
         {
           "date": "2024-07-10",
           "author": "83996185+RandomGamingDev@users.noreply.github.com",
@@ -15201,42 +15838,6 @@
           "author": "jiawei.shao@intel.com",
           "hash": "adb07b1d",
           "subject": "Add optional feature `clip-distances` (#4588)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "bajones@chromium.org",
-          "hash": "93faa4bf",
-          "subject": "Detail binding size check at draw/dispatch (#4682)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "72a4cb61",
-          "subject": "add missing `multisample.count` validation (#4681)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "158e0cfb",
-          "subject": "make sure the device is valid when creating a texture view (#4678)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "33fba809",
-          "subject": "Allow compressed formats for 3D textures (#4677)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "kainino@chromium.org",
-          "hash": "19516f6e",
-          "subject": "Replace asynchronous .requestAdapterInfo() with synchronous .info (#4662)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "kainino@chromium.org",
-          "hash": "6f92ce21",
-          "subject": "Spec orientation of each cube face, using a diagram (#4675)"
         }
       ],
       "testlog": []
@@ -15610,6 +16211,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-07-25",
+          "author": "bin.miao@intel.com",
+          "hash": "52c7abb89a",
+          "subject": "WebNN: Change the auto in MLPowerPreference to default"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "asully@chromium.org",
+          "hash": "b7777fabd7",
+          "subject": "webnn: Allow an MLGraphBuilder to build at most one MLGraph"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "shiyi.zou@intel.com",
+          "hash": "7238d690d6",
+          "subject": "webnn: add support limits for `elu` `gelu` `leakyRelu` and `relu`"
+        },
+        {
           "date": "2024-07-23",
           "author": "bin.miao@intel.com",
           "hash": "acd785862c",
@@ -15764,18 +16383,6 @@
           "author": "shanxing.mei@intel.com",
           "hash": "7a45f1c8ba",
           "subject": "webnn: Migrate BatchNormalization validation tests to WPTs"
-        },
-        {
-          "date": "2024-05-29",
-          "author": "shanxing.mei@intel.com",
-          "hash": "afefbc876e",
-          "subject": "webnn: Migrate argMinMax validation tests to WPTs"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "fc92d4e807",
-          "subject": "WebNN: avoid re-binding buffers upon dispatch()"
         }
       ]
     },
@@ -15845,12 +16452,6 @@
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "086d12f2",
           "subject": "Added WPT 46526."
-        },
-        {
-          "date": "2024-05-28",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "8a0f531c",
-          "subject": "Collapse RTCRtpCodecCapability."
         }
       ],
       "testlog": [
@@ -16123,12 +16724,6 @@
           "author": "cabanier@meta.com",
           "hash": "157e463",
           "subject": "Adress review comments + renamed from int to short"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "cabanier@meta.com",
-          "hash": "fb2f4ec",
-          "subject": "Add support for rui16 and allow empty preference"
         }
       ],
       "testlog": [],
@@ -16572,42 +17167,6 @@
           "author": "jiawei.shao@intel.com",
           "hash": "adb07b1d",
           "subject": "Add optional feature `clip-distances` (#4588)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "bajones@chromium.org",
-          "hash": "93faa4bf",
-          "subject": "Detail binding size check at draw/dispatch (#4682)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "72a4cb61",
-          "subject": "add missing `multisample.count` validation (#4681)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "158e0cfb",
-          "subject": "make sure the device is valid when creating a texture view (#4678)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "33fba809",
-          "subject": "Allow compressed formats for 3D textures (#4677)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "kainino@chromium.org",
-          "hash": "19516f6e",
-          "subject": "Replace asynchronous .requestAdapterInfo() with synchronous .info (#4662)"
-        },
-        {
-          "date": "2024-05-28",
-          "author": "kainino@chromium.org",
-          "hash": "6f92ce21",
-          "subject": "Spec orientation of each cube face, using a diagram (#4675)"
         }
       ],
       "testlog": []
