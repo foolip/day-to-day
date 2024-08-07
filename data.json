@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-06-10T07:13:21.119Z",
-  "until": "2024-08-06T07:13:21.119Z",
+  "since": "2024-06-11T07:13:07.604Z",
+  "until": "2024-08-07T07:13:07.604Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -440,12 +440,6 @@
           "author": "csharrison@chromium.org",
           "hash": "05c58f8",
           "subject": "Fix laplace formula (#1330)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "apaseltiner@google.com",
-          "hash": "221f474",
-          "subject": "Lift JSON-irrelevant functions to separate file (#1328)"
         }
       ],
       "testlog": []
@@ -715,7 +709,14 @@
       "specrepo": "https://github.com/whatwg/console",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-08-07",
+          "author": "69349599+sadym-chromium@users.noreply.github.com",
+          "hash": "3e5f0133b4",
+          "subject": "automate console-count-logging test (#47478)"
+        }
+      ]
     },
     {
       "name": "Contact Picker API",
@@ -805,6 +806,12 @@
       "specrepo": "https://github.com/WICG/crash-reporting",
       "speclog": [
         {
+          "date": "2024-07-17",
+          "author": "iclelland@chromium.org",
+          "hash": "2108399",
+          "subject": "Add optional call stacks for unresponsive reports"
+        },
+        {
           "date": "2024-07-04",
           "author": "iclelland@chromium.org",
           "hash": "f5ffacf",
@@ -847,12 +854,6 @@
           "author": "marcos@marcosc.com",
           "hash": "75bcf50",
           "subject": "chore: add Marcos to the editor's list (#239)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "marcos@marcosc.com",
-          "hash": "55d42f1",
-          "subject": "Chore: export \"origin-bound\" definition (#240)"
         }
       ],
       "testlog": [
@@ -966,6 +967,78 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-07",
+          "author": "dshin@mozilla.com",
+          "hash": "03e72719fb",
+          "subject": "Let the @scope root search cross the shadow boundary if ::part selector is used."
+        },
+        {
+          "date": "2024-08-07",
+          "author": "ethavar@microsoft.com",
+          "hash": "888cac0054",
+          "subject": "[Masonry] Add masonry display type"
+        },
+        {
+          "date": "2024-08-07",
+          "author": "abotella@igalia.com",
+          "hash": "7d8aa0fde8",
+          "subject": "[line-clamp] Allow clamp points after IFCs"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "77e23056da",
+          "subject": "[layout] Fix some abspos min-height:min-content/etc cases."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "a03147c1dd",
+          "subject": "[layout] Support min-height:min-content in more general case."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "dada8b5382",
+          "subject": "[layout] Rework block-size aspect-ratio logic."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "d6ad00a8aa",
+          "subject": "[layout] Rework inline-size aspect-ratio logic."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "kevers@google.com",
+          "hash": "ff0aa4bbf5",
+          "subject": "Fix crash when animating flexBasis content"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "philip@foolip.org",
+          "hash": "e006d44bd3",
+          "subject": "Add fuzzy metadata for conic gradient tests (#47480)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "masonf@chromium.org",
+          "hash": "53382863c6",
+          "subject": "Rename inset-area to position-area"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "obrufau@igalia.com",
+          "hash": "165162b51f",
+          "subject": "Accept 'cursor' on ::marker pseudo-elements"
+        },
         {
           "date": "2024-08-06",
           "author": "schenney@chromium.org",
@@ -2321,72 +2394,6 @@
           "author": "futhark@chromium.org",
           "hash": "401d9af978",
           "subject": "[@starting-style] Additional test for after-change inheritance"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "kojii@chromium.org",
-          "hash": "55e466472e",
-          "subject": "[text-box-trim] Add tests for `height` and `min-height`"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "jkew@mozilla.com",
-          "hash": "3e19868db3",
-          "subject": "Avoid creating zero-length textframes when trying to handle ::first-letter."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "jkew@mozilla.com",
-          "hash": "016d40ca5f",
-          "subject": "Revert backout changeset 709248f1fc69, to re-land the original patch stack. (no review)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "e4c05291ad",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=270672 (#46680)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "mattwoodrow@apple.com",
-          "hash": "cfb4368034",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=274403"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "mattwoodrow@apple.com",
-          "hash": "da24a43f54",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=274404"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "awogbemila@chromium.org",
-          "hash": "c6b81e1d1f",
-          "subject": "Quit no-op smooth programmatic scrolls early"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "fs@opera.com",
-          "hash": "ede33bcf7c",
-          "subject": "Add fuzzy metadata to css/css-backgrounds/border-image-image-type-001.htm"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "kojii@chromium.org",
-          "hash": "099a3a1ec8",
-          "subject": "Fix to re-run `CollectInlines` when turning on/off `initial-letter`"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "longsonr@gmail.com",
-          "hash": "3e7de6e2ee",
-          "subject": "Line height unit rlh in calc() is sometimes interpreted as lh"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "philip@foolip.org",
-          "hash": "c26994876b",
-          "subject": "Fix intrinsic typos (#46666)"
         }
       ]
     },
@@ -2495,6 +2502,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "masonf@chromium.org",
+          "hash": "53382863c6",
+          "subject": "Rename inset-area to position-area"
+        },
         {
           "date": "2024-08-02",
           "author": "futhark@chromium.org",
@@ -2607,6 +2620,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        },
+        {
           "date": "2024-08-05",
           "author": "jkew@mozilla.com",
           "hash": "ecfc527292",
@@ -2635,12 +2654,6 @@
           "author": "fs@opera.com",
           "hash": "a7b5eac8f2",
           "subject": "Rework how \"views\" into SVGImages work"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "fs@opera.com",
-          "hash": "ede33bcf7c",
-          "subject": "Add fuzzy metadata to css/css-backgrounds/border-image-image-type-001.htm"
         }
       ]
     },
@@ -2762,6 +2775,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-07",
+          "author": "dshin@mozilla.com",
+          "hash": "03e72719fb",
+          "subject": "Let the @scope root search cross the shadow boundary if ::part selector is used."
+        },
         {
           "date": "2024-07-16",
           "author": "dshin@mozilla.com",
@@ -3251,6 +3270,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-07",
+          "author": "ethavar@microsoft.com",
+          "hash": "888cac0054",
+          "subject": "[Masonry] Add masonry display type"
+        },
+        {
           "date": "2024-07-15",
           "author": "nt1m@users.noreply.github.com",
           "hash": "afdd85e327",
@@ -3323,6 +3348,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "kevers@google.com",
+          "hash": "ff0aa4bbf5",
+          "subject": "Fix crash when animating flexBasis content"
+        },
         {
           "date": "2024-07-30",
           "author": "ikilpatrick@chromium.org",
@@ -3533,12 +3564,6 @@
           "author": "andruud@chromium.org",
           "hash": "fc1acb8240",
           "subject": "Treat '!' as EOF in in ConsumeGridTemplateRowsAndAreasAndColumns"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "philip@foolip.org",
-          "hash": "c26994876b",
-          "subject": "Fix intrinsic typos (#46666)"
         }
       ]
     },
@@ -3620,6 +3645,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "philip@foolip.org",
+          "hash": "e006d44bd3",
+          "subject": "Add fuzzy metadata for conic gradient tests (#47480)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        },
         {
           "date": "2024-08-06",
           "author": "schenney@chromium.org",
@@ -3707,18 +3744,6 @@
           "author": "jkew@mozilla.com",
           "hash": "9b1b5d5caa",
           "subject": "Land the testcase here as a crashtest."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "kojii@chromium.org",
-          "hash": "55e466472e",
-          "subject": "[text-box-trim] Add tests for `height` and `min-height`"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "kojii@chromium.org",
-          "hash": "099a3a1ec8",
-          "subject": "Fix to re-run `CollectInlines` when turning on/off `initial-letter`"
         }
       ]
     },
@@ -3970,15 +3995,15 @@
           "author": "flackr@google.com",
           "hash": "278efac6d",
           "subject": "[css-overflow-5] Define scroll-markers (#10243)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "flackr@google.com",
-          "hash": "ec532187b",
-          "subject": "[css-overflow-5] Start css-overflow-5 spec (#10417)"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-07",
+          "author": "abotella@igalia.com",
+          "hash": "7d8aa0fde8",
+          "subject": "[line-clamp] Allow clamp points after IFCs"
+        },
         {
           "date": "2024-08-01",
           "author": "philip@foolip.org",
@@ -4253,6 +4278,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-06",
+          "author": "obrufau@igalia.com",
+          "hash": "165162b51f",
+          "subject": "Accept 'cursor' on ::marker pseudo-elements"
+        },
+        {
           "date": "2024-07-22",
           "author": "jkew@mozilla.com",
           "hash": "c0abfb0294",
@@ -4269,18 +4300,6 @@
           "author": "m_kato@ga2.so-net.ne.jp",
           "hash": "6405414bbd",
           "subject": "Part 5. first-letter-hi-001.html should consider Unicode 15.1."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "jkew@mozilla.com",
-          "hash": "3e19868db3",
-          "subject": "Avoid creating zero-length textframes when trying to handle ::first-letter."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "jkew@mozilla.com",
-          "hash": "016d40ca5f",
-          "subject": "Revert backout changeset 709248f1fc69, to re-land the original patch stack. (no review)"
         }
       ]
     },
@@ -4547,6 +4566,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "77e23056da",
+          "subject": "[layout] Fix some abspos min-height:min-content/etc cases."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "a03147c1dd",
+          "subject": "[layout] Support min-height:min-content in more general case."
+        },
         {
           "date": "2024-07-31",
           "author": "ikilpatrick@chromium.org",
@@ -4820,7 +4851,14 @@
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        }
+      ]
     },
     {
       "name": "CSS Basic User Interface",
@@ -4871,12 +4909,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "62f4f04d4b",
           "subject": "Add tests for https://github.com/w3c/csswg-drafts/issues/9852"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "philip@foolip.org",
-          "hash": "c26994876b",
-          "subject": "Fix intrinsic typos (#46666)"
         }
       ]
     },
@@ -4936,6 +4968,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "dada8b5382",
+          "subject": "[layout] Rework block-size aspect-ratio logic."
+        },
+        {
+          "date": "2024-08-06",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "d6ad00a8aa",
+          "subject": "[layout] Rework inline-size aspect-ratio logic."
+        },
         {
           "date": "2024-08-05",
           "author": "moonira@google.com",
@@ -5025,12 +5069,6 @@
           "author": "sesse@chromium.org",
           "hash": "7941dff4a0",
           "subject": "Fix !important parsing for yet more CSS properties."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "longsonr@gmail.com",
-          "hash": "3e7de6e2ee",
-          "subject": "Line height unit rlh in calc() is sometimes interpreted as lh"
         }
       ]
     },
@@ -5195,24 +5233,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "f00897513c",
           "subject": "WebKit export: REGRESSION(279372@main): Blank space and offset clicks after running a view transition on a scrolled page (#46760)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "e4c05291ad",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=270672 (#46680)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "mattwoodrow@apple.com",
-          "hash": "cfb4368034",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=274403"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "mattwoodrow@apple.com",
-          "hash": "da24a43f54",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=274404"
         }
       ]
     },
@@ -5330,12 +5350,6 @@
           "author": "tkent@chromium.org",
           "hash": "48b19a45c7",
           "subject": "css-writing-modes: Set long timeout to select-multiple-options-visual-order.html"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "philip@foolip.org",
-          "hash": "c26994876b",
-          "subject": "Fix intrinsic typos (#46666)"
         }
       ]
     },
@@ -5406,6 +5420,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        },
+        {
           "date": "2024-07-31",
           "author": "rbuis@igalia.com",
           "hash": "48bb7ea1e0",
@@ -5416,12 +5436,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "5ae52272e1",
           "subject": "Execute scrollIntoView scrolls in parallel"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "awogbemila@chromium.org",
-          "hash": "c6b81e1d1f",
-          "subject": "Quit no-op smooth programmatic scrolls early"
         }
       ]
     },
@@ -5935,6 +5949,12 @@
       "testlog": [
         {
           "date": "2024-08-06",
+          "author": "marko.lahma@gmail.com",
+          "hash": "5dc04b7332",
+          "subject": "Fix TypedArray.reduce tests against RAB"
+        },
+        {
+          "date": "2024-08-06",
           "author": "9728696+ioannad@users.noreply.github.com",
           "hash": "dc36c7eae9",
           "subject": "RAB: Integrate staging tests for the .values method (#4179)"
@@ -6314,6 +6334,12 @@
       "specrepo": "https://github.com/w3c/event-timing",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "0c27092ff9",
+          "subject": "Don't set interaction ids to the input events when the scroll is active (#47427)"
+        },
         {
           "date": "2024-08-01",
           "author": "blink-w3c-test-autoroller@chromium.org",
@@ -7480,6 +7506,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-06",
+          "author": "averge@chromium.org",
+          "hash": "dcbcbe5d29",
+          "subject": "Test that window.fence.notifyEvent won't use a cached event."
+        },
+        {
           "date": "2024-08-05",
           "author": "lbrady@google.com",
           "hash": "011dbf902a",
@@ -7898,12 +7930,6 @@
           "author": "reillyg@google.com",
           "hash": "f54ba1d",
           "subject": "Editorial: Add informative class to timeout example"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "atsushi@himor.in",
-          "hash": "12327c4",
-          "subject": "Chore: minor text fix, for pubrules (#159)"
         }
       ],
       "testlog": [
@@ -7966,7 +7992,14 @@
           "subject": "[geometry-1][editorial Changes since 2018 CR"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "70e1e1205f",
+          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
+        }
+      ]
     },
     {
       "name": "Get Installed Related Apps API",
@@ -8050,6 +8083,18 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-08-07",
+          "author": "d@domenic.me",
+          "hash": "2b4f0d20",
+          "subject": "Editorial: modernize promise rejection tracking"
+        },
+        {
+          "date": "2024-08-07",
+          "author": "jbroman@chromium.org",
+          "hash": "a6071703",
+          "subject": "Update uses of Web IDL \"invoke a callback function\""
+        },
         {
           "date": "2024-08-05",
           "author": "schenney@chromium.org",
@@ -8259,15 +8304,33 @@
           "author": "lwarlow@igalia.com",
           "hash": "8e5944df",
           "subject": "Switch trusted types sinks to use union type"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "jens@meiert.com",
-          "hash": "00760b2d",
-          "subject": "Editorial: remove redundant to"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-07",
+          "author": "emilio@crisal.io",
+          "hash": "f7e0550c80",
+          "subject": "Don't trigger src=\"\" load sync if there's no current request."
+        },
+        {
+          "date": "2024-08-07",
+          "author": "jarhar@chromium.org",
+          "hash": "3b96ae2f89",
+          "subject": "Remove selectlist-popover.tentative.html"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "jarhar@chromium.org",
+          "hash": "a290a0ceda",
+          "subject": "Remove button type=popover for select"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "jkew@mozilla.com",
+          "hash": "4342fa03b4",
+          "subject": "Add a reftest for <select> + capitalize sizing."
+        },
         {
           "date": "2024-08-06",
           "author": "dizhangg@chromium.org",
@@ -8721,6 +8784,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "jocelyn.tran1@gmail.com",
+          "hash": "15a3369ed2",
+          "subject": "ARIA, HTML-AAM: Update tests for new sectionheader and sectionfooter roles (#47420)"
+        },
         {
           "date": "2024-06-27",
           "author": "cookiecrook@users.noreply.github.com",
@@ -9265,18 +9334,6 @@
           "author": "christian@liebel.org",
           "hash": "d52c783",
           "subject": "Archive translations explainer (#103)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "tomac@google.com",
-          "hash": "8108784",
-          "subject": "Minor improvements and typo fix (#83)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "73939538+diekus@users.noreply.github.com",
-          "hash": "9a0dfcf",
-          "subject": "Updates scope-extensions explainer (#104)"
         }
       ],
       "testlog": []
@@ -9476,7 +9533,14 @@
           "subject": "Import backgroundBlur from mediacapture-extensions"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "jib@mozilla.com",
+          "hash": "4cf1a16e8b",
+          "subject": "Test permissions.query() with getUserMedia."
+        }
+      ]
     },
     {
       "name": "MediaStreamTrack Insertable Media Processing using Streams",
@@ -9912,14 +9976,7 @@
           "subject": "Editorial: correct some concept types"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-06-10",
-          "author": "saschanaz@outlook.com",
-          "hash": "4356f510d6",
-          "subject": "Persist fully resolved icon URL"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "WebGL OES_draw_buffers_indexed Extension Specification",
@@ -10914,7 +10971,14 @@
       "href": "https://w3c.github.io/permissions/",
       "specrepo": "https://github.com/w3c/permissions",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "jib@mozilla.com",
+          "hash": "d0622ff9bb",
+          "subject": "Update test expectations for permissions.query() on camera and microphone."
+        }
+      ]
     },
     {
       "name": "Permissions Policy",
@@ -11133,12 +11197,6 @@
           "author": "ProgramMax@gmail.com",
           "hash": "1bff895",
           "subject": "Update changes section (#452)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "ProgramMax@gmail.com",
-          "hash": "16d5e49",
-          "subject": "Add private bit depth and colour type fields"
         }
       ],
       "testlog": []
@@ -11510,14 +11568,7 @@
       "name": "Screen Capture",
       "href": "https://w3c.github.io/mediacapture-screen-share/",
       "specrepo": "https://github.com/w3c/mediacapture-screen-share",
-      "speclog": [
-        {
-          "date": "2024-06-10",
-          "author": "dom@w3.org",
-          "hash": "51ccd56",
-          "subject": "Fix a couple of links to Media Capture and Streams"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-06-21",
@@ -13160,6 +13211,36 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2024-08-06",
+          "author": "119976429+lx3-g@users.noreply.github.com",
+          "hash": "44a00e4",
+          "subject": "docs: remove version from ohttp media type (#1243)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "kleber@google.com",
+          "hash": "a597e60",
+          "subject": "Create 2024-07-31-FLEDGE-call-minutes.md"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "119976429+lx3-g@users.noreply.github.com",
+          "hash": "4a47c6b",
+          "subject": "Add updateIfOlderThanMs to the Key Value server API explainer (#1235)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "40476544+xtlsheep@users.noreply.github.com",
+          "hash": "c6ca9f8",
+          "subject": "Add optional dataVersion field in the response schema and example. (#1241)"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "e159770",
+          "subject": "Add feature detection for real time reporting (#1238)"
+        },
+        {
           "date": "2024-07-31",
           "author": "6334674+qingxinwu@users.noreply.github.com",
           "hash": "b6be38d",
@@ -13308,18 +13389,6 @@
           "author": "morlovich@google.com",
           "hash": "3a8c9ed",
           "subject": "Fix links to section 3.4.1 (#1193)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "brusshamilton@gmail.com",
-          "hash": "3c50b4b",
-          "subject": "Add navigator.deprecatedRunAdAuctionEnforcesKAnonymity to spec (#1177)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "peiwenhu@google.com",
-          "hash": "e4040b4",
-          "subject": "Update the TEE KV API with latest changes (#1195)"
         }
       ],
       "testlog": []
@@ -13846,6 +13915,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-06",
+          "author": "jocelyn.tran1@gmail.com",
+          "hash": "15a3369ed2",
+          "subject": "ARIA, HTML-AAM: Update tests for new sectionheader and sectionfooter roles (#47420)"
+        },
+        {
           "date": "2024-06-27",
           "author": "cookiecrook@users.noreply.github.com",
           "hash": "39b61c36c9",
@@ -14311,36 +14386,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": [
@@ -14440,36 +14485,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14520,36 +14535,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14600,36 +14585,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14680,36 +14635,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14760,36 +14685,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14840,36 +14735,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -14920,36 +14785,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15000,36 +14835,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15080,36 +14885,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15160,36 +14935,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15240,36 +14985,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15320,36 +15035,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15400,36 +15085,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15480,36 +15135,6 @@
           "author": "youenn@apple.com",
           "hash": "7073bbf",
           "subject": "Add segments metadata entry that refers to https://w3c.github.io/mediacapture-extensions/#human-face-segmentation"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "90ab77c",
-          "subject": "Mark ImageDecoderInit.data as AllowSharedBufferSource."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "9eaaad4",
-          "subject": "Fix tabs to spaces again..."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "3012071",
-          "subject": "Fix indent on steps."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "510fc1d",
-          "subject": "Restore special character. Spaces instead of tabs."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "dalecurtis@chromium.org",
-          "hash": "6b09533",
-          "subject": "Clarify when ImageDecoder ready, completed promises are rejected."
         }
       ],
       "testlog": []
@@ -15928,6 +15553,12 @@
       "href": "https://w3c.github.io/webdriver-bidi/",
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
+        {
+          "date": "2024-08-06",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "287e9c6",
+          "subject": "Add a note pointing to WebDriver to understand actions"
+        },
         {
           "date": "2024-07-18",
           "author": "OrKoN@users.noreply.github.com",
@@ -17949,12 +17580,6 @@
           "author": "bajones@chromium.org",
           "hash": "a99e48e6",
           "subject": "Add queue steps for copyExternalImageToTexture (#4698)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "bajones@chromium.org",
-          "hash": "174f42c6",
-          "subject": "Remove outdated inline issue (#4703)"
         }
       ],
       "testlog": []
@@ -18007,12 +17632,6 @@
           "author": "d@domenic.me",
           "hash": "4035d0a",
           "subject": "Disallow non-attribute frozen arrays"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "mail@linusgroh.de",
-          "hash": "f2b124e",
-          "subject": "Update 'Creating a sequence from an iterable' to use new iterator AOs"
         }
       ],
       "testlog": []
@@ -18312,15 +17931,15 @@
           "author": "ningxin.hu@intel.com",
           "hash": "68cefc7",
           "subject": "Bugfix: Add missing validation for conv2d() and convTranspose2d()"
-        },
-        {
-          "date": "2024-06-11",
-          "author": "ningxin.hu@intel.com",
-          "hash": "dc7301d",
-          "subject": "Add a section for updating an existing operation"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-06",
+          "author": "lisha.guo@intel.com",
+          "hash": "470deeb12f",
+          "subject": "webnn: add WPT tests to cover the label for clamp, concat, conv2d, convTranspose and pool"
+        },
         {
           "date": "2024-08-02",
           "author": "feng.dai@intel.com",
@@ -18530,18 +18149,6 @@
           "author": "bin.miao@intel.com",
           "hash": "06bcaad19c",
           "subject": "WebNN: Support axis for softmax operator"
-        },
-        {
-          "date": "2024-06-11",
-          "author": "asully@chromium.org",
-          "hash": "a632273a65",
-          "subject": "webnn: Remove some activations not usable with recurrent ops"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "asully@chromium.org",
-          "hash": "5a861db0cd",
-          "subject": "webnn: Update idlharness test to create a valid graph"
         }
       ]
     },
@@ -18643,12 +18250,6 @@
           "author": "docfaraday@gmail.com",
           "hash": "0d9b8ca43d",
           "subject": "Mark this test as long."
-        },
-        {
-          "date": "2024-06-10",
-          "author": "docfaraday@gmail.com",
-          "hash": "84d6598812",
-          "subject": "Remove leading endl from test SDP."
         }
       ]
     },
@@ -19270,12 +18871,6 @@
           "author": "bajones@chromium.org",
           "hash": "a99e48e6",
           "subject": "Add queue steps for copyExternalImageToTexture (#4698)"
-        },
-        {
-          "date": "2024-06-10",
-          "author": "bajones@chromium.org",
-          "hash": "174f42c6",
-          "subject": "Remove outdated inline issue (#4703)"
         }
       ],
       "testlog": []
