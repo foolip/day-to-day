@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-07-03T07:13:24.466Z",
-  "until": "2024-08-29T07:13:24.466Z",
+  "since": "2024-07-04T07:13:20.296Z",
+  "until": "2024-08-30T07:13:20.296Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -200,6 +200,18 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "apaseltiner@google.com",
+          "hash": "65ec6f9",
+          "subject": "Clone selected scopes to avoid updating the source's persistent ones (#1407)"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "80365263+linnan-github@users.noreply.github.com",
+          "hash": "a9a53f5",
+          "subject": "Only set source or trigger debug keys when both are present (#1403)"
+        },
         {
           "date": "2024-08-27",
           "author": "80365263+linnan-github@users.noreply.github.com",
@@ -403,12 +415,6 @@
           "author": "csharrison@chromium.org",
           "hash": "fc13386",
           "subject": "Create 2024-06-24-minutes.md"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "7bcf038",
-          "subject": "Fix attribution_scopes explainer for size limits on triggers (#1360)"
         }
       ],
       "testlog": []
@@ -417,7 +423,38 @@
       "name": "Audio Output Devices API",
       "href": "https://w3c.github.io/mediacapture-output/",
       "specrepo": "https://github.com/w3c/mediacapture-output",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "dom@w3.org",
+          "hash": "2836db6",
+          "subject": "Mark Justin as former editor"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "e8f3587",
+          "subject": "...in this or an earlier browsing session..."
+        },
+        {
+          "date": "2024-08-29",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "bc261dd",
+          "subject": "Clarify language around selectAudioOutput deviceId validation"
+        },
+        {
+          "date": "2024-08-26",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "6423a63",
+          "subject": "say selectAudioOutput() or getUserMedia()"
+        },
+        {
+          "date": "2024-08-23",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "d9b6dfc",
+          "subject": "allow prompt bypass for miked speakers exposed through getUserMedia()"
+        }
+      ],
       "testlog": []
     },
     {
@@ -805,12 +842,6 @@
           "author": "pkotwicz@chromium.org",
           "hash": "2c22eb640d",
           "subject": "[WPT] Move credential-management/ FedCM tests to dedicated directory"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "cbiesinger@chromium.org",
-          "hash": "80ff968b99",
-          "subject": "[FedCM] Share more code between OnResolve and CompleteTokenRequest"
         }
       ]
     },
@@ -879,6 +910,84 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-30",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "f4430cff32",
+          "subject": "Change where we force main-thread scrolling for overflow:hidden"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "connor.pearson@mailbox.org",
+          "hash": "6c16867608",
+          "subject": "max with a NaN argument should simplify to NaN."
+        },
+        {
+          "date": "2024-08-29",
+          "author": "gerchiko@microsoft.com",
+          "hash": "9da411ce94",
+          "subject": "Fixed canvas-webgl-translate-in-animation.html"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "pdr@chromium.org",
+          "hash": "93d6fac831",
+          "subject": "Invalidate backdrop-filter on currentcolor changes"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "fs@opera.com",
+          "hash": "1dd17937e3",
+          "subject": "Register PaintLayer as client on backdrop-filter"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "sesse@chromium.org",
+          "hash": "f91870cb1f",
+          "subject": "Make @import prelude parsed using the streaming parser."
+        },
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "d315668766",
+          "subject": "layout: Add an indefinite containing block for intrinsic sizing"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "futhark@chromium.org",
+          "hash": "f7565b2558",
+          "subject": "Allow omitting <anchor-size> for anchor-size()"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "0884dd8693",
+          "subject": "Obey min and max cross sizes of flex items"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "andruud@chromium.org",
+          "hash": "426c5369b4",
+          "subject": "[css-nesting] Pass CSSNestingType to EmitNestedDeclarationsRuleIfNeeded"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "f31fb8f12a",
+          "subject": "Obey `min-block-size` and `max-block-size` in floats"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "futhark@chromium.org",
+          "hash": "b20253e35b",
+          "subject": "Allow re-ordering of anchor()/anchor-size() arguments"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "boris.chiou@gmail.com",
+          "hash": "a483d38a5f",
+          "subject": "Use 0rad as the default value if the path length is zero."
+        },
         {
           "date": "2024-08-28",
           "author": "mattwoodrow@apple.com",
@@ -2534,42 +2643,6 @@
           "author": "longsonr@gmail.com",
           "hash": "18dea60b48",
           "subject": "viewBox values need to be adjusted in the presence of CSS zoom"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "119537181+lilyspiniolas@users.noreply.github.com",
-          "hash": "929aad62cf",
-          "subject": "Increased total pixels for the pixel tolerance to account for devices with larger controls (#46991)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "a2486bb48c",
-          "subject": "[css-anchor-position] Fixed serialization of position-try"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "philip@foolip.org",
-          "hash": "4dfc1cf050",
-          "subject": "Map media element pseudo-class tests to web-features (#46982)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "emcdonough@mozilla.com",
-          "hash": "4e26c8b824",
-          "subject": "Generate CSSPageDescriptors.webidl and change CSSPageRule to use CSSPageDescriptors for Style()."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "52d1d23974",
-          "subject": "Clamp `scroll-snap-align: start` snap points inside the scroll range."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -2580,6 +2653,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "f31fb8f12a",
+          "subject": "Obey `min-block-size` and `max-block-size` in floats"
+        },
         {
           "date": "2024-08-27",
           "author": "obrufau@igalia.com",
@@ -2677,6 +2756,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-08-30",
+          "author": "jackalmage@gmail.com",
+          "hash": "f2e30ae72",
+          "subject": "[css-anchor-position][editorial] For 'accceptable anchor element', rearrange the conditions order, and rename the variables to be easier to read."
+        },
+        {
+          "date": "2024-08-29",
+          "author": "jackalmage@gmail.com",
+          "hash": "f6446ad70",
+          "subject": "[css-anchor-position] Clarify that a relpos anchor affects anchor pos, but not a transformed anchor. #10522"
+        },
+        {
           "date": "2024-07-18",
           "author": "nt1m@users.noreply.github.com",
           "hash": "99da0cbbd",
@@ -2690,6 +2781,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "futhark@chromium.org",
+          "hash": "f7565b2558",
+          "subject": "Allow omitting <anchor-size> for anchor-size()"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "futhark@chromium.org",
+          "hash": "b20253e35b",
+          "subject": "Allow re-ordering of anchor()/anchor-size() arguments"
+        },
         {
           "date": "2024-08-27",
           "author": "ikilpatrick@chromium.org",
@@ -2725,12 +2828,6 @@
           "author": "futhark@chromium.org",
           "hash": "999e57be83",
           "subject": "[css-anchor-position] Rename position-try-options to *fallbacks"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "a2486bb48c",
-          "subject": "[css-anchor-position] Fixed serialization of position-try"
         }
       ]
     },
@@ -3036,6 +3133,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-08-29",
+          "author": "sesse@chromium.org",
+          "hash": "f91870cb1f",
+          "subject": "Make @import prelude parsed using the streaming parser."
+        },
+        {
           "date": "2024-08-27",
           "author": "andruud@chromium.org",
           "hash": "b23720e948",
@@ -3064,12 +3167,6 @@
           "author": "dshin@mozilla.com",
           "hash": "ea94fe4b75",
           "subject": "Part 3 - Add scope revalidation to style sharing."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -3312,12 +3409,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "cbf74ffcd6",
           "subject": "[layout] Consider stable scrollbars for container queries."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -3415,6 +3506,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "chris@w3.org",
+          "hash": "84f106226",
+          "subject": "[css-easing-2][editorial] Back to ED"
+        },
         {
           "date": "2024-08-28",
           "author": "chris@w3.org",
@@ -3524,6 +3621,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "d315668766",
+          "subject": "layout: Add an indefinite containing block for intrinsic sizing"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "obrufau@igalia.com",
+          "hash": "0884dd8693",
+          "subject": "Obey min and max cross sizes of flex items"
+        },
         {
           "date": "2024-08-27",
           "author": "mrobinson@igalia.com",
@@ -3834,12 +3943,6 @@
           "author": "tkent@chromium.org",
           "hash": "8061be32d5",
           "subject": "css-highlight-api: Accept more pixel differences in custom-highlight-painting-vertical-writing-mode-001.html"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -4232,6 +4335,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-29",
+          "author": "andruud@chromium.org",
+          "hash": "426c5369b4",
+          "subject": "[css-nesting] Pass CSSNestingType to EmitNestedDeclarationsRuleIfNeeded"
+        },
+        {
           "date": "2024-08-27",
           "author": "andruud@chromium.org",
           "hash": "b23720e948",
@@ -4440,6 +4549,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-08-30",
+          "author": "jackalmage@gmail.com",
+          "hash": "7115de533",
+          "subject": "[css-position-4] Define 'in the same top layer' and 'in a higher top layer' for other specs to reference."
+        },
         {
           "date": "2024-08-12",
           "author": "fantasai.bugs@inkedblade.net",
@@ -4716,12 +4831,6 @@
           "author": "nmouchtaris@apple.com",
           "hash": "be903a93b2",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=263093"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "52d1d23974",
-          "subject": "Clamp `scroll-snap-align: start` snap points inside the scroll range."
         }
       ]
     },
@@ -5121,6 +5230,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-08-29",
+          "author": "gerchiko@microsoft.com",
+          "hash": "9da411ce94",
+          "subject": "Fixed canvas-webgl-translate-in-animation.html"
+        },
+        {
           "date": "2024-07-31",
           "author": "zimmermann@webkit.org",
           "hash": "3768ec293f",
@@ -5152,12 +5267,6 @@
           "author": "kevers@google.com",
           "hash": "e256feb2b5",
           "subject": "Migrate ref test for pseudo-element transition to WPT"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -5208,12 +5317,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "6d4aae0326",
           "subject": "Move tests in css-outline to css-ui (#47318)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "119537181+lilyspiniolas@users.noreply.github.com",
-          "hash": "929aad62cf",
-          "subject": "Increased total pixels for the pixel tolerance to account for devices with larger controls (#46991)"
         }
       ]
     },
@@ -5303,6 +5406,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "connor.pearson@mailbox.org",
+          "hash": "6c16867608",
+          "subject": "max with a NaN argument should simplify to NaN."
+        },
         {
           "date": "2024-08-28",
           "author": "moonira@google.com",
@@ -5838,18 +5947,6 @@
           "author": "takuya004869@gmail.com",
           "hash": "3a94cbe4c3",
           "subject": "StyleSheet.title should return null for empty string titles"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "emcdonough@mozilla.com",
-          "hash": "4e26c8b824",
-          "subject": "Generate CSSPageDescriptors.webidl and change CSSPageRule to use CSSPageDescriptors for Style()."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -5860,6 +5957,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-30",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "f4430cff32",
+          "subject": "Change where we force main-thread scrolling for overflow:hidden"
+        },
         {
           "date": "2024-08-15",
           "author": "emilio@crisal.io",
@@ -6085,6 +6188,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-30",
+          "author": "dom@chromium.org",
+          "hash": "e74098ed10",
+          "subject": "DOM: Fix `Observable#from()` [Symbol.iterator] semantics (1/2)"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "dom@chromium.org",
+          "hash": "7a69b2e3e4",
+          "subject": "DOM: Implement the `Observable#catch()` operator"
+        },
         {
           "date": "2024-08-28",
           "author": "dom@chromium.org",
@@ -6415,18 +6530,6 @@
           "author": "pchimento@igalia.com",
           "hash": "31a20380b0",
           "subject": "Intl: Test calendar canonicalization in Intl.DateTimeFormat constructor"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "pchimento@igalia.com",
-          "hash": "6626b60df6",
-          "subject": "Temporal: Make U+2212 MINUS SIGN invalid in ISO strings"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "pchimento@igalia.com",
-          "hash": "7c985a4fd9",
-          "subject": "Make U+2212 MINUS SIGN an invalid sign character for offset time zone IDs"
         }
       ]
     },
@@ -8561,7 +8664,14 @@
       "href": "https://fetch.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/fetch",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-30",
+          "author": "annevk@annevk.nl",
+          "hash": "3153e5e",
+          "subject": "Make get, decode, and split handle edge cases correctly"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-08-08",
@@ -8604,6 +8714,12 @@
       "specrepo": "https://github.com/w3c/FileAPI",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "janiceliu@chromium.org",
+          "hash": "40a4e28f25",
+          "subject": "Create WPT for cross-partition blob URL navigation"
+        },
         {
           "date": "2024-08-01",
           "author": "janiceliu@chromium.org",
@@ -8665,6 +8781,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "pdr@chromium.org",
+          "hash": "93d6fac831",
+          "subject": "Invalidate backdrop-filter on currentcolor changes"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "fs@opera.com",
+          "hash": "1dd17937e3",
+          "subject": "Register PaintLayer as client on backdrop-filter"
+        },
         {
           "date": "2024-08-22",
           "author": "nt1m@users.noreply.github.com",
@@ -8975,6 +9103,18 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-08-29",
+          "author": "domfarolino@gmail.com",
+          "hash": "ddd2d0dd",
+          "subject": "Use DOM's post-connection steps for script elements"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "c974c42b",
+          "subject": "Editorial: fix a few more typos"
+        },
+        {
           "date": "2024-08-27",
           "author": "wenson_hsieh@apple.com",
           "hash": "7bab05ac",
@@ -9162,6 +9302,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-30",
+          "author": "lbrady@google.com",
+          "hash": "daf9128aee",
+          "subject": "Refactor some sandbox top-navigation tests as browsertests."
+        },
         {
           "date": "2024-08-28",
           "author": "jarhar@chromium.org",
@@ -9719,12 +9865,6 @@
           "author": "andresrperez@chromium.org",
           "hash": "17c15757d2",
           "subject": "Use visual runs and save ShapeResults in TextMetrics"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "emilio@crisal.io",
-          "hash": "41da941cfd",
-          "subject": "Handle button box in intrinsic text field sizing."
         }
       ]
     },
@@ -10076,18 +10216,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "c9edd9d2dc",
           "subject": "[wpt] upgrade IndexedDB tests to non-tentative (#47153)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "garimachadha@microsoft.com",
-          "hash": "61a0206ad3",
-          "subject": "IDB WPTs: Extend idbdatabase transaction tests to worker environments."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "rahsin@microsoft.com",
-          "hash": "8607a1df68",
-          "subject": "IDB WPTs: Extend IDBCursor continue() ObjectStore WPTs to run on workers"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -10721,6 +10849,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-08-29",
+          "author": "boris.chiou@gmail.com",
+          "hash": "a483d38a5f",
+          "subject": "Use 0rad as the default value if the path length is zero."
+        },
+        {
           "date": "2024-08-23",
           "author": "smfr@users.noreply.github.com",
           "hash": "147d5e1eb2",
@@ -10898,6 +11032,12 @@
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-08-29",
+          "author": "iclelland@chromium.org",
+          "hash": "e34af5b",
+          "subject": "Support ReSpec dark mode."
+        },
+        {
           "date": "2024-07-29",
           "author": "barrypollard@google.com",
           "hash": "aaa32ac",
@@ -10924,7 +11064,14 @@
       "href": "https://w3c.github.io/network-error-logging/",
       "specrepo": "https://github.com/w3c/network-error-logging",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "iclelland@chromium.org",
+          "hash": "c1a0708",
+          "subject": "Support ReSpec dark mode."
+        }
+      ],
       "testlog": []
     },
     {
@@ -12134,7 +12281,14 @@
       "href": "https://w3c.github.io/performance-timeline/",
       "specrepo": "https://github.com/w3c/performance-timeline",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "iclelland@chromium.org",
+          "hash": "4d88b8b",
+          "subject": "Support ReSpec dark mode."
+        }
+      ],
       "testlog": []
     },
     {
@@ -12291,12 +12445,6 @@
           "author": "10578344+Aemony@users.noreply.github.com",
           "hash": "e0a11f6",
           "subject": "Update Third_Edition_Explainer.md (#457)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "chris@w3.org",
-          "hash": "53db995",
-          "subject": "Implementation report: Add two new test results (EXIF) (#456)"
         }
       ],
       "testlog": []
@@ -12795,12 +12943,6 @@
           "author": "boris.chiou@gmail.com",
           "hash": "7a9b55acbc",
           "subject": "Update animation shorthand test to use <dashed-ident>."
-        },
-        {
-          "date": "2024-07-03",
-          "author": "futhark@chromium.org",
-          "hash": "46cc5c1b6e",
-          "subject": "Fix spec links in css-conditional/container-queries"
         }
       ]
     },
@@ -13036,12 +13178,6 @@
           "author": "blee@igalia.com",
           "hash": "42cfd14325",
           "subject": "Fix ':has()' matching and invalidation error with nesting parent"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "philip@foolip.org",
-          "hash": "4dfc1cf050",
-          "subject": "Map media element pseudo-class tests to web-features (#46982)"
         }
       ]
     },
@@ -13049,7 +13185,14 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "97704544+chengweih001@users.noreply.github.com",
+          "hash": "7b11d03",
+          "subject": "An example of using SerialPort.connected (#206)"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-08-05",
@@ -13921,18 +14064,6 @@
           "author": "redux@splintered.co.uk",
           "hash": "32b4a24",
           "subject": "Prepare document for CG-Final status (#137)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "redux@splintered.co.uk",
-          "hash": "f71b409",
-          "subject": "HTML linting/prettifying (#136)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "redux@splintered.co.uk",
-          "hash": "6cd2263",
-          "subject": "Update retargeting steps link (#135)"
         }
       ],
       "testlog": [
@@ -14013,12 +14144,6 @@
           "author": "zsun@igalia.com",
           "hash": "e3e81ac137",
           "subject": "Adding sink check on script element related tests in trusted types. (#46133)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "mbrodesser@igalia.com",
-          "hash": "5dae272ffd",
-          "subject": "part 5) Provoke a CSP violation for `object-src 'none'` with \"video/mp4\" and dummy data instead of with the flash plugin in <trusted-types-reporting.html>."
         }
       ]
     },
@@ -14027,6 +14152,24 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "815f0f1",
+          "subject": "[Spec] Add policy container field to requests. (#1253)"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "behamilton@google.com",
+          "hash": "bf20967",
+          "subject": "Add k-anonymity cache (#1005)"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "110932358+chatterjee-priyanka@users.noreply.github.com",
+          "hash": "25066c6",
+          "subject": "Add omit-user-bidding-signals to auctionServerRequestFlags (#1263)"
+        },
         {
           "date": "2024-08-27",
           "author": "morlovich@google.com",
@@ -14375,7 +14518,20 @@
       "href": "https://urlpattern.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/urlpattern",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "jbroman@chromium.org",
+          "hash": "20e4de9",
+          "subject": "Editorial: Add brief explanations to examples"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "jbroman@chromium.org",
+          "hash": "e249bb2",
+          "subject": "Editorial: Mark IDs referred to by IETF documents as required (#233)"
+        }
+      ],
       "testlog": [
         {
           "date": "2024-08-05",
@@ -14552,6 +14708,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2024-08-30",
+          "author": "dschuff@chromium.org",
+          "hash": "1c238abc",
+          "subject": "Update DECISION_URL for Wasm 2.0 CR advancement (#1794)"
+        },
+        {
           "date": "2024-08-28",
           "author": "styx5242@gmail.com",
           "hash": "71755b3f",
@@ -14645,6 +14807,12 @@
       "testrepo": "WebAssembly/spec",
       "speclog": [
         {
+          "date": "2024-08-30",
+          "author": "dschuff@chromium.org",
+          "hash": "1c238abc",
+          "subject": "Update DECISION_URL for Wasm 2.0 CR advancement (#1794)"
+        },
+        {
           "date": "2024-08-22",
           "author": "dschuff@chromium.org",
           "hash": "ab41b883",
@@ -14671,6 +14839,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "testrepo": "web-platform-tests/wpt",
       "speclog": [
+        {
+          "date": "2024-08-30",
+          "author": "dschuff@chromium.org",
+          "hash": "1c238abc",
+          "subject": "Update DECISION_URL for Wasm 2.0 CR advancement (#1794)"
+        },
         {
           "date": "2024-08-22",
           "author": "dschuff@chromium.org",
@@ -15274,15 +15448,15 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "paul@paul.cx",
+          "hash": "f9ec8b3375",
+          "subject": "Add initial tests for PCM decoding."
+        },
         {
           "date": "2024-08-28",
           "author": "chun.m.chang@gmail.com",
@@ -15367,12 +15541,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15399,12 +15567,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15431,12 +15593,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15463,12 +15619,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15495,12 +15645,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15527,12 +15671,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15559,12 +15697,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15591,12 +15723,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15623,12 +15749,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15655,12 +15775,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15687,12 +15801,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15719,12 +15827,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15751,12 +15853,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15783,12 +15879,6 @@
           "author": "marcos@marcosc.com",
           "hash": "39c85f5",
           "subject": "Update w3c.json"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "c3de570",
-          "subject": "Update index.src.html"
         }
       ],
       "testlog": []
@@ -15851,6 +15941,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "jdescottes@mozilla.com",
+          "hash": "61d7f0adca",
+          "subject": "[wdspec] Add tests for reasonPhrase and statusCode arguments of network.continueResponse"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "69349599+sadym-chromium@users.noreply.github.com",
+          "hash": "2859248a4e",
+          "subject": "Filter out mouse events from key tests (#47861)"
+        },
         {
           "date": "2024-08-27",
           "author": "69349599+sadym-chromium@users.noreply.github.com",
@@ -16091,12 +16193,6 @@
           "author": "OrKoN@users.noreply.github.com",
           "hash": "0fa2d99",
           "subject": "Fix browsing context creation steps (#737)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "a46d71b",
-          "subject": "Add network.setCacheBehavior command (#721)"
         }
       ],
       "testlog": []
@@ -17889,1440 +17985,9 @@
         {
           "date": "2024-08-29",
           "author": "kainino@chromium.org",
-          "hash": "f1b76ce6",
-          "subject": "Remove GPUShaderModuleDescriptor.sourceMap (#4840)"
+          "hash": "edfffd9e",
+          "subject": "Change mapAsync to also early-reject if already mapped (#4787)"
         },
-        {
-          "date": "2024-08-28",
-          "author": "kainino@chromium.org",
-          "hash": "ed7dd072",
-          "subject": "Generate a validation error on mapAsync early-reject (#4786)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "kainino@chromium.org",
-          "hash": "bda63a8e",
-          "subject": "Remove maxInterStageShaderComponents (#4783)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "kainino@chromium.org",
-          "hash": "b205c456",
-          "subject": "Allow unknown limits to be requested with value `undefined` (#4781)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "dneto@google.com",
-          "hash": "93fc5df1",
-          "subject": "interstage-interpolation checks generate pipeline-creation errors, not shader-creation (#4837)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "alanbaker@google.com",
-          "hash": "aa904e49",
-          "subject": "Add inclusive scan add and mul operations (#4822)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "dneto@google.com",
-          "hash": "60b2926f",
-          "subject": "subgroups: subgroupBroadcast 'id' parameter is const-expression (#4820)"
-        },
-        {
-          "date": "2024-08-28",
-          "author": "dneto@google.com",
-          "hash": "7fa78f6d",
-          "subject": "Better explain that you can't assign to a multi-letter swizzle (#4835)"
-        },
-        {
-          "date": "2024-08-27",
-          "author": "dneto@google.com",
-          "hash": "0e120c6d",
-          "subject": "Clarify validation of storage texture texel-format and access modes (#4831)"
-        },
-        {
-          "date": "2024-08-27",
-          "author": "dneto@google.com",
-          "hash": "fb06f3ac",
-          "subject": "wsgl: clarify fp edge cases (#4825)"
-        },
-        {
-          "date": "2024-08-21",
-          "author": "dneto@google.com",
-          "hash": "8759aa70",
-          "subject": "wsgl: remove TODO about acos, asin accuracy for f16 (#4823)"
-        },
-        {
-          "date": "2024-08-21",
-          "author": "jiawei.shao@intel.com",
-          "hash": "9465f414",
-          "subject": "Fix rules about dual source blending in `validating GPUFragmentState` (#4791)"
-        },
-        {
-          "date": "2024-08-20",
-          "author": "110081332+matthew-wong1@users.noreply.github.com",
-          "hash": "c1990f4f",
-          "subject": "Add extra example for operations involving abstract numerics (#4795)"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dneto@google.com",
-          "hash": "0f098a93",
-          "subject": "wgsl: define 'extended real' numbers (#4819)"
-        },
-        {
-          "date": "2024-08-13",
-          "author": "kainino@chromium.org",
-          "hash": "fb97a574",
-          "subject": "Add timelines to all attributes/slots, assorted editing (#4796)"
-        },
-        {
-          "date": "2024-08-13",
-          "author": "kainino@chromium.org",
-          "hash": "26e66b0d",
-          "subject": "Add note that enabling features can have performance impact (#4778)"
-        },
-        {
-          "date": "2024-08-13",
-          "author": "51275588+Tomycj@users.noreply.github.com",
-          "hash": "9bb37486",
-          "subject": "Fixed two \"it's\" -> \"its\" typos. (#4813)"
-        },
-        {
-          "date": "2024-08-05",
-          "author": "alanbaker@google.com",
-          "hash": "7980a4be",
-          "subject": "Add shader module creation validation for features (#4802)"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "dneto@google.com",
-          "hash": "a189442e",
-          "subject": "Explain the endianness of pack4xI8* and pack4xU8* builtins (#4425)"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "alanbaker@google.com",
-          "hash": "7751328b",
-          "subject": "Clarify array layer OOB for texture sampling (#4792)"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "alanbaker@google.com",
-          "hash": "ceffd16c",
-          "subject": "Clarify textureSampleBias bias param (#4771)"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "alanbaker@google.com",
-          "hash": "b75de330",
-          "subject": "Clarify const-expression eval and type checking (#4801)"
-        },
-        {
-          "date": "2024-07-29",
-          "author": "kainino@chromium.org",
-          "hash": "65f155f5",
-          "subject": "Simplify attachment usage validation (#4799)"
-        },
-        {
-          "date": "2024-07-27",
-          "author": "kainino@chromium.org",
-          "hash": "c9ad3073",
-          "subject": "[editorial] Improve more language relating to limit defaults (#4780)"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "5107401d",
-          "subject": "[editorial] Make usage scope validation algorithmic (#4797)"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "82e8506f",
-          "subject": "Link to [=implementation-defined=] (#4793)"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "cf7648d7",
-          "subject": "Change mapAsync to reject with AbortError on device loss (#4785)"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "ea7d6f2b",
-          "subject": "Remove mentions of multithreaded API (#4794)"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "kainino@chromium.org",
-          "hash": "db8f3ebc",
-          "subject": "Reject requestDevice() if the adapter has already been used (#4789)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "177c640f",
-          "subject": "Add `texture-compression-bc-sliced-3d` (#4763)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kainino@chromium.org",
-          "hash": "7662b4a2",
-          "subject": "If any vertex is OOB, the whole draw call may behave as OOB (#4790)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "alanbaker@google.com",
-          "hash": "66cb176a",
-          "subject": "Add inverse channel transfer function (#4768)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "alanbaker@google.com",
-          "hash": "ed8839b7",
-          "subject": "Remove statement that uniformity is linear in number of tokens (#4769)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "alanbaker@google.com",
-          "hash": "6406001d",
-          "subject": "Clarify stage restrictions for IO attributes (#4765)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "7b717474",
-          "subject": "Mention any-order function definition in #functions, and note lack of forward decls. (#4770)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "alanbaker@google.com",
-          "hash": "c9ee7b67",
-          "subject": "Clarify inherited-from allows flushing (#4766)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "alanbaker@google.com",
-          "hash": "0734fe5e",
-          "subject": "Move overflow rules for concrete integers (#4767)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "3ccb9349",
-          "subject": "Note that leading zeros are forbidden because no octals. (#4773)"
-        },
-        {
-          "date": "2024-07-22",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "acccc1d5",
-          "subject": "Clarify counting of case values for their maximum limit. (#4758)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "22799a4f",
-          "subject": "require `module` to be \"valid to use with\" `device` (#4762)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "bajones@chromium.org",
-          "hash": "f46b3f0e",
-          "subject": "Resolve editorial note for rasterization points (#4753)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "kainino@chromium.org",
-          "hash": "d7515307",
-          "subject": "Fix some language which ignores that limits get clamped to defaults (#4760)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "kainino@chromium.org",
-          "hash": "bd8cf6c7",
-          "subject": "Suppress error generation in create*PipelineAsync, clarify async steps (#4752)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "28601907+teoxoy@users.noreply.github.com",
-          "hash": "fc2515f6",
-          "subject": "add missing \"valid to use with\" checks to `GPURenderPassDescriptor` Valid Usage (#4757)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "bajones@chromium.org",
-          "hash": "dab35d2b",
-          "subject": "bgra8unorm-storage only enables write-only (#4741)"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "kainino@chromium.org",
-          "hash": "5fd02330",
-          "subject": "fix formatting in push-constants.md"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "bajones@chromium.org",
-          "hash": "9822384d",
-          "subject": "Resolve line rasterization editorial note (#4754)"
-        },
-        {
-          "date": "2024-07-16",
-          "author": "kainino@chromium.org",
-          "hash": "fea695fb",
-          "subject": "Add alt text to CSS \"content\" (#4751)"
-        },
-        {
-          "date": "2024-07-13",
-          "author": "shaobo.yan@intel.com",
-          "hash": "97f7abe6",
-          "subject": "Push constant proposal (#4612)"
-        },
-        {
-          "date": "2024-07-12",
-          "author": "bajones@chromium.org",
-          "hash": "526db06d",
-          "subject": "Point and line primitives ignore depth bias (#4743)"
-        },
-        {
-          "date": "2024-07-12",
-          "author": "bajones@chromium.org",
-          "hash": "14ec257b",
-          "subject": "Update VideoFrames to use display size (#4740)"
-        },
-        {
-          "date": "2024-07-10",
-          "author": "jiawei.shao@intel.com",
-          "hash": "68ba017f",
-          "subject": "Clarify blend factors must be validated against optional features (#4739)"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "bajones@chromium.org",
-          "hash": "cbe46362",
-          "subject": "Define canvas image contents when unconfigured (#4738)"
-        },
-        {
-          "date": "2024-07-08",
-          "author": "bajones@chromium.org",
-          "hash": "d90162b2",
-          "subject": "Resolve read-only depth/stencil inline issue (#4737)"
-        },
-        {
-          "date": "2024-07-08",
-          "author": "beaufortfrancois@gmail.com",
-          "hash": "222b01f6",
-          "subject": "Fix GPUBlendFactor indentation (#4736)"
-        },
-        {
-          "date": "2024-07-04",
-          "author": "alanbaker@google.com",
-          "hash": "a19b7bca",
-          "subject": "Clarify scope of pipeline creation (#4724)"
-        },
-        {
-          "date": "2024-07-04",
-          "author": "dneto@google.com",
-          "hash": "c05bc106",
-          "subject": "wgsl: Fix range of atan: starts at -pi/2, not pi/2 (#4732)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bajones@chromium.org",
-          "hash": "1c712f75",
-          "subject": "Add description of sample footprint (#4683)"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "bajones@chromium.org",
-          "hash": "40a69c85",
-          "subject": "Update viewport depth range validation (#4730)"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "WebHID API",
-      "href": "https://wicg.github.io/webhid/",
-      "specrepo": "https://github.com/WICG/webhid",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Web IDL",
-      "href": "https://webidl.spec.whatwg.org/",
-      "specrepo": "https://github.com/whatwg/webidl",
-      "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-08-22",
-          "author": "d@domenic.me",
-          "hash": "e7b2fe1",
-          "subject": "Update CreateIterResultObject → CreateIteratorResultObject"
-        },
-        {
-          "date": "2024-08-21",
-          "author": "d@domenic.me",
-          "hash": "f33a06a",
-          "subject": "Stop assuming \"transfer\" is same-agent cluster"
-        },
-        {
-          "date": "2024-08-02",
-          "author": "jbroman@chromium.org",
-          "hash": "192be41",
-          "subject": "Allow users of \"invoke a callback function\" to report the exception"
-        },
-        {
-          "date": "2024-07-19",
-          "author": "d@domenic.me",
-          "hash": "155ae10",
-          "subject": "Throw, instead of assert, for transferring detached ArrayBuffers"
-        },
-        {
-          "date": "2024-07-19",
-          "author": "inexorabletash@gmail.com",
-          "hash": "d6927d5",
-          "subject": "Introduce a \"transferable\" algorithm for BufferSource"
-        },
-        {
-          "date": "2024-07-10",
-          "author": "caitp@users.noreply.github.com",
-          "hash": "3fb6ab4",
-          "subject": "Legacy platform objects should not override desc.[[Configurable]]"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "Web MIDI API",
-      "href": "https://webaudio.github.io/web-midi-api/",
-      "specrepo": "https://github.com/WebAudio/web-midi-api",
-      "speclog": [
-        {
-          "date": "2024-07-10",
-          "author": "mjwilson@chromium.org",
-          "hash": "b360b7d",
-          "subject": "Don't use <dfn> tag on algorithms that aren't referenced elsewhere in the spec"
-        },
-        {
-          "date": "2024-07-10",
-          "author": "99870237+mjwilson-google@users.noreply.github.com",
-          "hash": "974bd77",
-          "subject": "Update README.md to reference the gh-pages branch"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "mjwilson@chromium.org",
-          "hash": "c1ba21d",
-          "subject": "Clarify that MIDIOutput.clear() should clear enqueued send data"
-        },
-        {
-          "date": "2024-07-06",
-          "author": "mjwilson@chromium.org",
-          "hash": "f21b747",
-          "subject": "Update echidna token name"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "mjwilson@chromium.org",
-          "hash": "566a36e",
-          "subject": "Remove extra parameter from p tag"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "mjwilson@chromium.org",
-          "hash": "ea0cbd1",
-          "subject": "Add auto-publish.yml"
-        }
-      ],
-      "testlog": [],
-      "testpolicy": "https://github.com/WebAudio/web-midi-api/blob/HEAD/README.md"
-    },
-    {
-      "name": "Web Neural Network API",
-      "href": "https://webmachinelearning.github.io/webnn/",
-      "specrepo": "https://github.com/webmachinelearning/webnn",
-      "speclog": [
-        {
-          "date": "2024-08-22",
-          "author": "phillis@chromium.org",
-          "hash": "355c38d",
-          "subject": "Allow arbitrary axes for resample2d (#752)"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "jsbell@chromium.org",
-          "hash": "928d3a1",
-          "subject": "Bug fix: softmax()'s axis argument should EnforceRange (#746)"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "jsbell@chromium.org",
-          "hash": "4697a0d",
-          "subject": "Clarify reduction with empty axes and scalar input (#741)"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "jsbell@chromium.org",
-          "hash": "fd5e2fe",
-          "subject": "Add blurb explaining broadcasting in more detail"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "jsbell@chromium.org",
-          "hash": "8734bea",
-          "subject": "Add optional operator labels for more diagnosable error messages (#742)"
-        },
-        {
-          "date": "2024-07-27",
-          "author": "inexorabletash@gmail.com",
-          "hash": "0d95bb9",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "jsbell@chromium.org",
-          "hash": "49fbcb0",
-          "subject": "Make prelu() bidirectionally broadcast, improve broadcast wording"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "jsbell@chromium.org",
-          "hash": "bd5da6b",
-          "subject": "Add helper for creating MLOperandDescriptor to simplify steps (#737)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "phillis@chromium.org",
-          "hash": "71dd440",
-          "subject": "Update dimension valid range to signed integer (#738)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "phillis@chromium.org",
-          "hash": "4a2b8ca",
-          "subject": "Add outputDataType to argmin/argmax (#730)"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "feng.dai@intel.com",
-          "hash": "5c97f54",
-          "subject": "Fixed typo"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "jsbell@chromium.org",
-          "hash": "4b90605",
-          "subject": "Editorial: Don't reference IDL boolean for values in tensors (#735)"
-        },
-        {
-          "date": "2024-07-22",
-          "author": "jsbell@chromium.org",
-          "hash": "0a5839d",
-          "subject": "Editorial: Fix an instance of \"nchw\" enum member styling/linking"
-        },
-        {
-          "date": "2024-07-22",
-          "author": "asully@chromium.org",
-          "hash": "487a992",
-          "subject": "Replace MLActivation with MLRecurrentNetworkActivation (#718)"
-        },
-        {
-          "date": "2024-07-19",
-          "author": "jsbell@chromium.org",
-          "hash": "46ba167",
-          "subject": "Reference newly landed WebIDL \"transferable\" definition (#732)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "inexorabletash@gmail.com",
-          "hash": "c4de3ef",
-          "subject": "Avoid \"sequence\" in prose, linkify use in types (#729)"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "jsbell@chromium.org",
-          "hash": "de2a932",
-          "subject": "Update documentation and fix some minor issues with lint tool."
-        },
-        {
-          "date": "2024-07-18",
-          "author": "jsbell@chromium.org",
-          "hash": "9a80799",
-          "subject": "Workflow: Add steps to run tools/lint.mjs after spec is built (#728)"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "jsbell@chromium.org",
-          "hash": "19762ed",
-          "subject": "Clarify the cast() op behavior between different data types (#726)"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "jsbell@chromium.org",
-          "hash": "c9e70f6",
-          "subject": "Add security consideration for computation control-flow attacks (#725)"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "jsbell@chromium.org",
-          "hash": "ac83a20",
-          "subject": "Lint: Improve logic for validating algorithm steps. (#727)"
-        },
-        {
-          "date": "2024-07-16",
-          "author": "asully@chromium.org",
-          "hash": "f08f9f7",
-          "subject": "Allow MLGraphBuilder.build() to be called only once (#717)"
-        },
-        {
-          "date": "2024-07-16",
-          "author": "phillis@chromium.org",
-          "hash": "9c96d6f",
-          "subject": "change argmin/argmax to take scalar axis"
-        },
-        {
-          "date": "2024-07-16",
-          "author": "jsbell@chromium.org",
-          "hash": "f5fb055",
-          "subject": "Define error handling of MLNamedArrayBufferViews transfer algorithm (#723)"
-        },
-        {
-          "date": "2024-07-12",
-          "author": "jsbell@chromium.org",
-          "hash": "dbb9d1c",
-          "subject": "Style: Link method argument definitions (#721)"
-        },
-        {
-          "date": "2024-07-12",
-          "author": "phillis@chromium.org",
-          "hash": "af67a72",
-          "subject": "Remove argmin/max selectLastIndex parameter (#722)"
-        },
-        {
-          "date": "2024-07-11",
-          "author": "shiyi.zou@intel.com",
-          "hash": "fe96a78",
-          "subject": "rename the parameter names of where (#719)"
-        },
-        {
-          "date": "2024-07-11",
-          "author": "asully@chromium.org",
-          "hash": "2302d7f",
-          "subject": "Ensure every method dfn is correctly associated with an interface (#720)"
-        },
-        {
-          "date": "2024-07-05",
-          "author": "zoltan.kis@intel.com",
-          "hash": "3a916f2",
-          "subject": "DOMString to USVString (#715)"
-        },
-        {
-          "date": "2024-07-05",
-          "author": "jsbell@chromium.org",
-          "hash": "9f88ebf",
-          "subject": "Introduce MLNumber for specifying numeric inputs of any type (#647)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2024-08-28",
-          "author": "shiyi.zou@intel.com",
-          "hash": "bae76895eb",
-          "subject": "webnn: add IDL and mojo definition of `gatherElements`"
-        },
-        {
-          "date": "2024-08-23",
-          "author": "phillis@chromium.org",
-          "hash": "536c5951f7",
-          "subject": "webnn: support all axes for resample2d"
-        },
-        {
-          "date": "2024-08-23",
-          "author": "bin.miao@intel.com",
-          "hash": "437aa38e8b",
-          "subject": "WebNN: Fixed resetAfter option of gru operator in DirectML backend"
-        },
-        {
-          "date": "2024-08-23",
-          "author": "shiyi.zou@intel.com",
-          "hash": "90d4c35662",
-          "subject": "webnn: add support limits for `cast` `clamp` `expand` and more"
-        },
-        {
-          "date": "2024-08-22",
-          "author": "mingming1.xu@intel.com",
-          "hash": "ced507e577",
-          "subject": "WebNN: Expose MLGraph::destroy interface to release graph"
-        },
-        {
-          "date": "2024-08-22",
-          "author": "bin.miao@intel.com",
-          "hash": "74d42b413c",
-          "subject": "Reland: \"WebNN: Add support limits for hardSigmoid and hardSwish\""
-        },
-        {
-          "date": "2024-08-21",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "f21d93823c",
-          "subject": "WebNN: add buffer usages for DML backend"
-        },
-        {
-          "date": "2024-08-21",
-          "author": "asully@chromium.org",
-          "hash": "3897cad3ad",
-          "subject": "webnn: Set a max operand rank of 8"
-        },
-        {
-          "date": "2024-08-21",
-          "author": "shiyi.zou@intel.com",
-          "hash": "e9e8354cc1",
-          "subject": "webnn: add support limits for reduction operators and more"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "lisha.guo@intel.com",
-          "hash": "6487c9c61d",
-          "subject": "webnn: add some missing WPT tests to cover the label"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "aycyang@chromium.org",
-          "hash": "bae8718c40",
-          "subject": "Revert \"WebNN: Add support limits for hardSigmoid and hardSwish\""
-        },
-        {
-          "date": "2024-08-15",
-          "author": "bin.miao@intel.com",
-          "hash": "a17b1a7796",
-          "subject": "WebNN: Add support limits for hardSigmoid and hardSwish"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "shanxing.mei@intel.com",
-          "hash": "6d0736ee69",
-          "subject": "webnn: Add 0-D scalar tests for WebNN API operators"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "bin.miao@intel.com",
-          "hash": "ab33282b72",
-          "subject": "WebNN: Support all the device types for WPT validation tests"
-        },
-        {
-          "date": "2024-08-14",
-          "author": "lisha.guo@intel.com",
-          "hash": "dd101462b7",
-          "subject": "webnn: add WPT tests to cover the label for more operators"
-        },
-        {
-          "date": "2024-08-14",
-          "author": "feng.dai@intel.com",
-          "hash": "eb9c681d21",
-          "subject": "webnn: add float32 tests for lstm and lstmCell operators"
-        },
-        {
-          "date": "2024-08-12",
-          "author": "asully@chromium.org",
-          "hash": "cfafe58f7c",
-          "subject": "webnn: Add WPTs for concurrent dispatch() calls"
-        },
-        {
-          "date": "2024-08-12",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "b44d67b33f",
-          "subject": "WebNN: discard empty writes for DML"
-        },
-        {
-          "date": "2024-08-10",
-          "author": "feng.dai@intel.com",
-          "hash": "61abf518c3",
-          "subject": "webnn: add float32 tests for gru and gruCell operators"
-        },
-        {
-          "date": "2024-08-10",
-          "author": "reillyg@chromium.org",
-          "hash": "01d865fce6",
-          "subject": "webnn: Add a BYOB version of readBuffer()"
-        },
-        {
-          "date": "2024-08-10",
-          "author": "reillyg@chromium.org",
-          "hash": "df6afc724f",
-          "subject": "webnn: Initialize memory allocated for CoreML and TFLite-based MLBuffers"
-        },
-        {
-          "date": "2024-08-08",
-          "author": "mingming1.xu@intel.com",
-          "hash": "2d8dac31b6",
-          "subject": "WebNN: Define `MLContext::destroy` interface"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "lisha.guo@intel.com",
-          "hash": "470deeb12f",
-          "subject": "webnn: add WPT tests to cover the label for clamp, concat, conv2d, convTranspose and pool"
-        },
-        {
-          "date": "2024-08-02",
-          "author": "feng.dai@intel.com",
-          "hash": "4e83b54f9a",
-          "subject": "webnn: fix issue in assertResultsEquals() method for conformance tests"
-        },
-        {
-          "date": "2024-08-02",
-          "author": "asully@chromium.org",
-          "hash": "2505f1cb2f",
-          "subject": "webnn: Throw TypeError if MLBuffer type is not supported by backend"
-        },
-        {
-          "date": "2024-08-01",
-          "author": "asully@chromium.org",
-          "hash": "5611a33065",
-          "subject": "webnn: Implement MLBuffer on Core ML"
-        },
-        {
-          "date": "2024-08-01",
-          "author": "shiyi.zou@intel.com",
-          "hash": "054ac89fb7",
-          "subject": "webnn: add support limits for element-wise unary operators"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "phillis@chromium.org",
-          "hash": "a50d5d78c5",
-          "subject": "webnn: support 0D input and empty axes for reduction on CoreML"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "86d80a9d18",
-          "subject": "WebNN: reject buffer reads after destroy"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "lisha.guo@intel.com",
-          "hash": "379af1aab2",
-          "subject": "webnn: add WPT tests to cover the label for argMinMax and batchNormalization"
-        },
-        {
-          "date": "2024-07-29",
-          "author": "asully@chromium.org",
-          "hash": "a0e57eb7da",
-          "subject": "webnn: Destroy WebNNGraphBuilder connection from the WebNN service"
-        },
-        {
-          "date": "2024-07-29",
-          "author": "shiyi.zou@intel.com",
-          "hash": "5c0712e7ac",
-          "subject": "webnn: add support limits for `sigmoid` `slice` and more"
-        },
-        {
-          "date": "2024-07-28",
-          "author": "asully@chromium.org",
-          "hash": "47b5098ce1",
-          "subject": "webnn: Replace MLActivation with MLRecurrentNetworkActivation"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "jsbell@chromium.org",
-          "hash": "d40148d6ce",
-          "subject": "WPT: WebNN tests for logical operator broadcasting and types"
-        },
-        {
-          "date": "2024-07-26",
-          "author": "bryan.bernhart@intel.com",
-          "hash": "b3c942add6",
-          "subject": "WebNN: make createBuffer() return promise"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "feng.dai@intel.com",
-          "hash": "6a7911e50b",
-          "subject": "webnn: refactor WebNN API conformance tests infrastructure"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "bin.miao@intel.com",
-          "hash": "52c7abb89a",
-          "subject": "WebNN: Change the auto in MLPowerPreference to default"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "asully@chromium.org",
-          "hash": "b7777fabd7",
-          "subject": "webnn: Allow an MLGraphBuilder to build at most one MLGraph"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "shiyi.zou@intel.com",
-          "hash": "7238d690d6",
-          "subject": "webnn: add support limits for `elu` `gelu` `leakyRelu` and `relu`"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "bin.miao@intel.com",
-          "hash": "acd785862c",
-          "subject": "WebNN: Change argMin/argMax to take scalar axis"
-        },
-        {
-          "date": "2024-07-19",
-          "author": "phillis@chromium.org",
-          "hash": "f4f0bf788a",
-          "subject": "webnn: implement logicalNot on coreml"
-        },
-        {
-          "date": "2024-07-18",
-          "author": "phillis@chromium.org",
-          "hash": "6ac8559263",
-          "subject": "webnn: implement where on Coreml"
-        },
-        {
-          "date": "2024-07-17",
-          "author": "bin.miao@intel.com",
-          "hash": "40e2956b57",
-          "subject": "WebNN: Remove argmin/max selectLastIndex parameter"
-        },
-        {
-          "date": "2024-07-15",
-          "author": "phillis@chromium.org",
-          "hash": "761ecbe648",
-          "subject": "webnn: fix coreml handling for inputs with special characters"
-        },
-        {
-          "date": "2024-07-15",
-          "author": "phillis@chromium.org",
-          "hash": "fd14752345",
-          "subject": "webnn: add argmin/max on CoreML and add outputDataType"
-        },
-        {
-          "date": "2024-07-10",
-          "author": "jsbell@chromium.org",
-          "hash": "897d43dd35",
-          "subject": "WebNN: WPT fixes c/o code coverage reports"
-        },
-        {
-          "date": "2024-07-10",
-          "author": "junwei.fu@intel.com",
-          "hash": "da786b5e44",
-          "subject": "webnn: Fix the unexpected result of Fast Style Transfer"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "shiyi.zou@intel.com",
-          "hash": "ca971d4fd5",
-          "subject": "webnn: add support limits for `concat` and `where`"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "mingming1.xu@intel.com",
-          "hash": "46aa4444f2",
-          "subject": "Reland \"WebNN: Handle WebNN context lost error\""
-        }
-      ]
-    },
-    {
-      "name": "Loading Signed Exchanges",
-      "href": "https://wicg.github.io/webpackage/loading.html",
-      "specrepo": "https://github.com/WICG/webpackage",
-      "speclog": [
-        {
-          "date": "2024-08-27",
-          "author": "zgroza@google.com",
-          "hash": "a983ab3",
-          "subject": "Set v2 format of integrity block as default (#896)"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "62747261+zgroza@users.noreply.github.com",
-          "hash": "343d8c5",
-          "subject": "Added options for v2 signing to CLI section of the js README + fixed typos. (#893)"
-        },
-        {
-          "date": "2024-07-29",
-          "author": "greengrape@google.com",
-          "hash": "aa6382d",
-          "subject": "Update the integrity block explainer to reflect the v2 format (#892)"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "andy@spdg.net",
-          "hash": "6ebe7e7",
-          "subject": "Bump package-lock.json wbn-sign to 0.2.0"
-        },
-        {
-          "date": "2024-07-09",
-          "author": "andy@spdg.net",
-          "hash": "4f468dc",
-          "subject": "Introduce integrity block v2 (#890)"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "WebRTC",
-      "href": "https://w3c.github.io/webrtc-pc/",
-      "specrepo": "https://github.com/w3c/webrtc-pc",
-      "speclog": [
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "35c676bb",
-          "subject": "Document test case"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "91256109",
-          "subject": "Add anchors to identify addition to spec"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "fa907bca",
-          "subject": "Work around new requirements from respec for updated recs"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "henbos@users.noreply.github.com",
-          "hash": "d3da9c13",
-          "subject": "Update to ReSpec version 35.1.1"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "10b1c9f3",
-          "subject": "Fix json typo"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "beb7abfb",
-          "subject": "Complete description of amendment"
-        },
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "f5017b97",
-          "subject": "Work around new requirements from respec for updated recs"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "florent.castelli@gmail.com",
-          "hash": "6a475fb0",
-          "subject": "Merge RTCRtpEncodingParameters.codec from webrtc-extensions"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2024-08-19",
-          "author": "dom@w3.org",
-          "hash": "17663e9160",
-          "subject": "Move tests for RTCRtpParameters.codec to main WebRTC directory (#47663)"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "hta@chromium.org",
-          "hash": "b83db9af15",
-          "subject": "Add unit test for allowing PT reuse on different transports."
-        },
-        {
-          "date": "2024-08-05",
-          "author": "orphis@chromium.org",
-          "hash": "b38692fe57",
-          "subject": "Load the WebIDL for websockets to resolve BinaryType in idlharness"
-        },
-        {
-          "date": "2024-08-01",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "131d56aca3",
-          "subject": "RTCDataChannel: Add support for the Blob type. (#47406)"
-        },
-        {
-          "date": "2024-07-04",
-          "author": "docfaraday@gmail.com",
-          "hash": "22c15c2eba",
-          "subject": "Test that repeated open/write/echo/close of datachannels works."
-        }
-      ]
-    },
-    {
-      "name": "WebRTC Encoded Transform",
-      "href": "https://w3c.github.io/webrtc-encoded-transform/",
-      "specrepo": "https://github.com/w3c/webrtc-encoded-transform",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-08-26",
-          "author": "alonsomozol@google.com",
-          "hash": "72b6d57960",
-          "subject": "[EncodedTransform] Fix comma in error message"
-        },
-        {
-          "date": "2024-08-26",
-          "author": "alonsomozol@google.com",
-          "hash": "6273b3aec1",
-          "subject": "[Encoded Transform] Fixing error message"
-        },
-        {
-          "date": "2024-08-20",
-          "author": "alonsomozol@google.com",
-          "hash": "175ca37711",
-          "subject": "[EncodedTransform] Detach buffer after writing a frame"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "alonsomozol@google.com",
-          "hash": "d258adae7b",
-          "subject": "[EncodedTransform] Audio and video receiver readable and writable"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "alonsomozol@google.com",
-          "hash": "82e0ba6b7e",
-          "subject": "Audio and video sender readable"
-        }
-      ]
-    },
-    {
-      "name": "IceTransport Extensions for WebRTC",
-      "href": "https://w3c.github.io/webrtc-ice/",
-      "specrepo": "https://github.com/w3c/webrtc-ice",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "Identity for WebRTC",
-      "href": "https://w3c.github.io/webrtc-identity/",
-      "specrepo": "https://github.com/w3c/webrtc-identity",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebRTC Priority Control API",
-      "href": "https://w3c.github.io/webrtc-priority/",
-      "specrepo": "https://github.com/w3c/webrtc-priority",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebRTC Statistics",
-      "href": "https://w3c.github.io/webrtc-stats/",
-      "specrepo": "https://github.com/w3c/webrtc-stats",
-      "speclog": [
-        {
-          "date": "2024-07-18",
-          "author": "phancke@microsoft.com",
-          "hash": "d6c2dbf",
-          "subject": "raddr+rport can be set for peer-reflexive candidates as well (#783)"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "Scalable Video Coding (SVC) Extension for WebRTC",
-      "href": "https://w3c.github.io/webrtc-svc/",
-      "specrepo": "https://github.com/w3c/webrtc-svc",
-      "speclog": [
-        {
-          "date": "2024-08-17",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "d1be7b1",
-          "subject": "Move media capabilities discussion to negotiation section"
-        },
-        {
-          "date": "2024-08-17",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "7b097ae",
-          "subject": "Fix wording"
-        },
-        {
-          "date": "2024-08-17",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "d043fa3",
-          "subject": "Rewording of negotiation section"
-        }
-      ],
-      "testlog": []
-    },
-    {
-      "name": "WebSockets",
-      "href": "https://websockets.spec.whatwg.org/",
-      "specrepo": "https://github.com/whatwg/websockets",
-      "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebTransport",
-      "href": "https://w3c.github.io/webtransport/",
-      "specrepo": "https://github.com/w3c/webtransport",
-      "speclog": [
-        {
-          "date": "2024-08-27",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "97ddea4",
-          "subject": "s/users/applications/ in note"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "157e1fa",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "8d8b5c7",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "2004c2c",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "5d3940a",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "bf84835",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "936e1f6",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-31",
-          "author": "wilaw@akamai.com",
-          "hash": "ce5d83a",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "wilaw@akamai.com",
-          "hash": "12a4e66",
-          "subject": "Fixing indent."
-        },
-        {
-          "date": "2024-07-30",
-          "author": "wilaw@akamai.com",
-          "hash": "3e936a6",
-          "subject": "Adding note"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "wilaw@akamai.com",
-          "hash": "b4ce143",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "1b857f6",
-          "subject": "Fix metrics report"
-        },
-        {
-          "date": "2024-07-30",
-          "author": "bernard.aboba@gmail.com",
-          "hash": "66a64c6",
-          "subject": "Update WebTransport Echo to display glass to glass delay"
-        },
-        {
-          "date": "2024-07-16",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "419ab3f",
-          "subject": "Make rtt stats required as they can be calculated from the handshape"
-        },
-        {
-          "date": "2024-07-03",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "e4061e1",
-          "subject": "Add required or =0 in WebIDL to document stats SHALL be present (except RTT ones)"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2024-07-23",
-          "author": "ricea@chromium.org",
-          "hash": "5dd58a3d81",
-          "subject": "WebTransport wpt: await promise_rejects_dom"
-        },
-        {
-          "date": "2024-07-23",
-          "author": "ricea@chromium.org",
-          "hash": "7f1f0ec5e6",
-          "subject": "Don't allocate WebTransportCloseInfo on stack"
-        }
-      ]
-    },
-    {
-      "name": "WebUSB API",
-      "href": "https://wicg.github.io/webusb/",
-      "specrepo": "https://github.com/WICG/webusb",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-08-05",
-          "author": "japhet@chromium.org",
-          "hash": "2f9e207812",
-          "subject": "Remove a bunch of cases where WPT are asserting exact error messages"
-        }
-      ],
-      "testpolicy": "https://github.com/WICG/webusb/blob/HEAD/CONTRIBUTING.md"
-    },
-    {
-      "name": "WebVTT",
-      "href": "https://w3c.github.io/webvtt/",
-      "specrepo": "https://github.com/w3c/webvtt",
-      "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-08-08",
-          "author": "philip@foolip.org",
-          "hash": "6204eae181",
-          "subject": "Refine WebVTT mapping to web-features (#46454)"
-        }
-      ],
-      "testpolicy": "https://github.com/w3c/webvtt/blob/HEAD/CONTRIBUTING.md"
-    },
-    {
-      "name": "WebXR Device API",
-      "href": "https://immersive-web.github.io/webxr/",
-      "specrepo": "https://github.com/immersive-web/webxr",
-      "speclog": [
-        {
-          "date": "2024-08-21",
-          "author": "70986246+msub2@users.noreply.github.com",
-          "hash": "67d74cd",
-          "subject": "Remove SameObject attribute from skipRendering"
-        },
-        {
-          "date": "2024-08-05",
-          "author": "jbroman@chromium.org",
-          "hash": "f25c42f",
-          "subject": "Editorial: Update use of WebIDL \"invoke a callback function\""
-        },
-        {
-          "date": "2024-07-17",
-          "author": "felix.herbst@gmail.com",
-          "hash": "c43a518",
-          "subject": "fix incorrect type name XRInputSourceChangeEvent > XRInputSourcesChangeEvent as per spec"
-        },
-        {
-          "date": "2024-07-08",
-          "author": "atsushi@himor.in",
-          "hash": "49e762e",
-          "subject": "fixed type"
-        },
-        {
-          "date": "2024-07-08",
-          "author": "atsushi@himor.in",
-          "hash": "abfdc9d",
-          "subject": "Changelog for CRS from CRS1"
-        }
-      ],
-      "testlog": [
-        {
-          "date": "2024-08-18",
-          "author": "msub2official@gmail.com",
-          "hash": "2e5fe20c28",
-          "subject": "Ensure xr_promise_test only runs after DOMContentLoaded"
-        },
-        {
-          "date": "2024-07-15",
-          "author": "alcooper@chromium.org",
-          "hash": "cb34608026",
-          "subject": "Speculative fix for WebXR WPT already declared syntax error"
-        }
-      ],
-      "testpolicy": "https://github.com/immersive-web/webxr/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Augmented Reality Module",
-      "href": "https://immersive-web.github.io/webxr-ar-module/",
-      "specrepo": "https://github.com/immersive-web/webxr-ar-module",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/webxr-ar-module/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Depth Sensing",
-      "href": "https://immersive-web.github.io/depth-sensing/",
-      "specrepo": "https://github.com/immersive-web/depth-sensing",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/depth-sensing/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR DOM Overlays",
-      "href": "https://immersive-web.github.io/dom-overlays/",
-      "specrepo": "https://github.com/immersive-web/dom-overlays",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/dom-overlays/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Gamepads Module",
-      "href": "https://immersive-web.github.io/webxr-gamepads-module/",
-      "specrepo": "https://github.com/immersive-web/webxr-gamepads-module",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/webxr-gamepads-module/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Hand Input Module",
-      "href": "https://immersive-web.github.io/webxr-hand-input/",
-      "specrepo": "https://github.com/immersive-web/webxr-hand-input",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/webxr-hand-input/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Hit Test",
-      "href": "https://immersive-web.github.io/hit-test/",
-      "specrepo": "https://github.com/immersive-web/hit-test",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/hit-test/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebXR Lighting Estimation API",
-      "href": "https://immersive-web.github.io/lighting-estimation/",
-      "specrepo": "https://github.com/immersive-web/lighting-estimation",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebXR Plane Detection",
-      "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
-      "specrepo": "https://github.com/immersive-web/real-world-geometry",
-      "speclog": [],
-      "testlog": []
-    },
-    {
-      "name": "WebXR Layers API",
-      "href": "https://immersive-web.github.io/layers/",
-      "specrepo": "https://github.com/immersive-web/layers",
-      "speclog": [],
-      "testlog": [],
-      "testpolicy": "https://github.com/immersive-web/layers/blob/HEAD/README.md"
-    },
-    {
-      "name": "WebGPU Shading Language",
-      "href": "https://gpuweb.github.io/gpuweb/wgsl/",
-      "specrepo": "https://github.com/gpuweb/gpuweb",
-      "speclog": [
         {
           "date": "2024-08-29",
           "author": "kainino@chromium.org",
@@ -19664,18 +18329,1431 @@
           "author": "dneto@google.com",
           "hash": "c05bc106",
           "subject": "wgsl: Fix range of atan: starts at -pi/2, not pi/2 (#4732)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "WebHID API",
+      "href": "https://wicg.github.io/webhid/",
+      "specrepo": "https://github.com/WICG/webhid",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "Web IDL",
+      "href": "https://webidl.spec.whatwg.org/",
+      "specrepo": "https://github.com/whatwg/webidl",
+      "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
+      "speclog": [
+        {
+          "date": "2024-08-22",
+          "author": "d@domenic.me",
+          "hash": "e7b2fe1",
+          "subject": "Update CreateIterResultObject → CreateIteratorResultObject"
         },
         {
-          "date": "2024-07-03",
-          "author": "bajones@chromium.org",
-          "hash": "1c712f75",
-          "subject": "Add description of sample footprint (#4683)"
+          "date": "2024-08-21",
+          "author": "d@domenic.me",
+          "hash": "f33a06a",
+          "subject": "Stop assuming \"transfer\" is same-agent cluster"
         },
         {
-          "date": "2024-07-03",
+          "date": "2024-08-02",
+          "author": "jbroman@chromium.org",
+          "hash": "192be41",
+          "subject": "Allow users of \"invoke a callback function\" to report the exception"
+        },
+        {
+          "date": "2024-07-19",
+          "author": "d@domenic.me",
+          "hash": "155ae10",
+          "subject": "Throw, instead of assert, for transferring detached ArrayBuffers"
+        },
+        {
+          "date": "2024-07-19",
+          "author": "inexorabletash@gmail.com",
+          "hash": "d6927d5",
+          "subject": "Introduce a \"transferable\" algorithm for BufferSource"
+        },
+        {
+          "date": "2024-07-10",
+          "author": "caitp@users.noreply.github.com",
+          "hash": "3fb6ab4",
+          "subject": "Legacy platform objects should not override desc.[[Configurable]]"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Web MIDI API",
+      "href": "https://webaudio.github.io/web-midi-api/",
+      "specrepo": "https://github.com/WebAudio/web-midi-api",
+      "speclog": [
+        {
+          "date": "2024-07-10",
+          "author": "mjwilson@chromium.org",
+          "hash": "b360b7d",
+          "subject": "Don't use <dfn> tag on algorithms that aren't referenced elsewhere in the spec"
+        },
+        {
+          "date": "2024-07-10",
+          "author": "99870237+mjwilson-google@users.noreply.github.com",
+          "hash": "974bd77",
+          "subject": "Update README.md to reference the gh-pages branch"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "mjwilson@chromium.org",
+          "hash": "c1ba21d",
+          "subject": "Clarify that MIDIOutput.clear() should clear enqueued send data"
+        },
+        {
+          "date": "2024-07-06",
+          "author": "mjwilson@chromium.org",
+          "hash": "f21b747",
+          "subject": "Update echidna token name"
+        }
+      ],
+      "testlog": [],
+      "testpolicy": "https://github.com/WebAudio/web-midi-api/blob/HEAD/README.md"
+    },
+    {
+      "name": "Web Neural Network API",
+      "href": "https://webmachinelearning.github.io/webnn/",
+      "specrepo": "https://github.com/webmachinelearning/webnn",
+      "speclog": [
+        {
+          "date": "2024-08-22",
+          "author": "phillis@chromium.org",
+          "hash": "355c38d",
+          "subject": "Allow arbitrary axes for resample2d (#752)"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "jsbell@chromium.org",
+          "hash": "928d3a1",
+          "subject": "Bug fix: softmax()'s axis argument should EnforceRange (#746)"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "jsbell@chromium.org",
+          "hash": "4697a0d",
+          "subject": "Clarify reduction with empty axes and scalar input (#741)"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "jsbell@chromium.org",
+          "hash": "fd5e2fe",
+          "subject": "Add blurb explaining broadcasting in more detail"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "jsbell@chromium.org",
+          "hash": "8734bea",
+          "subject": "Add optional operator labels for more diagnosable error messages (#742)"
+        },
+        {
+          "date": "2024-07-27",
+          "author": "inexorabletash@gmail.com",
+          "hash": "0d95bb9",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "jsbell@chromium.org",
+          "hash": "49fbcb0",
+          "subject": "Make prelu() bidirectionally broadcast, improve broadcast wording"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "jsbell@chromium.org",
+          "hash": "bd5da6b",
+          "subject": "Add helper for creating MLOperandDescriptor to simplify steps (#737)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "phillis@chromium.org",
+          "hash": "71dd440",
+          "subject": "Update dimension valid range to signed integer (#738)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "phillis@chromium.org",
+          "hash": "4a2b8ca",
+          "subject": "Add outputDataType to argmin/argmax (#730)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "feng.dai@intel.com",
+          "hash": "5c97f54",
+          "subject": "Fixed typo"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "jsbell@chromium.org",
+          "hash": "4b90605",
+          "subject": "Editorial: Don't reference IDL boolean for values in tensors (#735)"
+        },
+        {
+          "date": "2024-07-22",
+          "author": "jsbell@chromium.org",
+          "hash": "0a5839d",
+          "subject": "Editorial: Fix an instance of \"nchw\" enum member styling/linking"
+        },
+        {
+          "date": "2024-07-22",
+          "author": "asully@chromium.org",
+          "hash": "487a992",
+          "subject": "Replace MLActivation with MLRecurrentNetworkActivation (#718)"
+        },
+        {
+          "date": "2024-07-19",
+          "author": "jsbell@chromium.org",
+          "hash": "46ba167",
+          "subject": "Reference newly landed WebIDL \"transferable\" definition (#732)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "inexorabletash@gmail.com",
+          "hash": "c4de3ef",
+          "subject": "Avoid \"sequence\" in prose, linkify use in types (#729)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "jsbell@chromium.org",
+          "hash": "de2a932",
+          "subject": "Update documentation and fix some minor issues with lint tool."
+        },
+        {
+          "date": "2024-07-18",
+          "author": "jsbell@chromium.org",
+          "hash": "9a80799",
+          "subject": "Workflow: Add steps to run tools/lint.mjs after spec is built (#728)"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "jsbell@chromium.org",
+          "hash": "19762ed",
+          "subject": "Clarify the cast() op behavior between different data types (#726)"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "jsbell@chromium.org",
+          "hash": "c9e70f6",
+          "subject": "Add security consideration for computation control-flow attacks (#725)"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "jsbell@chromium.org",
+          "hash": "ac83a20",
+          "subject": "Lint: Improve logic for validating algorithm steps. (#727)"
+        },
+        {
+          "date": "2024-07-16",
+          "author": "asully@chromium.org",
+          "hash": "f08f9f7",
+          "subject": "Allow MLGraphBuilder.build() to be called only once (#717)"
+        },
+        {
+          "date": "2024-07-16",
+          "author": "phillis@chromium.org",
+          "hash": "9c96d6f",
+          "subject": "change argmin/argmax to take scalar axis"
+        },
+        {
+          "date": "2024-07-16",
+          "author": "jsbell@chromium.org",
+          "hash": "f5fb055",
+          "subject": "Define error handling of MLNamedArrayBufferViews transfer algorithm (#723)"
+        },
+        {
+          "date": "2024-07-12",
+          "author": "jsbell@chromium.org",
+          "hash": "dbb9d1c",
+          "subject": "Style: Link method argument definitions (#721)"
+        },
+        {
+          "date": "2024-07-12",
+          "author": "phillis@chromium.org",
+          "hash": "af67a72",
+          "subject": "Remove argmin/max selectLastIndex parameter (#722)"
+        },
+        {
+          "date": "2024-07-11",
+          "author": "shiyi.zou@intel.com",
+          "hash": "fe96a78",
+          "subject": "rename the parameter names of where (#719)"
+        },
+        {
+          "date": "2024-07-11",
+          "author": "asully@chromium.org",
+          "hash": "2302d7f",
+          "subject": "Ensure every method dfn is correctly associated with an interface (#720)"
+        },
+        {
+          "date": "2024-07-05",
+          "author": "zoltan.kis@intel.com",
+          "hash": "3a916f2",
+          "subject": "DOMString to USVString (#715)"
+        },
+        {
+          "date": "2024-07-05",
+          "author": "jsbell@chromium.org",
+          "hash": "9f88ebf",
+          "subject": "Introduce MLNumber for specifying numeric inputs of any type (#647)"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2024-08-29",
+          "author": "shiyi.zou@intel.com",
+          "hash": "eb162cb9dd",
+          "subject": "webnn: implement `gatherElements` for DirectML backend"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "shiyi.zou@intel.com",
+          "hash": "bae76895eb",
+          "subject": "webnn: add IDL and mojo definition of `gatherElements`"
+        },
+        {
+          "date": "2024-08-23",
+          "author": "phillis@chromium.org",
+          "hash": "536c5951f7",
+          "subject": "webnn: support all axes for resample2d"
+        },
+        {
+          "date": "2024-08-23",
+          "author": "bin.miao@intel.com",
+          "hash": "437aa38e8b",
+          "subject": "WebNN: Fixed resetAfter option of gru operator in DirectML backend"
+        },
+        {
+          "date": "2024-08-23",
+          "author": "shiyi.zou@intel.com",
+          "hash": "90d4c35662",
+          "subject": "webnn: add support limits for `cast` `clamp` `expand` and more"
+        },
+        {
+          "date": "2024-08-22",
+          "author": "mingming1.xu@intel.com",
+          "hash": "ced507e577",
+          "subject": "WebNN: Expose MLGraph::destroy interface to release graph"
+        },
+        {
+          "date": "2024-08-22",
+          "author": "bin.miao@intel.com",
+          "hash": "74d42b413c",
+          "subject": "Reland: \"WebNN: Add support limits for hardSigmoid and hardSwish\""
+        },
+        {
+          "date": "2024-08-21",
+          "author": "bryan.bernhart@intel.com",
+          "hash": "f21d93823c",
+          "subject": "WebNN: add buffer usages for DML backend"
+        },
+        {
+          "date": "2024-08-21",
+          "author": "asully@chromium.org",
+          "hash": "3897cad3ad",
+          "subject": "webnn: Set a max operand rank of 8"
+        },
+        {
+          "date": "2024-08-21",
+          "author": "shiyi.zou@intel.com",
+          "hash": "e9e8354cc1",
+          "subject": "webnn: add support limits for reduction operators and more"
+        },
+        {
+          "date": "2024-08-16",
+          "author": "lisha.guo@intel.com",
+          "hash": "6487c9c61d",
+          "subject": "webnn: add some missing WPT tests to cover the label"
+        },
+        {
+          "date": "2024-08-15",
+          "author": "aycyang@chromium.org",
+          "hash": "bae8718c40",
+          "subject": "Revert \"WebNN: Add support limits for hardSigmoid and hardSwish\""
+        },
+        {
+          "date": "2024-08-15",
+          "author": "bin.miao@intel.com",
+          "hash": "a17b1a7796",
+          "subject": "WebNN: Add support limits for hardSigmoid and hardSwish"
+        },
+        {
+          "date": "2024-08-15",
+          "author": "shanxing.mei@intel.com",
+          "hash": "6d0736ee69",
+          "subject": "webnn: Add 0-D scalar tests for WebNN API operators"
+        },
+        {
+          "date": "2024-08-15",
+          "author": "bin.miao@intel.com",
+          "hash": "ab33282b72",
+          "subject": "WebNN: Support all the device types for WPT validation tests"
+        },
+        {
+          "date": "2024-08-14",
+          "author": "lisha.guo@intel.com",
+          "hash": "dd101462b7",
+          "subject": "webnn: add WPT tests to cover the label for more operators"
+        },
+        {
+          "date": "2024-08-14",
+          "author": "feng.dai@intel.com",
+          "hash": "eb9c681d21",
+          "subject": "webnn: add float32 tests for lstm and lstmCell operators"
+        },
+        {
+          "date": "2024-08-12",
+          "author": "asully@chromium.org",
+          "hash": "cfafe58f7c",
+          "subject": "webnn: Add WPTs for concurrent dispatch() calls"
+        },
+        {
+          "date": "2024-08-12",
+          "author": "bryan.bernhart@intel.com",
+          "hash": "b44d67b33f",
+          "subject": "WebNN: discard empty writes for DML"
+        },
+        {
+          "date": "2024-08-10",
+          "author": "feng.dai@intel.com",
+          "hash": "61abf518c3",
+          "subject": "webnn: add float32 tests for gru and gruCell operators"
+        },
+        {
+          "date": "2024-08-10",
+          "author": "reillyg@chromium.org",
+          "hash": "01d865fce6",
+          "subject": "webnn: Add a BYOB version of readBuffer()"
+        },
+        {
+          "date": "2024-08-10",
+          "author": "reillyg@chromium.org",
+          "hash": "df6afc724f",
+          "subject": "webnn: Initialize memory allocated for CoreML and TFLite-based MLBuffers"
+        },
+        {
+          "date": "2024-08-08",
+          "author": "mingming1.xu@intel.com",
+          "hash": "2d8dac31b6",
+          "subject": "WebNN: Define `MLContext::destroy` interface"
+        },
+        {
+          "date": "2024-08-06",
+          "author": "lisha.guo@intel.com",
+          "hash": "470deeb12f",
+          "subject": "webnn: add WPT tests to cover the label for clamp, concat, conv2d, convTranspose and pool"
+        },
+        {
+          "date": "2024-08-02",
+          "author": "feng.dai@intel.com",
+          "hash": "4e83b54f9a",
+          "subject": "webnn: fix issue in assertResultsEquals() method for conformance tests"
+        },
+        {
+          "date": "2024-08-02",
+          "author": "asully@chromium.org",
+          "hash": "2505f1cb2f",
+          "subject": "webnn: Throw TypeError if MLBuffer type is not supported by backend"
+        },
+        {
+          "date": "2024-08-01",
+          "author": "asully@chromium.org",
+          "hash": "5611a33065",
+          "subject": "webnn: Implement MLBuffer on Core ML"
+        },
+        {
+          "date": "2024-08-01",
+          "author": "shiyi.zou@intel.com",
+          "hash": "054ac89fb7",
+          "subject": "webnn: add support limits for element-wise unary operators"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "phillis@chromium.org",
+          "hash": "a50d5d78c5",
+          "subject": "webnn: support 0D input and empty axes for reduction on CoreML"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "bryan.bernhart@intel.com",
+          "hash": "86d80a9d18",
+          "subject": "WebNN: reject buffer reads after destroy"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "lisha.guo@intel.com",
+          "hash": "379af1aab2",
+          "subject": "webnn: add WPT tests to cover the label for argMinMax and batchNormalization"
+        },
+        {
+          "date": "2024-07-29",
+          "author": "asully@chromium.org",
+          "hash": "a0e57eb7da",
+          "subject": "webnn: Destroy WebNNGraphBuilder connection from the WebNN service"
+        },
+        {
+          "date": "2024-07-29",
+          "author": "shiyi.zou@intel.com",
+          "hash": "5c0712e7ac",
+          "subject": "webnn: add support limits for `sigmoid` `slice` and more"
+        },
+        {
+          "date": "2024-07-28",
+          "author": "asully@chromium.org",
+          "hash": "47b5098ce1",
+          "subject": "webnn: Replace MLActivation with MLRecurrentNetworkActivation"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "jsbell@chromium.org",
+          "hash": "d40148d6ce",
+          "subject": "WPT: WebNN tests for logical operator broadcasting and types"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "bryan.bernhart@intel.com",
+          "hash": "b3c942add6",
+          "subject": "WebNN: make createBuffer() return promise"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "feng.dai@intel.com",
+          "hash": "6a7911e50b",
+          "subject": "webnn: refactor WebNN API conformance tests infrastructure"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "bin.miao@intel.com",
+          "hash": "52c7abb89a",
+          "subject": "WebNN: Change the auto in MLPowerPreference to default"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "asully@chromium.org",
+          "hash": "b7777fabd7",
+          "subject": "webnn: Allow an MLGraphBuilder to build at most one MLGraph"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "shiyi.zou@intel.com",
+          "hash": "7238d690d6",
+          "subject": "webnn: add support limits for `elu` `gelu` `leakyRelu` and `relu`"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "bin.miao@intel.com",
+          "hash": "acd785862c",
+          "subject": "WebNN: Change argMin/argMax to take scalar axis"
+        },
+        {
+          "date": "2024-07-19",
+          "author": "phillis@chromium.org",
+          "hash": "f4f0bf788a",
+          "subject": "webnn: implement logicalNot on coreml"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "phillis@chromium.org",
+          "hash": "6ac8559263",
+          "subject": "webnn: implement where on Coreml"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "bin.miao@intel.com",
+          "hash": "40e2956b57",
+          "subject": "WebNN: Remove argmin/max selectLastIndex parameter"
+        },
+        {
+          "date": "2024-07-15",
+          "author": "phillis@chromium.org",
+          "hash": "761ecbe648",
+          "subject": "webnn: fix coreml handling for inputs with special characters"
+        },
+        {
+          "date": "2024-07-15",
+          "author": "phillis@chromium.org",
+          "hash": "fd14752345",
+          "subject": "webnn: add argmin/max on CoreML and add outputDataType"
+        },
+        {
+          "date": "2024-07-10",
+          "author": "jsbell@chromium.org",
+          "hash": "897d43dd35",
+          "subject": "WebNN: WPT fixes c/o code coverage reports"
+        },
+        {
+          "date": "2024-07-10",
+          "author": "junwei.fu@intel.com",
+          "hash": "da786b5e44",
+          "subject": "webnn: Fix the unexpected result of Fast Style Transfer"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "shiyi.zou@intel.com",
+          "hash": "ca971d4fd5",
+          "subject": "webnn: add support limits for `concat` and `where`"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "mingming1.xu@intel.com",
+          "hash": "46aa4444f2",
+          "subject": "Reland \"WebNN: Handle WebNN context lost error\""
+        }
+      ]
+    },
+    {
+      "name": "Loading Signed Exchanges",
+      "href": "https://wicg.github.io/webpackage/loading.html",
+      "specrepo": "https://github.com/WICG/webpackage",
+      "speclog": [
+        {
+          "date": "2024-08-27",
+          "author": "zgroza@google.com",
+          "hash": "a983ab3",
+          "subject": "Set v2 format of integrity block as default (#896)"
+        },
+        {
+          "date": "2024-08-07",
+          "author": "62747261+zgroza@users.noreply.github.com",
+          "hash": "343d8c5",
+          "subject": "Added options for v2 signing to CLI section of the js README + fixed typos. (#893)"
+        },
+        {
+          "date": "2024-07-29",
+          "author": "greengrape@google.com",
+          "hash": "aa6382d",
+          "subject": "Update the integrity block explainer to reflect the v2 format (#892)"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "andy@spdg.net",
+          "hash": "6ebe7e7",
+          "subject": "Bump package-lock.json wbn-sign to 0.2.0"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "andy@spdg.net",
+          "hash": "4f468dc",
+          "subject": "Introduce integrity block v2 (#890)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "WebRTC",
+      "href": "https://w3c.github.io/webrtc-pc/",
+      "specrepo": "https://github.com/w3c/webrtc-pc",
+      "speclog": [
+        {
+          "date": "2024-08-28",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "fa3f4b58",
+          "subject": "Reference the codec parameter in algorithms."
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "35c676bb",
+          "subject": "Document test case"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "91256109",
+          "subject": "Add anchors to identify addition to spec"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "fa907bca",
+          "subject": "Work around new requirements from respec for updated recs"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "henbos@users.noreply.github.com",
+          "hash": "d3da9c13",
+          "subject": "Update to ReSpec version 35.1.1"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "10b1c9f3",
+          "subject": "Fix json typo"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "beb7abfb",
+          "subject": "Complete description of amendment"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "f5017b97",
+          "subject": "Work around new requirements from respec for updated recs"
+        },
+        {
+          "date": "2024-08-15",
+          "author": "florent.castelli@gmail.com",
+          "hash": "6a475fb0",
+          "subject": "Merge RTCRtpEncodingParameters.codec from webrtc-extensions"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2024-08-19",
+          "author": "dom@w3.org",
+          "hash": "17663e9160",
+          "subject": "Move tests for RTCRtpParameters.codec to main WebRTC directory (#47663)"
+        },
+        {
+          "date": "2024-08-16",
+          "author": "hta@chromium.org",
+          "hash": "b83db9af15",
+          "subject": "Add unit test for allowing PT reuse on different transports."
+        },
+        {
+          "date": "2024-08-05",
+          "author": "orphis@chromium.org",
+          "hash": "b38692fe57",
+          "subject": "Load the WebIDL for websockets to resolve BinaryType in idlharness"
+        },
+        {
+          "date": "2024-08-01",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "131d56aca3",
+          "subject": "RTCDataChannel: Add support for the Blob type. (#47406)"
+        },
+        {
+          "date": "2024-07-04",
+          "author": "docfaraday@gmail.com",
+          "hash": "22c15c2eba",
+          "subject": "Test that repeated open/write/echo/close of datachannels works."
+        }
+      ]
+    },
+    {
+      "name": "WebRTC Encoded Transform",
+      "href": "https://w3c.github.io/webrtc-encoded-transform/",
+      "specrepo": "https://github.com/w3c/webrtc-encoded-transform",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2024-08-26",
+          "author": "alonsomozol@google.com",
+          "hash": "72b6d57960",
+          "subject": "[EncodedTransform] Fix comma in error message"
+        },
+        {
+          "date": "2024-08-26",
+          "author": "alonsomozol@google.com",
+          "hash": "6273b3aec1",
+          "subject": "[Encoded Transform] Fixing error message"
+        },
+        {
+          "date": "2024-08-20",
+          "author": "alonsomozol@google.com",
+          "hash": "175ca37711",
+          "subject": "[EncodedTransform] Detach buffer after writing a frame"
+        },
+        {
+          "date": "2024-08-16",
+          "author": "alonsomozol@google.com",
+          "hash": "d258adae7b",
+          "subject": "[EncodedTransform] Audio and video receiver readable and writable"
+        },
+        {
+          "date": "2024-08-15",
+          "author": "alonsomozol@google.com",
+          "hash": "82e0ba6b7e",
+          "subject": "Audio and video sender readable"
+        }
+      ]
+    },
+    {
+      "name": "IceTransport Extensions for WebRTC",
+      "href": "https://w3c.github.io/webrtc-ice/",
+      "specrepo": "https://github.com/w3c/webrtc-ice",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "Identity for WebRTC",
+      "href": "https://w3c.github.io/webrtc-identity/",
+      "specrepo": "https://github.com/w3c/webrtc-identity",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "WebRTC Priority Control API",
+      "href": "https://w3c.github.io/webrtc-priority/",
+      "specrepo": "https://github.com/w3c/webrtc-priority",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "WebRTC Statistics",
+      "href": "https://w3c.github.io/webrtc-stats/",
+      "specrepo": "https://github.com/w3c/webrtc-stats",
+      "speclog": [
+        {
+          "date": "2024-07-18",
+          "author": "phancke@microsoft.com",
+          "hash": "d6c2dbf",
+          "subject": "raddr+rport can be set for peer-reflexive candidates as well (#783)"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "Scalable Video Coding (SVC) Extension for WebRTC",
+      "href": "https://w3c.github.io/webrtc-svc/",
+      "specrepo": "https://github.com/w3c/webrtc-svc",
+      "speclog": [
+        {
+          "date": "2024-08-17",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "d1be7b1",
+          "subject": "Move media capabilities discussion to negotiation section"
+        },
+        {
+          "date": "2024-08-17",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "7b097ae",
+          "subject": "Fix wording"
+        },
+        {
+          "date": "2024-08-17",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "d043fa3",
+          "subject": "Rewording of negotiation section"
+        }
+      ],
+      "testlog": []
+    },
+    {
+      "name": "WebSockets",
+      "href": "https://websockets.spec.whatwg.org/",
+      "specrepo": "https://github.com/whatwg/websockets",
+      "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "WebTransport",
+      "href": "https://w3c.github.io/webtransport/",
+      "specrepo": "https://github.com/w3c/webtransport",
+      "speclog": [
+        {
+          "date": "2024-08-27",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "97ddea4",
+          "subject": "s/users/applications/ in note"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "157e1fa",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "8d8b5c7",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "2004c2c",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "5d3940a",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "bf84835",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "936e1f6",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "wilaw@akamai.com",
+          "hash": "ce5d83a",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "wilaw@akamai.com",
+          "hash": "12a4e66",
+          "subject": "Fixing indent."
+        },
+        {
+          "date": "2024-07-30",
+          "author": "wilaw@akamai.com",
+          "hash": "3e936a6",
+          "subject": "Adding note"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "wilaw@akamai.com",
+          "hash": "b4ce143",
+          "subject": "Update index.bs"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "1b857f6",
+          "subject": "Fix metrics report"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "bernard.aboba@gmail.com",
+          "hash": "66a64c6",
+          "subject": "Update WebTransport Echo to display glass to glass delay"
+        },
+        {
+          "date": "2024-07-16",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "419ab3f",
+          "subject": "Make rtt stats required as they can be calculated from the handshape"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2024-07-23",
+          "author": "ricea@chromium.org",
+          "hash": "5dd58a3d81",
+          "subject": "WebTransport wpt: await promise_rejects_dom"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "ricea@chromium.org",
+          "hash": "7f1f0ec5e6",
+          "subject": "Don't allocate WebTransportCloseInfo on stack"
+        }
+      ]
+    },
+    {
+      "name": "WebUSB API",
+      "href": "https://wicg.github.io/webusb/",
+      "specrepo": "https://github.com/WICG/webusb",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2024-08-05",
+          "author": "japhet@chromium.org",
+          "hash": "2f9e207812",
+          "subject": "Remove a bunch of cases where WPT are asserting exact error messages"
+        }
+      ],
+      "testpolicy": "https://github.com/WICG/webusb/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "WebVTT",
+      "href": "https://w3c.github.io/webvtt/",
+      "specrepo": "https://github.com/w3c/webvtt",
+      "speclog": [],
+      "testlog": [
+        {
+          "date": "2024-08-08",
+          "author": "philip@foolip.org",
+          "hash": "6204eae181",
+          "subject": "Refine WebVTT mapping to web-features (#46454)"
+        }
+      ],
+      "testpolicy": "https://github.com/w3c/webvtt/blob/HEAD/CONTRIBUTING.md"
+    },
+    {
+      "name": "WebXR Device API",
+      "href": "https://immersive-web.github.io/webxr/",
+      "specrepo": "https://github.com/immersive-web/webxr",
+      "speclog": [
+        {
+          "date": "2024-08-21",
+          "author": "70986246+msub2@users.noreply.github.com",
+          "hash": "67d74cd",
+          "subject": "Remove SameObject attribute from skipRendering"
+        },
+        {
+          "date": "2024-08-05",
+          "author": "jbroman@chromium.org",
+          "hash": "f25c42f",
+          "subject": "Editorial: Update use of WebIDL \"invoke a callback function\""
+        },
+        {
+          "date": "2024-07-17",
+          "author": "felix.herbst@gmail.com",
+          "hash": "c43a518",
+          "subject": "fix incorrect type name XRInputSourceChangeEvent > XRInputSourcesChangeEvent as per spec"
+        },
+        {
+          "date": "2024-07-08",
+          "author": "atsushi@himor.in",
+          "hash": "49e762e",
+          "subject": "fixed type"
+        },
+        {
+          "date": "2024-07-08",
+          "author": "atsushi@himor.in",
+          "hash": "abfdc9d",
+          "subject": "Changelog for CRS from CRS1"
+        }
+      ],
+      "testlog": [
+        {
+          "date": "2024-08-18",
+          "author": "msub2official@gmail.com",
+          "hash": "2e5fe20c28",
+          "subject": "Ensure xr_promise_test only runs after DOMContentLoaded"
+        },
+        {
+          "date": "2024-07-15",
+          "author": "alcooper@chromium.org",
+          "hash": "cb34608026",
+          "subject": "Speculative fix for WebXR WPT already declared syntax error"
+        }
+      ],
+      "testpolicy": "https://github.com/immersive-web/webxr/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Augmented Reality Module",
+      "href": "https://immersive-web.github.io/webxr-ar-module/",
+      "specrepo": "https://github.com/immersive-web/webxr-ar-module",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/webxr-ar-module/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Depth Sensing",
+      "href": "https://immersive-web.github.io/depth-sensing/",
+      "specrepo": "https://github.com/immersive-web/depth-sensing",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/depth-sensing/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR DOM Overlays",
+      "href": "https://immersive-web.github.io/dom-overlays/",
+      "specrepo": "https://github.com/immersive-web/dom-overlays",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/dom-overlays/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Gamepads Module",
+      "href": "https://immersive-web.github.io/webxr-gamepads-module/",
+      "specrepo": "https://github.com/immersive-web/webxr-gamepads-module",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/webxr-gamepads-module/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Hand Input Module",
+      "href": "https://immersive-web.github.io/webxr-hand-input/",
+      "specrepo": "https://github.com/immersive-web/webxr-hand-input",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/webxr-hand-input/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Hit Test",
+      "href": "https://immersive-web.github.io/hit-test/",
+      "specrepo": "https://github.com/immersive-web/hit-test",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/hit-test/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebXR Lighting Estimation API",
+      "href": "https://immersive-web.github.io/lighting-estimation/",
+      "specrepo": "https://github.com/immersive-web/lighting-estimation",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "WebXR Plane Detection",
+      "href": "https://immersive-web.github.io/real-world-geometry/plane-detection.html",
+      "specrepo": "https://github.com/immersive-web/real-world-geometry",
+      "speclog": [],
+      "testlog": []
+    },
+    {
+      "name": "WebXR Layers API",
+      "href": "https://immersive-web.github.io/layers/",
+      "specrepo": "https://github.com/immersive-web/layers",
+      "speclog": [],
+      "testlog": [],
+      "testpolicy": "https://github.com/immersive-web/layers/blob/HEAD/README.md"
+    },
+    {
+      "name": "WebGPU Shading Language",
+      "href": "https://gpuweb.github.io/gpuweb/wgsl/",
+      "specrepo": "https://github.com/gpuweb/gpuweb",
+      "speclog": [
+        {
+          "date": "2024-08-29",
+          "author": "kainino@chromium.org",
+          "hash": "edfffd9e",
+          "subject": "Change mapAsync to also early-reject if already mapped (#4787)"
+        },
+        {
+          "date": "2024-08-29",
+          "author": "kainino@chromium.org",
+          "hash": "f1b76ce6",
+          "subject": "Remove GPUShaderModuleDescriptor.sourceMap (#4840)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "kainino@chromium.org",
+          "hash": "ed7dd072",
+          "subject": "Generate a validation error on mapAsync early-reject (#4786)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "kainino@chromium.org",
+          "hash": "bda63a8e",
+          "subject": "Remove maxInterStageShaderComponents (#4783)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "kainino@chromium.org",
+          "hash": "b205c456",
+          "subject": "Allow unknown limits to be requested with value `undefined` (#4781)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "dneto@google.com",
+          "hash": "93fc5df1",
+          "subject": "interstage-interpolation checks generate pipeline-creation errors, not shader-creation (#4837)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "alanbaker@google.com",
+          "hash": "aa904e49",
+          "subject": "Add inclusive scan add and mul operations (#4822)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "dneto@google.com",
+          "hash": "60b2926f",
+          "subject": "subgroups: subgroupBroadcast 'id' parameter is const-expression (#4820)"
+        },
+        {
+          "date": "2024-08-28",
+          "author": "dneto@google.com",
+          "hash": "7fa78f6d",
+          "subject": "Better explain that you can't assign to a multi-letter swizzle (#4835)"
+        },
+        {
+          "date": "2024-08-27",
+          "author": "dneto@google.com",
+          "hash": "0e120c6d",
+          "subject": "Clarify validation of storage texture texel-format and access modes (#4831)"
+        },
+        {
+          "date": "2024-08-27",
+          "author": "dneto@google.com",
+          "hash": "fb06f3ac",
+          "subject": "wsgl: clarify fp edge cases (#4825)"
+        },
+        {
+          "date": "2024-08-21",
+          "author": "dneto@google.com",
+          "hash": "8759aa70",
+          "subject": "wsgl: remove TODO about acos, asin accuracy for f16 (#4823)"
+        },
+        {
+          "date": "2024-08-21",
+          "author": "jiawei.shao@intel.com",
+          "hash": "9465f414",
+          "subject": "Fix rules about dual source blending in `validating GPUFragmentState` (#4791)"
+        },
+        {
+          "date": "2024-08-20",
+          "author": "110081332+matthew-wong1@users.noreply.github.com",
+          "hash": "c1990f4f",
+          "subject": "Add extra example for operations involving abstract numerics (#4795)"
+        },
+        {
+          "date": "2024-08-19",
+          "author": "dneto@google.com",
+          "hash": "0f098a93",
+          "subject": "wgsl: define 'extended real' numbers (#4819)"
+        },
+        {
+          "date": "2024-08-13",
+          "author": "kainino@chromium.org",
+          "hash": "fb97a574",
+          "subject": "Add timelines to all attributes/slots, assorted editing (#4796)"
+        },
+        {
+          "date": "2024-08-13",
+          "author": "kainino@chromium.org",
+          "hash": "26e66b0d",
+          "subject": "Add note that enabling features can have performance impact (#4778)"
+        },
+        {
+          "date": "2024-08-13",
+          "author": "51275588+Tomycj@users.noreply.github.com",
+          "hash": "9bb37486",
+          "subject": "Fixed two \"it's\" -> \"its\" typos. (#4813)"
+        },
+        {
+          "date": "2024-08-05",
+          "author": "alanbaker@google.com",
+          "hash": "7980a4be",
+          "subject": "Add shader module creation validation for features (#4802)"
+        },
+        {
+          "date": "2024-07-31",
+          "author": "dneto@google.com",
+          "hash": "a189442e",
+          "subject": "Explain the endianness of pack4xI8* and pack4xU8* builtins (#4425)"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "alanbaker@google.com",
+          "hash": "7751328b",
+          "subject": "Clarify array layer OOB for texture sampling (#4792)"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "alanbaker@google.com",
+          "hash": "ceffd16c",
+          "subject": "Clarify textureSampleBias bias param (#4771)"
+        },
+        {
+          "date": "2024-07-30",
+          "author": "alanbaker@google.com",
+          "hash": "b75de330",
+          "subject": "Clarify const-expression eval and type checking (#4801)"
+        },
+        {
+          "date": "2024-07-29",
+          "author": "kainino@chromium.org",
+          "hash": "65f155f5",
+          "subject": "Simplify attachment usage validation (#4799)"
+        },
+        {
+          "date": "2024-07-27",
+          "author": "kainino@chromium.org",
+          "hash": "c9ad3073",
+          "subject": "[editorial] Improve more language relating to limit defaults (#4780)"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "kainino@chromium.org",
+          "hash": "5107401d",
+          "subject": "[editorial] Make usage scope validation algorithmic (#4797)"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "kainino@chromium.org",
+          "hash": "82e8506f",
+          "subject": "Link to [=implementation-defined=] (#4793)"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "kainino@chromium.org",
+          "hash": "cf7648d7",
+          "subject": "Change mapAsync to reject with AbortError on device loss (#4785)"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "kainino@chromium.org",
+          "hash": "ea7d6f2b",
+          "subject": "Remove mentions of multithreaded API (#4794)"
+        },
+        {
+          "date": "2024-07-26",
+          "author": "kainino@chromium.org",
+          "hash": "db8f3ebc",
+          "subject": "Reject requestDevice() if the adapter has already been used (#4789)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "177c640f",
+          "subject": "Add `texture-compression-bc-sliced-3d` (#4763)"
+        },
+        {
+          "date": "2024-07-25",
+          "author": "kainino@chromium.org",
+          "hash": "7662b4a2",
+          "subject": "If any vertex is OOB, the whole draw call may behave as OOB (#4790)"
+        },
+        {
+          "date": "2024-07-24",
+          "author": "alanbaker@google.com",
+          "hash": "66cb176a",
+          "subject": "Add inverse channel transfer function (#4768)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "alanbaker@google.com",
+          "hash": "ed8839b7",
+          "subject": "Remove statement that uniformity is linear in number of tokens (#4769)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "alanbaker@google.com",
+          "hash": "6406001d",
+          "subject": "Clarify stage restrictions for IO attributes (#4765)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "7b717474",
+          "subject": "Mention any-order function definition in #functions, and note lack of forward decls. (#4770)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "alanbaker@google.com",
+          "hash": "c9ee7b67",
+          "subject": "Clarify inherited-from allows flushing (#4766)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "alanbaker@google.com",
+          "hash": "0734fe5e",
+          "subject": "Move overflow rules for concrete integers (#4767)"
+        },
+        {
+          "date": "2024-07-23",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "3ccb9349",
+          "subject": "Note that leading zeros are forbidden because no octals. (#4773)"
+        },
+        {
+          "date": "2024-07-22",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "acccc1d5",
+          "subject": "Clarify counting of case values for their maximum limit. (#4758)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "28601907+teoxoy@users.noreply.github.com",
+          "hash": "22799a4f",
+          "subject": "require `module` to be \"valid to use with\" `device` (#4762)"
+        },
+        {
+          "date": "2024-07-18",
           "author": "bajones@chromium.org",
-          "hash": "40a69c85",
-          "subject": "Update viewport depth range validation (#4730)"
+          "hash": "f46b3f0e",
+          "subject": "Resolve editorial note for rasterization points (#4753)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "kainino@chromium.org",
+          "hash": "d7515307",
+          "subject": "Fix some language which ignores that limits get clamped to defaults (#4760)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "kainino@chromium.org",
+          "hash": "bd8cf6c7",
+          "subject": "Suppress error generation in create*PipelineAsync, clarify async steps (#4752)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "28601907+teoxoy@users.noreply.github.com",
+          "hash": "fc2515f6",
+          "subject": "add missing \"valid to use with\" checks to `GPURenderPassDescriptor` Valid Usage (#4757)"
+        },
+        {
+          "date": "2024-07-18",
+          "author": "bajones@chromium.org",
+          "hash": "dab35d2b",
+          "subject": "bgra8unorm-storage only enables write-only (#4741)"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "kainino@chromium.org",
+          "hash": "5fd02330",
+          "subject": "fix formatting in push-constants.md"
+        },
+        {
+          "date": "2024-07-17",
+          "author": "bajones@chromium.org",
+          "hash": "9822384d",
+          "subject": "Resolve line rasterization editorial note (#4754)"
+        },
+        {
+          "date": "2024-07-16",
+          "author": "kainino@chromium.org",
+          "hash": "fea695fb",
+          "subject": "Add alt text to CSS \"content\" (#4751)"
+        },
+        {
+          "date": "2024-07-13",
+          "author": "shaobo.yan@intel.com",
+          "hash": "97f7abe6",
+          "subject": "Push constant proposal (#4612)"
+        },
+        {
+          "date": "2024-07-12",
+          "author": "bajones@chromium.org",
+          "hash": "526db06d",
+          "subject": "Point and line primitives ignore depth bias (#4743)"
+        },
+        {
+          "date": "2024-07-12",
+          "author": "bajones@chromium.org",
+          "hash": "14ec257b",
+          "subject": "Update VideoFrames to use display size (#4740)"
+        },
+        {
+          "date": "2024-07-10",
+          "author": "jiawei.shao@intel.com",
+          "hash": "68ba017f",
+          "subject": "Clarify blend factors must be validated against optional features (#4739)"
+        },
+        {
+          "date": "2024-07-09",
+          "author": "bajones@chromium.org",
+          "hash": "cbe46362",
+          "subject": "Define canvas image contents when unconfigured (#4738)"
+        },
+        {
+          "date": "2024-07-08",
+          "author": "bajones@chromium.org",
+          "hash": "d90162b2",
+          "subject": "Resolve read-only depth/stencil inline issue (#4737)"
+        },
+        {
+          "date": "2024-07-08",
+          "author": "beaufortfrancois@gmail.com",
+          "hash": "222b01f6",
+          "subject": "Fix GPUBlendFactor indentation (#4736)"
+        },
+        {
+          "date": "2024-07-04",
+          "author": "alanbaker@google.com",
+          "hash": "a19b7bca",
+          "subject": "Clarify scope of pipeline creation (#4724)"
+        },
+        {
+          "date": "2024-07-04",
+          "author": "dneto@google.com",
+          "hash": "c05bc106",
+          "subject": "wgsl: Fix range of atan: starts at -pi/2, not pi/2 (#4732)"
         }
       ],
       "testlog": []
