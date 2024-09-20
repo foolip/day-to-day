@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-07-24T07:13:22.159Z",
-  "until": "2024-09-19T07:13:22.159Z",
+  "since": "2024-07-25T07:13:36.017Z",
+  "until": "2024-09-20T07:13:36.017Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -158,24 +158,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -876,7 +858,14 @@
       "name": "Compute Pressure",
       "href": "https://w3c.github.io/compute-pressure/",
       "specrepo": "https://github.com/w3c/compute-pressure",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "fc903fb",
+          "subject": "Fix #281"
+        }
+      ],
       "testlog": []
     },
     {
@@ -991,12 +980,6 @@
           "author": "marcos@marcosc.com",
           "hash": "7fb261a",
           "subject": "Editorial: fix small bs syntax mistakes (#246)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "marcos@marcosc.com",
-          "hash": "ee91210",
-          "subject": "Use credential type registry for permissions + digital credentials (#242)"
         }
       ],
       "testlog": [
@@ -1020,6 +1003,12 @@
       "specrepo": "https://github.com/w3c/webappsec-csp",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "mbrodesser@igalia.com",
+          "hash": "e872f92c8b",
+          "subject": "change <to-javascript-parent-initiated-parent-csp.html> to create securitypolicyviolation event on javascript URL execution."
+        },
         {
           "date": "2024-09-12",
           "author": "antoniosartori@chromium.org",
@@ -1079,6 +1068,60 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-09-20",
+          "author": "jkew@mozilla.com",
+          "hash": "2574834459",
+          "subject": "patch 2 - Also pass percentage basis when computing intrinsic contribution for fieldset contents."
+        },
+        {
+          "date": "2024-09-20",
+          "author": "tlin@mozilla.com",
+          "hash": "148f239a0e",
+          "subject": "Pass percentage basis when computing intrinsic contribution for button control's inner frame."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "emilio@crisal.io",
+          "hash": "0a477cb81a",
+          "subject": "Make sure visited style computation color-scheme matches unvisited style."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "emilio@crisal.io",
+          "hash": "c6483acf38",
+          "subject": "Make CSS zoom apply to themed widgets properly."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "boris.chiou@gmail.com",
+          "hash": "8169e18c02",
+          "subject": "Floor right/bottom values of inset()/rect() to make sure that width and height of the rectangle are valid."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "tlin@mozilla.com",
+          "hash": "07506cf82b",
+          "subject": "Part 2 - Mark a flex item's intrinsic inline size dirty if we override its block size."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "tlin@mozilla.com",
+          "hash": "36cb3f3635",
+          "subject": "Part 1 - Apply min & max constraints only if block-size is definite in ComputeBSizeValueAsPercentageBasis()."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "mrobinson@igalia.com",
+          "hash": "7b75c979ed",
+          "subject": "layout: Ensure that `<caption>`'s support `position: relative`"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "futhark@chromium.org",
+          "hash": "65e6522813",
+          "subject": "[@container] Add parsing tests for scroll-state(overflowing)"
+        },
         {
           "date": "2024-09-18",
           "author": "kbabbitt@microsoft.com",
@@ -3202,48 +3245,6 @@
           "author": "dbaron@chromium.org",
           "hash": "a725b74bc8",
           "subject": "Remove tentative from filenames of calc-size() tests."
-        },
-        {
-          "date": "2024-07-25",
-          "author": "dbaron@chromium.org",
-          "hash": "c7e66b8135",
-          "subject": "Add support for calc-size() and interpolate-size to flex-basis."
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "232390587e",
-          "subject": "[css-grid-2][masonry] Create variants for opposite masonry axis"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "4f3f92b797",
-          "subject": "[css-grid-3][masonry] Add track sizing tests with fixed widths"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "b33b93de37",
-          "subject": "[css-grid-2][masonry][editorial] Improve test labels"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "88115264b2",
-          "subject": "[css-grid-2][masonry] Use reverse spans for some tests"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "tkent@chromium.org",
-          "hash": "2c86d4806e",
-          "subject": "css-anchor-position: Fix inset-area behavior in the sideways-lr wirting-mode"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "valadaptive@protonmail.com",
-          "hash": "b839367eb1",
-          "subject": "Add WPT tests for box-sizing with aspect-ratio"
         }
       ]
     },
@@ -3525,12 +3526,6 @@
           "author": "futhark@chromium.org",
           "hash": "f6cce903f4",
           "subject": "Store old style for animating ::backdrop on anchored elements"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "tkent@chromium.org",
-          "hash": "2c86d4806e",
-          "subject": "css-anchor-position: Fix inset-area behavior in the sideways-lr wirting-mode"
         }
       ]
     },
@@ -3898,6 +3893,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-09-19",
+          "author": "chris@w3.org",
+          "hash": "bb2b151d7",
+          "subject": "[css-color-5][editorial] wpt"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "chris@w3.org",
+          "hash": "6afe8a1e8",
+          "subject": "[css-color-5] Added contrast-color() to the color type definition"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "chris@w3.org",
+          "hash": "6ba8887dd",
+          "subject": "[css-color-5][editorial] Mention contrast-color() in intro"
+        },
+        {
           "date": "2024-09-17",
           "author": "chris@w3.org",
           "hash": "49b0701d1",
@@ -3956,12 +3969,6 @@
           "author": "chris@w3.org",
           "hash": "f6821cfa8",
           "subject": "[css-color-4][editorial] WPT needed for quirky hex colors"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "chris@w3.org",
-          "hash": "8995e6043",
-          "subject": "[css-color-4][editorial] wpt"
         }
       ],
       "testlog": [
@@ -4028,6 +4035,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "emilio@crisal.io",
+          "hash": "0a477cb81a",
+          "subject": "Make sure visited style computation color-scheme matches unvisited style."
+        },
         {
           "date": "2024-09-06",
           "author": "futhark@chromium.org",
@@ -4140,27 +4153,15 @@
           "author": "gui.lebas@gmail.com",
           "hash": "580f755b5",
           "subject": "[css-conditional-3] supports() must return false for invalid custom property value"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "fd@tidoust.net",
-          "hash": "8c597b103",
-          "subject": "[css-conditional-3] Fix Web IDL, `bool` should have been `boolean`"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "chris@w3.org",
-          "hash": "a024dd4f8",
-          "subject": "[css-conditional-3] Clarified that a processor must support both the property and the value #8795"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "chris@w3.org",
-          "hash": "7f539cfe2",
-          "subject": "[css-conditional-3][editorial] Update changes"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "futhark@chromium.org",
+          "hash": "65e6522813",
+          "subject": "[@container] Add parsing tests for scroll-state(overflowing)"
+        },
         {
           "date": "2024-09-18",
           "author": "futhark@chromium.org",
@@ -4492,20 +4493,7 @@
       "href": "https://drafts.csswg.org/css-exclusions/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-07-24",
-          "author": "alkor.sx@gmail.com",
-          "hash": "ee1d13728",
-          "subject": "[css-exclusions-1]  Fix spurious / in <img> (#10603)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "alkor.sx@gmail.com",
-          "hash": "6685aa173",
-          "subject": "[css-exclusions-1] Fix bikeshed errors (#10604)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -4974,30 +4962,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "a7992ef67d",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=277086 (#47294)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "232390587e",
-          "subject": "[css-grid-2][masonry] Create variants for opposite masonry axis"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "4f3f92b797",
-          "subject": "[css-grid-3][masonry] Add track sizing tests with fixed widths"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "b33b93de37",
-          "subject": "[css-grid-2][masonry][editorial] Improve test labels"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "88115264b2",
-          "subject": "[css-grid-2][masonry] Use reverse spans for some tests"
         }
       ]
     },
@@ -5365,6 +5329,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "boris.chiou@gmail.com",
+          "hash": "8169e18c02",
+          "subject": "Floor right/bottom values of inset()/rect() to make sure that width and height of the rectangle are valid."
+        },
         {
           "date": "2024-09-17",
           "author": "jonathanjlee@google.com",
@@ -6367,6 +6337,30 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-20",
+          "author": "jkew@mozilla.com",
+          "hash": "2574834459",
+          "subject": "patch 2 - Also pass percentage basis when computing intrinsic contribution for fieldset contents."
+        },
+        {
+          "date": "2024-09-20",
+          "author": "tlin@mozilla.com",
+          "hash": "148f239a0e",
+          "subject": "Pass percentage basis when computing intrinsic contribution for button control's inner frame."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "tlin@mozilla.com",
+          "hash": "07506cf82b",
+          "subject": "Part 2 - Mark a flex item's intrinsic inline size dirty if we override its block size."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "tlin@mozilla.com",
+          "hash": "36cb3f3635",
+          "subject": "Part 1 - Apply min & max constraints only if block-size is definite in ComputeBSizeValueAsPercentageBasis()."
+        },
+        {
           "date": "2024-09-10",
           "author": "sakhapov@chromium.org",
           "hash": "3e32940a62",
@@ -6437,12 +6431,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "e5eb18b710",
           "subject": "[layout] Support min-height:min-content/etc on replaced elements."
-        },
-        {
-          "date": "2024-07-24",
-          "author": "valadaptive@protonmail.com",
-          "hash": "b839367eb1",
-          "subject": "Add WPT tests for box-sizing with aspect-ratio"
         }
       ]
     },
@@ -6509,6 +6497,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "mrobinson@igalia.com",
+          "hash": "7b75c979ed",
+          "subject": "layout: Ensure that `<caption>`'s support `position: relative`"
+        },
         {
           "date": "2024-09-11",
           "author": "tlin@mozilla.com",
@@ -7121,12 +7115,6 @@
           "author": "dbaron@chromium.org",
           "hash": "a725b74bc8",
           "subject": "Remove tentative from filenames of calc-size() tests."
-        },
-        {
-          "date": "2024-07-25",
-          "author": "dbaron@chromium.org",
-          "hash": "c7e66b8135",
-          "subject": "Add support for calc-size() and interpolate-size to flex-basis."
         }
       ]
     },
@@ -7416,6 +7404,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "emilio@crisal.io",
+          "hash": "c6483acf38",
+          "subject": "Make CSS zoom apply to themed widgets properly."
+        },
         {
           "date": "2024-09-13",
           "author": "emilio@crisal.io",
@@ -7985,6 +7979,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "de3a117f02",
+          "subject": "Temporal: Update tests to account for use of year in ToTemporalMonthDay"
+        },
+        {
           "date": "2024-09-10",
           "author": "pchimento@igalia.com",
           "hash": "6f8f6b5261",
@@ -8007,18 +8007,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "dcaed0523c",
           "subject": "Allow implementation-defined behaviour for constraining leap months"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "ftang@chromium.org",
-          "hash": "12416e0fa9",
-          "subject": "Add tests for DurationFormat PR 172 and 167"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "trflynn89@pm.me",
-          "hash": "d8aa2e4ef7",
-          "subject": "Update NumberFormat.prototype.useGrouping test for CLDR 45"
         }
       ]
     },
@@ -8503,18 +8491,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "a238ad6a1e",
           "subject": "Move test for dates before start of the Japanese era into a new file"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "9728696+ioannad@users.noreply.github.com",
-          "hash": "18ebac8122",
-          "subject": " RAB: Integrate staging tests for the .reverse method (#4160)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "9728696+ioannad@users.noreply.github.com",
-          "hash": "1dd1b91d14",
-          "subject": "RAB: Integrate staging tests for the .reduceRight method (#4157)"
         }
       ]
     },
@@ -8572,6 +8548,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "annevk@annevk.nl",
+          "hash": "06682bd354",
+          "subject": "Encoding: GB18030-2022 encode"
+        },
         {
           "date": "2024-09-17",
           "author": "v.r.roriz@gmail.com",
@@ -8766,24 +8748,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -8882,24 +8846,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -8998,24 +8944,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9114,24 +9042,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9230,24 +9140,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9346,24 +9238,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9462,24 +9336,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9578,24 +9434,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9694,24 +9532,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9810,24 +9630,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -9926,24 +9728,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -10042,24 +9826,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -10158,24 +9924,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -10871,6 +10619,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-09-19",
+          "author": "annevk@annevk.nl",
+          "hash": "236e0557",
+          "subject": "Update 2D canvas color serialization"
+        },
+        {
           "date": "2024-09-18",
           "author": "atkinssj@gmail.com",
           "hash": "11b966f7",
@@ -11031,15 +10785,21 @@
           "author": "jbroman@chromium.org",
           "hash": "853c831f",
           "subject": "Overhaul exception reporting algorithms"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "annevk@annevk.nl",
-          "hash": "4f3ac961",
-          "subject": "Make navigation.navigate() use UTF-8 in the URL parser"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-20",
+          "author": "jonathanjlee@google.com",
+          "hash": "707a73f3a6",
+          "subject": "Assert relative changes in `history.length` in `same-url.html`"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dizhangg@chromium.org",
+          "hash": "a154a3a391",
+          "subject": "Revert subtests removal for selection-direction.tentative.html (#48267)"
+        },
         {
           "date": "2024-09-17",
           "author": "jarhar@chromium.org",
@@ -11645,12 +11405,6 @@
           "author": "weizmangal@gmail.com",
           "hash": "25d35432a3",
           "subject": "Shadow DOM Leaks (Selection API) (#47024)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "dom@chromium.org",
-          "hash": "aaebcf1563",
-          "subject": "HTML: Test that removing src attr does not execute script"
         }
       ]
     },
@@ -11974,12 +11728,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "25ab53bff7",
           "subject": "Extend IDBIndex.openKeyCursor() to workers. (#47391)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "garimachadha@microsoft.com",
-          "hash": "bc4ee2a313",
-          "subject": "IDB WPTs: Expand IDBObjectStore.createIndex() to run on workers"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -12215,24 +11963,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -12343,12 +12073,6 @@
           "author": "d.p.carlisle@gmail.com",
           "hash": "b7eb63d",
           "subject": "handle autofocus like nonce and tabindex for #258"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "fwang@igalia.com",
-          "hash": "0bacaf4",
-          "subject": "Use shorthand padding-line for mfrac's rule in User Agent stylesheet closes #251"
         }
       ],
       "testlog": []
@@ -12375,12 +12099,6 @@
           "author": "chris@chrisneedham.com",
           "hash": "7b2baaf",
           "subject": "Update references to EME terms"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "chris.needham@bbc.co.uk",
-          "hash": "a5b96e1",
-          "subject": "Minor editorial tweak to spatialRendering definition"
         }
       ],
       "testlog": []
@@ -12455,6 +12173,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-19",
+          "author": "jib@mozilla.com",
+          "hash": "7e5dfb8e9e",
+          "subject": "Update WPT MediaStreamTrack-getSettings.https.html to verify deviceId & groupId of initial gUM call."
+        },
+        {
           "date": "2024-08-06",
           "author": "jib@mozilla.com",
           "hash": "4cf1a16e8b",
@@ -12482,6 +12206,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "chris@w3.org",
+          "hash": "76315964b",
+          "subject": "[mediaqueries-5][editorial] Clarify changes between MQ4 and FPWD, fix #10864"
+        },
         {
           "date": "2024-09-17",
           "author": "lwarlow@igalia.com",
@@ -12895,24 +12625,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13011,24 +12723,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13127,24 +12821,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13243,24 +12919,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13359,24 +13017,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13475,24 +13115,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13591,24 +13213,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13707,24 +13311,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13823,24 +13409,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -13861,6 +13429,24 @@
           "author": "mail@backkem.me",
           "hash": "0aacae1",
           "subject": "Fixed small cddl typo"
+        },
+        {
+          "date": "2024-08-05",
+          "author": "wei4.wang@intel.com",
+          "hash": "6450cc2",
+          "subject": "Resolve comments."
+        },
+        {
+          "date": "2024-08-01",
+          "author": "wei4.wang@intel.com",
+          "hash": "e1a45c8",
+          "subject": "Fix error."
+        },
+        {
+          "date": "2024-08-01",
+          "author": "wei4.wang@intel.com",
+          "hash": "ebe4912",
+          "subject": "Fix CDDL bug."
         },
         {
           "date": "2024-07-30",
@@ -13994,24 +13580,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -14132,14 +13700,7 @@
       "name": "Permissions Policy",
       "href": "https://w3c.github.io/webappsec-permissions-policy/",
       "specrepo": "https://github.com/w3c/webappsec-permissions-policy",
-      "speclog": [
-        {
-          "date": "2024-07-24",
-          "author": "simon.hangl@student.uibk.ac.at",
-          "hash": "f15a454",
-          "subject": "Add all-screens-capture permissions policy (#553)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-09-18",
@@ -14799,6 +14360,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-19",
+          "author": "dizhangg@chromium.org",
+          "hash": "a154a3a391",
+          "subject": "Revert subtests removal for selection-direction.tentative.html (#48267)"
+        },
+        {
           "date": "2024-08-22",
           "author": "dizhangg@chromium.org",
           "hash": "aa1420c6ec",
@@ -14975,6 +14542,12 @@
       "href": "https://wicg.github.io/shared-storage/",
       "specrepo": "https://github.com/WICG/shared-storage",
       "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "cammie@chromium.org",
+          "hash": "6e4e02a",
+          "subject": "[spec] Specify module map is global scope's relevant settings object's"
+        },
         {
           "date": "2024-09-18",
           "author": "cammie@chromium.org",
@@ -15203,14 +14776,7 @@
           "subject": "Explain more context on the target_hint field"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-07-24",
-          "author": "domenic@chromium.org",
-          "hash": "16a0c5a3a2",
-          "subject": "Do not fire popstate during No-Vary-Search prerender activation"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Speech API",
@@ -15599,6 +15165,150 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "d932d5ac",
+          "subject": "Update test262"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "ec99eb9c",
+          "subject": "Editorial: Document the possibility of inspecting other fields to verify internal consistency in CalendarResolveFields"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "6d530446",
+          "subject": "Editorial: Clarify non-ISO validation within and across monthCode/month and year/era+eraYear"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "538b06c6",
+          "subject": "Polyfill: Let resolveNonLunisolarMonth handle year/era/eraYear validation"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "487d272c",
+          "subject": "Editorial: Document the possibility of a RangeError from CalendarResolveFields"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "fab32c40",
+          "subject": "Polyfill: Enforce consistency of era + eraYear vs. year and (where relevant) monthCode vs. month in non-ISO calendars"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "3685b60d",
+          "subject": "Editorial: Recommend never ignoring a specified year in CalendarMonthDayToISOReferenceDate"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "richard.gibson@gmail.com",
+          "hash": "2b916d84",
+          "subject": "Editorial: Align some calendar text"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "8a1d4290",
+          "subject": "emu-format: Add CI job"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "042e4185",
+          "subject": "emu-format: Add package script to run 'npm format'"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "c39f3786",
+          "subject": "Editorial: Change FormatDateTimePattern to not return Completion Record"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "a4fff388",
+          "subject": "emu-format: Indentation"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "056db7fa",
+          "subject": "emu-format: Various"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "c2b54781",
+          "subject": "emu-format: <ins> sticks to the text that it inserts"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "65030301",
+          "subject": "emu-format: Trailing commas in argument lists"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "02ae1828",
+          "subject": "emu-format: Rewrap some things"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "45c242e4",
+          "subject": "emu-format: Structured header declarations with no args go on one line"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "143b45aa",
+          "subject": "emu-format: Single-line <p>s have the elements on the same line, others don't"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "b899b44c",
+          "subject": "emu-format: Replace unambiguous &gt; with >"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "6914ec0e",
+          "subject": "emu-format: Add blank lines around <emu-clause>"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "9e841b3e",
+          "subject": "emu-format: Remove <tbody> elements"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "235dfc92",
+          "subject": "emu-format: Put quotes around HTML attributes"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "63870851",
+          "subject": "emu-format: Capitalize doctype declarations"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "pchimento@igalia.com",
+          "hash": "9b997b44",
+          "subject": "Update packages to quiet security issue warnings"
+        },
         {
           "date": "2024-09-18",
           "author": "richard.gibson@gmail.com",
@@ -16048,12 +15758,6 @@
           "author": "30862698+otherdaniel@users.noreply.github.com",
           "hash": "11ee78cd47",
           "subject": "parseHTMLUnsafe has only one parameter (#47272)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "lwarlow@igalia.com",
-          "hash": "7def7eee73",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=276881 (#47228)"
         }
       ]
     },
@@ -16331,12 +16035,6 @@
           "author": "kleber@google.com",
           "hash": "71ade67",
           "subject": "Create 2024-07-24-FLEDGE-call-minutes.md"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "JensenPaul@users.noreply.github.com",
-          "hash": "4417b49",
-          "subject": "Rename FLEDGE to Protected Audience in B&A explainer"
         }
       ],
       "testlog": []
@@ -17411,6 +17109,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-19",
+          "author": "paul@paul.cx",
+          "hash": "3939cbfd54",
+          "subject": "Add more tests about h264 codec strings."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "paul@paul.cx",
+          "hash": "3416ef9920",
+          "subject": "Add a test for flac decoding."
+        },
+        {
+          "date": "2024-09-19",
+          "author": "paul@paul.cx",
+          "hash": "a13b4c62a7",
+          "subject": "Reject opus decoding without description when there's more than 2 channels."
+        },
+        {
           "date": "2024-09-13",
           "author": "paul@paul.cx",
           "hash": "e96216681e",
@@ -17935,6 +17651,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-19",
+          "author": "jfernandez@igalia.com",
+          "hash": "203d2ac459",
+          "subject": "Split up X25519 and X448 tests (#48195)"
+        },
+        {
           "date": "2024-09-18",
           "author": "jfernandez@igalia.com",
           "hash": "4d67f35a4d",
@@ -17970,8 +17692,27 @@
       "name": "WebDriver",
       "href": "https://w3c.github.io/webdriver/",
       "specrepo": "https://github.com/w3c/webdriver",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "alexnj@google.com",
+          "hash": "91b29b2",
+          "subject": "Export \"local end\" dfn"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2024-09-20",
+          "author": "jdescottes@mozilla.com",
+          "hash": "48771115c3",
+          "subject": "[wdspec] Update several network bidi tests to assert timings"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "69349599+sadym-chromium@users.noreply.github.com",
+          "hash": "eb1576923e",
+          "subject": "[WebDriver BiDi] `browsingContext.traverseHistory` only for top-level navigables (#48260)"
+        },
         {
           "date": "2024-09-17",
           "author": "69349599+sadym-chromium@users.noreply.github.com",
@@ -18196,6 +17937,60 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2024-09-19",
+          "author": "mail@hskupin.info",
+          "hash": "bae0807",
+          "subject": "Fix \"browser.setClientWindowRect\" references to \"browser.setClientWindowState\""
+        },
+        {
+          "date": "2024-09-19",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "d620065",
+          "subject": "Support setting client window state (#752)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "cffdb79",
+          "subject": "Bump actions/setup-node from 3 to 4 (#782)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "d1fba17",
+          "subject": "Bump actions/upload-artifact from 3 to 4 (#783)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "11356a3",
+          "subject": "Bump pre-commit/action from 3.0.0 to 3.0.1 (#784)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "81dbe53",
+          "subject": "Bump actions/cache from 3 to 4 (#781)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "3504946",
+          "subject": "Bump actions/setup-python from 3 to 5 (#780)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "james@hoppipolla.co.uk",
+          "hash": "44aed71",
+          "subject": "Add a dependabot configuration to update actions (#779)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "sadym@chromium.org",
+          "hash": "57dc738",
+          "subject": "Update `browsingContext.traverseHistory`"
+        },
+        {
           "date": "2024-09-06",
           "author": "jeremy@jeremyroman.com",
           "hash": "0575bf7",
@@ -18304,24 +18099,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -18420,24 +18197,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -18536,24 +18295,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -18652,24 +18393,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -18768,24 +18491,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -18884,24 +18589,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19000,24 +18687,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19116,24 +18785,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19232,24 +18883,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19348,24 +18981,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19464,24 +19079,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19580,24 +19177,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19696,24 +19275,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19812,24 +19373,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -19928,24 +19471,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -20044,24 +19569,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -20160,24 +19667,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -20276,24 +19765,6 @@
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "9186c30fd",
           "subject": "Clarify clear value for depth buffers is 1.0 for invalidateFramebuffer and invalidateSubFramebuffer. (#3664)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "kelsey.gilbert@mozilla.com",
-          "hash": "2d0e7f879",
-          "subject": "Tolerate throws in wasm/* tests, add 2gb-in-4gb variants. (#3665)"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "0ee1bedc1",
-          "subject": "Fix conformance/rendering/blending for WebGL 1.0 (#3671)"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "3479527+lexaknyazev@users.noreply.github.com",
-          "hash": "7cbaa0be5",
-          "subject": "Add drawingBufferStorage to known context methods (#3670)"
         }
       ],
       "testlog": []
@@ -20319,6 +19790,36 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "e0129f00",
+          "subject": "subgroups: fix quadSwap* issues (#4889)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "dc532620",
+          "subject": "wgsl: clarify inherited-from accuracy applies after fp rules and shortcuts (#4888)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "53843297",
+          "subject": "wgsl: vertex position.w = 0 is a dynamic error (#4887)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "alanbaker@google.com",
+          "hash": "a9b1fa00",
+          "subject": "Add derivatives to accuracy table (#4884)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "513c9ad3",
+          "subject": "wgsl: reserve 'noncoherent' and 'non_coherent' (#4886)"
+        },
         {
           "date": "2024-09-18",
           "author": "jrprice@google.com",
@@ -20897,6 +20398,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-09-20",
+          "author": "shiyi.zou@intel.com",
+          "hash": "d2a48b9455",
+          "subject": "webnn: implement `gatherND` for DirectML backend"
+        },
+        {
+          "date": "2024-09-20",
+          "author": "shanxing.mei@intel.com",
+          "hash": "1c057b9f7d",
+          "subject": "webnn: Implement buildGraphAndCompute and add two operators' tests"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "shiyi.zou@intel.com",
+          "hash": "1fb26373ff",
+          "subject": "webnn: add IDL and mojo definition of `gatherND`"
+        },
+        {
           "date": "2024-09-19",
           "author": "ningxin.hu@intel.com",
           "hash": "406412f64e",
@@ -21231,24 +20750,6 @@
           "author": "feng.dai@intel.com",
           "hash": "6a7911e50b",
           "subject": "webnn: refactor WebNN API conformance tests infrastructure"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "bin.miao@intel.com",
-          "hash": "52c7abb89a",
-          "subject": "WebNN: Change the auto in MLPowerPreference to default"
-        },
-        {
-          "date": "2024-07-25",
-          "author": "asully@chromium.org",
-          "hash": "b7777fabd7",
-          "subject": "webnn: Allow an MLGraphBuilder to build at most one MLGraph"
-        },
-        {
-          "date": "2024-07-24",
-          "author": "shiyi.zou@intel.com",
-          "hash": "7238d690d6",
-          "subject": "webnn: add support limits for `elu` `gelu` `leakyRelu` and `relu`"
         }
       ]
     },
@@ -21283,6 +20784,18 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2024-09-12",
+          "author": "dom@w3.org",
+          "hash": "bfa87684",
+          "subject": "Adapt to updated amendment management system"
+        },
+        {
+          "date": "2024-09-12",
+          "author": "dom@w3.org",
+          "hash": "3c0350f2",
+          "subject": "Make data channels transferable to DedicatedWorker"
+        },
         {
           "date": "2024-09-11",
           "author": "dom@w3.org",
@@ -21483,6 +20996,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-09-19",
+          "author": "dom@w3.org",
+          "hash": "6753496815",
+          "subject": "Move tests for transferable WebRTC data channel to main spec directory (#47707)"
+        },
         {
           "date": "2024-09-16",
           "author": "philipp.hancke@googlemail.com",
@@ -21888,6 +21407,36 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "e0129f00",
+          "subject": "subgroups: fix quadSwap* issues (#4889)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "dc532620",
+          "subject": "wgsl: clarify inherited-from accuracy applies after fp rules and shortcuts (#4888)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "53843297",
+          "subject": "wgsl: vertex position.w = 0 is a dynamic error (#4887)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "alanbaker@google.com",
+          "hash": "a9b1fa00",
+          "subject": "Add derivatives to accuracy table (#4884)"
+        },
+        {
+          "date": "2024-09-19",
+          "author": "dneto@google.com",
+          "hash": "513c9ad3",
+          "subject": "wgsl: reserve 'noncoherent' and 'non_coherent' (#4886)"
+        },
         {
           "date": "2024-09-18",
           "author": "jrprice@google.com",
