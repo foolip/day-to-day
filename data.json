@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-08-06T07:13:26.960Z",
-  "until": "2024-10-02T07:13:26.960Z",
+  "since": "2024-08-07T07:13:40.146Z",
+  "until": "2024-10-03T07:13:40.146Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -63,6 +63,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -134,6 +140,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "80365263+linnan-github@users.noreply.github.com",
+          "hash": "dae2460",
+          "subject": "Add source and trigger registration links for attribution scopes example (#1445)"
+        },
         {
           "date": "2024-09-27",
           "author": "80365263+linnan-github@users.noreply.github.com",
@@ -859,12 +871,6 @@
           "author": "pastith@gmail.com",
           "hash": "e48251b778",
           "subject": "Revert WebDriver BiDi support in Chrome (#47589)"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "69349599+sadym-chromium@users.noreply.github.com",
-          "hash": "3e5f0133b4",
-          "subject": "automate console-count-logging test (#47478)"
         }
       ]
     },
@@ -1016,6 +1022,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "5e053f07dd",
+          "subject": "[flex] Avoid layout when determining the intrinsic block-size."
+        },
+        {
+          "date": "2024-10-02",
+          "author": "109102217+mdubet@users.noreply.github.com",
+          "hash": "f15e421f79",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=256180 (#48426)"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "chromium@keithcirkel.co.uk",
+          "hash": "9cfac9133a",
+          "subject": "Implement :has-slotted pseudo class"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "fs@opera.com",
+          "hash": "0868167e97",
+          "subject": "Make SVGImage::CurrentFrameHasSingleSecurityOrigin() less strict"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "e0b6a56c1f",
+          "subject": "Fix closing tags in dir-pseudo-on-input-element.html"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "nrosenthal@chromium.org",
+          "hash": "37b6a4dcb6",
+          "subject": "CSS view transitions: non-normal implies containment"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "rbuis@igalia.com",
+          "hash": "a6ca36f60c",
+          "subject": "Make it more clear these tests are about ::search-text (#48401)"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "blee@igalia.com",
+          "hash": "b40c843d18",
+          "subject": "Support `:host:has()`"
+        },
         {
           "date": "2024-10-01",
           "author": "kojii@chromium.org",
@@ -2857,78 +2911,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "c0b10b3c62",
           "subject": "Nested view transition: reparent & render"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "dshin@mozilla.com",
-          "hash": "03e72719fb",
-          "subject": "Let the @scope root search cross the shadow boundary if ::part selector is used."
-        },
-        {
-          "date": "2024-08-07",
-          "author": "ethavar@microsoft.com",
-          "hash": "888cac0054",
-          "subject": "[Masonry] Add masonry display type"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "abotella@igalia.com",
-          "hash": "7d8aa0fde8",
-          "subject": "[line-clamp] Allow clamp points after IFCs"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "77e23056da",
-          "subject": "[layout] Fix some abspos min-height:min-content/etc cases."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "a03147c1dd",
-          "subject": "[layout] Support min-height:min-content in more general case."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "dada8b5382",
-          "subject": "[layout] Rework block-size aspect-ratio logic."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "d6ad00a8aa",
-          "subject": "[layout] Rework inline-size aspect-ratio logic."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "kevers@google.com",
-          "hash": "ff0aa4bbf5",
-          "subject": "Fix crash when animating flexBasis content"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "philip@foolip.org",
-          "hash": "e006d44bd3",
-          "subject": "Add fuzzy metadata for conic gradient tests (#47480)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "masonf@chromium.org",
-          "hash": "53382863c6",
-          "subject": "Rename inset-area to position-area"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "obrufau@igalia.com",
-          "hash": "165162b51f",
-          "subject": "Accept 'cursor' on ::marker pseudo-elements"
         }
       ]
     },
@@ -3216,12 +3198,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "e42b86c7d9",
           "subject": "[layout] Process top-layer elements last in OutOfFlowLayoutPart."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "masonf@chromium.org",
-          "hash": "53382863c6",
-          "subject": "Rename inset-area to position-area"
         }
       ]
     },
@@ -3363,12 +3339,6 @@
           "author": "simon.fraser@apple.com",
           "hash": "10dff6a1bd",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=277842"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
         }
       ]
     },
@@ -3377,7 +3347,14 @@
       "href": "https://drafts.csswg.org/css-borders/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "d3db51880",
+          "subject": "[css-shapes-2][css-borders-4] Add myself as editor"
+        }
+      ],
       "testlog": []
     },
     {
@@ -3471,6 +3448,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-10-02",
+          "author": "109102217+mdubet@users.noreply.github.com",
+          "hash": "f15e421f79",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=256180 (#48426)"
+        },
+        {
           "date": "2024-09-16",
           "author": "andruud@chromium.org",
           "hash": "08f0c2e7e7",
@@ -3505,12 +3488,6 @@
           "author": "dshin@mozilla.com",
           "hash": "27947404a7",
           "subject": "Correctly refer to current matching context's shadow root while matching implicit scopes."
-        },
-        {
-          "date": "2024-08-07",
-          "author": "dshin@mozilla.com",
-          "hash": "03e72719fb",
-          "subject": "Let the @scope root search cross the shadow boundary if ::part selector is used."
         }
       ]
     },
@@ -3760,6 +3737,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-10-02",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "5e053f07dd",
+          "subject": "[flex] Avoid layout when determining the intrinsic block-size."
+        },
+        {
           "date": "2024-09-26",
           "author": "fs@opera.com",
           "hash": "acde52a03a",
@@ -3864,12 +3847,6 @@
           "author": "tkent@chromium.org",
           "hash": "e9436897ea",
           "subject": "WebDX: Add a counter and WEB_FEATURES.yml for two-value-display"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "ethavar@microsoft.com",
-          "hash": "888cac0054",
-          "subject": "[Masonry] Add masonry display type"
         }
       ]
     },
@@ -4186,12 +4163,6 @@
           "author": "mrobinson@igalia.com",
           "hash": "4e621e6e4e",
           "subject": "layout: Non-auto `z-index` should always make stacking contexts for flex items"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "kevers@google.com",
-          "hash": "ff0aa4bbf5",
-          "subject": "Fix crash when animating flexBasis content"
         }
       ]
     },
@@ -4596,18 +4567,6 @@
           "author": "schenney@chromium.org",
           "hash": "df792a271d",
           "subject": "[WPT] Fix images-are-ignored for Firefox."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "philip@foolip.org",
-          "hash": "e006d44bd3",
-          "subject": "Add fuzzy metadata for conic gradient tests (#47480)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
         }
       ]
     },
@@ -5110,12 +5069,6 @@
           "author": "abotella@igalia.com",
           "hash": "ee5e630837",
           "subject": "[line-clamp] Fix title and assert description in line-clamp-auto-034.tentative.html"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "abotella@igalia.com",
-          "hash": "7d8aa0fde8",
-          "subject": "[line-clamp] Allow clamp points after IFCs"
         }
       ]
     },
@@ -5399,6 +5352,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-10-02",
+          "author": "rbuis@igalia.com",
+          "hash": "a6ca36f60c",
+          "subject": "Make it more clear these tests are about ::search-text (#48401)"
+        },
+        {
           "date": "2024-10-01",
           "author": "rbuis@igalia.com",
           "hash": "260920bdb8",
@@ -5409,12 +5368,6 @@
           "author": "obrufau@igalia.com",
           "hash": "a9a398ca83",
           "subject": "Fix marker-text-combine-upright.html."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "obrufau@igalia.com",
-          "hash": "165162b51f",
-          "subject": "Accept 'cursor' on ::marker pseudo-elements"
         }
       ]
     },
@@ -5501,6 +5454,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "chromium@keithcirkel.co.uk",
+          "hash": "9cfac9133a",
+          "subject": "Implement :has-slotted pseudo class"
+        },
         {
           "date": "2024-09-30",
           "author": "westbrook.johnson@gmail.com",
@@ -5715,6 +5674,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-10-02",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "d3db51880",
+          "subject": "[css-shapes-2][css-borders-4] Add myself as editor"
+        },
+        {
           "date": "2024-09-19",
           "author": "stearns@adobe.com",
           "hash": "5ebf7dfe2",
@@ -5864,18 +5829,6 @@
           "author": "ikilpatrick@chromium.org",
           "hash": "1cc5375b16",
           "subject": "[layout] Fix content-contributions of calc-size()."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "77e23056da",
-          "subject": "[layout] Fix some abspos min-height:min-content/etc cases."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "a03147c1dd",
-          "subject": "[layout] Support min-height:min-content in more general case."
         }
       ]
     },
@@ -6185,12 +6138,6 @@
           "author": "weinig@icloud.com",
           "hash": "6712652b8d",
           "subject": "Fixes test cases to allow unit cancellation in calc() to produce number values (#47897)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
         }
       ]
     },
@@ -6457,18 +6404,6 @@
           "author": "dbaron@chromium.org",
           "hash": "61863a755b",
           "subject": "Remove the 1-argument form of calc-size()."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "dada8b5382",
-          "subject": "[layout] Rework block-size aspect-ratio logic."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "d6ad00a8aa",
-          "subject": "[layout] Rework inline-size aspect-ratio logic."
         }
       ]
     },
@@ -6562,6 +6497,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "nrosenthal@chromium.org",
+          "hash": "37b6a4dcb6",
+          "subject": "CSS view transitions: non-normal implies containment"
+        },
         {
           "date": "2024-09-21",
           "author": "nrosenthal@chromium.org",
@@ -6853,12 +6794,6 @@
           "author": "emilio@crisal.io",
           "hash": "463cf20699",
           "subject": "Improve scroll{Width,Height} implementation for overflow: visible frames."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
         }
       ]
     },
@@ -7008,6 +6943,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "steimel@chromium.org",
+          "hash": "6a80672082",
+          "subject": "[document pip] Use the same compatibility mode as the opener"
+        },
         {
           "date": "2024-09-17",
           "author": "jonathanjlee@google.com",
@@ -7317,6 +7258,12 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "dbarabashdev@gmail.com",
+          "hash": "aada4084",
+          "subject": "Editorial: OrdinaryCreateFromConstructor has wrong parameter type (#3287)"
+        },
+        {
           "date": "2024-09-23",
           "author": "m.ficarra@f5.com",
           "hash": "7df8f590",
@@ -7468,6 +7415,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "richard.gibson@gmail.com",
+          "hash": "585d7ac2b3",
+          "subject": "Test TypedArrays with excess bytes in their underlying buffers"
+        },
         {
           "date": "2024-09-27",
           "author": "jlhwung@gmail.com",
@@ -7761,12 +7714,6 @@
           "author": "9728696+ioannad@users.noreply.github.com",
           "hash": "bcb42e339d",
           "subject": " RAB: Integrate staging tests for the .some method (#4175)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "marko.lahma@gmail.com",
-          "hash": "5dc04b7332",
-          "subject": "Fix TypedArray.reduce tests against RAB"
         }
       ]
     },
@@ -7939,20 +7886,19 @@
           "subject": "Fix Event Timing build errors"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-08-06",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "0c27092ff9",
-          "subject": "Don't set interaction ids to the input events when the scroll is active (#47427)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "WebGL EXT_blend_minmax Khronos Ratified Extension Specification",
       "href": "https://registry.khronos.org/webgl/extensions/EXT_blend_minmax/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8004,6 +7950,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8053,6 +8005,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_half_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8104,6 +8062,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8153,6 +8117,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query_webgl2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8204,6 +8174,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8253,6 +8229,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_frag_depth/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8304,6 +8286,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8353,6 +8341,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_sRGB/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8404,6 +8398,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8453,6 +8453,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_rgtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8504,6 +8510,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -8553,6 +8565,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -8823,12 +8841,6 @@
           "author": "averge@chromium.org",
           "hash": "0650138080",
           "subject": "Add second WPT for notifyEvent() called with a cached event."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "averge@chromium.org",
-          "hash": "dcbcbe5d29",
-          "subject": "Test that window.fence.notifyEvent won't use a cached event."
         }
       ]
     },
@@ -8909,6 +8921,18 @@
       "specrepo": "https://github.com/WICG/file-system-access",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-03",
+          "author": "lucmult@chromium.org",
+          "hash": "1da52c05cb",
+          "subject": "Revert \"FSA: Fix more manual WPTs\""
+        },
+        {
+          "date": "2024-10-03",
+          "author": "memmott@chromium.org",
+          "hash": "d22edced49",
+          "subject": "FSA: Fix more manual WPTs"
+        },
         {
           "date": "2024-09-28",
           "author": "xiaobincui@microsoft.com",
@@ -9001,6 +9025,12 @@
       "testpolicy": "https://github.com/w3c/fxtf-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "fs@opera.com",
+          "hash": "0868167e97",
+          "subject": "Make SVGImage::CurrentFrameHasSingleSecurityOrigin() less strict"
+        },
         {
           "date": "2024-09-03",
           "author": "sakhapov@chromium.org",
@@ -9201,14 +9231,7 @@
           "subject": "[geometry][editorial] fix link to css syntax security section"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-08-06",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "70e1e1205f",
-          "subject": "WebKit export: Upstream remaining tests in http/wpt/css to WPT (#47477)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Get Installed Related Apps API",
@@ -9438,21 +9461,33 @@
           "author": "masonfreed@chromium.org",
           "hash": "aef1078c",
           "subject": "Remove exception reporting from declarative shadow DOM"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "d@domenic.me",
-          "hash": "2b4f0d20",
-          "subject": "Editorial: modernize promise rejection tracking"
-        },
-        {
-          "date": "2024-08-07",
-          "author": "jbroman@chromium.org",
-          "hash": "a6071703",
-          "subject": "Update uses of Web IDL \"invoke a callback function\""
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-03",
+          "author": "zhoupeng.1996@bytedance.com",
+          "hash": "014117cf87",
+          "subject": "Revise the behavior of wpt-tests when the object element is not displayed"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "schenney@chromium.org",
+          "hash": "f458a7d714",
+          "subject": "[ExtendedTextMetrics] Fix mixed bidi caretPositionFromPoint"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "tcaptan@chromium.org",
+          "hash": "31bb067f4c",
+          "subject": "Stylable select picker typeahead should focus"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "andresrperez@chromium.org",
+          "hash": "59b9b0860c",
+          "subject": "Implement TextMetrics::getTextClusters()"
+        },
         {
           "date": "2024-10-01",
           "author": "ccameron@chromium.org",
@@ -10112,30 +10147,6 @@
           "author": "emilio@crisal.io",
           "hash": "ea3f611e8d",
           "subject": "Make insertion into non-picture elements not a relevant mutation."
-        },
-        {
-          "date": "2024-08-07",
-          "author": "emilio@crisal.io",
-          "hash": "f7e0550c80",
-          "subject": "Don't trigger src=\"\" load sync if there's no current request."
-        },
-        {
-          "date": "2024-08-07",
-          "author": "jarhar@chromium.org",
-          "hash": "3b96ae2f89",
-          "subject": "Remove selectlist-popover.tentative.html"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "jarhar@chromium.org",
-          "hash": "a290a0ceda",
-          "subject": "Remove button type=popover for select"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "jkew@mozilla.com",
-          "hash": "4342fa03b4",
-          "subject": "Add a reftest for <select> + capitalize sizing."
         }
       ]
     },
@@ -10181,12 +10192,6 @@
           "author": "cookiecrook@users.noreply.github.com",
           "hash": "35c4914772",
           "subject": "remove invalid expectations for dd, dt, associationlist, associationlistkey, associationlistvalue (#47608)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "jocelyn.tran1@gmail.com",
-          "hash": "15a3369ed2",
-          "subject": "ARIA, HTML-AAM: Update tests for new sectionheader and sectionfooter roles (#47420)"
         }
       ],
       "testpolicy": "https://github.com/w3c/html-aam/blob/HEAD/CONTRIBUTING.md"
@@ -10257,6 +10262,12 @@
       "href": "https://w3c.github.io/IFT/Overview.html",
       "specrepo": "https://github.com/w3c/IFT",
       "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "grieger@google.com",
+          "hash": "926f033",
+          "subject": "Generalize the section on WOFF2 + IFT section to any compression format. (#218)"
+        },
         {
           "date": "2024-10-01",
           "author": "grieger@google.com",
@@ -10406,6 +10417,12 @@
       "specrepo": "https://github.com/w3c/IndexedDB",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "wptsync@mozilla.com",
+          "hash": "ad4ddb1959",
+          "subject": "Avoid transaction complete event race condition."
+        },
         {
           "date": "2024-09-12",
           "author": "rahsin@microsoft.com",
@@ -10612,6 +10629,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -10891,12 +10914,6 @@
           "author": "jib@mozilla.com",
           "hash": "7e5dfb8e9e",
           "subject": "Update WPT MediaStreamTrack-getSettings.https.html to verify deviceId & groupId of initial gUM call."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "jib@mozilla.com",
-          "hash": "4cf1a16e8b",
-          "subject": "Test permissions.query() with getUserMedia."
         }
       ]
     },
@@ -10997,7 +11014,14 @@
       "href": "https://w3c.github.io/mediacapture-record/",
       "specrepo": "https://github.com/w3c/mediacapture-record",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "sunggch@microsoft.com",
+          "hash": "832a0a5292",
+          "subject": "Make BlobEvent::timecode as a difference from the first chunk of the BlobEvent."
+        }
+      ]
     },
     {
       "name": "MIME Sniffing",
@@ -11265,6 +11289,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -11314,6 +11344,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -11365,6 +11401,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -11414,6 +11456,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -11465,6 +11513,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -11514,6 +11568,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -11565,6 +11625,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -11615,6 +11681,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -11664,6 +11736,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -11805,6 +11883,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -11953,14 +12037,7 @@
       "href": "https://w3c.github.io/permissions/",
       "specrepo": "https://github.com/w3c/permissions",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-08-06",
-          "author": "jib@mozilla.com",
-          "hash": "d0622ff9bb",
-          "subject": "Update test expectations for permissions.query() on camera and microphone."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Permissions Policy",
@@ -12089,6 +12166,12 @@
       "specrepo": "https://github.com/w3c/picture-in-picture",
       "speclog": [
         {
+          "date": "2024-10-02",
+          "author": "mfoltz@google.com",
+          "hash": "09e8cc8",
+          "subject": "Update index.bs"
+        },
+        {
           "date": "2024-09-30",
           "author": "beaufort.francois@gmail.com",
           "hash": "1e1dc11",
@@ -12102,6 +12185,12 @@
       "href": "https://w3c.github.io/PNG-spec/",
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "ProgramMax@gmail.com",
+          "hash": "2cfb5ec",
+          "subject": "Add w3cids to new editors"
+        },
         {
           "date": "2024-09-30",
           "author": "ProgramMax@gmail.com",
@@ -12825,6 +12914,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-02",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "e0b6a56c1f",
+          "subject": "Fix closing tags in dir-pseudo-on-input-element.html"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "blee@igalia.com",
+          "hash": "b40c843d18",
+          "subject": "Support `:host:has()`"
+        },
         {
           "date": "2024-09-23",
           "author": "westbrook.johnson@gmail.com",
@@ -13635,6 +13736,24 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "richard.gibson@gmail.com",
+          "hash": "1c6b860e",
+          "subject": "Editorial: Fix typo"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "richard.gibson@gmail.com",
+          "hash": "357db1d5",
+          "subject": "Docs: Mention \"remapping\" for dates exceeding era year"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "richard.gibson@gmail.com",
+          "hash": "2c1e94e8",
+          "subject": "Editorial: Recommend \"remapping\" for dates exceeding era year bounds"
+        },
         {
           "date": "2024-10-01",
           "author": "pchimento@igalia.com",
@@ -15117,36 +15236,6 @@
           "author": "isaac.z.foster@gmail.com",
           "hash": "0cc7427",
           "subject": "Clarify when POST request is made (#725)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "119976429+lx3-g@users.noreply.github.com",
-          "hash": "44a00e4",
-          "subject": "docs: remove version from ohttp media type (#1243)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "kleber@google.com",
-          "hash": "a597e60",
-          "subject": "Create 2024-07-31-FLEDGE-call-minutes.md"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "119976429+lx3-g@users.noreply.github.com",
-          "hash": "4a47c6b",
-          "subject": "Add updateIfOlderThanMs to the Key Value server API explainer (#1235)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "40476544+xtlsheep@users.noreply.github.com",
-          "hash": "c6ca9f8",
-          "subject": "Add optional dataVersion field in the response schema and example. (#1241)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "e159770",
-          "subject": "Add feature detection for real time reporting (#1238)"
         }
       ],
       "testlog": []
@@ -15438,12 +15527,6 @@
           "author": "jocelyntran@google.com",
           "hash": "64330f3568",
           "subject": "Remove ex-generic selector in wai-aria/roles/contextual-roles.html (#47966)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "jocelyn.tran1@gmail.com",
-          "hash": "15a3369ed2",
-          "subject": "ARIA, HTML-AAM: Update tests for new sectionheader and sectionfooter roles (#47420)"
         }
       ]
     },
@@ -15452,6 +15535,30 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "f1e8a19b",
+          "subject": "Add a minimal Security and Privacy Considerations section to Web API (#1818)"
+        },
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "12bf474e",
+          "subject": "close dl tag to fix web API validation (#1820)"
+        },
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "97c2d67e",
+          "subject": "Fix validation errors in changelog (#1819)"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "dschuff@chromium.org",
+          "hash": "d5f58687",
+          "subject": "Add Changelog sections for JS and Web API documents (#1817)"
+        },
         {
           "date": "2024-09-30",
           "author": "dschuff@chromium.org",
@@ -15666,6 +15773,18 @@
       "testrepo": "WebAssembly/spec",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "97c2d67e",
+          "subject": "Fix validation errors in changelog (#1819)"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "dschuff@chromium.org",
+          "hash": "d5f58687",
+          "subject": "Add Changelog sections for JS and Web API documents (#1817)"
+        },
+        {
           "date": "2024-09-30",
           "author": "dschuff@chromium.org",
           "hash": "a7006179",
@@ -15704,6 +15823,30 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "testrepo": "web-platform-tests/wpt",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "f1e8a19b",
+          "subject": "Add a minimal Security and Privacy Considerations section to Web API (#1818)"
+        },
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "12bf474e",
+          "subject": "close dl tag to fix web API validation (#1820)"
+        },
+        {
+          "date": "2024-10-03",
+          "author": "dschuff@chromium.org",
+          "hash": "97c2d67e",
+          "subject": "Fix validation errors in changelog (#1819)"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "dschuff@chromium.org",
+          "hash": "d5f58687",
+          "subject": "Add Changelog sections for JS and Web API documents (#1817)"
+        },
         {
           "date": "2024-09-30",
           "author": "dschuff@chromium.org",
@@ -15879,6 +16022,48 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2024-10-02",
+          "author": "nsatragno@gmail.com",
+          "hash": "96ed2bd",
+          "subject": "Add userName and userDisplayName to webdriver"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "emil@yubico.com",
+          "hash": "fe68eae",
+          "subject": "Apply review suggestion"
+        },
+        {
+          "date": "2024-10-01",
+          "author": "emil@yubico.com",
+          "hash": "3b5a8d1",
+          "subject": "Acknowledge Zack Newman for reviews and contributions"
+        },
+        {
+          "date": "2024-10-01",
+          "author": "emil@yubico.com",
+          "hash": "9e0fe6a",
+          "subject": "Acknowledge Simone Onofri and Philippe Le Hégaret as W3C Team Contacts"
+        },
+        {
+          "date": "2024-09-27",
+          "author": "15947783+zacknewman@users.noreply.github.com",
+          "hash": "ae49b82",
+          "subject": "Fix CredentialRequestOptions hyperlink"
+        },
+        {
+          "date": "2024-09-27",
+          "author": "emil@yubico.com",
+          "hash": "2e2e3c6",
+          "subject": "Deprecate rp.name"
+        },
+        {
+          "date": "2024-09-25",
+          "author": "agl@chromium.org",
+          "hash": "bcd428d",
+          "subject": "Mark Android SafetyNet attestation as deprecated."
+        },
         {
           "date": "2024-09-24",
           "author": "mmiller@duosecurity.com",
@@ -16148,12 +16333,6 @@
           "author": "15947783+zacknewman@users.noreply.github.com",
           "hash": "9bb78e4",
           "subject": "Specify topOrigin is optional in the defintions."
-        },
-        {
-          "date": "2024-08-06",
-          "author": "mmiller@duosecurity.com",
-          "hash": "a5a12f6",
-          "subject": "Move position of `id` to match non-JSON ordering"
         }
       ],
       "testlog": [
@@ -16820,6 +16999,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-10-02",
+          "author": "jdescottes@mozilla.com",
+          "hash": "f3219a5f07",
+          "subject": "[wdspec] Update test network/add_intercept/contexts.py to use new tab for each test"
+        },
+        {
+          "date": "2024-10-02",
+          "author": "mail@hskupin.info",
+          "hash": "cb1029932c",
+          "subject": "[wdspec] Extend navigation tests for document.write in sandboxes."
+        },
+        {
+          "date": "2024-10-02",
+          "author": "aborovova@mozilla.com",
+          "hash": "14d2ba6f15",
+          "subject": "[wdspec] Add tests for network events for cached javascript files."
+        },
+        {
           "date": "2024-10-01",
           "author": "mail@hskupin.info",
           "hash": "22623a0f98",
@@ -17089,12 +17286,6 @@
           "author": "jeremy@jeremyroman.com",
           "hash": "0575bf7",
           "subject": "Replace HTML's \"report the exception\" with \"report an exception\". (#758)"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "james@hoppipolla.co.uk",
-          "hash": "287e9c6",
-          "subject": "Add a note pointing to WebDriver to understand actions"
         }
       ],
       "testlog": []
@@ -17104,6 +17295,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17155,6 +17352,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17204,6 +17407,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17255,6 +17464,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17304,6 +17519,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17355,6 +17576,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17404,6 +17631,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17455,6 +17688,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17504,6 +17743,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17555,6 +17800,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17604,6 +17855,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17655,6 +17912,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17704,6 +17967,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17755,6 +18024,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17804,6 +18079,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17855,6 +18136,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17905,6 +18192,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
+        {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "0f39befc1",
@@ -17954,6 +18247,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2024-10-03",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "078e289a0",
+          "subject": "Annotate \"[buffered] \" logs, and flush on finishTest, not just testFailed. (#3694)"
+        },
         {
           "date": "2024-09-26",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18848,12 +19147,6 @@
           "author": "mingming1.xu@intel.com",
           "hash": "2d8dac31b6",
           "subject": "WebNN: Define `MLContext::destroy` interface"
-        },
-        {
-          "date": "2024-08-06",
-          "author": "lisha.guo@intel.com",
-          "hash": "470deeb12f",
-          "subject": "webnn: add WPT tests to cover the label for clamp, concat, conv2d, convTranspose and pool"
         }
       ]
     },
