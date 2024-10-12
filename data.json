@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-08-15T07:13:53.307Z",
-  "until": "2024-10-11T07:13:53.307Z",
+  "since": "2024-08-16T07:13:05.711Z",
+  "until": "2024-10-12T07:13:05.711Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -159,6 +159,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2024-10-11",
+          "author": "apaseltiner@google.com",
+          "hash": "98e9259",
+          "subject": "Use increasing integers instead of unique strings for internal IDs (#1426)"
+        },
         {
           "date": "2024-10-02",
           "author": "80365263+linnan-github@users.noreply.github.com",
@@ -332,30 +338,6 @@
           "author": "40465606+johnivdel@users.noreply.github.com",
           "hash": "6e2318b",
           "subject": "Clarify report sending notes and make shuffling explicit (#1387)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "b22a171",
-          "subject": "Omit source_registration_time field while excluding source registration time (#1395)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "163567487+feifeiji89@users.noreply.github.com",
-          "hash": "cd5c617",
-          "subject": "Information gain computation logic for Attribution Scope. (#1364)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "8bc7671",
-          "subject": "Set null reports's source identifier to null (#1394)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "80365263+linnan-github@users.noreply.github.com",
-          "hash": "e98edd2",
-          "subject": "Remove unused algorithm for verbose debug reports (#1393)"
         }
       ],
       "testlog": []
@@ -933,14 +915,7 @@
       "href": "https://w3c.github.io/core-aam/",
       "specrepo": "https://github.com/w3c/core-aam",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-08-15",
-          "author": "spectranaut@igalia.com",
-          "hash": "cbb2cfb326",
-          "subject": "Core-AAM: Fix manual tests with missing comma (#47625)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Crash Reporting",
@@ -1010,6 +985,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-11",
+          "author": "masonf@chromium.org",
+          "hash": "39246a878f",
+          "subject": "Add implicit anchor relationship for popover invokers"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "cchen@igalia.com",
+          "hash": "f28c47aeda",
+          "subject": "Fix check failure at LineBreaker::HandleTextForFastMinContent"
+        },
         {
           "date": "2024-10-11",
           "author": "tkent@chromium.org",
@@ -2803,72 +2790,6 @@
           "author": "dbaron@chromium.org",
           "hash": "241bac23f7",
           "subject": "Update interpolation between calc-size() values to better preserve percentageness."
-        },
-        {
-          "date": "2024-08-16",
-          "author": "tkent@chromium.org",
-          "hash": "ab965824be",
-          "subject": "shape-outside: Fix incorrect box margin computation"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "ethavar@microsoft.com",
-          "hash": "170c21227e",
-          "subject": "[Masonry] Introduce parsing for masonry-template-tracks"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "samomekarajr@microsoft.com",
-          "hash": "8202132c84",
-          "subject": "[Masonry] Introduce parsing for masonry-track-end and -start"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "emilio@crisal.io",
-          "hash": "463cf20699",
-          "subject": "Improve scroll{Width,Height} implementation for overflow: visible frames."
-        },
-        {
-          "date": "2024-08-15",
-          "author": "kiet.ho@apple.com",
-          "hash": "85b16fcfb2",
-          "subject": "view-transition-types tests: make grid column width fixed at 100px"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "aaccad8cdd",
-          "subject": "[layout] Consider the aspect-ratio for flex's auto-min size."
-        },
-        {
-          "date": "2024-08-15",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "1597db5641",
-          "subject": "[css-inline] Fix `text_invalid_value` typo in text-box tests (#47626)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "sakhapov@chromium.org",
-          "hash": "6eb6f128ee",
-          "subject": "Move scrollbar and border adjusting logic inside GetScrollOffsetToExpose"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "053a9a2f43",
-          "subject": "[css-inline-3] Fix typo"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "mrobinson@igalia.com",
-          "hash": "32662120b1",
-          "subject": "layout: Support `start` and `end` values for flexbox `align-self`"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "jkew@mozilla.com",
-          "hash": "940df82359",
-          "subject": "Do not apply text-emphasis marks to punctuation characters (with some exceptions, per css-text-decor spec)."
         }
       ]
     },
@@ -2972,12 +2893,6 @@
           "author": "dgrogan@chromium.org",
           "hash": "2389c876fe",
           "subject": "[layout] Initial support for justify-self for blocks"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "mrobinson@igalia.com",
-          "hash": "32662120b1",
-          "subject": "layout: Support `start` and `end` values for flexbox `align-self`"
         }
       ]
     },
@@ -3133,6 +3048,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-11",
+          "author": "masonf@chromium.org",
+          "hash": "39246a878f",
+          "subject": "Add implicit anchor relationship for popover invokers"
+        },
         {
           "date": "2024-10-09",
           "author": "futhark@chromium.org",
@@ -3390,6 +3311,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-10-11",
+          "author": "cchen@igalia.com",
+          "hash": "f28c47aeda",
+          "subject": "Fix check failure at LineBreaker::HandleTextForFastMinContent"
+        },
         {
           "date": "2024-09-25",
           "author": "jonathanjlee@google.com",
@@ -4450,18 +4377,6 @@
           "author": "ethavar@microsoft.com",
           "hash": "a3dd44e517",
           "subject": "[Masonry] Move alternate masonry tests into its own folder"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "ethavar@microsoft.com",
-          "hash": "170c21227e",
-          "subject": "[Masonry] Introduce parsing for masonry-template-tracks"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "samomekarajr@microsoft.com",
-          "hash": "8202132c84",
-          "subject": "[Masonry] Introduce parsing for masonry-track-end and -start"
         }
       ]
     },
@@ -4616,18 +4531,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "600d084a5d",
           "subject": "[css-inline-3] Rename file to match imports (fix typo)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "1597db5641",
-          "subject": "[css-inline] Fix `text_invalid_value` typo in text-box tests (#47626)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "053a9a2f43",
-          "subject": "[css-inline-3] Fix typo"
         }
       ]
     },
@@ -5498,12 +5401,6 @@
           "author": "nmouchtaris@apple.com",
           "hash": "bbe7b223c5",
           "subject": "WebKit export: Add pixel tolerance to css/css-scrollbars/textarea-scrollbar-width-none.html (#47772)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "sakhapov@chromium.org",
-          "hash": "6eb6f128ee",
-          "subject": "Move scrollbar and border adjusting logic inside GetScrollOffsetToExpose"
         }
       ]
     },
@@ -5625,12 +5522,6 @@
           "author": "smfr@users.noreply.github.com",
           "hash": "1c8dd31be2",
           "subject": "WebKit export: [CSS Shape function] Add parsing support and storage for shape() (#47757)"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "tkent@chromium.org",
-          "hash": "ab965824be",
-          "subject": "shape-outside: Fix incorrect box margin computation"
         }
       ]
     },
@@ -5715,12 +5606,6 @@
           "author": "obrufau@igalia.com",
           "hash": "d4b7331e84",
           "subject": "Use the proper aspect ratio in flexbox"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "aaccad8cdd",
-          "subject": "[layout] Consider the aspect-ratio for flex's auto-min size."
         }
       ]
     },
@@ -5936,12 +5821,6 @@
           "author": "zakr@apple.com",
           "hash": "2b81b2679a",
           "subject": "WebKit export: [calc() interpolation] update text-decoration-thickness-interpolation WPT (#47703)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "jkew@mozilla.com",
-          "hash": "940df82359",
-          "subject": "Do not apply text-emphasis marks to punctuation characters (with some exceptions, per css-text-decor spec)."
         }
       ]
     },
@@ -6174,18 +6053,6 @@
           "author": "chris@w3.org",
           "hash": "904fbcd08",
           "subject": "[css-values-5][editorial] Changes for FPWD"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "476f64f85",
-          "subject": "[css-values-5] Remove issue about direct length-with-keyword interpolation, now that we have interpolate-size"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "7d663053d",
-          "subject": "[css-values-5] Move calc-size basis canonicalization to only occur when interpolating. #10220"
         }
       ],
       "testlog": [
@@ -6418,12 +6285,6 @@
           "author": "mattwoodrow@apple.com",
           "hash": "eb331615b0",
           "subject": "WebKit export: [css-view-transitions-2] pageswap-ctor.html is a flaky failure (#47847)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "kiet.ho@apple.com",
-          "hash": "85b16fcfb2",
-          "subject": "view-transition-types tests: make grid column width fixed at 100px"
         }
       ]
     },
@@ -6608,12 +6469,6 @@
           "author": "wangxianzhu@chromium.org",
           "hash": "f4430cff32",
           "subject": "Change where we force main-thread scrolling for overflow:hidden"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "emilio@crisal.io",
-          "hash": "463cf20699",
-          "subject": "Improve scroll{Width,Height} implementation for overflow: visible frames."
         }
       ]
     },
@@ -6813,12 +6668,6 @@
           "author": "shaseley@chromium.org",
           "hash": "0b5f3aa",
           "subject": "Mark dependent abort signals as aborted before firing events"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "jbroman@chromium.org",
-          "hash": "054356d",
-          "subject": "Update to use new \"report an exception\" algorithm in HTML"
         }
       ],
       "testlog": [
@@ -6947,18 +6796,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "6995c44347",
           "subject": "moveBefore: don't release pointer capture when moving"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "jbroman@chromium.org",
-          "hash": "0a811c5161",
-          "subject": "Add WPT for error events during event dispatch when multiple globals exist"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "dizhangg@chromium.org",
-          "hash": "313e48b85c",
-          "subject": "Centralize getComposedRanges tests under wpt/selection/shadow-dom/tentative/"
         }
       ]
     },
@@ -6984,6 +6821,36 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2024-10-11",
+          "author": "ftang@google.com",
+          "hash": "65b9ce3",
+          "subject": "Editorial: Simplify PR925 (#931)"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "benallen@igalia.com",
+          "hash": "7508197",
+          "subject": "Editorial: Fix bug with RelativeTimeFormat and DateTimeFormat not correctly passing \"numberingSystem\" option to NumberFormat"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "benallen@igalia.com",
+          "hash": "62fe5db",
+          "subject": "Normative: Explicitly designate the (non-lexicographic) sort order for (#918)"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "benallen@igalia.com",
+          "hash": "9140da2",
+          "subject": "Normative: When formatting currency values, only use data on the number of minor units used to display that currency when using standard notation. (#925)"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "benallen@igalia.com",
+          "hash": "8c934de",
+          "subject": "Normative: Allow use of non-ISO 4217 data in `CurrencyDigits` AO (#922)"
+        },
+        {
           "date": "2024-10-03",
           "author": "sffc@google.com",
           "hash": "64f79f8",
@@ -7006,12 +6873,6 @@
           "author": "sffc@google.com",
           "hash": "ef423a8",
           "subject": "Create notes-2024-08-22.md"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "benallen@igalia.com",
-          "hash": "a31417a",
-          "subject": "Editorial: replaced &ge; &infin; &laquo; &ldquo; &le; &mdash; &ne; &raquo; &rdquo; &times; (#907)"
         }
       ],
       "testlog": [
@@ -7077,6 +6938,12 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2024-10-10",
+          "author": "jihyeok_park@korea.ac.kr",
+          "hash": "6b4217b0",
+          "subject": "Meta: Upgrade ESMeta to v0.4.3 (#3444)"
+        },
         {
           "date": "2024-10-10",
           "author": "bakkot@gmail.com",
@@ -7220,15 +7087,21 @@
           "author": "syg@chromium.org",
           "hash": "ac21460f",
           "subject": "Normative: Fix hangs with top-level await (#3357)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "mficarra@shapesecurity.com",
-          "hash": "14676dbd",
-          "subject": "Normative: fully define Math.sqrt (#3345)"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-10-11",
+          "author": "peter@moddable.com",
+          "hash": "83fae7f1f2",
+          "subject": "a few tests use verifyPrimordialProperty"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "andre.bargull@gmail.com",
+          "hash": "92b592547d",
+          "subject": "Ensure NaN time values are correctly handled in various Date setters"
+        },
         {
           "date": "2024-10-10",
           "author": "richard.gibson@gmail.com",
@@ -7570,18 +7443,6 @@
           "author": "Ms2ger@gmail.com",
           "hash": "efa4272ffb",
           "subject": "Revert \"Revert \"Add valid index prototype chain [[Set]] tests\"\""
-        },
-        {
-          "date": "2024-08-15",
-          "author": "9728696+ioannad@users.noreply.github.com",
-          "hash": "224c5c3cb9",
-          "subject": " RAB: Integrate staging tests for the .subarray method (#4177)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "pchimento@igalia.com",
-          "hash": "cb4a6c8074",
-          "subject": "Temporal: Add a test for a coverage gap in Duration.prototype.round"
         }
       ]
     },
@@ -8689,6 +8550,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-10-12",
+          "author": "nsatragno@chromium.org",
+          "hash": "5611c15082",
+          "subject": "[fenced-frames] Migrate WebAuthn test"
+        },
+        {
           "date": "2024-10-04",
           "author": "aleventhal@google.com",
           "hash": "f368433864",
@@ -9311,6 +9178,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-10-11",
+          "author": "chromium@keithcirkel.co.uk",
+          "hash": "5df7a2c02b",
+          "subject": "Rename & refactor invoker commands to reflect new spec decisions."
+        },
+        {
+          "date": "2024-10-11",
+          "author": "masonf@chromium.org",
+          "hash": "39246a878f",
+          "subject": "Add implicit anchor relationship for popover invokers"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "annevk@annevk.nl",
+          "hash": "b330bd7184",
+          "subject": "Shadow trees: more involved dispatch tests"
+        },
+        {
           "date": "2024-10-10",
           "author": "yiyix@chromium.org",
           "hash": "862d21cede",
@@ -9921,36 +9806,6 @@
           "author": "tcaptan@chromium.org",
           "hash": "ce24cdc19b",
           "subject": "Add meter appearance none rendering WPT tests"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "jbroman@chromium.org",
-          "hash": "88f98a55ad",
-          "subject": "Add WPT for error reporting during custom element upgrade"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "dizhangg@chromium.org",
-          "hash": "313e48b85c",
-          "subject": "Centralize getComposedRanges tests under wpt/selection/shadow-dom/tentative/"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "dizhangg@chromium.org",
-          "hash": "785985c4d4",
-          "subject": "[reading-flow] display: contents as scope owner"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "behowell@microsoft.com",
-          "hash": "26bf6f0d77",
-          "subject": "Reference Target for Cross-Root ARIA"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "m_woodrow@apple.com",
-          "hash": "3d39ab0089",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=268743"
         }
       ]
     },
@@ -9969,12 +9824,6 @@
           "date": "2024-08-19",
           "author": "41898282+github-actions[bot]@users.noreply.github.com",
           "hash": "22bfde2",
-          "subject": "ED update"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "41898282+github-actions[bot]@users.noreply.github.com",
-          "hash": "3777b29",
           "subject": "ED update"
         }
       ],
@@ -10286,12 +10135,6 @@
           "author": "19503293+szewai@users.noreply.github.com",
           "hash": "aeae7c8114",
           "subject": "Do not assert page is evicted from back forward cache (#47582)"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "rahsin@microsoft.com",
-          "hash": "0c217f2bf3",
-          "subject": "IDB WPTs: Extend IDBCursor delete() ObjectStore WPTs to run on workers"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -12732,12 +12575,6 @@
           "author": "dizhangg@chromium.org",
           "hash": "aa1420c6ec",
           "subject": "[Selection API] Fix selection isCollapsed in ShadowDOM"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "dizhangg@chromium.org",
-          "hash": "313e48b85c",
-          "subject": "Centralize getComposedRanges tests under wpt/selection/shadow-dom/tentative/"
         }
       ],
       "testpolicy": "https://github.com/w3c/selection-api/blob/HEAD/CONTRIBUTING.md"
@@ -15316,6 +15153,24 @@
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
         {
+          "date": "2024-10-11",
+          "author": "6334674+qingxinwu@users.noreply.github.com",
+          "hash": "a5912c0",
+          "subject": "Fix the abort steps in promise handling (#1300)"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "brusshamilton@gmail.com",
+          "hash": "93d50e1",
+          "subject": "[Spec] Add support for B&A triggered updates (#1294)"
+        },
+        {
+          "date": "2024-10-11",
+          "author": "morlovich@google.com",
+          "hash": "feb9171",
+          "subject": "Fix parsing of our promises to note they're nullable. (#1293)"
+        },
+        {
           "date": "2024-10-08",
           "author": "kleber@google.com",
           "hash": "1349420",
@@ -15790,30 +15645,6 @@
           "author": "spectranaut@igalia.com",
           "hash": "1d0b8b94",
           "subject": "Editorial: Update docs with PR label guidance (#2317)"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "f30f28f5",
-          "subject": "Update html-aam/index.html"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "ccb50df8",
-          "subject": "Update html-aam/index.html"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "082c005c",
-          "subject": "chore: prettier"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "scottaohara@users.noreply.github.com",
-          "hash": "79527d57",
-          "subject": "Update html-aam/index.html"
         }
       ],
       "testlog": [
@@ -18061,6 +17892,12 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2024-10-11",
+          "author": "aborovova@mozilla.com",
+          "hash": "2c9b095",
+          "subject": "Remove redundant 'has system focus' variable from 'get the client window info' algorithm."
+        },
+        {
           "date": "2024-09-23",
           "author": "49699333+dependabot[bot]@users.noreply.github.com",
           "hash": "3b1939c",
@@ -19599,6 +19436,12 @@
       "specrepo": "https://github.com/WebAudio/web-midi-api",
       "speclog": [
         {
+          "date": "2024-10-02",
+          "author": "mjwilson@chromium.org",
+          "hash": "fc3d013",
+          "subject": "Use let instead of var in examples"
+        },
+        {
           "date": "2024-09-05",
           "author": "mjwilson@chromium.org",
           "hash": "332d469",
@@ -19956,36 +19799,6 @@
           "author": "shiyi.zou@intel.com",
           "hash": "e9e8354cc1",
           "subject": "webnn: add support limits for reduction operators and more"
-        },
-        {
-          "date": "2024-08-16",
-          "author": "lisha.guo@intel.com",
-          "hash": "6487c9c61d",
-          "subject": "webnn: add some missing WPT tests to cover the label"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "aycyang@chromium.org",
-          "hash": "bae8718c40",
-          "subject": "Revert \"WebNN: Add support limits for hardSigmoid and hardSwish\""
-        },
-        {
-          "date": "2024-08-15",
-          "author": "bin.miao@intel.com",
-          "hash": "a17b1a7796",
-          "subject": "WebNN: Add support limits for hardSigmoid and hardSwish"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "shanxing.mei@intel.com",
-          "hash": "6d0736ee69",
-          "subject": "webnn: Add 0-D scalar tests for WebNN API operators"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "bin.miao@intel.com",
-          "hash": "ab33282b72",
-          "subject": "WebNN: Support all the device types for WPT validation tests"
         }
       ]
     },
@@ -20355,12 +20168,6 @@
           "author": "dom@w3.org",
           "hash": "f5017b97",
           "subject": "Work around new requirements from respec for updated recs"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "florent.castelli@gmail.com",
-          "hash": "6a475fb0",
-          "subject": "Merge RTCRtpEncodingParameters.codec from webrtc-extensions"
         }
       ],
       "testlog": [
@@ -20455,12 +20262,6 @@
           "author": "alonsomozol@google.com",
           "hash": "d258adae7b",
           "subject": "[EncodedTransform] Audio and video receiver readable and writable"
-        },
-        {
-          "date": "2024-08-15",
-          "author": "alonsomozol@google.com",
-          "hash": "82e0ba6b7e",
-          "subject": "Audio and video sender readable"
         }
       ]
     },
