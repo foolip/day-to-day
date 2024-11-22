@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-09-25T07:13:36.318Z",
-  "until": "2024-11-21T07:13:36.318Z",
+  "since": "2024-09-26T07:13:39.637Z",
+  "until": "2024-11-22T07:13:39.637Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -565,12 +565,6 @@
           "author": "lbarnes@apple.com",
           "hash": "434dbe1",
           "subject": "Clarify that non-essential item properties may use other versions (#250)"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "lbarnes@apple.com",
-          "hash": "7f87801",
-          "subject": "Clean up use of dfn and linking (#251)"
         }
       ],
       "testlog": []
@@ -750,6 +744,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "sesse@chromium.org",
+          "hash": "27c7d18fbc",
+          "subject": "Make ConsumeNumberOrPercent() not crash on unresolvable calc()."
+        },
+        {
           "date": "2024-11-20",
           "author": "sesse@chromium.org",
           "hash": "4110ada1b6",
@@ -791,6 +791,18 @@
       "href": "https://w3c.github.io/compute-pressure/",
       "specrepo": "https://github.com/w3c/compute-pressure",
       "speclog": [
+        {
+          "date": "2024-11-22",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "c318976",
+          "subject": "Fix idl bug"
+        },
+        {
+          "date": "2024-11-22",
+          "author": "kenneth.r.christiansen@intel.com",
+          "hash": "3288c5b",
+          "subject": "Move at-risk to experimental"
+        },
         {
           "date": "2024-11-20",
           "author": "kenneth.r.christiansen@intel.com",
@@ -851,6 +863,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "pchimento@igalia.com",
+          "hash": "f3dcc205a2",
+          "subject": "Enable additional console tests in ShadowRealms"
+        },
         {
           "date": "2024-11-18",
           "author": "pchimento@igalia.com",
@@ -1037,6 +1055,66 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-11-22",
+          "author": "clchambers@microsoft.com",
+          "hash": "a3ea555e5d",
+          "subject": "[CompositeClipPathAnimation] Fix crash with position: absolute"
+        },
+        {
+          "date": "2024-11-22",
+          "author": "dshin@mozilla.com",
+          "hash": "7313fa8e6a",
+          "subject": "Ensure inline elements inside an empty line has zero block-size and no baseline in scrolled block frames."
+        },
+        {
+          "date": "2024-11-21",
+          "author": "vmpstr@chromium.org",
+          "hash": "a0efcaeb97",
+          "subject": "VT: Deflake nothing captured view transition test."
+        },
+        {
+          "date": "2024-11-21",
+          "author": "sam@webkit.org",
+          "hash": "ad426aef3a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=282962 (#49315)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "obrufau@igalia.com",
+          "hash": "bf56e27127",
+          "subject": "[css-pseudo] Fix marker-text-combine-upright.html"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "andruud@chromium.org",
+          "hash": "420f1a49e1",
+          "subject": "[@scope] Pass TreeScope separately to SelectorChecker"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "sakhapov@chromium.org",
+          "hash": "c88567a385",
+          "subject": "Add nested ::marker styling test"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "7749a48a1d",
+          "subject": "[@container] Rename overflowing scroll-state to scrollable"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "f812fb38b7",
+          "subject": "[@container] Add support for scroll-state(snapped:both)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "d486856789",
+          "subject": "[@container] Add support for scroll-state(overflowing) axis"
+        },
         {
           "date": "2024-11-20",
           "author": "mstensho@chromium.org",
@@ -2680,36 +2758,6 @@
           "author": "obrufau@igalia.com",
           "hash": "a9a398ca83",
           "subject": "Fix marker-text-combine-upright.html."
-        },
-        {
-          "date": "2024-09-25",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "0c2d6e1d0a",
-          "subject": "[container-queries] Enforce independent formatting context for subgrid."
-        },
-        {
-          "date": "2024-09-25",
-          "author": "fs@opera.com",
-          "hash": "ab136b5707",
-          "subject": "Support SVG resource documents for additional properties"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "sesse@chromium.org",
-          "hash": "143c6c40ae",
-          "subject": "Mark universal rules as covered by the universal bucket."
-        },
-        {
-          "date": "2024-09-25",
-          "author": "andruud@chromium.org",
-          "hash": "81aee9cf2d",
-          "subject": "[anchor] Add tests for anchor-scope and :host/::slotted."
-        },
-        {
-          "date": "2024-09-25",
-          "author": "jonathanjlee@google.com",
-          "hash": "09d9132b54",
-          "subject": "[wpt] Wait for `hit-test-transformed-inline.html` to load Ahem font"
         }
       ]
     },
@@ -2936,12 +2984,6 @@
           "author": "antti@apple.com",
           "hash": "86fb9e800b",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=280648 (#48410)"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "andruud@chromium.org",
-          "hash": "81aee9cf2d",
-          "subject": "[anchor] Add tests for anchor-scope and :host/::slotted."
         }
       ]
     },
@@ -3091,12 +3133,6 @@
           "author": "cchen@igalia.com",
           "hash": "f28c47aeda",
           "subject": "Fix check failure at LineBreaker::HandleTextForFastMinContent"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "jonathanjlee@google.com",
-          "hash": "09d9132b54",
-          "subject": "[wpt] Wait for `hit-test-transformed-inline.html` to load Ahem font"
         }
       ]
     },
@@ -3107,6 +3143,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "andruud@chromium.org",
+          "hash": "420f1a49e1",
+          "subject": "[@scope] Pass TreeScope separately to SelectorChecker"
+        },
         {
           "date": "2024-11-18",
           "author": "andruud@chromium.org",
@@ -3331,6 +3373,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-11-21",
+          "author": "futhark@google.com",
+          "hash": "e971c6592",
+          "subject": "[css-conditional-5] Rename overflowing to scrollable #11182"
+        },
+        {
           "date": "2024-11-11",
           "author": "rune.lillesveen@gmail.com",
           "hash": "e4e057c61",
@@ -3404,6 +3452,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "7749a48a1d",
+          "subject": "[@container] Rename overflowing scroll-state to scrollable"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "f812fb38b7",
+          "subject": "[@container] Add support for scroll-state(snapped:both)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "futhark@chromium.org",
+          "hash": "d486856789",
+          "subject": "[@container] Add support for scroll-state(overflowing) axis"
+        },
         {
           "date": "2024-11-14",
           "author": "miriam@oddbird.net",
@@ -3553,12 +3619,6 @@
           "author": "fs@opera.com",
           "hash": "acde52a03a",
           "subject": "Invalidate SVG resources after container query style recalc"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "0c2d6e1d0a",
-          "subject": "[container-queries] Enforce independent formatting context for subgrid."
         }
       ]
     },
@@ -3944,6 +4004,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-11-22",
+          "author": "dshin@mozilla.com",
+          "hash": "7313fa8e6a",
+          "subject": "Ensure inline elements inside an empty line has zero block-size and no baseline in scrolled block frames."
+        },
+        {
           "date": "2024-11-20",
           "author": "dshin@mozilla.com",
           "hash": "7391b515a6",
@@ -4091,6 +4157,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "sakhapov@chromium.org",
+          "hash": "c88567a385",
+          "subject": "Add nested ::marker styling test"
+        },
+        {
           "date": "2024-11-18",
           "author": "jkew@mozilla.com",
           "hash": "c3148408fb",
@@ -4139,6 +4211,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-11-22",
+          "author": "clchambers@microsoft.com",
+          "hash": "a3ea555e5d",
+          "subject": "[CompositeClipPathAnimation] Fix crash with position: absolute"
+        },
+        {
           "date": "2024-11-12",
           "author": "wangxianzhu@chromium.org",
           "hash": "00ee04612b",
@@ -4179,12 +4257,6 @@
           "author": "fs@opera.com",
           "hash": "7270b19bbb",
           "subject": "Consider a clip-path url() reference an empty clip while it's loading"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "fs@opera.com",
-          "hash": "ab136b5707",
-          "subject": "Support SVG resource documents for additional properties"
         }
       ]
     },
@@ -4309,6 +4381,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "flackr@google.com",
+          "hash": "11261b93e",
+          "subject": "[css-overflow-5] Remove normative active marker algorithm. (#11224)"
+        },
         {
           "date": "2024-11-19",
           "author": "jackalmage@gmail.com",
@@ -4689,6 +4767,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "obrufau@igalia.com",
+          "hash": "bf56e27127",
+          "subject": "[css-pseudo] Fix marker-text-combine-upright.html"
+        },
+        {
           "date": "2024-11-20",
           "author": "emilio@crisal.io",
           "hash": "a440a7ee2a",
@@ -4881,12 +4965,6 @@
           "author": "westbrook.johnson@gmail.com",
           "hash": "d3ec11188b",
           "subject": "Cover changing content targetting :has-slotted and :has-slotted(...) (#48317)"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "sesse@chromium.org",
-          "hash": "143c6c40ae",
-          "subject": "Mark universal rules as covered by the universal bucket."
         }
       ]
     },
@@ -5475,6 +5553,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "sam@webkit.org",
+          "hash": "ad426aef3a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=282962 (#49315)"
+        },
+        {
           "date": "2024-10-08",
           "author": "andruud@chromium.org",
           "hash": "d09fd9ec26",
@@ -5552,6 +5636,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "andruud@gmail.com",
+          "hash": "483d3f2b0",
+          "subject": "[css-values] Total attr()-tainting for substitution values (#11218)"
+        },
         {
           "date": "2024-11-13",
           "author": "jackalmage@gmail.com",
@@ -6001,6 +6091,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "vmpstr@chromium.org",
+          "hash": "a0efcaeb97",
+          "subject": "VT: Deflake nothing captured view transition test."
+        },
+        {
           "date": "2024-11-12",
           "author": "nrosenthal@chromium.org",
           "hash": "5c316a40eb",
@@ -6355,6 +6451,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-11-21",
+          "author": "dom@chromium.org",
+          "hash": "cf651adeb7",
+          "subject": "DOM: Support disconnected->disconnected moveBefore()"
+        },
+        {
           "date": "2024-11-20",
           "author": "masonf@chromium.org",
           "hash": "b01a9f0e74",
@@ -6515,12 +6617,6 @@
           "author": "dom@chromium.org",
           "hash": "a550d3f48b",
           "subject": "DOM: Do not hide element nonce on atomic move"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "dom@chromium.org",
-          "hash": "093603b62c",
-          "subject": "DOM: Support atomic moves across shadow boundary"
         }
       ]
     },
@@ -6741,6 +6837,36 @@
       "specrepo": "https://github.com/tc39/ecma262",
       "testrepo": "tc39/test262",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "kimjg1119@korea.ac.kr",
+          "hash": "cf5938e6",
+          "subject": "Editorial: Add an assertion for privateEnv (#3485)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "kimjg1119@korea.ac.kr",
+          "hash": "ddd73607",
+          "subject": "Meta: Upgrade ESMeta to v0.5.0 (#3487)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "syg@chromium.org",
+          "hash": "c1040ff2",
+          "subject": "Normative: Return false in [[PreventExtensions]] for variable length TypedArrays (#3453)"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "jhpjhp0223@gmail.com",
+          "hash": "35af9094",
+          "subject": "Editorial: Fixed return types of algorithms returning ~empty~ (#2924)"
+        },
+        {
+          "date": "2024-11-16",
+          "author": "ljharb@gmail.com",
+          "hash": "0b6c5f17",
+          "subject": "Meta: ensure the IPR check runs on the PR head, not main (#3480)"
+        },
         {
           "date": "2024-11-15",
           "author": "wick.linxunjie@gmail.com",
@@ -7348,30 +7474,6 @@
           "author": "mail@linusgroh.de",
           "hash": "f1a670ff59",
           "subject": "Fix compareArray.js harness tests"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "f225229f85",
-          "subject": "Remove FinalizationRegistry tests that depend on nondeterministic GC"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "77b1c787e8",
-          "subject": "Remove WeakRef/prototype/deref/gc-cleanup-not-prevented-with-wr-deref.js"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "3bed2c446f",
-          "subject": "Remove tests for FinalizationRegistry.prototype.cleanupSome"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pbskycrystal@gmail.com",
-          "hash": "957ab22773",
-          "subject": "Add a test for Generator (#3729)"
         }
       ]
     },
@@ -8303,6 +8405,12 @@
       "specrepo": "https://github.com/WICG/fenced-frame",
       "speclog": [
         {
+          "date": "2024-11-21",
+          "author": "averge@chromium.org",
+          "hash": "01161ae",
+          "subject": "Add spec for `_unfencedTop` navigation target (#200)"
+        },
+        {
           "date": "2024-11-11",
           "author": "averge@chromium.org",
           "hash": "a5ecf62",
@@ -8433,12 +8541,6 @@
           "author": "mych@chromium.org",
           "hash": "0a6e4f4bc5",
           "subject": "Update FetchLater implementation to match latest proposal"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "smayya@mozilla.com",
-          "hash": "ffcb5e51cf",
-          "subject": "extend keepalive.any.js for workers."
         }
       ]
     },
@@ -8976,6 +9078,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "westbrook.johnson@gmail.com",
+          "hash": "266d54d5f7",
+          "subject": "Correct aria spelling (#49309)"
+        },
         {
           "date": "2024-11-20",
           "author": "zcorpan@gmail.com",
@@ -9671,12 +9779,6 @@
           "author": "masonf@chromium.org",
           "hash": "b1c4aff0b6",
           "subject": "Refactor selectlist tests [4/4]"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "zhoupeng.1996@bytedance.com",
-          "hash": "4ab2137599",
-          "subject": "The <embed> element does not have to enforce layout when the type attribute is set to image"
         }
       ]
     },
@@ -9685,6 +9787,12 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "41898282+github-actions[bot]@users.noreply.github.com",
+          "hash": "be68e66",
+          "subject": "ED update"
+        },
         {
           "date": "2024-11-11",
           "author": "41898282+github-actions[bot]@users.noreply.github.com",
@@ -11596,14 +11704,7 @@
       "name": "Permissions Policy",
       "href": "https://w3c.github.io/webappsec-permissions-policy/",
       "specrepo": "https://github.com/w3c/webappsec-permissions-policy",
-      "speclog": [
-        {
-          "date": "2024-09-25",
-          "author": "s.h.h.n.j.k@gmail.com",
-          "hash": "314ffc9",
-          "subject": "Send reports for Permissions Policy violations in iframe to parent frame's endpoint (#546)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-11-07",
@@ -13153,12 +13254,6 @@
           "author": "emilio@crisal.io",
           "hash": "e662078a98",
           "subject": "Ignore transform-origin and such shenanigans in SVGGeometryElement::LocalTransform."
-        },
-        {
-          "date": "2024-09-25",
-          "author": "fs@opera.com",
-          "hash": "ab136b5707",
-          "subject": "Support SVG resource documents for additional properties"
         }
       ]
     },
@@ -13357,7 +13452,32 @@
       "name": "Intl Locale Info Proposal",
       "href": "https://tc39.es/proposal-intl-locale-info/",
       "specrepo": "https://github.com/tc39/proposal-intl-locale-info",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "25f9349",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "11afbce",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "FrankYFTang@users.noreply.github.com",
+          "hash": "4d513ae",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "ftang@google.com",
+          "hash": "e9c6db6",
+          "subject": "Update README.md add TC39 meeting note links"
+        }
+      ],
       "testlog": []
     },
     {
@@ -14426,144 +14546,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "281f82f2",
           "subject": "Editorial: Correct various value types in GetTemporalUnitValuedOption"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "a7b6c343",
-          "subject": "Docs: Remove obsolete sentence"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "9df92c3e",
-          "subject": "Cookbook: Add link to future date example in \"Calendar input element\""
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "846b4787",
-          "subject": "Cookbook: Fix interactive examples"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "f67dbc77",
-          "subject": "Docs: Provide better link to documentation of toLocaleString arguments"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "fd1b433e",
-          "subject": "Docs: Update object diagrams to remove references to TimeZone and Calendar"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "efa8bb74",
-          "subject": "Docs: Write better language instead of \"thing: any\" for from() parameters"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "28bf8dd9",
-          "subject": "Editorial: Merge non-Temporal-specific options-reading operations into own section"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "cdd8f739",
-          "subject": "Editorial: Use \"available time zone identifier\" as the type for time zones"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "e0383342",
-          "subject": "Editorial: Tweak \"one of\" language with spec enums"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "fb73c5a1",
-          "subject": "Editorial: Use enums for time zone transition direction option"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "ad57aac2",
-          "subject": "Editorial: Use enums for show calendar / time zone / offset options"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "972a4105",
-          "subject": "Editorial: Use enums for offset option"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "d7baed39",
-          "subject": "Editorial: Use enums for rounding mode"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "087ee778",
-          "subject": "Editorial: Use enums for disambiguation type"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "5dafed01",
-          "subject": "Editorial: Use enums for overflow type"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "9aac5d36",
-          "subject": "Editorial: Use \"calendar type\" as the type of calendar identifiers"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "c9a7f61f",
-          "subject": "Editorial: Use enums for string precision"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "238052cb",
-          "subject": "Editorial: Use enums for largest and smallest units"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "c6246682",
-          "subject": "Polyfill: Implement previous spec changes in polyfill"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "andre.bargull@gmail.com",
-          "hash": "7292bf52",
-          "subject": "Editorial: Avoid GetUTCEpochNanoseconds modification"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "a2a26f84",
-          "subject": "Polyfill: Implement previous spec text changes in polyfill"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "pchimento@igalia.com",
-          "hash": "076bbbf7",
-          "subject": "Editorial: Collapse identical paths in ToTemporalInstant and ToTemporalTime"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "andre.bargull@gmail.com",
-          "hash": "d31f240a",
-          "subject": "Editorial: Return new objects from ToXXX operations"
         }
       ],
       "testlog": []
@@ -14596,7 +14578,14 @@
       "href": "https://w3c.github.io/touch-events/",
       "specrepo": "https://github.com/w3c/touch-events",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "kevers@google.com",
+          "hash": "53c06dc624",
+          "subject": "Fix leak in single-touch.html"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/touch-events/blob/HEAD/README.md"
     },
     {
@@ -14611,6 +14600,12 @@
       "href": "https://w3c.github.io/trusted-types/dist/spec/",
       "specrepo": "https://github.com/w3c/trusted-types",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "koto@google.com",
+          "hash": "3819963",
+          "subject": "Revert \"Change Script Enforcement Mechanism to use flags (#533)\" (#565)"
+        },
         {
           "date": "2024-11-18",
           "author": "fwang@igalia.com",
@@ -15193,6 +15188,12 @@
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
         {
+          "date": "2024-11-21",
+          "author": "cookiecrook@users.noreply.github.com",
+          "hash": "38b28c0f",
+          "subject": "Editorial: respec fixes re: refs and metatadata titles (#2380)"
+        },
+        {
           "date": "2024-11-18",
           "author": "spectranaut@igalia.com",
           "hash": "f793cbd7",
@@ -15299,12 +15300,6 @@
           "author": "dmontalvo@w3.org",
           "hash": "03599d6f",
           "subject": "Update core-aam changelog"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "melaniersumner@gmail.com",
-          "hash": "a1291060",
-          "subject": "Add prettier config file for monorepo"
         }
       ],
       "testlog": []
@@ -15702,14 +15697,7 @@
       "href": "https://w3c.github.io/web-share/",
       "specrepo": "https://github.com/w3c/web-share",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-09-25",
-          "author": "jonathanjlee@google.com",
-          "hash": "a19eaaf167",
-          "subject": "[wpt] Fix `web-share/disabled...cross-origin...` when run with WebDriver"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Share Target API",
@@ -16152,12 +16140,6 @@
           "author": "emil@yubico.com",
           "hash": "2e2e3c6",
           "subject": "Deprecate rp.name"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "agl@chromium.org",
-          "hash": "bcd428d",
-          "subject": "Mark Android SafetyNet attestation as deprecated."
         }
       ],
       "testlog": [
@@ -16242,6 +16224,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-11-21",
+          "author": "marten.richter@tu-berlin.de",
+          "hash": "8c7ff922c6",
+          "subject": "Prevents for h264 attaching SPS and PPS Nalu if already present on Windows"
+        },
+        {
+          "date": "2024-11-21",
+          "author": "marten.richter@tu-berlin.de",
+          "hash": "a186b102e1",
+          "subject": "Adding rescaling support to WMFMediaDataEncoder"
+        },
         {
           "date": "2024-11-18",
           "author": "eugene@chromium.org",
@@ -17960,6 +17954,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2024-11-21",
+          "author": "dneto@google.com",
+          "hash": "bd061d4f",
+          "subject": "wgsl: @align(n) must divide required-align-of, for all structs (#4978)"
+        },
+        {
           "date": "2024-11-20",
           "author": "jrprice@google.com",
           "hash": "70d7c5e6",
@@ -18222,30 +18222,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "7cffc109",
           "subject": "Add GPUCanvasContext getConfiguration() method (#4899)"
-        },
-        {
-          "date": "2024-09-26",
-          "author": "beaufortfrancois@gmail.com",
-          "hash": "1f32757f",
-          "subject": "Revert \"Add GPUCanvasContext getConfiguration() method\""
-        },
-        {
-          "date": "2024-09-26",
-          "author": "beaufortfrancois@gmail.com",
-          "hash": "513ed5f2",
-          "subject": "Add GPUCanvasContext getConfiguration() method"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "kainino@chromium.org",
-          "hash": "db2f2430",
-          "subject": "Allow only strings in featureLevel (#4874)"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "a79f791f",
-          "subject": "Update WGSL to reference WebGPU spec for sampled area in textureGather (#4882)"
         }
       ],
       "testlog": []
@@ -18341,6 +18317,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2024-11-21",
+          "author": "asully@chromium.org",
+          "hash": "024302c",
+          "subject": "point to #778 (#785)"
+        },
         {
           "date": "2024-11-19",
           "author": "jsbell@chromium.org",
@@ -18634,6 +18616,12 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2024-11-01",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "388d1ed7",
+          "subject": "Queue a task for the  SCTP transport connected steps."
+        },
         {
           "date": "2024-10-30",
           "author": "dom@w3.org",
@@ -19078,6 +19066,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2024-11-21",
+          "author": "dneto@google.com",
+          "hash": "bd061d4f",
+          "subject": "wgsl: @align(n) must divide required-align-of, for all structs (#4978)"
+        },
+        {
           "date": "2024-11-20",
           "author": "jrprice@google.com",
           "hash": "70d7c5e6",
@@ -19340,30 +19334,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "7cffc109",
           "subject": "Add GPUCanvasContext getConfiguration() method (#4899)"
-        },
-        {
-          "date": "2024-09-26",
-          "author": "beaufortfrancois@gmail.com",
-          "hash": "1f32757f",
-          "subject": "Revert \"Add GPUCanvasContext getConfiguration() method\""
-        },
-        {
-          "date": "2024-09-26",
-          "author": "beaufortfrancois@gmail.com",
-          "hash": "513ed5f2",
-          "subject": "Add GPUCanvasContext getConfiguration() method"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "kainino@chromium.org",
-          "hash": "db2f2430",
-          "subject": "Allow only strings in featureLevel (#4874)"
-        },
-        {
-          "date": "2024-09-25",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "a79f791f",
-          "subject": "Update WGSL to reference WebGPU spec for sampled area in textureGather (#4882)"
         }
       ],
       "testlog": []
