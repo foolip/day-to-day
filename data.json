@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-10-08T07:13:50.657Z",
-  "until": "2024-12-04T07:13:50.657Z",
+  "since": "2024-10-09T07:13:53.462Z",
+  "until": "2024-12-05T07:13:53.462Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -13,18 +13,6 @@
           "author": "anssi.kostiainen@gmail.com",
           "hash": "00ba971",
           "subject": "Add Accelerometer reading quantization algorithm (#82)"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "79664fc",
-          "subject": "Fix \"accelerometer\" feature name references"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "111ad35",
-          "subject": "Update permissions integration reference"
         }
       ],
       "testlog": [],
@@ -120,12 +108,6 @@
           "author": "marcos@marcosc.com",
           "hash": "22b2259",
           "subject": "Editorial: Retire Matt Giuca"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "christian.liebel@thinktecture.com",
-          "hash": "75ae2b4",
-          "subject": "Add members for localization (#1101)"
         }
       ],
       "testlog": []
@@ -920,12 +902,6 @@
           "author": "me@marais.co",
           "hash": "01b66975d8",
           "subject": "CredentialsContainer abort reason tests"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "nsatragno@chromium.org",
-          "hash": "9eab512273",
-          "subject": "[webauthn] Move nested frame tests to WPTs"
         }
       ]
     },
@@ -935,6 +911,18 @@
       "specrepo": "https://github.com/w3c/webappsec-csp",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "129945747+mbrodesser-Igalia@users.noreply.github.com",
+          "hash": "4d2142460b",
+          "subject": "Add a `javascript:` URL navigation test which checks the parent's snapshotted CSP is checked during task creation, not during task execution (#49403)"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "mbrodesser@igalia.com",
+          "hash": "0b9fc07dfe",
+          "subject": "add WPTs for `javascript:` URL navigations which check the order of the parent CSP and child CSP."
+        },
         {
           "date": "2024-12-02",
           "author": "lwarlow@igalia.com",
@@ -1030,6 +1018,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-12-05",
+          "author": "samomekarajr@microsoft.com",
+          "hash": "bf49dde84c",
+          "subject": "[Gap Decorations]: Introduce ColumnRuleStyle on ComputedStyle"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "79ce401809",
+          "subject": "Fix a test to match the spec."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "9c4e7462c3",
+          "subject": "Add a viewport meta to prevent rounding errors on android."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "634f8ddfa0",
+          "subject": "Fix scroll{Width,Height} of overflow: visible frames with contain: layout."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "tcaptan@chromium.org",
+          "hash": "569ad281c8",
+          "subject": "Don't support nested ::marker pseudo element..."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "sammy.gill@apple.com",
+          "hash": "fa70881021",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284005 (#49515)"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "futhark@chromium.org",
+          "hash": "1943797cd0",
+          "subject": "Test that setting background-color on ::column has no effect"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "futhark@chromium.org",
+          "hash": "1d55057f6b",
+          "subject": "::column pseudo element parsing and computed style tests"
+        },
         {
           "date": "2024-12-03",
           "author": "mstensho@chromium.org",
@@ -2793,42 +2829,6 @@
           "author": "futhark@chromium.org",
           "hash": "cce6f2d13f",
           "subject": "[@container] Create SnappedQueryScrollSnapshot for evaluator"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "drott@chromium.org",
-          "hash": "50e4f7279c",
-          "subject": "[Fontations] Switch usage of Fontations for web fonts to experimental"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "obrufau@igalia.com",
-          "hash": "ec979384f0",
-          "subject": "Implement keyword sizes on floats"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "andruud@chromium.org",
-          "hash": "e1df2bd6ad",
-          "subject": "[nesting] Empty CSSNestedDeclarations should not affect outer cssText"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "andruud@chromium.org",
-          "hash": "d09fd9ec26",
-          "subject": "[css-typed-om] Avoid infinite recursion when serializing CSSUnparsedValue"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "boris.chiou@gmail.com",
-          "hash": "5ab6953d18",
-          "subject": "Add the error handling if the effective zoom is close to zero."
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jkew@mozilla.com",
-          "hash": "310307d421",
-          "subject": "Make letter-spacing accept <length-percentage>, not just <length>."
         }
       ]
     },
@@ -2850,12 +2850,6 @@
           "author": "drott@chromium.org",
           "hash": "3f74b57aa2",
           "subject": "Fix overflow:hidden test with incorrect synthetic bolding"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jkew@mozilla.com",
-          "hash": "310307d421",
-          "subject": "Make letter-spacing accept <length-percentage>, not just <length>."
         }
       ]
     },
@@ -3270,6 +3264,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-12-04",
+          "author": "chris@w3.org",
+          "hash": "f58cd1c57",
+          "subject": "[css-color][editorial] Consistent capitalization OKLCh, fix #7880"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "lucas.chollet@free.fr",
+          "hash": "4a1ad0d54",
+          "subject": "[css-color-4][editorial] Fix typo \"Infiinity\" => \"Infinity\""
+        },
         {
           "date": "2024-11-26",
           "author": "chris@w3.org",
@@ -3908,12 +3914,6 @@
           "author": "sesse@chromium.org",
           "hash": "1a3e17de51",
           "subject": "Add WebDX feature mapping for font-variant-position."
-        },
-        {
-          "date": "2024-10-08",
-          "author": "drott@chromium.org",
-          "hash": "50e4f7279c",
-          "subject": "[Fontations] Switch usage of Fontations for web fonts to experimental"
         }
       ]
     },
@@ -4335,6 +4335,18 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-04",
+          "author": "futhark@chromium.org",
+          "hash": "1943797cd0",
+          "subject": "Test that setting background-color on ::column has no effect"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "futhark@chromium.org",
+          "hash": "1d55057f6b",
+          "subject": "::column pseudo element parsing and computed style tests"
+        },
+        {
           "date": "2024-10-24",
           "author": "tkent@chromium.org",
           "hash": "f865efb8e1",
@@ -4396,6 +4408,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-12-04",
+          "author": "chris@w3.org",
+          "hash": "883f39a21",
+          "subject": "[css-nesting-1][editorial] Fix nesting level for changes section, was part of CSSOM"
+        },
+        {
           "date": "2024-11-06",
           "author": "andruud@gmail.com",
           "hash": "f1fffef93",
@@ -4420,12 +4438,6 @@
           "author": "andruud@chromium.org",
           "hash": "0add23e9c3",
           "subject": "[nesting] Move CSSNestedDeclarations/whitespace tests to separate file"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "andruud@chromium.org",
-          "hash": "e1df2bd6ad",
-          "subject": "[nesting] Empty CSSNestedDeclarations should not affect outer cssText"
         }
       ]
     },
@@ -4838,6 +4850,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-04",
+          "author": "tcaptan@chromium.org",
+          "hash": "569ad281c8",
+          "subject": "Don't support nested ::marker pseudo element..."
+        },
+        {
           "date": "2024-12-03",
           "author": "tcaptan@chromium.org",
           "hash": "fd0d1917ab",
@@ -4951,6 +4969,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "sammy.gill@apple.com",
+          "hash": "fa70881021",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284005 (#49515)"
+        },
         {
           "date": "2024-12-03",
           "author": "nt1m@users.noreply.github.com",
@@ -5395,12 +5419,6 @@
           "author": "obrufau@igalia.com",
           "hash": "1998b7ca2c",
           "subject": "Implement keyword sizes on atomic inlines"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "obrufau@igalia.com",
-          "hash": "ec979384f0",
-          "subject": "Implement keyword sizes on floats"
         }
       ]
     },
@@ -5675,12 +5693,6 @@
           "author": "sam@webkit.org",
           "hash": "ad426aef3a",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=282962 (#49315)"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "andruud@chromium.org",
-          "hash": "d09fd9ec26",
-          "subject": "[css-typed-om] Avoid infinite recursion when serializing CSSUnparsedValue"
         }
       ]
     },
@@ -6294,14 +6306,7 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-10-08",
-          "author": "boris.chiou@gmail.com",
-          "hash": "5ab6953d18",
-          "subject": "Add the error handling if the effective zoom is close to zero."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Will Change",
@@ -6379,6 +6384,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "79ce401809",
+          "subject": "Fix a test to match the spec."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "9c4e7462c3",
+          "subject": "Add a viewport meta to prevent rounding errors on android."
+        },
+        {
+          "date": "2024-12-04",
+          "author": "emilio@crisal.io",
+          "hash": "634f8ddfa0",
+          "subject": "Fix scroll{Width,Height} of overflow: visible frames with contain: layout."
+        },
         {
           "date": "2024-12-02",
           "author": "pdr@chromium.org",
@@ -6771,6 +6794,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-04",
+          "author": "andre.bargull@gmail.com",
+          "hash": "d124e1486c",
+          "subject": "Allow alternative era for Chinese calendar"
+        },
+        {
           "date": "2024-12-03",
           "author": "benallen@igalia.com",
           "hash": "4053ff2eaf",
@@ -7080,6 +7109,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "boshenc@gmail.com",
+          "hash": "42d83277b7",
+          "subject": "Fix `single-line-html-close-first-line-*` failing with `Test262Error is not defined` (#4333)"
+        },
         {
           "date": "2024-12-04",
           "author": "syg@chromium.org",
@@ -7421,12 +7456,6 @@
           "author": "tannal2409@gmail.com",
           "hash": "954d6370f9",
           "subject": "Avoid using destructuring in tco-fn-realm.js"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "legendecas@gmail.com",
-          "hash": "0596ff6981",
-          "subject": "[source-phase-imports] Dynamic import source call"
         }
       ]
     },
@@ -8071,12 +8100,6 @@
           "author": "cbiesinger@chromium.org",
           "hash": "026dbaa",
           "subject": "Handle errors from JSON serialization. (#666)"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "cbiesinger@chromium.org",
-          "hash": "bfa0a09",
-          "subject": "Specify the params API (#661)"
         }
       ],
       "testlog": []
@@ -8252,6 +8275,12 @@
       "href": "https://w3c.github.io/FileAPI/",
       "specrepo": "https://github.com/w3c/FileAPI",
       "speclog": [
+        {
+          "date": "2024-12-04",
+          "author": "awillia@google.com",
+          "hash": "77b2086",
+          "subject": "Partition Blob URL revocation by Storage Key (#201)"
+        },
         {
           "date": "2024-11-22",
           "author": "mek@chromium.org",
@@ -8478,14 +8507,7 @@
       "name": "Gyroscope",
       "href": "https://w3c.github.io/gyroscope/",
       "specrepo": "https://github.com/w3c/gyroscope",
-      "speclog": [
-        {
-          "date": "2024-10-08",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "43c8acf",
-          "subject": "Update permission name and feature name references (#63)"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gyroscope/blob/HEAD/CONTRIBUTING.md"
     },
@@ -8523,6 +8545,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-12-05",
+          "author": "annevk@annevk.nl",
+          "hash": "a97372b0",
+          "subject": "Reference even more baseline concepts in CSS Inline Layout"
+        },
         {
           "date": "2024-12-04",
           "author": "35911232+shannonbooth@users.noreply.github.com",
@@ -8678,39 +8706,27 @@
           "author": "d@domenic.me",
           "hash": "60756871",
           "subject": "Do not establish close watchers in non-fully active documents"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "yuzus@google.com",
-          "hash": "33cf828f",
-          "subject": "Add user-agent specific blocking reasons for NotRestoredReasons"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "graveljp@users.noreply.github.com",
-          "hash": "8a94842b",
-          "subject": "Apply globalAlpha on the canvas filter source"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "d@domenic.me",
-          "hash": "3a8303ec",
-          "subject": "Fix window.close() always doing nothing"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "annevk@annevk.nl",
-          "hash": "d8e53439",
-          "subject": "Editorial: address two tiny nits"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "yoav.weiss@shopify.com",
-          "hash": "60d1874c",
-          "subject": "Add a noopener-allow-popups value to COOP"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "masonf@chromium.org",
+          "hash": "e96c4c3d5c",
+          "subject": "Update dialog closedby behavior to only close one at a time"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "jarhar@chromium.org",
+          "hash": "c4c67222e7",
+          "subject": "Change parser behavior of <select><select>"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "echen@mozilla.com",
+          "hash": "b4255790dc",
+          "subject": "Always consume user activation when opending a new window"
+        },
         {
           "date": "2024-12-03",
           "author": "jarhar@chromium.org",
@@ -9340,24 +9356,6 @@
           "author": "emilio@crisal.io",
           "hash": "0f18156851",
           "subject": "Allow to propagate loadgroup flags to parent process."
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jpgravel@chromium.org",
-          "hash": "bf7c101faf",
-          "subject": "Make WPT tests validating layers with options tentative"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "clamy@chromium.org",
-          "hash": "671f9e80af",
-          "subject": "[DIP] Add support for isolate-and-credentialless"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jpgravel@chromium.org",
-          "hash": "ac35e3fe54",
-          "subject": "Add a WPT test validating a canvas filter with a globalAlpha"
         }
       ]
     },
@@ -9959,14 +9957,7 @@
       "name": "Magnetometer",
       "href": "https://w3c.github.io/magnetometer/",
       "specrepo": "https://github.com/w3c/magnetometer",
-      "speclog": [
-        {
-          "date": "2024-10-08",
-          "author": "anssi.kostiainen@gmail.com",
-          "hash": "6993f28",
-          "subject": "Update permission name and feature name references (#75)"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/magnetometer/blob/HEAD/CONTRIBUTING.md"
     },
@@ -10163,6 +10154,12 @@
       "specrepo": "https://github.com/w3c/media-capabilities",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-12-04",
+          "author": "chrisn@users.noreply.github.com",
+          "hash": "d3d219eab4",
+          "subject": "Add some Media Capabilities API tests (#49140)"
+        },
         {
           "date": "2024-11-20",
           "author": "mfoltz@google.com",
@@ -10899,18 +10896,6 @@
           "author": "fd@w3.org",
           "hash": "a0a7479",
           "subject": "Bump version of Ubuntu and actions (#353)"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "mfoltz@chromium.org",
-          "hash": "4d382c6",
-          "subject": "Reformat and update SVG"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "mfoltz@chromium.org",
-          "hash": "6aaea0c",
-          "subject": "Revert SVG changes"
         }
       ],
       "testlog": []
@@ -11446,14 +11431,7 @@
       "name": "Presentation API",
       "href": "https://w3c.github.io/presentation-api/",
       "specrepo": "https://github.com/w3c/presentation-api",
-      "speclog": [
-        {
-          "date": "2024-10-08",
-          "author": "mfoltz@google.com",
-          "hash": "b9a3e3d",
-          "subject": "Always return a new Promise from getAvailability(). (#525)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-11-20",
@@ -12239,15 +12217,15 @@
           "author": "cammie@chromium.org",
           "hash": "1976227",
           "subject": "abort and add notes"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "cammie@chromium.org",
-          "hash": "62d7c49",
-          "subject": "address comments"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-05",
+          "author": "yaoxia@chromium.org",
+          "hash": "d54d933593",
+          "subject": "[shared storage] Implement batchUpdate() for Window and SharedStorageWorklet context"
+        },
         {
           "date": "2024-12-03",
           "author": "yaoxia@chromium.org",
@@ -12378,12 +12356,6 @@
           "author": "negibokken@gmail.com",
           "hash": "93cc80e1c1",
           "subject": "Fix internal error of csp-script-src-self.html?target_hint=_self"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "liviutinta@chromium.org",
-          "hash": "f18c40c851",
-          "subject": "Add WPT for CSP exemption of speculation rules via the SR header"
         }
       ]
     },
@@ -12771,7 +12743,14 @@
       "name": "Float16Array",
       "href": "https://tc39.es/proposal-float16array/",
       "specrepo": "https://github.com/tc39/proposal-float16array",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2024-12-05",
+          "author": "bakkot@gmail.com",
+          "hash": "2e69968",
+          "subject": "Editorial: add note about casting to f16 (#14)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -13019,18 +12998,6 @@
           "author": "guybedford@gmail.com",
           "hash": "36ce403",
           "subject": "add upstream PR link"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "guybedford@users.noreply.github.com",
-          "hash": "b04e006",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "guybedford@gmail.com",
-          "hash": "795dd90",
-          "subject": "update missing source phase to be a SyntaxError (#65)"
         }
       ],
       "testlog": []
@@ -13040,6 +13007,18 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2024-12-04",
+          "author": "trflynn89@pm.me",
+          "hash": "d42b24f2",
+          "subject": "Editorial: Remove errant [[Duration]] reference from RoundRelativeDuration"
+        },
+        {
+          "date": "2024-12-04",
+          "author": "trflynn89@pm.me",
+          "hash": "bfee0498",
+          "subject": "Fix typo in DifferenceTemporalPlainYearMonth AO"
+        },
         {
           "date": "2024-11-26",
           "author": "trflynn89@pm.me",
@@ -13207,324 +13186,6 @@
           "author": "syobon.hinata.public@gmail.com",
           "hash": "12012602",
           "subject": "Use `Intl.LocalesArgument` in  signature of `toLocaleString` methods"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "c75c8418",
-          "subject": "Editorial: Clarify requirement for implementation-defined month-day validation"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "68fe4966",
-          "subject": "Editorial: Inline ZeroTimeDuration"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "36f1baa1",
-          "subject": "Editorial: Merge SubtractTimeDuration into AddTimeDuration"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "c5e65991",
-          "subject": "Editorial: Inline TimeDurationSeconds and TimeDurationSubseconds"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "4405f30b",
-          "subject": "Editorial: Rename Normalized Time Duration to time duration"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "ff968bd8",
-          "subject": "Editorial: Rename UnbalanceDateDurationRelative to DateDurationDays"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "5e95761a",
-          "subject": "Editorial: Rename UnnormalizeDuration to TemporalDurationFromInternal"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "2c9228b6",
-          "subject": "Editorial: Rename \"normalized duration\" to \"internal duration\""
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "6346638a",
-          "subject": "Editorial: Fix duration record field names"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "56303c9b",
-          "subject": "Editorial: Fix AOs that no longer return a [[NormalizedDuration]] field"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "848634b6",
-          "subject": "Polyfill: Use object spreading for readability"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "348c12f6",
-          "subject": "Polyfill: Refactor GetUTCEpochMilliseconds to use ISO Date-Time Record"
-        },
-        {
-          "date": "2024-10-09",
-          "author": "pchimento@igalia.com",
-          "hash": "14e85b63",
-          "subject": "Editorial: Abstract days range check into CheckISODaysRange"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "e6660f2b",
-          "subject": "Editorial: Give field names lists to PrepareCalendarFields in table order"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "0fab8646",
-          "subject": "Editorial: Move PrepareCalendarFields into calendar section"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "51f61b6a",
-          "subject": "Editorial: Second argument to CalendarExtraFields is only a List"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "e51b82e4",
-          "subject": "Editorial: Add ISODateWithinLimits check to CalendarMonthDayFromFields"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "180a354e",
-          "subject": "Update test262"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "f62aa26b",
-          "subject": "Avoid formatting irrelevant parts of dateStyle/timeStyle for Temporal types"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "c9827175",
-          "subject": "Throw TypeError if no overlap between options and Temporal object"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "3c56db82",
-          "subject": "Polyfill: Fix definitions of hasDateOptions and hasTimeOptions"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "fe909ba8",
-          "subject": "Tighten validation of offset string and month code in property bags"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "c751d1f9",
-          "subject": "Polyfill: Fix IsOffsetTimeZoneIdentifier to not accept sub-minute offsets"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "cb2e0fff",
-          "subject": "Editorial: Use ISO Date Records in ToISOWeekOfYear/DayOfYear/DayOfWeek"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "dd9679fe",
-          "subject": "Editorial: Return Time Record from ToTemporalTimeOrMidnight, and rename"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "4d5c2d50",
-          "subject": "Editorial: Remove duplicated line in RegulateISODate"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "59a95b42",
-          "subject": "Editorial: Remove TemporalObjectToFields"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "aebfa3c0",
-          "subject": "Editorial: Inline SystemInstant and SystemZonedDateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "1a23f2c9",
-          "subject": "Editorial: Return ISO Date-Time Record from SystemDateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "abb2f2cb",
-          "subject": "Editorial: Inline ConstrainTime into RegulateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "607e2630",
-          "subject": "Editorial: Add CreateTimeRecord AO"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "86ff1109",
-          "subject": "Editorial: Use records in internal slots of Temporal objects"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "1e065842",
-          "subject": "Editorial: Add MidnightTimeRecord and NoonTimeRecord"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "8e57e867",
-          "subject": "Editorial: Use ISO Date-Time Record in GetNamedTimeZoneEpochNanoseconds"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "e948cc8d",
-          "subject": "Editorial: Use ISO Date-Time Record in GetUTCEpochNanoseconds"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "9e801047",
-          "subject": "Editorial: Use ISO Date Record in ISOYearMonthWithinLimits"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "5396508f",
-          "subject": "Editorial: Use ISO Date Record in InterpretISODateTimeOffset"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "02f8c439",
-          "subject": "Editorial: Use ISO Date-Time Record in DifferencePlainDateTimeWithTotal"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "1452c099",
-          "subject": "Editorial: Use ISO Date-Time Record in DifferencePlainDateTimeWithRounding"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "57350a30",
-          "subject": "Editorial: Use ISO Date-Time Record in DifferenceISODateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "aa3a36ec",
-          "subject": "Editorial: Use ISO Date-Time Record in CompareISODateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "a11d31cd",
-          "subject": "Editorial: Compose ISO Date-Time Record of ISO Date Record and Time Record"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "991d8826",
-          "subject": "Editorial: Use ISO Date-Time Record in TemporalDateTimeToString, and rename"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "45f82f9e",
-          "subject": "Editorial: Use Time Record in RoundTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "2cd4372e",
-          "subject": "Editorial: Use ISO Date-Time Record in RoundISODateTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "535cbacd",
-          "subject": "Editorial: Use Time Record in AddTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "2d107444",
-          "subject": "Editorial: Use Time Record in CompareTemporalTime, and rename"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "218ff5a2",
-          "subject": "Editorial: Use Time Record in TemporalTimeToString, and rename"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "a27ab899",
-          "subject": "Editorial: Use Time Record in DifferenceTime"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "184cc336",
-          "subject": "Editorial: Use ISO Date Record in CompareISODate and ISODateSurpasses"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "7d3fe719",
-          "subject": "Editorial: Use ISO Date(-Time) Record in ISODate(Time)WithinLimits"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "0baee303",
-          "subject": "Editorial: Inline ISOMonthCode into CalendarISOToDate"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "pchimento@igalia.com",
-          "hash": "ced11739",
-          "subject": "Editorial: Remove dead code from PlainDateTime.with"
         }
       ],
       "testlog": []
@@ -14013,12 +13674,6 @@
           "author": "morlovich@google.com",
           "hash": "feb9171",
           "subject": "Fix parsing of our promises to note they're nullable. (#1293)"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "kleber@google.com",
-          "hash": "1349420",
-          "subject": "Create 2024-10-02-FLEDGE-call-minutes.md"
         }
       ],
       "testlog": []
@@ -14777,12 +14432,6 @@
           "author": "nsatragno@chromium.org",
           "hash": "650686fdcc",
           "subject": "[webauthn] Move (more) nested frame tests to WPTs"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "nsatragno@chromium.org",
-          "hash": "9eab512273",
-          "subject": "[webauthn] Move nested frame tests to WPTs"
         }
       ]
     },
@@ -15644,12 +15293,6 @@
           "author": "jdescottes@mozilla.com",
           "hash": "0af3a1f37d",
           "subject": "[wdspec] Add wdspec test for continueRequest url parameter"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jdescottes@mozilla.com",
-          "hash": "63a80def87",
-          "subject": "[wdspec] Avoid rounding issues with request timing assertions"
         }
       ]
     },
@@ -16289,6 +15932,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2024-12-04",
+          "author": "senorblanco@chromium.org",
+          "hash": "d248f85c",
+          "subject": "Compat mode: make f16 and f32 rendering optional. (#4983)"
+        },
+        {
           "date": "2024-12-02",
           "author": "alanbaker@google.com",
           "hash": "97a3eada",
@@ -16805,6 +16454,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-04",
+          "author": "junwei.fu@intel.com",
+          "hash": "e9d8459f9c",
+          "subject": "webnn: Support scatterElements in tflite converter"
+        },
+        {
           "date": "2024-12-03",
           "author": "asully@chromium.org",
           "hash": "48178346fe",
@@ -17007,24 +16662,6 @@
           "author": "lisha.guo@intel.com",
           "hash": "481d201633",
           "subject": "Reland \"webnn: add int4 and uint4 support for quantizeLinear and dequantizeLinear\""
-        },
-        {
-          "date": "2024-10-09",
-          "author": "patrto@microsoft.com",
-          "hash": "ccc114e8bb",
-          "subject": "WebNN: Add IDL and mojo definitions for `logical[And|Or|Xor]` operators"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "luci-bisection@appspot.gserviceaccount.com",
-          "hash": "12a8606c77",
-          "subject": "Revert \"webnn: add int4 and uint4 support for quantizeLinear and dequantizeLinear\""
-        },
-        {
-          "date": "2024-10-08",
-          "author": "lisha.guo@intel.com",
-          "hash": "541cc2bbef",
-          "subject": "webnn: add int4 and uint4 support for quantizeLinear and dequantizeLinear"
         }
       ]
     },
@@ -17118,18 +16755,6 @@
           "author": "dom@w3.org",
           "hash": "1253b4d7",
           "subject": "Reject ICE servers with an authority component or /"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "dom@w3.org",
-          "hash": "2072f430",
-          "subject": "Demote PR 2926 as candidate instead of proposed"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "dom@w3.org",
-          "hash": "22f85c46",
-          "subject": "Complete ICE server URL validation"
         }
       ],
       "testlog": [
@@ -17268,24 +16893,6 @@
           "author": "2762250+wilaw@users.noreply.github.com",
           "hash": "1dc86be",
           "subject": "Add notes on receiver-side stream availability"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "44a80cb",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "1589687",
-          "subject": "Minor rephrase"
-        },
-        {
-          "date": "2024-10-08",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "5bd0725",
-          "subject": "Rename to atSendCapacity"
         }
       ],
       "testlog": []
@@ -17446,6 +17053,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-12-04",
+          "author": "senorblanco@chromium.org",
+          "hash": "d248f85c",
+          "subject": "Compat mode: make f16 and f32 rendering optional. (#4983)"
+        },
         {
           "date": "2024-12-02",
           "author": "alanbaker@google.com",
