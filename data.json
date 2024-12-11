@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-10-14T07:13:47.412Z",
-  "until": "2024-12-10T07:13:47.412Z",
+  "since": "2024-10-15T07:13:46.408Z",
+  "until": "2024-12-11T07:13:46.408Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -881,6 +881,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "fwang@igalia.com",
+          "hash": "7cabcdcfb7",
+          "subject": "report-clips-sample.https.html: Remove redundant return in function sample. (#49616)"
+        },
+        {
           "date": "2024-12-06",
           "author": "yoavweiss@chromium.org",
           "hash": "22b20cf0eb",
@@ -999,6 +1005,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2024-12-10",
+          "author": "dgrogan@chromium.org",
+          "hash": "bf4c6fa4c4",
+          "subject": "[layout] stretch tests: margin collapsing and content contributions"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "schenney@chromium.org",
+          "hash": "c9a08c2f0c",
+          "subject": "Fix a crash in CSS Custom Property application"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "emilio@crisal.io",
+          "hash": "6d70cd30aa",
+          "subject": "Fix nsCSSFrameConstructor::ContentWillBeRemoved reentrancy guard."
+        },
+        {
+          "date": "2024-12-10",
+          "author": "andruud@chromium.org",
+          "hash": "a622501b36",
+          "subject": "[css-nesting] Don't re-nest CSSNestedDeclarations in @scope"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "obrufau@igalia.com",
+          "hash": "f4c026a764",
+          "subject": "[¢ss-grid] Fix grid-template-shorthand-composition.html"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "obrufau@igalia.com",
+          "hash": "692415abbd",
+          "subject": "Don't transfer indefinite `height: stretch` to inline axis"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "andruud@chromium.org",
+          "hash": "39f20a718b",
+          "subject": "[css-nesting] Implement CSSStyleRule::setSelectorText by re-nesting"
+        },
         {
           "date": "2024-12-09",
           "author": "vmpstr@chromium.org",
@@ -2816,36 +2864,6 @@
           "author": "mstensho@chromium.org",
           "hash": "617a623d00",
           "subject": "Always add new line box for content pushed down by float."
-        },
-        {
-          "date": "2024-10-15",
-          "author": "jonathan-j-lee@users.noreply.github.com",
-          "hash": "6c8a3fe8ea",
-          "subject": "Fix `has-slotted-functional-changing-00*.tentative.html` subtest names (#48615)"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "39a90c06cb",
-          "subject": "[@container] Correctly match snapped on container-type changes"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "kbabbitt@microsoft.com",
-          "hash": "ad0edc9389",
-          "subject": "Don't convert intermediate relative colors out of legacy RGB"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "c430afd31a",
-          "subject": "[@container] Writing-mode change may change container evaluations"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "598e86ac69",
-          "subject": "[@container] Change serialization of general-enclosed in test"
         }
       ]
     },
@@ -2920,12 +2938,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "a43d71b03",
           "subject": "[css-anchor-position] Make anchorpos respect the *current* scroll position of all its anchor references, snapshotted. #10999"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "jackalmage@gmail.com",
-          "hash": "905c94591",
-          "subject": "[css-anchor-position][editorial] Fix wording. Closes #11029"
         }
       ],
       "testlog": [
@@ -3184,6 +3196,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "andruud@chromium.org",
+          "hash": "a622501b36",
+          "subject": "[css-nesting] Don't re-nest CSSNestedDeclarations in @scope"
+        },
+        {
           "date": "2024-11-28",
           "author": "andruud@chromium.org",
           "hash": "54647f8a87",
@@ -3324,12 +3342,6 @@
           "author": "kbabbitt@microsoft.com",
           "hash": "766b106752",
           "subject": "Preserve `none` in computed relative colors without a conversion"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "kbabbitt@microsoft.com",
-          "hash": "ad0edc9389",
-          "subject": "Don't convert intermediate relative colors out of legacy RGB"
         }
       ]
     },
@@ -3525,12 +3537,6 @@
           "author": "chris@w3.org",
           "hash": "83a5d072b",
           "subject": "[css-conditional-3][editorial] Status back to ED"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@google.com",
-          "hash": "73724c91f",
-          "subject": "[css-conditional-5] snapped matches scrollsnapchanging #10784"
         }
       ],
       "testlog": [
@@ -3677,24 +3683,6 @@
           "author": "futhark@chromium.org",
           "hash": "d56d0a1180",
           "subject": "[@container] stuck queries with writing direction changes"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "39a90c06cb",
-          "subject": "[@container] Correctly match snapped on container-type changes"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "c430afd31a",
-          "subject": "[@container] Writing-mode change may change container evaluations"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "futhark@chromium.org",
-          "hash": "598e86ac69",
-          "subject": "[@container] Change serialization of general-enclosed in test"
         }
       ]
     },
@@ -3932,6 +3920,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "obrufau@igalia.com",
+          "hash": "f4c026a764",
+          "subject": "[¢ss-grid] Fix grid-template-shorthand-composition.html"
+        },
+        {
           "date": "2024-12-05",
           "author": "kschmi@microsoft.com",
           "hash": "f380495121",
@@ -3992,26 +3986,7 @@
       "href": "https://drafts.csswg.org/css-highlight-api/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a1ebde105",
-          "subject": "[css-highlight-pseudo-1] Export term"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "ed29c24bf",
-          "subject": "[css-pseudo-4][css-highlight-api-1] Clean up redundancies in linkage. #6755"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "daniec@microsoft.com",
-          "hash": "f15d6870d",
-          "subject": "[css-pseudo-4] [css-highlight-api-1] Integrate custom highlights into css-pseudo-4 #6755"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -4421,6 +4396,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "andruud@chromium.org",
+          "hash": "39f20a718b",
+          "subject": "[css-nesting] Implement CSSStyleRule::setSelectorText by re-nesting"
+        },
+        {
           "date": "2024-11-27",
           "author": "andruud@chromium.org",
           "hash": "732c2cf82a",
@@ -4767,99 +4748,15 @@
           "author": "dbaron@dbaron.org",
           "hash": "8932d2ea0",
           "subject": "[css-pseudo-4] Fix remaining reference to old part-like pseudo-element term."
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "f8e266b5c",
-          "subject": "[css-pseudo-4] Exclude css-inline-3 properties from ::placeholder #5379"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "1214c57ad",
-          "subject": "[css-pseudo-4] Forbid UA tweaks to author colors #6853"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "597f5a8d6",
-          "subject": "[css-pseudo-4] Prefixed properties don't apply to highlights. #7580"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "24ff694ad",
-          "subject": "[css-pseudo-4] Add reminder that chaining is only allowed if explicitly specified #7118"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "e642223c7",
-          "subject": "[css-pseudo-4] Add issue"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "272b1fd26",
-          "subject": "[css-pseudo-4][css-forms-1] Move ::picker() to css-forms-1 where it belongs #10865"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "24eda7a8f",
-          "subject": "[css-pseudo-4] Rename part-like to element-backed and clean up prose"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "2c0772a46",
-          "subject": "[css-pseudo-4] Move part-like pseudo-elements chapter"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "9481e21a7",
-          "subject": "[css-shadow-parts][css-pseudo] Move various ::part() details to 'part-like pseudo-elements'. #10083"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "89466514a",
-          "subject": "[css-pseudo-4] Use shorthand to make it slightly more obvious that it needs to be reset to be styled #9233"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "a32f4f138",
-          "subject": "[css-pseudo-4] Add new pseudo-element ::search-text #10212 #10213 See https://github.com/w3c/csswg-drafts/pull/10475"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "3b3a022fc",
-          "subject": "[css-pseudo-4] Tighten up text about non-applicable properties taken from originating element #7591 #9428"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "schenney@chromium.org",
-          "hash": "1dcf54e56",
-          "subject": "[css-pseudo-4] Take certain non-applicable but required properties from the originating element #7591"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "ed29c24bf",
-          "subject": "[css-pseudo-4][css-highlight-api-1] Clean up redundancies in linkage. #6755"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "daniec@microsoft.com",
-          "hash": "f15d6870d",
-          "subject": "[css-pseudo-4] [css-highlight-api-1] Integrate custom highlights into css-pseudo-4 #6755"
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-10",
+          "author": "schenney@chromium.org",
+          "hash": "c9a08c2f0c",
+          "subject": "Fix a crash in CSS Custom Property application"
+        },
         {
           "date": "2024-12-06",
           "author": "tcaptan@chromium.org",
@@ -5040,6 +4937,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "emilio@crisal.io",
+          "hash": "6d70cd30aa",
+          "subject": "Fix nsCSSFrameConstructor::ContentWillBeRemoved reentrancy guard."
+        },
+        {
           "date": "2024-11-12",
           "author": "tkent@chromium.org",
           "hash": "7d99467b7d",
@@ -5101,12 +5004,6 @@
           "author": "emilio@crisal.io",
           "hash": "e047128d24",
           "subject": "Missing style invalidation in ShadowRoot::AddSlot()."
-        },
-        {
-          "date": "2024-10-15",
-          "author": "jonathan-j-lee@users.noreply.github.com",
-          "hash": "6c8a3fe8ea",
-          "subject": "Fix `has-slotted-functional-changing-00*.tentative.html` subtest names (#48615)"
         }
       ]
     },
@@ -5191,14 +5088,7 @@
       "href": "https://drafts.csswg.org/css-shadow-parts/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-10-15",
-          "author": "jackalmage@gmail.com",
-          "hash": "9481e21a7",
-          "subject": "[css-shadow-parts][css-pseudo] Move various ::part() details to 'part-like pseudo-elements'. #10083"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2024-12-06",
@@ -5214,6 +5104,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2024-12-10",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "8814e9ee9",
+          "subject": "[css-shapes-2] Specify the grammar for `shape()` (#11207)"
+        },
         {
           "date": "2024-10-22",
           "author": "noamr@users.noreply.github.com",
@@ -5261,15 +5157,20 @@
       "href": "https://drafts.csswg.org/css-sizing/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "3ccec1d29",
-          "subject": "[css-sizing-4][editorial] Add test suite link #10602"
-        }
-      ],
+      "speclog": [],
       "testlog": [
+        {
+          "date": "2024-12-10",
+          "author": "dgrogan@chromium.org",
+          "hash": "bf4c6fa4c4",
+          "subject": "[layout] stretch tests: margin collapsing and content contributions"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "obrufau@igalia.com",
+          "hash": "692415abbd",
+          "subject": "Don't transfer indefinite `height: stretch` to inline axis"
+        },
         {
           "date": "2024-12-05",
           "author": "obrufau@igalia.com",
@@ -6241,12 +6142,6 @@
           "author": "emilio@crisal.io",
           "hash": "6237cae57",
           "subject": "[css-view-transitions-1] Remove redundant declaration. (#11057)"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "9d7be5c42",
-          "subject": "[css-view-transitions-2] Clarify a few nesting details (#10964)"
         }
       ],
       "testlog": [
@@ -6583,6 +6478,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "dom@chromium.org",
+          "hash": "64e219541d",
+          "subject": "DOM: Enable moveBefore() into Document nodes"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "me@marais.co",
+          "hash": "4e8cf929a3",
+          "subject": "chore: test for complex objects as initial values"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "me@marais.co",
+          "hash": "bba02df5bd",
+          "subject": "chore: use `promise_rejects_*` instead of try/catch blocks"
+        },
+        {
           "date": "2024-11-26",
           "author": "pchimento@igalia.com",
           "hash": "67880a4eb8",
@@ -6882,12 +6795,6 @@
           "author": "benallen@igalia.com",
           "hash": "153db6ce33",
           "subject": "Intl.NumberFormat Add tests for `Intl.NumberFormat` when using \"currency\" style and \"compact\", \"engineering\", and \"scientific\" notations."
-        },
-        {
-          "date": "2024-10-14",
-          "author": "andre.bargull@gmail.com",
-          "hash": "df910721ba",
-          "subject": "Update time zone mapping for CLDR46 / tzdata 2024b"
         }
       ]
     },
@@ -7444,30 +7351,6 @@
           "author": "idimitriou@igalia.com",
           "hash": "954d1809f8",
           "subject": "Boilerplate tests for rawJSON and isRawJSON from the proposal json-parse-with-source"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "andre.bargull@gmail.com",
-          "hash": "9b3d9d9700",
-          "subject": "Update built-ins/Date to verifyProperty"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "andre.bargull@gmail.com",
-          "hash": "d1c2a6f139",
-          "subject": "Update built-ins/Date/prototype/getXXX to verifyProperty"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "andre.bargull@gmail.com",
-          "hash": "800d2190b3",
-          "subject": "Update built-ins/Date/prototype/setXXX to verifyProperty"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "meghan@bun.sh",
-          "hash": "60963bf468",
-          "subject": "chore: convert many tests to use verifyProperty (#4263)"
         }
       ]
     },
@@ -8186,12 +8069,6 @@
           "author": "shivanisha@chromium.org",
           "hash": "48e67fd",
           "subject": "Create meeting notes for TPAC2024 (#196)"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "blu2.5@me.com",
-          "hash": "005d68f",
-          "subject": "Update explainers to include permissions inheritance behavior (#136)"
         }
       ],
       "testlog": [
@@ -8254,6 +8131,12 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "6a035397d6",
+          "subject": "Add Initial Web Platform Tests for Storage Access Headers (#49502)"
+        },
+        {
           "date": "2024-11-20",
           "author": "mych@chromium.org",
           "hash": "0a6e4f4bc5",
@@ -8266,7 +8149,14 @@
       "href": "https://w3c.github.io/webappsec-fetch-metadata/",
       "specrepo": "https://github.com/w3c/webappsec-fetch-metadata",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2024-12-10",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "6a035397d6",
+          "subject": "Add Initial Web Platform Tests for Storage Access Headers (#49502)"
+        }
+      ]
     },
     {
       "name": "File System Access",
@@ -8307,6 +8197,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-11",
+          "author": "awillia@chromium.org",
+          "hash": "949cc8c7c7",
+          "subject": "[Blob URL] Make tentative partitioning WPTs permanent"
+        },
         {
           "date": "2024-11-20",
           "author": "dshin@mozilla.com",
@@ -8558,6 +8454,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2024-12-11",
+          "author": "282126346@qq.com",
+          "hash": "67e44453",
+          "subject": "Remove use of <param> from an example"
+        },
+        {
           "date": "2024-12-10",
           "author": "jarhar@chromium.org",
           "hash": "efce7640",
@@ -8748,15 +8650,27 @@
           "author": "d@domenic.me",
           "hash": "a41f832d",
           "subject": "Fix incorrect variable reference in \"apply the history step\""
-        },
-        {
-          "date": "2024-10-15",
-          "author": "65556393+quadristan@users.noreply.github.com",
-          "hash": "24f54964",
-          "subject": "Fix typo in the name of \"noopener-allow-popups\""
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-11",
+          "author": "mcnee@chromium.org",
+          "hash": "2e9f0702f2",
+          "subject": "Add WPTs for RelOpenerBcgDependencyHint"
+        },
+        {
+          "date": "2024-12-11",
+          "author": "mcnee@chromium.org",
+          "hash": "1f7679ad01",
+          "subject": "Add WPTs for named window lookup and BCG swap limits"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "rniwa@webkit.org",
+          "hash": "32ffad5d78",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=283431"
+        },
         {
           "date": "2024-12-09",
           "author": "schenney@chromium.org",
@@ -9398,24 +9312,6 @@
           "author": "mozilla@keithcirkel.co.uk",
           "hash": "c2d0c7826c",
           "subject": "Implement togggle events for Dialog show/showModal/close"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "ronak69@danwin1210.de",
-          "hash": "a08267ec0b",
-          "subject": "Fix always failing assertion due to using incorrect element name"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "dizhangg@chromium.org",
-          "hash": "078000e068",
-          "subject": "[reading-flow] display: contents participate in the flow"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "jarhar@chromium.org",
-          "hash": "4452d36dcd",
-          "subject": "Improve customizable select event handling"
         }
       ]
     },
@@ -9705,12 +9601,6 @@
           "author": "jsbell@chromium.org",
           "hash": "1dd072d",
           "subject": "Editorial: Update \"new in this edition\" notes"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "abhishek.shanthkumar@gmail.com",
-          "hash": "020487e",
-          "subject": "Specify the error code for failures when reading a value from disk (#430)"
         }
       ],
       "testlog": [
@@ -10958,6 +10848,12 @@
       "specrepo": "https://github.com/w3c/openscreenprotocol",
       "speclog": [
         {
+          "date": "2024-12-10",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "1ebeab2",
+          "subject": "Update README to reflect the latest status (#355)"
+        },
+        {
           "date": "2024-12-05",
           "author": "fd@w3.org",
           "hash": "ed2685d",
@@ -11599,12 +11495,6 @@
           "author": "zcorpan@gmail.com",
           "hash": "7441432",
           "subject": "Meta: Remove an incorrect issue that claimed a test to be wrong"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "annevk@annevk.nl",
-          "hash": "ec09b50",
-          "subject": "Meta: update repository files"
         }
       ],
       "testlog": []
@@ -12046,12 +11936,6 @@
           "author": "wick.linxunjie@gmail.com",
           "hash": "29252b2ab",
           "subject": "[selectors-4] Fix typo (#11246)"
-        },
-        {
-          "date": "2024-10-15",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "56e1d943c",
-          "subject": "[selectors-4] Align :user-invalid/valid with HTML spec #9308 #9257"
         }
       ],
       "testlog": [
@@ -12260,18 +12144,6 @@
           "author": "xyaof3@126.com",
           "hash": "e3b4368",
           "subject": "Use \"long long\" for IDL time fields"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "cammie@chromium.org",
-          "hash": "6cfd89f",
-          "subject": "fix promise resolution"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "cammie@chromium.org",
-          "hash": "30c8bc1",
-          "subject": "fix async steps"
         }
       ],
       "testlog": [
@@ -12658,6 +12530,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2024-12-11",
+          "author": "karlcow@apple.com",
+          "hash": "8372201166",
+          "subject": "Add tests for SVGElement.ownerSVGElement (#49608)"
+        },
         {
           "date": "2024-11-19",
           "author": "fs@opera.com",
@@ -13830,18 +13708,6 @@
           "author": "131692252+HabibiYou@users.noreply.github.com",
           "hash": "bdc705b",
           "subject": "[SPEC] Deals (#1275)"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "kleber@google.com",
-          "hash": "4f74982",
-          "subject": "Create 2024-10-09-FLEDGE-call-minutes.md"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "c2dc6dd",
-          "subject": "Remove B&A fDO report handling todo (#1301)"
         }
       ],
       "testlog": []
@@ -14167,18 +14033,6 @@
           "author": "james@nurthen.com",
           "hash": "af82139d",
           "subject": "fix labeler"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "49305434+daniel-montalvo@users.noreply.github.com",
-          "hash": "c77c2c65",
-          "subject": "Editorial: Add ./github/labeler (#2321)"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "49305434+daniel-montalvo@users.noreply.github.com",
-          "hash": "977d2094",
-          "subject": "Editorial: Handle PRs from forks (#2307)"
         }
       ],
       "testlog": []
@@ -14589,6 +14443,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14605,12 +14471,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": [
@@ -14694,6 +14554,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14710,12 +14582,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14726,6 +14592,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14742,12 +14620,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14758,6 +14630,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14774,12 +14658,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14790,6 +14668,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14806,12 +14696,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14822,6 +14706,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14838,12 +14734,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14854,6 +14744,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14870,12 +14772,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14886,6 +14782,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14902,12 +14810,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14918,6 +14820,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14934,12 +14848,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14950,6 +14858,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14966,12 +14886,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -14982,6 +14896,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -14998,12 +14924,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -15014,6 +14934,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -15030,12 +14962,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -15046,6 +14972,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -15062,12 +15000,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -15078,6 +15010,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -15094,12 +15038,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -15110,6 +15048,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "3a88a39",
+          "subject": "Update references"
+        },
+        {
+          "date": "2024-11-12",
+          "author": "guidou@chromium.org",
+          "hash": "a74786c",
+          "subject": "Update references to mediacapture-extensions."
+        },
+        {
           "date": "2024-11-11",
           "author": "nino.filiu@gmail.com",
           "hash": "e367198",
@@ -15126,12 +15076,6 @@
           "author": "sandersd@chromium.org",
           "hash": "4ae2011",
           "subject": "Specify rounding behavior"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "sandersd@chromium.org",
-          "hash": "25c6e3e",
-          "subject": "Add orientation to VideoFrame"
         }
       ],
       "testlog": []
@@ -16062,6 +16006,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2024-12-10",
+          "author": "fd@tidoust.net",
+          "hash": "73a75f54",
+          "subject": "Fix typos in refs to adapter capability guarantees section (#5015)"
+        },
+        {
           "date": "2024-12-06",
           "author": "senorblanco@chromium.org",
           "hash": "b36b7cbe",
@@ -16572,6 +16522,24 @@
       ],
       "testlog": [
         {
+          "date": "2024-12-10",
+          "author": "phillis@chromium.org",
+          "hash": "5741daf1cb",
+          "subject": "webnn: implement lstmCell in CoreML"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "phillis@chromium.org",
+          "hash": "9ce3bb77b0",
+          "subject": "webnn: handle empty axes for layerNormalization in CoreML"
+        },
+        {
+          "date": "2024-12-10",
+          "author": "feng.dai@intel.com",
+          "hash": "0ed00e47b7",
+          "subject": "webnn: add fp16 conformance tests for gemm and matmul operations"
+        },
+        {
           "date": "2024-12-06",
           "author": "phillis@chromium.org",
           "hash": "37fd4ed8aa",
@@ -16762,12 +16730,6 @@
           "author": "patrto@microsoft.com",
           "hash": "671df7f85e",
           "subject": "WebNN: Implement logicalAnd, logicalOr, and logicalXor in DirectML"
-        },
-        {
-          "date": "2024-10-14",
-          "author": "ningxin.hu@intel.com",
-          "hash": "59751055ef",
-          "subject": "WebNN: Implement `scatterElements` operator in DirectML backend"
         }
       ]
     },
@@ -16911,18 +16873,6 @@
           "author": "jib@mozilla.com",
           "hash": "92f1c298bc",
           "subject": "Test simulcast screenshare in webrtc/simulcast/screenshare.https.html WPT."
-        },
-        {
-          "date": "2024-10-14",
-          "author": "brandstrom@google.com",
-          "hash": "a2dc0053b4",
-          "subject": "Update Blink to use environment clock timestamps from RTCStats objects."
-        },
-        {
-          "date": "2024-10-14",
-          "author": "hbos@chromium.org",
-          "hash": "aca05ab754",
-          "subject": "Add WPTs that opus supports both mono and stereo signals."
         }
       ]
     },
@@ -17153,6 +17103,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2024-12-10",
+          "author": "fd@tidoust.net",
+          "hash": "73a75f54",
+          "subject": "Fix typos in refs to adapter capability guarantees section (#5015)"
+        },
         {
           "date": "2024-12-06",
           "author": "senorblanco@chromium.org",
