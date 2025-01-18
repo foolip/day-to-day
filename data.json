@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-11-21T07:13:16.876Z",
-  "until": "2025-01-17T07:13:16.876Z",
+  "since": "2024-11-22T07:13:04.160Z",
+  "until": "2025-01-18T07:13:04.160Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -380,7 +380,14 @@
       "href": "https://w3c.github.io/webappsec-clear-site-data/",
       "specrepo": "https://github.com/w3c/webappsec-clear-site-data",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-01-17",
+          "author": "manuel@mozilla.com",
+          "hash": "9183b01be0",
+          "subject": "Add Web-Plaform tests for \"Clear-Site-Data: cache\" header verifying that networking cache gets cleared"
+        }
+      ]
     },
     {
       "name": "Client Hints Infrastructure",
@@ -415,12 +422,6 @@
           "author": "tlin@mozilla.com",
           "hash": "7b3b2686a8",
           "subject": "Part 3 - Allow flex item in legacy flex container to shrink below its automatic minimum size."
-        },
-        {
-          "date": "2024-11-21",
-          "author": "sesse@chromium.org",
-          "hash": "27c7d18fbc",
-          "subject": "Make ConsumeNumberOrPercent() not crash on unresolvable calc()."
         }
       ]
     },
@@ -468,18 +469,6 @@
           "author": "kenneth.r.christiansen@intel.com",
           "hash": "e879d65",
           "subject": "Remove the limiting of rate as it is replace by obfuscation"
-        },
-        {
-          "date": "2024-11-22",
-          "author": "kenneth.r.christiansen@intel.com",
-          "hash": "c318976",
-          "subject": "Fix idl bug"
-        },
-        {
-          "date": "2024-11-22",
-          "author": "kenneth.r.christiansen@intel.com",
-          "hash": "3288c5b",
-          "subject": "Move at-risk to experimental"
         }
       ],
       "testlog": []
@@ -503,12 +492,6 @@
           "author": "pchimento@igalia.com",
           "hash": "67880a4eb8",
           "subject": "Improve idlharness-ShadowRealm integration"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "pchimento@igalia.com",
-          "hash": "f3dcc205a2",
-          "subject": "Enable additional console tests in ShadowRealms"
         }
       ]
     },
@@ -646,6 +629,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-01-18",
+          "author": "sam@webkit.org",
+          "hash": "eb2707abb1",
+          "subject": "WebKit export: Implement CSS Values 5 random() (#50073)"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "futhark@chromium.org",
+          "hash": "28519f0ff3",
+          "subject": "Add test for resolving rlh on the :root element"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jkew@mozilla.com",
+          "hash": "58f845683b",
+          "subject": "before/:after pseudos with display:block should not affect text-wrap balancing of the inline content of a block."
+        },
+        {
+          "date": "2025-01-17",
+          "author": "42524948+iidmsa@users.noreply.github.com",
+          "hash": "04e2c47fa4",
+          "subject": "fix content-visibility-auto-svg-text.html (#50131)"
+        },
         {
           "date": "2025-01-16",
           "author": "dshin@mozilla.com",
@@ -2025,66 +2032,6 @@
           "author": "tlin@mozilla.com",
           "hash": "7109a09114",
           "subject": "Part 3 - Add additional web-platform tests."
-        },
-        {
-          "date": "2024-11-22",
-          "author": "clchambers@microsoft.com",
-          "hash": "a3ea555e5d",
-          "subject": "[CompositeClipPathAnimation] Fix crash with position: absolute"
-        },
-        {
-          "date": "2024-11-22",
-          "author": "dshin@mozilla.com",
-          "hash": "7313fa8e6a",
-          "subject": "Ensure inline elements inside an empty line has zero block-size and no baseline in scrolled block frames."
-        },
-        {
-          "date": "2024-11-21",
-          "author": "vmpstr@chromium.org",
-          "hash": "a0efcaeb97",
-          "subject": "VT: Deflake nothing captured view transition test."
-        },
-        {
-          "date": "2024-11-21",
-          "author": "sam@webkit.org",
-          "hash": "ad426aef3a",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=282962 (#49315)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "obrufau@igalia.com",
-          "hash": "bf56e27127",
-          "subject": "[css-pseudo] Fix marker-text-combine-upright.html"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "andruud@chromium.org",
-          "hash": "420f1a49e1",
-          "subject": "[@scope] Pass TreeScope separately to SelectorChecker"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "sakhapov@chromium.org",
-          "hash": "c88567a385",
-          "subject": "Add nested ::marker styling test"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "7749a48a1d",
-          "subject": "[@container] Rename overflowing scroll-state to scrollable"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "f812fb38b7",
-          "subject": "[@container] Add support for scroll-state(snapped:both)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "d486856789",
-          "subject": "[@container] Add support for scroll-state(overflowing) axis"
         }
       ]
     },
@@ -2322,6 +2269,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-01-18",
+          "author": "code@chrisrebert.com",
+          "hash": "49edba33b",
+          "subject": "[css-box-4] Gloss in-flow jargon (#11521)"
+        },
+        {
           "date": "2024-12-11",
           "author": "keithamus@users.noreply.github.com",
           "hash": "a33454617",
@@ -2381,12 +2334,6 @@
           "author": "andruud@chromium.org",
           "hash": "166fa1e9d6",
           "subject": "[@scope] Allow inserting CSSNestedDeclarations rule in top-level @scope"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "andruud@chromium.org",
-          "hash": "420f1a49e1",
-          "subject": "[@scope] Pass TreeScope separately to SelectorChecker"
         }
       ]
     },
@@ -2544,12 +2491,6 @@
           "author": "60073468+Psychpsyo@users.noreply.github.com",
           "hash": "634ecfb89",
           "subject": "Fix link to CSS-CONTAIN-3 (#11266)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@google.com",
-          "hash": "e971c6592",
-          "subject": "[css-conditional-5] Rename overflowing to scrollable #11182"
         }
       ],
       "testlog": [
@@ -2588,24 +2529,6 @@
           "author": "futhark@chromium.org",
           "hash": "388996de96",
           "subject": "[@container] Missing overflowing -> scrollable in test"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "7749a48a1d",
-          "subject": "[@container] Rename overflowing scroll-state to scrollable"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "f812fb38b7",
-          "subject": "[@container] Add support for scroll-state(snapped:both)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "futhark@chromium.org",
-          "hash": "d486856789",
-          "subject": "[@container] Add support for scroll-state(overflowing) axis"
         }
       ]
     },
@@ -2623,6 +2546,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-17",
+          "author": "42524948+iidmsa@users.noreply.github.com",
+          "hash": "04e2c47fa4",
+          "subject": "fix content-visibility-auto-svg-text.html (#50131)"
+        },
         {
           "date": "2025-01-08",
           "author": "emilio@crisal.io",
@@ -3181,12 +3110,6 @@
           "author": "lingqi@chromium.org",
           "hash": "dab0a73ae4",
           "subject": "[text-box-trim] fix wrong reference to font"
-        },
-        {
-          "date": "2024-11-22",
-          "author": "dshin@mozilla.com",
-          "hash": "7313fa8e6a",
-          "subject": "Ensure inline elements inside an empty line has zero block-size and no baseline in scrolled block frames."
         }
       ]
     },
@@ -3226,12 +3149,6 @@
           "author": "sam@webkit.org",
           "hash": "d676b1cb8c",
           "subject": "WebKit export: CSS counter-* should not eagerly evaluate calc()"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "sakhapov@chromium.org",
-          "hash": "c88567a385",
-          "subject": "Add nested ::marker styling test"
         }
       ]
     },
@@ -3261,12 +3178,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "97e933ecb5",
           "subject": "CSS shape() - Set WindRule when emitting path"
-        },
-        {
-          "date": "2024-11-22",
-          "author": "clchambers@microsoft.com",
-          "hash": "a3ea555e5d",
-          "subject": "[CompositeClipPathAnimation] Fix crash with position: absolute"
         }
       ]
     },
@@ -3455,12 +3366,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "bd38052c5",
           "subject": "[css-overflow-5] Define that :disabled can match ::scroll-button(). #11216"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "flackr@google.com",
-          "hash": "11261b93e",
-          "subject": "[css-overflow-5] Remove normative active marker algorithm. (#11224)"
         }
       ],
       "testlog": [
@@ -3802,12 +3707,6 @@
           "author": "tcaptan@chromium.org",
           "hash": "fe388646e7",
           "subject": "Rename ::check pseudo element to ::checkmark"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "obrufau@igalia.com",
-          "hash": "bf56e27127",
-          "subject": "[css-pseudo] Fix marker-text-combine-upright.html"
         }
       ]
     },
@@ -4315,6 +4214,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-17",
+          "author": "jkew@mozilla.com",
+          "hash": "58f845683b",
+          "subject": "before/:after pseudos with display:block should not affect text-wrap balancing of the inline content of a block."
+        },
+        {
           "date": "2025-01-03",
           "author": "jkew@mozilla.com",
           "hash": "837678e864",
@@ -4327,7 +4232,14 @@
       "href": "https://drafts.csswg.org/css-text-decor/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-01-18",
+          "author": "code@chrisrebert.com",
+          "hash": "e104c6ff5",
+          "subject": "[css-text-decor-4] Gloss out-of-flow jargon (#11522)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-01-03",
@@ -4428,12 +4340,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "504ab4fc5f",
           "subject": "WebKit export: [css-animations] Fix serialization and parsing of `animation-name` strings (#49906)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "sam@webkit.org",
-          "hash": "ad426aef3a",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=282962 (#49315)"
         }
       ]
     },
@@ -4530,15 +4436,21 @@
           "author": "andruud@gmail.com",
           "hash": "8c18591a9",
           "subject": "[css-values-5] Allow explicit null-namespace in attr-name (#11359)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "andruud@gmail.com",
-          "hash": "483d3f2b0",
-          "subject": "[css-values] Total attr()-tainting for substitution values (#11218)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-18",
+          "author": "sam@webkit.org",
+          "hash": "eb2707abb1",
+          "subject": "WebKit export: Implement CSS Values 5 random() (#50073)"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "futhark@chromium.org",
+          "hash": "28519f0ff3",
+          "subject": "Add test for resolving rlh on the :root element"
+        },
         {
           "date": "2025-01-14",
           "author": "moonira@google.com",
@@ -4689,12 +4601,6 @@
           "author": "simon.fraser@apple.com",
           "hash": "62d51810a8",
           "subject": "WebKit export: Missing style invalidation in View Transitions"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "vmpstr@chromium.org",
-          "hash": "a0efcaeb97",
-          "subject": "VT: Deflake nothing captured view transition test."
         }
       ]
     },
@@ -4932,6 +4838,24 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-17",
+          "author": "dom@chromium.org",
+          "hash": "aa414c48ca",
+          "subject": "DOM: Fix moveBefore() disconnected iframe CHECK crash"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "dom@chromium.org",
+          "hash": "d0faf28efd",
+          "subject": "DOM: Fix moveBefore null parent crash"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "dom@chromium.org",
+          "hash": "23f0e645a9",
+          "subject": "DOM: Fix moveBefore() style CharacterData style calculation crash"
+        },
+        {
           "date": "2025-01-06",
           "author": "awogbemila@chromium.org",
           "hash": "78fc765922",
@@ -5002,12 +4926,6 @@
           "author": "kevers@google.com",
           "hash": "9f7aaf0451",
           "subject": "Refactor touch-handler-count"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "dom@chromium.org",
-          "hash": "cf651adeb7",
-          "subject": "DOM: Support disconnected->disconnected moveBefore()"
         }
       ]
     },
@@ -5220,33 +5138,15 @@
           "author": "syg@chromium.org",
           "hash": "3e6f71c9",
           "subject": "Editorial: Move getting the TA type inside the RMW function (#3499)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "cf5938e6",
-          "subject": "Editorial: Add an assertion for privateEnv (#3485)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "ddd73607",
-          "subject": "Meta: Upgrade ESMeta to v0.5.0 (#3487)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "syg@chromium.org",
-          "hash": "c1040ff2",
-          "subject": "Normative: Return false in [[PreventExtensions]] for variable length TypedArrays (#3453)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "jhpjhp0223@gmail.com",
-          "hash": "35af9094",
-          "subject": "Editorial: Fixed return types of algorithms returning ~empty~ (#2924)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-17",
+          "author": "Ms2ger@igalia.com",
+          "hash": "b0f03cb22d",
+          "subject": "Reorder includes in staging/sm"
+        },
         {
           "date": "2025-01-15",
           "author": "Ms2ger@igalia.com",
@@ -5868,12 +5768,6 @@
           "author": "averge@chromium.org",
           "hash": "f3c9797",
           "subject": "Add permissions policy and user activation behavior to unpartitioned access explainer (#201)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "averge@chromium.org",
-          "hash": "01161ae",
-          "subject": "Add spec for `_unfencedTop` navigation target (#200)"
         }
       ],
       "testlog": [
@@ -6468,6 +6362,54 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-18",
+          "author": "jarhar@chromium.org",
+          "hash": "baedb5676b",
+          "subject": "Don't render optgroup label if there is a legend"
+        },
+        {
+          "date": "2025-01-18",
+          "author": "masonf@chromium.org",
+          "hash": "101408b323",
+          "subject": "Get started cleaning up interesttarget implementation [1/N]"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jarhar@chromium.org",
+          "hash": "97afb9f054",
+          "subject": "Make ElementInnerTextCollector use new <select> content model"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jpgravel@chromium.org",
+          "hash": "f98387d6bb",
+          "subject": "Migrate 2d.canvas.host.size.attributes.* to the new canvas WPT generator"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jpgravel@chromium.org",
+          "hash": "4a64fbc174",
+          "subject": "Removed unused imports in WPT's canvas test generator"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jpgravel@chromium.org",
+          "hash": "d2068ff653",
+          "subject": "Render Jinja templates before @... macros in generated canvas WPT tests"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "jpgravel@chromium.org",
+          "hash": "3b77b60493",
+          "subject": "Remove expected PNG files for generated OffscreenCanvas tests"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "clamy@chromium.org",
+          "hash": "ec3b824510",
+          "subject": "[DIP] Pass the reporter to URLloaderFactory"
+        },
+        {
           "date": "2025-01-16",
           "author": "masonf@chromium.org",
           "hash": "f3fb3b72d6",
@@ -6982,12 +6924,6 @@
           "author": "masonf@chromium.org",
           "hash": "d8bd5c4ede",
           "subject": "Remove .tentative from popover-nested-in-button test"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "westbrook.johnson@gmail.com",
-          "hash": "266d54d5f7",
-          "subject": "Correct aria spelling (#49309)"
         }
       ]
     },
@@ -7076,6 +7012,24 @@
       "href": "https://w3c.github.io/IFT/Overview.html",
       "specrepo": "https://github.com/w3c/IFT",
       "speclog": [
+        {
+          "date": "2025-01-17",
+          "author": "grieger@google.com",
+          "hash": "6be6998",
+          "subject": "Add an 'ID Type' column to the example table."
+        },
+        {
+          "date": "2025-01-17",
+          "author": "grieger@google.com",
+          "hash": "e04ed50",
+          "subject": "Note that uri template expansion may error out when using it."
+        },
+        {
+          "date": "2025-01-17",
+          "author": "grieger@google.com",
+          "hash": "f9558ec",
+          "subject": "Clarify URI template expansion with id = 0."
+        },
         {
           "date": "2024-12-12",
           "author": "chris@w3.org",
@@ -9168,6 +9122,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-01-17",
+          "author": "lzhao@microsoft.com",
+          "hash": "217ee1a8de",
+          "subject": "Reland: Inherit service worker controller for srcdoc iframe"
+        },
+        {
           "date": "2025-01-07",
           "author": "youennf@users.noreply.github.com",
           "hash": "bfa088652f",
@@ -9885,30 +9845,6 @@
           "author": "ftang@google.com",
           "hash": "2fefe85",
           "subject": "Editorial: Add note about locale or scripts without any character direction #90"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "FrankYFTang@users.noreply.github.com",
-          "hash": "25f9349",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "FrankYFTang@users.noreply.github.com",
-          "hash": "11afbce",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "FrankYFTang@users.noreply.github.com",
-          "hash": "4d513ae",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "ftang@google.com",
-          "hash": "e9c6db6",
-          "subject": "Update README.md add TC39 meeting note links"
         }
       ],
       "testlog": []
@@ -9994,6 +9930,42 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "26814297",
+          "subject": "Editorial: Sync ToLocalTime"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "b125fce9",
+          "subject": "Editorial: Sync PartitionDateTimePattern and PartitionDateTimeRangePattern"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "686b2169",
+          "subject": "Editorial: Remove update for Intl.DateTimeFormat.prototype.resolvedOptions which was already upstreamed"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "b52e320e",
+          "subject": "Editorial: Remove update for FormatDateTimePattern which was already upstreamed"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "87ba5718",
+          "subject": "Editorial: Remove update for Intl.supportedValuesOf which was already upstreamed"
+        },
+        {
+          "date": "2025-01-17",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c08f6a81",
+          "subject": "Editorial: Remove updates for Time Zones which were already upstreamed"
+        },
         {
           "date": "2025-01-15",
           "author": "pchimento@igalia.com",
@@ -10344,12 +10316,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "fb28acd40c",
           "subject": "Speculative fix for flaky test"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "kevers@google.com",
-          "hash": "53c06dc624",
-          "subject": "Fix leak in single-touch.html"
         }
       ],
       "testpolicy": "https://github.com/w3c/touch-events/blob/HEAD/README.md"
@@ -10371,12 +10337,6 @@
           "author": "lwarlow@igalia.com",
           "hash": "0cc17c1",
           "subject": "Add an |includeReportOnlyPolicies| boolean argument to Does sink type require trusted types? (#518)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "koto@google.com",
-          "hash": "3819963",
-          "subject": "Revert \"Change Script Enforcement Mechanism to use flags (#533)\" (#565)"
         }
       ],
       "testlog": [
@@ -11046,7 +11006,14 @@
           "subject": "Correct condition for opaque paths in base URL"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-01-17",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ef6d83d789",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=286058 (#50132)"
+        }
+      ]
     },
     {
       "name": "User Preference Media Features Client Hints Headers",
@@ -11205,12 +11172,6 @@
           "author": "49305434+daniel-montalvo@users.noreply.github.com",
           "hash": "b1ac2e25",
           "subject": "editorial: Update changelog (#2379)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "38b28c0f",
-          "subject": "Editorial: respec fixes re: refs and metatadata titles (#2380)"
         }
       ],
       "testlog": []
@@ -11778,18 +11739,6 @@
           "author": "chrisguttandin@media-codings.com",
           "hash": "b5ddbed0d2",
           "subject": "Add vorbis test case"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "marten.richter@tu-berlin.de",
-          "hash": "8c7ff922c6",
-          "subject": "Prevents for h264 attaching SPS and PPS Nalu if already present on Windows"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "marten.richter@tu-berlin.de",
-          "hash": "a186b102e1",
-          "subject": "Adding rescaling support to WMFMediaDataEncoder"
         }
       ]
     },
@@ -12541,6 +12490,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-17",
+          "author": "OrKoN@users.noreply.github.com",
+          "hash": "19d4a512e2",
+          "subject": "[wdspec] add context locator tests involving iframes and shadow DOM (#50047)"
+        },
+        {
           "date": "2025-01-13",
           "author": "OrKoN@users.noreply.github.com",
           "hash": "de8a05c115",
@@ -13284,12 +13239,6 @@
           "author": "github@greggman.com",
           "hash": "de8f0706",
           "subject": "Compat: Disallow using a depth texture with a non-comparison sampler (#4988)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "dneto@google.com",
-          "hash": "bd061d4f",
-          "subject": "wgsl: @align(n) must divide required-align-of, for all structs (#4978)"
         }
       ],
       "testlog": []
@@ -13402,12 +13351,6 @@
           "author": "asully@chromium.org",
           "hash": "dd5cbdc",
           "subject": "Specify MLTensor (#787)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "asully@chromium.org",
-          "hash": "024302c",
-          "subject": "point to #778 (#785)"
         }
       ],
       "testlog": [
@@ -13617,60 +13560,6 @@
           "author": "hbos@google.com",
           "hash": "3636bc6c",
           "subject": "Significant rework of PR"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "46142bdd",
-          "subject": "nit"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "a81bd7e7",
-          "subject": "Rewording and grammar fix"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "5fb55254",
-          "subject": "Order and default"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "7197ba05",
-          "subject": ".."
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "0aea1b3f",
-          "subject": "Trial and error"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "d1374502",
-          "subject": "Not testable?"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "68f15e16",
-          "subject": "Update amendments"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "2473be45",
-          "subject": "grammar"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "hbos@google.com",
-          "hash": "c757b5f3",
-          "subject": "Allow level-id to be different in codec match"
         }
       ],
       "testlog": [
@@ -13753,7 +13642,14 @@
       "href": "https://w3c.github.io/webrtc-encoded-transform/",
       "specrepo": "https://github.com/w3c/webrtc-encoded-transform",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-01-17",
+          "author": "jib@mozilla.com",
+          "hash": "5d3d447058",
+          "subject": "Remove a webrtc-encoded-transform WPT dependency on HTMLMediaElement's videoTracks/audioTracks, and annotate a known bug."
+        }
+      ]
     },
     {
       "name": "IceTransport Extensions for WebRTC",
@@ -14068,12 +13964,6 @@
           "author": "github@greggman.com",
           "hash": "de8f0706",
           "subject": "Compat: Disallow using a depth texture with a non-comparison sampler (#4988)"
-        },
-        {
-          "date": "2024-11-21",
-          "author": "dneto@google.com",
-          "hash": "bd061d4f",
-          "subject": "wgsl: @align(n) must divide required-align-of, for all structs (#4978)"
         }
       ],
       "testlog": []
