@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-12-02T07:13:21.182Z",
-  "until": "2025-01-28T07:13:21.182Z",
+  "since": "2024-12-03T07:13:20.386Z",
+  "until": "2025-01-29T07:13:20.386Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -64,6 +64,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -91,6 +97,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "omri.a@taboola.com",
+          "hash": "ed9eba3",
+          "subject": "Added Taboola to the ara-tester-list.md (#1494)"
+        },
         {
           "date": "2025-01-21",
           "author": "40465606+johnivdel@users.noreply.github.com",
@@ -198,12 +210,6 @@
           "author": "apaseltiner@google.com",
           "hash": "0d2c299",
           "subject": "Use more precise warning when public suffix is used as a destination (#1477)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "apaseltiner@google.com",
-          "hash": "7bddb39",
-          "subject": "Shrink Flex Event example from 6 report windows to 5 (#1474)"
         }
       ],
       "testlog": []
@@ -572,12 +578,6 @@
           "author": "mbrodesser@igalia.com",
           "hash": "0b9fc07dfe",
           "subject": "add WPTs for `javascript:` URL navigations which check the order of the parent CSP and child CSP."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "lwarlow@igalia.com",
-          "hash": "2cb65c5284",
-          "subject": "Improve Trusted Types test coverage over eval and Function constructor (#49461)"
         }
       ]
     },
@@ -602,6 +602,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-01-29",
+          "author": "karlcow@apple.com",
+          "hash": "48b77338c1",
+          "subject": "Update background-image-table-cells-straddling-no-repeat.html (#50357)"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "westbrook.johnson@gmail.com",
+          "hash": "1b476ffbe5",
+          "subject": "Clarify support for ::slotted(:has(...)) as established by WebKit (#50337)"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "mstensho@chromium.org",
+          "hash": "8c3501d822",
+          "subject": "[carousel] Only force size containment on in-flow scroll marker groups."
+        },
+        {
+          "date": "2025-01-28",
+          "author": "karlcow@apple.com",
+          "hash": "c3b8c1186b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=257575 (#50328)"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "sesse@chromium.org",
+          "hash": "c4654928a5",
+          "subject": "Fix a DCHECK when parsing malformed aN+b selectors."
+        },
+        {
+          "date": "2025-01-28",
+          "author": "abotella@igalia.com",
+          "hash": "125af36fe7",
+          "subject": "[line-clamp] Test that the ellipsis behaves like `line-height: 0`"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "futhark@chromium.org",
+          "hash": "9dcde0b30d",
+          "subject": "Skip interactivity:inert for window.find()"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "moonira@google.com",
+          "hash": "73e5904256",
+          "subject": "Updated idl srcs in css-fonts/idlharness.html"
+        },
         {
           "date": "2025-01-28",
           "author": "sakhapov@chromium.org",
@@ -1981,54 +2029,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "26995b2e69",
           "subject": "WebKit export: [rhythmic-sizing] Add block-step-align to CSS parser (#49487)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "pdr@chromium.org",
-          "hash": "2c32ae5010",
-          "subject": "Deflake interrupt-hidden-smooth-scroll.html"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "futhark@chromium.org",
-          "hash": "bf4c36b1b7",
-          "subject": "TransformPositionArea() incorrectly assumed two-value input"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "942c6a4925",
-          "subject": "Add a WPT test case for sibling-index() in pseudo-elements."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "futhark@chromium.org",
-          "hash": "bbac679b8a",
-          "subject": "Improve test_cq_condition_unknown() expectation text"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "mstensho@chromium.org",
-          "hash": "6b8b3fe50d",
-          "subject": "Correctly rebuild paginated fragment tree spine."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "mstensho@chromium.org",
-          "hash": "d17e7c6f5b",
-          "subject": "Update fragmentainer break tokens of repeated roots when cloning."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "170e70c671",
-          "subject": "Fix crash in calc() within repeat() in grid."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "fbfcc41df6",
-          "subject": "Fix crash when parsing calc() within steps()."
         }
       ]
     },
@@ -2102,6 +2102,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        },
         {
           "date": "2024-12-19",
           "author": "awogbemila@chromium.org",
@@ -2203,12 +2209,6 @@
           "author": "mstensho@chromium.org",
           "hash": "b3b9789ce8",
           "subject": "[anchor] Columns cannot be anchors."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "futhark@chromium.org",
-          "hash": "bf4c36b1b7",
-          "subject": "TransformPositionArea() incorrectly assumed two-value input"
         }
       ]
     },
@@ -2225,7 +2225,14 @@
       "href": "https://drafts.csswg.org/css-animations/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        }
+      ],
       "testlog": [
         {
           "date": "2025-01-22",
@@ -2273,6 +2280,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-29",
+          "author": "karlcow@apple.com",
+          "hash": "48b77338c1",
+          "subject": "Update background-image-table-cells-straddling-no-repeat.html (#50357)"
+        },
         {
           "date": "2025-01-03",
           "author": "simon.fraser@apple.com",
@@ -2471,6 +2484,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        },
+        {
           "date": "2024-12-19",
           "author": "miriam@oddbird.net",
           "hash": "37d8d23d4",
@@ -2513,12 +2532,6 @@
           "author": "futhark@chromium.org",
           "hash": "0673357a9a",
           "subject": "Clamp auto size to 0 for container size"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "futhark@chromium.org",
-          "hash": "bbac679b8a",
-          "subject": "Improve test_cq_condition_unknown() expectation text"
         }
       ]
     },
@@ -2618,14 +2631,7 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "fbfcc41df6",
-          "subject": "Fix crash when parsing calc() within steps()."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Environment Variables",
@@ -2748,6 +2754,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "chris@w3.org",
+          "hash": "3a040fa2f",
+          "subject": "[css-fonts-4][editorial] update khmer-mul figure"
+        },
+        {
           "date": "2025-01-24",
           "author": "chris@w3.org",
           "hash": "ef8d1f609",
@@ -2839,6 +2851,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-28",
+          "author": "moonira@google.com",
+          "hash": "73e5904256",
+          "subject": "Updated idl srcs in css-fonts/idlharness.html"
+        },
         {
           "date": "2025-01-20",
           "author": "sakhapov@chromium.org",
@@ -2958,12 +2976,6 @@
           "author": "brandonstewart@apple.com",
           "hash": "4bedb53a2f",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=283920 (#49498)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "170e70c671",
-          "subject": "Fix crash in calc() within repeat() in grid."
         }
       ]
     },
@@ -3317,6 +3329,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        },
+        {
+          "date": "2025-01-29",
+          "author": "flackr@google.com",
+          "hash": "6b64e025b",
+          "subject": "[css-overflow-5] Define activeElement and matching focus-related pseudo-classes for focused navigation pseudos. (#11590)"
+        },
+        {
           "date": "2025-01-21",
           "author": "jackalmage@gmail.com",
           "hash": "b143c8b8c",
@@ -3381,27 +3405,21 @@
           "author": "flackr@google.com",
           "hash": "11416b91d",
           "subject": "[css-overflow-5] Allow scroll to target unreachable scroll marker targets (#11318)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "jackalmage@gmail.com",
-          "hash": "190518861",
-          "subject": "[css-overflow-5][editorial] markup fixes"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "jackalmage@gmail.com",
-          "hash": "9b133cfac",
-          "subject": "[css-overflow-5] Specify that ::scroll-marker-group and ::scroll-button() generate as siblings of the originating element. #11125"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "jackalmage@gmail.com",
-          "hash": "bd38052c5",
-          "subject": "[css-overflow-5] Define that :disabled can match ::scroll-button(). #11216"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-28",
+          "author": "mstensho@chromium.org",
+          "hash": "8c3501d822",
+          "subject": "[carousel] Only force size containment on in-flow scroll marker groups."
+        },
+        {
+          "date": "2025-01-28",
+          "author": "abotella@igalia.com",
+          "hash": "125af36fe7",
+          "subject": "[line-clamp] Test that the ellipsis behaves like `line-height: 0`"
+        },
         {
           "date": "2025-01-28",
           "author": "sakhapov@chromium.org",
@@ -3604,18 +3622,6 @@
           "author": "mstensho@chromium.org",
           "hash": "c43360607e",
           "subject": "Avoid negative available size for page margin boxes."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "mstensho@chromium.org",
-          "hash": "6b8b3fe50d",
-          "subject": "Correctly rebuild paginated fragment tree spine."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "mstensho@chromium.org",
-          "hash": "d17e7c6f5b",
-          "subject": "Update fragmentainer break tokens of repeated roots when cloning."
         }
       ]
     },
@@ -3894,6 +3900,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-28",
+          "author": "westbrook.johnson@gmail.com",
+          "hash": "1b476ffbe5",
+          "subject": "Clarify support for ::slotted(:has(...)) as established by WebKit (#50337)"
+        },
+        {
           "date": "2025-01-22",
           "author": "keithamus@users.noreply.github.com",
           "hash": "905121438c",
@@ -4003,6 +4015,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "af27ebd44",
+          "subject": "[css-shapes-2] Refine use of the word \"path\" in the intro (#11586)"
+        },
         {
           "date": "2025-01-23",
           "author": "noamr@users.noreply.github.com",
@@ -4219,6 +4237,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-01-28",
+          "author": "karlcow@apple.com",
+          "hash": "c3b8c1186b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=257575 (#50328)"
+        },
+        {
           "date": "2025-01-23",
           "author": "obrufau@igalia.com",
           "hash": "ba05f6be23",
@@ -4304,7 +4328,14 @@
       "href": "https://drafts.csswg.org/css-transforms/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        }
+      ],
       "testlog": [
         {
           "date": "2024-12-18",
@@ -4319,7 +4350,14 @@
       "href": "https://drafts.csswg.org/css-transitions/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-01-29",
+          "author": "dbaron@dbaron.org",
+          "hash": "5f8db1efb",
+          "subject": "Fix some mismatched tag and metadata errors."
+        }
+      ],
       "testlog": [
         {
           "date": "2025-01-24",
@@ -4443,6 +4481,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-28",
+          "author": "futhark@chromium.org",
+          "hash": "9dcde0b30d",
+          "subject": "Skip interactivity:inert for window.find()"
+        },
         {
           "date": "2025-01-27",
           "author": "futhark@chromium.org",
@@ -4590,12 +4634,6 @@
           "author": "sesse@chromium.org",
           "hash": "a963430568",
           "subject": "Add a WPT test for sibling-index() in Shadow DOM."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "sesse@chromium.org",
-          "hash": "942c6a4925",
-          "subject": "Add a WPT test case for sibling-index() in pseudo-elements."
         }
       ]
     },
@@ -4808,12 +4846,6 @@
           "author": "emilio@crisal.io",
           "hash": "634f8ddfa0",
           "subject": "Fix scroll{Width,Height} of overflow: visible frames with contain: layout."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "pdr@chromium.org",
-          "hash": "2c32ae5010",
-          "subject": "Deflake interrupt-hidden-smooth-scroll.html"
         }
       ]
     },
@@ -4928,6 +4960,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-29",
+          "author": "patricialor@chromium.org",
+          "hash": "ae85622bcc",
+          "subject": "Revert \"Ensure AbortSignal.throwIfAborted doesn't modify the message of an abort error\""
+        },
+        {
+          "date": "2025-01-29",
+          "author": "japhet@chromium.org",
+          "hash": "2e8b491a12",
+          "subject": "Ensure AbortSignal.throwIfAborted doesn't modify the message of an abort error"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "dom@chromium.org",
+          "hash": "ea15691f27",
+          "subject": "DOM: Add more Observable iterable tests"
+        },
         {
           "date": "2025-01-28",
           "author": "dom@chromium.org",
@@ -5459,12 +5509,6 @@
           "author": "tjc@igalia.com",
           "hash": "901dd6e920",
           "subject": "Temporal: Add test for balancing up to weeks when year/month are present (#4305)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "nribaudo@igalia.com",
-          "hash": "10c2615aa5",
-          "subject": "Add partial tests for `import defer` (#4278)"
         }
       ]
     },
@@ -5603,6 +5647,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5616,6 +5666,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5631,6 +5687,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5644,6 +5706,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5659,6 +5727,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5672,6 +5746,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5687,6 +5767,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5700,6 +5786,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5715,6 +5807,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5728,6 +5826,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5743,6 +5847,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5757,6 +5867,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -5770,6 +5886,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -5890,12 +6012,6 @@
           "author": "lbrady@google.com",
           "hash": "0a499ef779",
           "subject": "Allow setting automatic beacon data from cross-origin subframes."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "averge@chromium.org",
-          "hash": "6571a7b9b0",
-          "subject": "Allow _unfencedTop navigation in all fenced frames."
         }
       ]
     },
@@ -6271,6 +6387,12 @@
       "speclog": [
         {
           "date": "2025-01-28",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "d5c8e5cb",
+          "subject": "Add sourceElement to NavigateEvent"
+        },
+        {
+          "date": "2025-01-28",
           "author": "d@domenic.me",
           "hash": "a16b0e9f",
           "subject": "Fix variable name typo in inner navigate event firing"
@@ -6505,6 +6627,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-01-28",
+          "author": "jarhar@chromium.org",
+          "hash": "3f5cef6a8f",
+          "subject": "Fix customizable select slot assignment recalc crashes"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "jpgravel@chromium.org",
+          "hash": "911fb98a43",
+          "subject": "Only do Jinja rendering when needed in Canvas test generator"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "jarhar@chromium.org",
+          "hash": "ed2d6789ee",
+          "subject": "Reapply \"Fix OptionList iterating before beginning\""
+        },
+        {
+          "date": "2025-01-28",
+          "author": "masonf@chromium.org",
+          "hash": "8eb65b650a",
+          "subject": "Replace assert_notreached with assert_unreached"
+        },
         {
           "date": "2025-01-28",
           "author": "shihken@microsoft.com",
@@ -7508,6 +7654,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "annevk@annevk.nl",
+          "hash": "48531ec",
+          "subject": "Editorial: remove \"then\" before substeps"
+        },
+        {
           "date": "2025-01-20",
           "author": "annevk@annevk.nl",
           "hash": "d480031",
@@ -7612,6 +7764,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -7643,12 +7801,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "ef413686d1",
           "subject": "Expose presentationTime/paintTime in LoAF (#49543)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "54c7d21f65",
-          "subject": "Report first frame of animated image as LCP render time. (#49402)"
         }
       ]
     },
@@ -7827,12 +7979,6 @@
           "author": "tristan.fraipont@gmail.com",
           "hash": "0a69dbd",
           "subject": "Link to infra"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "tristan.fraipont@gmail.com",
-          "hash": "89002bc",
-          "subject": "Remove self referencing link"
         }
       ],
       "testlog": []
@@ -8028,12 +8174,6 @@
           "author": "guohuideng@microsoft.com",
           "hash": "03eaa362dd",
           "subject": "Save some DocumentLoader values in NavigationTiming."
-        },
-        {
-          "date": "2024-12-02",
-          "author": "guohuideng@microsoft.com",
-          "hash": "cffaa0219a",
-          "subject": "Put timing values of DocumentLoadTiming in a GCed object."
         }
       ]
     },
@@ -8087,6 +8227,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -8100,6 +8246,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -8115,6 +8267,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -8128,6 +8286,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -8143,6 +8307,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -8156,6 +8326,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -8171,6 +8347,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -8185,6 +8367,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -8198,6 +8386,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -8273,6 +8467,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -9229,6 +9429,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-01-28",
+          "author": "westbrook.johnson@gmail.com",
+          "hash": "1b476ffbe5",
+          "subject": "Clarify support for ::slotted(:has(...)) as established by WebKit (#50337)"
+        },
+        {
+          "date": "2025-01-28",
+          "author": "sesse@chromium.org",
+          "hash": "c4654928a5",
+          "subject": "Fix a DCHECK when parsing malformed aN+b selectors."
+        },
+        {
           "date": "2025-01-18",
           "author": "jkew@mozilla.com",
           "hash": "8f3f629756",
@@ -9383,6 +9595,12 @@
       "specrepo": "https://github.com/WICG/shared-storage",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "dmcardle@google.com",
+          "hash": "142b735",
+          "subject": "[spec] Fix syntax errors detected by bikeshed 5.0.0"
+        },
+        {
           "date": "2025-01-22",
           "author": "averge@chromium.org",
           "hash": "4ad1b41",
@@ -9399,6 +9617,12 @@
           "author": "jyasskin@google.com",
           "hash": "1a02d28",
           "subject": "Avoid exporting duplicate Lock-related definitions from monkeypatches. (#212)"
+        },
+        {
+          "date": "2025-01-16",
+          "author": "dmcardle@chromium.org",
+          "hash": "e98524b",
+          "subject": "[spec] Enable per-context contribution limits for Private Aggregation"
         },
         {
           "date": "2025-01-16",
@@ -9465,12 +9689,6 @@
           "author": "xyaof3@126.com",
           "hash": "9458a62",
           "subject": "fix getter steps"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "xyaof3@126.com",
-          "hash": "5f3e322",
-          "subject": "[spec] Web Locks integration: support navigator.locks in the worklet"
         }
       ],
       "testlog": [
@@ -9503,12 +9721,6 @@
           "author": "yaoxia@chromium.org",
           "hash": "d54d933593",
           "subject": "[shared storage] Implement batchUpdate() for Window and SharedStorageWorklet context"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "yaoxia@chromium.org",
-          "hash": "6a83407ba1",
-          "subject": "[shared storage] Add SharedStorageSet/Append/Delete/Clear IDL Interface"
         }
       ]
     },
@@ -9537,12 +9749,6 @@
           "author": "hiroshige@chromium.org",
           "hash": "6ca2627da7",
           "subject": "[WPT] Sec-Fetch-Dest/Sec-Fetch-Mode for speculation-rules prefetch"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "domenic@chromium.org",
-          "hash": "6083f4367a",
-          "subject": "Ship PrefetchFollowsNormalCacheSemantics"
         }
       ]
     },
@@ -9753,94 +9959,9 @@
           "author": "saschanaz@outlook.com",
           "hash": "f73f587",
           "subject": "Editorial: small cleanup after #1326"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "649348+MattiasBuelens@users.noreply.github.com",
-          "hash": "fa4891a",
-          "subject": "Meta: roll WPTs to improve test coverage"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "7ef95a1c3f",
-          "subject": "Test whether WritableStream constructor throws when given a type"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "0d6f7095e0",
-          "subject": "Test whether a stream can be unlocked with an already-released BYOB reader"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "5454d2a634",
-          "subject": "Run more templated tests on readable byte streams"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "761ecf1fe9",
-          "subject": "Test whether enqueue() throws after close() or error()"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "48fe2a8e29",
-          "subject": "Test calling ReadableStream.from() with iterator methods returning a non-object"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "b60bf61cc2",
-          "subject": "Test calling writable.abort() or .close() from within cancel"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "6c1c506603",
-          "subject": "Test calling readable.cancel() from within flush or cancel"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "cecda71212",
-          "subject": "Test recursive calls from abort() when stream is started"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "4a6af3d68d",
-          "subject": "Test calling close() when abort() aborts signal"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "8a85114b88",
-          "subject": "Test next() returning and fulfilling with a non-object separately"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "329d83b2ce",
-          "subject": "Add more tests for next() and return() methods in ReadableStream.from()"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "mattias@buelens.com",
-          "hash": "ba93323420",
-          "subject": "Test whether the remainder of a respond() fulfills a pending read(view)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "ricea@chromium.org",
-          "hash": "562af181d3",
-          "subject": "Additional GC wpts for streams"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "SVG",
@@ -10788,24 +10909,6 @@
           "author": "lwarlow@igalia.com",
           "hash": "6e5a52d2d1",
           "subject": "Delete duplicate trusted type test (#49549)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "luke@warlow.dev",
-          "hash": "59d1f701fb",
-          "subject": "Update Trusted Types content attributes test (#49473)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "lwarlow@igalia.com",
-          "hash": "2cb65c5284",
-          "subject": "Improve Trusted Types test coverage over eval and Function constructor (#49461)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "luke@warlow.dev",
-          "hash": "ff7169407c",
-          "subject": "Test that trustedTypes.createPolicy correctly fires securitypolicyviolation events (#47176)"
         }
       ]
     },
@@ -10963,30 +11066,6 @@
           "author": "behamilton@google.com",
           "hash": "64eaf58",
           "subject": "Change examples to send `request` instead of `auctionBlob` (#1358)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "JensenPaul@users.noreply.github.com",
-          "hash": "fab196a",
-          "subject": "Update PA_Feature_Detecting.md link to an I2S"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "896b8c7",
-          "subject": "[Spec] Add client side support of selected reporting id for B&A (#1348)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "6334674+qingxinwu@users.noreply.github.com",
-          "hash": "6a37e10",
-          "subject": "[Spec] Explicitly set service worker mode to none (#1351)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "morlovich@google.com",
-          "hash": "64a99ce",
-          "subject": "Spec various P.Agg. storage usage base values. (#1349)"
         }
       ],
       "testlog": []
@@ -11071,14 +11150,7 @@
       "href": "https://url.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/url",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2024-12-02",
-          "author": "annevk@annevk.nl",
-          "hash": "7f3e3b6",
-          "subject": "Editorial: only care about the empty string when beStrict is false"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2025-01-25",
@@ -11298,6 +11370,12 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "childhoodend.tk@gmail.com",
+          "hash": "05949f50",
+          "subject": "[spec] Fix typo in fge operation (#1867)"
+        },
         {
           "date": "2025-01-24",
           "author": "dschuff@chromium.org",
@@ -11523,6 +11601,12 @@
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
         {
+          "date": "2025-01-27",
+          "author": "simone@w3.org",
+          "hash": "4a54f30",
+          "subject": "Bikeshed fixes"
+        },
+        {
           "date": "2025-01-21",
           "author": "tim@cloudauth.dev",
           "hash": "e8ee043",
@@ -11677,12 +11761,6 @@
           "author": "fd@tidoust.net",
           "hash": "8fa10df",
           "subject": "Fix AuthenticationExtensionsAuthenticatorInputs/Outputs CDDL"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "emil@yubico.com",
-          "hash": "8982a97",
-          "subject": "Link \"Object\" to WebDriver instead of File API"
         }
       ],
       "testlog": []
@@ -12661,14 +12739,7 @@
           "subject": "Create ArrayBuffers in top-level functions"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-12-02",
-          "author": "panva.ip@gmail.com",
-          "hash": "3e3374efde",
-          "subject": "[WebCryptoAPI] Test `usages` slot being cached (#49453)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "WebDriver",
@@ -13001,24 +13072,6 @@
           "author": "jdescottes@mozilla.com",
           "hash": "c089951",
           "subject": "Fix algorithm to get related navigables for workers"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "34244704+Lightning00Blade@users.noreply.github.com",
-          "hash": "79cd4f6",
-          "subject": "Use same style for CDDL as other commands (#823)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "nvitkov@chromium.org",
-          "hash": "e5695b3",
-          "subject": "Add WebExtension Module to global CDDL"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "fd@tidoust.net",
-          "hash": "84f89ff",
-          "subject": "Enable auto-publication as Working Draft to /TR (#821)"
         }
       ],
       "testlog": []
@@ -13028,6 +13081,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13043,6 +13102,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13056,6 +13121,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13071,6 +13142,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13084,6 +13161,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13099,6 +13182,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13112,6 +13201,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13127,6 +13222,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13140,6 +13241,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13155,6 +13262,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13168,6 +13281,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13183,6 +13302,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13196,6 +13321,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13211,6 +13342,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13224,6 +13361,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13239,6 +13382,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13253,6 +13402,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
+        {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
           "hash": "2010c617a",
@@ -13266,6 +13421,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        },
         {
           "date": "2024-12-10",
           "author": "clemensb@chromium.org",
@@ -13289,7 +13450,14 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "testrepo": "KhronosGroup/WebGL",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-01-28",
+          "author": "wujian.sun_1@nxp.com",
+          "hash": "22ed6a77b",
+          "subject": "Increase the error tolerance for RGB5_A1 format (#3707)"
+        }
+      ]
     },
     {
       "name": "WebGPU",
@@ -13427,12 +13595,6 @@
           "author": "senorblanco@chromium.org",
           "hash": "d248f85c",
           "subject": "Compat mode: make f16 and f32 rendering optional. (#4983)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "alanbaker@google.com",
-          "hash": "97a3eada",
-          "subject": "Update CTS status for subgroups feature (#5002)"
         }
       ],
       "testlog": []
@@ -13523,6 +13685,12 @@
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
         {
+          "date": "2025-01-29",
+          "author": "jsbell@chromium.org",
+          "hash": "2139976",
+          "subject": "Ensure object creation specifies the realm (#810)"
+        },
+        {
           "date": "2025-01-26",
           "author": "inexorabletash@gmail.com",
           "hash": "4d5898d",
@@ -13587,12 +13755,6 @@
           "author": "jsbell@chromium.org",
           "hash": "b722192",
           "subject": "Complain about RFC2119 terms, and fix usage"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "asully@chromium.org",
-          "hash": "4e80205",
-          "subject": "Remove the MLContext.compute() method (#795)"
         }
       ],
       "testlog": [
@@ -13703,12 +13865,6 @@
           "author": "asully@chromium.org",
           "hash": "48178346fe",
           "subject": "webnn: Fix WPT data type compatibility matching for constants"
-        },
-        {
-          "date": "2024-12-03",
-          "author": "ningxin.hu@intel.com",
-          "hash": "2643d924a5",
-          "subject": "WebNN: Support `AllowSharedBufferSource` for constant"
         }
       ]
     },
@@ -13742,12 +13898,6 @@
           "author": "henbos@users.noreply.github.com",
           "hash": "c033eb0c",
           "subject": "Update to ReSpec version 35.2.2"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "hbos@google.com",
-          "hash": "dc885bc5",
-          "subject": "Update filter steps"
         }
       ],
       "testlog": [
@@ -14128,12 +14278,6 @@
           "author": "senorblanco@chromium.org",
           "hash": "d248f85c",
           "subject": "Compat mode: make f16 and f32 rendering optional. (#4983)"
-        },
-        {
-          "date": "2024-12-02",
-          "author": "alanbaker@google.com",
-          "hash": "97a3eada",
-          "subject": "Update CTS status for subgroups feature (#5002)"
         }
       ],
       "testlog": []
