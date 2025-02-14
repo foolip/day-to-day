@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-12-18T07:13:33.733Z",
-  "until": "2025-02-13T07:13:33.733Z",
+  "since": "2024-12-19T07:13:24.926Z",
+  "until": "2025-02-14T07:13:24.926Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -41,18 +41,6 @@
           "author": "giacomo.petri@usablenet.com",
           "hash": "32f43fa72b",
           "subject": "Accessibility: Input with multiple explicit label elements associated (#49826)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "adam@adampage.net",
-          "hash": "297e637e68",
-          "subject": "Reverse the computed label expectation for an img with a title and an empty alt (#49552)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "f3732c677e",
-          "subject": "move new term role tests to tentative to avoid penalizing Chrome at EOY for Interop 2024 (#49767)"
         }
       ]
     },
@@ -83,6 +71,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -189,36 +183,6 @@
           "author": "apaseltiner@google.com",
           "hash": "5b6be31",
           "subject": "Lowercase RFC 2119 keywords (#1490)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "arpanah@users.noreply.github.com",
-          "hash": "51b136f",
-          "subject": "Add authors to aggregate_key_discovery explainer to align with other … (#1485)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "arpanah@users.noreply.github.com",
-          "hash": "2ef8dd3",
-          "subject": "Add Nan to authors in Aggregate explainer and align formatting (#1484)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "arpanah@users.noreply.github.com",
-          "hash": "d61f383",
-          "subject": "Updating the formatting of authors section for Aggregation Service in… (#1486)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "arpanah@users.noreply.github.com",
-          "hash": "66d0186",
-          "subject": "Add authors to verbose debugging reports explainer (#1489)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "arpanah@users.noreply.github.com",
-          "hash": "19e6a25",
-          "subject": "Formatting authors section in app to web explainer to align with othe… (#1487)"
         }
       ],
       "testlog": []
@@ -552,6 +516,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-02-13",
+          "author": "yoavweiss@chromium.org",
+          "hash": "5f473f1dcc",
+          "subject": "require-sri-for: 'script'"
+        },
+        {
           "date": "2025-01-30",
           "author": "fwang@igalia.com",
           "hash": "9b9efcb6e4",
@@ -586,6 +556,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-02-14",
+          "author": "ffiori@microsoft.com",
+          "hash": "d568816519",
+          "subject": "[HighlightsFromPoint] Add WPT tests"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "emilio@crisal.io",
+          "hash": "a29bf6fcf6",
+          "subject": "Add a test for ua keyframe lookups."
+        },
+        {
+          "date": "2025-02-13",
+          "author": "andruud@chromium.org",
+          "hash": "60342ca91a",
+          "subject": "[functions] Support @container within @function"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "m.jason.liu@gmail.com",
+          "hash": "f5b716fecd",
+          "subject": "Fix Incorrect \"extension\" of CSS gradient with \"longer hue\" interpolation into regions beyond the first/last color stop"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "moonira@google.com",
+          "hash": "262e8ec5a4",
+          "subject": "Add wpt test for inline if() invalivation"
+        },
         {
           "date": "2025-02-13",
           "author": "wangxianzhu@chromium.org",
@@ -2097,72 +2097,6 @@
           "author": "dholbert@cs.stanford.edu",
           "hash": "cd97b0f362",
           "subject": "part 1: Add automated test for 'stretch' size keyword on abspos element with various writing-modes on parent & containing block."
-        },
-        {
-          "date": "2024-12-19",
-          "author": "horo@chromium.org",
-          "hash": "56a3a06875",
-          "subject": "Revert \"[carousel] Improve scroll buttons scrolling code\""
-        },
-        {
-          "date": "2024-12-18",
-          "author": "obrufau@igalia.com",
-          "hash": "275b74eb2a",
-          "subject": "layout: Never stretch indefinite intrinsic keywords other than `auto`"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "a5d11ee99e",
-          "subject": "[carousel] Improve scroll buttons scrolling code"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sam@webkit.org",
-          "hash": "8ce395c75d",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284669 (#49747)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mstensho@chromium.org",
-          "hash": "641732022d",
-          "subject": "Don't hold dead layout objects in the anchor query machinery."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "7d9676e76f",
-          "subject": "[carousel] Move ::scroll-marker and ::scroll-marker-group tests to WPT"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "7f677a301b",
-          "subject": "[carousel] Focus should follow the active marker when scrolling"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "romainmenke@gmail.com",
-          "hash": "d020a6be96",
-          "subject": "incease precision when comparing values"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "romainmenke@gmail.com",
-          "hash": "e7f7299b4f",
-          "subject": "fix relative-color-out-of-gamut.html value precision"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mstensho@chromium.org",
-          "hash": "8b0a92721e",
-          "subject": "Anchor positioning tests for multicol with spanner inside."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "emilio@crisal.io",
-          "hash": "16fab63ca5",
-          "subject": "Make empty cells more thoroughly not participate on baseline alignment."
         }
       ]
     },
@@ -2172,6 +2106,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "f6cfc9cc4",
+          "subject": "[css2] Fix title and abstract."
+        },
         {
           "date": "2025-01-21",
           "author": "jackalmage@gmail.com",
@@ -2319,18 +2259,6 @@
           "author": "mstensho@chromium.org",
           "hash": "1e1305e5a8",
           "subject": "Multicol containers may have other fragments than columns / spanners."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mstensho@chromium.org",
-          "hash": "641732022d",
-          "subject": "Don't hold dead layout objects in the anchor query machinery."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mstensho@chromium.org",
-          "hash": "8b0a92721e",
-          "subject": "Anchor positioning tests for multicol with spanner inside."
         }
       ]
     },
@@ -2609,20 +2537,7 @@
           "subject": "[*][editorial] Drop autolinks to value in `<pre>`"
         }
       ],
-      "testlog": [
-        {
-          "date": "2024-12-18",
-          "author": "romainmenke@gmail.com",
-          "hash": "d020a6be96",
-          "subject": "incease precision when comparing values"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "romainmenke@gmail.com",
-          "hash": "e7f7299b4f",
-          "subject": "fix relative-color-out-of-gamut.html value precision"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Color Adjustment",
@@ -2638,6 +2553,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-02-14",
+          "author": "sam@webkit.org",
+          "hash": "458bb61f2",
+          "subject": "[css-color-hdr] Clarification on the grammar / spec text for dynamic-range-limit-mix() #11672 (#11703)"
+        },
         {
           "date": "2025-02-13",
           "author": "chris@w3.org",
@@ -3136,24 +3057,6 @@
           "author": "chris@w3.org",
           "hash": "122b4bc3a",
           "subject": "[css-fonts-4][editorial] wpt"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "chris@w3.org",
-          "hash": "4ff874953",
-          "subject": "[css-fonts-5][editorial] wpt"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "chris@w3.org",
-          "hash": "0fabd6db1",
-          "subject": "[css-fonts-5][editorial] linkfixes"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "chris@w3.org",
-          "hash": "6a53e1cfc",
-          "subject": "[css-fonts-5] Added avar2 font tech, fix #10599"
         }
       ],
       "testlog": [
@@ -3400,7 +3303,14 @@
           "subject": "[css-highlight-api-1] Add highlightsFromPoint() to CSS.highlights #7513 (#11507)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-02-14",
+          "author": "ffiori@microsoft.com",
+          "hash": "d568816519",
+          "subject": "[HighlightsFromPoint] Add WPT tests"
+        }
+      ]
     },
     {
       "name": "CSS Images",
@@ -3422,6 +3332,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-13",
+          "author": "m.jason.liu@gmail.com",
+          "hash": "f5b716fecd",
+          "subject": "Fix Incorrect \"extension\" of CSS gradient with \"longer hue\" interpolation into regions beyond the first/last color stop"
+        },
         {
           "date": "2025-02-04",
           "author": "fs@opera.com",
@@ -3921,30 +3837,6 @@
           "author": "mstensho@chromium.org",
           "hash": "27855e6171",
           "subject": "Fix and mark scroll marker tests as passing."
-        },
-        {
-          "date": "2024-12-19",
-          "author": "horo@chromium.org",
-          "hash": "56a3a06875",
-          "subject": "Revert \"[carousel] Improve scroll buttons scrolling code\""
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "a5d11ee99e",
-          "subject": "[carousel] Improve scroll buttons scrolling code"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "7d9676e76f",
-          "subject": "[carousel] Move ::scroll-marker and ::scroll-marker-group tests to WPT"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sakhapov@chromium.org",
-          "hash": "7f677a301b",
-          "subject": "[carousel] Focus should follow the active marker when scrolling"
         }
       ]
     },
@@ -4418,12 +4310,6 @@
           "author": "dholbert@cs.stanford.edu",
           "hash": "cd97b0f362",
           "subject": "part 1: Add automated test for 'stretch' size keyword on abspos element with various writing-modes on parent & containing block."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "obrufau@igalia.com",
-          "hash": "275b74eb2a",
-          "subject": "layout: Never stretch indefinite intrinsic keywords other than `auto`"
         }
       ]
     },
@@ -4481,12 +4367,6 @@
           "author": "obrufau@igalia.com",
           "hash": "80ae72a40e",
           "subject": "layout: Fix border widths of table wrapper with collapsed borders"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "emilio@crisal.io",
-          "hash": "16fab63ca5",
-          "subject": "Make empty cells more thoroughly not participate on baseline alignment."
         }
       ]
     },
@@ -4606,12 +4486,6 @@
           "author": "wangxianzhu@chromium.org",
           "hash": "5c736da5b5",
           "subject": "Align pixels through render surfaces when possible"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sam@webkit.org",
-          "hash": "8ce395c75d",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284669 (#49747)"
         }
       ]
     },
@@ -4799,15 +4673,15 @@
           "author": "andruud@gmail.com",
           "hash": "14ae4f6f2",
           "subject": "[css-values-5] Handle attr() cycles (#11459)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "sam@webkit.org",
-          "hash": "2ed604346",
-          "subject": "[css-values-5] Fix <progress> definition to use <percentage-token>"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-13",
+          "author": "moonira@google.com",
+          "hash": "262e8ec5a4",
+          "subject": "Add wpt test for inline if() invalivation"
+        },
         {
           "date": "2025-02-12",
           "author": "moonira@google.com",
@@ -4897,12 +4771,6 @@
           "author": "andruud@chromium.org",
           "hash": "1187770f99",
           "subject": "[attr] Look up attribute by local-name and null-namespace"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "sam@webkit.org",
-          "hash": "8ce395c75d",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284669 (#49747)"
         }
       ]
     },
@@ -4948,6 +4816,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-13",
+          "author": "emilio@crisal.io",
+          "hash": "a29bf6fcf6",
+          "subject": "Add a test for ua keyframe lookups."
+        },
         {
           "date": "2025-02-03",
           "author": "vmpstr@chromium.org",
@@ -5191,6 +5065,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-13",
+          "author": "jarhar@chromium.org",
+          "hash": "0c863b225e",
+          "subject": "Add test for xml regression fix"
+        },
+        {
           "date": "2025-02-11",
           "author": "zhoupeng.1996@bytedance.com",
           "hash": "4aaaf207af",
@@ -5303,12 +5183,6 @@
           "author": "dom@chromium.org",
           "hash": "dbed603b42",
           "subject": "DOM: Test 'slotchange' event firing during move"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "dom@chromium.org",
-          "hash": "37cad0c49e",
-          "subject": "DOM: Move moveBefore() returns undefined"
         }
       ]
     },
@@ -5347,6 +5221,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-13",
+          "author": "lionel.rowe@gmail.com",
+          "hash": "6310295c80",
+          "subject": "Add `Intl.Locale` test for `language` getter where language subtag is \"und\""
+        },
         {
           "date": "2025-02-12",
           "author": "ftang@chromium.org",
@@ -5456,42 +5336,6 @@
           "author": "bakkot@gmail.com",
           "hash": "fe206cdb",
           "subject": "Editorial: fix IteratorClose call in %IteratorHelperPrototype%.return (#3457)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "c4042979",
-          "subject": "Editorial: ProxyTarget is always a function object in GetFunctionRealm (#3496)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "b2a5b677",
-          "subject": "Editorial: use suspended-start instead of undefined in AsyncGeneratorState (#3494)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "6298ee18",
-          "subject": "Editorial: Remove empty from GetModuleNamespace (#3484)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "kimjg1119@korea.ac.kr",
-          "hash": "38f68d78",
-          "subject": "Editorial: Add assertion for built-in function object (#3483)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "kimjg1199lock@gmail.com",
-          "hash": "49d6d457",
-          "subject": "Editorial: GlobalObject cannot be undefined in the GetGlobalObject (#3445)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "jihyeok_park@korea.ac.kr",
-          "hash": "effe5f6d",
-          "subject": "Meta: Upgrade ESMeta to v0.5.1 (#3508)"
         }
       ],
       "testlog": [
@@ -5691,6 +5535,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5716,6 +5566,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -5743,6 +5599,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5768,6 +5630,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -5795,6 +5663,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5820,6 +5694,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -5847,6 +5727,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5872,6 +5758,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -5899,6 +5791,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5924,6 +5822,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -5951,6 +5855,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -5977,6 +5887,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -6002,6 +5918,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -6160,12 +6082,6 @@
           "author": "41948741+nidhijaju@users.noreply.github.com",
           "hash": "07662d3",
           "subject": "Meta: correct markup as per Bikeshed output"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "annevk@annevk.nl",
-          "hash": "5dfed9d",
-          "subject": "Editorial: parsing application/x-www-form-urlencoded never fails"
         }
       ],
       "testlog": [
@@ -6216,6 +6132,12 @@
       "specrepo": "https://github.com/w3c/FileAPI",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-02-14",
+          "author": "janiceliu@chromium.org",
+          "hash": "498e466914",
+          "subject": "[Blob URL] Flakey cross-partition-navigation.https.html WPT Fix"
+        },
         {
           "date": "2025-01-14",
           "author": "janiceliu@chromium.org",
@@ -6378,7 +6300,176 @@
       "name": "Gamepad",
       "href": "https://w3c.github.io/gamepad/",
       "specrepo": "https://github.com/w3c/gamepad",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "b443d56",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "e2f3394",
+          "subject": "Change \"touch event\" to just \"touch\""
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "5f9bf43",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "dc80f0a",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "889c118",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "1841b7d",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "500b17a",
+          "subject": "Remove local position variable"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "cf77d34",
+          "subject": "next touch id as internal slot"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "077fa80",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "a4d1fa0",
+          "subject": "Update touches return."
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "fe9fe10",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "8398036",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "752f907",
+          "subject": "Update index.html"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "12a0d2e",
+          "subject": "DOMPointReadOnly"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "c5a70ea",
+          "subject": "DOMPointReadOnly"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "109366827+bradleyneedham@users.noreply.github.com",
+          "hash": "015fc54",
+          "subject": "DOMPointReadOnly"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "b633a78",
+          "subject": "Suggested updates from Jan 9 meeting"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "a76e2ba",
+          "subject": "Fix div inside ol issue"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "cd296df",
+          "subject": "Remove ref to initializing touches"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "792be97",
+          "subject": "PR comments"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "f86bb55",
+          "subject": "Address PR comments"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "189f37c",
+          "subject": "Remove refs for \"touch surface\" \"touch surface enumeration order\" \"active touch point\""
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "ed21f74",
+          "subject": "Correct xref, remove Glossary"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "9671118",
+          "subject": "Use DOMPoint and DOMRect"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "420648d",
+          "subject": "Change touchEvents to touches"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "8283cab",
+          "subject": "Replace CRLF with LF"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "3736b03",
+          "subject": "Move touchEvents from extensions to index"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "marcos@marcosc.com",
+          "hash": "ca79aef",
+          "subject": "chore(auto-publish.yml): enable VALIDATE_INPUT_MARKUP (#218)"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gamepad/blob/HEAD/CONTRIBUTING.md"
     },
@@ -6386,7 +6477,20 @@
       "name": "Gamepad Extensions",
       "href": "https://w3c.github.io/gamepad/extensions.html",
       "specrepo": "https://github.com/w3c/gamepad",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "8283cab",
+          "subject": "Replace CRLF with LF"
+        },
+        {
+          "date": "2025-02-14",
+          "author": "bradley.needham@sony.com",
+          "hash": "3736b03",
+          "subject": "Move touchEvents from extensions to index"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gamepad/blob/HEAD/CONTRIBUTING.md"
     },
@@ -6713,6 +6817,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-14",
+          "author": "ffiori@microsoft.com",
+          "hash": "d568816519",
+          "subject": "[HighlightsFromPoint] Add WPT tests"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "jarhar@chromium.org",
+          "hash": "2b5429e7ca",
+          "subject": "Fix interactive elements in customizable select picker"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "jarhar@chromium.org",
+          "hash": "399d4adf8d",
+          "subject": "Enable InputClosesSelect by default"
+        },
         {
           "date": "2025-02-13",
           "author": "schenney@chromium.org",
@@ -7498,12 +7620,6 @@
           "author": "jarhar@chromium.org",
           "hash": "87fa63514d",
           "subject": "Remove some <selectlist> image resources"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "dbaron@chromium.org",
-          "hash": "438a535db0",
-          "subject": "Make UpdateLabel work when there is a label attribute."
         }
       ]
     },
@@ -7526,6 +7642,12 @@
       "href": "https://w3c.github.io/html-aria/",
       "specrepo": "https://github.com/w3c/html-aria",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "1cf4fc1",
+          "subject": "Editorial: add missing word (#542)"
+        },
         {
           "date": "2025-02-07",
           "author": "scottaohara@users.noreply.github.com",
@@ -7593,6 +7715,12 @@
       "href": "https://w3c.github.io/IFT/Overview.html",
       "specrepo": "https://github.com/w3c/IFT",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "chris@w3.org",
+          "hash": "9c6b503",
+          "subject": "[Explainer] Update stakeholder positions, fix #253"
+        },
         {
           "date": "2025-02-11",
           "author": "chris@w3.org",
@@ -7983,6 +8111,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8185,6 +8319,12 @@
       "specrepo": "https://github.com/w3c/mediacapture-main",
       "speclog": [
         {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "3794a57",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        },
+        {
           "date": "2025-01-06",
           "author": "dontcallmedom@users.noreply.github.com",
           "hash": "21516ec",
@@ -8203,7 +8343,14 @@
       "name": "MediaStreamTrack Insertable Media Processing using Streams",
       "href": "https://w3c.github.io/mediacapture-transform/",
       "specrepo": "https://github.com/w3c/mediacapture-transform",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "cc77b27",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        }
+      ],
       "testlog": []
     },
     {
@@ -8258,7 +8405,14 @@
       "name": "MediaStream Recording",
       "href": "https://w3c.github.io/mediacapture-record/",
       "specrepo": "https://github.com/w3c/mediacapture-record",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "1696128+deniak@users.noreply.github.com",
+          "hash": "122570b",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest (#224)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -8350,7 +8504,14 @@
       "name": "MediaStreamTrack Content Hints",
       "href": "https://w3c.github.io/mst-content-hint/",
       "specrepo": "https://github.com/w3c/mst-content-hint",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "810e5eb",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        }
+      ],
       "testlog": []
     },
     {
@@ -8549,6 +8710,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8574,6 +8741,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -8601,6 +8774,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8626,6 +8805,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -8653,6 +8838,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8678,6 +8869,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -8705,6 +8902,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8731,6 +8934,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -8756,6 +8965,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -8837,6 +9052,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -9008,6 +9229,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-14",
+          "author": "jkokatsu@google.com",
+          "hash": "3690978e9d",
+          "subject": "Add src attribute to potential Permissions Policy report"
+        },
+        {
           "date": "2025-02-11",
           "author": "mamir@chromium.org",
           "hash": "916aab962a",
@@ -9067,6 +9294,24 @@
       "href": "https://w3c.github.io/PNG-spec/",
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "chris@w3.org",
+          "hash": "7ceb407",
+          "subject": "[ImpRpt] More Ladybird passes"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "chris@w3.org",
+          "hash": "24a7537",
+          "subject": "[ImpRpt] Added pngcheck"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "chris@w3.org",
+          "hash": "85adfa3",
+          "subject": "[ImpRpt] Add Ladybird browser results"
+        },
         {
           "date": "2025-02-07",
           "author": "chris@w3.org",
@@ -9226,6 +9471,12 @@
       "specrepo": "https://github.com/w3c/pointerevents",
       "testpolicy": "https://github.com/w3c/pointerevents/blob/gh-pages/README.markdown#editing-process",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "bruce.mitchener@gmail.com",
+          "hash": "46cfc01",
+          "subject": "Fix two typos of \"unchanged\" (#538)"
+        },
         {
           "date": "2025-02-12",
           "author": "mustaq@chromium.org",
@@ -9479,20 +9730,7 @@
       "href": "https://w3c.github.io/push-api/",
       "specrepo": "https://github.com/w3c/push-api",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2024-12-18",
-          "author": "saschanaz@outlook.com",
-          "hash": "9de53d2c97",
-          "subject": "Part 2: Remove aesgcm128Decoder"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "saschanaz@outlook.com",
-          "hash": "8f56a7b77c",
-          "subject": "Part 1: Merge push event WPT test with variants"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Quirks Mode",
@@ -9774,6 +10012,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-13",
+          "author": "vogelheim@chromium.org",
+          "hash": "c9e46c0f09",
+          "subject": "[Sanitizer] Properly recurse into <template> contents."
+        },
+        {
           "date": "2025-02-04",
           "author": "vogelheim@chromium.org",
           "hash": "07920967d7",
@@ -9818,6 +10062,12 @@
       "href": "https://w3c.github.io/mediacapture-screen-share/",
       "specrepo": "https://github.com/w3c/mediacapture-screen-share",
       "speclog": [
+        {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "86c4997",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        },
         {
           "date": "2025-01-24",
           "author": "dom@w3.org",
@@ -9972,7 +10222,14 @@
       "name": "Secure Payment Confirmation",
       "href": "https://w3c.github.io/secure-payment-confirmation/",
       "specrepo": "https://github.com/w3c/secure-payment-confirmation",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "smcgruer@chromium.org",
+          "hash": "24d050a",
+          "subject": "[Spec] Separate 'SPC credential' from 'third-party enabled SPC credential' (#280)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -10096,7 +10353,14 @@
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-02-13",
+          "author": "chengweih@google.com",
+          "hash": "ecebb3dd9d",
+          "subject": "serial: Increase timeout for loopback manual WPT."
+        }
+      ]
     },
     {
       "name": "Server Timing",
@@ -10303,6 +10567,18 @@
           "author": "xyaof3@126.com",
           "hash": "aeb1e0e",
           "subject": "address review comments"
+        },
+        {
+          "date": "2025-01-09",
+          "author": "dmcardle@chromium.org",
+          "hash": "554ab00",
+          "subject": "Add Makefile-generated files to .gitignore"
+        },
+        {
+          "date": "2025-01-09",
+          "author": "dmcardle@chromium.org",
+          "hash": "a89cb8c",
+          "subject": "Pedantic improvements to Makefile"
         },
         {
           "date": "2025-01-08",
@@ -10567,7 +10843,14 @@
       "name": "Subresource Integrity",
       "href": "https://w3c.github.io/webappsec-subresource-integrity/",
       "specrepo": "https://github.com/w3c/webappsec-subresource-integrity",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "1696128+deniak@users.noreply.github.com",
+          "hash": "d4f5d7b",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest (#130)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-02-03",
@@ -10843,14 +11126,7 @@
       "name": "Intl Locale Info Proposal",
       "href": "https://tc39.es/proposal-intl-locale-info/",
       "specrepo": "https://github.com/tc39/proposal-intl-locale-info",
-      "speclog": [
-        {
-          "date": "2024-12-18",
-          "author": "FrankYFTang@users.noreply.github.com",
-          "hash": "6459bc4",
-          "subject": "fixup: [spec] `npm run build`"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -11451,18 +11727,6 @@
           "author": "mbrodesser@igalia.com",
           "hash": "0ecc6b7dab",
           "subject": "part 9) Extend WPT to check sink value of \"Document parseHTMLUnsafe\"."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mbrodesser@igalia.com",
-          "hash": "0b024817c9",
-          "subject": "part 8) Add WPTs for trusted types when constructing Workers from WorkerGlobalScope."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mbrodesser@igalia.com",
-          "hash": "48cd0c8bda",
-          "subject": "part 7) Add Worker tests to <DOMWindowTimers-setTimeout-setInterval.html>."
         }
       ]
     },
@@ -11471,6 +11735,12 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "behamilton@google.com",
+          "hash": "22b4fdf",
+          "subject": "[spec] Add B&A k-anonymity fields (#1360)"
+        },
         {
           "date": "2025-02-07",
           "author": "xiaochenzh@google.com",
@@ -11584,12 +11854,6 @@
           "author": "40476544+xtlsheep@users.noreply.github.com",
           "hash": "e72310c",
           "subject": "Add Trusted Signals KVv2 support to W3C Spec (#1340)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "kleber@google.com",
-          "hash": "1880fcc",
-          "subject": "Create 2024-12-18-FLEDGE-call-minutes.md"
         }
       ],
       "testlog": []
@@ -11604,12 +11868,6 @@
           "author": "miketaylr@chromium.org",
           "hash": "d7717ea",
           "subject": "Fixes #151 - Define a \"ch-ua-high-entropy-values\" permission policy (#373)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "miketaylr@chromium.org",
-          "hash": "7acf88f",
-          "subject": "Fixes #371. Update references from rfc8941 to rfc9651. (#372)"
         }
       ],
       "testlog": [
@@ -12014,6 +12272,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-13",
+          "author": "awogbemila@chromium.org",
+          "hash": "20c34d420a",
+          "subject": "Add AnimationTrigger IDL"
+        },
+        {
           "date": "2025-01-30",
           "author": "clchambers@microsoft.com",
           "hash": "f1751ae6ce",
@@ -12193,24 +12457,6 @@
           "author": "hongchan.choi@gmail.com",
           "hash": "c715db95",
           "subject": "initial commit"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "mjwilson@chromium.org",
-          "hash": "e6b8e8b6",
-          "subject": "Revise wording for currentTime"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "chris@w3.org",
-          "hash": "ce58039d",
-          "subject": "Add FPWD to Previous Version (and hopefully fix latest link) #2612"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "hongchan.choi@gmail.com",
-          "hash": "4dc37b44",
-          "subject": "Update auto-publish.yml"
         }
       ],
       "testlog": [
@@ -12383,12 +12629,6 @@
           "author": "tim@cloudauth.dev",
           "hash": "42f253e",
           "subject": "add period"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "tim@cloudauth.dev",
-          "hash": "e0ff44d",
-          "subject": "small tweaks"
         }
       ],
       "testlog": []
@@ -13615,12 +13855,6 @@
           "author": "mail@hskupin.info",
           "hash": "099359fe62",
           "subject": "[wdspec] Fix WebDriver classic and BiDi drag and drop position tests."
-        },
-        {
-          "date": "2024-12-18",
-          "author": "69349599+sadym-chromium@users.noreply.github.com",
-          "hash": "16e6fbc511",
-          "subject": "[wdspec] change test_..._closes_browsing_context (#49759)"
         }
       ]
     },
@@ -13784,12 +14018,6 @@
           "author": "fd@tidoust.net",
           "hash": "4a85452",
           "subject": "Use `<code>` for references to a CDDL type (#831)"
-        },
-        {
-          "date": "2024-12-18",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "2394e18",
-          "subject": "Fix links to Document (#833)"
         }
       ],
       "testlog": []
@@ -13799,6 +14027,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -13826,6 +14060,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -13851,6 +14091,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -13878,6 +14124,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -13903,6 +14155,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -13930,6 +14188,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -13955,6 +14219,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -13982,6 +14252,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14007,6 +14283,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -14034,6 +14316,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14059,6 +14347,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -14086,6 +14380,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14111,6 +14411,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -14138,6 +14444,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14163,6 +14475,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -14190,6 +14508,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14216,6 +14540,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
+        {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
           "hash": "dd28c2246",
@@ -14241,6 +14571,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "3479527+lexaknyazev@users.noreply.github.com",
+          "hash": "c000377d1",
+          "subject": "Test invalid parameter indices for OES_draw_buffers_indexed (#3711)"
+        },
         {
           "date": "2025-02-07",
           "author": "kbrussel@alum.mit.edu",
@@ -14421,12 +14757,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "0bf3070f",
           "subject": "Fix maxTextureDimension limits refs (#5027)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "senorblanco@chromium.org",
-          "hash": "254de568",
-          "subject": "Compatibility Mode: update to use featureLevel. (#5012)"
         }
       ],
       "testlog": []
@@ -14503,6 +14833,18 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "jsbell@chromium.org",
+          "hash": "4c34b9e",
+          "subject": "Clarify interpolation algorithms for resample2d (#816)"
+        },
+        {
+          "date": "2025-02-13",
+          "author": "zoltan.kis@intel.com",
+          "hash": "9c00304",
+          "subject": "Device selection - Remove MLDeviceType (#809)"
+        },
         {
           "date": "2025-01-31",
           "author": "jsbell@chromium.org",
@@ -14677,6 +15019,12 @@
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
         {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "fa22f9c5",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        },
+        {
           "date": "2025-01-30",
           "author": "eladalon@google.com",
           "hash": "f8a6dc7d",
@@ -14762,7 +15110,14 @@
       "name": "WebRTC Encoded Transform",
       "href": "https://w3c.github.io/webrtc-encoded-transform/",
       "specrepo": "https://github.com/w3c/webrtc-encoded-transform",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-07",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "9553ced",
+          "subject": "Fix {de}serialization steps to transfer data appropriately"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-01-27",
@@ -14810,7 +15165,14 @@
       "name": "Scalable Video Coding (SVC) Extension for WebRTC",
       "href": "https://w3c.github.io/webrtc-svc/",
       "specrepo": "https://github.com/w3c/webrtc-svc",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-12",
+          "author": "denis@w3.org",
+          "hash": "26e417d",
+          "subject": "update platform from ubuntu-20.04 to ubuntu-latest"
+        }
+      ],
       "testlog": []
     },
     {
@@ -14866,6 +15228,12 @@
       "href": "https://wicg.github.io/webusb/",
       "specrepo": "https://github.com/WICG/webusb",
       "speclog": [
+        {
+          "date": "2025-02-13",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "1854321",
+          "subject": "Do not resolve or reject promises while running steps in parallel (#254)"
+        },
         {
           "date": "2025-01-09",
           "author": "reillyeon@users.noreply.github.com",
@@ -15111,12 +15479,6 @@
           "author": "beaufortfrancois@gmail.com",
           "hash": "0bf3070f",
           "subject": "Fix maxTextureDimension limits refs (#5027)"
-        },
-        {
-          "date": "2024-12-19",
-          "author": "senorblanco@chromium.org",
-          "hash": "254de568",
-          "subject": "Compatibility Mode: update to use featureLevel. (#5012)"
         }
       ],
       "testlog": []
