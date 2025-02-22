@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2024-12-26T07:13:38.651Z",
-  "until": "2025-02-21T07:13:38.651Z",
+  "since": "2024-12-27T07:13:06.183Z",
+  "until": "2025-02-22T07:13:06.183Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -391,7 +391,14 @@
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "karlcow@apple.com",
+          "hash": "f3880538fd",
+          "subject": "Fix #50744 - Add rules for reformatting html before comparing (#50746)"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -583,6 +590,48 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-02-22",
+          "author": "jackalmage@gmail.com",
+          "hash": "43b3eef3ba",
+          "subject": "Per https://github.com/w3c/csswg-drafts/issues/9847, empty variables serialize as a single space. (#50890)"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "gastonr@microsoft.com",
+          "hash": "e5d62457ed",
+          "subject": "Handle overlay scrollbars gracefully in auto-scrollbars.html"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "emilio@crisal.io",
+          "hash": "d98f0cccef",
+          "subject": "Fix scroll-offsets-fractional-zoom.html."
+        },
+        {
+          "date": "2025-02-21",
+          "author": "javiercon@microsoft.com",
+          "hash": "61aa60a023",
+          "subject": "[gap-decorations] Parse `row-rule-style` property"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "moonira@google.com",
+          "hash": "ef74bddd02",
+          "subject": "Support evaluation of <boolean-expr[ style( <style-query> ) ]> queries"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "moonira@google.com",
+          "hash": "6084ade66d",
+          "subject": "if() boolean-expr of style() and media() queries parsing support"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "xiaochengh.work@gmail.com",
+          "hash": "ce96f4ea47",
+          "subject": "Rebase and squash"
+        },
         {
           "date": "2025-02-21",
           "author": "wangxianzhu@chromium.org",
@@ -2250,18 +2299,6 @@
           "author": "sam@webkit.org",
           "hash": "d676b1cb8c",
           "subject": "WebKit export: CSS counter-* should not eagerly evaluate calc()"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "8dec23b17f",
-          "subject": "[layout] Fix dirty bits for container queries."
-        },
-        {
-          "date": "2024-12-26",
-          "author": "tkent@chromium.org",
-          "hash": "7f001e1c77",
-          "subject": "text-emphasis: Do not paint emphasis marks on punctuations"
         }
       ]
     },
@@ -2905,6 +2942,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "gastonr@microsoft.com",
+          "hash": "e5d62457ed",
+          "subject": "Handle overlay scrollbars gracefully in auto-scrollbars.html"
+        },
+        {
           "date": "2025-02-07",
           "author": "andruud@chromium.org",
           "hash": "6df68d2661",
@@ -2939,12 +2982,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "906d283cd2",
           "subject": "WebKit export: [css-conditional] Negative cqmin/cqmax units are inverted (#49945)"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "8dec23b17f",
-          "subject": "[layout] Fix dirty bits for container queries."
         }
       ]
     },
@@ -3328,6 +3365,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "xiaochengh.work@gmail.com",
+          "hash": "ce96f4ea47",
+          "subject": "Rebase and squash"
+        },
+        {
           "date": "2025-02-10",
           "author": "jkew@mozilla.com",
           "hash": "cced590afe",
@@ -3421,6 +3464,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "kbabbitt@microsoft.com",
+          "hash": "c19338962",
+          "subject": "[css-grid-2][css-gaps-1][editorial] Namespace repeat() definitions. #11385 (#11388)"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "tonyraoul6699@gmail.com",
+          "hash": "ac5cd82a2",
+          "subject": "nit: Fix invalid html within example (#11758)"
+        },
         {
           "date": "2025-02-08",
           "author": "jackalmage@gmail.com",
@@ -4719,12 +4774,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "9c2ef07ce6",
           "subject": "WebKit export: Child text-decoration-thickness and text-underline-offset override parent decorating boxes' values (#49885)"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "tkent@chromium.org",
-          "hash": "7f001e1c77",
-          "subject": "text-emphasis: Do not paint emphasis marks on punctuations"
         }
       ]
     },
@@ -4980,6 +5029,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "moonira@google.com",
+          "hash": "ef74bddd02",
+          "subject": "Support evaluation of <boolean-expr[ style( <style-query> ) ]> queries"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "moonira@google.com",
+          "hash": "6084ade66d",
+          "subject": "if() boolean-expr of style() and media() queries parsing support"
+        },
+        {
           "date": "2025-02-17",
           "author": "sakhapov@chromium.org",
           "hash": "84c33d68bb",
@@ -5096,6 +5157,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-02-22",
+          "author": "jackalmage@gmail.com",
+          "hash": "cdd41ca90",
+          "subject": "[css-variables-1] Specify that empty custom props serialize as the empty string. #9847"
+        },
+        {
           "date": "2025-02-10",
           "author": "jackalmage@gmail.com",
           "hash": "d1ea96f68",
@@ -5103,6 +5170,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-22",
+          "author": "jackalmage@gmail.com",
+          "hash": "43b3eef3ba",
+          "subject": "Per https://github.com/w3c/csswg-drafts/issues/9847, empty variables serialize as a single space. (#50890)"
+        },
         {
           "date": "2025-02-11",
           "author": "emilio@crisal.io",
@@ -5307,6 +5380,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-02-21",
+          "author": "flackr@google.com",
+          "hash": "90c4b8251",
+          "subject": "[cssom-view-1] Apply scroll snap to scroll-into-view-position (#11073)"
+        },
+        {
           "date": "2025-02-07",
           "author": "flackr@google.com",
           "hash": "e8d30ac94",
@@ -5314,6 +5393,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "emilio@crisal.io",
+          "hash": "d98f0cccef",
+          "subject": "Fix scroll-offsets-fractional-zoom.html."
+        },
         {
           "date": "2025-02-19",
           "author": "hikezoe.birchill@mozilla.com",
@@ -5403,6 +5488,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-02-21",
+          "author": "annevk@annevk.nl",
+          "hash": "b64559c",
+          "subject": "Update an attribute's node document"
+        },
+        {
           "date": "2025-02-12",
           "author": "annevk@annevk.nl",
           "hash": "cbf4c0d",
@@ -5422,6 +5513,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "dom@chromium.org",
+          "hash": "12acca9b67",
+          "subject": "DOM: Implement `finally()` Observable operator"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "annevk@annevk.nl",
+          "hash": "40dc07cac8",
+          "subject": "DOM: test attribute's node document"
+        },
         {
           "date": "2025-02-21",
           "author": "caseq@chromium.org",
@@ -5541,12 +5644,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "78fc765922",
           "subject": "[carousel] Fix reserved scroll range selection edge case"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "dom@chromium.org",
-          "hash": "a53473e775",
-          "subject": "DOM: Add basic moveBefore() MutationObserver tests"
         }
       ]
     },
@@ -7137,6 +7234,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-02-21",
+          "author": "annevk@annevk.nl",
+          "hash": "5c729b3b",
+          "subject": "Editorial: refer to color components, not channels"
+        },
+        {
           "date": "2025-02-20",
           "author": "ccameron@chromium.org",
           "hash": "6a3787f6",
@@ -7414,6 +7517,66 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "masonf@chromium.org",
+          "hash": "1660dbd45b",
+          "subject": "Add larger outline for elements with `interesttarget`"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "aaronhk@chromium.org",
+          "hash": "fa9792e79e",
+          "subject": "Add CSS Color 4 gradient options to CanvasGradient"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "jpgravel@chromium.org",
+          "hash": "b7a11de711",
+          "subject": "Make name: and code: required parameters in the canvas test generator"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "schenney@chromium.org",
+          "hash": "5b42b1c845",
+          "subject": "Implement the Canvas TextStyles lang attribute"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "philip@foolip.org",
+          "hash": "cd1d2633f2",
+          "subject": "Map CSS module tests to web-features (#50825)"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "jpgravel@chromium.org",
+          "hash": "2c74568a02",
+          "subject": "Add an img_reference reftest type in canvas WPT test generator"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "jpgravel@chromium.org",
+          "hash": "3e11e7ba05",
+          "subject": "Abstract away the types of reftest templates in canvas test generator"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "ccameron@chromium.org",
+          "hash": "070abc60ae",
+          "subject": "GetSourceImageForCanvas: Use kDoNotChangeAlpha in BaseRenderingContext2D"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "rniwa@webkit.org",
+          "hash": "ab51b76723",
+          "subject": "Export WebKit's tests for revamped scoped custom element registry"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "jarhar@chromium.org",
+          "hash": "d4ef62f856",
+          "subject": "Improve <select> GetListItems descendant tracking"
+        },
         {
           "date": "2025-02-21",
           "author": "jpgravel@chromium.org",
@@ -8367,12 +8530,6 @@
           "author": "jarhar@chromium.org",
           "hash": "fe46e85bef",
           "subject": "De-flake customizable select reftests"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "masonf@chromium.org",
-          "hash": "7ff63cad78",
-          "subject": "Refactor OptionListIterator and OptionList, and related code"
         }
       ]
     },
@@ -8592,6 +8749,12 @@
       "href": "https://w3c.github.io/IndexedDB/",
       "specrepo": "https://github.com/w3c/IndexedDB",
       "speclog": [
+        {
+          "date": "2025-02-21",
+          "author": "jsbell@chromium.org",
+          "hash": "a72426f",
+          "subject": "Editorial: Use newfangled bikeshed issue links (#439)"
+        },
         {
           "date": "2025-01-10",
           "author": "estade@gmail.com",
@@ -9389,7 +9552,20 @@
           "subject": "Remove settings member from example report"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "valentin.gosu@gmail.com",
+          "hash": "fa7d04957b",
+          "subject": "NEL: Do not submit method and status code if phase is dns"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "valentin.gosu@gmail.com",
+          "hash": "1ebd7c625d",
+          "subject": "Fix sends-report-on-subdomain-dns-failure.https.html NEL test to use no-path-and-query URL"
+        }
+      ]
     },
     {
       "name": "Network Reporting API",
@@ -10905,6 +11081,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "vogelheim@chromium.org",
+          "hash": "b36cec53a0",
+          "subject": "[Sanitizer API] Support removing of javascript: URLs."
+        },
+        {
+          "date": "2025-02-21",
+          "author": "vogelheim@chromium.org",
+          "hash": "9390d891b6",
+          "subject": "[Sanitizer] Fix typo in test name."
+        },
+        {
           "date": "2025-02-17",
           "author": "vogelheim@chromium.org",
           "hash": "8cf314b051",
@@ -11029,6 +11217,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-21",
+          "author": "nmouchtaris@apple.com",
+          "hash": "6677517f05",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=285883 (#50874)"
+        },
+        {
+          "date": "2025-02-21",
+          "author": "graouts@apple.com",
+          "hash": "9e177d29d3",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=287789 (#50838)"
+        },
         {
           "date": "2025-02-20",
           "author": "graouts@apple.com",
@@ -11293,7 +11493,14 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "5e3b993",
+          "subject": "Update example of creating a pipe chain on readable (#210)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-02-13",
@@ -11474,6 +11681,24 @@
       "href": "https://wicg.github.io/shared-storage/",
       "specrepo": "https://github.com/WICG/shared-storage",
       "speclog": [
+        {
+          "date": "2025-02-21",
+          "author": "averge@chromium.org",
+          "hash": "a1bffbb",
+          "subject": "Enable get() in fenced frames with network access revoked. (#220)"
+        },
+        {
+          "date": "2025-02-12",
+          "author": "xyaof3@126.com",
+          "hash": "1cb8bcb",
+          "subject": "remove the check for active document"
+        },
+        {
+          "date": "2025-02-12",
+          "author": "xyaof3@126.com",
+          "hash": "096938f",
+          "subject": "[spec] During addModule(), switch to allow `navigator` but disallow `navigator.locks`"
+        },
         {
           "date": "2025-01-28",
           "author": "dmcardle@google.com",
@@ -11767,6 +11992,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "yrw@chromium.org",
+          "hash": "49fb90991e",
+          "subject": "Add SpeechRecognition-basics.https.html to chrome.filter"
+        },
+        {
           "date": "2025-02-19",
           "author": "beaufort.francois@gmail.com",
           "hash": "247db68758",
@@ -11813,12 +12044,6 @@
           "author": "evliu@google.com",
           "hash": "9ff4054044",
           "subject": "Add WPT for Web Speech API events"
-        },
-        {
-          "date": "2024-12-27",
-          "author": "evliu@google.com",
-          "hash": "b9ee47b75e",
-          "subject": "Fix SpeechRecognition-basics.https.html WPT"
         }
       ],
       "testpolicy": "https://github.com/WICG/speech-api/blob/HEAD/README.md"
@@ -12254,6 +12479,24 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "pchimento@igalia.com",
+          "hash": "ed4f930f",
+          "subject": "Update test262"
+        },
+        {
+          "date": "2025-02-22",
+          "author": "pchimento@igalia.com",
+          "hash": "f3aef871",
+          "subject": "Update polyfill to match spec"
+        },
+        {
+          "date": "2025-02-22",
+          "author": "andre.bargull@gmail.com",
+          "hash": "bd5ac121",
+          "subject": "Normative: Disallow large dates in ToTemporalMonthDay"
+        },
         {
           "date": "2025-02-18",
           "author": "kepae@users.noreply.github.com",
@@ -13161,6 +13404,12 @@
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
         {
+          "date": "2025-02-21",
+          "author": "giacomo.petri@usablenet.com",
+          "hash": "6d8336e4",
+          "subject": "editorial: typo, comformance -> conformance (#2446)"
+        },
+        {
           "date": "2025-02-20",
           "author": "p.krautzberger@gmail.com",
           "hash": "9929e408",
@@ -13352,6 +13601,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-02-21",
+          "author": "graouts@apple.com",
+          "hash": "a60dbf5b90",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284545 (#50858)"
+        },
+        {
           "date": "2025-02-13",
           "author": "awogbemila@chromium.org",
           "hash": "20c34d420a",
@@ -13383,6 +13638,12 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/",
       "specrepo": "https://github.com/WebBluetoothCG/web-bluetooth",
       "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "97704544+chengweih001@users.noreply.github.com",
+          "hash": "6309029",
+          "subject": "Update bluetooth.simulateAdapter command (#646)"
+        },
         {
           "date": "2025-02-15",
           "author": "reillyeon@users.noreply.github.com",
@@ -13452,6 +13713,12 @@
       "href": "https://webbluetoothcg.github.io/web-bluetooth/scanning.html",
       "specrepo": "https://github.com/WebBluetoothCG/web-bluetooth",
       "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "97704544+chengweih001@users.noreply.github.com",
+          "hash": "6309029",
+          "subject": "Update bluetooth.simulateAdapter command (#646)"
+        },
         {
           "date": "2025-02-15",
           "author": "reillyeon@users.noreply.github.com",
@@ -13596,6 +13863,12 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2025-02-21",
+          "author": "tim@cappalli.me",
+          "hash": "7eff864",
+          "subject": "chore: Fix issue template contact links"
+        },
         {
           "date": "2025-02-04",
           "author": "jackalmage@gmail.com",
@@ -16011,18 +16284,6 @@
           "author": "mjwilson@chromium.org",
           "hash": "54965d6",
           "subject": "Specify adding an EventListener also opens MIDIInput ports"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "mjwilson@chromium.org",
-          "hash": "bd252af",
-          "subject": "Cover pending case in close()"
-        },
-        {
-          "date": "2024-12-26",
-          "author": "mjwilson@chromium.org",
-          "hash": "beae3b3",
-          "subject": "Clarify ordering of send calls with the same timestamp"
         }
       ],
       "testlog": [],
@@ -16033,6 +16294,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2025-02-22",
+          "author": "jsbell@chromium.org",
+          "hash": "9f58451",
+          "subject": "Add missing validation steps for several ops (#820)"
+        },
         {
           "date": "2025-02-18",
           "author": "jsbell@chromium.org",
@@ -16137,6 +16404,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-02-22",
+          "author": "phillis@chromium.org",
+          "hash": "f33579b93f",
+          "subject": "webnn: implement quantizeLinear on coreml"
+        },
         {
           "date": "2025-02-11",
           "author": "phillis@chromium.org",
