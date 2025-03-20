@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-01-21T07:14:06.121Z",
-  "until": "2025-03-19T07:14:06.121Z",
+  "since": "2025-01-22T07:13:48.588Z",
+  "until": "2025-03-20T07:13:48.588Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -83,6 +83,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -189,18 +213,6 @@
           "author": "omri.a@taboola.com",
           "hash": "ed9eba3",
           "subject": "Added Taboola to the ara-tester-list.md (#1494)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "40465606+johnivdel@users.noreply.github.com",
-          "hash": "da673b3",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "apaseltiner@google.com",
-          "hash": "bc23b1a",
-          "subject": "Fix erroneous end tags in spec (#1497)"
         }
       ],
       "testlog": []
@@ -248,12 +260,6 @@
           "author": "wtc@google.com",
           "hash": "3746a49",
           "subject": "Spell \"gain map\" as two words"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "lbarnes@apple.com",
-          "hash": "4063755",
-          "subject": "Make asserts between profiles unique (#300)"
         }
       ],
       "testlog": []
@@ -401,12 +407,6 @@
           "author": "manuel@mozilla.com",
           "hash": "daebe08ae4",
           "subject": "WPT for `Clear-Site-Data: \"cache\"` testing that the cache only gets cleared in the correct storage partitions"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "manuel@mozilla.com",
-          "hash": "41bcf67f4b",
-          "subject": "WPT clear-cache.https.html: clarify and cleanup test function"
         }
       ]
     },
@@ -702,6 +702,138 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "swarup.ukil@mail.utoronto.ca",
+          "hash": "e54faa57d7",
+          "subject": "Ensure CSS Zoom (effective_zoom) is applied correctly when font-size is specified by keywords."
+        },
+        {
+          "date": "2025-03-20",
+          "author": "sammy.gill@apple.com",
+          "hash": "0edcaba64c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=285026 (#51469)"
+        },
+        {
+          "date": "2025-03-20",
+          "author": "sammy.gill@apple.com",
+          "hash": "67db8e22e0",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=289706 (#51468)"
+        },
+        {
+          "date": "2025-03-20",
+          "author": "m.jason.liu@gmail.com",
+          "hash": "35959adde5",
+          "subject": "Fix the background color animation between color spaces. srgb and oklch are not behaving correctly."
+        },
+        {
+          "date": "2025-03-20",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "d6ddb0b629",
+          "subject": "Use reference box in EffectPaintPropertyNode::MapRect with reference filters"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "5d63e05fcc",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=285024 (#51470)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "ef40c1ce1c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284990 (#51471)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "4b0cde1cb6",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284971 (#51472)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "86d4341696",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284882 (#51473)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "3b8a423039",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284950 (#51475)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "ff4e53d666",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284953 (#51476)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "lwarlow@igalia.com",
+          "hash": "08843d1451",
+          "subject": "Update CSS parser to allow pseudo elements after element-backed pseudo elements"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "cff189855b",
+          "subject": "corner-shape: compute path given curvature & offset (#51456)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "3c59b1012b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=279395 (#51457)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "33a9fd7271",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=279211 (#51458)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kbabbitt@microsoft.com",
+          "hash": "b619ac5b84",
+          "subject": "Fix handling of infinity in late-resolved relative colors"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4f4f39f390",
+          "subject": "Check whether the given frame is position:fixed inside the loop where we calculate the frame bounds."
+        },
+        {
+          "date": "2025-03-19",
+          "author": "futhark@chromium.org",
+          "hash": "8ba10db942",
+          "subject": "Support complex CSS pow() parameters"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "obrufau@igalia.com",
+          "hash": "58257b113e",
+          "subject": "layout: Obey sizing keywords in `layout_for_block_content_size()`"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4106ca43e6",
+          "subject": "Rename visual-scrollIntoView.html and add another variant of the test."
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "5ccec49d9e",
+          "subject": "Update scroll snap target ids when re-using an AsyncSmoothMSDScroll or an AsyncScroll instance."
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "b9af5f98e1",
+          "subject": "Avoid passing floating point values to WebDriver's wheel action in overscroll-behavior-root.html."
+        },
         {
           "date": "2025-03-19",
           "author": "sammy.gill@apple.com",
@@ -2753,48 +2885,6 @@
           "author": "futhark@chromium.org",
           "hash": "fb7ef79ca3",
           "subject": "Support ::scroll-button(*)"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "boris.chiou@gmail.com",
-          "hash": "650b858b94",
-          "subject": "Support {Element|DocumentOrShadowRoot}.getAnimations({subtree: true}) for view-transitions."
-        },
-        {
-          "date": "2025-01-21",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "7e21654499",
-          "subject": "WebKit export: `input[type=\"range\"]` handles inline-size incorrectly (#50190)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "awogbemila@chromium.org",
-          "hash": "042a8d3787",
-          "subject": "Implement parsing for animation-trigger-timeline"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "awogbemila@chromium.org",
-          "hash": "f078270a87",
-          "subject": "Implement parsing for animation-trigger-type"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "obrufau@igalia.com",
-          "hash": "80ae72a40e",
-          "subject": "layout: Fix border widths of table wrapper with collapsed borders"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "obrufau@igalia.com",
-          "hash": "f16298d4bc",
-          "subject": "layout: Fix conflict resolution for collapsed borders differing in color"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "emilio@crisal.io",
-          "hash": "4df9b1da31",
-          "subject": "Don't ignore negative margins for scroll{Width,Height} on overflow:visible frames."
         }
       ]
     },
@@ -2809,12 +2899,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "f6cfc9cc4",
           "subject": "[css2] Fix title and abstract."
-        },
-        {
-          "date": "2025-01-21",
-          "author": "jackalmage@gmail.com",
-          "hash": "bcaf7ebb5",
-          "subject": "[css2][editorial] minor markup fix"
         }
       ],
       "testlog": [
@@ -2853,12 +2937,6 @@
           "author": "obrufau@igalia.com",
           "hash": "ec1ec56e51",
           "subject": "layout: Fix table geometry when collapsed borders have different sizes"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "obrufau@igalia.com",
-          "hash": "f16298d4bc",
-          "subject": "layout: Fix conflict resolution for collapsed borders differing in color"
         }
       ]
     },
@@ -3084,6 +3162,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-03-20",
+          "author": "m.jason.liu@gmail.com",
+          "hash": "35959adde5",
+          "subject": "Fix the background color animation between color spaces. srgb and oklch are not behaving correctly."
+        },
+        {
           "date": "2025-03-07",
           "author": "nmouchtaris@apple.com",
           "hash": "733ef8ac0f",
@@ -3124,18 +3208,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "78c349f14e",
           "subject": "Implement parsing for animation-trigger-range-*"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "awogbemila@chromium.org",
-          "hash": "042a8d3787",
-          "subject": "Implement parsing for animation-trigger-timeline"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "awogbemila@chromium.org",
-          "hash": "f078270a87",
-          "subject": "Implement parsing for animation-trigger-type"
         }
       ]
     },
@@ -3241,6 +3313,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "cff189855b",
+          "subject": "corner-shape: compute path given curvature & offset (#51456)"
+        },
         {
           "date": "2025-03-13",
           "author": "nrosenthal@chromium.org",
@@ -3536,6 +3614,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-03-19",
+          "author": "kbabbitt@microsoft.com",
+          "hash": "b619ac5b84",
+          "subject": "Fix handling of infinity in late-resolved relative colors"
+        },
+        {
           "date": "2025-03-11",
           "author": "m.jason.liu@gmail.com",
           "hash": "33de75cc39",
@@ -3822,6 +3906,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-03-19",
+          "author": "lwarlow@igalia.com",
+          "hash": "08843d1451",
+          "subject": "Update CSS parser to allow pseudo elements after element-backed pseudo elements"
+        },
+        {
           "date": "2025-02-25",
           "author": "futhark@chromium.org",
           "hash": "46e8857818",
@@ -4048,6 +4138,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "3c59b1012b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=279395 (#51457)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "obrufau@igalia.com",
+          "hash": "58257b113e",
+          "subject": "layout: Obey sizing keywords in `layout_for_block_content_size()`"
+        },
         {
           "date": "2025-03-19",
           "author": "sammy.gill@apple.com",
@@ -4348,6 +4450,60 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "sammy.gill@apple.com",
+          "hash": "0edcaba64c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=285026 (#51469)"
+        },
+        {
+          "date": "2025-03-20",
+          "author": "sammy.gill@apple.com",
+          "hash": "67db8e22e0",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=289706 (#51468)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "5d63e05fcc",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=285024 (#51470)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "ef40c1ce1c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284990 (#51471)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "4b0cde1cb6",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284971 (#51472)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "86d4341696",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284882 (#51473)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "3b8a423039",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284950 (#51475)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "ff4e53d666",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284953 (#51476)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "sammy.gill@apple.com",
+          "hash": "33a9fd7271",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=279211 (#51458)"
+        },
         {
           "date": "2025-03-18",
           "author": "ikilpatrick@chromium.org",
@@ -4793,12 +4949,6 @@
           "author": "flackr@google.com",
           "hash": "6b64e025b",
           "subject": "[css-overflow-5] Define activeElement and matching focus-related pseudo-classes for focused navigation pseudos. (#11590)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "jackalmage@gmail.com",
-          "hash": "b143c8b8c",
-          "subject": "[css-overflow-5] Define ::scroll-button(*) to select all at once. #10722"
         }
       ],
       "testlog": [
@@ -5056,7 +5206,14 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "b9af5f98e1",
+          "subject": "Avoid passing floating point values to WebDriver's wheel action in overscroll-behavior-root.html."
+        }
+      ]
     },
     {
       "name": "CSS Paged Media",
@@ -5160,7 +5317,14 @@
       "href": "https://drafts.css-houdini.org/css-properties-values-api/",
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "andruud@gmail.com",
+          "hash": "4e97922",
+          "subject": "[css-properties-values-api] Make var() fallback type-agnostic (#1139)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-03-12",
@@ -5375,15 +5539,14 @@
       "href": "https://drafts.csswg.org/css-scroll-snap/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2025-01-22",
-          "author": "flackr@google.com",
-          "hash": "680afde8a",
-          "subject": "[css-scroll-snap-1] Scroll by page should not skip over content. (#11370)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "5ccec49d9e",
+          "subject": "Update scroll snap target ids when re-using an AsyncSmoothMSDScroll or an AsyncScroll instance."
+        },
         {
           "date": "2025-03-11",
           "author": "hikezoe.birchill@mozilla.com",
@@ -5492,12 +5655,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "c3890ced2",
           "subject": "Reword example about polygon (#11560)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "3492c4a08",
-          "subject": "[css-shapes-2] Add a detailed example for `shape()` (#11548)"
         }
       ],
       "testlog": []
@@ -5670,12 +5827,6 @@
           "author": "obrufau@igalia.com",
           "hash": "ba05f6be23",
           "subject": "layout: Hide collapsed borders crossed by spanning cells"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "obrufau@igalia.com",
-          "hash": "80ae72a40e",
-          "subject": "layout: Fix border widths of table wrapper with collapsed borders"
         }
       ]
     },
@@ -6101,15 +6252,15 @@
           "author": "jackalmage@gmail.com",
           "hash": "bde1a66a9",
           "subject": "[css-values-5] ident() is not an arbitrary-substitution function. #11663"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "bramus@bram.us",
-          "hash": "2d91e25f7",
-          "subject": "[css-values-5] Fix issue link"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "futhark@chromium.org",
+          "hash": "8ba10db942",
+          "subject": "Support complex CSS pow() parameters"
+        },
         {
           "date": "2025-03-17",
           "author": "emilio@crisal.io",
@@ -6435,12 +6586,6 @@
           "author": "boris.chiou@gmail.com",
           "hash": "a462f63167",
           "subject": "Perform pending operations when the view transition is animating."
-        },
-        {
-          "date": "2025-01-22",
-          "author": "boris.chiou@gmail.com",
-          "hash": "650b858b94",
-          "subject": "Support {Element|DocumentOrShadowRoot}.getAnimations({subtree: true}) for view-transitions."
         }
       ]
     },
@@ -6458,6 +6603,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "swarup.ukil@mail.utoronto.ca",
+          "hash": "e54faa57d7",
+          "subject": "Ensure CSS Zoom (effective_zoom) is applied correctly when font-size is specified by keywords."
+        },
         {
           "date": "2025-03-11",
           "author": "dholbert@cs.stanford.edu",
@@ -6536,12 +6687,6 @@
           "author": "jkew@mozilla.com",
           "hash": "d5e24b6795",
           "subject": "Add a WPT reftest for intrinsic sizing with an orthogonal child that has borders."
-        },
-        {
-          "date": "2025-01-21",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "7e21654499",
-          "subject": "WebKit export: `input[type=\"range\"]` handles inline-size incorrectly (#50190)"
         }
       ]
     },
@@ -6551,6 +6696,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "60073468+Psychpsyo@users.noreply.github.com",
+          "hash": "4cb3a3ac9",
+          "subject": "Fix typo in Overview.bs (#11964)"
+        },
         {
           "date": "2025-02-25",
           "author": "jackalmage@gmail.com",
@@ -6612,6 +6763,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4f4f39f390",
+          "subject": "Check whether the given frame is position:fixed inside the loop where we calculate the frame bounds."
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hikezoe.birchill@mozilla.com",
+          "hash": "4106ca43e6",
+          "subject": "Rename visual-scrollIntoView.html and add another variant of the test."
+        },
+        {
           "date": "2025-03-06",
           "author": "rego@igalia.com",
           "hash": "ccbb42938d",
@@ -6640,12 +6803,6 @@
           "author": "hikezoe.birchill@mozilla.com",
           "hash": "cb60c18cbf",
           "subject": "Scroll visually to position:fixed element in ScrollFrameIntoView if necessary."
-        },
-        {
-          "date": "2025-01-21",
-          "author": "emilio@crisal.io",
-          "hash": "4df9b1da31",
-          "subject": "Don't ignore negative margins for scroll{Width,Height} on overflow:visible frames."
         }
       ]
     },
@@ -6660,7 +6817,14 @@
       "name": "DataCue API",
       "href": "https://wicg.github.io/datacue/",
       "specrepo": "https://github.com/WICG/datacue",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "chris@chrisneedham.com",
+          "hash": "dac8f4e",
+          "subject": "Add TextTrackCue constructor proposal"
+        }
+      ],
       "testlog": []
     },
     {
@@ -6731,6 +6895,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "dan@dlrobertson.com",
+          "hash": "794be2bf3a",
+          "subject": "Move scrollIntoView subtests into individual test variants"
+        },
         {
           "date": "2025-03-17",
           "author": "dom@chromium.org",
@@ -6874,12 +7044,6 @@
           "author": "masonf@chromium.org",
           "hash": "1e2aa3a1a2",
           "subject": "Add tasks for gain/lose interest on interesttarget [2/N]"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "Olli.Pettay@helsinki.fi",
-          "hash": "88234ea0e6",
-          "subject": "Add a test for Element.textContent + MutationObserver"
         }
       ]
     },
@@ -7150,6 +7314,12 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "bakkot@gmail.com",
+          "hash": "e42d11da",
+          "subject": "Markup: consistent spacing for method signatures in tables (#3549)"
+        },
+        {
           "date": "2025-03-12",
           "author": "nribaudo@igalia.com",
           "hash": "53a42e69",
@@ -7301,6 +7471,144 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "ce7e72d210",
+          "subject": "Split addition-across-lunisolar-leap-months across calendars"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c12ea5c2d9",
+          "subject": "Remove old non-iso-calendars.js"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "7f61f1d73e",
+          "subject": "Fix dangi calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "367b207786",
+          "subject": "Fix chinese calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "d2a0a9bda6",
+          "subject": "Fix islamic-rgsa calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e296fb39a6",
+          "subject": "Fix islamic calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "450d9db1e2",
+          "subject": "Fix islamic-umalqura calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "fc5b8568a0",
+          "subject": "Fix hebrew calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "de5fd18406",
+          "subject": "Fix islamic-tbla calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "ef8d9be0b0",
+          "subject": "Fix islamic-civil calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "05b7f0fc75",
+          "subject": "Fix islamicc calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "496b6c195f",
+          "subject": "Fix indian calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "9bf4e0f2f4",
+          "subject": "Fix ethiopic calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "aae8f8a8d8",
+          "subject": "Fix ethioaa calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "cc9cb90005",
+          "subject": "Fix coptic calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c7dba7860e",
+          "subject": "Fix gregory calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e2349bd24a",
+          "subject": "Fix persian calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "b67d395ed5",
+          "subject": "Fix japanese calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c4b6ea79da",
+          "subject": "Fix iso8601 calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "467acc8ec8",
+          "subject": "Fix roc calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e493362aec",
+          "subject": "Fix buddhist calendar test case"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "5c8013f45d",
+          "subject": "Remove test data for other calendars"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "e627bd8090",
+          "subject": "Copy non-iso-calendars to calendar specific files"
+        },
         {
           "date": "2025-03-14",
           "author": "pchimento@igalia.com",
@@ -7611,6 +7919,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -7654,6 +7986,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -7699,6 +8055,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -7742,6 +8122,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -7787,6 +8191,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -7830,6 +8258,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -7875,6 +8327,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -7918,6 +8394,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -7963,6 +8463,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -8006,6 +8530,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -8051,6 +8599,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -8095,6 +8667,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -8138,6 +8734,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -8320,14 +8940,7 @@
       "href": "https://fetch.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/fetch",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2025-01-21",
-          "author": "41948741+nidhijaju@users.noreply.github.com",
-          "hash": "07662d3",
-          "subject": "Meta: correct markup as per Bikeshed output"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2025-03-18",
@@ -8426,6 +9039,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-03-20",
+          "author": "wangxianzhu@chromium.org",
+          "hash": "d6ddb0b629",
+          "subject": "Use reference box in EffectPaintPropertyNode::MapRect with reference filters"
+        },
+        {
           "date": "2025-03-07",
           "author": "samfort@microsoft.com",
           "hash": "b8776b94b2",
@@ -8463,6 +9082,18 @@
       "specrepo": "https://github.com/w3c/fingerprinting-guidance",
       "speclog": [
         {
+          "date": "2025-03-20",
+          "author": "jyasskin@google.com",
+          "hash": "96c80a7",
+          "subject": "Enable PR-Preview (#75)"
+        },
+        {
+          "date": "2025-03-20",
+          "author": "plh@w3.org",
+          "hash": "f66d054",
+          "subject": "Various fixes for publication (#77)"
+        },
+        {
           "date": "2025-03-18",
           "author": "plh@w3.org",
           "hash": "228df2f",
@@ -8481,7 +9112,14 @@
       "name": "User Agent Interaction with Related Website Sets",
       "href": "https://wicg.github.io/first-party-sets/",
       "specrepo": "https://github.com/WICG/first-party-sets",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "johannhof@chromium.org",
+          "hash": "41975cf",
+          "subject": "Update spec + explainer to include usage for other purposes, such as IP Protection (#260)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -9224,6 +9862,36 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "szager@chromium.org",
+          "hash": "e20f8fcfec",
+          "subject": "Combine Frame IPC's CreateNewWindow and ShowCreatedWindow"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "jarhar@chromium.org",
+          "hash": "1e6e79fd10",
+          "subject": "Don't set ::picker(select) color in auto appearance"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "jpgravel@chromium.org",
+          "hash": "994dac3cba",
+          "subject": "Correctly create provider in OffscreenCanvas::EnableAcceleration"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "rniwa@webkit.org",
+          "hash": "d769a3c872",
+          "subject": "Fix the issue #51441 by waiting for the actual scrolling to happen in test_move_focus_dont_scroll_viewport. (#51442)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "mstensho@chromium.org",
+          "hash": "d4246a84f2",
+          "subject": "Fieldset: Handle column properties correctly."
+        },
         {
           "date": "2025-03-18",
           "author": "jpgravel@chromium.org",
@@ -10375,12 +11043,6 @@
           "author": "schenney@chromium.org",
           "hash": "625fea211d",
           "subject": "Fix direction = \"inherit\" for offscreen canvas"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "vincenthilla5@gmail.com",
-          "hash": "fa9828a9ac",
-          "subject": "Update dir-auto-dynamic-changes.window.js"
         }
       ]
     },
@@ -10540,12 +11202,6 @@
           "author": "grieger@google.com",
           "hash": "b592442",
           "subject": "Update the changes section in preparation for a new working draft."
-        },
-        {
-          "date": "2025-01-21",
-          "author": "chris@w3.org",
-          "hash": "69094a2",
-          "subject": "[editorial] back to ED, remove hardcoded date"
         }
       ],
       "testlog": []
@@ -10732,18 +11388,6 @@
           "author": "garimachadha@microsoft.com",
           "hash": "19b2aac226",
           "subject": "IDB WPTs: Extend keypath related tests to workers"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "garimachadha@microsoft.com",
-          "hash": "719c62bf03",
-          "subject": "IDB WPTs: Extend idbtransaction-objectStore related tests to workers"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "garimachadha@microsoft.com",
-          "hash": "b0074f39f7",
-          "subject": "IDB WPTs: Extend idbobjectstore-rename related tests to workers"
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -10877,6 +11521,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -11630,6 +12298,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -11673,6 +12365,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -11718,6 +12434,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -11761,6 +12501,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -11806,6 +12570,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -11849,6 +12637,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -11894,6 +12706,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -11938,6 +12774,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -11981,6 +12841,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -12080,6 +12964,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -12426,6 +13334,18 @@
       "specrepo": "https://github.com/w3c/pointerevents",
       "testpolicy": "https://github.com/w3c/pointerevents/blob/gh-pages/README.markdown#editing-process",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "redux@splintered.co.uk",
+          "hash": "dcff59f",
+          "subject": "Port tweaks to pointerId definition from level 3, expand to mention `persistentDeviceId`"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "redux@splintered.co.uk",
+          "hash": "28e3c07",
+          "subject": "Minor tweak: straggler \"hardware agnostic\" without hyphen"
+        },
         {
           "date": "2025-03-18",
           "author": "plh@w3.org",
@@ -12938,6 +13858,18 @@
       "specrepo": "https://github.com/WICG/sanitizer-api",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "evilpies@gmail.com",
+          "hash": "8265187",
+          "subject": "Immediately continue in sanitize core after removing or replacing a node (#275)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "30862698+otherdaniel@users.noreply.github.com",
+          "hash": "6818062",
+          "subject": "Normalize the empty string as namespace to be the null namespace. (#265)"
+        },
+        {
           "date": "2025-03-13",
           "author": "evilpies@gmail.com",
           "hash": "445eca6",
@@ -12993,6 +13925,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "vogelheim@chromium.org",
+          "hash": "f41281f360",
+          "subject": "[Sanitizer] Update comment to match spec."
+        },
         {
           "date": "2025-03-15",
           "author": "tschuster@mozilla.com",
@@ -13173,6 +14111,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "awogbemila@chromium.org",
+          "hash": "3dbd0467a5",
+          "subject": "Create AnimationTriggers for CSSAnimations"
+        },
         {
           "date": "2025-03-05",
           "author": "graouts@apple.com",
@@ -13576,24 +14520,6 @@
           "author": "yoshisato.yanagisawa@gmail.com",
           "hash": "6c3faad",
           "subject": "Temporary remove L10-11 to see if CI works for not."
-        },
-        {
-          "date": "2025-01-22",
-          "author": "yoshisato.yanagisawa@gmail.com",
-          "hash": "b061bd5",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "yoshisato.yanagisawa@gmail.com",
-          "hash": "e7789c3",
-          "subject": "Update index.bs"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "yoshisato.yanagisawa@gmail.com",
-          "hash": "7c0ec93",
-          "subject": "Update generate.yml"
         }
       ],
       "testlog": [
@@ -13708,12 +14634,6 @@
           "author": "averge@chromium.org",
           "hash": "893ade0",
           "subject": "Re-enable builds for PRs in build.yml"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "jyasskin@google.com",
-          "hash": "1a02d28",
-          "subject": "Avoid exporting duplicate Lock-related definitions from monkeypatches. (#212)"
         }
       ],
       "testlog": []
@@ -14135,18 +15055,6 @@
           "author": "annevk@annevk.nl",
           "hash": "4d90f7f",
           "subject": "Review Draft Publication: February 2025"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "haddadi.taym@gmail.com",
-          "hash": "2811932",
-          "subject": "Fix byte length getting"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "d@domenic.me",
-          "hash": "d81b558",
-          "subject": "Meta: fix markup errors"
         }
       ],
       "testlog": []
@@ -14158,6 +15066,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "longsonr@gmail.com",
+          "hash": "11d0a493dc",
+          "subject": "Account for transform when applying padding"
+        },
         {
           "date": "2025-03-14",
           "author": "longsonr@gmail.com",
@@ -14718,6 +15632,30 @@
       "testlog": [
         {
           "date": "2025-03-19",
+          "author": "fwang@igalia.com",
+          "hash": "18faf2fb21",
+          "subject": "Trusted Types reporting: Tweak comments about assumptions on .headers files (#51444)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "fwang@igalia.com",
+          "hash": "9392df6e8b",
+          "subject": "Trusted Types: Remove irrelevant report-uri: dummy-report.php directives (#51445)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "fwang@igalia.com",
+          "hash": "a869fb4bfb",
+          "subject": "Add tests to verify interaction of CSP directives for trusted types a… (#51443)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "fwang@igalia.com",
+          "hash": "9057440db1",
+          "subject": "Trusted Types: Fix mistake in trusted-types-report-only.html when setting script's src (#51446)"
+        },
+        {
+          "date": "2025-03-19",
           "author": "lwarlow@igalia.com",
           "hash": "c658198777",
           "subject": "Add TT reporting tests for Worker eval and new Function() (#51425)"
@@ -15070,6 +16008,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "annevk@annevk.nl",
+          "hash": "c23aec1",
+          "subject": "Report all hostname state failures for URLPattern"
+        },
+        {
           "date": "2025-03-14",
           "author": "annevk@annevk.nl",
           "hash": "6c78200",
@@ -15189,6 +16133,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "annevk@annevk.nl",
+          "hash": "a8c62524f6",
+          "subject": "URLPattern: correct port and hostname-related test"
+        },
         {
           "date": "2025-03-14",
           "author": "annevk@annevk.nl",
@@ -15523,6 +16473,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-19",
+          "author": "awogbemila@chromium.org",
+          "hash": "3dbd0467a5",
+          "subject": "Create AnimationTriggers for CSSAnimations"
+        },
         {
           "date": "2025-03-07",
           "author": "kevers@google.com",
@@ -15935,12 +16891,6 @@
           "author": "simone@w3.org",
           "hash": "4a54f30",
           "subject": "Bikeshed fixes"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "tim@cloudauth.dev",
-          "hash": "e8ee043",
-          "subject": "Update issue template"
         }
       ],
       "testlog": [
@@ -16001,6 +16951,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "dalecurtis@chromium.org",
+          "hash": "96e039f795",
+          "subject": "Implement VideoEncoder orientation support."
+        },
         {
           "date": "2025-03-11",
           "author": "dalecurtis@chromium.org",
@@ -17081,36 +18037,6 @@
           "author": "OrKoN@users.noreply.github.com",
           "hash": "1d0fcc1",
           "subject": "Always handle subscription IDs in session.unsubscribe if provided (#867)"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "d11969b",
-          "subject": "Define session.UnsubscribeParameters to match other commands (#866)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "aborovova@mozilla.com",
-          "hash": "da7ada3",
-          "subject": "Return \"no such frame\" error instead \"invalid argument\""
-        },
-        {
-          "date": "2025-01-21",
-          "author": "aborovova@mozilla.com",
-          "hash": "01ae7be",
-          "subject": "Return \"no such user context\" error instead \"invalid argument\""
-        },
-        {
-          "date": "2025-01-21",
-          "author": "mail@hskupin.info",
-          "hash": "a4615b3",
-          "subject": "Prevent navigable being overridden by parent navigable (#863)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "OrKoN@users.noreply.github.com",
-          "hash": "b98986e",
-          "subject": "Fix build errors (#864)"
         }
       ],
       "testlog": []
@@ -17120,6 +18046,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_blend_equation_advanced_coherent/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17165,6 +18115,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17208,6 +18182,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17253,6 +18251,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17296,6 +18318,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17341,6 +18387,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17384,6 +18454,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_pvrtc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17429,6 +18523,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17472,6 +18590,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc_srgb/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17517,6 +18659,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17560,6 +18726,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_shaders/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17605,6 +18795,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17648,6 +18862,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_buffers/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17693,6 +18931,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17736,6 +18998,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_lose_context/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17781,6 +19067,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17825,6 +19135,30 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
+        {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
           "hash": "b7ad199df",
@@ -17868,6 +19202,30 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "24e7b2c34",
+          "subject": "Add DRNG (Deterministic RNG) and use it to do fuzzing in attribs/gl-vertex-attrib.html. (#3722)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "e5b14d1f2",
+          "subject": "When serve_localhost.py of base dir, also print link to CTS Test Runner. (#3723)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "1b0c44d8d",
+          "subject": "Firefox should not call requestVideoFrameCallback to ensure videos are uploadable. (#3721)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "kelsey.gilbert@mozilla.com",
+          "hash": "a33f03c41",
+          "subject": "Add shortcut for glEnumStr() => wtu.glEnumToString(), and cache WebGLRenderingContext versions for glEnumToString eagerly, to make glOrExt arg optional for most cases. (#3720)"
+        },
         {
           "date": "2025-03-14",
           "author": "kelsey.gilbert@mozilla.com",
@@ -17935,6 +19293,18 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "kainino@chromium.org",
+          "hash": "5c7b2ce1",
+          "subject": "copyBufferToBuffer: make offsets and sizes optional (#5098)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "beaufortfrancois@gmail.com",
+          "hash": "928bd09d",
+          "subject": "Move GPUAdapter isFallbackAdapter attribute to GPUAdapterInfo (#5099)"
+        },
         {
           "date": "2025-03-05",
           "author": "jrprice@google.com",
@@ -18054,18 +19424,6 @@
           "author": "jiawei.shao@intel.com",
           "hash": "369c9be2",
           "subject": "Allow `index < limits.maxBindGroups` in `getBindGroupLayout()` (#5042)"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "kainino@chromium.org",
-          "hash": "d53c4c12",
-          "subject": "[editorial] API spec: Fix incorrect end tags (#5047)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "3dc53130",
-          "subject": "Fix tags that cause build errors in the WGSL spec (#5046)"
         }
       ],
       "testlog": []
@@ -18117,6 +19475,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2025-03-19",
+          "author": "asully@chromium.org",
+          "hash": "4c8c75e",
+          "subject": "Reject promises for in-progress operations on an MLTensor if it is destroyed (#799)"
+        },
         {
           "date": "2025-03-13",
           "author": "jsbell@chromium.org",
@@ -18242,18 +19606,6 @@
           "author": "feng.dai@intel.com",
           "hash": "293d074",
           "subject": "Bugfix: Fix emulation error of lstm by 'backward' and 'both' direction options (#802)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "jsbell@chromium.org",
-          "hash": "237f1ad",
-          "subject": "Editorial: Fix glitch with otherwise clause in pool op creation"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "zoltan.kis@intel.com",
-          "hash": "17a44e2",
-          "subject": "Add device selection explainer (#784)"
         }
       ],
       "testlog": [
@@ -18406,6 +19758,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "jib@mozilla.com",
+          "hash": "d54b5108d5",
+          "subject": "Add WPT test for relayProtocol and url in RTCIceCandidate constructor."
+        },
+        {
+          "date": "2025-03-19",
+          "author": "hbos@chromium.org",
+          "hash": "fa22921876",
+          "subject": "Add WPTs test coverage for H265 loopback video calling."
+        },
         {
           "date": "2025-03-18",
           "author": "philipp.hancke@googlemail.com",
@@ -18888,6 +20252,18 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2025-03-19",
+          "author": "kainino@chromium.org",
+          "hash": "5c7b2ce1",
+          "subject": "copyBufferToBuffer: make offsets and sizes optional (#5098)"
+        },
+        {
+          "date": "2025-03-19",
+          "author": "beaufortfrancois@gmail.com",
+          "hash": "928bd09d",
+          "subject": "Move GPUAdapter isFallbackAdapter attribute to GPUAdapterInfo (#5099)"
+        },
+        {
           "date": "2025-03-05",
           "author": "jrprice@google.com",
           "hash": "d521e5ac",
@@ -19006,18 +20382,6 @@
           "author": "jiawei.shao@intel.com",
           "hash": "369c9be2",
           "subject": "Allow `index < limits.maxBindGroups` in `getBindGroupLayout()` (#5042)"
-        },
-        {
-          "date": "2025-01-22",
-          "author": "kainino@chromium.org",
-          "hash": "d53c4c12",
-          "subject": "[editorial] API spec: Fix incorrect end tags (#5047)"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "mehmetoguzderin@mehmetoguzderin.com",
-          "hash": "3dc53130",
-          "subject": "Fix tags that cause build errors in the WGSL spec (#5046)"
         }
       ],
       "testlog": []
@@ -19055,15 +20419,15 @@
           "author": "d@domenic.me",
           "hash": "4a6401c",
           "subject": "Allow doubles for ProgressEvent's loaded and total"
-        },
-        {
-          "date": "2025-01-21",
-          "author": "d@domenic.me",
-          "hash": "150a3b8",
-          "subject": "Editorial: fix Bikeshed linking errors"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-03-20",
+          "author": "annevk@annevk.nl",
+          "hash": "f8c276176c",
+          "subject": "XHR: use assert_array_equals"
+        },
         {
           "date": "2025-03-18",
           "author": "sysrqb@apple.com",
