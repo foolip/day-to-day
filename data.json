@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-02-19T07:14:02.727Z",
-  "until": "2025-04-17T07:14:02.727Z",
+  "since": "2025-02-20T07:13:47.457Z",
+  "until": "2025-04-18T07:13:47.457Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -178,6 +178,12 @@
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "apaseltiner@google.com",
+          "hash": "d654bd2",
+          "subject": "Update Node dependencies (#1513)"
+        },
+        {
           "date": "2025-04-16",
           "author": "apaseltiner@google.com",
           "hash": "1b26469",
@@ -226,7 +232,14 @@
       "name": "Audio Output Devices API",
       "href": "https://w3c.github.io/mediacapture-output/",
       "specrepo": "https://github.com/w3c/mediacapture-output",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-04-07",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "a044a32",
+          "subject": "Expose all speakers on microphone access"
+        }
+      ],
       "testlog": []
     },
     {
@@ -675,18 +688,6 @@
           "author": "obrufau@igalia.com",
           "hash": "72098edd0c",
           "subject": "Add behavior test"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "pdr@chromium.org",
-          "hash": "b8a7a40236",
-          "subject": "Fix root-element-background-image-transparency expectations"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
         }
       ]
     },
@@ -912,12 +913,6 @@
           "author": "lzhao@microsoft.com",
           "hash": "5a669255f7",
           "subject": "Return worker in error state instead of throw for CSP blocked worker"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "allstars.chh@gmail.com",
-          "hash": "c7f5038841",
-          "subject": "Part 2: Add sub test name in import-style-blocked-sub.html."
         }
       ]
     },
@@ -942,6 +937,30 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-04-17",
+          "author": "samfort@microsoft.com",
+          "hash": "d9f08abc4d",
+          "subject": "Prevent composited ref filter with empty ref box from optimizing away"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "samomekarajr@microsoft.com",
+          "hash": "03ee93a4a8",
+          "subject": "[Gap Decorations]: Use multiple colors to paint"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "obrufau@igalia.com",
+          "hash": "8a106b9cf3",
+          "subject": "Fix /css/css-flexbox/gap-007-* WPT tests"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "samomekarajr@microsoft.com",
+          "hash": "011a87430c",
+          "subject": "[Gap Decorations]: Parse rule-width shorthand"
+        },
         {
           "date": "2025-04-16",
           "author": "chrishtr@google.com",
@@ -3233,84 +3252,6 @@
           "author": "jkew@mozilla.com",
           "hash": "b65f057c98",
           "subject": "Add gradient testcase based on the example here."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "pdr@chromium.org",
-          "hash": "b8a7a40236",
-          "subject": "Fix root-element-background-image-transparency expectations"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "schenney@chromium.org",
-          "hash": "fdddd82881",
-          "subject": "Fix paint invalidation for ::selection style changes"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jkew@mozilla.com",
-          "hash": "6c4fced289",
-          "subject": "Add testcases for color-mix() hue interpolation where one side is achromatic."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "vmpstr@chromium.org",
-          "hash": "63ee155c39",
-          "subject": "vt: Update the blurry text workaround to use render surface snapping"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "fs@opera.com",
-          "hash": "bbb5c43f8f",
-          "subject": "Fix carry-forward of missing components for color mixing"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "nrosenthal@chromium.org",
-          "hash": "5b8a095554",
-          "subject": "corner-shape: support overflow clipping"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "dmangal@microsoft.com",
-          "hash": "5b541e9313",
-          "subject": "[CSS][SVG] Fix inheritance for all :visited styles"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "nrosenthal@chromium.org",
-          "hash": "50268f9ef1",
-          "subject": "Simplify corner-shape inset formula"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "andruud@chromium.org",
-          "hash": "334e80bb57",
-          "subject": "[functions] Handle {}-wrappers during substitution"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "fs@opera.com",
-          "hash": "90b40813b2",
-          "subject": "Consider the 'preserveAspectRatio' attribute on <feImage>"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "boris.chiou@gmail.com",
-          "hash": "c630d0fffc",
-          "subject": "Skip view transitions when we resize the viewport size."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "8346e0ebe4",
-          "subject": "Bail out from ScrollFrameIntoVisualViewport if the given position:fixed element is outside of the viewport."
         }
       ]
     },
@@ -3697,12 +3638,6 @@
           "author": "emilio@crisal.io",
           "hash": "dd668de040",
           "subject": "Fix test fuzzy ranges, or mark actually failing tests as failing."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
         }
       ]
     },
@@ -3845,18 +3780,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "386cf78a76",
           "subject": "CSS corner-shape: render \"straight\" corners as degenerate"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "nrosenthal@chromium.org",
-          "hash": "5b8a095554",
-          "subject": "corner-shape: support overflow clipping"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "nrosenthal@chromium.org",
-          "hash": "50268f9ef1",
-          "subject": "Simplify corner-shape inset formula"
         }
       ]
     },
@@ -3910,6 +3833,30 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "chris@w3.org",
+          "hash": "bad5b16e1",
+          "subject": "[css-color-4] Clarify that inside the color property, it is the resolved inherited value (not the raw inherited value) that is used. Fix #10352"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "chris@w3.org",
+          "hash": "7ed51a851",
+          "subject": "[css-color-4] Listed categories of colors, such as those that resolve to sRGB or support legacy color syntax. Fix #7836"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "chris@w3.org",
+          "hash": "bf78a6189",
+          "subject": "[css-color-4] Added hue normalization examples, fix #10432"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "chris@w3.org",
+          "hash": "b530ae0db",
+          "subject": "[css-color-4] Corrected table of analogous components, alpha was missing, but described as analogous in prose #10254"
+        },
         {
           "date": "2025-04-16",
           "author": "chris@w3.org",
@@ -4121,18 +4068,6 @@
           "author": "emilio@crisal.io",
           "hash": "44948f5c24",
           "subject": "Simplify native link color set-up."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jkew@mozilla.com",
-          "hash": "6c4fced289",
-          "subject": "Add testcases for color-mix() hue interpolation where one side is achromatic."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "fs@opera.com",
-          "hash": "bbb5c43f8f",
-          "subject": "Fix carry-forward of missing components for color mixing"
         }
       ]
     },
@@ -4548,6 +4483,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-04-17",
+          "author": "obrufau@igalia.com",
+          "hash": "8a106b9cf3",
+          "subject": "Fix /css/css-flexbox/gap-007-* WPT tests"
+        },
         {
           "date": "2025-04-16",
           "author": "73983677+omahs@users.noreply.github.com",
@@ -5871,12 +5812,6 @@
           "author": "kojii@chromium.org",
           "hash": "e50a7c2776",
           "subject": "[memory] Fix `InlineItem::index_` for `::first-line`"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "schenney@chromium.org",
-          "hash": "fdddd82881",
-          "subject": "Fix paint invalidation for ::selection style changes"
         }
       ]
     },
@@ -6139,12 +6074,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "7da2427fa",
           "subject": "[css-sizing-4][editorial] fix bikeshed errors"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "jackalmage@gmail.com",
-          "hash": "15faddb29",
-          "subject": "[css-sizing-4] Rewrite the 'stretch-fit sizing' section to match WG resolution. #11044"
         }
       ],
       "testlog": [
@@ -6407,12 +6336,6 @@
           "author": "chrishtr@chromium.org",
           "hash": "8dd63a5942",
           "subject": "Full implementation of scale transform render surface trigger"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
         }
       ]
     },
@@ -6750,12 +6673,6 @@
           "author": "atkinssj@gmail.com",
           "hash": "d90c9c449",
           "subject": "[css-values-4] A small fix and some tweaks to calc serialization (#11782)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "sebastianzartner@gmail.com",
-          "hash": "f170bb8cd",
-          "subject": "[css-values-5] Tweaked attr() syntax, per WG resolution. #11034 #11035 (#11750)"
         }
       ],
       "testlog": [
@@ -7162,18 +7079,6 @@
           "author": "skobes@chromium.org",
           "hash": "40f89b0487",
           "subject": "Construct ViewTransition object for element."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "vmpstr@chromium.org",
-          "hash": "63ee155c39",
-          "subject": "vt: Update the blurry text workaround to use render surface snapping"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "boris.chiou@gmail.com",
-          "hash": "c630d0fffc",
-          "subject": "Skip view transitions when we resize the viewport size."
         }
       ]
     },
@@ -7253,12 +7158,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "acb6cbfb83",
           "subject": "WebKit export: `will-change: view-transition-name` should create a stacking context and a backdrop root (#51136)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
         }
       ]
     },
@@ -7433,12 +7332,6 @@
           "author": "emilio@crisal.io",
           "hash": "d98f0cccef",
           "subject": "Fix scroll-offsets-fractional-zoom.html."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "8346e0ebe4",
-          "subject": "Bail out from ScrollFrameIntoVisualViewport if the given position:fixed element is outside of the viewport."
         }
       ]
     },
@@ -8163,15 +8056,15 @@
           "author": "mathieu@agoric.com",
           "hash": "ff129b14",
           "subject": "Normative: Close sync iterator when async wrapper yields rejection (#2600)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "richard.gibson@gmail.com",
-          "hash": "0b913e99",
-          "subject": "Editorial: Fix typos and phrasing in slot descriptions (#3536)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-04-17",
+          "author": "3889017+ExE-Boss@users.noreply.github.com",
+          "hash": "5b7101ae71",
+          "subject": "Add more tests for `Object.prototype.[[SetPrototypeOf]]` (#4446)"
+        },
         {
           "date": "2025-04-14",
           "author": "jschoi@jschoi.org",
@@ -8435,12 +8328,6 @@
           "author": "rezvan@chromium.org",
           "hash": "15e602780c",
           "subject": "[explicit-resource-management] Fix async disposal"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "rezvan@chromium.org",
-          "hash": "b3f67f4aaf",
-          "subject": "[explicit-resource-management] Fix await using in top level module"
         }
       ]
     },
@@ -9633,6 +9520,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-04-17",
+          "author": "annevk@annevk.nl",
+          "hash": "8e475f4f16",
+          "subject": "Non-HTML endpoints should not have dangling markup protection"
+        },
+        {
           "date": "2025-04-16",
           "author": "np@icebergsystems.ca",
           "hash": "01f1876975",
@@ -9760,6 +9653,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-04-17",
+          "author": "samfort@microsoft.com",
+          "hash": "d9f08abc4d",
+          "subject": "Prevent composited ref filter with empty ref box from optimizing away"
+        },
+        {
           "date": "2025-04-14",
           "author": "fs@opera.com",
           "hash": "2547003616",
@@ -9806,12 +9705,6 @@
           "author": "wangxianzhu@chromium.org",
           "hash": "79f97cfbf9",
           "subject": "Convert css/filter-effects/filter-subregion-01.html to a real ref test"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "fs@opera.com",
-          "hash": "90b40813b2",
-          "subject": "Consider the 'preserveAspectRatio' attribute on <feImage>"
         }
       ]
     },
@@ -10054,6 +9947,18 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "annevk@annevk.nl",
+          "hash": "8f058e4b",
+          "subject": "Fix upgrade particular elements within a document"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "annevk@annevk.nl",
+          "hash": "adf976fe",
+          "subject": "Correct upgrade an element after Scoped Custom Element Registries"
+        },
         {
           "date": "2025-04-16",
           "author": "annevk@annevk.nl",
@@ -10395,18 +10300,6 @@
           "author": "lwarlow@igalia.com",
           "hash": "55355b46",
           "subject": "Fix IDL for CommandEvent: rename action to command"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "3a2a05dd",
-          "subject": "Update the navigation API when a same-document reload occurs"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "keithamus@users.noreply.github.com",
-          "hash": "81fa58f0",
-          "subject": "Add commandfor & command attributes to HTMLButtonElement"
         }
       ],
       "testlog": [
@@ -11369,54 +11262,6 @@
           "author": "jpgravel@chromium.org",
           "hash": "c408d0437f",
           "subject": "Update old canvas test generator to not add empty notes"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "jpgravel@chromium.org",
-          "hash": "8ed6cb64af",
-          "subject": "Migrate all 2d.composite meta test to the new canvas test generator"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "masonf@chromium.org",
-          "hash": "68c405e148",
-          "subject": "Handle the open dialogs list and close watcher when removed"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jpgravel@chromium.org",
-          "hash": "fc03010121",
-          "subject": "Remove the 'variants' param from instantiated variants"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "masonf@chromium.org",
-          "hash": "57d6088fe0",
-          "subject": "Improve testing dialog closedby and requestClose"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jarhar@chromium.org",
-          "hash": "c474a20c34",
-          "subject": "Fix timeout of customizable select anchor positioning tests"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "drott@chromium.org",
-          "hash": "e36ed07d67",
-          "subject": "[Fontations] Prepare some compositing/transform tests for Fontations"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "keithamus@users.noreply.github.com",
-          "hash": "e014b2613b",
-          "subject": "Mark invokers tests as non-tentative (#42664)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "allstars.chh@gmail.com",
-          "hash": "37d78e4a72",
-          "subject": "Part 3: Update cors-crossorigin-requests.html expected error message."
         }
       ]
     },
@@ -11426,6 +11271,12 @@
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-04-17",
+          "author": "66181824+kaustubh2332@users.noreply.github.com",
+          "hash": "c45e6df1c3",
+          "subject": "Fix mismatched HTML closing tag in test case roles-contextual.tentative.html (#51918)"
+        },
         {
           "date": "2025-04-03",
           "author": "scottaohara@users.noreply.github.com",
@@ -11606,18 +11457,6 @@
           "author": "grieger@google.com",
           "hash": "40d37ef",
           "subject": "Fix the feature registry appendix which accidentally got replaced by an older version from the patch subset spec."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "chris@w3.org",
-          "hash": "f081fda",
-          "subject": "Updates for WD, linkfixes"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "chris@w3.org",
-          "hash": "b48f358",
-          "subject": "Update changes"
         }
       ],
       "testlog": []
@@ -11697,18 +11536,6 @@
           "author": "stevebe@microsoft.com",
           "hash": "63eb06e54d",
           "subject": "[IndexedDB] Add more detached array buffer WPT coverage for keys"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "snehagarwal@microsoft.com",
-          "hash": "04fbb221cc",
-          "subject": "IDB WPTs: Extend IDB WPTs to run on workers."
-        },
-        {
-          "date": "2025-02-19",
-          "author": "snehagarwal@microsoft.com",
-          "hash": "b47379065e",
-          "subject": "IDB WPTs: Extend three IDB WPTs to run on workers."
         }
       ],
       "testpolicy": "https://github.com/w3c/IndexedDB/blob/HEAD/CONTRIBUTING.md"
@@ -11894,6 +11721,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-04-17",
+          "author": "mmocny@chromium.org",
+          "hash": "808143295b",
+          "subject": "Fix 407374335: Update animated LCP tests to stream more image bytes."
+        },
+        {
           "date": "2025-04-11",
           "author": "jlink@mozilla.com",
           "hash": "9ac5398f83",
@@ -12061,7 +11894,14 @@
       "name": "Media Source Extensions™",
       "href": "https://w3c.github.io/media-source/",
       "specrepo": "https://github.com/w3c/media-source",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "1696128+deniak@users.noreply.github.com",
+          "hash": "c33759d",
+          "subject": "GitHub actions: replace ubuntu-20.04 with ubuntu-latest (#362)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-04-16",
@@ -12234,7 +12074,14 @@
       "name": "MediaStream Recording",
       "href": "https://w3c.github.io/mediacapture-record/",
       "specrepo": "https://github.com/w3c/mediacapture-record",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-04-16",
+          "author": "t.baumgart@starc-medical.de",
+          "hash": "3f44e86",
+          "subject": "Made BlobEventInit inherit from EventInit"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-03-24",
@@ -12537,12 +12384,6 @@
           "author": "d@domenic.me",
           "hash": "760d03e",
           "subject": "Editorial: various spec cleanups in preparation for tags (#363)"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "d@domenic.me",
-          "hash": "fe1a97d",
-          "subject": "Explicitly dedupe prefetches and prerenders"
         }
       ],
       "testlog": []
@@ -13621,12 +13462,6 @@
           "author": "d@domenic.me",
           "hash": "760d03e",
           "subject": "Editorial: various spec cleanups in preparation for tags (#363)"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "d@domenic.me",
-          "hash": "fe1a97d",
-          "subject": "Explicitly dedupe prefetches and prerenders"
         }
       ],
       "testlog": []
@@ -13701,12 +13536,6 @@
           "author": "d@domenic.me",
           "hash": "760d03e",
           "subject": "Editorial: various spec cleanups in preparation for tags (#363)"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "d@domenic.me",
-          "hash": "fe1a97d",
-          "subject": "Explicitly dedupe prefetches and prerenders"
         }
       ],
       "testlog": []
@@ -13774,7 +13603,14 @@
           "subject": "Editorial: Clarify which of the 'following conditions'"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-04-18",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "a76dc1499a",
+          "subject": "[layout] Fix intrinsic-sizes cache crash."
+        }
+      ]
     },
     {
       "name": "WebXR Raw Camera Access",
@@ -13952,12 +13788,6 @@
           "author": "evilpies@gmail.com",
           "hash": "33bfc9d",
           "subject": "Sort <base> in the \"built-in navigating URL attributes list\" (#263)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "30862698+otherdaniel@users.noreply.github.com",
-          "hash": "80dfa6f",
-          "subject": "Expose Sanitizer only on Window, not on worker. (#257)"
         }
       ],
       "testlog": [
@@ -14365,12 +14195,6 @@
           "author": "philip@foolip.org",
           "hash": "ffa1b49c6a",
           "subject": "Map :has-slotted tests to web-features (#51684)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "dmangal@microsoft.com",
-          "hash": "5b541e9313",
-          "subject": "[CSS][SVG] Fix inheritance for all :visited styles"
         }
       ]
     },
@@ -14656,12 +14480,6 @@
           "author": "d@domenic.me",
           "hash": "760d03e",
           "subject": "Editorial: various spec cleanups in preparation for tags (#363)"
-        },
-        {
-          "date": "2025-02-20",
-          "author": "d@domenic.me",
-          "hash": "fe1a97d",
-          "subject": "Explicitly dedupe prefetches and prerenders"
         }
       ],
       "testlog": [
@@ -14871,12 +14689,6 @@
           "author": "yrw@chromium.org",
           "hash": "49fb90991e",
           "subject": "Add SpeechRecognition-basics.https.html to chrome.filter"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "beaufort.francois@gmail.com",
-          "hash": "247db68758",
-          "subject": "WebSpeech: start() throws if detached iframe"
         }
       ],
       "testpolicy": "https://github.com/WICG/speech-api/blob/HEAD/README.md"
@@ -15237,12 +15049,6 @@
           "author": "dmangal@microsoft.com",
           "hash": "6fc48f6d88",
           "subject": "[SVG] Add support for SVGAElement's rel / relList attributes"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "dmangal@microsoft.com",
-          "hash": "5b541e9313",
-          "subject": "[CSS][SVG] Fix inheritance for all :visited styles"
         }
       ]
     },
@@ -15479,6 +15285,54 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "printfn@users.noreply.github.com",
+          "hash": "a0567830",
+          "subject": "Polyfill: Fix type definition of Duration.toLocaleString"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "syobon.hinata.public@gmail.com",
+          "hash": "50489adf",
+          "subject": "Remove unnecessary `Partial` type"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "syobon.hinata.public@gmail.com",
+          "hash": "29d9623f",
+          "subject": "Allow `undefined` explicitly for optional properties"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "pchimento@igalia.com",
+          "hash": "fd7988d4",
+          "subject": "Run CI jobs on Node 23.x"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "pchimento@igalia.com",
+          "hash": "a8b5a532",
+          "subject": "Remove cookbook resolver"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "pchimento@igalia.com",
+          "hash": "813a3776",
+          "subject": "Remove Demitasse test resolver"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "pchimento@igalia.com",
+          "hash": "b5eabce4",
+          "subject": "Update test262"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "justingrant@users.noreply.github.com",
+          "hash": "d7f5d31e",
+          "subject": "Support offset time zones in Intl.DTF polyfill"
+        },
         {
           "date": "2025-03-01",
           "author": "leftmostcat@gmail.com",
@@ -15834,6 +15688,12 @@
       "href": "https://wicg.github.io/turtledove/",
       "specrepo": "https://github.com/WICG/turtledove",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "kleber@google.com",
+          "hash": "d1b6047",
+          "subject": "Create 2025-04-16-FLEDGE-call-minutes.md"
+        },
         {
           "date": "2025-04-15",
           "author": "kleber@google.com",
@@ -16213,6 +16073,12 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "scottaohara@users.noreply.github.com",
+          "hash": "ac964fb7",
+          "subject": "Author requirement: if a tab is active a corresponding tabpanel must be rendered (#2500)"
+        },
         {
           "date": "2025-04-09",
           "author": "p.krautzberger@gmail.com",
@@ -16982,28 +16848,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": [
@@ -17051,28 +16905,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17083,28 +16925,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17115,28 +16945,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17147,28 +16965,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17179,28 +16985,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17211,28 +17005,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17243,28 +17025,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17275,28 +17045,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17307,28 +17065,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17339,28 +17085,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17371,28 +17105,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17403,28 +17125,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17435,28 +17145,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17467,28 +17165,16 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "paul@paul.cx",
+          "hash": "c5257e2",
+          "subject": "Make AudioDecoderConfig.description AllowShared"
+        },
+        {
           "date": "2025-03-14",
           "author": "dalecurtis@chromium.org",
           "hash": "c683ac1",
           "subject": "Implement orientation support for VideoEncoder. (#884)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "deb7568",
-          "subject": "Link background blur field mediacapture-extensions spec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "39de493",
-          "subject": "Fix typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "bryantchandler@chromium.org",
-          "hash": "21cf103",
-          "subject": "Add backgroundBlur to VideoFrameMetadata registry"
         }
       ],
       "testlog": []
@@ -17732,12 +17418,6 @@
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "684e3286d2",
           "subject": "[wdspec] extend `bluetooth.simulatePreconnectedPeripheral` test (#50796)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "97704544+chengweih001@users.noreply.github.com",
-          "hash": "beb1a3808c",
-          "subject": "[testdriver] Add some test_driver.bidi.bluetooth commands and event (#50518)"
         }
       ]
     },
@@ -18972,6 +18652,12 @@
       "speclog": [
         {
           "date": "2025-04-17",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "0b9c82e2",
+          "subject": "Add guidance to build the image with devcontainer (#5166)"
+        },
+        {
+          "date": "2025-04-17",
           "author": "kainino@chromium.org",
           "hash": "6092ae8c",
           "subject": "Add \"core-features-and-limits\" to spec (#5147)"
@@ -19083,12 +18769,6 @@
           "author": "kainino@chromium.org",
           "hash": "80b5a6a0",
           "subject": "Fix prose for rg11b10ufloat-renderable to allow resolving (#5077)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "kainino@chromium.org",
-          "hash": "9ba16d79",
-          "subject": "Compat: remove adapter.featureLevel; add \"core-features-and-limits\" (#5036)"
         }
       ],
       "testlog": []
@@ -19467,18 +19147,6 @@
           "author": "dom@w3.org",
           "hash": "54072500",
           "subject": "Incorporate proposed amendments as approved in updated Rec"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "ccbe9377",
-          "subject": "typo"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "jan-ivar@users.noreply.github.com",
-          "hash": "753212cd",
-          "subject": "Clarify sender is limited to codecs negotiated for sending."
         }
       ],
       "testlog": [
@@ -19816,6 +19484,12 @@
       "specrepo": "https://github.com/immersive-web/webxr",
       "speclog": [
         {
+          "date": "2025-04-17",
+          "author": "alcooper@google.com",
+          "hash": "16ffa1e",
+          "subject": "Introduce XRViewGeometry mixin concept (#1408)"
+        },
+        {
           "date": "2025-04-16",
           "author": "alcooper@google.com",
           "hash": "823070b",
@@ -19848,6 +19522,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-04-17",
+          "author": "alcooper@chromium.org",
+          "hash": "1c259cd0a9",
+          "subject": "Reland \"Add Support for depthTypeRequest\""
+        },
+        {
+          "date": "2025-04-17",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "0995801184",
+          "subject": "Revert \"Add Support for depthTypeRequest\" (#52023)"
+        },
+        {
           "date": "2025-04-15",
           "author": "alcooper@chromium.org",
           "hash": "e3f5760148",
@@ -19869,6 +19555,18 @@
       "href": "https://immersive-web.github.io/depth-sensing/",
       "specrepo": "https://github.com/immersive-web/depth-sensing",
       "speclog": [
+        {
+          "date": "2025-04-17",
+          "author": "alcooper@google.com",
+          "hash": "df9b71e",
+          "subject": "Leverage XRViewGeometry instead of XRView (#60)"
+        },
+        {
+          "date": "2025-04-17",
+          "author": "alcooper@google.com",
+          "hash": "76ce48f",
+          "subject": "Introduce ability to pause and resume depth processing (#58)"
+        },
         {
           "date": "2025-04-04",
           "author": "cabanier@meta.com",
@@ -20007,6 +19705,12 @@
       "speclog": [
         {
           "date": "2025-04-17",
+          "author": "mehmetoguzderin@mehmetoguzderin.com",
+          "hash": "0b9c82e2",
+          "subject": "Add guidance to build the image with devcontainer (#5166)"
+        },
+        {
+          "date": "2025-04-17",
           "author": "kainino@chromium.org",
           "hash": "6092ae8c",
           "subject": "Add \"core-features-and-limits\" to spec (#5147)"
@@ -20118,12 +19822,6 @@
           "author": "kainino@chromium.org",
           "hash": "80b5a6a0",
           "subject": "Fix prose for rg11b10ufloat-renderable to allow resolving (#5077)"
-        },
-        {
-          "date": "2025-02-19",
-          "author": "kainino@chromium.org",
-          "hash": "9ba16d79",
-          "subject": "Compat: remove adapter.featureLevel; add \"core-features-and-limits\" (#5036)"
         }
       ],
       "testlog": []
