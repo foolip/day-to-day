@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-04-14T07:13:56.429Z",
-  "until": "2025-06-10T07:13:56.429Z",
+  "since": "2025-04-15T07:14:08.562Z",
+  "until": "2025-06-11T07:14:08.562Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -119,6 +119,12 @@
       "href": "https://wicg.github.io/attribution-reporting-api/",
       "specrepo": "https://github.com/WICG/attribution-reporting-api",
       "speclog": [
+        {
+          "date": "2025-06-10",
+          "author": "apaseltiner@google.com",
+          "hash": "9999b82",
+          "subject": "Work around improper site extraction for IP addresses (#1535)"
+        },
         {
           "date": "2025-06-04",
           "author": "apaseltiner@google.com",
@@ -776,12 +782,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "04f4b8e4c3",
           "subject": "Add CookieStore WPT asserting duplicate cookies do not dispatch events (#52099)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "amarchesini@mozilla.com",
-          "hash": "1bcc15da8b",
-          "subject": "Improve cookieStore.delete()"
         }
       ]
     },
@@ -945,6 +945,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-06-11",
+          "author": "philip@foolip.org",
+          "hash": "053264c811",
+          "subject": "Map clip-path tests to web-features (#53045)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "flackr@chromium.org",
+          "hash": "5622fa188d",
+          "subject": "Don't cancel running transitions when transition property changes."
+        },
+        {
+          "date": "2025-06-10",
+          "author": "philip@foolip.org",
+          "hash": "a82e1590ed",
+          "subject": "Map contain:inline-size tests to web-features (#53046)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "afed1c2815",
+          "subject": "[layout] Fix AddChildBeforeDescendant for LayoutBlock."
+        },
+        {
+          "date": "2025-06-10",
+          "author": "kevers@google.com",
+          "hash": "90de31cbaf",
+          "subject": "[scoped-vt] Test transitions from and to scale(0)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "moonira@google.com",
+          "hash": "2d67088833",
+          "subject": "Fix type match check in if() style ranges"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "philip@foolip.org",
+          "hash": "21f2182e93",
+          "subject": "Map tests for :active-view-transition to web-features (#53043)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "obrufau@igalia.com",
+          "hash": "2edaa09f71",
+          "subject": "layout: Floor free space by 0 in solve_inline_margins_avoiding_floats()"
+        },
         {
           "date": "2025-06-10",
           "author": "dgrogan@chromium.org",
@@ -3014,84 +3062,6 @@
           "author": "sesse@chromium.org",
           "hash": "7d36ceb8b9",
           "subject": "Replace calc() division nodes with Invert nodes."
-        },
-        {
-          "date": "2025-04-15",
-          "author": "jkew@mozilla.com",
-          "hash": "d8560c8f32",
-          "subject": "Fix CSSOrderAwareFrameIterator comparators to avoid using int32_t subtraction that may overflow."
-        },
-        {
-          "date": "2025-04-15",
-          "author": "samomekarajr@microsoft.com",
-          "hash": "53919a39fc",
-          "subject": "[Gap Decorations]: Parse `rule-color` shorthand"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "dbaron@chromium.org",
-          "hash": "2b37df0305",
-          "subject": "Make resizing relative to original position."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "fs@opera.com",
-          "hash": "2547003616",
-          "subject": "Deflake wpt/css/filter-effects/svg-feimage-005.html"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "nrosenthal@chromium.org",
-          "hash": "6df0f7a746",
-          "subject": "Support corner-shape with backdrop-filter"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sam@webkit.org",
-          "hash": "033464f36b",
-          "subject": "Add CSS Values and Units 5 Request URL Modifier tests (#51975)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "javiercon@microsoft.com",
-          "hash": "98f7c733fd",
-          "subject": "[gap-decorations] Address bug for GapDecorations in column flexbox"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "obrufau@igalia.com",
-          "hash": "fbce7de853",
-          "subject": "layout: Floor the max-content size by the min-content size"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sakhapov@chromium.org",
-          "hash": "8b692555f3",
-          "subject": "Support non-simplifiable css sqrt()"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "futhark@chromium.org",
-          "hash": "45196ff6c3",
-          "subject": "Don't allow interactivity to escape inertness"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "nrosenthal@chromium.org",
-          "hash": "b2b490c18c",
-          "subject": "Support offset-path: shape()"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sakhapov@chromium.org",
-          "hash": "dac8462948",
-          "subject": "Support non-simplifiable trigonometric functions"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "tlin@mozilla.com",
-          "hash": "2dfd7ff4b7",
-          "subject": "Compute grid row sizes a second time to resolve percentage row sizes."
         }
       ]
     },
@@ -3102,6 +3072,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "obrufau@igalia.com",
+          "hash": "2edaa09f71",
+          "subject": "layout: Floor free space by 0 in solve_inline_margins_avoiding_floats()"
+        },
         {
           "date": "2025-06-06",
           "author": "obrufau@igalia.com",
@@ -3326,6 +3302,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "flackr@chromium.org",
+          "hash": "5622fa188d",
+          "subject": "Don't cancel running transitions when transition property changes."
+        },
         {
           "date": "2025-06-09",
           "author": "antti@apple.com",
@@ -3608,12 +3590,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "b8f6a4649e",
           "subject": "Apply the corner-shape for overflow-clip-margin"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "nrosenthal@chromium.org",
-          "hash": "6df0f7a746",
-          "subject": "Support corner-shape with backdrop-filter"
         }
       ]
     },
@@ -4083,6 +4059,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-06-10",
+          "author": "philip@foolip.org",
+          "hash": "a82e1590ed",
+          "subject": "Map contain:inline-size tests to web-features (#53046)"
+        },
+        {
           "date": "2025-06-05",
           "author": "kevers@google.com",
           "hash": "45c28ed877",
@@ -4467,6 +4449,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-06-10",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "afed1c2815",
+          "subject": "[layout] Fix AddChildBeforeDescendant for LayoutBlock."
+        },
+        {
           "date": "2025-06-01",
           "author": "aethanyc@gmail.com",
           "hash": "3eae93da43",
@@ -4507,18 +4495,6 @@
           "author": "kschmi@microsoft.com",
           "hash": "fbd270dfab",
           "subject": "[Grid] Fix clamping of nested subgrid's grid-template-areas"
-        },
-        {
-          "date": "2025-04-15",
-          "author": "jkew@mozilla.com",
-          "hash": "d8560c8f32",
-          "subject": "Fix CSSOrderAwareFrameIterator comparators to avoid using int32_t subtraction that may overflow."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "tlin@mozilla.com",
-          "hash": "2dfd7ff4b7",
-          "subject": "Compute grid row sizes a second time to resolve percentage row sizes."
         }
       ]
     },
@@ -4695,6 +4671,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-11",
+          "author": "philip@foolip.org",
+          "hash": "053264c811",
+          "subject": "Map clip-path tests to web-features (#53045)"
+        },
         {
           "date": "2025-06-05",
           "author": "noamr@users.noreply.github.com",
@@ -5009,18 +4991,6 @@
           "author": "abotella@igalia.com",
           "hash": "2cdb077e39",
           "subject": "[line-clamp] Fix bugs detecting whether a line is the last in the IFC"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "dbaron@chromium.org",
-          "hash": "2b37df0305",
-          "subject": "Make resizing relative to original position."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "futhark@chromium.org",
-          "hash": "45196ff6c3",
-          "subject": "Don't allow interactivity to escape inertness"
         }
       ]
     },
@@ -5465,12 +5435,6 @@
           "author": "tlin@mozilla.com",
           "hash": "d964d9759f",
           "subject": "Don't apply compressible min-content contribution in the block axis."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "obrufau@igalia.com",
-          "hash": "fbce7de853",
-          "subject": "layout: Floor the max-content size by the min-content size"
         }
       ]
     },
@@ -5522,12 +5486,6 @@
           "author": "karlcow@apple.com",
           "hash": "328fa1c67b",
           "subject": "Adds the link to webkit bug (#52059)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "obrufau@igalia.com",
-          "hash": "fbce7de853",
-          "subject": "layout: Floor the max-content size by the min-content size"
         }
       ]
     },
@@ -5799,12 +5757,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "b6a0dcf63",
           "subject": "[css-ui-4] Outlines follow corner shapes"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "ntim@apple.com",
-          "hash": "ba91d7159",
-          "subject": "[css-forms-1][css-ui-4] Move field-sizing and input-security from css-ui-4 to css-forms-1."
         }
       ],
       "testlog": [
@@ -5843,12 +5795,6 @@
           "author": "73983677+omahs@users.noreply.github.com",
           "hash": "cefb7d3cd6",
           "subject": "Remove duplicated words (#50557)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "dbaron@chromium.org",
-          "hash": "2b37df0305",
-          "subject": "Make resizing relative to original position."
         }
       ]
     },
@@ -5858,6 +5804,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-06-10",
+          "author": "gui.lebas@gmail.com",
+          "hash": "53ae2ac3b",
+          "subject": "[css-values-5] Make the progress() result consistent with its arguments (#12309)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "gui.lebas@gmail.com",
+          "hash": "019834133",
+          "subject": "[css-values-5] Typo (#12305)"
+        },
         {
           "date": "2025-06-06",
           "author": "jackalmage@gmail.com",
@@ -6016,6 +5974,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "moonira@google.com",
+          "hash": "2d67088833",
+          "subject": "Fix type match check in if() style ranges"
+        },
         {
           "date": "2025-06-03",
           "author": "futhark@chromium.org",
@@ -6243,24 +6207,6 @@
           "author": "sesse@chromium.org",
           "hash": "7d36ceb8b9",
           "subject": "Replace calc() division nodes with Invert nodes."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sam@webkit.org",
-          "hash": "033464f36b",
-          "subject": "Add CSS Values and Units 5 Request URL Modifier tests (#51975)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sakhapov@chromium.org",
-          "hash": "8b692555f3",
-          "subject": "Support non-simplifiable css sqrt()"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "sakhapov@chromium.org",
-          "hash": "dac8462948",
-          "subject": "Support non-simplifiable trigonometric functions"
         }
       ]
     },
@@ -6330,6 +6276,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "kevers@google.com",
+          "hash": "90de31cbaf",
+          "subject": "[scoped-vt] Test transitions from and to scale(0)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "philip@foolip.org",
+          "hash": "21f2182e93",
+          "subject": "Map tests for :active-view-transition to web-features (#53043)"
+        },
         {
           "date": "2025-06-06",
           "author": "vmpstr@chromium.org",
@@ -6841,12 +6799,6 @@
           "author": "d@domenic.me",
           "hash": "e67d5fe",
           "subject": "Allow more characters when creating various nodes"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "annevk@annevk.nl",
-          "hash": "388779b",
-          "subject": "Add Scoped Custom Element Registries"
         }
       ],
       "testlog": [
@@ -6903,12 +6855,6 @@
           "author": "73983677+omahs@users.noreply.github.com",
           "hash": "cefb7d3cd6",
           "subject": "Remove duplicated words (#50557)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "Olli.Pettay@helsinki.fi",
-          "hash": "f211222ba8",
-          "subject": "back out parts of bug 1941002, since the underlying issues were fixed in a better way in bug 1953525"
         }
       ]
     },
@@ -7156,12 +7102,6 @@
           "author": "pchimento@igalia.com",
           "hash": "fa0a3081bd",
           "subject": "Temporal: Increase coverage of dateStyle and timeStyle"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "pchimento@igalia.com",
-          "hash": "7c4a7999f0",
-          "subject": "Fix time zone canonicalization behaviour in DateTimeFormat test"
         }
       ]
     },
@@ -7646,12 +7586,6 @@
           "author": "3889017+ExE-Boss@users.noreply.github.com",
           "hash": "5b7101ae71",
           "subject": "Add more tests for `Object.prototype.[[SetPrototypeOf]]` (#4446)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "jschoi@jschoi.org",
-          "hash": "7cc98501d3",
-          "subject": "Add and rename Array.fromAsync thenable rejection test cases"
         }
       ]
     },
@@ -8373,12 +8307,6 @@
           "author": "samfort@microsoft.com",
           "hash": "d9f08abc4d",
           "subject": "Prevent composited ref filter with empty ref box from optimizing away"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "fs@opera.com",
-          "hash": "2547003616",
-          "subject": "Deflake wpt/css/filter-effects/svg-feimage-005.html"
         }
       ]
     },
@@ -8784,27 +8712,15 @@
           "author": "annevk@annevk.nl",
           "hash": "20a7295c",
           "subject": "Clarify that window.customElements always returns an object"
-        },
-        {
-          "date": "2025-04-15",
-          "author": "meghan@bun.sh",
-          "hash": "689dacea",
-          "subject": "Fix Web IDL syntax error in CustomElementRegistry's initialize()"
-        },
-        {
-          "date": "2025-04-15",
-          "author": "d@domenic.me",
-          "hash": "4c040118",
-          "subject": "Fix wrong navigable reference in scrollRestoration getter/setter"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "annevk@annevk.nl",
-          "hash": "f2d8b886",
-          "subject": "Add Scoped Custom Element Registries"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "jarhar@chromium.org",
+          "hash": "56bf61302b",
+          "subject": "Fix typeahead for customizable select in page"
+        },
         {
           "date": "2025-06-10",
           "author": "masonf@chromium.org",
@@ -9584,24 +9500,6 @@
           "author": "janiceliu@chromium.org",
           "hash": "86eea000de",
           "subject": "[Blob URL] Update cross-origin-embedder-policy/blob.https.html WPT to work without opener for popups"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "masonf@chromium.org",
-          "hash": "233b3505ef",
-          "subject": "Add \"partial interest\" concept for `interesttarget`"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "chromium@keithcirkel.co.uk",
-          "hash": "9546e2007a",
-          "subject": "Scaffold out basic IDL for revamped scoped registry"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "annevk@annevk.nl",
-          "hash": "7087b359a1",
-          "subject": "custom-elements: merge revamped-scoped-registry and custom-element-registry into registries"
         }
       ]
     },
@@ -9897,7 +9795,14 @@
       "href": "https://wicg.github.io/js-self-profiling/",
       "specrepo": "https://github.com/WICG/js-self-profiling",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "philip@foolip.org",
+          "hash": "eaba4483c1",
+          "subject": "Map profiler tests to web-features (#53044)"
+        }
+      ]
     },
     {
       "name": "Keyboard Lock",
@@ -10065,12 +9970,6 @@
           "author": "93222189+Dp-Goog@users.noreply.github.com",
           "hash": "5e109d2",
           "subject": "Clearly explain update_token behavior differences in explainer for predictable app updating. (#115)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "luhua@microsoft.com",
-          "hash": "83c2925",
-          "subject": "Update scope_extensions manifest format to use \"origin\" instead of \"value\" (#114)"
         }
       ],
       "testlog": []
@@ -10469,12 +10368,6 @@
           "author": "35106533+kycn@users.noreply.github.com",
           "hash": "ce1c374ec8",
           "subject": "Enable SHIP on Fenix by default."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "nrosenthal@chromium.org",
-          "hash": "b2b490c18c",
-          "subject": "Support offset-path: shape()"
         }
       ]
     },
@@ -10576,6 +10469,12 @@
       "href": "https://w3c.github.io/reporting/network-reporting.html",
       "specrepo": "https://github.com/w3c/reporting",
       "speclog": [
+        {
+          "date": "2025-06-11",
+          "author": "yoav.weiss@shopify.com",
+          "hash": "e5440a2",
+          "subject": "Remove the Report and ReportBody interfaces"
+        },
         {
           "date": "2025-06-02",
           "author": "carine@w3.org",
@@ -11579,6 +11478,12 @@
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-06-11",
+          "author": "yoav.weiss@shopify.com",
+          "hash": "e5440a2",
+          "subject": "Remove the Report and ReportBody interfaces"
+        },
+        {
           "date": "2025-06-02",
           "author": "carine@w3.org",
           "hash": "b9ba28c",
@@ -12146,6 +12051,12 @@
       "specrepo": "https://github.com/w3c/ServiceWorker",
       "speclog": [
         {
+          "date": "2025-06-11",
+          "author": "sisidovski@users.noreply.github.com",
+          "hash": "8374134",
+          "subject": "Fix the Create Fetch Event and Dispatch output to return null (#1778)"
+        },
+        {
           "date": "2025-05-30",
           "author": "yyanagisawa@chromium.org",
           "hash": "ef029c5",
@@ -12497,15 +12408,15 @@
           "author": "paul@paul.cx",
           "hash": "fdf979f",
           "subject": "Add Makefile to replicate CI (#146)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "108832030+yrw-google@users.noreply.github.com",
-          "hash": "bc21038",
-          "subject": "Add speech recognition phrase list to the Web Speech API (#145)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-06-10",
+          "author": "evliu@google.com",
+          "hash": "540c28e468",
+          "subject": "Unprefix the Web Speech API"
+        },
         {
           "date": "2025-06-06",
           "author": "evliu@google.com",
@@ -14755,6 +14666,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-06-10",
+          "author": "97704544+chengweih001@users.noreply.github.com",
+          "hash": "1e0eb99c25",
+          "subject": "[testdriver] Add some test_driver.bidi.bluetooth commands and event (#52847)"
+        },
+        {
           "date": "2025-06-05",
           "author": "jdescottes@mozilla.com",
           "hash": "381ad54d4c",
@@ -14963,18 +14880,6 @@
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "b3f5cdf7b8",
           "subject": "[wdspec]Fix /webdriver/tests/bidi/browsing_context/context_destroyed/context_destroyed.py:test_client_window (#51994)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "aborovova@mozilla.com",
-          "hash": "e761395d42",
-          "subject": "Add mock server for geolocation coordinates for Firefox."
-        },
-        {
-          "date": "2025-04-14",
-          "author": "69349599+sadym-chromium@users.noreply.github.com",
-          "hash": "010386d3fe",
-          "subject": "[wdspec] fix geolocation tests (#51968)"
         }
       ]
     },
@@ -15036,12 +14941,6 @@
           "author": "69349599+sadym-chromium@users.noreply.github.com",
           "hash": "5e3b177",
           "subject": "emulate geolocation POSITION_UNAVAILABLE error (#911)"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "lutien@users.noreply.github.com",
-          "hash": "9834a1d",
-          "subject": "Add more detailed validation of geolocation coordinates. (#902)"
         }
       ],
       "testlog": []
@@ -15428,6 +15327,18 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2025-06-10",
+          "author": "dneto@google.com",
+          "hash": "835d0909",
+          "subject": "subgroups: Clarify subgroup size is a power of two (#5219)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "emmanuelferdman@gmail.com",
+          "hash": "f21a2f6d",
+          "subject": "Update install-dependencies.sh location (#5216)"
+        },
+        {
           "date": "2025-06-04",
           "author": "jiawei.shao@intel.com",
           "hash": "b86916a5",
@@ -15762,6 +15673,12 @@
       ],
       "testlog": [
         {
+          "date": "2025-06-11",
+          "author": "junwei.fu@intel.com",
+          "hash": "3c31e76d21",
+          "subject": "webnn: Add the QuantizateParameters for the output tensor of pad"
+        },
+        {
           "date": "2025-06-06",
           "author": "feng.dai@intel.com",
           "hash": "a55e401656",
@@ -16072,12 +15989,6 @@
           "author": "bin.miao@intel.com",
           "hash": "51ec80037e",
           "subject": "WebNN: Supplement WPT for convTranspose2d"
-        },
-        {
-          "date": "2025-04-14",
-          "author": "feng.dai@intel.com",
-          "hash": "b04965b671",
-          "subject": "webnn: fixed conformance tests issue for ceil operator"
         }
       ]
     },
@@ -16666,6 +16577,18 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2025-06-10",
+          "author": "dneto@google.com",
+          "hash": "835d0909",
+          "subject": "subgroups: Clarify subgroup size is a power of two (#5219)"
+        },
+        {
+          "date": "2025-06-10",
+          "author": "emmanuelferdman@gmail.com",
+          "hash": "f21a2f6d",
+          "subject": "Update install-dependencies.sh location (#5216)"
+        },
         {
           "date": "2025-06-04",
           "author": "jiawei.shao@intel.com",
