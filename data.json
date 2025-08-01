@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-06-04T07:15:06.743Z",
-  "until": "2025-07-31T07:15:06.743Z",
+  "since": "2025-06-05T07:15:18.494Z",
+  "until": "2025-08-01T07:15:18.494Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -83,12 +83,6 @@
           "author": "apaseltiner@google.com",
           "hash": "9999b82",
           "subject": "Work around improper site extraction for IP addresses (#1535)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "apaseltiner@google.com",
-          "hash": "d583edb",
-          "subject": "Update Node dependencies (#1533)"
         }
       ],
       "testlog": []
@@ -577,6 +571,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2025-07-31",
+          "author": "106123293+rreno@users.noreply.github.com",
+          "hash": "f810dce321",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=276931 (#54080)"
+        },
+        {
           "date": "2025-07-28",
           "author": "josh@joshmatthews.net",
           "hash": "e7bd470468",
@@ -677,6 +677,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-08-01",
+          "author": "sam@webkit.org",
+          "hash": "7b66c50a03",
+          "subject": "Updates tests of CSS `<opacity-value>` to test newly resolved behavior (#54078)"
+        },
+        {
+          "date": "2025-08-01",
+          "author": "mpearson@chromium.org",
+          "hash": "1d7693ae5b",
+          "subject": "Revert \"VT: Update the work done before the finished promise is resolved.\""
+        },
+        {
+          "date": "2025-07-31",
+          "author": "abotella@igalia.com",
+          "hash": "3ce4ea318b",
+          "subject": "[line-clamp] Make sure line-clamp ellipses get repainted"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "vmpstr@chromium.org",
+          "hash": "d9c4c23119",
+          "subject": "VT: Update the work done before the finished promise is resolved."
+        },
+        {
+          "date": "2025-07-31",
+          "author": "zhoupeng.dev@gmail.com",
+          "hash": "ae11474282",
+          "subject": "Fix offsetParent computation for elements with fixed position (#54043)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "f169733246",
+          "subject": "WebKit export: [css-values-5] Rename CSS URL modifiers to include hyphens (#54014)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "sakhapov@chromium.org",
+          "hash": "2ee15f8563",
+          "subject": "Check for typed arithmetic in css progress() math function"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "andruud@chromium.org",
+          "hash": "a3501ef935",
+          "subject": "[css-nesting] Fix crash when bucketing multi-level '&' within pseudo-elem"
+        },
         {
           "date": "2025-07-30",
           "author": "skobes@chromium.org",
@@ -2836,78 +2884,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "6458b7b7eb",
           "subject": "Remove .tentative from shape() tests"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "bcc1209b52",
-          "subject": "[replaced] Don't attempt to stretch-fit within MinMaxSizesFunc lambda."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kevers@google.com",
-          "hash": "9c80506088",
-          "subject": "[vt] Fix raciness with test harness"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kevers@google.com",
-          "hash": "77752ad86c",
-          "subject": "[vt] Cleanup workaround for clipping bug"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "javiercon@microsoft.com",
-          "hash": "a2585863c6",
-          "subject": "[gap-decorations] Address null-dereference in `PaintGapDecorations`"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "60073468+Psychpsyo@users.noreply.github.com",
-          "hash": "21c375ea54",
-          "subject": "Add test for border-radius with clip along one axis"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "romainmenke@gmail.com",
-          "hash": "b4268a8bd2",
-          "subject": "Nesting selectors that refer to pseudo elements must not match the originating element"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "vmpstr@chromium.org",
-          "hash": "58d3994da8",
-          "subject": "nested VT: Fix view-transition-group-children sizing and iteration."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "javiercon@microsoft.com",
-          "hash": "397d6a9fc0",
-          "subject": "[gap-decorations] Avoid resolving StyleColor when not needed"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "andruud@chromium.org",
-          "hash": "f3557470b3",
-          "subject": "[ident] Support ident() within var() functions (reland)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "jjaschke@mozilla.com",
-          "hash": "c76948d077",
-          "subject": "CSS Highlight API: Make `Highlight.add()` and `HighlightRegistry.set()` chainable."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "sesse@chromium.org",
-          "hash": "f362ddf4c4",
-          "subject": "Return the actual :visited color from getComputedStyle()."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kojii@chromium.org",
-          "hash": "6ba4f8fbea",
-          "subject": "[text-autospace] Fix tests"
         }
       ]
     },
@@ -3004,6 +2980,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "zhoupeng.dev@gmail.com",
+          "hash": "ae11474282",
+          "subject": "Fix offsetParent computation for elements with fixed position (#54043)"
+        },
         {
           "date": "2025-07-30",
           "author": "tho22@apple.com",
@@ -3320,12 +3302,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "f6c07f5cd",
           "subject": "[css-borders-4] Fix image"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "dbedc5036",
-          "subject": "[css-borders-4] Constrain radii for concave opposite corners (#12272)"
         }
       ],
       "testlog": [
@@ -3481,12 +3457,6 @@
           "author": "philip@foolip.org",
           "hash": "036ec0cdc6",
           "subject": "Fix web-features ID for revert keyword (#53483)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "sesse@chromium.org",
-          "hash": "f362ddf4c4",
-          "subject": "Return the actual :visited color from getComputedStyle()."
         }
       ]
     },
@@ -3537,15 +3507,15 @@
           "author": "chris@w3.org",
           "hash": "8987c2e1d",
           "subject": "[css-color-4][editorial] linkable note"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "chris@w3.org",
-          "hash": "a0a988606",
-          "subject": "[css-color-4] Interpolation between legacy sRGB colors is (once again) in sRGB space, for compatibility. #7949"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-08-01",
+          "author": "sam@webkit.org",
+          "hash": "7b66c50a03",
+          "subject": "Updates tests of CSS `<opacity-value>` to test newly resolved behavior (#54078)"
+        },
         {
           "date": "2025-07-02",
           "author": "sakhapov@chromium.org",
@@ -3572,6 +3542,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-07-31",
+          "author": "43683110+alisonmaher@users.noreply.github.com",
+          "hash": "c62ae7bbc",
+          "subject": "[css-color-adjust-1] Create section for forced colors mode emulation color palettes (#12550)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "43683110+alisonmaher@users.noreply.github.com",
+          "hash": "ca04a59ad",
+          "subject": "add recent fcm changes to changes section (#12549)"
+        },
         {
           "date": "2025-07-24",
           "author": "julian.descottes@gmail.com",
@@ -4269,14 +4251,7 @@
           "subject": "[css-highlight-api] Change highlightsFromPoint return type #12031 (#12215)"
         }
       ],
-      "testlog": [
-        {
-          "date": "2025-06-04",
-          "author": "jjaschke@mozilla.com",
-          "hash": "c76948d077",
-          "subject": "CSS Highlight API: Make `Highlight.add()` and `HighlightRegistry.set()` chainable."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Images",
@@ -4532,10 +4507,10 @@
       "speclog": [],
       "testlog": [
         {
-          "date": "2025-06-04",
-          "author": "romainmenke@gmail.com",
-          "hash": "b4268a8bd2",
-          "subject": "Nesting selectors that refer to pseudo elements must not match the originating element"
+          "date": "2025-07-31",
+          "author": "andruud@chromium.org",
+          "hash": "a3501ef935",
+          "subject": "[css-nesting] Fix crash when bucketing multi-level '&' within pseudo-elem"
         }
       ]
     },
@@ -4589,6 +4564,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "abotella@igalia.com",
+          "hash": "3ce4ea318b",
+          "subject": "[line-clamp] Make sure line-clamp ellipses get repainted"
+        },
         {
           "date": "2025-07-25",
           "author": "sakhapov@chromium.org",
@@ -4708,12 +4689,6 @@
           "author": "flackr@chromium.org",
           "hash": "98f573b0b6",
           "subject": "Don't scroll targeted scroll container on scrollIntoView."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "60073468+Psychpsyo@users.noreply.github.com",
-          "hash": "21c375ea54",
-          "subject": "Add test for border-radius with clip along one axis"
         }
       ]
     },
@@ -5104,24 +5079,6 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "5c781368d",
           "subject": "[css-shapes-1] Minor fixes for WD (#12284)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "eb013231c",
-          "subject": "Move shape() to css-shapes-1 (#12279)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "chris@w3.org",
-          "hash": "de89100af",
-          "subject": "[css-shapes-1][editorial] Updated changes"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "chris@w3.org",
-          "hash": "feeb42c24",
-          "subject": "[css-shapes-1][editorial] Add WPT annotations"
         }
       ],
       "testlog": [
@@ -5232,12 +5189,6 @@
           "author": "dgrogan@chromium.org",
           "hash": "1d04d9b69c",
           "subject": "[stretch] Fix false-positive cache hit"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "bcc1209b52",
-          "subject": "[replaced] Don't attempt to stretch-fit within MinMaxSizesFunc lambda."
         }
       ]
     },
@@ -5427,12 +5378,6 @@
           "author": "kojii@chromium.org",
           "hash": "854a08acbd",
           "subject": "[text-autospace] Support `Conditional`"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kojii@chromium.org",
-          "hash": "6ba4f8fbea",
-          "subject": "[text-autospace] Fix tests"
         }
       ]
     },
@@ -5824,6 +5769,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-07-31",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "f169733246",
+          "subject": "WebKit export: [css-values-5] Rename CSS URL modifiers to include hyphens (#54014)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "sakhapov@chromium.org",
+          "hash": "2ee15f8563",
+          "subject": "Check for typed arithmetic in css progress() math function"
+        },
+        {
           "date": "2025-07-30",
           "author": "sakhapov@chromium.org",
           "hash": "b6f12f048a",
@@ -6011,12 +5968,6 @@
           "author": "futhark@chromium.org",
           "hash": "2729896c36",
           "subject": "Revert \"[ident] Support ident() within var() functions (reland)\""
-        },
-        {
-          "date": "2025-06-04",
-          "author": "andruud@chromium.org",
-          "hash": "f3557470b3",
-          "subject": "[ident] Support ident() within var() functions (reland)"
         }
       ]
     },
@@ -6052,6 +6003,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-08-01",
+          "author": "mpearson@chromium.org",
+          "hash": "1d7693ae5b",
+          "subject": "Revert \"VT: Update the work done before the finished promise is resolved.\""
+        },
+        {
+          "date": "2025-07-31",
+          "author": "vmpstr@chromium.org",
+          "hash": "d9c4c23119",
+          "subject": "VT: Update the work done before the finished promise is resolved."
+        },
         {
           "date": "2025-07-30",
           "author": "skobes@chromium.org",
@@ -6255,24 +6218,6 @@
           "author": "kevers@google.com",
           "hash": "45c28ed877",
           "subject": "[scoped-vt] Implement contain: view-transition"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kevers@google.com",
-          "hash": "9c80506088",
-          "subject": "[vt] Fix raciness with test harness"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "kevers@google.com",
-          "hash": "77752ad86c",
-          "subject": "[vt] Cleanup workaround for clipping bug"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "vmpstr@chromium.org",
-          "hash": "58d3994da8",
-          "subject": "nested VT: Fix view-transition-group-children sizing and iteration."
         }
       ]
     },
@@ -6411,6 +6356,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "zhoupeng.dev@gmail.com",
+          "hash": "ae11474282",
+          "subject": "Fix offsetParent computation for elements with fixed position (#54043)"
+        },
         {
           "date": "2025-07-30",
           "author": "jo.steven.novaryo@huawei.com",
@@ -6698,24 +6649,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "7ab6423e3a",
           "subject": "Move two Intl.DateTimeFormat tests"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "richard.gibson@gmail.com",
-          "hash": "fbc6833c24",
-          "subject": "Test that Intl.Locale language \"root\" is rejected"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "richard.gibson@gmail.com",
-          "hash": "a4501647e3",
-          "subject": "Improve test/intl402/Locale/constructor-getter-order.js"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "richard.gibson@gmail.com",
-          "hash": "c2bfc5bdcd",
-          "subject": "Add tests for Intl.Locale.prototype.variants"
         }
       ]
     },
@@ -6892,15 +6825,15 @@
           "author": "andre.bargull@gmail.com",
           "hash": "bdfd596f",
           "subject": "Editorial: Mention AsyncGeneratorFunction constructor in note (#3624)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "ljharb@gmail.com",
-          "hash": "caa0482e",
-          "subject": "Normative: add `Error.isError` (#3507)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "richard.gibson@gmail.com",
+          "hash": "7a2273abd2",
+          "subject": "Fix typos (#4552)"
+        },
         {
           "date": "2025-07-29",
           "author": "richard.gibson@gmail.com",
@@ -6984,12 +6917,6 @@
           "author": "choems@outlook.com",
           "hash": "f41447492b",
           "subject": "Update ctor-throws.js"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "andre.bargull@gmail.com",
-          "hash": "c6ad284d99",
-          "subject": "Add coverage for IteratorClose in Promise combinators"
         }
       ]
     },
@@ -7012,7 +6939,14 @@
       "href": "https://wicg.github.io/element-timing/",
       "specrepo": "https://github.com/WICG/element-timing",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "shaseley@chromium.org",
+          "hash": "8c4fc7604c",
+          "subject": "ElementTiming: add a test for overwriting text"
+        }
+      ],
       "testpolicy": "https://github.com/WICG/element-timing/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -7354,12 +7288,6 @@
           "author": "pmeenan@chromium.org",
           "hash": "aae479bb36",
           "subject": "Improve WPT coverage for Compression Dictionary Transport"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "2e547483d4",
-          "subject": "QuotaExceededError: Update leftover QuotaExceededError instances (#52856)"
         }
       ]
     },
@@ -7742,6 +7670,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-07-31",
+          "author": "d@domenic.me",
+          "hash": "917c2f6a",
+          "subject": "Clean up Worker and SharedWorker definitions"
+        },
+        {
           "date": "2025-07-30",
           "author": "lwarlow@igalia.com",
           "hash": "ce84350e",
@@ -7974,15 +7908,45 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "3ca9ec37",
           "subject": "Editorial: there is no \"pending\" document for early hints"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "yoav.weiss@shopify.com",
-          "hash": "83cc45b9",
-          "subject": "Integrate with the Integrity-Policy header"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-08-01",
+          "author": "mkwst@chromium.org",
+          "hash": "3d6a186721",
+          "subject": "[OriginAPI] Introduce `Origin.fromURL()`."
+        },
+        {
+          "date": "2025-07-31",
+          "author": "ansollan@microsoft.com",
+          "hash": "103970bdfa",
+          "subject": "Add more tests for ElementInternals.type=button with popovertarget*"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "zhoupeng.dev@gmail.com",
+          "hash": "ae11474282",
+          "subject": "Fix offsetParent computation for elements with fixed position (#54043)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "mkwst@chromium.org",
+          "hash": "b482dce27c",
+          "subject": "[OriginAPI] Improving `Origin` test coverage."
+        },
+        {
+          "date": "2025-07-31",
+          "author": "chorotan@mozilla.com",
+          "hash": "a1dc75db6d",
+          "subject": "Revert \"Bug 1965029 - Accept CSS color syntax in `input type=color` \" for causing mochitest failures on test_input_color_picker_datalist.html"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "saschanaz@outlook.com",
+          "hash": "64a221a24e",
+          "subject": "Accept CSS color syntax in `input type=color"
+        },
         {
           "date": "2025-07-30",
           "author": "nrosenthal@chromium.org",
@@ -8714,24 +8678,6 @@
           "author": "jarhar@chromium.org",
           "hash": "1f3beebca7",
           "subject": "Allow more characters in custom element names"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "jarhar@chromium.org",
-          "hash": "70f0a19eac",
-          "subject": "Make ToggleEvent.source WPTs non-tentative"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "f681593928",
-          "subject": "Refactor preloading remote context helpers (#52945)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "tristan.fraipont@gmail.com",
-          "hash": "ec3176047e",
-          "subject": "fix typo from #52713"
         }
       ]
     },
@@ -8845,6 +8791,12 @@
       "href": "https://w3c.github.io/IFT/Overview.html",
       "specrepo": "https://github.com/w3c/IFT",
       "speclog": [
+        {
+          "date": "2025-07-31",
+          "author": "grieger@google.com",
+          "hash": "68f14c7",
+          "subject": "Mark appendix b (examples) as non normative."
+        },
         {
           "date": "2025-07-28",
           "author": "chris@w3.org",
@@ -9006,6 +8958,12 @@
       "href": "https://w3c.github.io/IndexedDB/",
       "specrepo": "https://github.com/w3c/IndexedDB",
       "speclog": [
+        {
+          "date": "2025-07-31",
+          "author": "stevebe@microsoft.com",
+          "hash": "7c40323",
+          "subject": "Add getAllRecords() method and update getAll()/getAllKeys() to support direction option (#461) (#206)"
+        },
         {
           "date": "2025-07-02",
           "author": "stevebe@microsoft.com",
@@ -9757,18 +9715,6 @@
           "author": "d@domenic.me",
           "hash": "81369f5",
           "subject": "Allow multiple prerenders at the same URL with different target hints"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "91ac869",
-          "subject": "Editorial: use a variable"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "db00367",
-          "subject": "Fix request clients for prefetch + service workers (#378)"
         }
       ],
       "testlog": []
@@ -9778,7 +9724,14 @@
       "href": "https://notifications.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/notifications",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-08-01",
+          "author": "annevk@annevk.nl",
+          "hash": "7942ccc",
+          "subject": "Allow notifications and actions to specify a navigable URL"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-06-30",
@@ -10146,18 +10099,6 @@
           "author": "chris@w3.org",
           "hash": "d9276d3",
           "subject": "[ImpRpt] Ladybrd passes all ICC tests now"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "chris@w3.org",
-          "hash": "43c7cc9",
-          "subject": "[ImpRpt] Bump date"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "chris@w3.org",
-          "hash": "3ab9507",
-          "subject": "[ImpRpt] More passes"
         }
       ],
       "testlog": []
@@ -10365,18 +10306,6 @@
           "author": "d@domenic.me",
           "hash": "81369f5",
           "subject": "Allow multiple prerenders at the same URL with different target hints"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "91ac869",
-          "subject": "Editorial: use a variable"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "db00367",
-          "subject": "Fix request clients for prefetch + service workers (#378)"
         }
       ],
       "testlog": []
@@ -10463,18 +10392,6 @@
           "author": "d@domenic.me",
           "hash": "81369f5",
           "subject": "Allow multiple prerenders at the same URL with different target hints"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "91ac869",
-          "subject": "Editorial: use a variable"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "db00367",
-          "subject": "Fix request clients for prefetch + service workers (#378)"
         }
       ],
       "testlog": []
@@ -10793,12 +10710,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "2b0b2da88f",
           "subject": "[animation-trigger] Use consistent pixel spaces"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "awogbemila@chromium.org",
-          "hash": "b1f3f61278",
-          "subject": "[animation-trigger] Implement basic AnimationTrigger functionality"
         }
       ]
     },
@@ -10821,6 +10732,18 @@
       "href": "https://w3c.github.io/secure-payment-confirmation/",
       "specrepo": "https://github.com/w3c/secure-payment-confirmation",
       "speclog": [
+        {
+          "date": "2025-07-31",
+          "author": "ij@w3.org",
+          "hash": "21f92dd",
+          "subject": "no asterisk escape"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "ij@w3.org",
+          "hash": "f47c559",
+          "subject": "V1"
+        },
         {
           "date": "2025-07-16",
           "author": "ij@w3.org",
@@ -11070,6 +10993,18 @@
       "specrepo": "https://github.com/w3c/ServiceWorker",
       "speclog": [
         {
+          "date": "2025-08-01",
+          "author": "90582190+bvandersloot-mozilla@users.noreply.github.com",
+          "hash": "83a8993",
+          "subject": "Add new environment settings object field \"cross site ancestry\" for SameSite cookies work (#1775)"
+        },
+        {
+          "date": "2025-08-01",
+          "author": "d@domenic.me",
+          "hash": "887d459",
+          "subject": "Update QuotaExceededError usage (#1782)"
+        },
+        {
           "date": "2025-07-28",
           "author": "sisidovski@users.noreply.github.com",
           "hash": "991cb02",
@@ -11100,12 +11035,6 @@
           "author": "bipulchamoli45@gmail.com",
           "hash": "8ad64e76ea",
           "subject": "Fix typos in various web platform test files (#53836)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "eainchen@microsoft.com",
-          "hash": "b3b03170f5",
-          "subject": "Add WaitUntil check for AddRoutes"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -11220,18 +11149,6 @@
           "author": "d@domenic.me",
           "hash": "81369f5",
           "subject": "Allow multiple prerenders at the same URL with different target hints"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "91ac869",
-          "subject": "Editorial: use a variable"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "d@domenic.me",
-          "hash": "db00367",
-          "subject": "Fix request clients for prefetch + service workers (#378)"
         }
       ],
       "testlog": [
@@ -11312,18 +11229,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "1427e38c94",
           "subject": "Prerender WPT: add navigateExpectingNoPrerenderingActivation() helper (#52966)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "f681593928",
-          "subject": "Refactor preloading remote context helpers (#52945)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "domenic@chromium.org",
-          "hash": "2a65f98847",
-          "subject": "Make invalid-rules prefetch test work with both prefetch and prerender"
         }
       ]
     },
@@ -11479,27 +11384,15 @@
           "author": "yoav.weiss@shopify.com",
           "hash": "2e039a4",
           "subject": "Integrity-Policy: remove spurious HTML integration (#140)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "fbraun+gh@mozilla.com",
-          "hash": "d6abb1c",
-          "subject": "Add acknowledgements"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "me@fklc.dev",
-          "hash": "7d06193",
-          "subject": "Add exception for local URLs (blob, data, allow) (#137)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "jackalmage@gmail.com",
-          "hash": "539e4d2",
-          "subject": "Make JSON valid (#139)"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "mkwst@chromium.org",
+          "hash": "4d3e4e0adb",
+          "subject": "[Unencoded-Digest] Enforce using the network-parsed header."
+        },
         {
           "date": "2025-07-16",
           "author": "mkwst@chromium.org",
@@ -11535,12 +11428,6 @@
           "author": "yoav.weiss@shopify.com",
           "hash": "d74262218d",
           "subject": "Integrity-Policy: Add about:blank and lack of reporting observer tests (#53014)"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "yoav.weiss@shopify.com",
-          "hash": "24e2df1bce",
-          "subject": "Move Integrity-Policy signature-based SRI tests to tentative (#52924)"
         }
       ]
     },
@@ -12214,6 +12101,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-07-31",
+          "author": "30862698+otherdaniel@users.noreply.github.com",
+          "hash": "cc866b88a4",
+          "subject": "Also handle moveBefore in script-enforcement-002, -003, and -004. (#54071)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "30862698+otherdaniel@users.noreply.github.com",
+          "hash": "e89b53586c",
+          "subject": "Ensure moveBefore pre-conditions are met. (#54050)"
+        },
+        {
           "date": "2025-07-15",
           "author": "vogelheim@chromium.org",
           "hash": "76acd7b438",
@@ -12415,6 +12314,18 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2025-07-31",
+          "author": "cookiecrook@users.noreply.github.com",
+          "hash": "34306eda",
+          "subject": "Remove Core-AAM UA requirement to disallow orphaned role context. (#2284)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "49305434+daniel-montalvo@users.noreply.github.com",
+          "hash": "45ec98e2",
+          "subject": "[editorial] Change back the id for AT definitions (#2579)"
+        },
         {
           "date": "2025-07-29",
           "author": "dmontalvo@w3.org",
@@ -12703,12 +12614,6 @@
           "author": "i.am.kanaru.sato@gmail.com",
           "hash": "a8b95c440d",
           "subject": "mark overallProgress wpt case as non-tentative."
-        },
-        {
-          "date": "2025-06-04",
-          "author": "awogbemila@chromium.org",
-          "hash": "b1f3f61278",
-          "subject": "[animation-trigger] Implement basic AnimationTrigger functionality"
         }
       ]
     },
@@ -12957,12 +12862,6 @@
           "author": "2mesaqlain@gmail.com",
           "hash": "95c8707d13",
           "subject": "[webaudio] Migrate ctor-dynamicscompressor.html from audit.js"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "2mesaqlain@gmail.com",
-          "hash": "144e031e84",
-          "subject": "the-audiobuffer-interface/audiobuffer.html:`Audit.js` to w3c"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -13348,6 +13247,18 @@
       "specrepo": "https://github.com/WICG/webcrypto-secure-curves",
       "speclog": [
         {
+          "date": "2025-07-31",
+          "author": "d.huigens@protonmail.com",
+          "hash": "fdfd829",
+          "subject": "Update references to Web Cryptography Level 2"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "d.huigens@protonmail.com",
+          "hash": "e918092",
+          "subject": "Fix references to \"length in bits\""
+        },
+        {
           "date": "2025-07-30",
           "author": "anna.weine@mozilla.com",
           "hash": "ef69ab9",
@@ -13468,6 +13379,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "OrKoN@users.noreply.github.com",
+          "hash": "e5bd864580",
+          "subject": "[wdspec] add a test for using svg elements as start nodes in locateNodes (#54054)"
+        },
+        {
+          "date": "2025-07-31",
+          "author": "aborovova@mozilla.com",
+          "hash": "a797e8ee03",
+          "subject": "Do not run test cleanup steps if the session has ended in-between."
+        },
         {
           "date": "2025-07-30",
           "author": "jdescottes@mozilla.com",
@@ -13659,12 +13582,6 @@
           "author": "jdescottes@mozilla.com",
           "hash": "4471ecf15d",
           "subject": "[wdspec] Reformat history_updated.py using black"
-        },
-        {
-          "date": "2025-06-04",
-          "author": "aborovova@mozilla.com",
-          "hash": "068bdf58e5",
-          "subject": "[wdspec] Add more invalid test cases for \"proxy\" argument in \"browser.createUserContext\" command."
         }
       ]
     },
@@ -14619,12 +14536,6 @@
           "author": "feng.dai@intel.com",
           "hash": "a8eadf139c",
           "subject": "webnn: add float16 conformance tests for notEqual op"
-        },
-        {
-          "date": "2025-06-05",
-          "author": "wei4.wang@intel.com",
-          "hash": "0c2a841c04",
-          "subject": "[WebNN] Fuse QDQ for clamp on tflite"
         }
       ]
     },
@@ -14696,6 +14607,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "philipp.hancke@googlemail.com",
+          "hash": "1842abfdbd",
+          "subject": "Reland \"webrtc: ensure tracks are muted initially and unmute when a packet arrives\""
+        },
         {
           "date": "2025-07-24",
           "author": "guidou@chromium.org",
@@ -14855,6 +14772,12 @@
       "specrepo": "https://github.com/w3c/webrtc-stats",
       "speclog": [
         {
+          "date": "2025-07-31",
+          "author": "phancke@meta.com",
+          "hash": "efecbcd",
+          "subject": "move packetsSentWithEct1 to RTCOutboundRtpStreamStats (#808)"
+        },
+        {
           "date": "2025-07-10",
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "18f34e5",
@@ -14862,6 +14785,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-07-31",
+          "author": "philipp.hancke@googlemail.com",
+          "hash": "1842abfdbd",
+          "subject": "Reland \"webrtc: ensure tracks are muted initially and unmute when a packet arrives\""
+        },
         {
           "date": "2025-06-27",
           "author": "na-g@nostrum.com",
