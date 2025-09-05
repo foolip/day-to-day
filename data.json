@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-07-09T07:13:50.177Z",
-  "until": "2025-09-04T07:13:50.177Z",
+  "since": "2025-07-10T07:13:48.958Z",
+  "until": "2025-09-05T07:13:48.958Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -23,7 +23,14 @@
       "href": "https://w3c.github.io/accname/",
       "specrepo": "https://github.com/w3c/accname",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2025-09-05",
+          "author": "adam@adampage.net",
+          "hash": "a5312ef33f",
+          "subject": "Add accname tests for ::marker pseudo content  (#54222)"
+        }
+      ]
     },
     {
       "name": "Ambient Light Sensor",
@@ -128,6 +135,18 @@
       "href": "https://w3c.github.io/autoplay/",
       "specrepo": "https://github.com/w3c/autoplay",
       "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "chrisn@users.noreply.github.com",
+          "hash": "052da0a",
+          "subject": "Add link to WebKit standards position"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "marcos@marcosc.com",
+          "hash": "2e23e51",
+          "subject": "Fix closing tag for 'Query by an Element' header"
+        },
         {
           "date": "2025-08-21",
           "author": "fd@w3.org",
@@ -621,18 +640,6 @@
           "author": "anushamuley@google.com",
           "hash": "fe1c32a7c2",
           "subject": "Default to empty `value` for named cookies in cookieStore.delete"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "amarchesini@mozilla.com",
-          "hash": "a6cb7cdad4",
-          "subject": "Fix WPTs for the cookie-store API"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "amarchesini@mozilla.com",
-          "hash": "0fc79d8e61",
-          "subject": "Fix more WPTs for the cookie-store API"
         }
       ]
     },
@@ -786,12 +793,6 @@
           "author": "tvanderlippe@gmail.com",
           "hash": "aaee91a6d5",
           "subject": "Fix reporting when only the report-only CSP header is present"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "meacer@chromium.org",
-          "hash": "c14b772565",
-          "subject": "[CSP] Add strict-dynamic-url keyword for url hashes"
         }
       ]
     },
@@ -816,6 +817,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2025-09-05",
+          "author": "jkew@mozilla.com",
+          "hash": "9bcd38b7cd",
+          "subject": "Add some basic WPT reftests for text-decoration-trim rendering behavior."
+        },
+        {
+          "date": "2025-09-05",
+          "author": "jkew@mozilla.com",
+          "hash": "b3aec906d9",
+          "subject": "Add WPT parsing & computation tests for text-decoration-trim."
+        },
+        {
+          "date": "2025-09-04",
+          "author": "samomekarajr@microsoft.com",
+          "hash": "6c1e98272d",
+          "subject": "[Gap Decorations]: Major paint logic for Optimized GapGeometry"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "futhark@chromium.org",
+          "hash": "a16c8bf8df",
+          "subject": "Make container-name not tree-scoped behind a flag"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "futhark@chromium.org",
+          "hash": "6a811781ea",
+          "subject": "Move anchored container queries tests to wpt"
+        },
         {
           "date": "2025-09-04",
           "author": "amarc@mozila.com",
@@ -2687,36 +2718,6 @@
           "author": "zsun@igalia.com",
           "hash": "4d95f2254b",
           "subject": "Caret-shape: correct the use of zoom factor for block width."
-        },
-        {
-          "date": "2025-07-10",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "c669bcf970",
-          "subject": "[css-anchor-position-1][css-align-3] Add tests for overflowing anchor-center alignment"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "jja08111@gmail.com",
-          "hash": "f9fe9ded8c",
-          "subject": "Fix tab-size to be based on space width of containing block ancestor"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "418c8fe6df",
-          "subject": "Remove focus outline from dialog-in-rtl-iframe-child.html (#53675)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "moonira@google.com",
-          "hash": "5f61300186",
-          "subject": "Revert \"Support mixins across stylesheets.\""
-        },
-        {
-          "date": "2025-07-09",
-          "author": "moonira@google.com",
-          "hash": "7d4709b95c",
-          "subject": "Revert \"Support @contents in mixins.\""
         }
       ]
     },
@@ -2819,6 +2820,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-09-04",
+          "author": "futhark@chromium.org",
+          "hash": "6a811781ea",
+          "subject": "Move anchored container queries tests to wpt"
+        },
         {
           "date": "2025-09-02",
           "author": "kiet.ho@apple.com",
@@ -3022,12 +3029,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "db84261c5f",
           "subject": "[css-anchor-position-1] Test margin/padding/inset percentage resolution with position-area"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "c669bcf970",
-          "subject": "[css-anchor-position-1][css-align-3] Add tests for overflowing anchor-center alignment"
         }
       ]
     },
@@ -3141,12 +3142,6 @@
           "author": "chris@w3.org",
           "hash": "9b85e45c7",
           "subject": "[css-borders-4][editorial] Cleanup for FPWD"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "noamr@users.noreply.github.com",
-          "hash": "b5312ce98",
-          "subject": "[css-borders-4] Editorial: moved warning to partial borders section and updated changes (#12444)"
         }
       ],
       "testlog": []
@@ -3219,6 +3214,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "43683110+alisonmaher@users.noreply.github.com",
+          "hash": "05e6b9498",
+          "subject": "AccentColor change (#12733)"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "chris@w3.org",
+          "hash": "cf862fb09",
+          "subject": "[css-color-4] Define rec2020 color space to use 2.4 gamma #12574"
+        },
         {
           "date": "2025-09-01",
           "author": "chris@w3.org",
@@ -3495,6 +3502,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2025-09-04",
+          "author": "futhark@google.com",
+          "hash": "399085a5d",
+          "subject": "[css-conditional-5] container-names are not tree-scoped #12090 (#12720)"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "chris@w3.org",
+          "hash": "0fd79500a",
+          "subject": "[css-conditional-4][editorial] fresh changes section, more wpt ignore"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "chris@w3.org",
+          "hash": "3dcf2e6ec",
+          "subject": "[css-conditional-4][editorial] Back to ED"
+        },
+        {
           "date": "2025-09-02",
           "author": "moonira@google.com",
           "hash": "ce9229654",
@@ -3538,6 +3563,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-09-04",
+          "author": "futhark@chromium.org",
+          "hash": "a16c8bf8df",
+          "subject": "Make container-name not tree-scoped behind a flag"
+        },
         {
           "date": "2025-08-25",
           "author": "moonira@google.com",
@@ -4045,12 +4076,6 @@
           "author": "abotella@igalia.com",
           "hash": "b8e67c9274",
           "subject": "[line-clamp] Support clamping by lines and a height at the same time"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "jja08111@gmail.com",
-          "hash": "f9fe9ded8c",
-          "subject": "Fix tab-size to be based on space width of containing block ancestor"
         }
       ]
     },
@@ -4196,6 +4221,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "60073468+Psychpsyo@users.noreply.github.com",
+          "hash": "95c262252",
+          "subject": "Remove redundant set of parentheses (#12685)"
+        },
         {
           "date": "2025-08-21",
           "author": "rachelandrew@google.com",
@@ -5081,6 +5112,18 @@
       ],
       "testlog": [
         {
+          "date": "2025-09-05",
+          "author": "jkew@mozilla.com",
+          "hash": "9bcd38b7cd",
+          "subject": "Add some basic WPT reftests for text-decoration-trim rendering behavior."
+        },
+        {
+          "date": "2025-09-05",
+          "author": "jkew@mozilla.com",
+          "hash": "b3aec906d9",
+          "subject": "Add WPT parsing & computation tests for text-decoration-trim."
+        },
+        {
           "date": "2025-08-18",
           "author": "jkew@mozilla.com",
           "hash": "5249f883cb",
@@ -5656,12 +5699,6 @@
           "author": "kevers@google.com",
           "hash": "fdb9003993",
           "subject": "Force a stacking context for the scope of a view transition."
-        },
-        {
-          "date": "2025-07-09",
-          "author": "nt1m@users.noreply.github.com",
-          "hash": "418c8fe6df",
-          "subject": "Remove focus outline from dialog-in-rtl-iframe-child.html (#53675)"
         }
       ]
     },
@@ -5921,12 +5958,6 @@
           "author": "annevk@annevk.nl",
           "hash": "3d429ce",
           "subject": "Scope non-scoped (global) registries to a single document"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "35911232+shannonbooth@users.noreply.github.com",
-          "hash": "1b4bd48",
-          "subject": "Avoid passing null to valid name prefix"
         }
       ],
       "testlog": [
@@ -5989,12 +6020,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "8492213891",
           "subject": "Fix HTML doctype in Range-intersectsNode-2.html (#53829)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "35911232+shannonbooth@users.noreply.github.com",
-          "hash": "3f4bd80a4b",
-          "subject": "DOM: correct validate and extract tests"
         }
       ]
     },
@@ -7408,15 +7433,39 @@
           "author": "philip@foolip.org",
           "hash": "5589e0ca",
           "subject": "Add popover=hint in attribute summary table"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "philip@foolip.org",
-          "hash": "bf3a706f",
-          "subject": "Editorial: simplify (re)moving steps of form-associated elements"
         }
       ],
       "testlog": [
+        {
+          "date": "2025-09-04",
+          "author": "jarhar@chromium.org",
+          "hash": "9fc8c393f0",
+          "subject": "Remove tentative from customizable select WPTs"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "masonf@chromium.org",
+          "hash": "49d8dc0a4e",
+          "subject": "assert_notreached --> assert_unreached"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "jarhar@chromium.org",
+          "hash": "8b9696d6f3",
+          "subject": "Enable ImprovedSourceRetargeting by default"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "keithamus@users.noreply.github.com",
+          "hash": "b32d26549c",
+          "subject": "html/popover: Add a set of focus tests for elements with slots, including details elements (#54660)"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "gjc@google.com",
+          "hash": "252bc41f96",
+          "subject": "Revert \"Send dropEffect attribute on drag and drop events\""
+        },
         {
           "date": "2025-09-04",
           "author": "masonf@chromium.org",
@@ -8130,18 +8179,6 @@
           "author": "rayguo17@gmail.com",
           "hash": "452b57b504",
           "subject": "add support for apng and webp animated image decoding"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "tschuster@mozilla.com",
-          "hash": "fa5dd48a9b",
-          "subject": "Prevent shadowing of document properties in Nightly."
-        },
-        {
-          "date": "2025-07-09",
-          "author": "gastonr@microsoft.com",
-          "hash": "1fe50e6df5",
-          "subject": "[3/4] Improve WPT Drag and Drop images/ tests (015 -> 022)"
         }
       ]
     },
@@ -8150,14 +8187,7 @@
       "href": "https://w3c.github.io/html-aam/",
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2025-07-09",
-          "author": "cookiecrook@users.noreply.github.com",
-          "hash": "9550dc65fc",
-          "subject": "move previously 'fragile' tests to main dir, leaving optgroup tentative. (#52159)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "ARIA in HTML",
@@ -8830,12 +8860,6 @@
           "author": "fd@w3.org",
           "hash": "e951632",
           "subject": "Update CONTRIBUTING.md to match template (#248)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "mfoltz@chromium.org",
-          "hash": "04eaeb9",
-          "subject": "Incorporate suggestion by youennf@"
         }
       ],
       "testlog": [
@@ -9011,6 +9035,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "sebastianzartner@gmail.com",
+          "hash": "f7710d56a",
+          "subject": "[mediaqueries-4][editorial] Fixed all Bikeshed issues"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "sebastianzartner@gmail.com",
+          "hash": "d8e3e166e",
+          "subject": "[mediaqueries-5][editorial] Fixed a bunch of Bikeshed issues (#12728)"
+        },
         {
           "date": "2025-08-28",
           "author": "fd@tidoust.net",
@@ -10168,14 +10204,7 @@
       "name": "HTML Sanitizer API",
       "href": "https://wicg.github.io/sanitizer-api/",
       "specrepo": "https://github.com/WICG/sanitizer-api",
-      "speclog": [
-        {
-          "date": "2025-07-09",
-          "author": "evilpies@gmail.com",
-          "hash": "54b7efe",
-          "subject": "Address the SVG default configuration feedback (#300)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2025-08-14",
@@ -10803,24 +10832,6 @@
           "author": "anton.sartori@gmail.com",
           "hash": "f7029a4",
           "subject": "Export the parse-metadata algorithm (#152)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "aras.abbasi@googlemail.com",
-          "hash": "38603d6",
-          "subject": "parseMetadata: first check algorithm validity (#147)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "fbraun+gh@mozilla.com",
-          "hash": "54cf3fb",
-          "subject": "Add issue & pull request template (#149)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "me@fklc.dev",
-          "hash": "eb670a6",
-          "subject": "Add style to possible destinations list (#148)"
         }
       ],
       "testlog": [
@@ -11242,7 +11253,20 @@
       "name": "JSON modules",
       "href": "https://tc39.es/proposal-json-modules/",
       "specrepo": "https://github.com/tc39/proposal-json-modules",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "nicolo-ribaudo@users.noreply.github.com",
+          "hash": "25667a0",
+          "subject": "fixup: [spec] `npm run build`"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "nribaudo@igalia.com",
+          "hash": "7454f54",
+          "subject": "Update readme for stage 4"
+        }
+      ],
       "testlog": []
     },
     {
@@ -11877,6 +11901,12 @@
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
         {
+          "date": "2025-09-04",
+          "author": "49305434+daniel-montalvo@users.noreply.github.com",
+          "hash": "f2f1a720",
+          "subject": "Editorial: Prettier updates -- Compare with previous commit to ensure it picks up changes (#2619)"
+        },
+        {
           "date": "2025-09-03",
           "author": "spectranaut@igalia.com",
           "hash": "348741dc",
@@ -12073,18 +12103,6 @@
           "author": "49305434+daniel-montalvo@users.noreply.github.com",
           "hash": "915557de",
           "subject": "Editorial: run prettier locally to ensure consistency (#2572)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "p.krautzberger@gmail.com",
-          "hash": "6e238141",
-          "subject": "UA SHOULD guidance for roles outside of required a11y parent role (#2562)"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "49305434+daniel-montalvo@users.noreply.github.com",
-          "hash": "3030dd8d",
-          "subject": "editorial: prettier updates (#2571)"
         }
       ],
       "testlog": [
@@ -12471,24 +12489,6 @@
           "author": "2mesaqlain@gmail.com",
           "hash": "8238531385",
           "subject": "[webaudio] Migrate k-rate-dynamics from audit.js to testharness.js"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "2mesaqlain@gmail.com",
-          "hash": "7aa05806ae",
-          "subject": "[webaudio] Migrate audioparam-chaining from audit.js to testharness"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "punithbnayak@chromium.org",
-          "hash": "f42272db81",
-          "subject": "[webaudio] Migrate AudioContext.suspend/resume test to testharness.js"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "punithbnayak@chromium.org",
-          "hash": "4a8aec7c56",
-          "subject": "[WebAudio] Migrate real-time ConvolverNode SNR test to testharness.js"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -12868,6 +12868,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2025-09-05",
+          "author": "jdescottes@mozilla.com",
+          "hash": "ab1f8c66c8",
+          "subject": "[wdspec] Fix blank js template for inline helper"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "chorotan@mozilla.com",
+          "hash": "bdaf2db1f7",
+          "subject": "Revert \"Bug 1960002 - Increase window min-width to keep the window control buttons visible. \" for causing bc failures on browser_984455_bookmarks_items_reparenting.js"
+        },
+        {
+          "date": "2025-09-04",
+          "author": "ohai@6a68.net",
+          "hash": "df6f7c1101",
+          "subject": "Increase window min-width to keep the window control buttons visible."
+        },
+        {
+          "date": "2025-09-04",
+          "author": "jdescottes@mozilla.com",
+          "hash": "1ebd4ad695",
+          "subject": "wdspec: fix navigate relative_url test to use a relative url"
+        },
         {
           "date": "2025-09-03",
           "author": "agoloman@mozilla.com",
@@ -13604,12 +13628,6 @@
           "author": "dox.jin@gmail.com",
           "hash": "e192f01",
           "subject": "Meta: link Simplified Chinese translation"
-        },
-        {
-          "date": "2025-07-10",
-          "author": "saschanaz@outlook.com",
-          "hash": "d5cc64c",
-          "subject": "Change the \"async iterable\" token to \"async_iterable\""
         }
       ],
       "testlog": [
@@ -13634,6 +13652,12 @@
       "href": "https://webmachinelearning.github.io/webnn/",
       "specrepo": "https://github.com/webmachinelearning/webnn",
       "speclog": [
+        {
+          "date": "2025-09-04",
+          "author": "anssi.kostiainen@intel.com",
+          "hash": "8bce961",
+          "subject": "Add opSupportLimits() privacy considerations for fingerprinting (#881)"
+        },
         {
           "date": "2025-08-28",
           "author": "49699333+dependabot[bot]@users.noreply.github.com",
@@ -13761,12 +13785,6 @@
           "author": "feng.dai@intel.com",
           "hash": "fdfa4a85d3",
           "subject": "webnn: add fp16 conformance tests for RNN operators"
-        },
-        {
-          "date": "2025-07-09",
-          "author": "feng.dai@intel.com",
-          "hash": "3697a5dd89",
-          "subject": "webnn: add a conformance test with scalar input for tile operator"
         }
       ]
     },
@@ -13842,6 +13860,12 @@
           "author": "henbos@users.noreply.github.com",
           "hash": "b5ac9fb6",
           "subject": "Update to ReSpec version 35.5.0"
+        },
+        {
+          "date": "2025-08-06",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "56abe8b7",
+          "subject": "Remove allowance for undocumented stats"
         },
         {
           "date": "2025-08-06",
@@ -13965,6 +13989,12 @@
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "c982880",
           "subject": "Clarify that generateKeyFrame() rejects immediately for audio receivers"
+        },
+        {
+          "date": "2025-08-04",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "7b4150d",
+          "subject": "Have transformer.generateKeyFrame() resolve with undefined"
         },
         {
           "date": "2025-07-10",
