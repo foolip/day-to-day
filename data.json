@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-11-17T07:15:16.792Z",
-  "until": "2026-01-13T07:15:16.792Z",
+  "since": "2025-11-18T07:15:20.713Z",
+  "until": "2026-01-14T07:15:20.713Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -427,20 +427,7 @@
       "href": "https://wicg.github.io/compression/",
       "specrepo": "https://github.com/WICG/compression",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2025-11-18",
-          "author": "krosylight@proton.me",
-          "hash": "ae05f5cb53",
-          "subject": "Part 5: Refactor compression tests to cover brotli"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "krosylight@proton.me",
-          "hash": "7a795ffc41",
-          "subject": "Part 2: Support brotli in DecompressionStream"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Compute Pressure",
@@ -566,6 +553,24 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-14",
+          "author": "agoloman@mozilla.com",
+          "hash": "e444955182",
+          "subject": "Revert \"Bug 2005959 - Add WPT for WebTransport CSP. \" for causing wpt failures @connect-src-webtransport-allowed.sub.https.html."
+        },
+        {
+          "date": "2026-01-14",
+          "author": "jib@mozilla.com",
+          "hash": "8f53486076",
+          "subject": "Add WPT for WebTransport CSP."
+        },
+        {
+          "date": "2026-01-13",
+          "author": "simon.farre.cx@gmail.com",
+          "hash": "c3fa760b6d",
+          "subject": "Fix Reporting API test for CSP violations"
+        },
+        {
           "date": "2025-12-29",
           "author": "tvanderlippe@gmail.com",
           "hash": "a94b364692",
@@ -606,6 +611,78 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-14",
+          "author": "obrufau@igalia.com",
+          "hash": "1053d9a4de",
+          "subject": "layout: Let floats know that margins can collapse thru phantom lines"
+        },
+        {
+          "date": "2026-01-14",
+          "author": "kojii@chromium.org",
+          "hash": "d2ed3e7687",
+          "subject": "[text-indent] Support `hanging` for abspos static position"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "clchambers@microsoft.com",
+          "hash": "d3b6c32a32",
+          "subject": "Clamp backdrop filter area to output rect in SKIA renderer"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "almaher@microsoft.com",
+          "hash": "ef086ae996",
+          "subject": "add both syntaxes"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "almaher@microsoft.com",
+          "hash": "4b35ac94b0",
+          "subject": "[Masonry] Add 'grid-lanes-pack'"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "vmpstr@chromium.org",
+          "hash": "b69bd36d07",
+          "subject": "ScopedVT: Add Element.activeViewTransition attribute"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "futhark@chromium.org",
+          "hash": "7734d01787",
+          "subject": "Don't recalc ::first-letter ancestors for interleaved root"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "jja08111@gmail.com",
+          "hash": "23c9b2a142",
+          "subject": "[css-lists] Implement presentational hint for the `counter-reset`"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "f4b91347f2",
+          "subject": "Add tests for media element pseudo timing (#56562)"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "0a88b0e7fe",
+          "subject": "Map more color-scheme tests to web-features (#57148)"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "connor.pearson@mailbox.org",
+          "hash": "39ff3d35b9",
+          "subject": "Serialize background-size and mask-size as two values."
+        },
+        {
+          "date": "2026-01-13",
+          "author": "fs@opera.com",
+          "hash": "2c9782103e",
+          "subject": "Adjust single-invalid-mask-layer predicate"
+        },
         {
           "date": "2026-01-13",
           "author": "chorotan@mozilla.com",
@@ -2915,78 +2992,6 @@
           "author": "mstensho@chromium.org",
           "hash": "384f438c01",
           "subject": "[anchor] Request main frame animation if anchors animate transforms."
-        },
-        {
-          "date": "2025-11-18",
-          "author": "stewartb2@gmail.com",
-          "hash": "66b3043005",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=302660 (#56078)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "119ac9fd84",
-          "subject": "Finalize column-height:0 support."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "bd9e27bda1",
-          "subject": "Add test for column balancing and row wrapping."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "15bc7c3677",
-          "subject": "Deflake anchored-transition-display-none-001.html"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "obrufau@igalia.com",
-          "hash": "b2c1b7ad52",
-          "subject": "Add test"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "kevers@google.com",
-          "hash": "a1a27381fb",
-          "subject": "[scoped-vt] Fix hit-testing"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "stewartb2@gmail.com",
-          "hash": "5606c8f6ee",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=302621 (#56059)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "d9099e5f11",
-          "subject": "Properly handle 'stretch'-like block-size values in nsIFrame::ComputeISizeValue and several functions that end up indirectly calling it."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "stewartb2@gmail.com",
-          "hash": "6c213479a8",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=301968 (#56049)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "jkew@mozilla.com",
-          "hash": "02f9195bf9",
-          "subject": "Allow counter and quotes properties in ::marker"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "tlin@mozilla.com",
-          "hash": "f3a1888532",
-          "subject": "Relax an assertion in nsBlockFrame::RemoveFloat()."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "88dda251e1",
-          "subject": "Use a sans-serif font to avoid fuzzy failure in WPT cache-miss-001.html."
         }
       ]
     },
@@ -3004,6 +3009,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-14",
+          "author": "obrufau@igalia.com",
+          "hash": "1053d9a4de",
+          "subject": "layout: Let floats know that margins can collapse thru phantom lines"
+        },
         {
           "date": "2026-01-12",
           "author": "58723+ChrisC@users.noreply.github.com",
@@ -3599,12 +3610,6 @@
           "author": "mstensho@chromium.org",
           "hash": "384f438c01",
           "subject": "[anchor] Request main frame animation if anchors animate transforms."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "15bc7c3677",
-          "subject": "Deflake anchored-transition-display-none-001.html"
         }
       ]
     },
@@ -3682,6 +3687,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "connor.pearson@mailbox.org",
+          "hash": "39ff3d35b9",
+          "subject": "Serialize background-size and mask-size as two values."
+        },
         {
           "date": "2026-01-13",
           "author": "chorotan@mozilla.com",
@@ -4045,7 +4056,14 @@
           "subject": "[css-color-adjust][editorial] Updates for CRS #12815"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "0a88b0e7fe",
+          "subject": "Map more color-scheme tests to web-features (#57148)"
+        }
+      ]
     },
     {
       "name": "CSS Color HDR",
@@ -4250,12 +4268,6 @@
           "author": "almaher@microsoft.com",
           "hash": "006e167bad",
           "subject": "[Masonry] Update display name to grid-lanes"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "stewartb2@gmail.com",
-          "hash": "5606c8f6ee",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=302621 (#56059)"
         }
       ]
     },
@@ -4279,7 +4291,14 @@
       "href": "https://drafts.csswg.org/css-env/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "dgrogan@chromium.org",
+          "hash": "f4e196d32",
+          "subject": "[css-env-1][editorial] Update meta text-scale explainer (#13278)"
+        }
+      ],
       "testlog": [
         {
           "date": "2025-11-27",
@@ -4802,6 +4821,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "almaher@microsoft.com",
+          "hash": "ef086ae996",
+          "subject": "add both syntaxes"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "almaher@microsoft.com",
+          "hash": "4b35ac94b0",
+          "subject": "[Masonry] Add 'grid-lanes-pack'"
+        },
+        {
           "date": "2026-01-12",
           "author": "almaher@microsoft.com",
           "hash": "a792d1f21b",
@@ -4938,24 +4969,6 @@
           "author": "stewartb2@gmail.com",
           "hash": "dbecf327ea",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=301873 (#56103)"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "stewartb2@gmail.com",
-          "hash": "66b3043005",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=302660 (#56078)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "stewartb2@gmail.com",
-          "hash": "5606c8f6ee",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=302621 (#56059)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "stewartb2@gmail.com",
-          "hash": "6c213479a8",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=301968 (#56049)"
         }
       ]
     },
@@ -5089,6 +5102,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "futhark@chromium.org",
+          "hash": "7734d01787",
+          "subject": "Don't recalc ::first-letter ancestors for interleaved root"
+        },
+        {
           "date": "2026-01-08",
           "author": "58723+ChrisC@users.noreply.github.com",
           "hash": "3c0f70d354",
@@ -5179,6 +5198,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "jja08111@gmail.com",
+          "hash": "23c9b2a142",
+          "subject": "[css-lists] Implement presentational hint for the `counter-reset`"
+        },
+        {
           "date": "2025-12-26",
           "author": "mike@mikepennisi.com",
           "hash": "876fe001f2",
@@ -5195,12 +5220,6 @@
           "author": "jja08111@gmail.com",
           "hash": "ee3c6083c1",
           "subject": "[css-lists] Support for parsing counter-reset: reversed(counter-name)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "jkew@mozilla.com",
-          "hash": "02f9195bf9",
-          "subject": "Allow counter and quotes properties in ::marker"
         }
       ]
     },
@@ -5257,6 +5276,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "connor.pearson@mailbox.org",
+          "hash": "39ff3d35b9",
+          "subject": "Serialize background-size and mask-size as two values."
+        },
+        {
+          "date": "2026-01-13",
+          "author": "fs@opera.com",
+          "hash": "2c9782103e",
+          "subject": "Adjust single-invalid-mask-layer predicate"
+        },
         {
           "date": "2026-01-13",
           "author": "chorotan@mozilla.com",
@@ -5404,18 +5435,6 @@
           "author": "mstensho@chromium.org",
           "hash": "cb6907a22b",
           "subject": "Handle column-height correctly in nested block fragmentation."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "119ac9fd84",
-          "subject": "Finalize column-height:0 support."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mstensho@chromium.org",
-          "hash": "bd9e27bda1",
-          "subject": "Add test for column balancing and row wrapping."
         }
       ]
     },
@@ -5714,12 +5733,6 @@
           "author": "58723+ChrisC@users.noreply.github.com",
           "hash": "5afdb55ca1",
           "subject": "maps z-index (#56161)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "obrufau@igalia.com",
-          "hash": "b2c1b7ad52",
-          "subject": "Add test"
         }
       ]
     },
@@ -5818,12 +5831,6 @@
           "author": "sesse@chromium.org",
           "hash": "a2a59ec6b7",
           "subject": "Fix test names in highlight-cascade-009.html."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "tlin@mozilla.com",
-          "hash": "f3a1888532",
-          "subject": "Relax an assertion in nsBlockFrame::RemoveFloat()."
         }
       ]
     },
@@ -6207,18 +6214,6 @@
           "author": "dholbert@cs.stanford.edu",
           "hash": "993e353622",
           "subject": "Handle 'stretch'-like sizes in ReflowInput::InitConstraints."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "d9099e5f11",
-          "subject": "Properly handle 'stretch'-like block-size values in nsIFrame::ComputeISizeValue and several functions that end up indirectly calling it."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "dholbert@cs.stanford.edu",
-          "hash": "88dda251e1",
-          "subject": "Use a sans-serif font to avoid fuzzy failure in WPT cache-miss-001.html."
         }
       ]
     },
@@ -6351,6 +6346,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-14",
+          "author": "kojii@chromium.org",
+          "hash": "d2ed3e7687",
+          "subject": "[text-indent] Support `hanging` for abspos static position"
+        },
         {
           "date": "2026-01-09",
           "author": "howarde.edwards@gmail.com",
@@ -7005,6 +7006,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "vmpstr@chromium.org",
+          "hash": "b69bd36d07",
+          "subject": "ScopedVT: Add Element.activeViewTransition attribute"
+        },
+        {
           "date": "2025-12-24",
           "author": "skobes@chromium.org",
           "hash": "5df21979d1",
@@ -7099,12 +7106,6 @@
           "author": "kevers@google.com",
           "hash": "1f0f3a5d6e",
           "subject": "Revert \"Scoped-VT anchor-positioning\""
-        },
-        {
-          "date": "2025-11-17",
-          "author": "kevers@google.com",
-          "hash": "a1a27381fb",
-          "subject": "[scoped-vt] Fix hit-testing"
         }
       ]
     },
@@ -7650,21 +7651,15 @@
           "author": "andre.bargull@gmail.com",
           "hash": "7dc4a6d",
           "subject": "Editorial: \"languageDisplay\" can be undefined in Intl.DisplayNames.prototype.resolvedOptions"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "shane@unicode.org",
-          "hash": "3b780a6",
-          "subject": "Create notes-2025-11-06.md"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "a@expertzebra.com",
-          "hash": "840b2c9",
-          "subject": "Editorial: Add PrinceXML to colophon"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "3ceefaad5c",
+          "subject": "[Temporal] (Re)move v8 staging test plain-date-get-iso-fields, -value-of, -equals, -with-calendar"
+        },
         {
           "date": "2026-01-12",
           "author": "tjc@igalia.com",
@@ -8438,48 +8433,6 @@
           "author": "tjc@igalia.com",
           "hash": "875b3ee068",
           "subject": "Temporal: Add test for formatting Temporal objects with era formatter (#4634)"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "benallen@igalia.com",
-          "hash": "3743134508",
-          "subject": "Update reference year for M11L in Chinese calendar to 2033 (supported date) instead of 1517 (date before our supported range)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "benallen@igalia.com",
-          "hash": "c125a8dc61",
-          "subject": "Added Intl.Era-monthcode feature for several tests"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "c3594286b4",
-          "subject": "Intl Era Monthcode: Add wrapping-at-end-of-month tests for Chinese/Dangi"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "a68560c376",
-          "subject": "Intl Era Monthcode: Split up \"wrapping-at-end-of-month-gregorian\""
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "8e3516bffd",
-          "subject": "Intl Era Monthcode: Leap month tests for with() methods"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "359a303fb1",
-          "subject": "Intl Era Monthcode: Tests for mutually exclusive fields in with()"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "8c87fb920b",
-          "subject": "Intl Era Monthcode: Arithmetic year tests for non-ISO calendars"
         }
       ]
     },
@@ -8641,6 +8594,36 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "14ae1ee328",
+          "subject": "[Temporal] Move v8 staging test plain-date-with"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "e4d82de732",
+          "subject": "Also remove small test test/staging/Temporal/v8/plain-date-to-json.js"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "3ceefaad5c",
+          "subject": "[Temporal] (Re)move v8 staging test plain-date-get-iso-fields, -value-of, -equals, -with-calendar"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "480303fe4d",
+          "subject": "[Temporal] Remove v8 staging test plain-date-from"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "idimitriou@igalia.com",
+          "hash": "399cc4f24d",
+          "subject": "[Temporal] Remove v8 staging test plain-date-constructor"
+        },
         {
           "date": "2026-01-12",
           "author": "d01c2@outlook.com",
@@ -9336,48 +9319,6 @@
           "author": "tjc@igalia.com",
           "hash": "29e8305d0f",
           "subject": "Temporal: Tests for duration rounding and totaling (#4662)"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "8d2fba2d16",
-          "subject": "Temporal: Add ISO8601 PlainDate.p.with leap year test"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "d12966d207",
-          "subject": "Temporal: Add ISO8601 PlainDate.p.with days constraining test"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "f4367bc315",
-          "subject": "Temporal: Expand ISO8601 PlainDate.p.with tests"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "2f0cc98718",
-          "subject": "Temporal: Add ISO8601 PlainDate.p.add days constraining test"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "5d4feb344e",
-          "subject": "Temporal: Expand ISO8601 PlainDate.p.add arithmetic tests"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "79bc9083fe",
-          "subject": "Temporal: Reorganize ISO8601 PlainDate.p.until"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "b529669873",
-          "subject": "Temporal: Reorganize ISO8601 PlainDate.p.add tests"
         }
       ]
     },
@@ -9871,6 +9812,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-01-13",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "3d04edb",
+          "subject": "Add quota & requested to QuotaExceededError"
+        },
+        {
           "date": "2025-12-19",
           "author": "TimvdLippe@users.noreply.github.com",
           "hash": "3bab31a",
@@ -10003,12 +9950,6 @@
           "author": "awillia@chromium.org",
           "hash": "dbacfb223b",
           "subject": "[Blob URL] Make top-level self-fetch WPT not tentative"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "awillia@chromium.org",
-          "hash": "d57037d6c7",
-          "subject": "Add blob URL partitioning self-fetch test and refactor helper functions"
         }
       ],
       "testpolicy": "https://github.com/w3c/FileAPI/blob/HEAD/CONTRIBUTING.md"
@@ -10108,6 +10049,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "clchambers@microsoft.com",
+          "hash": "d3b6c32a32",
+          "subject": "Clamp backdrop filter area to output rect in SKIA renderer"
+        },
         {
           "date": "2026-01-06",
           "author": "samfort@microsoft.com",
@@ -10377,6 +10324,18 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "0ad0491b",
+          "subject": "Set \"is currently stalled\" before firing events"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "annevk@annevk.nl",
+          "hash": "96ea8a9f",
+          "subject": "Revert \"Switch dialog/popover to using place-self:dialog\""
+        },
+        {
           "date": "2026-01-12",
           "author": "noamr@users.noreply.github.com",
           "hash": "9fd211c0",
@@ -10573,15 +10532,51 @@
           "author": "philip@foolip.org",
           "hash": "0cb9486f",
           "subject": "Editorial: wrap asserts in <span>"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "lutien@users.noreply.github.com",
-          "hash": "547f8044",
-          "subject": "Add support for WebDriver BiDi language emulation"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "dbaron@chromium.org",
+          "hash": "c519e34939",
+          "subject": "Make arrow focus changes for menuitems loop."
+        },
+        {
+          "date": "2026-01-13",
+          "author": "dbaron@chromium.org",
+          "hash": "945ad0b8d6",
+          "subject": "Add long timeout annotation to focus-menu-elements-arrowoperations.html."
+        },
+        {
+          "date": "2026-01-13",
+          "author": "58723+ChrisC@users.noreply.github.com",
+          "hash": "a838bd3d75",
+          "subject": "maps \"meta\" web feature (#56726)"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "0a88b0e7fe",
+          "subject": "Map more color-scheme tests to web-features (#57148)"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "lwarlow@igalia.com",
+          "hash": "13aee89f77",
+          "subject": "Test known commands with invalid commandfor targets"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "annevk@annevk.nl",
+          "hash": "26273f9271",
+          "subject": "Origin API: correct typos"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "35911232+shannonbooth@users.noreply.github.com",
+          "hash": "2cb342f4aa",
+          "subject": "Origin API: add more test coverage for opaque origin comparison"
+        },
         {
           "date": "2026-01-12",
           "author": "58723+ChrisC@users.noreply.github.com",
@@ -11697,36 +11692,6 @@
           "author": "echen@mozilla.com",
           "hash": "8dfd590f95",
           "subject": "Part 1: Rename dnd wpts under html/editing/dnd/interactiveelements"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "janewman@microsoft.com",
-          "hash": "a941071742",
-          "subject": "[focusgroup] aria role inference for focusgroup items."
-        },
-        {
-          "date": "2025-11-17",
-          "author": "mukilan@igalia.com",
-          "hash": "ab2540b0e7",
-          "subject": "Add WPT test for SVG resource with parameters in Content-Type"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "smolnar@mozilla.com",
-          "hash": "a1db949b82",
-          "subject": "Revert \"Bug 1998950 - Part 2: Modify dnd wpts under html/editing/dnd/interactiveelements/ to use WebDriver; \" for causing wpt failures"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "echen@mozilla.com",
-          "hash": "d0c7ed6990",
-          "subject": "Part 2: Modify dnd wpts under html/editing/dnd/interactiveelements/ to use WebDriver"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "echen@mozilla.com",
-          "hash": "2a894c1826",
-          "subject": "Part 1: Rename dnd wpts under html/editing/dnd/interactiveelements"
         }
       ]
     },
@@ -11921,7 +11886,14 @@
       "name": "JS Self-Profiling API",
       "href": "https://wicg.github.io/js-self-profiling/",
       "specrepo": "https://github.com/WICG/js-self-profiling",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "thomas.bertet@gmail.com",
+          "hash": "b4bdf9a",
+          "subject": "Add `js-profiling-lazy` Document-Policy for deferred initialization (#87)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -12456,14 +12428,7 @@
       "href": "https://privacycg.github.io/nav-tracking-mitigations/",
       "specrepo": "https://github.com/privacycg/nav-tracking-mitigations",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2025-11-17",
-          "author": "jdh@chromium.org",
-          "hash": "1be792ecee",
-          "subject": "Silently exit BTM WPTs when third-party cookies are not blocked"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Navigation Timing",
@@ -13558,6 +13523,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "awogbemila@chromium.org",
+          "hash": "105e32e03f",
+          "subject": "[animation-trigger] Rename range boundaries of TimelineTrigger IDLs"
+        },
+        {
           "date": "2026-01-12",
           "author": "awogbemila@chromium.org",
           "hash": "3f9eae44c0",
@@ -13746,6 +13717,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "masayuki@d-toybox.com",
+          "hash": "70b0995064",
+          "subject": "part 1: Make `nsContentUtils::ComparePointsWithIndices` not compare shadow root of the parent with a child"
+        },
+        {
           "date": "2026-01-12",
           "author": "mike@mikepennisi.com",
           "hash": "b46b37bdeb",
@@ -13786,6 +13763,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "philip@foolip.org",
+          "hash": "f4b91347f2",
+          "subject": "Add tests for media element pseudo timing (#56562)"
+        },
         {
           "date": "2026-01-11",
           "author": "58723+ChrisC@users.noreply.github.com",
@@ -14179,6 +14162,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-13",
+          "author": "fs@opera.com",
+          "hash": "1fe7c4f4f4",
+          "subject": "Export some SVG hit-testing tests to WPT"
+        },
+        {
           "date": "2026-01-09",
           "author": "mike@mikepennisi.com",
           "hash": "181e65af8a",
@@ -14453,18 +14442,6 @@
           "author": "ftang@google.com",
           "hash": "4926520",
           "subject": "Update README.md"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "FrankYFTang@users.noreply.github.com",
-          "hash": "f0e7daa",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2025-11-18",
-          "author": "andre.bargull@gmail.com",
-          "hash": "a97b136",
-          "subject": "Normative: Add more explicit algorithms for lookups (#92)"
         }
       ],
       "testlog": []
@@ -14555,6 +14532,30 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "tjc@igalia.com",
+          "hash": "e65f411f",
+          "subject": "Editorial: Change check to assertion in IsValidDuration"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "tjc@igalia.com",
+          "hash": "92f0ba98",
+          "subject": "Polyfill: Change check to assertion in LeapYear (#3232)"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "tjc@igalia.com",
+          "hash": "ab79eb32",
+          "subject": "Revert change to sameTemporalType and change checks in formatRange and formatRangeToParts"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "tjc@igalia.com",
+          "hash": "876bb19e",
+          "subject": "Polyfill: Change check to assertion in sameTemporalType"
+        },
         {
           "date": "2026-01-13",
           "author": "pchimento@igalia.com",
@@ -14896,42 +14897,6 @@
           "author": "tjc@igalia.com",
           "hash": "17e12be0",
           "subject": "Normative: Change NudgeToCalendarUnit to use relative date when comparing durations"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "0df570c7",
-          "subject": "Polyfill: Correctly calculate negative leap years in Hebrew calendar"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "49e2d1d3",
-          "subject": "Polyfill: Handle removal of Coptic ERA0"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "314b1128",
-          "subject": "Polyfill: Handle change of formatted Śaka era name"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "835c195b",
-          "subject": "Polyfill: Handle new \"Mo11\" and \"Mo9bis\" formats coming from ICU"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "af87126b",
-          "subject": "Polyfill: Fix error messages for Dangi calendar"
-        },
-        {
-          "date": "2025-11-17",
-          "author": "pchimento@igalia.com",
-          "hash": "6f947a70",
-          "subject": "Polyfill: Fix bug with overflow option not being preserved"
         }
       ],
       "testlog": []
@@ -15119,6 +15084,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-01-13",
+          "author": "mike@mikewest.org",
+          "hash": "b6b3251",
+          "subject": "Define the \"extract an origin\" operation"
+        },
+        {
           "date": "2026-01-10",
           "author": "hello@nektro.net",
           "hash": "e69e0a8",
@@ -15223,6 +15194,18 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "github-actions[bot]@users.noreply.github.com",
+          "hash": "4c60da4b",
+          "subject": "Chore: Format files with Prettier"
+        },
+        {
+          "date": "2026-01-13",
+          "author": "zak.kinsey@targetstream.com",
+          "hash": "5e119884",
+          "subject": "Editorial: Rename PDF-Object to be named (#2688)"
+        },
         {
           "date": "2026-01-08",
           "author": "44789917+janewman@users.noreply.github.com",
@@ -15477,6 +15460,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-13",
+          "author": "awogbemila@chromium.org",
+          "hash": "105e32e03f",
+          "subject": "[animation-trigger] Rename range boundaries of TimelineTrigger IDLs"
+        },
         {
           "date": "2026-01-09",
           "author": "kevers@google.com",
@@ -16293,6 +16282,24 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-14",
+          "author": "mail@hskupin.info",
+          "hash": "abc4b52831",
+          "subject": "[wdspec] Improve tests when \"implicit\" and \"pageLoad\" timeouts are set to \"null\"."
+        },
+        {
+          "date": "2026-01-14",
+          "author": "agoloman@mozilla.com",
+          "hash": "172ae223a5",
+          "subject": "Revert \"Bug 2008345 - [wdspec] Improve tests when \"implicit\" and \"pageLoad\" timeouts are set to \"null\". \" for causing build bustages @rust.mk."
+        },
+        {
+          "date": "2026-01-14",
+          "author": "mail@hskupin.info",
+          "hash": "611b17a6b7",
+          "subject": "[wdspec] Improve tests when \"implicit\" and \"pageLoad\" timeouts are set to \"null\"."
+        },
+        {
           "date": "2026-01-09",
           "author": "aborovova@mozilla.com",
           "hash": "0f99fcd48e",
@@ -17025,6 +17032,12 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "dneto@google.com",
+          "hash": "a9a4b848",
+          "subject": "Clarify _disambiguate_template (#5510)"
+        },
         {
           "date": "2026-01-13",
           "author": "jimb@red-bean.com",
@@ -17931,6 +17944,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-01-13",
+          "author": "dneto@google.com",
+          "hash": "a9a4b848",
+          "subject": "Clarify _disambiguate_template (#5510)"
+        },
         {
           "date": "2026-01-13",
           "author": "jimb@red-bean.com",
