@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-11-23T07:18:05.123Z",
-  "until": "2026-01-19T07:18:05.123Z",
+  "since": "2025-11-24T07:16:47.407Z",
+  "until": "2026-01-20T07:16:47.407Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -306,14 +306,7 @@
       "name": "Clipboard API and events",
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
-      "speclog": [
-        {
-          "date": "2025-11-24",
-          "author": "roraja@microsoft.com",
-          "hash": "ab5f530",
-          "subject": "Add comprehensive clipboardchange event API specification (#239)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-01-09",
@@ -622,6 +615,96 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "jkew@mozilla.com",
+          "hash": "64beafa48c",
+          "subject": "Ensure text-autospace is set to no-autospace for preformatted elements to maintain the expected character grid."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "680e4cf3fc",
+          "subject": "Move css-shadow-parts/ tests to css-shadow/part/"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "1242323699",
+          "subject": "Move css-scoping/ tests to css-shadow/ to match spec"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "emilio@crisal.io",
+          "hash": "8d0700fe13",
+          "subject": "Also remove the text from anchor-scroll-fixedpos-003-ref.html"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "emilio@crisal.io",
+          "hash": "d7e246a0cc",
+          "subject": "Update scroll shift once per frame at resize observer time."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "nrosenthal@chromium.org",
+          "hash": "268a423830",
+          "subject": "Account for shape() when interpolating composited transition"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "moonira@google.com",
+          "hash": "c39640899c",
+          "subject": "Resolve property ID before getting property name"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "nrosenthal@chromium.org",
+          "hash": "37e65f647c",
+          "subject": "Peek instead of consume for shape(curve ... with)"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "2d015a58bd",
+          "subject": "Add wpt test for unresolved inherited color-contrast()"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "johannes.odland@gmail.com",
+          "hash": "5aef6f187c",
+          "subject": "Allow space for classic scrollbars"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "mstensho@chromium.org",
+          "hash": "ce54b18204",
+          "subject": "[anchor] Main thread animation if first frame doesn't change anything."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "sstanca@mozilla.com",
+          "hash": "17b482bd74",
+          "subject": "Revert \"Bug 1950251 - mark anchor-scroll-fixedpos-003.html as failing on win.\" for causing windows wpt failures in anchor-scroll-fixedpos-003.html."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "sstanca@mozilla.com",
+          "hash": "33b5f3e131",
+          "subject": "mark anchor-scroll-fixedpos-003.html as failing on win."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "b5b626509a",
+          "subject": "[layout] Fix nullptr dereference within FirstLineStyleWithoutFallback"
+        },
         {
           "date": "2026-01-16",
           "author": "obrufau@igalia.com",
@@ -2973,24 +3056,6 @@
           "author": "moonira@google.com",
           "hash": "403c505ccb",
           "subject": "Implement basic support for random() function"
-        },
-        {
-          "date": "2025-11-24",
-          "author": "chorotan@mozilla.com",
-          "hash": "dc6d2611a5",
-          "subject": "Revert \"Bug 1994083 - Add WPTs for abspos fragmentation in vertical-rl writing-mode. \" for causing Wr failures nsFrameList::ContinueRemoveFrame related"
-        },
-        {
-          "date": "2025-11-24",
-          "author": "tlin@mozilla.com",
-          "hash": "a705ef13c7",
-          "subject": "Add WPTs for abspos fragmentation in vertical-rl writing-mode."
-        },
-        {
-          "date": "2025-11-23",
-          "author": "emilio@crisal.io",
-          "hash": "a96d78ce22",
-          "subject": "Implement Document.activeViewTransition."
         }
       ]
     },
@@ -3008,6 +3073,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "b5b626509a",
+          "subject": "[layout] Fix nullptr dereference within FirstLineStyleWithoutFallback"
+        },
         {
           "date": "2026-01-16",
           "author": "ikilpatrick@chromium.org",
@@ -3419,6 +3490,42 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "emilio@crisal.io",
+          "hash": "8d0700fe13",
+          "subject": "Also remove the text from anchor-scroll-fixedpos-003-ref.html"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "emilio@crisal.io",
+          "hash": "d7e246a0cc",
+          "subject": "Update scroll shift once per frame at resize observer time."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "mstensho@chromium.org",
+          "hash": "ce54b18204",
+          "subject": "[anchor] Main thread animation if first frame doesn't change anything."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "sstanca@mozilla.com",
+          "hash": "17b482bd74",
+          "subject": "Revert \"Bug 1950251 - mark anchor-scroll-fixedpos-003.html as failing on win.\" for causing windows wpt failures in anchor-scroll-fixedpos-003.html."
+        },
+        {
+          "date": "2026-01-19",
+          "author": "sstanca@mozilla.com",
+          "hash": "33b5f3e131",
+          "subject": "mark anchor-scroll-fixedpos-003.html as failing on win."
+        },
+        {
           "date": "2026-01-16",
           "author": "dshin@mozilla.com",
           "hash": "9e9d1a8b07",
@@ -3646,6 +3753,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
         {
           "date": "2025-12-26",
           "author": "sam@webkit.org",
@@ -3893,18 +4006,6 @@
           "author": "tlin@mozilla.com",
           "hash": "36a35534ec",
           "subject": "Add WPTs for abspos fragmentation in vertical-rl writing-mode."
-        },
-        {
-          "date": "2025-11-24",
-          "author": "chorotan@mozilla.com",
-          "hash": "dc6d2611a5",
-          "subject": "Revert \"Bug 1994083 - Add WPTs for abspos fragmentation in vertical-rl writing-mode. \" for causing Wr failures nsFrameList::ContinueRemoveFrame related"
-        },
-        {
-          "date": "2025-11-24",
-          "author": "tlin@mozilla.com",
-          "hash": "a705ef13c7",
-          "subject": "Add WPTs for abspos fragmentation in vertical-rl writing-mode."
         }
       ]
     },
@@ -4028,6 +4129,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "2d015a58bd",
+          "subject": "Add wpt test for unresolved inherited color-contrast()"
+        },
         {
           "date": "2026-01-16",
           "author": "stalgia@bocoup.com",
@@ -4159,6 +4266,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
           "date": "2026-01-12",
           "author": "mike@mikepennisi.com",
           "hash": "a83defb608",
@@ -4289,7 +4402,14 @@
           "subject": "[css-counter-styles-3][editorial] Fixed Bikeshed warnings"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        }
+      ]
     },
     {
       "name": "CSS Display",
@@ -5300,6 +5420,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "nrosenthal@chromium.org",
+          "hash": "268a423830",
+          "subject": "Account for shape() when interpolating composited transition"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "nrosenthal@chromium.org",
+          "hash": "37e65f647c",
+          "subject": "Peek instead of consume for shape(curve ... with)"
+        },
+        {
           "date": "2026-01-14",
           "author": "fs@opera.com",
           "hash": "8cd681edfd",
@@ -5734,6 +5866,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "johannes.odland@gmail.com",
+          "hash": "5aef6f187c",
+          "subject": "Allow space for classic scrollbars"
+        },
+        {
           "date": "2026-01-15",
           "author": "johannes.odland@nrk.no",
           "hash": "b71c923c87",
@@ -6000,6 +6144,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "1242323699",
+          "subject": "Move css-scoping/ tests to css-shadow/ to match spec"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
           "date": "2026-01-14",
           "author": "mike@mikepennisi.com",
           "hash": "0c84aee08b",
@@ -6126,6 +6282,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "680e4cf3fc",
+          "subject": "Move css-shadow-parts/ tests to css-shadow/part/"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
         {
           "date": "2026-01-16",
           "author": "futhark@chromium.org",
@@ -6418,6 +6586,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "jkew@mozilla.com",
+          "hash": "64beafa48c",
+          "subject": "Ensure text-autospace is set to no-autospace for preformatted elements to maintain the expected character grid."
+        },
         {
           "date": "2026-01-16",
           "author": "stalgia@bocoup.com",
@@ -6934,6 +7108,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "moonira@google.com",
+          "hash": "c39640899c",
+          "subject": "Resolve property ID before getting property name"
+        },
+        {
           "date": "2026-01-16",
           "author": "sakhapov@chromium.org",
           "hash": "554f5a3f3f",
@@ -7227,12 +7407,6 @@
           "author": "skobes@chromium.org",
           "hash": "7733484b3e",
           "subject": "Paint transition pseudos on top of everything else in the scope."
-        },
-        {
-          "date": "2025-11-23",
-          "author": "emilio@crisal.io",
-          "hash": "a96d78ce22",
-          "subject": "Implement Document.activeViewTransition."
         }
       ]
     },
@@ -7351,6 +7525,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
         {
           "date": "2026-01-16",
           "author": "sajidanwar94@gmail.com",
@@ -7800,6 +7980,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "andre.bargull@gmail.com",
+          "hash": "60418622f4",
+          "subject": "The \"timeZoneName\" option can't be used in a standalone context (#4870)"
+        },
         {
           "date": "2026-01-16",
           "author": "tjc@igalia.com",
@@ -8686,6 +8872,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "tjc@igalia.com",
+          "hash": "c9aa6126e8",
+          "subject": "[Temporal] Remove test/staging/Temporal/v8/calendar-date-until.js (#4817)"
+        },
         {
           "date": "2026-01-16",
           "author": "trflynn89@pm.me",
@@ -10341,7 +10533,14 @@
       "name": "Geolocation Sensor",
       "href": "https://w3c.github.io/geolocation-sensor/",
       "specrepo": "https://github.com/w3c/geolocation-sensor",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-01-19",
+          "author": "anssi.kostiainen@gmail.com",
+          "hash": "390b5f1",
+          "subject": "Update status of this document for DISC (#65)"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/geolocation-sensor/blob/HEAD/CONTRIBUTING.md"
     },
@@ -10646,6 +10845,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "nrosenthal@chromium.org",
+          "hash": "a6ddeb1a63",
+          "subject": "Enable {runScripts} option in stream{Append}HTMLUnsafe"
+        },
         {
           "date": "2026-01-17",
           "author": "lwarlow@igalia.com",
@@ -13918,6 +14123,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "futhark@chromium.org",
+          "hash": "e965dc6af7",
+          "subject": "Update spec references in tests for css-scoping/"
+        },
+        {
           "date": "2026-01-16",
           "author": "stalgia@bocoup.com",
           "hash": "6e5c8c04dd",
@@ -14198,6 +14409,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "hiroshige@chromium.org",
+          "hash": "2dc0ad4f33",
+          "subject": "[WPT] Add Client Hints tests for speculation rules prefetch + redirect"
+        },
+        {
           "date": "2026-01-15",
           "author": "jcscottiii@users.noreply.github.com",
           "hash": "ea394a4423",
@@ -14298,14 +14515,7 @@
       "href": "https://streams.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/streams",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2025-11-24",
-          "author": "649348+MattiasBuelens@users.noreply.github.com",
-          "hash": "4c88bdd",
-          "subject": "Meta: fix ref for break"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -14322,6 +14532,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "dmangal@microsoft.com",
+          "hash": "479c3f99e5",
+          "subject": "[SVG] Disallow Unitless Lengths in CSS Variable Substitution for `SVGLength`"
+        },
         {
           "date": "2026-01-16",
           "author": "stalgia@bocoup.com",
@@ -14612,32 +14828,7 @@
       "name": "JSON.parse source text access",
       "href": "https://tc39.es/proposal-json-parse-with-source/",
       "specrepo": "https://github.com/tc39/proposal-json-parse-with-source",
-      "speclog": [
-        {
-          "date": "2025-11-23",
-          "author": "gibson042@users.noreply.github.com",
-          "hash": "95cc6ec",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2025-11-23",
-          "author": "richard.gibson@gmail.com",
-          "hash": "932c7c7",
-          "subject": "Meta: Update spec to Stage 4 (#51)"
-        },
-        {
-          "date": "2025-11-23",
-          "author": "gibson042@users.noreply.github.com",
-          "hash": "22ad264",
-          "subject": "fixup: [spec] `npm run build`"
-        },
-        {
-          "date": "2025-11-23",
-          "author": "richard.gibson@gmail.com",
-          "hash": "80a8883",
-          "subject": "Meta: Advance to Stage 4 (#50)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -14680,6 +14871,12 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2026-01-19",
+          "author": "tjc@igalia.com",
+          "hash": "a91494f8",
+          "subject": "Polyfill: Change check to assertion in dateUntil"
+        },
         {
           "date": "2026-01-15",
           "author": "tjc@igalia.com",
@@ -15314,6 +15511,18 @@
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
         {
+          "date": "2026-01-19",
+          "author": "49305434+daniel-montalvo@users.noreply.github.com",
+          "hash": "1ad5c8ab",
+          "subject": "Editorial: Change failures to warnings for RFC2119 keywords (#2651)"
+        },
+        {
+          "date": "2026-01-19",
+          "author": "49699333+dependabot[bot]@users.noreply.github.com",
+          "hash": "f06fe819",
+          "subject": "chore: dependabot: bump actions/setup-node from 3 to 6 (#2714)"
+        },
+        {
           "date": "2026-01-16",
           "author": "dmontalvo@w3.org",
           "hash": "56263300",
@@ -15443,6 +15652,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2026-01-19",
+          "author": "tlively@google.com",
+          "hash": "a9a0a31e5",
+          "subject": "[js-api] Test validation of string builtin types"
+        },
+        {
           "date": "2026-01-16",
           "author": "rossberg@mpi-sws.org",
           "hash": "f2d26ea8d",
@@ -15536,6 +15751,12 @@
       "testrepo": "WebAssembly/spec",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-19",
+          "author": "tlively@google.com",
+          "hash": "a9a0a31e5",
+          "subject": "[js-api] Test validation of string builtin types"
+        },
         {
           "date": "2026-01-05",
           "author": "mliedtke@chromium.org",
@@ -16293,6 +16514,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-01-19",
+          "author": "khalid.alhaddad98@gmail.com",
+          "hash": "a6c0050d0c",
+          "subject": "Update asserts for bidi network wdspec tests to take a single expected object."
+        },
+        {
           "date": "2026-01-17",
           "author": "yezhizhenjiakang@gmail.com",
           "hash": "188c47200d",
@@ -17032,6 +17259,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2026-01-19",
+          "author": "dneto@google.com",
+          "hash": "586e9b9d",
+          "subject": "wgsl: entry point return can have arrays (for clip-distances) (#5506)"
+        },
+        {
           "date": "2026-01-15",
           "author": "senorblanco@chromium.org",
           "hash": "6f20ad02",
@@ -17350,6 +17583,12 @@
       "href": "https://w3c.github.io/webrtc-pc/",
       "specrepo": "https://github.com/w3c/webrtc-pc",
       "speclog": [
+        {
+          "date": "2026-01-19",
+          "author": "henbos@users.noreply.github.com",
+          "hash": "741c9788",
+          "subject": "Update to ReSpec version 35.6.1"
+        },
         {
           "date": "2026-01-15",
           "author": "dom@w3.org",
@@ -17853,6 +18092,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-01-19",
+          "author": "dneto@google.com",
+          "hash": "586e9b9d",
+          "subject": "wgsl: entry point return can have arrays (for clip-distances) (#5506)"
+        },
         {
           "date": "2026-01-15",
           "author": "senorblanco@chromium.org",
