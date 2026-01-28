@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-12-01T07:16:43.858Z",
-  "until": "2026-01-27T07:16:43.858Z",
+  "since": "2025-12-02T07:15:42.682Z",
+  "until": "2026-01-28T07:15:42.682Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -58,6 +58,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -602,6 +608,60 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-28",
+          "author": "stalgia@bocoup.com",
+          "hash": "6dac99edd4",
+          "subject": "Map `overflow-clip`, `overflow-clip-margin`, `overflow-wrap` (#56778)"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "seokho@chromium.org",
+          "hash": "784717ed4f",
+          "subject": "Implement the CSS image-animation property"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "f47e795f6c",
+          "subject": "Add fuzz annotation to WPT fragmented-at-start-ignored.html. (#57369)"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "zeesuyeon@gmail.com",
+          "hash": "3e32b1b196",
+          "subject": "Throw TypeError for incompatible types in CSSNumericValue operations"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "moonira@google.com",
+          "hash": "4af83765a2",
+          "subject": "Add 'none' keyword for upper/lower bounds of clamp()"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "6829c2ad47",
+          "subject": "Shorten the text in new-content-is-inline.html (#57352)"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "tlin@mozilla.com",
+          "hash": "e073f19918",
+          "subject": "Use available inline-size to resolve percentage column-gap in multicol."
+        },
+        {
+          "date": "2026-01-27",
+          "author": "tlin@mozilla.com",
+          "hash": "cb90ec6f2a",
+          "subject": "Use available inline-size to compute column-width in multicol."
+        },
+        {
+          "date": "2026-01-27",
+          "author": "sukil@mozilla.com",
+          "hash": "895c0a6528",
+          "subject": "Support xywh() and rect() functions for shape-outside."
+        },
         {
           "date": "2026-01-26",
           "author": "dholbert@cs.stanford.edu",
@@ -2905,78 +2965,6 @@
           "author": "obrufau@igalia.com",
           "hash": "02084ca260",
           "subject": "script: Reconstruct box tree when `order` changes"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pdr@chromium.org",
-          "hash": "b9e5b3c3bb",
-          "subject": "Add a test for hit testing with perspective, clipping, and border radius"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "almaher@microsoft.com",
-          "hash": "cd32869371",
-          "subject": "[Masonry] Update remaining refs to masonry in wpt tests"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "stalgia@bocoup.com",
-          "hash": "755b6e4772",
-          "subject": "Map `tab-size` web-feature (#56375)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "stalgia@bocoup.com",
-          "hash": "e6f03b8dc3",
-          "subject": "Map `style` and `style-attr` web-features (#56309)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "skobes@chromium.org",
-          "hash": "a81c0440ce",
-          "subject": "ScopedVT: Make PaintLayer::HitTest treat ::v-t as an overlay."
-        },
-        {
-          "date": "2025-12-01",
-          "author": "almaher@microsoft.com",
-          "hash": "05224eece5",
-          "subject": "[Masonry] Update masonry-direction to grid-lanes-direction"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "moonira@google.com",
-          "hash": "0a6b7f67ac",
-          "subject": "Compute computed value of random() function with percentages"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "dgrogan@chromium.org",
-          "hash": "d7ca0083bc",
-          "subject": "[viewport units] Respond to dynamic changes to :root's scrollbars"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "sesse@chromium.org",
-          "hash": "8cb2a00f41",
-          "subject": "Remove the @contents mixin parameter."
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jja08111@gmail.com",
-          "hash": "ee3c6083c1",
-          "subject": "[css-lists] Support for parsing counter-reset: reversed(counter-name)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "sesse@chromium.org",
-          "hash": "c0b483d0c1",
-          "subject": "Fix DCHECK when parsing invalid :is()/:where()."
-        },
-        {
-          "date": "2025-12-01",
-          "author": "sickl8@protonmail.com",
-          "hash": "618a4a187d",
-          "subject": "Implement recommended fix for zero width/height on `range.getBoundingClientRect()`."
         }
       ]
     },
@@ -4446,12 +4434,6 @@
           "author": "obrufau@igalia.com",
           "hash": "02084ca260",
           "subject": "script: Reconstruct box tree when `order` changes"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "almaher@microsoft.com",
-          "hash": "cd32869371",
-          "subject": "[Masonry] Update remaining refs to masonry in wpt tests"
         }
       ]
     },
@@ -5110,18 +5092,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "c17bf5de96",
           "subject": "[css-grid-3] Add alternative grid-lanes orientation switch"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "almaher@microsoft.com",
-          "hash": "cd32869371",
-          "subject": "[Masonry] Update remaining refs to masonry in wpt tests"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "almaher@microsoft.com",
-          "hash": "05224eece5",
-          "subject": "[Masonry] Update masonry-direction to grid-lanes-direction"
         }
       ]
     },
@@ -5397,12 +5367,6 @@
           "author": "stalgia@bocoup.com",
           "hash": "ec87298a10",
           "subject": "Map `text-stroke-fill` web-feature (#56476)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jja08111@gmail.com",
-          "hash": "ee3c6083c1",
-          "subject": "[css-lists] Support for parsing counter-reset: reversed(counter-name)"
         }
       ]
     },
@@ -5572,6 +5536,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-27",
+          "author": "tlin@mozilla.com",
+          "hash": "e073f19918",
+          "subject": "Use available inline-size to resolve percentage column-gap in multicol."
+        },
+        {
+          "date": "2026-01-27",
+          "author": "tlin@mozilla.com",
+          "hash": "cb90ec6f2a",
+          "subject": "Use available inline-size to compute column-width in multicol."
+        },
+        {
           "date": "2026-01-26",
           "author": "mstensho@chromium.org",
           "hash": "49dbfbe8f6",
@@ -5727,6 +5703,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-28",
+          "author": "stalgia@bocoup.com",
+          "hash": "6dac99edd4",
+          "subject": "Map `overflow-clip`, `overflow-clip-margin`, `overflow-wrap` (#56778)"
+        },
+        {
           "date": "2026-01-21",
           "author": "steven.novaryo@gmail.com",
           "hash": "544762f91b",
@@ -5815,12 +5797,6 @@
           "author": "gnarf37@gmail.com",
           "hash": "254577dcb3",
           "subject": "classify scroll-buttons (#56469)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pdr@chromium.org",
-          "hash": "b9e5b3c3bb",
-          "subject": "Add a test for hit testing with perspective, clipping, and border radius"
         }
       ]
     },
@@ -6386,6 +6362,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-27",
+          "author": "sukil@mozilla.com",
+          "hash": "895c0a6528",
+          "subject": "Support xywh() and rect() functions for shape-outside."
+        },
+        {
           "date": "2026-01-12",
           "author": "58723+ChrisC@users.noreply.github.com",
           "hash": "4fa1c0d71f",
@@ -6530,14 +6512,7 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2025-12-01",
-          "author": "stalgia@bocoup.com",
-          "hash": "e6f03b8dc3",
-          "subject": "Map `style` and `style-attr` web-features (#56309)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Syntax",
@@ -6619,6 +6594,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-01-28",
+          "author": "stalgia@bocoup.com",
+          "hash": "6dac99edd4",
+          "subject": "Map `overflow-clip`, `overflow-clip-margin`, `overflow-wrap` (#56778)"
+        },
         {
           "date": "2026-01-23",
           "author": "stalgia@bocoup.com",
@@ -6738,12 +6719,6 @@
           "author": "stalgia@bocoup.com",
           "hash": "d9a9fbe766",
           "subject": "Map `text-align` and `text-align-last` web-features (#56426)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "stalgia@bocoup.com",
-          "hash": "755b6e4772",
-          "subject": "Map `tab-size` web-feature (#56375)"
         }
       ]
     },
@@ -6942,6 +6917,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-28",
+          "author": "stalgia@bocoup.com",
+          "hash": "6dac99edd4",
+          "subject": "Map `overflow-clip`, `overflow-clip-margin`, `overflow-wrap` (#56778)"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "zeesuyeon@gmail.com",
+          "hash": "3e32b1b196",
+          "subject": "Throw TypeError for incompatible types in CSSNumericValue operations"
+        },
+        {
           "date": "2026-01-16",
           "author": "stalgia@bocoup.com",
           "hash": "2c09532867",
@@ -7138,8 +7125,21 @@
       "href": "https://drafts.csswg.org/css-values/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "jackalmage@gmail.com",
+          "hash": "5ef053ced",
+          "subject": "[css-values-5] Add an image showing the random caching, and rephrase the intro. #13132"
+        }
+      ],
       "testlog": [
+        {
+          "date": "2026-01-27",
+          "author": "moonira@google.com",
+          "hash": "4af83765a2",
+          "subject": "Add 'none' keyword for upper/lower bounds of clamp()"
+        },
         {
           "date": "2026-01-19",
           "author": "moonira@google.com",
@@ -7295,18 +7295,6 @@
           "author": "sajidanwar94@gmail.com",
           "hash": "ee55354edb",
           "subject": "Wait for font loading in WPT rcap, rch, rex, ric, rlh invalidation tests."
-        },
-        {
-          "date": "2025-12-01",
-          "author": "moonira@google.com",
-          "hash": "0a6b7f67ac",
-          "subject": "Compute computed value of random() function with percentages"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "dgrogan@chromium.org",
-          "hash": "d7ca0083bc",
-          "subject": "[viewport units] Respond to dynamic changes to :root's scrollbars"
         }
       ]
     },
@@ -7388,6 +7376,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-28",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "f47e795f6c",
+          "subject": "Add fuzz annotation to WPT fragmented-at-start-ignored.html. (#57369)"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "dholbert@cs.stanford.edu",
+          "hash": "6829c2ad47",
+          "subject": "Shorten the text in new-content-is-inline.html (#57352)"
+        },
+        {
           "date": "2026-01-26",
           "author": "dholbert@cs.stanford.edu",
           "hash": "fadfaa1a53",
@@ -7452,12 +7452,6 @@
           "author": "kevers@google.com",
           "hash": "8ef94d2266",
           "subject": "[scoped-vt] VT pseudos escape overflow clip on the scoped element."
-        },
-        {
-          "date": "2025-12-01",
-          "author": "skobes@chromium.org",
-          "hash": "a81c0440ce",
-          "subject": "ScopedVT: Make PaintLayer::HitTest treat ::v-t as an overlay."
         }
       ]
     },
@@ -7555,6 +7549,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "andruud@gmail.com",
+          "hash": "4c5fb120e",
+          "subject": "[css-mixins-1] Flesh out CSSOM for mixins (#13027)"
+        },
         {
           "date": "2025-12-30",
           "author": "gui.lebas@gmail.com",
@@ -7704,12 +7704,6 @@
           "author": "gnarf37@gmail.com",
           "hash": "c7a1e8924d",
           "subject": "classify screen web feature (#56464)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "sickl8@protonmail.com",
-          "hash": "618a4a187d",
-          "subject": "Implement recommended fix for zero width/height on `range.getBoundingClientRect()`."
         }
       ]
     },
@@ -7798,18 +7792,6 @@
           "author": "annevk@annevk.nl",
           "hash": "769aedf",
           "subject": "Editorial: modernize convert nodes into a node"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "annevk@annevk.nl",
-          "hash": "61246e6",
-          "subject": "Editorial: modernize mutation observers"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "annevk@annevk.nl",
-          "hash": "7fa95d8",
-          "subject": "Make DOMTokenList's supported token concept also depend on element"
         }
       ],
       "testlog": [
@@ -8389,78 +8371,6 @@
           "author": "manishsmail@gmail.com",
           "hash": "042a826c91",
           "subject": "Don't use octal literals"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "6aee65b66c",
-          "subject": "Temporal: Move test for Indian calendar out of staging (#4730)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "f741f72a5d",
-          "subject": "Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-buddhist.js (#4736)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "e0449036c1",
-          "subject": "Temporal: Remove Islamic calendar staging tests and add new equivalent tests (#4732)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "43e04d67b7",
-          "subject": "Intl Era Monthcode: Fix ethiopic years in extreme-dates.js tests"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "d64bae8abb",
-          "subject": "Move tests for Chinese leap month addition out of staging, and expand"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "6ea52ea705",
-          "subject": "Move tests for Hebrew fields resolution out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "c17492f84c",
-          "subject": "Move tests for Hebrew leap month resolution out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "cb7d6b1451",
-          "subject": "Move tests for Hebrew leap month addition out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "d36f2d88ef",
-          "subject": "Move tests for Gregorian PlainMonthDay month codes out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "7d69f59f37",
-          "subject": "Temporal: Move tests for Japanese eras/era boundaries out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "91cc69ead4",
-          "subject": " Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-{coptic,ethioaa,ethiopic}.js"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "237fccc129",
-          "subject": "Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-gregory.js"
         }
       ]
     },
@@ -8613,39 +8523,15 @@
           "author": "m.ficarra@f5.com",
           "hash": "8a7178c7",
           "subject": "Editorial: use an AC in PerformPromiseAny (#3729)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "aapo.alasuutari@gmail.com",
-          "hash": "4d2116ba",
-          "subject": "Normative: DoWait byteIndexInBuffer is miscalculated (#3724)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "m.ficarra@f5.com",
-          "hash": "5ea77212",
-          "subject": "Editorial: use an AC in PerformPromiseAll (#3722)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "m.ficarra@f5.com",
-          "hash": "aefd0963",
-          "subject": "Normative: add Iterator.concat (#3713)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "m.ficarra@f5.com",
-          "hash": "c541680b",
-          "subject": "Editorial: replace [[UnderlyingIterator]] with [[UnderlyingIterators]] (#3712)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "m.ficarra@f5.com",
-          "hash": "74808e4d",
-          "subject": "Meta: bump ecmarkup to 21.5.0 (#3712)"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-27",
+          "author": "t01092750632@gmail.com",
+          "hash": "14afd35903",
+          "subject": "Added two tests to Array.prototype.fill by modifying coerced-indexes.js"
+        },
         {
           "date": "2026-01-26",
           "author": "t01092750632@gmail.com",
@@ -9227,72 +9113,6 @@
           "author": "pchimento@igalia.com",
           "hash": "33a0ebb61c",
           "subject": "Intl Era Monthcode: Move non-positive eraYear tests out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "6aee65b66c",
-          "subject": "Temporal: Move test for Indian calendar out of staging (#4730)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "f741f72a5d",
-          "subject": "Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-buddhist.js (#4736)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "e0449036c1",
-          "subject": "Temporal: Remove Islamic calendar staging tests and add new equivalent tests (#4732)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "d64bae8abb",
-          "subject": "Move tests for Chinese leap month addition out of staging, and expand"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "6ea52ea705",
-          "subject": "Move tests for Hebrew fields resolution out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "c17492f84c",
-          "subject": "Move tests for Hebrew leap month resolution out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "cb7d6b1451",
-          "subject": "Move tests for Hebrew leap month addition out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "d36f2d88ef",
-          "subject": "Move tests for Gregorian PlainMonthDay month codes out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "7d69f59f37",
-          "subject": "Temporal: Move tests for Japanese eras/era boundaries out of staging"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "91cc69ead4",
-          "subject": " Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-{coptic,ethioaa,ethiopic}.js"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "tjc@igalia.com",
-          "hash": "237fccc129",
-          "subject": "Split out tests from test/staging/Intl402/Temporal/old/non-iso-calendars-gregory.js"
         }
       ]
     },
@@ -9363,14 +9183,7 @@
       "name": "Encrypted Media Extensions",
       "href": "https://w3c.github.io/encrypted-media/",
       "specrepo": "https://github.com/w3c/encrypted-media",
-      "speclog": [
-        {
-          "date": "2025-12-02",
-          "author": "chris@chrisneedham.com",
-          "hash": "084ca4f",
-          "subject": "Update registry requirements"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -9407,6 +9220,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9432,6 +9251,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -9459,6 +9284,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9484,6 +9315,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -9511,6 +9348,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9536,6 +9379,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -9563,6 +9412,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9588,6 +9443,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -9615,6 +9476,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9640,6 +9507,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -9667,6 +9540,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9693,6 +9572,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -9718,6 +9603,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -10479,15 +10370,45 @@
           "author": "zcorpan@gmail.com",
           "hash": "eab6ef44",
           "subject": "Specify document conformance for headingoffset/headingreset"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "annevk@annevk.nl",
-          "hash": "d11c0730",
-          "subject": "Correct attribute index for empty string values"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-28",
+          "author": "soosungp33@gmail.com",
+          "hash": "9dbd401882",
+          "subject": "Fix missing upgrade when custom elements are defined after initialize()"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "soosungp33@gmail.com",
+          "hash": "7cc53e677d",
+          "subject": "Add missing WPT coverage for CustomElementRegistry.initialize()"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "perryuwang@gmail.com",
+          "hash": "2e2e15b1d4",
+          "subject": "Fix focus navigation for popover that is shadow host"
+        },
+        {
+          "date": "2026-01-28",
+          "author": "nrosenthal@chromium.org",
+          "hash": "66d5d24159",
+          "subject": "When <link rel=stylesheet> media attribute changes, don't re-fetch"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "zcorpan@gmail.com",
+          "hash": "f67ee20aa7",
+          "subject": "HTML: style load event not fired for DOM mutations while the element is still parsed"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "annevk@annevk.nl",
+          "hash": "40d3eb8f31",
+          "subject": "Add coverage for other elements with UA shadow roots"
+        },
         {
           "date": "2026-01-27",
           "author": "jaysonchen@microsoft.com",
@@ -11585,60 +11506,6 @@
           "author": "masonf@chromium.org",
           "hash": "b90da17d59",
           "subject": "More cleanup of menu elements code [6/4]"
-        },
-        {
-          "date": "2025-12-02",
-          "author": "caseq@chromium.org",
-          "hash": "eca405fadf",
-          "subject": "Add a WPT for microtasks dispatched from pagehide event handler"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jonathanjlee@google.com",
-          "hash": "37b6423453",
-          "subject": "Use backticks"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jpgravel@chromium.org",
-          "hash": "b09e79bd67",
-          "subject": "Fix WPT canvas test comment indentation and punctuation"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jonathan-j-lee@users.noreply.github.com",
-          "hash": "e55569aae1",
-          "subject": "Reland \"[WPT] Add tests for User Agent Data on Fuchsia\" (#56371)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "stalgia@bocoup.com",
-          "hash": "e6f03b8dc3",
-          "subject": "Map `style` and `style-attr` web-features (#56309)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "fs@opera.com",
-          "hash": "ac34fea8c0",
-          "subject": "Fix CanvasRenderingContext2D.restore() on zero-size canvas"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "jpgravel@chromium.org",
-          "hash": "451436260d",
-          "subject": "Resynchronize generated WPT canvas test with the YAML definition"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "ccameron@chromium.org",
-          "hash": "c50b1117d0",
-          "subject": "Add WPT tests for srgb-linear and display-p3-linear PredefinedColorSpace"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "andrei.volykhin@gmail.com",
-          "hash": "74082ad941",
-          "subject": "html: Fire the video `resize` event in the expected order"
         }
       ]
     },
@@ -11850,6 +11717,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -12636,6 +12509,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -12661,6 +12540,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -12688,6 +12573,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -12713,6 +12604,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -12740,6 +12637,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -12765,6 +12668,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -12792,6 +12701,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -12818,6 +12733,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -12843,6 +12764,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -12899,6 +12826,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -13255,14 +13188,7 @@
       "name": "Push API",
       "href": "https://w3c.github.io/push-api/",
       "specrepo": "https://github.com/w3c/push-api",
-      "speclog": [
-        {
-          "date": "2025-12-01",
-          "author": "annevk@annevk.nl",
-          "hash": "518d7d6",
-          "subject": "Make permissionState() queue a task"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-01-12",
@@ -13358,12 +13284,6 @@
           "author": "simon.farre.cx@gmail.com",
           "hash": "3992f999a7",
           "subject": "Buffer reports by type separately"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "dom@chromium.org",
-          "hash": "ece6ee69e3",
-          "subject": "Crash: Enforce initialization length of bytes"
         }
       ]
     },
@@ -13658,18 +13578,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "d1fa4de7fd",
           "subject": "[animation-trigger] Parse trigger-scope"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "awogbemila@chromium.org",
-          "hash": "4a38ddc8ad",
-          "subject": "[animation-trigger] Add timeline-trigger-{exit}-range shorthands"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "awogbemila@chromium.org",
-          "hash": "0b29c0ffcb",
-          "subject": "[animation-trigger] Enforce timeline-trigger shorthand order"
         }
       ]
     },
@@ -13947,12 +13855,6 @@
           "author": "stalgia@bocoup.com",
           "hash": "5f8718264e",
           "subject": "Map \"target\" web-feature (#56400)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "sesse@chromium.org",
-          "hash": "c0b483d0c1",
-          "subject": "Fix DCHECK when parsing invalid :is()/:where()."
         }
       ]
     },
@@ -13996,6 +13898,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-01-28",
+          "author": "yyanagisawa@chromium.org",
+          "hash": "5b572b4271",
+          "subject": "Use t.step_timeout in fetch-frame-resource.https.html"
+        },
         {
           "date": "2026-01-23",
           "author": "youennf@users.noreply.github.com",
@@ -14522,6 +14430,18 @@
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "pchimento@igalia.com",
+          "hash": "1fec0fb3",
+          "subject": "Update test262"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "pchimento@igalia.com",
+          "hash": "993e6322",
+          "subject": "Polyfill: Update Meiji era start date"
+        },
+        {
           "date": "2026-01-26",
           "author": "syobon.hinata.public@gmail.com",
           "hash": "fe12f073",
@@ -14874,24 +14794,6 @@
           "author": "tjc@igalia.com",
           "hash": "bc64d40d",
           "subject": "Polyfill: Don't allow offsets of the form +00:0000"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "2cee76af",
-          "subject": "Update test262"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "ef85a85f",
-          "subject": "Polyfill: Apply overflow early in monthDayFromFields"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "pchimento@igalia.com",
-          "hash": "b7d96ecb",
-          "subject": "Polyfill: Improve PlainMonthDay creation in Hijri calendars"
         }
       ],
       "testlog": []
@@ -14985,14 +14887,7 @@
           "subject": "feat: Introduce `emulation.setClientHintsOverride` (#387)"
         }
       ],
-      "testlog": [
-        {
-          "date": "2025-12-01",
-          "author": "jonathan-j-lee@users.noreply.github.com",
-          "hash": "e55569aae1",
-          "subject": "Reland \"[WPT] Add tests for User Agent Data on Fuchsia\" (#56371)"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "UI Events",
@@ -15106,6 +15001,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-01-28",
+          "author": "hello@nektro.net",
+          "hash": "e3c46fdf55",
+          "subject": "url: more drive letter quirk coverage"
+        },
+        {
           "date": "2026-01-11",
           "author": "hello@nektro.net",
           "hash": "81a2aed262",
@@ -15202,6 +15103,18 @@
       "href": "https://w3c.github.io/aria/",
       "specrepo": "https://github.com/w3c/aria",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "github-actions[bot]@users.noreply.github.com",
+          "hash": "13cc8ef4",
+          "subject": "Chore: Format files with Prettier"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "49305434+daniel-montalvo@users.noreply.github.com",
+          "hash": "280727b7",
+          "subject": "Editorial: Pdf aam mappings table import (#2718)"
+        },
         {
           "date": "2026-01-21",
           "author": "49305434+daniel-montalvo@users.noreply.github.com",
@@ -15367,6 +15280,12 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "c066c64b3",
+          "subject": "[spec] Fix limit validation for memory and table types (#2059)"
+        },
         {
           "date": "2026-01-21",
           "author": "tlively@google.com",
@@ -15846,12 +15765,6 @@
           "author": "punithbnayak@chromium.org",
           "hash": "76b9f8405f",
           "subject": "[webaudio-testharness] Migrate retrospective-setValueAtTime.html"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "haddadi.taym@gmail.com",
-          "hash": "56a670787b",
-          "subject": "Fix crash when creating an AudioNode from a closed AudioContext"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -16418,6 +16331,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16443,6 +16362,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16470,6 +16395,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16495,6 +16426,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16522,6 +16459,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16547,6 +16490,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16574,6 +16523,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16599,6 +16554,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16626,6 +16587,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16651,6 +16618,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16678,6 +16651,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16703,6 +16682,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16730,6 +16715,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16755,6 +16746,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16782,6 +16779,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16807,6 +16810,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16834,6 +16843,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
+        {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
           "hash": "bea37b837",
@@ -16859,6 +16874,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "62d401ec1",
+          "subject": "Fix createVertexArrayOES to return a non-nullable object. (#3756)"
+        },
         {
           "date": "2026-01-07",
           "author": "hwang.joonhyung@gmail.com",
@@ -16901,6 +16922,12 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-01-27",
+          "author": "cwallez@chromium.org",
+          "hash": "f2e75965",
+          "subject": "[bindless] Add investigation of VK_EXT_descriptor_heap (#5530)"
+        },
         {
           "date": "2026-01-27",
           "author": "cwallez@chromium.org",
@@ -17026,12 +17053,6 @@
           "author": "cwallez@chromium.org",
           "hash": "61f8cb40",
           "subject": "[bindless] Introduce GPUResourceTable (#5464)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "dneto@google.com",
-          "hash": "630ca2ae",
-          "subject": "uniformity: relax rules when loop bodies always break or return (#5419)"
         }
       ],
       "testlog": []
@@ -17199,18 +17220,6 @@
           "author": "phillis@chromium.org",
           "hash": "68bce81c62",
           "subject": "webnn: move constant tests out of batch_normalization"
-        },
-        {
-          "date": "2025-12-02",
-          "author": "phillis@chromium.org",
-          "hash": "2f6c5c9a8b",
-          "subject": "webnn: relax layer norm precision for fp16 test"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "phillis@chromium.org",
-          "hash": "79805728e3",
-          "subject": "webnn: relax cos and sin tolerance"
         }
       ]
     },
@@ -17293,12 +17302,6 @@
           "author": "philipp.hancke@googlemail.com",
           "hash": "2d7229cdba",
           "subject": "webrtc: unmute tracks until a packet arrives after a receptiveness change"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "philipp.hancke@googlemail.com",
-          "hash": "39aae2c84b",
-          "subject": "webrtc: unmute tracks when a packet arrives after a receptiveness change"
         }
       ]
     },
@@ -17725,6 +17728,12 @@
         {
           "date": "2026-01-27",
           "author": "cwallez@chromium.org",
+          "hash": "f2e75965",
+          "subject": "[bindless] Add investigation of VK_EXT_descriptor_heap (#5530)"
+        },
+        {
+          "date": "2026-01-27",
+          "author": "cwallez@chromium.org",
           "hash": "123b62f8",
           "subject": "Update proposals/bindless.md with resolved issues. (#5504)"
         },
@@ -17847,12 +17856,6 @@
           "author": "cwallez@chromium.org",
           "hash": "61f8cb40",
           "subject": "[bindless] Introduce GPUResourceTable (#5464)"
-        },
-        {
-          "date": "2025-12-01",
-          "author": "dneto@google.com",
-          "hash": "630ca2ae",
-          "subject": "uniformity: relax rules when loop bodies always break or return (#5419)"
         }
       ],
       "testlog": []
