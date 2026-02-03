@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2025-12-07T07:30:33.813Z",
-  "until": "2026-02-02T07:30:33.813Z",
+  "since": "2025-12-08T07:26:36.007Z",
+  "until": "2026-02-03T07:26:36.007Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -227,7 +227,14 @@
       "name": "Battery Status API",
       "href": "https://w3c.github.io/battery/",
       "specrepo": "https://github.com/w3c/battery",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "atsushi@himor.in",
+          "hash": "2e519eb",
+          "subject": "changed runs-on to ubuntu-latest"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/battery/blob/HEAD/CONTRIBUTING.md"
     },
@@ -443,12 +450,6 @@
           "author": "annevk@annevk.nl",
           "hash": "7ccd2e9",
           "subject": "Meta: align with whatwg/spec-factory"
-        },
-        {
-          "date": "2025-12-08",
-          "author": "63328381+aamuley@users.noreply.github.com",
-          "hash": "f028e8b",
-          "subject": "Allow setting maxAge"
         }
       ],
       "testlog": []
@@ -477,7 +478,20 @@
       "name": "Crash Reporting",
       "href": "https://wicg.github.io/crash-reporting/",
       "specrepo": "https://github.com/WICG/crash-reporting",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "domfarolino@gmail.com",
+          "hash": "0cfeea5",
+          "subject": "Finish rebase"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "domfarolino@gmail.com",
+          "hash": "f6dbeb5",
+          "subject": "Introduce the `CrashReportStorage` specification"
+        }
+      ],
       "testlog": []
     },
     {
@@ -571,6 +585,120 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "vmpstr@chromium.org",
+          "hash": "068f808a56",
+          "subject": "[anchor] Fix double scroll offset hit testing."
+        },
+        {
+          "date": "2026-02-03",
+          "author": "hellorichardli@gmail.com",
+          "hash": "47d349dc55",
+          "subject": "cc: Fix singular transform handling in ChunkToLayerMapper and PaintChunksToCcLayer"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "872863db6c",
+          "subject": "[css-anchor-position-1] Export WebKit addition of Ahem"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "216e1b8fbb",
+          "subject": "[css-anchor-position-1] Add more tests for anchored boxes overflowing ICB"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "c04ffbf6df",
+          "subject": "[css-anchor-position] Remove -expected files"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "samomekarajr@microsoft.com",
+          "hash": "057e11d9f7",
+          "subject": "[Gap Decorations]: Update the default value of interior insets to 0"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "958e2dd6dc",
+          "subject": "[css-overflow] Move scroll marker tests to subdirectory"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "kevers@google.com",
+          "hash": "f0eca2510f",
+          "subject": "Fix TreeScope::ElementForHitTest for nested pseudos"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4a2ceb90e0",
+          "subject": "[css-grid-3][grid-lanes] Add reftest-wait to dynamic test."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "d9a8d564e4",
+          "subject": "[css-overflow] Export WebKit css-overflow tests"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "pdr@chromium.org",
+          "hash": "bbbb03bd3e",
+          "subject": "Update offset-path transform after location change"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "dshin@mozilla.com",
+          "hash": "68aca0ef7f",
+          "subject": "Track size of unfragmented abspos frames for auto size resolution."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "moonira@google.com",
+          "hash": "62a911af96",
+          "subject": "Do not synthesize bold and oblique outside supported variations ranges"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "kojii@chromium.org",
+          "hash": "ebf4727bfc",
+          "subject": "[iframe] Remove the `from-element` keyword"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "dshin@mozilla.com",
+          "hash": "115d1c4491",
+          "subject": "Avoid :-moz-column-span-wrapper as alignment containing block."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "4afe342bac",
+          "subject": "Add SVG support for baseline-shift."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "abutkovits@mozilla.com",
+          "hash": "7ee380b702",
+          "subject": "Revert \"Bug 2010713 - Add SVG support for baseline-shift. \" for causing failures at ignore-vertical-align.svg. DONTBUILD"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "3962cea920",
+          "subject": "Add SVG support for baseline-shift."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "jja08111@gmail.com",
+          "hash": "785a30987e",
+          "subject": "TextOverflow: Implement bidi text support for string values"
+        },
         {
           "date": "2026-02-02",
           "author": "dshin@mozilla.com",
@@ -3338,6 +3466,30 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-03",
+          "author": "vmpstr@chromium.org",
+          "hash": "068f808a56",
+          "subject": "[anchor] Fix double scroll offset hit testing."
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "872863db6c",
+          "subject": "[css-anchor-position-1] Export WebKit addition of Ahem"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "216e1b8fbb",
+          "subject": "[css-anchor-position-1] Add more tests for anchored boxes overflowing ICB"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "c04ffbf6df",
+          "subject": "[css-anchor-position] Remove -expected files"
+        },
+        {
           "date": "2026-01-29",
           "author": "wptsync@mozilla.com",
           "hash": "b2fc4151c2",
@@ -3771,6 +3923,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "dshin@mozilla.com",
+          "hash": "68aca0ef7f",
+          "subject": "Track size of unfragmented abspos frames for auto size resolution."
+        },
         {
           "date": "2026-02-02",
           "author": "dshin@mozilla.com",
@@ -4649,6 +4807,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "moonira@google.com",
+          "hash": "62a911af96",
+          "subject": "Do not synthesize bold and oblique outside supported variations ranges"
+        },
+        {
           "date": "2026-01-11",
           "author": "howarde.edwards@gmail.com",
           "hash": "97a9134668",
@@ -4913,6 +5077,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "4a2ceb90e0",
+          "subject": "[css-grid-3][grid-lanes] Add reftest-wait to dynamic test."
+        },
+        {
           "date": "2026-01-30",
           "author": "yanlingwang@microsoft.com",
           "hash": "921db05741",
@@ -5151,6 +5321,24 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "4afe342bac",
+          "subject": "Add SVG support for baseline-shift."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "abutkovits@mozilla.com",
+          "hash": "7ee380b702",
+          "subject": "Revert \"Bug 2010713 - Add SVG support for baseline-shift. \" for causing failures at ignore-vertical-align.svg. DONTBUILD"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "3962cea920",
+          "subject": "Add SVG support for baseline-shift."
+        },
         {
           "date": "2026-01-30",
           "author": "sajidanwar94@gmail.com",
@@ -5451,6 +5639,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "dshin@mozilla.com",
+          "hash": "115d1c4491",
+          "subject": "Avoid :-moz-column-span-wrapper as alignment containing block."
+        },
+        {
           "date": "2026-01-28",
           "author": "mstensho@chromium.org",
           "hash": "4e13d7494b",
@@ -5629,6 +5823,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "958e2dd6dc",
+          "subject": "[css-overflow] Move scroll marker tests to subdirectory"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "d9a8d564e4",
+          "subject": "[css-overflow] Export WebKit css-overflow tests"
+        },
         {
           "date": "2026-01-28",
           "author": "awogbemila@chromium.org",
@@ -6417,6 +6623,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "kojii@chromium.org",
+          "hash": "ebf4727bfc",
+          "subject": "[iframe] Remove the `from-element` keyword"
+        },
+        {
           "date": "2026-01-30",
           "author": "mike@mikepennisi.com",
           "hash": "e3b33892b5",
@@ -6806,6 +7018,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-03",
+          "author": "hellorichardli@gmail.com",
+          "hash": "47d349dc55",
+          "subject": "cc: Fix singular transform handling in ChunkToLayerMapper and PaintChunksToCcLayer"
+        },
+        {
           "date": "2026-01-23",
           "author": "emilio@crisal.io",
           "hash": "ba5e4f3dc5",
@@ -7015,6 +7233,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "jja08111@gmail.com",
+          "hash": "785a30987e",
+          "subject": "TextOverflow: Implement bidi text support for string values"
+        },
         {
           "date": "2026-01-29",
           "author": "daniec@microsoft.com",
@@ -7289,6 +7513,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-02-02",
+          "author": "vmpstr@chromium.org",
+          "hash": "870098109",
+          "subject": "[css-view-transitions-2] Add nested view transition groups spec (#13412)"
+        },
+        {
           "date": "2026-01-29",
           "author": "skobes@chromium.org",
           "hash": "754f7fdf6",
@@ -7350,6 +7580,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "kevers@google.com",
+          "hash": "f0eca2510f",
+          "subject": "Fix TreeScope::ElementForHitTest for nested pseudos"
+        },
         {
           "date": "2026-01-28",
           "author": "skobes@chromium.org",
@@ -7884,6 +8120,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "idimitriou@igalia.com",
+          "hash": "fbbaa6febd",
+          "subject": "[Temporal] Formatting Plain* Temporal objects should ignore timezones"
+        },
+        {
           "date": "2026-01-29",
           "author": "andre.bargull@gmail.com",
           "hash": "677ee26349",
@@ -8247,6 +8489,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "rezvan@chromium.org",
+          "hash": "6c2b2013b8",
+          "subject": "update tests after disallowing using and await using in switch cases"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "t01092750632@gmail.com",
+          "hash": "f9ecb8b7cc",
+          "subject": "Added test where this value has read-only property"
+        },
         {
           "date": "2026-01-30",
           "author": "t01092750632@gmail.com",
@@ -8820,6 +9074,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-02-03",
+          "author": "d@domenic.me",
+          "hash": "c26e43e3ff",
+          "subject": "Fix Shift_JIS href encoding tests to test href, not form"
+        },
+        {
           "date": "2025-12-18",
           "author": "darin@apple.com",
           "hash": "a74e2fe7d5",
@@ -9375,6 +9635,12 @@
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
         {
+          "date": "2026-02-02",
+          "author": "samuelgoto@gmail.com",
+          "hash": "8982483",
+          "subject": "Move Navigation Interception API document to new location (#806)"
+        },
+        {
           "date": "2026-01-14",
           "author": "samuelgoto@gmail.com",
           "hash": "bafbe1b",
@@ -9781,6 +10047,12 @@
       "specrepo": "https://github.com/w3c/geolocation-sensor",
       "speclog": [
         {
+          "date": "2026-02-03",
+          "author": "atsushi@himor.in",
+          "hash": "b7b4e9f",
+          "subject": "fixed broken links, turning into xref (#68)"
+        },
+        {
           "date": "2026-01-26",
           "author": "atsushi@himor.in",
           "hash": "f9e126d",
@@ -9861,7 +10133,14 @@
       "name": "Gyroscope",
       "href": "https://w3c.github.io/gyroscope/",
       "specrepo": "https://github.com/w3c/gyroscope",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "atsushi@himor.in",
+          "hash": "b1bf843",
+          "subject": "changed runs-on to ubuntu-latest (#64)"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/gyroscope/blob/HEAD/CONTRIBUTING.md"
     },
@@ -10028,15 +10307,51 @@
           "author": "nrosenthal@google.com",
           "hash": "ce687e17",
           "subject": "Download link: inform the navigation API about aborting"
-        },
-        {
-          "date": "2025-12-08",
-          "author": "35911232+shannonbooth@users.noreply.github.com",
-          "hash": "f0f2720c",
-          "subject": "Editorial: fix typo in WindowOrWorkerGlobalScope's \"extract an origin\""
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "masonf@chromium.org",
+          "hash": "b188a0dc99",
+          "subject": "Disallow opening date picker via keyboard on readonly inputs"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "ansollan@microsoft.com",
+          "hash": "7f09b64755",
+          "subject": "Add extra cases where sign character insertion should be invalid in <input type=number>"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tvanderlippe@gmail.com",
+          "hash": "da913f102c",
+          "subject": "script: Fix handling changes to relevant attributes for stylesheets"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "mstensho@chromium.org",
+          "hash": "c9c2b5d4b8",
+          "subject": "Make responsive-image-select-print.html test pass."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tvanderlippe@gmail.com",
+          "hash": "bed65a4ee3",
+          "subject": "wpt: Fix test"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "rayguo17@gmail.com",
+          "hash": "622ddaf10c",
+          "subject": "update newly added wpt test author meta info"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tin.tun.aung1@huawei.com",
+          "hash": "f8fa238793",
+          "subject": "change to enum for force reconciliation on node removal, and add wpt test testing this behaviour"
+        },
         {
           "date": "2026-01-31",
           "author": "mrobinson@igalia.com",
@@ -11866,6 +12181,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "pdr@chromium.org",
+          "hash": "bbbb03bd3e",
+          "subject": "Update offset-path transform after location change"
+        },
+        {
           "date": "2025-12-11",
           "author": "sukil@mozilla.com",
           "hash": "7dca181b76",
@@ -12455,7 +12776,14 @@
       "name": "Orientation Sensor",
       "href": "https://w3c.github.io/orientation-sensor/",
       "specrepo": "https://github.com/w3c/orientation-sensor",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "atsushi@himor.in",
+          "hash": "70fe230",
+          "subject": "Update workflow to use ubuntu-latest (#85)"
+        }
+      ],
       "testlog": [],
       "testpolicy": "https://github.com/w3c/orientation-sensor/blob/HEAD/CONTRIBUTING.md"
     },
@@ -12524,7 +12852,14 @@
           "subject": "Fix typos (#120)"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-02-02",
+          "author": "32428749+shubhamg13@users.noreply.github.com",
+          "hash": "3fa4dd6d2f",
+          "subject": "Organize paint-timing test into meaningful directories (#57330)"
+        }
+      ]
     },
     {
       "name": "Cookies Having Independent Partitioned State specification",
@@ -12744,6 +13079,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-02-02",
+          "author": "gastonr@microsoft.com",
+          "hash": "726cde2f8e",
+          "subject": "Fix pointer lock button down status tracking in Windows"
+        },
+        {
           "date": "2026-01-30",
           "author": "gastonr@microsoft.com",
           "hash": "aac8513c52",
@@ -12888,7 +13229,14 @@
       "name": "WebXR Mesh Detection",
       "href": "https://immersive-web.github.io/real-world-meshing/",
       "specrepo": "https://github.com/immersive-web/real-world-meshing",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-01-30",
+          "author": "davili@google.com",
+          "hash": "1f6af32",
+          "subject": "Fix: Correct 'Meshs' typo to 'Meshes' and update `XRMesh.vertices` attribute type from `FrozenArray<Float32Array>` to `Float32Array`."
+        }
+      ],
       "testlog": []
     },
     {
@@ -13005,12 +13353,6 @@
           "author": "carine@w3.org",
           "hash": "8377248",
           "subject": "Update w3c.json (#422)"
-        },
-        {
-          "date": "2025-12-08",
-          "author": "36944670+quasi-mod@users.noreply.github.com",
-          "hash": "093be0b",
-          "subject": "Add SW static routing API timing information to resource timing (#415)"
         }
       ],
       "testlog": [
@@ -13100,7 +13442,14 @@
       "name": "Screen Wake Lock API",
       "href": "https://w3c.github.io/screen-wake-lock/",
       "specrepo": "https://github.com/w3c/screen-wake-lock",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "atsushi@himor.in",
+          "hash": "8fda131",
+          "subject": "changed runs-on to ubuntu-latest (#378)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -13472,7 +13821,14 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "c368e14",
+          "subject": "Make readable and writable attributes nullable (#220)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -13508,6 +13864,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "ccarley2@apple.com",
+          "hash": "79aa7e012c",
+          "subject": "WebKit export: Rebase resource-timing-cross-origin.html (#57492)"
+        },
         {
           "date": "2026-01-31",
           "author": "ccarley2@apple.com",
@@ -13625,6 +13987,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "robertlin@chromium.org",
+          "hash": "0f7b214956",
+          "subject": "prerender: speculation rules form submission WPT"
+        },
         {
           "date": "2026-01-19",
           "author": "hiroshige@chromium.org",
@@ -14014,6 +14382,30 @@
       "href": "https://tc39.es/proposal-temporal/",
       "specrepo": "https://github.com/tc39/proposal-temporal",
       "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "pchimento@igalia.com",
+          "hash": "09771964",
+          "subject": "Update test262"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "pchimento@igalia.com",
+          "hash": "38b97b4a",
+          "subject": "Polyfill: Further optimize fix to format plain Temporal objects in UTC"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "idimitriou@igalia.com",
+          "hash": "b9dede54",
+          "subject": "Polyfill fix to format plain Temporal objects in UTC without regard to DST."
+        },
+        {
+          "date": "2026-02-02",
+          "author": "pchimento@igalia.com",
+          "hash": "377fb80e",
+          "subject": "Normative: Format plain Temporal objects without regard to DST"
+        },
         {
           "date": "2026-01-29",
           "author": "pchimento@igalia.com",
@@ -14598,7 +14990,14 @@
       "name": "Upgrade Insecure Requests",
       "href": "https://w3c.github.io/webappsec-upgrade-insecure-requests/",
       "specrepo": "https://github.com/w3c/webappsec-upgrade-insecure-requests",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "simone@w3.org",
+          "hash": "87d0b9d",
+          "subject": "Update w3c.json"
+        }
+      ],
       "testlog": []
     },
     {
@@ -14835,12 +15234,6 @@
           "author": "p.krautzberger@gmail.com",
           "hash": "9c3cfe40",
           "subject": "editorial: improve roleInfoCheck.yml (#2695)"
-        },
-        {
-          "date": "2025-12-07",
-          "author": "p.krautzberger@gmail.com",
-          "hash": "a1a7a0d7",
-          "subject": "editorial: drag-and-drop content clean-up (#2692)"
         }
       ],
       "testlog": [
@@ -14857,6 +15250,72 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2026-02-03",
+          "author": "tlively@google.com",
+          "hash": "a20e214b8",
+          "subject": "Use wasm-latest instead of wasm-3.0 in tests and docs (#2070)"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "tlively@google.com",
+          "hash": "4d130b39f",
+          "subject": "Fix 6.4-text.modules.spectec filename (#2069)"
+        },
+        {
+          "date": "2026-02-03",
+          "author": "tlively@google.com",
+          "hash": "d88212566",
+          "subject": "Ensure wasm-latest is correct in CI (#2068)"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tlively@google.com",
+          "hash": "c61fd29ce",
+          "subject": "restore wasm-3.0 from temporary directory"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tlively@google.com",
+          "hash": "8bfee3402",
+          "subject": "move wasm-3.0 to wasm-latest"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tlively@google.com",
+          "hash": "5b6b30d5e",
+          "subject": "temporarily move wasm-3.0 to preserve history"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tlively@google.com",
+          "hash": "f1590fd4a",
+          "subject": "Revert \"Create specification/wasm-latest (#2064)\""
+        },
+        {
+          "date": "2026-02-02",
+          "author": "tlively@google.com",
+          "hash": "76c81e031",
+          "subject": "Create specification/wasm-latest (#2064)"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "827224+agis@users.noreply.github.com",
+          "hash": "a119b244d",
+          "subject": "[spec] Bring back explicit `reftype` in Element section (#2067)"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "ba7727323",
+          "subject": "[spectec] Allow any order in variant parent types"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "6804c5dbe",
+          "subject": "[spectec] Fix arithmetic binop typing"
+        },
         {
           "date": "2026-01-29",
           "author": "65452710+zsakowitz@users.noreply.github.com",
@@ -15241,6 +15700,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "hongchan@google.com",
+          "hash": "01e41b8d27",
+          "subject": "[WebAudio] Output silence when MediaStreamTrack is disabled/stopped"
+        },
         {
           "date": "2026-01-21",
           "author": "saqlain@chromium.org",
@@ -16525,6 +16990,18 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2026-02-02",
+          "author": "kainino@chromium.org",
+          "hash": "9d5bbf1e",
+          "subject": "[process] New required functionality must be implementable on Compat (#5518)"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "jiawei.shao@intel.com",
+          "hash": "f76d9573",
+          "subject": "wgsl: Propose `subgroup-size-control` extension (#5546)"
+        },
+        {
           "date": "2026-01-29",
           "author": "alanbaker@google.com",
           "hash": "fa72d38a",
@@ -16751,6 +17228,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-02-03",
+          "author": "reillyg@google.com",
+          "hash": "7e1d465e16",
+          "subject": "Reland \"webnn: Fix tensor size limit test on 32-bit platforms\""
+        },
+        {
+          "date": "2026-02-02",
+          "author": "mingming1.xu@intel.com",
+          "hash": "0e12a6048b",
+          "subject": "WebNN: Queue graph compilations to avoid resource exhaustion on ORT"
+        },
         {
           "date": "2026-01-23",
           "author": "bryan.bernhart@intel.com",
@@ -17285,6 +17774,18 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-02-02",
+          "author": "kainino@chromium.org",
+          "hash": "9d5bbf1e",
+          "subject": "[process] New required functionality must be implementable on Compat (#5518)"
+        },
+        {
+          "date": "2026-02-02",
+          "author": "jiawei.shao@intel.com",
+          "hash": "f76d9573",
+          "subject": "wgsl: Propose `subgroup-size-control` extension (#5546)"
+        },
         {
           "date": "2026-01-29",
           "author": "alanbaker@google.com",
