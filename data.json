@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2026-04-13T08:20:45.444Z",
-  "until": "2026-06-09T08:20:45.444Z",
+  "since": "2026-04-14T08:29:31.026Z",
+  "until": "2026-06-10T08:29:31.026Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -60,6 +60,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -70,12 +76,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -518,6 +518,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-06-10",
+          "author": "tschuster@mozilla.com",
+          "hash": "933ef2e37f",
+          "subject": "Test that 'strict-dynamic' always blocks XSLT."
+        },
+        {
           "date": "2026-06-09",
           "author": "josh@joshmatthews.net",
           "hash": "6290ba1b26",
@@ -582,12 +588,6 @@
           "author": "44174109+brentfulgham@users.noreply.github.com",
           "hash": "7398da83ad",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=220724 (#59112)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "antoniosartori@chromium.org",
-          "hash": "27eda71cdc",
-          "subject": "[CSP] Fix worker WPT tests which were timing out"
         }
       ]
     },
@@ -721,6 +721,78 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-10",
+          "author": "jvarga@igalia.com",
+          "hash": "bceae4e6b6",
+          "subject": "Add WPT coverage for CSSMathNegate reification"
+        },
+        {
+          "date": "2026-06-10",
+          "author": "smfr@users.noreply.github.com",
+          "hash": "26dddb73aa",
+          "subject": "Upstream fuzzy annotations from WebKit changes in `css/css-backgrounds` (#60512)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "c6691c5a24",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313354 (#60439)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "6d62c4a0ff",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=227283 (#60435)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "eb3b22d8d4",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=315254 (#60436)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "17a3fbf41b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=315334 (#60437)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "0a43fd4d2a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=210474 (#60438)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "futhark@chromium.org",
+          "hash": "904769495e",
+          "subject": "Add ::first-line inheritance test"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "futhark@chromium.org",
+          "hash": "8d907561bb",
+          "subject": "Test getComputedStyle(\"::first-line\") for non-block display"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "m.jason.liu@outlook.com",
+          "hash": "abb03d3305",
+          "subject": "Forbid generated images as cursor via light-dark() (#60469)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "emilio@crisal.io",
+          "hash": "404d6223cc",
+          "subject": "Fix subgrid border/margin/padding computation for scrollers."
+        },
+        {
+          "date": "2026-06-09",
+          "author": "salipov@mozilla.com",
+          "hash": "6d19fb82d7",
+          "subject": "Alternative approach, fixing matrix zoom upsteam."
+        },
         {
           "date": "2026-06-09",
           "author": "jja08111@gmail.com",
@@ -3690,102 +3762,6 @@
           "author": "emilio@crisal.io",
           "hash": "ce8874409a",
           "subject": "Fix getComputedStyle-pseudo-picker.html and enable custom select on it."
-        },
-        {
-          "date": "2026-04-14",
-          "author": "freedebreuil@google.com",
-          "hash": "33ddd964eb",
-          "subject": "Ensure overflow: clip does not show off-axis scrollbars"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "b97d3cf788",
-          "subject": "[wpt] Fix css/css-align/self-alignment/block-justify-self.html WPT."
-        },
-        {
-          "date": "2026-04-14",
-          "author": "almaher@microsoft.com",
-          "hash": "43a34346c3",
-          "subject": "[Masonry] Triage grid-lanes/subgrid/column tests"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "javiercon@microsoft.com",
-          "hash": "8b8a0137f0",
-          "subject": "[gap-decorations] Add grid gap decoration test for `donut` scenario"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "almaher@microsoft.com",
-          "hash": "7b17501854",
-          "subject": "[Masonry] Accommodate subgrid extra margins in grid-lanes track sizing"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "freedebreuil@google.com",
-          "hash": "153b3b7bda",
-          "subject": "Use ScrollableArea for DOM scroll target lookup"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "nishaanthshriramms@gmail.com",
-          "hash": "47d9ecb2cc",
-          "subject": "Check negative margin sizes for min-content while computing indent position"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "helmut@januschka.com",
-          "hash": "f42c782ae4",
-          "subject": "Blink WPT: stabilize text-combine-upright reftests"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "abotella@igalia.com",
-          "hash": "2f784d5adc",
-          "subject": "[line-clamp] Don't associate line-break ellipses with non-atomic inlines"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "kojii@chromium.org",
-          "hash": "eb04f31bda",
-          "subject": "[iframe] Make the `<meta>` valid only in the `<head>`"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "lwarlow@igalia.com",
-          "hash": "6dbfb5f425",
-          "subject": "Update base appearance styles for color input"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "jj@imput.net",
-          "hash": "4e29eecce3",
-          "subject": "Wire up URL request modifiers for fonts and SVG resources"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "moonira@google.com",
-          "hash": "30794ddd16",
-          "subject": "Update random() with new syntax"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "yanlingwang@microsoft.com",
-          "hash": "909ee6d21a",
-          "subject": "[Masonry] Add align-content geometry fixup for resolved block size"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "seokho@chromium.org",
-          "hash": "cb2ec4e0b9",
-          "subject": "Add WPT testsuits for image-animation video poster"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "kojii@chromium.org",
-          "hash": "2e89ca7833",
-          "subject": "[iframe] Make the meta tag valid only by the parser"
         }
       ]
     },
@@ -3883,12 +3859,6 @@
           "author": "sajidanwar94@gmail.com",
           "hash": "1001a14813",
           "subject": "Use default fallback baseline synthesis for tables."
-        },
-        {
-          "date": "2026-04-14",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "b97d3cf788",
-          "subject": "[wpt] Fix css/css-align/self-alignment/block-justify-self.html WPT."
         }
       ]
     },
@@ -4101,6 +4071,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-10",
+          "author": "smfr@users.noreply.github.com",
+          "hash": "26dddb73aa",
+          "subject": "Upstream fuzzy annotations from WebKit changes in `css/css-backgrounds` (#60512)"
+        },
         {
           "date": "2026-06-03",
           "author": "sam@webkit.org",
@@ -4433,24 +4409,6 @@
           "author": "chris@w3.org",
           "hash": "a8df65337",
           "subject": "[css-color-4] Define color value comparison algorithm #13157"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "chris@w3.org",
-          "hash": "70c78d343",
-          "subject": "[css-color-4][editorial] correct autolinking syntax"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "chris@w3.org",
-          "hash": "510e87eb1",
-          "subject": "[css-color] Improve visibility of the constraint that shorter is the default he interpolation method"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "chris@w3.org",
-          "hash": "af08cb633",
-          "subject": "[css-color-4][editorial] Move changes comment to the right place"
         }
       ],
       "testlog": [
@@ -4669,14 +4627,7 @@
       "href": "https://drafts.csswg.org/css-contain/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2026-04-13",
-          "author": "282126346@qq.com",
-          "hash": "0d23c93c8",
-          "subject": "Update Overview.bs"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-05-12",
@@ -4913,6 +4864,30 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "c6691c5a24",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313354 (#60439)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "eb3b22d8d4",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=315254 (#60436)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "17a3fbf41b",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=315334 (#60437)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "0a43fd4d2a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=210474 (#60438)"
+        },
         {
           "date": "2026-06-05",
           "author": "futhark@chromium.org",
@@ -5287,6 +5262,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "6d62c4a0ff",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=227283 (#60435)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "emilio@crisal.io",
+          "hash": "404d6223cc",
+          "subject": "Fix subgrid border/margin/padding computation for scrollers."
+        },
+        {
           "date": "2026-06-04",
           "author": "freedebreuil@google.com",
           "hash": "ff1994f3a9",
@@ -5471,24 +5458,6 @@
           "author": "almaher@microsoft.com",
           "hash": "7887a0f7db",
           "subject": "[Masonry] Triage grid-lanes/subgrid/row tests"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "almaher@microsoft.com",
-          "hash": "43a34346c3",
-          "subject": "[Masonry] Triage grid-lanes/subgrid/column tests"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "almaher@microsoft.com",
-          "hash": "7b17501854",
-          "subject": "[Masonry] Accommodate subgrid extra margins in grid-lanes track sizing"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "yanlingwang@microsoft.com",
-          "hash": "909ee6d21a",
-          "subject": "[Masonry] Add align-content geometry fixup for resolved block size"
         }
       ]
     },
@@ -6126,24 +6095,6 @@
           "author": "freedebreuil@google.com",
           "hash": "2ae012c5ca",
           "subject": "Enforce scroll axis constraints in single-axis containers"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "freedebreuil@google.com",
-          "hash": "33ddd964eb",
-          "subject": "Ensure overflow: clip does not show off-axis scrollbars"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "freedebreuil@google.com",
-          "hash": "153b3b7bda",
-          "subject": "Use ScrollableArea for DOM scroll target lookup"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "abotella@igalia.com",
-          "hash": "2f784d5adc",
-          "subject": "[line-clamp] Don't associate line-break ellipses with non-atomic inlines"
         }
       ]
     },
@@ -6372,6 +6323,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-09",
+          "author": "futhark@chromium.org",
+          "hash": "904769495e",
+          "subject": "Add ::first-line inheritance test"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "futhark@chromium.org",
+          "hash": "8d907561bb",
+          "subject": "Test getComputedStyle(\"::first-line\") for non-block display"
+        },
+        {
           "date": "2026-06-05",
           "author": "annevk@annevk.nl",
           "hash": "a7a78234b0",
@@ -6500,12 +6463,6 @@
           "author": "jja08111@gmail.com",
           "hash": "47eedfe38b",
           "subject": "[ruby-overhang] Support for parsing and serialization for 'spaces'"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "helmut@januschka.com",
-          "hash": "f42c782ae4",
-          "subject": "Blink WPT: stabilize text-combine-upright reftests"
         }
       ]
     },
@@ -6925,24 +6882,6 @@
           "author": "kojii@chromium.org",
           "hash": "fb35c08b1d",
           "subject": "[iframe] Clear the natural size if navigated to non-responsive page"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "nishaanthshriramms@gmail.com",
-          "hash": "47d9ecb2cc",
-          "subject": "Check negative margin sizes for min-content while computing indent position"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "kojii@chromium.org",
-          "hash": "eb04f31bda",
-          "subject": "[iframe] Make the `<meta>` valid only in the `<head>`"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "kojii@chromium.org",
-          "hash": "2e89ca7833",
-          "subject": "[iframe] Make the meta tag valid only by the parser"
         }
       ]
     },
@@ -7468,6 +7407,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-06-10",
+          "author": "jvarga@igalia.com",
+          "hash": "bceae4e6b6",
+          "subject": "Add WPT coverage for CSSMathNegate reification"
+        },
+        {
           "date": "2026-06-08",
           "author": "jvarga@igalia.com",
           "hash": "c5cc8f8607",
@@ -7597,6 +7542,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "m.jason.liu@outlook.com",
+          "hash": "abb03d3305",
+          "subject": "Forbid generated images as cursor via light-dark() (#60469)"
+        },
         {
           "date": "2026-06-08",
           "author": "abotella@igalia.com",
@@ -8002,18 +7953,6 @@
           "author": "jj@imput.net",
           "hash": "ea0b8cc38c",
           "subject": "[wpt] Test parsing unquoted urls inside url() with modifiers"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "jj@imput.net",
-          "hash": "4e29eecce3",
-          "subject": "Wire up URL request modifiers for fonts and SVG resources"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "moonira@google.com",
-          "hash": "30794ddd16",
-          "subject": "Update random() with new syntax"
         }
       ]
     },
@@ -8189,6 +8128,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-09",
+          "author": "salipov@mozilla.com",
+          "hash": "6d19fb82d7",
+          "subject": "Alternative approach, fixing matrix zoom upsteam."
+        },
+        {
           "date": "2026-05-26",
           "author": "sammy.gill@apple.com",
           "hash": "aa5fbee95e",
@@ -8258,12 +8203,6 @@
           "author": "sylvestre@debian.org",
           "hash": "de1a9ad794",
           "subject": "adjust the code: searchfox.org/mozilla-central is now redirecting to searchfox.org/firefox-main/  ,home-newtab-reviewers,core-sessionstore-reviewers,browser-installer-reviewers,profiles-reviewers,dom-worker-reviewers,geckodriver-reviewers,ai-platform-reviewers,Sasha,niklas,manuel,janerik,bhearsum,valentin,twisniewski,nchevobbe,emcminn,webrtc-reviewers,mjf,handyman,mconley,mossop,ahal,sparky,nrishel,robwu,ohall,dimi,hjones"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "helmut@januschka.com",
-          "hash": "f42c782ae4",
-          "subject": "Blink WPT: stabilize text-combine-upright reftests"
         }
       ]
     },
@@ -9243,18 +9182,6 @@
           "author": "caiolima@igalia.com",
           "hash": "b66872a924",
           "subject": "Add ResolveExport tests for star exports with cyclic indirect re-exports"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "5390719+Jack-Works@users.noreply.github.com",
-          "hash": "a9af758c4f",
-          "subject": "Remove substr in Temporal tests"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "ivank@ivank.me",
-          "hash": "1cd9571a64",
-          "subject": "Use $DETACHBUFFER helper in test/staging/sm/"
         }
       ]
     },
@@ -9263,6 +9190,12 @@
       "href": "https://w3c.github.io/edit-context/",
       "specrepo": "https://github.com/w3c/edit-context",
       "speclog": [
+        {
+          "date": "2026-06-09",
+          "author": "ltenenbaum@mozilla.com",
+          "hash": "d5ccf35",
+          "subject": "Remove compositionStart/End from TextUpdateEventInit. (#122)"
+        },
         {
           "date": "2026-04-30",
           "author": "ltenenbaum@mozilla.com",
@@ -9320,6 +9253,42 @@
       "href": "https://w3c.github.io/encrypted-media/",
       "specrepo": "https://github.com/w3c/encrypted-media",
       "speclog": [
+        {
+          "date": "2026-06-09",
+          "author": "chris@chrisneedham.com",
+          "hash": "d8916f3",
+          "subject": "Clarify Note in Time definition"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "57790+chrisn@users.noreply.github.com",
+          "hash": "8f8bd96",
+          "subject": "chore: tidy up index.html"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "chrisn@users.noreply.github.com",
+          "hash": "e5db5ea",
+          "subject": "Replace \"use the cdm\""
+        },
+        {
+          "date": "2026-06-09",
+          "author": "chris@chrisneedham.com",
+          "hash": "7087d99",
+          "subject": "Clarify Note regarding 'requested media capability'"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "57790+chrisn@users.noreply.github.com",
+          "hash": "0dc0e3b",
+          "subject": "chore: tidy up index.html"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "chris@chrisneedham.com",
+          "hash": "b50c21f",
+          "subject": "Fix typos in Notes"
+        },
         {
           "date": "2026-06-09",
           "author": "xhwang@chromium.org",
@@ -9525,6 +9494,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9535,12 +9510,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9551,6 +9520,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9561,12 +9536,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9577,6 +9546,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9587,12 +9562,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9603,6 +9572,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9613,12 +9588,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9629,6 +9598,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9639,12 +9614,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9655,6 +9624,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9665,12 +9640,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9681,6 +9650,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9691,12 +9666,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9707,6 +9676,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9717,12 +9692,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9733,6 +9702,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9743,12 +9718,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9759,6 +9728,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9769,12 +9744,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9785,6 +9754,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9795,12 +9770,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9811,6 +9780,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9821,12 +9796,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9837,6 +9806,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -9847,12 +9822,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -9869,6 +9838,12 @@
       "href": "https://fedidcg.github.io/FedCM/",
       "specrepo": "https://github.com/fedidcg/FedCM",
       "speclog": [
+        {
+          "date": "2026-06-09",
+          "author": "srrinivasajay@gmail.com",
+          "hash": "858d07e",
+          "subject": "Add FedCM service worker lifecycle model (#834)"
+        },
         {
           "date": "2026-05-18",
           "author": "devsureshp@gmail.com",
@@ -9936,6 +9911,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-10",
+          "author": "echuang@mozilla.com",
+          "hash": "7c80f2c35a",
+          "subject": "Add WPT ensuring same-origin and cross-origin CORS range requests are intercepted by ServiceWorker."
+        },
+        {
+          "date": "2026-06-09",
+          "author": "smolnar@mozilla.com",
+          "hash": "53a48d083b",
+          "subject": "Revert \"Bug 1465074 - Add WPT ensuring same-origin and cross-origin CORS range requests are intercepted by ServiceWorker. \" for causing wpt failures @ service-workers/service-worker/fetch-canvas-tainting-video-with-range-request.https.html"
+        },
         {
           "date": "2026-06-08",
           "author": "echuang@mozilla.com",
@@ -10043,12 +10030,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "4267ed5318",
           "subject": "Add multipart form/data parsing tests (#59146)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "hchao@chromium.org",
-          "hash": "de7735f191",
-          "subject": "[LNA] remove check for initiator being in the frame tree of the navigating frame."
         }
       ]
     },
@@ -10127,12 +10108,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "7589836665",
           "subject": "Map \"<input type=\"file\" multiple>\" to web-features"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "yyanagisawa@chromium.org",
-          "hash": "455c23b461",
-          "subject": "Disable ALLOW_OPAQUE_ORIGIN_STORAGE_KEY_MISMATCH when flag is on"
         }
       ],
       "testpolicy": "https://github.com/w3c/FileAPI/blob/HEAD/CONTRIBUTING.md"
@@ -10756,21 +10731,15 @@
           "author": "35911232+shannonbooth@users.noreply.github.com",
           "hash": "3fd7f358",
           "subject": "Set iframe sandbox flags before child navigable creation"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "46226844+tenzap@users.noreply.github.com",
-          "hash": "22c40f97",
-          "subject": "Meta: use path-absolute-URL strings for various images"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "35911232+shannonbooth@users.noreply.github.com",
-          "hash": "17308a57",
-          "subject": "Editorial: align fragment parsing algorithms with their parameter types"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "szager@chromium.org",
+          "hash": "67308095a6",
+          "subject": "[HiC] Add AnimatedImageFrameIndexMap to CanvasChildPaintState"
+        },
         {
           "date": "2026-06-09",
           "author": "jarhar@chromium.org",
@@ -12282,90 +12251,6 @@
           "author": "janewman@microsoft.com",
           "hash": "2512c393c4",
           "subject": "[focusgroup] Rename arrow-key-handler WPT files"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "daniec@microsoft.com",
-          "hash": "980b0c8938",
-          "subject": "[Reference Target] Propagate command event to event source's tree"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kschmi@microsoft.com",
-          "hash": "e2ad01ac1b",
-          "subject": "[CSS Modules] Add modulepreload tests with shadowrootadoptedstylesheets"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "janewman@microsoft.com",
-          "hash": "f2e5228134",
-          "subject": "[focusgroup] Abstract directional input in WPT tests"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "apaseltiner@chromium.org",
-          "hash": "12f1500083",
-          "subject": "Fix nested XML namespace reset bug in fragment parsing"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "helmut@januschka.com",
-          "hash": "6ecccc1d22",
-          "subject": "Stabilize lazy video poster visibility WPT"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "pdr@chromium.org",
-          "hash": "42a9dfcc6d",
-          "subject": "Fix null canvas crash in Element::IsFocusableStyle"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "ravjit@chromium.org",
-          "hash": "2bef098180",
-          "subject": "[CoCE] Add support for the onstream event handler attribute"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "jarhar@chromium.org",
-          "hash": "e1e90d918f",
-          "subject": "Fix crashes when restoring <selectedcontent> with <input>"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "jarhar@chromium.org",
-          "hash": "3d046381bc",
-          "subject": "Don't set active option when opening customizable combobox"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "jarhar@chromium.org",
-          "hash": "c4780b9eb3",
-          "subject": "Restore focus on dialog close when dialog is focused"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "yyanagisawa@chromium.org",
-          "hash": "d003903654",
-          "subject": "Fix timeout in SharedWorker-extendedLifetime.html"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "keithamus@users.noreply.github.com",
-          "hash": "795d8e0de8",
-          "subject": "fix faulty shadowrootslotassignment test (#59144)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "cdumez@apple.com",
-          "hash": "d9f5c182f9",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=311808 (#59137)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "cdumez@apple.com",
-          "hash": "b794f6b7e2",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=312044 (#59136)"
         }
       ]
     },
@@ -12774,6 +12659,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -12784,12 +12675,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13361,6 +13246,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13371,12 +13262,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13387,6 +13272,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13397,12 +13288,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13413,6 +13298,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13423,12 +13314,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13439,6 +13324,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13449,12 +13340,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13465,6 +13350,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13475,12 +13366,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13491,6 +13376,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13501,12 +13392,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13517,6 +13402,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13527,12 +13418,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13543,6 +13428,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13553,12 +13444,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13569,6 +13454,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13579,12 +13470,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13645,6 +13530,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -13655,12 +13546,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -13947,6 +13832,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-09",
+          "author": "kevers@google.com",
+          "hash": "4a8cc9fbb7",
+          "subject": "Speculative deflake of pointerevent test"
+        },
+        {
           "date": "2026-06-08",
           "author": "kevers@google.com",
           "hash": "9f6e076fec",
@@ -13966,6 +13857,12 @@
       "specrepo": "https://github.com/w3c/pointerlock",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "gastonr@microsoft.com",
+          "hash": "4f6a1df9d6",
+          "subject": "Add rate limiting to pointer lock to prevent abuse"
+        },
         {
           "date": "2026-05-10",
           "author": "echen@mozilla.com",
@@ -14318,12 +14215,6 @@
           "author": "nrosenthal@google.com",
           "hash": "d88b087",
           "subject": "Account for allowCommentsPIsAndDataAttributes"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "gbeaulac@gmail.com",
-          "hash": "1f85a4d",
-          "subject": "docs: fix small typo in comparison (#393)"
         }
       ],
       "testlog": [
@@ -14717,6 +14608,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-10",
+          "author": "sambamurthy.bandaru@microsoft.com",
+          "hash": "fd3f3372be",
+          "subject": "Add WPT for Selection.modify('extend') in bidi text"
+        },
+        {
           "date": "2026-06-05",
           "author": "seokho@chromium.org",
           "hash": "df0e36b878",
@@ -14880,18 +14777,6 @@
           "author": "gui.lebas@gmail.com",
           "hash": "7d054400a",
           "subject": "[selectors] Move column combinator to Selectors 5"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "chris@w3.org",
-          "hash": "d2ec86072",
-          "subject": "whoops, filename"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "chris@w3.org",
-          "hash": "225cc38da",
-          "subject": "[selectors 4][editoril] Explainer"
         }
       ],
       "testlog": [
@@ -15220,14 +15105,7 @@
       "href": "https://w3c.github.io/webappsec-subresource-integrity/",
       "specrepo": "https://github.com/w3c/webappsec-subresource-integrity",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-04-13",
-          "author": "mkwst@chromium.org",
-          "hash": "a98c1b0557",
-          "subject": "[SRI Message Signatures] Require an enforceable `Unencoded-Digest`."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Storage",
@@ -15411,15 +15289,15 @@
           "author": "k_dubost@apple.com",
           "hash": "c612d927",
           "subject": "Remove SVGElementInstance mixin interface - Fix #1070"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "k_dubost@apple.com",
-          "hash": "3819a97d",
-          "subject": "Fix #1089 Clarify systemLanguage prose"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "vinaysingh@microsoft.com",
+          "hash": "61298b466e",
+          "subject": "[SVG] Align SVGStyleElement type and media with HTMLStyleElement"
+        },
         {
           "date": "2026-06-04",
           "author": "52317531+Ahmad-S792@users.noreply.github.com",
@@ -15659,18 +15537,6 @@
           "author": "fs@opera.com",
           "hash": "c3e1310bc3",
           "subject": "Improve parsing of SMIL clock values"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "blink-w3c-test-autoroller@chromium.org",
-          "hash": "958eb3724d",
-          "subject": "[SVG] Remove support of width and height as presentation (#59086)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "fs@opera.com",
-          "hash": "d2925c71ed",
-          "subject": "Refactor wpt/svg/animations/smil-clock-value-parsing.html"
         }
       ]
     },
@@ -16179,12 +16045,6 @@
           "author": "caceres_m@apple.com",
           "hash": "3837418",
           "subject": "Prepare implementation report for /TR/ publication as DNOTE"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "caceres_m@apple.com",
-          "hash": "84c45c1",
-          "subject": "Address review: add publishDate, align terminology"
         }
       ],
       "testlog": [],
@@ -17083,24 +16943,6 @@
           "author": "nsatragno@chromium.org",
           "hash": "2f1307421d",
           "subject": "[webauthn] Renderer implementation for CMTGK"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "emil@yubico.com",
-          "hash": "934edca601",
-          "subject": "Delete incorrect comment"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "emil@yubico.com",
-          "hash": "7e268b69d7",
-          "subject": "Restore parseCreationOptionsFromJSON() test with default hints"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "emil@yubico.com",
-          "hash": "4fbb52f702",
-          "subject": "Add tests of duplicate PublicKeyCredentialHint values"
         }
       ]
     },
@@ -17819,6 +17661,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-10",
+          "author": "aborovova@mozilla.com",
+          "hash": "e96c4ac7da",
+          "subject": "Keep the file for the temporary webextention to make sure content scripts work."
+        },
+        {
           "date": "2026-06-03",
           "author": "felash@gmail.com",
           "hash": "b00fe9f3c0",
@@ -17990,6 +17838,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18000,12 +17854,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18016,6 +17864,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18026,12 +17880,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18042,6 +17890,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18052,12 +17906,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18068,6 +17916,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18078,12 +17932,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18094,6 +17942,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18104,12 +17958,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18120,6 +17968,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18130,12 +17984,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18146,6 +17994,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18156,12 +18010,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18172,6 +18020,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18182,12 +18036,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18198,6 +18046,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18208,12 +18062,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18224,6 +18072,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18234,12 +18088,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18250,6 +18098,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18260,12 +18114,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18276,6 +18124,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18286,12 +18140,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18302,6 +18150,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18312,12 +18166,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18328,6 +18176,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18338,12 +18192,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18354,6 +18202,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18364,12 +18218,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18380,6 +18228,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18390,12 +18244,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18406,6 +18254,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18416,12 +18270,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18432,6 +18280,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-10",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "6d7c6b892",
+          "subject": "Test PBOs with a couple of invalid texSubImage2D overloads. (#3775)"
+        },
+        {
           "date": "2026-04-29",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "7b242d093",
@@ -18442,12 +18296,6 @@
           "author": "3084564376@qq.com",
           "hash": "f6ee1b43a",
           "subject": "Add readBuffer coverage for invalid enums below COLOR_ATTACHMENT0 (#3771)"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "kbrussel@alum.mit.edu",
-          "hash": "5a0142443",
-          "subject": "Fix incorrect assumptions in drawingbuffer-storage-test. (#3770)"
         }
       ],
       "testlog": []
@@ -18473,6 +18321,18 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-06-09",
+          "author": "alanbaker@google.com",
+          "hash": "c187099f",
+          "subject": "[subgroup-matrix] Update proposal (#6275)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "jrprice@google.com",
+          "hash": "f1fad990",
+          "subject": "uniformity: fix visit order for array accessor expressions (#6259)"
+        },
         {
           "date": "2026-06-05",
           "author": "dneto@google.com",
@@ -18624,6 +18484,12 @@
       "testlog": [
         {
           "date": "2026-06-09",
+          "author": "feng.dai@intel.com",
+          "hash": "9404c15b11",
+          "subject": "webnn: emulate rank-5 pow's input tensors in TFLite backend"
+        },
+        {
+          "date": "2026-06-09",
           "author": "tnak@chromium.org",
           "hash": "b029b0e825",
           "subject": "Revert \"WebNN: Fix Pool2d ceil_mode to check both spatial dimensions\""
@@ -18723,24 +18589,6 @@
           "author": "enrico.galli@intel.com",
           "hash": "95789051ce",
           "subject": "WebNN: Move SyncToken generation to renderer"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "junwei.fu@intel.com",
-          "hash": "328ffce025",
-          "subject": "webnn: Fix incorrect peephole weight slicing in LSTM for ifgo layout"
-        },
-        {
-          "date": "2026-04-14",
-          "author": "39690846+vmukhachev@users.noreply.github.com",
-          "hash": "6b10db2334",
-          "subject": "Webnn: reduce_log_sum_exp.https.any.js: add overflow test (#59119)"
-        },
-        {
-          "date": "2026-04-13",
-          "author": "shiyi.zou@intel.com",
-          "hash": "6bb8658820",
-          "subject": "webnn: work around ORT expand for 0-D input to 0-D output"
         }
       ]
     },
@@ -18788,6 +18636,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-09",
+          "author": "anna.weine@mozilla.com",
+          "hash": "a08d06d7ec",
+          "subject": "Adding getRemoteCertificates WPT test"
+        },
         {
           "date": "2026-06-04",
           "author": "anna.weine@mozilla.com",
@@ -19145,7 +18999,26 @@
       "name": "WebXR Device API",
       "href": "https://immersive-web.github.io/webxr/",
       "specrepo": "https://github.com/immersive-web/webxr",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-06-05",
+          "author": "cabanier@meta.com",
+          "hash": "452d0b6",
+          "subject": "address review comments"
+        },
+        {
+          "date": "2026-06-02",
+          "author": "cabanier@meta.com",
+          "hash": "13cb591",
+          "subject": "redesign inline stereo sessions"
+        },
+        {
+          "date": "2026-05-28",
+          "author": "cabanier@meta.com",
+          "hash": "bbce0d4",
+          "subject": "add support for inline-stereo"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-04-29",
@@ -19257,6 +19130,18 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-06-09",
+          "author": "alanbaker@google.com",
+          "hash": "c187099f",
+          "subject": "[subgroup-matrix] Update proposal (#6275)"
+        },
+        {
+          "date": "2026-06-09",
+          "author": "jrprice@google.com",
+          "hash": "f1fad990",
+          "subject": "uniformity: fix visit order for array accessor expressions (#6259)"
+        },
         {
           "date": "2026-06-05",
           "author": "dneto@google.com",
