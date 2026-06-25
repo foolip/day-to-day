@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2026-04-28T08:15:33.315Z",
-  "until": "2026-06-24T08:15:33.315Z",
+  "since": "2026-04-29T08:15:12.587Z",
+  "until": "2026-06-25T08:15:12.587Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -52,6 +52,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -223,7 +235,14 @@
       "href": "https://w3c.github.io/badging/",
       "specrepo": "https://github.com/w3c/badging",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "caceres_m@apple.com",
+          "hash": "e7b03f18ff",
+          "subject": "badging: test worker context (#54763)"
+        }
+      ]
     },
     {
       "name": "Battery Status API",
@@ -294,7 +313,14 @@
       "name": "Clipboard API and events",
       "href": "https://w3c.github.io/clipboard-apis/",
       "specrepo": "https://github.com/w3c/clipboard-apis",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "shwetabindal@microsoft.com",
+          "hash": "6201fd1",
+          "subject": "Defer OS clipboard read from clipboard.read() to ClipboardItem.getType() (#248)"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-04-30",
@@ -628,6 +654,90 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "emilio@crisal.io",
+          "hash": "67f5196492",
+          "subject": "Introduce a more proper property graph for custom properties."
+        },
+        {
+          "date": "2026-06-25",
+          "author": "agoloman@mozilla.com",
+          "hash": "58ef1f92ff",
+          "subject": "Revert \"Bug 2048426, Bug 2048425 - Implement text-box-trim for inline boxes. \" for causing wr failures @text-box-trim-start-001.html."
+        },
+        {
+          "date": "2026-06-25",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "948f9c36c5",
+          "subject": "Implement text-box-trim for inline boxes."
+        },
+        {
+          "date": "2026-06-25",
+          "author": "tkent@chromium.org",
+          "hash": "4a010dd92d",
+          "subject": "Allow ruby annotations to overflow into the block-start margin"
+        },
+        {
+          "date": "2026-06-25",
+          "author": "kojii@chromium.org",
+          "hash": "70fd1c35e8",
+          "subject": "[line-break] Relax the `DCHECK` for `BreakText` results"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "freedebreuil@google.com",
+          "hash": "7fe570faa7",
+          "subject": "Limit baseline synthesis to block-axis scrollers"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "yanlingwang@microsoft.com",
+          "hash": "9531ef3f84",
+          "subject": "[Masonry] Add inflow_bounds support in grid-lanes"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "clchambers@microsoft.com",
+          "hash": "08500cea7d",
+          "subject": "Enable support compositor animations for SVG <use>"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "jcscottiii@users.noreply.github.com",
+          "hash": "b40ec5303d",
+          "subject": "Remove extra blank line in outline-009.html (#60878)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "80b7ba4953",
+          "subject": "Reformat outline-009.html (#60869)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "4a8219cc0d",
+          "subject": "WebKit export: Update outline-width and outline-offset to match updated computed style resolution rules (#60868)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "almaher@microsoft.com",
+          "hash": "25a2019227",
+          "subject": "[Masonry] Add WPT tests for subgrid line-names in grid-lanes"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "tkent@chromium.org",
+          "hash": "c7c7337968",
+          "subject": "css/selectors: Automate a part of legacy selectors tests (63 to 79)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "jkew@mozilla.com",
+          "hash": "c80337af97",
+          "subject": "Enable animating between 'auto' and explicit lengths for text-decoration-inset."
+        },
         {
           "date": "2026-06-24",
           "author": "almaher@microsoft.com",
@@ -3681,72 +3791,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "30ff7e450d",
           "subject": "[css-borders] Update \"corner\" property name (#59026)"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "moonira@google.com",
-          "hash": "238898ed9c",
-          "subject": "Propagate attr() taint ranges when resolving shorthands"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "almaher@microsoft.com",
-          "hash": "ccb92b5a45",
-          "subject": "[Masonry] Add tests for subgrid contribution on standalone axis"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "celestepan@microsoft.com",
-          "hash": "15136312c3",
-          "subject": "[Masonry] Implement fill-reverse for indefinite size containers"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "0f369da707",
-          "subject": "[caret-shape] Fix caret-shape with non-start alignment."
-        },
-        {
-          "date": "2026-04-29",
-          "author": "yanlingwang@microsoft.com",
-          "hash": "0676f11784",
-          "subject": "[Masonry] Fix crash in grid-lanes shorthand with var() in repeat()"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "heycam@apple.com",
-          "hash": "2dd9ed8b49",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313278 (#59507)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "tyler@programming.dev",
-          "hash": "6d3500bfdf",
-          "subject": "Add link-parameter parsing and rendering for svg"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "kiet.ho@apple.com",
-          "hash": "92d8303942",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=309611"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "38193798+sb3nder@users.noreply.github.com",
-          "hash": "70c5661649",
-          "subject": "[zoom] getComputedStyle() initial & keyword values for length properties are unscaled (#58199)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "i.am.kanaru.sato@gmail.com",
-          "hash": "2ce8ee80b5",
-          "subject": "Add tests for animation property of AnimationEvent and TransitionEvent."
-        },
-        {
-          "date": "2026-04-28",
-          "author": "mrobinson@igalia.com",
-          "hash": "dc6e0351b9",
-          "subject": "layout: Use a consistent definition of \"document white space\""
         }
       ]
     },
@@ -3828,6 +3872,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-24",
+          "author": "freedebreuil@google.com",
+          "hash": "7fe570faa7",
+          "subject": "Limit baseline synthesis to block-axis scrollers"
+        },
+        {
           "date": "2026-06-15",
           "author": "ikilpatrick@chromium.org",
           "hash": "88e63dac31",
@@ -3882,18 +3932,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "30639060d",
           "subject": "[css-anchor-position-1] Depluralize anchors-* in 'position-visibility' and only check default anchor #10201"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "31491a8b4",
-          "subject": "Revert \"[css-anchor-position-1] Specify scroll offset snapshot timing #10796\" (#13849)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "futhark@google.com",
-          "hash": "54fd028ea",
-          "subject": "[css-anchor-position-1] Specify scroll offset snapshot timing #10796 (#13675)"
         }
       ],
       "testlog": [
@@ -4041,6 +4079,18 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-06-24",
+          "author": "clchambers@microsoft.com",
+          "hash": "08500cea7d",
+          "subject": "Enable support compositor animations for SVG <use>"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "jkew@mozilla.com",
+          "hash": "c80337af97",
+          "subject": "Enable animating between 'auto' and explicit lengths for text-decoration-inset."
+        },
+        {
           "date": "2026-06-22",
           "author": "cdumez@apple.com",
           "hash": "495d9d7716",
@@ -4063,12 +4113,6 @@
           "author": "kiet.ho@apple.com",
           "hash": "b3bff5b802",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313595"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "i.am.kanaru.sato@gmail.com",
-          "hash": "2ce8ee80b5",
-          "subject": "Add tests for animation property of AnimationEvent and TransitionEvent."
         }
       ]
     },
@@ -4326,7 +4370,14 @@
       "href": "https://drafts.csswg.org/css-break/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "b17c61c3f",
+          "subject": "[css-break-4] Don't extend boxes into table/grid gaps #12801"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-06-23",
@@ -4656,21 +4707,33 @@
           "subject": "[css-color-adjust-1] Rework color scheme stuff to reflect f2f resolutions (#13857)"
         }
       ],
-      "testlog": [
-        {
-          "date": "2026-04-28",
-          "author": "kiet.ho@apple.com",
-          "hash": "92d8303942",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=309611"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Color HDR",
       "href": "https://drafts.csswg.org/css-color-hdr/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "chris@w3.org",
+          "hash": "85af2de37",
+          "subject": "[css-color-hdr][editorial] reword"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "chris@w3.org",
+          "hash": "490569c30",
+          "subject": "[css-color-hdr][editorial] ratio, not difference!"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "chris@w3.org",
+          "hash": "3fcf78792",
+          "subject": "[css-color-hdr] Consistently distinguish between terms defined in linear-light and those defined in log2 (photographic stops) https://github.com/w3c-cg/ColorWeb-CG/issues/129"
+        }
+      ],
       "testlog": []
     },
     {
@@ -5224,12 +5287,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "826f686d47",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313354 (#59546)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "mrobinson@igalia.com",
-          "hash": "dc6e0351b9",
-          "subject": "layout: Use a consistent definition of \"document white space\""
         }
       ]
     },
@@ -5352,6 +5409,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "yanlingwang@microsoft.com",
+          "hash": "9531ef3f84",
+          "subject": "[Masonry] Add inflow_bounds support in grid-lanes"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "almaher@microsoft.com",
+          "hash": "25a2019227",
+          "subject": "[Masonry] Add WPT tests for subgrid line-names in grid-lanes"
+        },
         {
           "date": "2026-06-24",
           "author": "almaher@microsoft.com",
@@ -5585,24 +5654,6 @@
           "author": "yanlingwang@microsoft.com",
           "hash": "6511ec3fe6",
           "subject": "[Masonry] Add cross-group baseline shim to track sizing algorithm"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "almaher@microsoft.com",
-          "hash": "ccb92b5a45",
-          "subject": "[Masonry] Add tests for subgrid contribution on standalone axis"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "celestepan@microsoft.com",
-          "hash": "15136312c3",
-          "subject": "[Masonry] Implement fill-reverse for indefinite size containers"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "yanlingwang@microsoft.com",
-          "hash": "0676f11784",
-          "subject": "[Masonry] Fix crash in grid-lanes shorthand with var() in repeat()"
         }
       ]
     },
@@ -5712,12 +5763,6 @@
           "author": "cgqaq@chromium.org",
           "hash": "60210925aa",
           "subject": "Support calc() mixing angle and percentage in conic-gradient stops"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "heycam@apple.com",
-          "hash": "2dd9ed8b49",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313278 (#59507)"
         }
       ]
     },
@@ -5735,6 +5780,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "agoloman@mozilla.com",
+          "hash": "58ef1f92ff",
+          "subject": "Revert \"Bug 2048426, Bug 2048425 - Implement text-box-trim for inline boxes. \" for causing wr failures @text-box-trim-start-001.html."
+        },
+        {
+          "date": "2026-06-25",
+          "author": "sajidanwar94@gmail.com",
+          "hash": "948f9c36c5",
+          "subject": "Implement text-box-trim for inline boxes."
+        },
         {
           "date": "2026-06-10",
           "author": "salipov@mozilla.com",
@@ -5802,12 +5859,6 @@
           "author": "dmangal@microsoft.com",
           "hash": "efc01a4ff4",
           "subject": "[wpt] Update CSS-linked-Parameters test after CSS resolution"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "tyler@programming.dev",
-          "hash": "6d3500bfdf",
-          "subject": "Add link-parameter parsing and rendering for svg"
         }
       ]
     },
@@ -5816,14 +5867,7 @@
       "href": "https://drafts.csswg.org/css-lists/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2026-04-28",
-          "author": "87750369+OnkarRuikar@users.noreply.github.com",
-          "hash": "bd473dff8",
-          "subject": "[css-lists-3] Correct the counter-set example (#10669)"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-05-19",
@@ -6199,6 +6243,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-25",
+          "author": "tkent@chromium.org",
+          "hash": "4a010dd92d",
+          "subject": "Allow ruby annotations to overflow into the block-start margin"
+        },
+        {
           "date": "2026-06-22",
           "author": "sakhapov@chromium.org",
           "hash": "7d4fd298f4",
@@ -6481,6 +6531,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-25",
+          "author": "emilio@crisal.io",
+          "hash": "67f5196492",
+          "subject": "Introduce a more proper property graph for custom properties."
+        },
+        {
           "date": "2026-06-19",
           "author": "jkew@mozilla.com",
           "hash": "c369a02aa1",
@@ -6517,27 +6573,15 @@
           "author": "sakhapov@chromium.org",
           "hash": "75c4d3e4c",
           "subject": "[css-pseudo] Extend CSSPseudoElement to all standardized non-element-backed tree-abiding pseudo-elements (#13940)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "arichiv@chromium.org",
-          "hash": "ba5946a1f",
-          "subject": "Update Overview.bs"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "arichiv@chromium.org",
-          "hash": "513d229b3",
-          "subject": "Update wording in Overview.bs for clarity"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "arichiv@chromium.org",
-          "hash": "a65b85396",
-          "subject": "Preventing User Dictionary Leaks via ::spelling-error and ::grammar-error CSS Pseudo-Elements"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "tkent@chromium.org",
+          "hash": "4a010dd92d",
+          "subject": "Allow ruby annotations to overflow into the block-start margin"
+        },
         {
           "date": "2026-06-09",
           "author": "futhark@chromium.org",
@@ -6627,6 +6671,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-25",
+          "author": "tkent@chromium.org",
+          "hash": "4a010dd92d",
+          "subject": "Allow ruby annotations to overflow into the block-start margin"
+        },
+        {
           "date": "2026-06-11",
           "author": "jja08111@gmail.com",
           "hash": "5b709fef67",
@@ -6683,14 +6733,7 @@
       "href": "https://drafts.csswg.org/css-scroll-anchoring/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2026-04-28",
-          "author": "rhunt@eqrion.net",
-          "hash": "16a9725d3",
-          "subject": "[css-scroll-anchoring-1] Add more details to anchor node selection (#3476)"
-        }
-      ],
+      "speclog": [],
       "testlog": []
     },
     {
@@ -6886,12 +6929,6 @@
           "author": "kojii@chromium.org",
           "hash": "bb56a2074",
           "subject": "[css-sizing-4] Update responsive-iframes-explainer.md (#13961)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "bdc1f3075",
-          "subject": "[css-sizing-4] Define that stretch sizing treats auto margins as 0 (since sizing wins against margins, while alignment loses). #9902"
         }
       ],
       "testlog": [
@@ -7033,12 +7070,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "a9805fbdb",
           "subject": "[various] Rename <an+b> to <a-n-plus-b> #9473"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "gui.lebas@gmail.com",
-          "hash": "de3eb4011",
-          "subject": "[css-syntax-3] Remove duplicate token stream creations (#11129)"
         }
       ],
       "testlog": []
@@ -7229,6 +7260,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "kojii@chromium.org",
+          "hash": "70fd1c35e8",
+          "subject": "[line-break] Relax the `DCHECK` for `BreakText` results"
+        },
         {
           "date": "2026-06-19",
           "author": "52317531+Ahmad-S792@users.noreply.github.com",
@@ -7531,14 +7568,7 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-04-28",
-          "author": "i.am.kanaru.sato@gmail.com",
-          "hash": "2ce8ee80b5",
-          "subject": "Add tests for animation property of AnimationEvent and TransitionEvent."
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "CSS Typed OM",
@@ -7696,6 +7726,30 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-25",
+          "author": "tkent@chromium.org",
+          "hash": "4a010dd92d",
+          "subject": "Allow ruby annotations to overflow into the block-start margin"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "jcscottiii@users.noreply.github.com",
+          "hash": "b40ec5303d",
+          "subject": "Remove extra blank line in outline-009.html (#60878)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "80b7ba4953",
+          "subject": "Reformat outline-009.html (#60869)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "nt1m@users.noreply.github.com",
+          "hash": "4a8219cc0d",
+          "subject": "WebKit export: Update outline-width and outline-offset to match updated computed style resolution rules (#60868)"
+        },
+        {
           "date": "2026-06-22",
           "author": "nt1m@users.noreply.github.com",
           "hash": "1d6470499b",
@@ -7754,12 +7808,6 @@
           "author": "simon@igalia.com",
           "hash": "1d3aae1b59",
           "subject": "layout: Disregard 'content' property for <input> elements"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "0f369da707",
-          "subject": "[caret-shape] Fix caret-shape with non-start alignment."
         }
       ]
     },
@@ -7769,6 +7817,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "05c815d64",
+          "subject": "[css-values-4] Define generic serialization for functional notations. #9720"
+        },
         {
           "date": "2026-06-12",
           "author": "jackalmage@gmail.com",
@@ -7822,24 +7876,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "9b703d736",
           "subject": "[css-values-4] Clarify/fix round(line-width) text. #13794"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "7fa0d2fee",
-          "subject": "[css-values-5] Loosen the syntax of attr-unit so unknown units trigger fallback rather than being invalid. #13060"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "moonira@google.com",
-          "hash": "a12a01b0f",
-          "subject": "[css-values-5] Fix typo: use <<random-cache-key>> instead of <<random-name>>"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jackalmage@gmail.com",
-          "hash": "edf1db0ff",
-          "subject": "[css-values-5] Remove closed issue #11424 #13578"
         }
       ],
       "testlog": [
@@ -8010,12 +8046,6 @@
           "author": "sakhapov@chromium.org",
           "hash": "4b4ed76ceb",
           "subject": "Prevent eager simplification of math nodes involving layout"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "moonira@google.com",
-          "hash": "238898ed9c",
-          "subject": "Propagate attr() taint ranges when resolving shorthands"
         }
       ]
     },
@@ -8026,6 +8056,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "emilio@crisal.io",
+          "hash": "67f5196492",
+          "subject": "Introduce a more proper property graph for custom properties."
+        },
         {
           "date": "2026-05-20",
           "author": "emilio@crisal.io",
@@ -8207,12 +8243,6 @@
           "author": "emilio@crisal.io",
           "hash": "53c949f3ed",
           "subject": "System fonts should be scaled by zoom."
-        },
-        {
-          "date": "2026-04-28",
-          "author": "38193798+sb3nder@users.noreply.github.com",
-          "hash": "70c5661649",
-          "subject": "[zoom] getComputedStyle() initial & keyword values for length properties are unscaled (#58199)"
         }
       ]
     },
@@ -8262,12 +8292,6 @@
           "author": "atkinssj@gmail.com",
           "hash": "cfb59f593",
           "subject": "[cssom-1] Correct whitespace in `@font-face` serialization (#13880)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "chris@w3.org",
-          "hash": "75299e7be",
-          "subject": "[cssom-1] font-family descriptor should not be serialized if not present, fix #13323 (#13847)"
         }
       ],
       "testlog": [
@@ -8795,6 +8819,18 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "jmdyck@ibiblio.org",
+          "hash": "45a66717",
+          "subject": "Editorial: Factor out RunCallerContext AO (#3846)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "3902892+rbuckton@users.noreply.github.com",
+          "hash": "f792966f",
+          "subject": "Normative: Add `using` and `await using` Declarations, SuppressedError, DisposableStack, and AsyncDisposableStack (#3000)"
+        },
+        {
           "date": "2026-06-15",
           "author": "richard.gibson@gmail.com",
           "hash": "19fc72f2",
@@ -8973,24 +9009,6 @@
           "author": "m.ficarra@f5.com",
           "hash": "8ebc410f",
           "subject": "Editorial: clarify that reduce skips first call based on initialValue (#3818)"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "jmdyck@ibiblio.org",
-          "hash": "3e0bdf07",
-          "subject": "Editorial: Undo a recent regression (#3839)"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "m.ficarra@f5.com",
-          "hash": "c3fb5297",
-          "subject": "Editorial: narrow some AO return types and parameter types (#3826)"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "m.ficarra@f5.com",
-          "hash": "c099b14f",
-          "subject": "Editorial: fix error in description of IsLessThan (#3810)"
         }
       ],
       "testlog": [
@@ -9244,6 +9262,12 @@
       "href": "https://w3c.github.io/encrypted-media/",
       "specrepo": "https://github.com/w3c/encrypted-media",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "chris@chrisneedham.com",
+          "hash": "694eaa2",
+          "subject": "Replace \"MUST not\" with \"MUST NOT\" per RFC 2119 and RFC 8174"
+        },
         {
           "date": "2026-06-11",
           "author": "57790+chrisn@users.noreply.github.com",
@@ -9503,6 +9527,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9522,6 +9558,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9543,6 +9591,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9562,6 +9622,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9583,6 +9655,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9602,6 +9686,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9623,6 +9719,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9642,6 +9750,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9663,6 +9783,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9682,6 +9814,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9703,6 +9847,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9723,6 +9879,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -9742,6 +9910,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -9822,6 +10002,12 @@
       "specrepo": "https://github.com/whatwg/fetch",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-06-25",
+          "author": "yoav@yoav.ws",
+          "hash": "aa0bd92",
+          "subject": "Add TAO destination check for navigation redirect chains"
+        },
         {
           "date": "2026-06-21",
           "author": "annevk@annevk.nl",
@@ -10190,18 +10376,6 @@
           "author": "annevk@annevk.nl",
           "hash": "7f18479340",
           "subject": "FileSystemHandle: add more serialization coverage"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "annevk@annevk.nl",
-          "hash": "e1887c1328",
-          "subject": "File System: \\ is not a path separator on non-Windows platforms"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "annevk@annevk.nl",
-          "hash": "2492988931",
-          "subject": "FileSystemDirectoryHandle's resolve() and sibling directories"
         }
       ]
     },
@@ -10242,12 +10416,6 @@
           "author": "simon.farre.cx@gmail.com",
           "hash": "3f8841ce01",
           "subject": "Update keyboard lock appropriately"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "zcorpan@gmail.com",
-          "hash": "298f30b75d",
-          "subject": "Fullscreen: keyboard lock is restored when exiting one level of fullscreen"
         }
       ]
     },
@@ -10376,6 +10544,18 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-06-25",
+          "author": "yoav.weiss@shopify.com",
+          "hash": "b94ff888",
+          "subject": "Expose redirectCount for TAO opted-in navigation redirect chains"
+        },
+        {
+          "date": "2026-06-25",
+          "author": "jarhar@chromium.org",
+          "hash": "ab99fc39",
+          "subject": "Define option and optgroup rendering better"
+        },
         {
           "date": "2026-06-23",
           "author": "annevk@annevk.nl",
@@ -10660,6 +10840,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "cgqaq@chromium.org",
+          "hash": "c07926297a",
+          "subject": "Support colorspace and alpha attributes on <input type=color>"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "jarhar@chromium.org",
+          "hash": "a04fe5ffb3",
+          "subject": "Move scroller to listbox for <input> in <select>"
+        },
         {
           "date": "2026-06-23",
           "author": "yezhizhenjiakang@gmail.com",
@@ -12045,30 +12237,6 @@
           "author": "mike@mikepennisi.com",
           "hash": "87b253339f",
           "subject": "Map \"Interest invokers\" to web-features"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "jarhar@chromium.org",
-          "hash": "8116dc1ced",
-          "subject": "Don't update selectedcontent in option insertion/removal steps"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "jarhar@chromium.org",
-          "hash": "bfd80385df",
-          "subject": "Use position/sizing CSS from ::picker(select) for menulist"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "masonf@chromium.org",
-          "hash": "e485292524",
-          "subject": "Make InterestEvent not composed"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jjaschke@mozilla.com",
-          "hash": "9a29041af3",
-          "subject": "Set custom element namespace prefix after construction per spec."
         }
       ]
     },
@@ -12451,6 +12619,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -12794,7 +12974,14 @@
       "specrepo": "https://github.com/whatwg/mimesniff",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-06-25",
+          "author": "valentin.gosu@gmail.com",
+          "hash": "5eaa344c01",
+          "subject": "Enable MIME sniffing for misconfigured text/plain content types"
+        }
+      ]
     },
     {
       "name": "Mixed Content",
@@ -12895,6 +13082,18 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-06-24",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "2b0c3ce064",
+          "subject": "Navigation-Timing: destination-based TAO (#60823)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "yoav.weiss@shopify.com",
+          "hash": "f172f7a5a1",
+          "subject": "Navigation timing COOP tests (#60459)"
+        },
+        {
           "date": "2026-06-23",
           "author": "josh@joshmatthews.net",
           "hash": "424c116427",
@@ -12971,6 +13170,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -12990,6 +13201,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -13011,6 +13234,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -13030,6 +13265,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -13051,6 +13298,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -13070,6 +13329,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -13091,6 +13362,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -13111,6 +13394,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -13130,6 +13425,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -13200,6 +13507,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -13473,12 +13792,6 @@
           "author": "chris@w3.org",
           "hash": "41ed195",
           "subject": "Use correct include file, fix #566"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "chris@w3.org",
-          "hash": "99eb329",
-          "subject": "Update tools.md to add Rust fdeflate"
         }
       ],
       "testlog": []
@@ -13788,12 +14101,6 @@
           "author": "vogelheim@chromium.org",
           "hash": "7f6e277",
           "subject": "."
-        },
-        {
-          "date": "2026-04-29",
-          "author": "30862698+otherdaniel@users.noreply.github.com",
-          "hash": "ffdd3ae",
-          "subject": "Split up partial elements. (#392)"
         }
       ],
       "testlog": [
@@ -13886,12 +14193,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "564703e637",
           "subject": "Remove special text node behavior from streaming sanitizer"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "nrosenthal@chromium.org",
-          "hash": "a01cd468b4",
-          "subject": "Sanitize processing instructions"
         }
       ]
     },
@@ -13937,6 +14238,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "awogbemila@chromium.org",
+          "hash": "620a2d2341",
+          "subject": "[animation-trigger] Check impl compatibility for non-current animations"
+        },
         {
           "date": "2026-06-17",
           "author": "awogbemila@chromium.org",
@@ -14331,6 +14638,12 @@
         {
           "date": "2026-06-24",
           "author": "tkent@chromium.org",
+          "hash": "c7c7337968",
+          "subject": "css/selectors: Automate a part of legacy selectors tests (63 to 79)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "tkent@chromium.org",
           "hash": "fea209c6dc",
           "subject": "css/selectors: Automate a part of legacy selectors tests (41 to 57)"
         },
@@ -14520,12 +14833,6 @@
           "author": "sisidovski@chromium.org",
           "hash": "241a7959c1",
           "subject": "Add WPT for cross-origin navigation with sw static routing cache source"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "annevk@annevk.nl",
-          "hash": "9f54bfaa19",
-          "subject": "Service Workers: correct nested_load_worker.js"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -14571,6 +14878,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "yoavweiss@chromium.org",
+          "hash": "08aac7011f",
+          "subject": "SpeculationMeasurement - browser-side preconnects"
+        },
         {
           "date": "2026-06-23",
           "author": "yoavweiss@chromium.org",
@@ -14849,6 +15162,12 @@
         {
           "date": "2026-06-24",
           "author": "viralipurbey@microsoft.com",
+          "hash": "776ddc74f4",
+          "subject": "[SVG] Remove segment-completing close path WPT"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "viralipurbey@microsoft.com",
           "hash": "3c7d417eaf",
           "subject": "[SVG] Implement `setPathData()` on `SVGPathElement`"
         },
@@ -15109,12 +15428,6 @@
           "author": "longsonr@gmail.com",
           "hash": "61688e1efe",
           "subject": "Add textPath side attribute to SVGTextPathElement webidl"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "arichiv@chromium.org",
-          "hash": "93dc06fb1d",
-          "subject": "[SVG] (4) Add flag to block filters applied to embedded content"
         }
       ]
     },
@@ -15857,6 +16170,12 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "zilin.chen@ntu.edu.sg",
+          "hash": "24a7a71a4",
+          "subject": "[spec] Partly revert #2162: ignore start for func refs (#2201)"
+        },
+        {
           "date": "2026-06-23",
           "author": "rossberg@mpi-sws.org",
           "hash": "bd4633ace",
@@ -16125,24 +16444,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "3db6d663b",
           "subject": "[spectec] Model failure in IL semantics"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "rossberg@mpi-sws.org",
-          "hash": "7ee14a68c",
-          "subject": "[spectec] Formalise binding semantics for let premises (#2109)"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "rossberg@mpi-sws.org",
-          "hash": "7d618b161",
-          "subject": "[ci] Test exepcts"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "rossberg@mpi-sws.org",
-          "hash": "b1ae9c598",
-          "subject": "[spectec] Add documentation about subscripted infix operators and their shorthands"
         }
       ],
       "testlog": []
@@ -16190,6 +16491,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "clchambers@microsoft.com",
+          "hash": "065648e952",
+          "subject": "Ensure reversed animations receive a final frame after start delay"
+        },
         {
           "date": "2026-06-11",
           "author": "flackr@chromium.org",
@@ -16497,6 +16804,30 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kenrb@chromium.org",
+          "hash": "fdcab3f",
+          "subject": "Fix mangled link"
+        },
+        {
+          "date": "2026-06-23",
+          "author": "kenrb@chromium.org",
+          "hash": "750fafe",
+          "subject": "Add files via upload"
+        },
+        {
+          "date": "2026-06-23",
+          "author": "kenrb@chromium.org",
+          "hash": "db28f40",
+          "subject": "Delete explainers/assets/ambient_ui_concept.png"
+        },
+        {
+          "date": "2026-06-23",
+          "author": "kenrb@chromium.org",
+          "hash": "bbc5424",
+          "subject": "Update ambient-sign-in.md"
+        },
         {
           "date": "2026-06-10",
           "author": "akshayku@microsoft.com",
@@ -17096,6 +17427,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-06-25",
+          "author": "jdescottes@mozilla.com",
+          "hash": "ceb37b9af1",
+          "subject": "[wdspec] Dismiss file dialogs in file_dialog_opened.py/user_context_tentative.py (windows CI crashes)"
+        },
+        {
           "date": "2026-06-24",
           "author": "aborovova@mozilla.com",
           "hash": "a755303778",
@@ -17208,18 +17545,6 @@
           "author": "mail@hskupin.info",
           "hash": "b0dcd3d1f7",
           "subject": "[wdspec] Add tests for the external WebAuthn specification."
-        },
-        {
-          "date": "2026-04-28",
-          "author": "jow13_122@yahoo.com",
-          "hash": "4af3d60632",
-          "subject": "Removing security.data_uri.block_toplevel_data_uri_navigations pref"
-        },
-        {
-          "date": "2026-04-28",
-          "author": "leo@mozilla.com",
-          "hash": "1ec30130d2",
-          "subject": "[wdspec] Add test for firefox \"log.entryAdded\" Error \"text\" behaviour"
         }
       ]
     },
@@ -17285,6 +17610,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17304,6 +17641,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17325,6 +17674,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17344,6 +17705,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17365,6 +17738,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17384,6 +17769,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17405,6 +17802,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17424,6 +17833,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17445,6 +17866,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17464,6 +17897,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17485,6 +17930,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17504,6 +17961,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17525,6 +17994,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17544,6 +18025,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17565,6 +18058,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17584,6 +18089,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -17605,6 +18122,18 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
+        {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
           "hash": "6d7c6b892",
@@ -17624,6 +18153,18 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-06-24",
+          "author": "kbrussel@alum.mit.edu",
+          "hash": "4169a3b6a",
+          "subject": "Add tests for late extension enabling and disabling. (#3776)"
+        },
+        {
+          "date": "2026-06-24",
+          "author": "ShabbyX@gmail.com",
+          "hash": "109abd5ae",
+          "subject": "WebGL1: Forbid #extension: disable after non-preprocessor tokens (#3774)"
+        },
         {
           "date": "2026-06-10",
           "author": "kbrussel@alum.mit.edu",
@@ -18031,7 +18572,14 @@
       "name": "Loading Signed Exchanges",
       "href": "https://wicg.github.io/webpackage/loading.html",
       "specrepo": "https://github.com/WICG/webpackage",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-06-25",
+          "author": "zgroza@chromium.org",
+          "hash": "87293d0",
+          "subject": "feat(wbn-sign): add signature validation and web bundle ID to info command"
+        }
+      ],
       "testlog": []
     },
     {
@@ -18305,24 +18853,6 @@
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "afed4eb",
           "subject": "Remove comparison to WebRTC in Privacy and Security section"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "mt@lowentropy.net",
-          "hash": "1ae7ce7",
-          "subject": "Fix em-dashes"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "mt@lowentropy.net",
-          "hash": "63be2b2",
-          "subject": "typo"
-        },
-        {
-          "date": "2026-04-29",
-          "author": "mt@lowentropy.net",
-          "hash": "02b6735",
-          "subject": "Fix TLS exporter interface"
         }
       ],
       "testlog": [
@@ -18380,6 +18910,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-06-24",
+          "author": "43855550+danae404@users.noreply.github.com",
+          "hash": "bf0ae94314",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317248 (#60864)"
+        },
         {
           "date": "2026-06-18",
           "author": "tschuster@mozilla.com",
