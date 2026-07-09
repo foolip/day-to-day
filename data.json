@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2026-05-12T09:31:19.721Z",
-  "until": "2026-07-08T09:31:19.721Z",
+  "since": "2026-05-13T10:29:22.750Z",
+  "until": "2026-07-09T10:29:22.750Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -52,6 +52,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/ANGLE_instanced_arrays/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -320,7 +326,14 @@
           "subject": "Defer OS clipboard read from clipboard.read() to ClipboardItem.getType() (#248)"
         }
       ],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2026-07-08",
+          "author": "echuang@mozilla.com",
+          "hash": "fd272e318a",
+          "subject": "Update web-platform test expectation."
+        }
+      ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -335,12 +348,6 @@
           "author": "hikezoe.birchill@mozilla.com",
           "hash": "853b848670",
           "subject": "Fall back to UnknownWebkit for pref-disabled `-webkit-*` pseudos so insertRule doesn't throw."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "35d6194310",
-          "subject": "[webkit-box] Ensure that display:-webkit-box blockifies its children."
         }
       ]
     },
@@ -370,12 +377,6 @@
           "author": "Ms2ger@gmail.com",
           "hash": "07c84cad01",
           "subject": "Use .any.js for {de,}compression-with-detach.window.js (#60042)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -412,14 +413,7 @@
       "specrepo": "https://github.com/whatwg/console",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Contact Picker API",
@@ -640,6 +634,102 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "tkent@chromium.org",
+          "hash": "e62266ca7e",
+          "subject": "Propagate block-end annotation space from previous sibling block"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "yangsharon@igalia.com",
+          "hash": "bf1043b729",
+          "subject": "Migrate css-conditional crashtest to external/wpt"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "69da2f70b8",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318489 (#61172)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "88ab16022a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317461 (#61173)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "cbbba73fc7",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318406 (#61174)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "eae0e01096",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317983 (#61175)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "39c67c648c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318241 (#61176)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "69af08c867",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317235 (#61177)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "5316a300e2",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318729 (#61178)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "b31c53fb67",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318358 (#61179)"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "kbabbitt@microsoft.com",
+          "hash": "5f6046734e",
+          "subject": "[css-mixins] Split tests into subdirectories for functions and mixins"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "almaher@microsoft.com",
+          "hash": "a8546fa48b",
+          "subject": "[Masonry] Resolve set indices for nested subgrids"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "abotella@igalia.com",
+          "hash": "9c53e13e22",
+          "subject": "[line-clamp] Preserve the `block-ellipsis` state across relayouts"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "tvanderlippe@gmail.com",
+          "hash": "9e82636b55",
+          "subject": "script: Fix crash when assigning invalid values to adoptedStylesheets"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "jvarga@igalia.com",
+          "hash": "98ae7940ee",
+          "subject": "Extend add-two-types WPT coverage to other CSSMathValue subclasses"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "dshin@mozilla.com",
+          "hash": "58b15ece02",
+          "subject": "Prevent text selection from originating inside a button-like element for user-select: auto."
+        },
         {
           "date": "2026-07-08",
           "author": "srgbrt@google.com",
@@ -3675,78 +3765,6 @@
           "author": "jjaschke@mozilla.com",
           "hash": "c25d591320",
           "subject": "CSS Highlight API: Change test expectation for custom-highlight-font-metrics-003.html  to also use ::selection."
-        },
-        {
-          "date": "2026-05-13",
-          "author": "mstensho@chromium.org",
-          "hash": "eb47295d04",
-          "subject": "Don't \"leak\" properties from multicol container to columns."
-        },
-        {
-          "date": "2026-05-13",
-          "author": "sukil@mozilla.com",
-          "hash": "83825050bb",
-          "subject": "Ensure pseudo-elements that use attr() recascade when their originating element's attribute changes."
-        },
-        {
-          "date": "2026-05-13",
-          "author": "almaher@microsoft.com",
-          "hash": "daba8348c3",
-          "subject": "[Masonry] Measure subgridded items against standalone axis"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "ikilpatrick@chromium.org",
-          "hash": "c87e90521e",
-          "subject": "[gap-decorations] Allow gap decorations to apply to -webkit-box"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "dshin@mozilla.com",
-          "hash": "5d6b67ba5c",
-          "subject": "Scoped lookup for @position-try rules."
-        },
-        {
-          "date": "2026-05-13",
-          "author": "jvarga@igalia.com",
-          "hash": "129a3727e1",
-          "subject": "Add testing for additional text-align keyword values"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "38193798+sb3nder@users.noreply.github.com",
-          "hash": "7ed85233d9",
-          "subject": "[zoom] getComputedStyle() initial values, add nested-element edge cases (#59835)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "05eca7e3be",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313300 (#59831)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "edmanp@google.com",
-          "hash": "c746dad9bc",
-          "subject": "Rename borderless to unframed in //third_party/blink"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "awogbemila@chromium.org",
-          "hash": "d817c15704",
-          "subject": "Fall back to scroll-snap-align for auto scrollIntoView alignment"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "cgqaq@chromium.org",
-          "hash": "d9065cfb9e",
-          "subject": "Implement image(<color>) functional notation"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "82fd4be25f",
-          "subject": "Apply contain:layout overflow handling to absolutely positioned children in AbsoluteContainingBlock::ReflowAbsoluteFrame."
         }
       ]
     },
@@ -3962,12 +3980,6 @@
           "author": "wptsync@mozilla.com",
           "hash": "6faf6a052c",
           "subject": "Allow unitless zero in anchor functions in calc. (#59431)"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "dshin@mozilla.com",
-          "hash": "5d6b67ba5c",
-          "subject": "Scoped lookup for @position-try rules."
         }
       ]
     },
@@ -4678,6 +4690,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-07-09",
+          "author": "yangsharon@igalia.com",
+          "hash": "bf1043b729",
+          "subject": "Migrate css-conditional crashtest to external/wpt"
+        },
+        {
           "date": "2026-07-03",
           "author": "descalante@mozilla.com",
           "hash": "ced6794ecc",
@@ -4752,12 +4770,6 @@
           "author": "mstensho@chromium.org",
           "hash": "e459ca8f5c",
           "subject": "Avoid nullptr LayoutInputNode child caused by display-locking."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "hikezoe.birchill@mozilla.com",
-          "hash": "82fd4be25f",
-          "subject": "Apply contain:layout overflow handling to absolutely positioned children in AbsoluteContainingBlock::ReflowAbsoluteFrame."
         }
       ]
     },
@@ -4959,18 +4971,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "d6c4f3e05",
           "subject": "[css-flexbox-1][editorial] Annotate new wpts"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "7b17352c0",
-          "subject": "[css-flexbox-2] Tiebreak balance assignments by biasing toward earlier assignments."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "cbc1bd837",
-          "subject": "[css-flexbox-2] Catch the error case where a single overflowing item is followed by a zero-size item."
         }
       ],
       "testlog": [
@@ -5312,6 +5312,60 @@
       ],
       "testlog": [
         {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "69da2f70b8",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318489 (#61172)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "88ab16022a",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317461 (#61173)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "cbbba73fc7",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318406 (#61174)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "eae0e01096",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317983 (#61175)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "39c67c648c",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318241 (#61176)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "69af08c867",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=317235 (#61177)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "5316a300e2",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318729 (#61178)"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "sammy.gill@apple.com",
+          "hash": "b31c53fb67",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=318358 (#61179)"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "almaher@microsoft.com",
+          "hash": "a8546fa48b",
+          "subject": "[Masonry] Resolve set indices for nested subgrids"
+        },
+        {
           "date": "2026-07-08",
           "author": "almaher@microsoft.com",
           "hash": "551114090b",
@@ -5592,12 +5646,6 @@
           "author": "yanlingwang@microsoft.com",
           "hash": "7ad3decaa5",
           "subject": "[Masonry] Support animation for flow-tolerance"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "almaher@microsoft.com",
-          "hash": "daba8348c3",
-          "subject": "[Masonry] Measure subgridded items against standalone axis"
         }
       ]
     },
@@ -5670,12 +5718,6 @@
           "author": "cgqaq@chromium.org",
           "hash": "6bca7bb47a",
           "subject": "Add reftests for the image(<color>) CSS function"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "cgqaq@chromium.org",
-          "hash": "d9065cfb9e",
-          "subject": "Implement image(<color>) functional notation"
         }
       ]
     },
@@ -5987,12 +6029,6 @@
           "author": "hyowon@igalia.com",
           "hash": "791b091f85",
           "subject": "Allow multicol layout on button elements"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "mstensho@chromium.org",
-          "hash": "eb47295d04",
-          "subject": "Don't \"leak\" properties from multicol container to columns."
         }
       ]
     },
@@ -6113,6 +6149,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-08",
+          "author": "abotella@igalia.com",
+          "hash": "9c53e13e22",
+          "subject": "[line-clamp] Preserve the `block-ellipsis` state across relayouts"
+        },
         {
           "date": "2026-07-06",
           "author": "abotella@igalia.com",
@@ -6238,12 +6280,6 @@
           "author": "cgqaq@chromium.org",
           "hash": "6e31dcfa09",
           "subject": "Handle both-edge gutters in zero-width scrollers"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "awogbemila@chromium.org",
-          "hash": "d817c15704",
-          "subject": "Fall back to scroll-snap-align for auto scrollIntoView alignment"
         }
       ]
     },
@@ -6566,6 +6602,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "tkent@chromium.org",
+          "hash": "e62266ca7e",
+          "subject": "Propagate block-end annotation space from previous sibling block"
+        },
         {
           "date": "2026-07-02",
           "author": "yangsharon@igalia.com",
@@ -7447,6 +7489,12 @@
         {
           "date": "2026-07-08",
           "author": "jvarga@igalia.com",
+          "hash": "98ae7940ee",
+          "subject": "Extend add-two-types WPT coverage to other CSSMathValue subclasses"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "jvarga@igalia.com",
           "hash": "c023a3dea5",
           "subject": "Improve add-two-types WPT test names"
         },
@@ -7581,12 +7629,6 @@
           "author": "jvarga@igalia.com",
           "hash": "e4beda9a20",
           "subject": "Allow simplified <angle> values in property comparison helper"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "jvarga@igalia.com",
-          "hash": "129a3727e1",
-          "subject": "Add testing for additional text-align keyword values"
         }
       ]
     },
@@ -7604,6 +7646,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "tkent@chromium.org",
+          "hash": "e62266ca7e",
+          "subject": "Propagate block-end annotation space from previous sibling block"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "dshin@mozilla.com",
+          "hash": "58b15ece02",
+          "subject": "Prevent text selection from originating inside a button-like element for user-select: auto."
+        },
         {
           "date": "2026-07-07",
           "author": "nt1m@users.noreply.github.com",
@@ -7707,12 +7761,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "3eb53d5d2",
           "subject": "[css-values-5] Specify random() corner-cases for custom functions and arb-sub functions. #13661 #13662"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "jackalmage@gmail.com",
-          "hash": "d359f0c56",
-          "subject": "[css-values-4] Teensy negative lengths will round to -1 #13794"
         }
       ],
       "testlog": [
@@ -7853,18 +7901,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "271dd5a9d3",
           "subject": "Disallow <url> type in attr() in the tests (#59516)"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "sukil@mozilla.com",
-          "hash": "83825050bb",
-          "subject": "Ensure pseudo-elements that use attr() recascade when their originating element's attribute changes."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "05eca7e3be",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313300 (#59831)"
         }
       ]
     },
@@ -7901,6 +7937,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "6106271c1",
+          "subject": "[css-view-tranitions-2] Update two-phase view transition explainer (#14145)"
+        },
         {
           "date": "2026-07-01",
           "author": "94928215+martrapp@users.noreply.github.com",
@@ -8020,12 +8062,6 @@
           "author": "sammy.gill@apple.com",
           "hash": "aa5fbee95e",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=314988 (#60076)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "38193798+sb3nder@users.noreply.github.com",
-          "hash": "7ed85233d9",
-          "subject": "[zoom] getComputedStyle() initial values, add nested-element edge cases (#59835)"
         }
       ]
     },
@@ -8066,6 +8102,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-08",
+          "author": "tvanderlippe@gmail.com",
+          "hash": "9e82636b55",
+          "subject": "script: Fix crash when assigning invalid values to adoptedStylesheets"
+        },
         {
           "date": "2026-07-02",
           "author": "yangsharon@igalia.com",
@@ -8273,6 +8315,36 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "annevk@annevk.nl",
+          "hash": "4e0a5a2",
+          "subject": "Adopt a DocumentFragment with a host like any other node"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "annevk@annevk.nl",
+          "hash": "0729808",
+          "subject": "Editorial: type arguments in event dispatch algorithms"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "annevk@annevk.nl",
+          "hash": "9b3a066",
+          "subject": "Editorial: name event path items and clarify target selection"
+        },
+        {
+          "date": "2026-07-09",
+          "author": "annevk@annevk.nl",
+          "hash": "eb0dfd5",
+          "subject": "Adopt node before removing child in replace"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "annevk@annevk.nl",
+          "hash": "c7f757c",
+          "subject": "Editorial: improve ensure pre-insert validity"
+        },
+        {
           "date": "2026-07-07",
           "author": "annevk@annevk.nl",
           "hash": "f8b241f",
@@ -8352,6 +8424,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "annevk@annevk.nl",
+          "hash": "3f9d8f8cd7",
+          "subject": "Adopt DocumentFragment with host like any other node"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "lwarlow@igalia.com",
+          "hash": "dd4fefb959",
+          "subject": "Test that computed role updates after calling moveBefore() (#61148)"
+        },
         {
           "date": "2026-07-07",
           "author": "annevk@annevk.nl",
@@ -8483,12 +8567,6 @@
           "author": "lwarlow@igalia.com",
           "hash": "8440c03c3d",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=313148 (#59661)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -8644,18 +8722,6 @@
           "author": "andre.bargull@gmail.com",
           "hash": "74825f7",
           "subject": "Editorial: Check for undefined [[FirstDayOfWeek]] field"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "bakkot@gmail.com",
-          "hash": "c2f134d",
-          "subject": "Meta: add repository information to package.json (#1066)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "bakkot@gmail.com",
-          "hash": "186e96b",
-          "subject": "Meta: Switch to trusted publishing (#1065)"
         }
       ],
       "testlog": [
@@ -8988,6 +9054,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-07-08",
+          "author": "jan.stola@oracle.com",
+          "hash": "250f204f23",
+          "subject": "Exclude immutable ArrayBuffers from Typed Array tests that expect mutability (#5063)"
+        },
+        {
           "date": "2026-07-02",
           "author": "3902892+rbuckton@users.noreply.github.com",
           "hash": "64ff467c0c",
@@ -9127,12 +9199,6 @@
           "author": "Ms2ger@gmail.com",
           "hash": "82dd4748f2",
           "subject": "Split single-byte-decoder.window.js (#60055)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -9322,6 +9388,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9377,6 +9449,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_color_buffer_float/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -9434,6 +9512,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9489,6 +9573,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_disjoint_timer_query/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -9546,6 +9636,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9601,6 +9697,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_float_blend/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -9658,6 +9760,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9713,6 +9821,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_shader_texture_lod/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -9770,6 +9884,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9825,6 +9945,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_compression_bptc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -9882,6 +10008,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9938,6 +10070,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -9993,6 +10131,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/EXT_texture_norm16/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -10248,12 +10392,6 @@
           "author": "33023300+JannisBush@users.noreply.github.com",
           "hash": "456a691dae",
           "subject": "Tests for HTTP/1.1 Parsing (NUL, CR, LF, Colon and more)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "gsnedders@apple.com",
-          "hash": "789a9f7059",
-          "subject": "Remove requestIdleCallback from compression-dictionary tests"
         }
       ]
     },
@@ -10500,6 +10638,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-07-09",
+          "author": "pryor@chromium.org",
+          "hash": "ec7065aa57",
+          "subject": "[Fullscreen] Implement iframe fullscreen flag"
+        },
+        {
           "date": "2026-05-28",
           "author": "emilio@crisal.io",
           "hash": "a7ee23398d",
@@ -10519,7 +10663,14 @@
           "subject": "Require system focus for gamepad user gesture (#207)"
         }
       ],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "robpitkin@google.com",
+          "hash": "a81cf0688a",
+          "subject": "Reland \"gamepad: Check Permissions Policy when binding Mojo interfaces\""
+        }
+      ],
       "testpolicy": "https://github.com/w3c/gamepad/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -10617,14 +10768,7 @@
       "specrepo": "https://github.com/w3c/hr-time",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "HTML",
@@ -10632,6 +10776,18 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "sirreal@users.noreply.github.com",
+          "hash": "2e477cf1",
+          "subject": "Serialize processing instructions with \"?>\" at the end"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "annevk@annevk.nl",
+          "hash": "e80d002c",
+          "subject": "Editorial: merge the text track concept into TextTrack"
+        },
         {
           "date": "2026-07-08",
           "author": "annevk@annevk.nl",
@@ -10913,27 +11069,15 @@
           "author": "lwarlow@igalia.com",
           "hash": "e1f5ca33",
           "subject": "Editorial: move a and area's target to HTMLHyperlinkElementUtils mixin"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "kbabbitt@microsoft.com",
-          "hash": "d8a1be5f",
-          "subject": "Rendering: update list of fieldset inherited properties for CSS Gaps"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "6fb52885",
-          "subject": "Editorial: modernize <table> members"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "farre@mozilla.com",
-          "hash": "29eeb79b",
-          "subject": "Make sure navigate event is cleared before signaling abort."
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "philip@foolip.org",
+          "hash": "982cb52d1f",
+          "subject": "Test serialization of processing instructions in HTML"
+        },
         {
           "date": "2026-07-07",
           "author": "szager@chromium.org",
@@ -12151,30 +12295,6 @@
           "author": "3105373+xu-cheng@users.noreply.github.com",
           "hash": "980a0cd79f",
           "subject": "Avoid code injection in sandbox document-open mutation test"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "kbabbitt@microsoft.com",
-          "hash": "59253e1fe6",
-          "subject": "Gap decoration property inheritance from fieldset to anonymous child"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "janewman@microsoft.com",
-          "hash": "f844e5bc1f",
-          "subject": "[focusgroup] Rename IDL reflections to camelCase"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "psychpsyo@gmail.com",
-          "hash": "6f268dd967",
-          "subject": "Add test for the clear attribute presentational hints on BR elements"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -12529,7 +12649,14 @@
       "href": "https://wicg.github.io/js-self-profiling/",
       "specrepo": "https://github.com/WICG/js-self-profiling",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-07-08",
+          "author": "thomas.bertet@gmail.com",
+          "hash": "fe407963fa",
+          "subject": "Add js-profiling-mode enum Document Policy with eager/lazy V8 profiler initialization"
+        }
+      ]
     },
     {
       "name": "Keyboard Lock",
@@ -12550,6 +12677,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/KHR_parallel_shader_compile/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -12703,12 +12836,6 @@
           "author": "tannal2409@gmail.com",
           "hash": "bd3764c",
           "subject": "Add <a> element into the grouping elements (#330)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "lwarlow@igalia.com",
-          "hash": "03620de",
-          "subject": "Introduce MathMLAnchorElement interface"
         }
       ],
       "testlog": []
@@ -12860,12 +12987,6 @@
           "author": "pchodur@google.com",
           "hash": "1b61e4ec84",
           "subject": "[AWC] Add Web Platform Tests for Additional Windowing Controls API"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "edmanp@google.com",
-          "hash": "c746dad9bc",
-          "subject": "Rename borderless to unframed in //third_party/blink"
         }
       ]
     },
@@ -13112,6 +13233,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -13167,6 +13294,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_element_index_uint/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -13224,6 +13357,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -13279,6 +13418,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_standard_derivatives/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -13336,6 +13481,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -13391,6 +13542,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_texture_float_linear/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -13448,6 +13605,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -13504,6 +13667,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -13559,6 +13728,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OES_vertex_array_object/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -13658,6 +13833,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/OVR_multiview2/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -13785,14 +13966,7 @@
       "specrepo": "https://github.com/w3c/performance-timeline",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Periodic Background Synchronization",
@@ -14300,18 +14474,6 @@
           "author": "30862698+otherdaniel@users.noreply.github.com",
           "hash": "c0f1ca8",
           "subject": "Move steps from \"sanitize\" into a new \"is attribute allowed\" operation"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "vogelheim@chromium.org",
-          "hash": "8b4bdb0",
-          "subject": "Review feedback: Clarify algorithm."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "vogelheim@chromium.org",
-          "hash": "7f6e277",
-          "subject": "."
         }
       ],
       "testlog": [
@@ -15102,6 +15264,12 @@
       "testlog": [
         {
           "date": "2026-07-08",
+          "author": "tnikkel@gmail.com",
+          "hash": "73d8c88cdf",
+          "subject": "Don't taint a same-origin response that a service worker substitutes for a cross-origin request."
+        },
+        {
+          "date": "2026-07-08",
           "author": "hsingh@mozilla.com",
           "hash": "414ca67a15",
           "subject": "Fixing a service worker issue where a json mime type can be registered as a valid sw script."
@@ -15117,18 +15285,6 @@
           "author": "jfernandez@igalia.com",
           "hash": "16ae77358c",
           "subject": "implement SW fallback callback and extend test coverage"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "jfernandez@igalia.com",
-          "hash": "bfbc95b8cb",
-          "subject": "Add a SW interceptor for the Download request"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -15318,12 +15474,6 @@
           "author": "649348+MattiasBuelens@users.noreply.github.com",
           "hash": "c05b447326",
           "subject": "Streams: mark tests for owning streams as tentative (#59593)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -16161,12 +16311,6 @@
           "author": "tim.ledbetter@ladybird.org",
           "hash": "d4598eba09",
           "subject": "URL: Add test coverage for non-ASCII userinfo (#60446)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -16184,6 +16328,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-08",
+          "author": "pgriffis@igalia.com",
+          "hash": "5847ee5cfa",
+          "subject": "urlpattern: Add test cases for behavior in a detached frame"
+        },
         {
           "date": "2026-06-17",
           "author": "charliew@apple.com",
@@ -16217,14 +16367,7 @@
       "specrepo": "https://github.com/w3c/user-timing",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Vibration API",
@@ -16439,30 +16582,6 @@
           "author": "101424226+KateZhaoTR@users.noreply.github.com",
           "hash": "a7439fef",
           "subject": "Editorial: Issue2775 (#2783)"
-        },
-        {
-          "date": "2026-05-13",
-          "author": "49305434+daniel-montalvo@users.noreply.github.com",
-          "hash": "39373fb4",
-          "subject": "Editorial: Remove getParticipants call as we are not including acknowledgements yet in this ED (#2787)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "github-actions[bot]@users.noreply.github.com",
-          "hash": "cc9e3712",
-          "subject": "Chore: Format files with Prettier"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "5457769+ZoeBijl@users.noreply.github.com",
-          "hash": "30cc9bb2",
-          "subject": "Editorial: add CSS-AAM editor’s draft (#2673)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "dmontalvo@w3.org",
-          "hash": "fe3223d8",
-          "subject": "node lts"
         }
       ],
       "testlog": [
@@ -16497,6 +16616,18 @@
       "href": "https://webassembly.github.io/spec/core/bikeshed/",
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "15a46ee60",
+          "subject": "[spectec] Eps"
+        },
+        {
+          "date": "2026-07-08",
+          "author": "rossberg@mpi-sws.org",
+          "hash": "1440d2d0f",
+          "subject": "[cite] Update wasm-specs.bib"
+        },
         {
           "date": "2026-07-07",
           "author": "raoxiaojia@gmail.com",
@@ -16736,18 +16867,6 @@
           "author": "rossberg@mpi-sws.org",
           "hash": "4aaa12c58",
           "subject": "[interpreter] Fix deftype closure invariant in validator (#2167)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "rossberg@mpi-sws.org",
-          "hash": "aed61c2b5",
-          "subject": "[spectec] Dynamically check side conditions on type fields/cases (#2158)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "rossberg@mpi-sws.org",
-          "hash": "dc5f15e1c",
-          "subject": "[spec] Limit PDF bookmarks depth to avoid hyperref misrendering (#2165)"
         }
       ],
       "testlog": []
@@ -16766,14 +16885,7 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "testrepo": "web-platform-tests/wpt",
       "speclog": [],
-      "testlog": [
-        {
-          "date": "2026-05-13",
-          "author": "dminor@mozilla.com",
-          "hash": "55e1f16004",
-          "subject": "Update esm-integration wpt expectations"
-        }
-      ]
+      "testlog": []
     },
     {
       "name": "Web Animations",
@@ -17066,12 +17178,6 @@
           "author": "hongchan@google.com",
           "hash": "760c85884c",
           "subject": "[WebAudio] Add integration tests for renderSizeHint AudioWorklet"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "benjamin.matuszewski@gmail.com",
-          "hash": "02276c0411",
-          "subject": "[webaudio] fix AudioNode invalid constructor test"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -17081,6 +17187,12 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "simone@w3.org",
+          "hash": "207cf99",
+          "subject": "Removing style attribute for HTML validation during spec generation (#2429)"
+        },
         {
           "date": "2026-07-07",
           "author": "akshayku@microsoft.com",
@@ -17163,6 +17275,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17176,6 +17294,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "dalecurtis@chromium.org",
+          "hash": "d5b264eb2a",
+          "subject": "Make RGB -> RGB copyTo direct. Fix issues with conversion paths"
+        },
         {
           "date": "2026-06-19",
           "author": "dalecurtis@chromium.org",
@@ -17199,18 +17323,6 @@
           "author": "xidorn@canva.com",
           "hash": "9ecf3a5e43",
           "subject": "Fix ImageDecoder failing to decode animated GIFs with zero first-frame delay."
-        },
-        {
-          "date": "2026-05-13",
-          "author": "tnikkel@gmail.com",
-          "hash": "7a9870e278",
-          "subject": "Add test for bug 2022252."
-        },
-        {
-          "date": "2026-05-12",
-          "author": "paul@paul.cx",
-          "hash": "fc1718b736",
-          "subject": "Add WPT tests for multichannel Opus encode/decode roundtrip."
         }
       ]
     },
@@ -17219,6 +17331,12 @@
       "href": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17240,6 +17358,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17259,6 +17383,12 @@
       "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17280,6 +17410,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17299,6 +17435,12 @@
       "href": "https://w3c.github.io/webcodecs/codec_registry.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17320,6 +17462,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17339,6 +17487,12 @@
       "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17360,6 +17514,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17379,6 +17539,12 @@
       "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17400,6 +17566,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17419,6 +17591,12 @@
       "href": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17440,6 +17618,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17460,6 +17644,12 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
+        {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
           "hash": "0426d1d",
@@ -17479,6 +17669,12 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-07-08",
+          "author": "youennf@users.noreply.github.com",
+          "hash": "ce2788d",
+          "subject": "Update the algorithm to ensure that the config is set as part of a successful configure (#943)"
+        },
         {
           "date": "2026-06-23",
           "author": "paul@paul.cx",
@@ -17507,6 +17703,12 @@
       "specrepo": "https://github.com/w3c/webcrypto",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "kingsley@kkoyung.dev",
+          "hash": "ec2fee39a4",
+          "subject": "script: Implement getPublicKey operations of Ed448 and X448"
+        },
         {
           "date": "2026-06-12",
           "author": "jfernandez@igalia.com",
@@ -17545,6 +17747,12 @@
       "specrepo": "https://github.com/w3c/webdriver",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "jdescottes@mozilla.com",
+          "hash": "14b5637",
+          "subject": "fix: update get element tag name to use dom element qualified name (#1968)"
+        },
+        {
           "date": "2026-07-02",
           "author": "julian.descottes@gmail.com",
           "hash": "926cd31",
@@ -17570,6 +17778,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-07-09",
+          "author": "hyowon@igalia.com",
+          "hash": "ed6f2067ea",
+          "subject": "Remove invalid signCount=-1 case from webauthn test"
+        },
         {
           "date": "2026-07-06",
           "author": "mail@hskupin.info",
@@ -17754,6 +17968,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -17809,6 +18029,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_clip_cull_distance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17866,6 +18092,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -17921,6 +18153,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_astc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -17978,6 +18216,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18033,6 +18277,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_etc1/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18090,6 +18340,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18145,6 +18401,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_compressed_texture_s3tc/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18202,6 +18464,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18257,6 +18525,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_debug_renderer_info/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18314,6 +18588,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18369,6 +18649,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_depth_texture/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18426,6 +18712,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18481,6 +18773,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_draw_instanced_base_vertex_base_instance/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18538,6 +18836,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18593,6 +18897,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_multi_draw/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18650,6 +18960,12 @@
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
         {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
+        {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "bb43e51a1",
@@ -18705,6 +19021,12 @@
       "href": "https://registry.khronos.org/webgl/extensions/WEBGL_provoking_vertex/",
       "specrepo": "https://github.com/KhronosGroup/WebGL",
       "speclog": [
+        {
+          "date": "2026-07-09",
+          "author": "zkuznia@gmail.com",
+          "hash": "064aaf182",
+          "subject": "Add WebGL CTS regression test for active transform feedback buffer tracking (#3782)"
+        },
         {
           "date": "2026-07-06",
           "author": "3479527+lexaknyazev@users.noreply.github.com",
@@ -18986,12 +19308,6 @@
           "author": "dsinclair@chromium.org",
           "hash": "1687972d",
           "subject": "Change ordering of alignment requirement conditionals (#6261)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "kainino@chromium.org",
-          "hash": "cebc91c8",
-          "subject": "Fixes for transient attachment validation (#6248)"
         }
       ],
       "testlog": []
@@ -19052,12 +19368,6 @@
           "author": "caseq@chromium.org",
           "hash": "6a34ac2846",
           "subject": "bindings: add checks for whether underlying array buffer is shared when converting array views"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "annevk@annevk.nl",
-          "hash": "e4a4672e9e",
-          "subject": "Remove ShadowRealm test coverage"
         }
       ]
     },
@@ -19958,12 +20268,6 @@
           "author": "dsinclair@chromium.org",
           "hash": "1687972d",
           "subject": "Change ordering of alignment requirement conditionals (#6261)"
-        },
-        {
-          "date": "2026-05-12",
-          "author": "kainino@chromium.org",
-          "hash": "cebc91c8",
-          "subject": "Fixes for transient attachment validation (#6248)"
         }
       ],
       "testlog": []
