@@ -1,14 +1,21 @@
 {
   "days": 56,
-  "since": "2026-08-10T14:07:46.258Z",
-  "until": "2026-10-06T14:07:46.258Z",
+  "since": "2026-08-11T14:26:27.924Z",
+  "until": "2026-10-07T14:26:27.924Z",
   "specs": [
     {
       "name": "Accelerometer",
       "href": "https://w3c.github.io/accelerometer/",
       "specrepo": "https://github.com/w3c/accelerometer",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "helmut@januschka.com",
+          "hash": "ff69d44006",
+          "subject": "Fix screen-relative spatial sensor rotation"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/accelerometer/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -323,12 +330,6 @@
           "author": "joonehur@microsoft.com",
           "hash": "782f4cab99",
           "subject": "Add Blink support for DownloadURL-list drag type"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "daniec@microsoft.com",
-          "hash": "6496278acf",
-          "subject": "Bail out of paste command if frame is removed during paste event handler"
         }
       ],
       "testpolicy": "https://github.com/w3c/clipboard-apis/blob/HEAD/CONTRIBUTING.md"
@@ -473,12 +474,6 @@
           "author": "rego@igalia.com",
           "hash": "ae4fc09f47",
           "subject": "aamtests: Fix _find_fully_loaded_tab (#61883)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "5333778+HaTheo@users.noreply.github.com",
-          "hash": "5e7e05030f",
-          "subject": "Add UIA wapper and enable support for core-aam tests (application, article, banner, blockquote, etc.)"
         }
       ]
     },
@@ -563,6 +558,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "561d0ad808",
+          "subject": "Update syntax of line-clamp (#63352)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "kojii@chromium.org",
+          "hash": "2e94ad1f44",
+          "subject": "[text-spacing-trim] Disable `LineBreakerHanKerningEnd`"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "a143ac31cb",
+          "subject": "Incorrect box size when padding change is followed by another style change before layout (#63339)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "alancutter@google.com",
+          "hash": "bb7e2aa4dc",
+          "subject": "Fix invalid assumption that CSS column-rule and row-rule composite onto the same length values"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "917f0ba6df",
+          "subject": "[css-transitions] revert inside @starting-style drops lower-layer @starting-style declarations (#63273)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "71d3ced8c7",
+          "subject": "shape-outside image drops an above-threshold run that starts in the last column (#63293)"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "celestepan@microsoft.com",
+          "hash": "dde871463b",
+          "subject": "[masonry] Add tests for reading flow reading down the stacking axis"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "futhark@chromium.org",
+          "hash": "59e20730c1",
+          "subject": "Fixed broken detection of overlay scrollbars in CQ test"
+        },
         {
           "date": "2026-10-06",
           "author": "pdr@chromium.org",
@@ -3298,72 +3341,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "0b16fe7702",
           "subject": "Don't clear lines to make room for ellipsis (#61854)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "1518939bc5",
-          "subject": "Add test for strut insertion with block ellipsis (#61853)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "eb7aa8a1d7",
-          "subject": "test that float clipping in line-clamp is at the unshaped content edge (#61850)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jfernandez@igalia.com",
-          "hash": "5297796ed8",
-          "subject": "[Typed OM] Support the logical border longhands"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "hyowon@igalia.com",
-          "hash": "ae0d70d3f1",
-          "subject": "Hide scrollbar in transform-iframe-scroll-position"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "cc02a98806",
-          "subject": "Fix remaining zoom inheritance failures"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "0d00deb15e",
-          "subject": "Make negative-width layout opportunities direction-aware"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "9944d8fe9d",
-          "subject": "Clamp shape-outside line opportunities to available inline-size"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "javiercon@microsoft.com",
-          "hash": "f3d30c116e",
-          "subject": "[gap-decorations] Fix for auto iterator bug"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "lcdavid@google.com",
-          "hash": "cbf4c230d7",
-          "subject": "Add a runtime feature for scroll-snap-type: pair"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "fd1c532b80",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321424 (#61837)"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "mhochk@microsoft.com",
-          "hash": "26bc001235",
-          "subject": "[Grid] Fix fragmentation edge case"
         }
       ]
     },
@@ -3374,6 +3351,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "a143ac31cb",
+          "subject": "Incorrect box size when padding change is followed by another style change before layout (#63339)"
+        },
         {
           "date": "2026-09-30",
           "author": "kojii@chromium.org",
@@ -3905,12 +3888,6 @@
           "author": "helmut@januschka.com",
           "hash": "d93d626fa0",
           "subject": "Make <area> display:none per the HTML rendering spec"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "mhochk@microsoft.com",
-          "hash": "26bc001235",
-          "subject": "[Grid] Fix fragmentation edge case"
         }
       ]
     },
@@ -4318,6 +4295,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-10-06",
+          "author": "futhark@chromium.org",
+          "hash": "59e20730c1",
+          "subject": "Fixed broken detection of overlay scrollbars in CQ test"
+        },
+        {
           "date": "2026-09-29",
           "author": "klee@igalia.com",
           "hash": "2d7d6f28a5",
@@ -4486,6 +4469,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-06",
+          "author": "celestepan@microsoft.com",
+          "hash": "dde871463b",
+          "subject": "[masonry] Add tests for reading flow reading down the stacking axis"
+        },
         {
           "date": "2026-09-30",
           "author": "bkardell@gmail.com",
@@ -5642,12 +5631,6 @@
           "author": "clchambers@microsoft.com",
           "hash": "d1a5e9fc2c",
           "subject": "CC Clip paths: Temporarily fall back for empty inset paths"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "fd1c532b80",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321424 (#61837)"
         }
       ]
     },
@@ -5734,6 +5717,54 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "eae052278",
+          "subject": "[css-overflow] Delete stray text"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "andreu@andreubotella.com",
+          "hash": "1f04ca5cf",
+          "subject": "[css-overflow-4] Clarify the interaction between `block-ellipsis` and `text-overflow` (#14516)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "674dbf91e",
+          "subject": "[css-overflow] Improve spec prose"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "bf9279eff",
+          "subject": "[css-overflow] Update line-clamp syntax and longhands (continued…)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "cd414655e",
+          "subject": "[css-overflow] Update test coverage"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "a28157abe",
+          "subject": "[css-overflow] Make bikeshed happy"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "15e844ee1",
+          "subject": "[css-overflow] Update line-clamp syntax (and longhands)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "f1a60dbb5",
+          "subject": "[css-overflow] Markup fix"
+        },
+        {
           "date": "2026-08-29",
           "author": "sebastianzartner@gmail.com",
           "hash": "8fe035fe1",
@@ -5768,33 +5799,15 @@
           "author": "git@florian.rivoal.net",
           "hash": "7a7e17bc3",
           "subject": "[css-overflow] fix typo"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "c746125d3",
-          "subject": "[css-overflow] test coverage"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "8bbf96cbd",
-          "subject": "[css-overflow] block ellipsis's strut is based on the root inline"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "fa5bf9aba",
-          "subject": "[css-overflow] test coverage"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "6dc15cc9c",
-          "subject": "[css-overflow-4] clip clamped floats to the unshaped edge"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "git@florian.rivoal.net",
+          "hash": "561d0ad808",
+          "subject": "Update syntax of line-clamp (#63352)"
+        },
         {
           "date": "2026-10-06",
           "author": "masonf@chromium.org",
@@ -6094,18 +6107,6 @@
           "author": "git@florian.rivoal.net",
           "hash": "0b16fe7702",
           "subject": "Don't clear lines to make room for ellipsis (#61854)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "1518939bc5",
-          "subject": "Add test for strut insertion with block ellipsis (#61853)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "eb7aa8a1d7",
-          "subject": "test that float clipping in line-clamp is at the unshaped content edge (#61850)"
         }
       ]
     },
@@ -6510,12 +6511,6 @@
           "author": "awogbemila@chromium.org",
           "hash": "0f96572f18",
           "subject": "[scroll-snap] Fix target Element IDs for mutual snap"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "lcdavid@google.com",
-          "hash": "cbf4c230d7",
-          "subject": "Add a runtime feature for scroll-snap-type: pair"
         }
       ]
     },
@@ -6543,6 +6538,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "71d3ced8c7",
+          "subject": "shape-outside image drops an above-threshold run that starts in the last column (#63293)"
+        },
+        {
           "date": "2026-10-05",
           "author": "52317531+Ahmad-S792@users.noreply.github.com",
           "hash": "674daa9997",
@@ -6553,18 +6554,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "76e33a6778",
           "subject": "WebKit export: [iOS] Converge iOS font metrics with macOS in Font::platformInit (#62261)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "0d00deb15e",
-          "subject": "Make negative-width layout opportunities direction-aware"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "9944d8fe9d",
-          "subject": "Clamp shape-outside line opportunities to available inline-size"
         }
       ]
     },
@@ -7082,6 +7071,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-07",
+          "author": "kojii@chromium.org",
+          "hash": "2e94ad1f44",
+          "subject": "[text-spacing-trim] Disable `LineBreakerHanKerningEnd`"
+        },
+        {
           "date": "2026-10-05",
           "author": "pdr@chromium.org",
           "hash": "3403aad555",
@@ -7225,12 +7220,6 @@
           "author": "tnikkel@gmail.com",
           "hash": "9dc8654c2b",
           "subject": "Give a preserve-3d participant with a hidden backface its own transform item so its descendants are culled with it."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "hyowon@igalia.com",
-          "hash": "ae0d70d3f1",
-          "subject": "Hide scrollbar in transform-iframe-scroll-position"
         }
       ]
     },
@@ -7241,6 +7230,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "917f0ba6df",
+          "subject": "[css-transitions] revert inside @starting-style drops lower-layer @starting-style declarations (#63273)"
+        },
         {
           "date": "2026-10-04",
           "author": "miketaylr@chromium.org",
@@ -7315,12 +7310,6 @@
           "author": "jvarga@igalia.com",
           "hash": "0da3e91200",
           "subject": "Relax the tolerance for the CSSSkew.toMatrix() WPT"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jfernandez@igalia.com",
-          "hash": "5297796ed8",
-          "subject": "[Typed OM] Support the logical border longhands"
         }
       ]
     },
@@ -7849,12 +7838,6 @@
           "author": "helmut@januschka.com",
           "hash": "0e64d68854",
           "subject": "Apply text-decoration-thickness to SVG <text> and zoom inheritance"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "cc02a98806",
-          "subject": "Fix remaining zoom inheritance failures"
         }
       ]
     },
@@ -8785,6 +8768,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-06",
+          "author": "nrosenthal@chromium.org",
+          "hash": "4b363330fe",
+          "subject": "Disallow <script> targets in HTMLStream"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "nrosenthal@chromium.org",
+          "hash": "b5daf96de8",
+          "subject": "Apply latest spec changes for createParserOptions"
+        },
+        {
           "date": "2026-10-05",
           "author": "nrosenthal@chromium.org",
           "hash": "cce6e21bd2",
@@ -8908,6 +8903,12 @@
       "testrepo": "tc39/test262",
       "speclog": [
         {
+          "date": "2026-10-06",
+          "author": "mike@mikepennisi.com",
+          "hash": "7ae78cf",
+          "subject": "Editorial: Update links to BCP 47 (#1106)"
+        },
+        {
           "date": "2026-10-05",
           "author": "richard.gibson@gmail.com",
           "hash": "0eaf73f",
@@ -8939,6 +8940,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-06",
+          "author": "andre.bargull@gmail.com",
+          "hash": "c8c7988986",
+          "subject": "Add more tests for Intl.Locale.prototype.getCollations (#5021)"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "andre.bargull@gmail.com",
+          "hash": "a5f30219a1",
+          "subject": "Add more tests for Intl.Locale.prototype.getTextInfo (#5023)"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "andre.bargull@gmail.com",
+          "hash": "3fd3eab123",
+          "subject": "Add more tests for Intl.Locale.prototype.getNumberingSystems"
+        },
         {
           "date": "2026-09-23",
           "author": "jesse@igalia.com",
@@ -9266,12 +9285,6 @@
           "author": "329145+hexbinoct@users.noreply.github.com",
           "hash": "ac7b5f8c39",
           "subject": "Add tests for out-of-order braced quantifier in regexp literals"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "bakkot@gmail.com",
-          "hash": "440b64f1f1",
-          "subject": "add tests for faster-promise-try change (#5072)"
         }
       ]
     },
@@ -9324,6 +9337,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-06",
+          "author": "choiwonik91@gmail.com",
+          "hash": "5d731dbb6b",
+          "subject": "[textdecoder] Reset CJK state after flushing"
+        },
         {
           "date": "2026-09-07",
           "author": "52317531+Ahmad-S792@users.noreply.github.com",
@@ -10336,7 +10355,14 @@
       "href": "https://w3c.github.io/gyroscope/",
       "specrepo": "https://github.com/w3c/gyroscope",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "helmut@januschka.com",
+          "hash": "ff69d44006",
+          "subject": "Fix screen-relative spatial sensor rotation"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/gyroscope/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -10360,6 +10386,24 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "lwarlow@igalia.com",
+          "hash": "a1b6270a",
+          "subject": "Add HTMLScriptElement IDL changes for Trusted Types"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "mjwilson@google.com",
+          "hash": "57535533",
+          "subject": "Expose cross-origin isolated capability and time origin to worklets (#13006)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "c60d3371",
+          "subject": "Integrate fragment parser options with trusted types"
+        },
         {
           "date": "2026-10-06",
           "author": "TimvdLippe@users.noreply.github.com",
@@ -10881,15 +10925,57 @@
           "author": "noamr@users.noreply.github.com",
           "hash": "40814ebf",
           "subject": "Remove cross-origin check for simple dialogs"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jaffathecake@gmail.com",
-          "hash": "ac0389a3",
-          "subject": "Close unrelated auto popovers when a dialog opens inside a hint popover"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "4bbd533482",
+          "subject": "element.dataset named getter matches non-data-* attributes and invalid property names (#63341)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "pdr@chromium.org",
+          "hash": "d9b949e562",
+          "subject": "[html-in-canvas] Privacy preserving paint -> read-back allowed rendering"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "kristinlee@microsoft.com",
+          "hash": "0fe1e6ee4c",
+          "subject": "[<install> Element] Rename invalid_data to invalid-data"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "jarhar@chromium.org",
+          "hash": "ac78c16732",
+          "subject": "Fix timeout flake in focus-pseudo-matches-on-shadow-host.html"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "rniwa@webkit.org",
+          "hash": "752dd240b4",
+          "subject": "The test clicks the midpoint of the cross-origin child frame, which lands in a (#63331)"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "kiet.ho@apple.com",
+          "hash": "97fe10c5d0",
+          "subject": "Implement CSS module scripts"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "celestepan@microsoft.com",
+          "hash": "dde871463b",
+          "subject": "[masonry] Add tests for reading flow reading down the stacking axis"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "helmut@januschka.com",
+          "hash": "d76b1e12a4",
+          "subject": "Wait for poster decode before ending lazy-loading video tests (#63276)"
+        },
         {
           "date": "2026-10-06",
           "author": "annevk@annevk.nl",
@@ -12359,30 +12445,6 @@
           "author": "jarhar@chromium.org",
           "hash": "1156bb207a",
           "subject": "Fix stack overflow caused by revert-rule resolution cycles"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jaffathecake@gmail.com",
-          "hash": "e46272bf2e",
-          "subject": "Update existing tests for popovers reacting to fullscreen & dialog open, and remove redundant test"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "keithamus@users.noreply.github.com",
-          "hash": "b66a69abdd",
-          "subject": "Check for cycles in AppendChildrenToNewParent tree op"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jarhar@chromium.org",
-          "hash": "fcc060d9ad",
-          "subject": "Add long timeout to ignore-content-type WPT"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "gsnedders@apple.com",
-          "hash": "2517845b61",
-          "subject": "Report worker errors in OffscreenCanvas reftests"
         }
       ]
     },
@@ -12392,6 +12454,12 @@
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "abdi.abdirahim@gmail.com",
+          "hash": "4f6401cda4",
+          "subject": "Update html-aam/roles-contextual.html with <summary> tests (#43859)"
+        },
         {
           "date": "2026-09-28",
           "author": "fd@tidoust.net",
@@ -12805,7 +12873,14 @@
       "href": "https://w3c.github.io/magnetometer/",
       "specrepo": "https://github.com/w3c/magnetometer",
       "speclog": [],
-      "testlog": [],
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "helmut@januschka.com",
+          "hash": "ff69d44006",
+          "subject": "Fix screen-relative spatial sensor rotation"
+        }
+      ],
       "testpolicy": "https://github.com/w3c/magnetometer/blob/HEAD/CONTRIBUTING.md"
     },
     {
@@ -14290,6 +14365,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-07",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "2e954fa1b2",
+          "subject": "Mark createParserOptions tests non-tentative"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "nrosenthal@chromium.org",
+          "hash": "b5daf96de8",
+          "subject": "Apply latest spec changes for createParserOptions"
+        },
+        {
           "date": "2026-10-05",
           "author": "nrosenthal@chromium.org",
           "hash": "cce6e21bd2",
@@ -14717,7 +14804,14 @@
       "href": "https://w3c.github.io/webappsec-secure-contexts/",
       "specrepo": "https://github.com/w3c/webappsec-secure-contexts",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "annevk@annevk.nl",
+          "hash": "b102264996",
+          "subject": "Determine whether a document is a secure context when it is created"
+        }
+      ]
     },
     {
       "name": "Secure Payment Confirmation",
@@ -15220,6 +15314,12 @@
           "subject": "Update interact.html"
         },
         {
+          "date": "2026-09-29",
+          "author": "k_dubost@apple.com",
+          "hash": "93907499",
+          "subject": "fix #1169 - getItem returns the same object for the same index"
+        },
+        {
           "date": "2026-09-09",
           "author": "lwarlow@igalia.com",
           "hash": "bb4e8adb",
@@ -15257,6 +15357,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "karlcow@apple.com",
+          "hash": "a496f98e5c",
+          "subject": "WPT: drop .tentative from the SVG list getItem identity tests (#63351)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "karlcow@apple.com",
+          "hash": "d09b0bc7ea",
+          "subject": "[LBSE] Re-layout <textPath> when its pending target path appears (#63343)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "karlcow@apple.com",
+          "hash": "51dab792c1",
+          "subject": "[SVG2] Remove `*Glyph*` support (#63342)"
+        },
         {
           "date": "2026-10-06",
           "author": "kschmi@microsoft.com",
@@ -15829,7 +15947,20 @@
       "name": "Trusted Types",
       "href": "https://w3c.github.io/trusted-types/dist/spec/",
       "specrepo": "https://github.com/w3c/trusted-types",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "lwarlow@igalia.com",
+          "hash": "3cd79cb",
+          "subject": "Move HTMLScriptElement IDL attribute patches into HTML"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "noamr@users.noreply.github.com",
+          "hash": "fbe9462",
+          "subject": "Enable createParserOptions, passing a sanitizer to trusted types (#606)"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-10-04",
@@ -15888,6 +16019,18 @@
       "specrepo": "https://github.com/WICG/ua-client-hints",
       "speclog": [
         {
+          "date": "2026-10-06",
+          "author": "miketaylr@chromium.org",
+          "hash": "aeb3119",
+          "subject": "Fixes #341: Allow model to be populated for non-mobile use cases (#406)"
+        },
+        {
+          "date": "2026-10-06",
+          "author": "miketaylr@chromium.org",
+          "hash": "7e880c5",
+          "subject": "Fixes #375: Remove references to abandoned Privacy Budget proposal (#405)"
+        },
+        {
           "date": "2026-09-22",
           "author": "arichiv@chromium.org",
           "hash": "c9f6ba1",
@@ -15913,12 +16056,6 @@
           "author": "d@domenic.me",
           "hash": "03f14d4780",
           "subject": "Upstream jsdom regression tests"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "epulatov.dev@gmail.com",
-          "hash": "6fcf788c89",
-          "subject": "[web-tests] Add keyDown editing regression test"
         }
       ],
       "testpolicy": "https://github.com/w3c/uievents/blob/HEAD/CONTRIBUTING.md"
@@ -15951,6 +16088,12 @@
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "annevk@annevk.nl",
+          "hash": "fde3f74",
+          "subject": "Make the search setter keep searchParams in sync with the query"
+        },
+        {
           "date": "2026-10-06",
           "author": "annevk@annevk.nl",
           "hash": "dcd3d6b",
@@ -15970,6 +16113,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "annevk@annevk.nl",
+          "hash": "b1a3daad99",
+          "subject": "URL: searchParams must reflect the query after setting search"
+        },
         {
           "date": "2026-10-04",
           "author": "tuug@gmx.us",
@@ -16033,7 +16182,14 @@
       "href": "https://wicg.github.io/video-rvfc/",
       "specrepo": "https://github.com/WICG/video-rvfc",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-10-06",
+          "author": "tguilbert@chromium.org",
+          "hash": "48eb3224ed",
+          "subject": "Fix timeouts in rVFC before-xr-session WPT"
+        }
+      ]
     },
     {
       "name": "VirtualKeyboard API",
@@ -16206,16 +16362,16 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-06",
+          "author": "adam@adampage.net",
+          "hash": "cc7f70af99",
+          "subject": "Add tentative test for invalidly nested heading nodes (#52123)"
+        },
+        {
           "date": "2026-09-08",
           "author": "adam@adampage.net",
           "hash": "0dc7683798",
           "subject": "Add tests for invalidly nested heading nodes (#43874)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "5333778+HaTheo@users.noreply.github.com",
-          "hash": "43f8a304cb",
-          "subject": "Implement accessibility property support via CDP for Chrome"
         }
       ]
     },
@@ -16745,18 +16901,6 @@
           "author": "mjwilson@chromium.org",
           "hash": "1705453739",
           "subject": "Reland [WebAudio] Enable remaining Configurable Render Quantum Tests"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "8e52ec8ba2",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321383 (#61839)"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "baa638a2e4",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321386 (#61838)"
         }
       ],
       "testpolicy": "https://github.com/WebAudio/web-audio-api/blob/HEAD/README.md"
@@ -16766,6 +16910,18 @@
       "href": "https://w3c.github.io/webauthn/",
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
+        {
+          "date": "2026-10-05",
+          "author": "kenrb@chromium.org",
+          "hash": "c1943b9",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-05",
+          "author": "kenrb@chromium.org",
+          "hash": "30fada2",
+          "subject": "Change ClientCapability name"
+        },
         {
           "date": "2026-09-25",
           "author": "kenrb@chromium.org",
@@ -16853,6 +17009,42 @@
       "href": "https://w3c.github.io/webcodecs/",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -16980,12 +17172,6 @@
           "author": "chun.m.chang@gmail.com",
           "hash": "c2f78f3492",
           "subject": "Add WPT for VideoFrame.copyTo() canvas-backed RGB stride handling."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "dalecurtis@chromium.org",
-          "hash": "bf81dbf296",
-          "subject": "Ensure VideoEncoder readback preserves visible_rect and natural_size"
         }
       ]
     },
@@ -16994,6 +17180,42 @@
       "href": "https://w3c.github.io/webcodecs/aac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17045,6 +17267,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17094,6 +17352,42 @@
       "href": "https://w3c.github.io/webcodecs/av1_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17145,6 +17439,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17194,6 +17524,42 @@
       "href": "https://w3c.github.io/webcodecs/codec_registry.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17245,6 +17611,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17294,6 +17696,42 @@
       "href": "https://w3c.github.io/webcodecs/hevc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17345,6 +17783,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17394,6 +17868,42 @@
       "href": "https://w3c.github.io/webcodecs/opus_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17445,6 +17955,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17494,6 +18040,42 @@
       "href": "https://w3c.github.io/webcodecs/ulaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17545,6 +18127,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17595,6 +18213,42 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
+        {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
           "hash": "8f7384f",
@@ -17644,6 +18298,42 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "6cee71b",
+          "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6f4d6eb",
+          "subject": "Round up sub-sampled width in Compute Layout and Allocation Size (#964)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "924a4f8",
+          "subject": "Account for interleaved samples in Compute Layout and Allocation Size (#962)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "6d8e3d3",
+          "subject": "Fix row sizes for packed RGB pixel formats (#961)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "72fd17c",
+          "subject": "Fix editorial errors in the VideoPixelFormat section (#960)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jya@apple.com",
+          "hash": "3d4b113",
+          "subject": "Fix incorrect equivalent opaque formats for I422AP10, I422AP12 and I444AP12 (#959)"
+        },
         {
           "date": "2026-09-24",
           "author": "dalecurtis@chromium.org",
@@ -17700,44 +18390,7 @@
       "name": "Web Cryptography API",
       "href": "https://w3c.github.io/webcrypto/",
       "specrepo": "https://github.com/w3c/webcrypto",
-      "speclog": [
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "b16487f",
-          "subject": "Validate EC import curves before key data"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "4f27181",
-          "subject": "Validate ECDH derivation parameters before key access"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "83542d7",
-          "subject": "Validate X25519 derivation parameters before key access"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "4e552eb",
-          "subject": "Validate RSA key generation parameters"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "6b68401",
-          "subject": "Reject zero-length HMAC imports before key data"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "panva.ip@gmail.com",
-          "hash": "a5d2634",
-          "subject": "Validate HKDF output length"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-09-29",
@@ -18900,12 +19553,6 @@
           "author": "kainino@chromium.org",
           "hash": "e7e06e5e",
           "subject": "[editorial] Editing on Feature Index (#6351)"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "kainino@chromium.org",
-          "hash": "9904fcd3",
-          "subject": "[editorial/bugfix] Dedup feature dependencies, fix missing auto-enablements (#6344)"
         }
       ],
       "testlog": []
@@ -19328,6 +19975,12 @@
       "specrepo": "https://github.com/w3c/webtransport",
       "speclog": [
         {
+          "date": "2026-10-06",
+          "author": "jan-ivar@users.noreply.github.com",
+          "hash": "7d19557",
+          "subject": "Remove [SameObject] from responseHeaders attribute"
+        },
+        {
           "date": "2026-09-23",
           "author": "jan-ivar@users.noreply.github.com",
           "hash": "dedd1ed",
@@ -19436,12 +20089,6 @@
           "author": "achristensen@apple.com",
           "hash": "bc3fbed2de",
           "subject": "[WebTransport] Correctly test use of WebTransportOptions.datagramsReadableType (#61428)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "rjesup@mozilla.com",
-          "hash": "ed9125f273",
-          "subject": "Update wpts for WebTransport sub-protocol negotiation"
         }
       ]
     },
@@ -19765,12 +20412,6 @@
           "author": "kainino@chromium.org",
           "hash": "e7e06e5e",
           "subject": "[editorial] Editing on Feature Index (#6351)"
-        },
-        {
-          "date": "2026-08-10",
-          "author": "kainino@chromium.org",
-          "hash": "9904fcd3",
-          "subject": "[editorial/bugfix] Dedup feature dependencies, fix missing auto-enablements (#6344)"
         }
       ],
       "testlog": []
