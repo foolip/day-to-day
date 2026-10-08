@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2026-08-11T14:26:27.924Z",
-  "until": "2026-10-07T14:26:27.924Z",
+  "since": "2026-08-12T14:31:42.032Z",
+  "until": "2026-10-08T14:31:42.032Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -93,12 +93,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -115,6 +109,12 @@
       "href": "https://w3c.github.io/manifest/",
       "specrepo": "https://github.com/w3c/manifest",
       "speclog": [
+        {
+          "date": "2026-10-08",
+          "author": "marcos@marcosc.com",
+          "hash": "b6c9af3",
+          "subject": "chore: export the \"applied\" dfn for cross-spec linking (#1247)"
+        },
         {
           "date": "2026-08-13",
           "author": "41898282+github-actions[bot]@users.noreply.github.com",
@@ -211,7 +211,20 @@
       "href": "https://wicg.github.io/background-fetch/",
       "specrepo": "https://github.com/WICG/background-fetch",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "hchao@chromium.org",
+          "hash": "0535fe6a3b",
+          "subject": "Address various Background Fetch CORS issues"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "hchao@chromium.org",
+          "hash": "9d21f67a7c",
+          "subject": "Enforce CORS in Background Fetch"
+        }
+      ]
     },
     {
       "name": "Web Background Synchronization",
@@ -558,6 +571,78 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "ibrahim.bendebka@gmail.com",
+          "hash": "04f9780fbf",
+          "subject": "Fix corner-shape auto outline doubled offset and radii"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "dshin@mozilla.com",
+          "hash": "63f1ac6474",
+          "subject": "Propagate relative selector search path when we find sibling standin."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "emilio@crisal.io",
+          "hash": "c237535039",
+          "subject": "Don't create an unnecessary style scope from AddCounterChanges."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "emilio@crisal.io",
+          "hash": "5317b6b442",
+          "subject": "Simplify nsGenConInitializer."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "emilio@crisal.io",
+          "hash": "a452db419d",
+          "subject": "Only walk across fragments for some callers of GetNextRow()."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "kye@mozilla.com",
+          "hash": "71768d6af0",
+          "subject": "Continue display-list traversal after line clamping for visible out-of-flow descendants."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "git@florian.rivoal.net",
+          "hash": "ad9e764cb7",
+          "subject": "clamp preserves focusability (#63387)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "kbabbitt@microsoft.com",
+          "hash": "0528c911eb",
+          "subject": "[css-mixins] Add WPT for function property context"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "6d31d292a6",
+          "subject": "[scroll-anchor] Change ScrollAnchor to hold a WeakMember to the anchor."
+        },
+        {
+          "date": "2026-10-07",
+          "author": "pengzhou@chromium.org",
+          "hash": "0d60546cfc",
+          "subject": "[HitTest] Check negative z-index children before line box fallback"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "flackr@chromium.org",
+          "hash": "e24bad712b",
+          "subject": "Fix pre-interpolation composition with mismatched underlying values"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "sb3nd3r@gmail.com",
+          "hash": "d1fab51154",
+          "subject": "Support `box-shadow: inset` in corner-shape ref rendering, and test when the radius exceeds `target_rect` dimensions. (#62879)"
+        },
         {
           "date": "2026-10-07",
           "author": "git@florian.rivoal.net",
@@ -3257,90 +3342,6 @@
           "author": "mhochk@microsoft.com",
           "hash": "6d45c406c1",
           "subject": "Agnosticize cjk-kerning WPT"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "git@florian.rivoal.net",
-          "hash": "8e3d326143",
-          "subject": "Line clamp clips floats in at the block end, not elsewhere (#60577)"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "moonira@google.com",
-          "hash": "fd5aa72cff",
-          "subject": "Updated random() in if() test according to recent spec resolution"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "emilio@crisal.io",
-          "hash": "6d3a82907a",
-          "subject": "Tests."
-        },
-        {
-          "date": "2026-08-12",
-          "author": "antti@apple.com",
-          "hash": "83e596f658",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284895 (#61877)"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "celestepan@microsoft.com",
-          "hash": "baf78c4f58",
-          "subject": "[Masonry] Compute static positions for OOF items in grid-lanes with fill-reverse and content alignment"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "clchambers@microsoft.com",
-          "hash": "d1a5e9fc2c",
-          "subject": "CC Clip paths: Temporarily fall back for empty inset paths"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "0e64d68854",
-          "subject": "Apply text-decoration-thickness to SVG <text> and zoom inheritance"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jarhar@chromium.org",
-          "hash": "1156bb207a",
-          "subject": "Fix stack overflow caused by revert-rule resolution cycles"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "111fd17ef1",
-          "subject": "Block ellipsis fitting next to a float (#61859)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "4efd350b18",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=296995 (#61855)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "8caa08ca1f",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=320896 (#61857)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "f1fea4a8b2",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=320716 (#61856)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "yezhizhenjiakang@gmail.com",
-          "hash": "581aee7bb5",
-          "subject": "test: `getClientRects()` must return an empty `DOMRectList` if the range is not in the document"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "0b16fe7702",
-          "subject": "Don't clear lines to make room for ellipsis (#61854)"
         }
       ]
     },
@@ -3727,6 +3728,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "ibrahim.bendebka@gmail.com",
+          "hash": "04f9780fbf",
+          "subject": "Fix corner-shape auto outline doubled offset and radii"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "sb3nd3r@gmail.com",
+          "hash": "d1fab51154",
+          "subject": "Support `box-shadow: inset` in corner-shape ref rendering, and test when the radius exceeds `target_rect` dimensions. (#62879)"
+        },
+        {
           "date": "2026-09-10",
           "author": "futhark@chromium.org",
           "hash": "c9c2cdd485",
@@ -3939,12 +3952,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "a6218de354",
           "subject": "Fix malformed markup in CSS WPTs (#61789)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jarhar@chromium.org",
-          "hash": "1156bb207a",
-          "subject": "Fix stack overflow caused by revert-rule resolution cycles"
         }
       ]
     },
@@ -3954,6 +3961,18 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "chris@w3.org",
+          "hash": "d10c18e63",
+          "subject": "[css-color-4][editorial] wpt"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "chris@w3.org",
+          "hash": "4dd6b0d72",
+          "subject": "[css-color-4] Clarified that serialization of opacity-value applies to all properties which allow that as a value, not just the opacity property #10426"
+        },
         {
           "date": "2026-09-30",
           "author": "chris@w3.org",
@@ -4381,6 +4400,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "emilio@crisal.io",
+          "hash": "c237535039",
+          "subject": "Don't create an unnecessary style scope from AddCounterChanges."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "emilio@crisal.io",
+          "hash": "5317b6b442",
+          "subject": "Simplify nsGenConInitializer."
+        },
         {
           "date": "2026-09-28",
           "author": "ffiori@microsoft.com",
@@ -4815,36 +4846,6 @@
           "author": "33471049+NightFurySL2001@users.noreply.github.com",
           "hash": "2cb84cd81",
           "subject": "[css-fonts-4] clarify the suitability of system-ui (#14326)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "4f50f67fa",
-          "subject": "[css-fonts-4][css-values-4] Define 'font-affecting properties' and list which properties are in that category. #14306"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "39fa9b8de",
-          "subject": "[css-fonts-4][editorial] Correct some markup."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "9f0be4836",
-          "subject": "[css-fonts-5][editorial] update WPTs"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "fddab2c3a",
-          "subject": "[css-fonts-4][editorial] Update wpts"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "48156e466",
-          "subject": "[css-fonts-4][editorial] Switch heading comments to new style"
         }
       ],
       "testlog": [
@@ -5285,12 +5286,6 @@
           "author": "yanlingwang@microsoft.com",
           "hash": "53969d336a",
           "subject": "[Masonry] Add initial tests for grid-lanes as a subgrid"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "celestepan@microsoft.com",
-          "hash": "baf78c4f58",
-          "subject": "[Masonry] Compute static positions for OOF items in grid-lanes with fill-reverse and content alignment"
         }
       ]
     },
@@ -5409,14 +5404,7 @@
       "href": "https://drafts.csswg.org/css-inline/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [
-        {
-          "date": "2026-08-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "2f24fc0d4",
-          "subject": "[css-inline-3][css-text-3][css-text-4] Shaping is broken by changes to vertical-align longhands #13277"
-        }
-      ],
+      "speclog": [],
       "testlog": [
         {
           "date": "2026-10-06",
@@ -5625,12 +5613,6 @@
           "author": "josh@joshmatthews.net",
           "hash": "7b4ed9fa6c",
           "subject": "Update stylo for clip-path damage change."
-        },
-        {
-          "date": "2026-08-12",
-          "author": "clchambers@microsoft.com",
-          "hash": "d1a5e9fc2c",
-          "subject": "CC Clip paths: Temporarily fall back for empty inset paths"
         }
       ]
     },
@@ -5717,6 +5699,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-08",
+          "author": "git@florian.rivoal.net",
+          "hash": "f4bafda9f",
+          "subject": "[css-overflow] Update test coverage"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "git@florian.rivoal.net",
+          "hash": "1dafa6059",
+          "subject": "[css-overflow] Clamped content is only *visually* suppressed"
+        },
+        {
           "date": "2026-10-07",
           "author": "git@florian.rivoal.net",
           "hash": "eae052278",
@@ -5781,27 +5775,21 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "a2269e255",
           "subject": "[css-overflow-3] Add text rendering example to ink overflow section. #8649 #10066"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "git@florian.rivoal.net",
-          "hash": "325262a9e",
-          "subject": "[css-overflow] Test coverage"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "863a036ad",
-          "subject": "[css-overflow] Block-ellipsis and float clearance"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "7a7e17bc3",
-          "subject": "[css-overflow] fix typo"
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "kye@mozilla.com",
+          "hash": "71768d6af0",
+          "subject": "Continue display-list traversal after line clamping for visible out-of-flow descendants."
+        },
+        {
+          "date": "2026-10-08",
+          "author": "git@florian.rivoal.net",
+          "hash": "ad9e764cb7",
+          "subject": "clamp preserves focusability (#63387)"
+        },
         {
           "date": "2026-10-07",
           "author": "git@florian.rivoal.net",
@@ -6089,24 +6077,6 @@
           "author": "kye@mozilla.com",
           "hash": "2d2cc72300",
           "subject": "Avoid line-clamp style adjustment for displays that aren't block/inline."
-        },
-        {
-          "date": "2026-08-12",
-          "author": "git@florian.rivoal.net",
-          "hash": "8e3d326143",
-          "subject": "Line clamp clips floats in at the block end, not elsewhere (#60577)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "111fd17ef1",
-          "subject": "Block ellipsis fitting next to a float (#61859)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "git@florian.rivoal.net",
-          "hash": "0b16fe7702",
-          "subject": "Don't clear lines to make room for ellipsis (#61854)"
         }
       ]
     },
@@ -6244,7 +6214,14 @@
       "specrepo": "https://github.com/w3c/css-houdini-drafts",
       "testpolicy": "https://github.com/w3c/css-houdini-drafts#tests",
       "speclog": [],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "flackr@chromium.org",
+          "hash": "e24bad712b",
+          "subject": "Fix pre-interpolation composition with mismatched underlying values"
+        }
+      ]
     },
     {
       "name": "CSS Pseudo-Elements",
@@ -6349,12 +6326,6 @@
           "author": "nt1m@users.noreply.github.com",
           "hash": "130d8bf5c9",
           "subject": "WebKit export: [list-marker] List marker overlaps the list item content when the marker text is right-to-left (#62262)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "f1fea4a8b2",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=320716 (#61856)"
         }
       ]
     },
@@ -6430,7 +6401,14 @@
           "subject": "[css-scroll-anchoring-1][editorial] Fixed heading closing tag"
         }
       ],
-      "testlog": []
+      "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "ikilpatrick@chromium.org",
+          "hash": "6d31d292a6",
+          "subject": "[scroll-anchor] Change ScrollAnchor to hold a WeakMember to the anchor."
+        }
+      ]
     },
     {
       "name": "CSS Scroll Snap",
@@ -7061,12 +7039,6 @@
           "author": "fantasai.bugs@inkedblade.net",
           "hash": "1fa76c0ae",
           "subject": "[css-text-3][css-text-4] Switch letter-spacing from between letters to around letters #10193 (#14315)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "fantasai.bugs@inkedblade.net",
-          "hash": "2f24fc0d4",
-          "subject": "[css-inline-3][css-text-3][css-text-4] Shaping is broken by changes to vertical-align longhands #13277"
         }
       ],
       "testlog": [
@@ -7405,24 +7377,6 @@
           "author": "jackalmage@gmail.com",
           "hash": "f857f2379",
           "subject": "[css-values-5][editorial] Give an informative mention of the element-scoped behavior in functions."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "8f01339ba",
-          "subject": "[css-values-4][editorial] Add a note about font-affecting to make it less COMEFROM."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "4f50f67fa",
-          "subject": "[css-fonts-4][css-values-4] Define 'font-affecting properties' and list which properties are in that category. #14306"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jackalmage@gmail.com",
-          "hash": "beac1e5de",
-          "subject": "[css-values-5][editorial] Reword ua-early random() stuff, and rewrite/expand example."
         }
       ],
       "testlog": [
@@ -7611,24 +7565,6 @@
           "author": "71951015+J0pan@users.noreply.github.com",
           "hash": "1a788d1884",
           "subject": "[css-values-5] Add coverage for the random() caching key in custom properties (#61905)"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "moonira@google.com",
-          "hash": "fd5aa72cff",
-          "subject": "Updated random() in if() test according to recent spec resolution"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "antti@apple.com",
-          "hash": "83e596f658",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284895 (#61877)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "4efd350b18",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=296995 (#61855)"
         }
       ]
     },
@@ -7650,18 +7586,6 @@
           "author": "kevers@google.com",
           "hash": "6beb2ef7af",
           "subject": "Prevent CSS transition from leaking tainted value"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "antti@apple.com",
-          "hash": "83e596f658",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=284895 (#61877)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "antti@apple.com",
-          "hash": "8caa08ca1f",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=320896 (#61857)"
         }
       ]
     },
@@ -7832,12 +7756,6 @@
           "author": "sam@webkit.org",
           "hash": "ff13b9b096",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=319996 (#61921)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "helmut@januschka.com",
-          "hash": "0e64d68854",
-          "subject": "Apply text-decoration-thickness to SVG <text> and zoom inheritance"
         }
       ]
     },
@@ -7995,6 +7913,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-07",
+          "author": "i.am.kanaru.sato@gmail.com",
+          "hash": "2b26877d9",
+          "subject": "[cssom-view-1] Resolve scroll promises with ScrollResult dictionary (#12495)"
+        },
+        {
           "date": "2026-09-01",
           "author": "jochen.kuehner@gmx.de",
           "hash": "e9f49775e",
@@ -8020,6 +7944,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "pengzhou@chromium.org",
+          "hash": "0d60546cfc",
+          "subject": "[HitTest] Check negative z-index children before line box fallback"
+        },
         {
           "date": "2026-09-30",
           "author": "freedebreuil@google.com",
@@ -8079,12 +8009,6 @@
           "author": "jochen.kuehner@gmx.de",
           "hash": "389fb4a891",
           "subject": "Use layout geometry for GeometryUtils coordinate mapping"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "yezhizhenjiakang@gmail.com",
-          "hash": "581aee7bb5",
-          "subject": "test: `getClientRects()` must return an empty `DOMRectList` if the range is not in the document"
         }
       ]
     },
@@ -8768,6 +8692,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "nrosenthal@chromium.org",
+          "hash": "5adcbf6d67",
+          "subject": "Fix custom element registry selection in HTMLStream::Create"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "nrosenthal@chromium.org",
+          "hash": "86e886fcd0",
+          "subject": "Allowing declarative shadow roots should be scoped to the stream parser"
+        },
+        {
           "date": "2026-10-06",
           "author": "nrosenthal@chromium.org",
           "hash": "4b363330fe",
@@ -8874,24 +8810,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "aac6f34922",
           "subject": "Throw if calling before/After/ReplaceWithHTML on direct child of template."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "nrosenthal@chromium.org",
-          "hash": "05cc099b85",
-          "subject": "Fix some streamHTML cases and refactor"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "vogelheim@chromium.org",
-          "hash": "94f31c2500",
-          "subject": "XML parser sets \"already started\" flag for DOMParser::parseFromString."
-        },
-        {
-          "date": "2026-08-11",
-          "author": "nrosenthal@chromium.org",
-          "hash": "ede129b303",
-          "subject": "streamHTML: Aborting a stream should stop the parser rather than finish"
         }
       ],
       "testpolicy": "https://github.com/w3c/DOM-Parsing/blob/HEAD/CONTRIBUTING.md"
@@ -9263,6 +9181,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "pchimento@igalia.com",
+          "hash": "2e0a567628",
+          "subject": "Add coverage for number conversion in JSON.stringify and Array.p.join"
+        },
+        {
           "date": "2026-09-21",
           "author": "bakkot@gmail.com",
           "hash": "0a888ef371",
@@ -9415,12 +9339,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9453,12 +9371,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9491,12 +9403,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9529,12 +9435,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9567,12 +9467,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9605,12 +9499,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9643,12 +9531,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9681,12 +9563,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9719,12 +9595,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9757,12 +9627,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9795,12 +9659,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9833,12 +9691,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9871,12 +9723,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -9972,6 +9818,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "tnikkel@gmail.com",
+          "hash": "5ae4375c80",
+          "subject": "Add tests for bug 2061794."
+        },
         {
           "date": "2026-10-02",
           "author": "19518661+oddharsh@users.noreply.github.com",
@@ -10205,7 +10057,14 @@
       "href": "https://fs.spec.whatwg.org/",
       "specrepo": "https://github.com/whatwg/fs",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-08",
+          "author": "annevk@annevk.nl",
+          "hash": "7df1158",
+          "subject": "Editorial: use Infra's identity and equality"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-08-19",
@@ -10386,6 +10245,12 @@
       "specrepo": "https://github.com/whatwg/html",
       "testpolicy": "https://github.com/whatwg/meta/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "jaffathecake@gmail.com",
+          "hash": "efc54f7b",
+          "subject": "Fix hiding popovers that are removed or moved between documents"
+        },
         {
           "date": "2026-10-07",
           "author": "lwarlow@igalia.com",
@@ -10928,6 +10793,60 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "pdr@chromium.org",
+          "hash": "beed7c13e3",
+          "subject": "[html-in-canvas] Do not treat canvas content as effectively invisible"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "annevk@annevk.nl",
+          "hash": "3f7b05e969",
+          "subject": "HTML: whitespace around non-classic script types"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "schenney@chromium.org",
+          "hash": "30d4d7d411",
+          "subject": "[HiC] Draw nothing and return for non-finite rects"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "schenney@chromium.org",
+          "hash": "136493f8c1",
+          "subject": "[HiC] Privacy fix for popovers in the canvas subtree"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "jarhar@chromium.org",
+          "hash": "d4750451eb",
+          "subject": "Do not synchronously fire speculation rules error events on base changes"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "52317531+Ahmad-S792@users.noreply.github.com",
+          "hash": "505c2ae928",
+          "subject": "DataTransfer treats any format starting with \"text/plain\" (e.g. \"text/plainfoo\") as text/plain (#63346)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "nrosenthal@chromium.org",
+          "hash": "130cfe2be0",
+          "subject": "Handle re-entrancy in <template for>"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "keithamus@users.noreply.github.com",
+          "hash": "9f8310d123",
+          "subject": "Add tests for popovers moving across documents"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "tnikkel@gmail.com",
+          "hash": "0ca9782406",
+          "subject": "Add tests for bug 2050626."
+        },
         {
           "date": "2026-10-07",
           "author": "52317531+Ahmad-S792@users.noreply.github.com",
@@ -12421,30 +12340,6 @@
           "author": "schenney@chromium.org",
           "hash": "ccb72cce0a",
           "subject": "[HiC] Add tests for SVG use of content outside the subtree"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "emilio@crisal.io",
-          "hash": "e8fd2c3991",
-          "subject": "Crashtest."
-        },
-        {
-          "date": "2026-08-12",
-          "author": "cthomp@chromium.org",
-          "hash": "530ee022a1",
-          "subject": "Implement WebSocket constructor option bag"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "lowkey@google.com",
-          "hash": "bd5d2dbf17",
-          "subject": "Add optional iamf canPlayType test"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "jarhar@chromium.org",
-          "hash": "1156bb207a",
-          "subject": "Fix stack overflow caused by revert-rule resolution cycles"
         }
       ]
     },
@@ -12454,6 +12349,12 @@
       "specrepo": "https://github.com/w3c/html-aam",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "rego@igalia.com",
+          "hash": "0962bf0b29",
+          "subject": "[aamtests] Adding new tests for <abbr> element (#63093)"
+        },
         {
           "date": "2026-10-07",
           "author": "abdi.abdirahim@gmail.com",
@@ -12778,12 +12679,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13351,12 +13246,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13389,12 +13278,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13427,12 +13310,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13465,12 +13342,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13503,12 +13374,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13541,12 +13406,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13579,12 +13438,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13617,12 +13470,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13655,12 +13502,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13723,12 +13564,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -13968,6 +13803,12 @@
       "specrepo": "https://github.com/w3c/PNG-spec",
       "speclog": [
         {
+          "date": "2026-10-08",
+          "author": "chris@w3.org",
+          "hash": "e200ab5",
+          "subject": "Update chnges section, for 'hRWL' chunk"
+        },
+        {
           "date": "2026-08-26",
           "author": "minseong130502@gmail.com",
           "hash": "c6ebe99",
@@ -13982,6 +13823,12 @@
       "specrepo": "https://github.com/w3c/pointerevents",
       "testpolicy": "https://github.com/w3c/pointerevents/blob/gh-pages/README.markdown#editing-process",
       "speclog": [
+        {
+          "date": "2026-10-08",
+          "author": "plh@w3.org",
+          "hash": "dcfe783",
+          "subject": "chore: level3 workflow should get out of the way"
+        },
         {
           "date": "2026-10-01",
           "author": "plh@w3.org",
@@ -14365,6 +14212,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "keithamus@users.noreply.github.com",
+          "hash": "e6ed734b65",
+          "subject": "Sanitizer: move parseHTML noscript tests into html5lib testcases (#63376)"
+        },
+        {
           "date": "2026-10-07",
           "author": "noamr@users.noreply.github.com",
           "hash": "2e954fa1b2",
@@ -14746,12 +14599,6 @@
           "author": "boris.chiou@gmail.com",
           "hash": "82188497c6",
           "subject": "[scroll-animations] Make it parse errors if using relative units for rangeStart and rangeEnd. (#61901)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "dshin@mozilla.com",
-          "hash": "d07ec1bee6",
-          "subject": "When the old animation gets reused, do not create a new anonymous timeline."
         }
       ]
     },
@@ -14904,6 +14751,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "dshin@mozilla.com",
+          "hash": "63f1ac6474",
+          "subject": "Propagate relative selector search path when we find sibling standin."
+        },
+        {
           "date": "2026-09-28",
           "author": "ffiori@microsoft.com",
           "hash": "9e56f92d78",
@@ -14969,7 +14822,32 @@
       "name": "Web Serial API",
       "href": "https://wicg.github.io/serial/",
       "specrepo": "https://github.com/WICG/serial",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "f3cf43f",
+          "subject": "Move [EnforceRange] after required in SerialOptions (#239)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "30a18b1",
+          "subject": "Move custom README.md content to READMEEND.md (#237)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "scheib@users.noreply.github.com",
+          "hash": "0a80386",
+          "subject": "Editorial: rename Serial and Web Serial to WebSerial (#238)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "reillyeon@users.noreply.github.com",
+          "hash": "b3bee45",
+          "subject": "Convert the specification for publication by the WHATWG (#236)"
+        }
+      ],
       "testlog": []
     },
     {
@@ -15052,12 +14930,6 @@
           "author": "youennf@users.noreply.github.com",
           "hash": "a79064192a",
           "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321191 (#62172)"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "yyanagisawa@chromium.org",
-          "hash": "9f03608812",
-          "subject": "ServiceWorker: Run Timing-Allow-Origin check for filtered subresource responses"
         }
       ],
       "testpolicy": "https://github.com/w3c/ServiceWorker/blob/HEAD/CONTRIBUTING.md"
@@ -15110,6 +14982,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "jarhar@chromium.org",
+          "hash": "d4750451eb",
+          "subject": "Do not synchronously fire speculation rules error events on base changes"
+        },
         {
           "date": "2026-10-05",
           "author": "vizlatin@microsoft.com",
@@ -15276,6 +15154,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-08",
+          "author": "tguilbert@chromium.org",
+          "hash": "b550114b66",
+          "subject": "[Streams] Fix detach DCHECK in `WritableStream::Abort()`"
+        },
+        {
           "date": "2026-09-09",
           "author": "krosylight@proton.me",
           "hash": "999cb1a3c9",
@@ -15357,6 +15241,18 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "karlcow@apple.com",
+          "hash": "89d1591cf3",
+          "subject": "Changing a list attribute detaches the SVGNumber, SVGLength and SVGPoint objects a script is holding instead of updating them (#63389)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "stevebe@microsoft.com",
+          "hash": "98343bd378",
+          "subject": "[SVG] Implement SVGPathElement::getPathSegmentAtLength()"
+        },
         {
           "date": "2026-10-07",
           "author": "karlcow@apple.com",
@@ -16381,6 +16277,30 @@
       "specrepo": "https://github.com/WebAssembly/spec",
       "speclog": [
         {
+          "date": "2026-10-08",
+          "author": "tlively@google.com",
+          "hash": "641877755",
+          "subject": "[spectec] Support ~ and ~_ relation symbols (#2267)"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "29785188+alessiofaieta@users.noreply.github.com",
+          "hash": "0719fa2e1",
+          "subject": "[spec] Fix typo in index space example (#2271)"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "29785188+alessiofaieta@users.noreply.github.com",
+          "hash": "99f2245c3",
+          "subject": "[spec] Omit seemingly redundant rules (#2272)"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "29785188+alessiofaieta@users.noreply.github.com",
+          "hash": "9f25505ef",
+          "subject": "[spectec] recommended `ocaml` version (#2270)"
+        },
+        {
           "date": "2026-10-03",
           "author": "tlively@google.com",
           "hash": "970c4116e",
@@ -16652,12 +16572,6 @@
           "author": "kevers@google.com",
           "hash": "5d693d424",
           "subject": "Update procedure for determining if at a progress timeline boundary (#13819)"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "birtles@gmail.com",
-          "hash": "44575aca6",
-          "subject": "[web-animations-1][web-animations-2][editorial] Mention that we need to define the overridden implicit keyframe generation behavior from scroll animations"
         }
       ],
       "testlog": [
@@ -17012,6 +16926,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17089,6 +17009,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-07",
+          "author": "tnikkel@gmail.com",
+          "hash": "0ca9782406",
+          "subject": "Add tests for bug 2050626."
+        },
         {
           "date": "2026-10-02",
           "author": "eugene@chromium.org",
@@ -17183,6 +17109,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17266,6 +17198,12 @@
       "href": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -17355,6 +17293,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17438,6 +17382,12 @@
       "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -17527,6 +17477,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17610,6 +17566,12 @@
       "href": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -17699,6 +17661,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17782,6 +17750,12 @@
       "href": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -17871,6 +17845,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -17954,6 +17934,12 @@
       "href": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -18043,6 +18029,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -18126,6 +18118,12 @@
       "href": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -18215,6 +18213,12 @@
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
           "hash": "6cee71b",
           "subject": "Move [EnforceRange] after required in dictionary members (#956) (#965)"
         },
@@ -18298,6 +18302,12 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-07",
+          "author": "eugene@chromium.org",
+          "hash": "7be3699",
+          "subject": "Throw TypeError if computed display dimension is zero (#926) (#966)"
+        },
         {
           "date": "2026-10-07",
           "author": "eugene@chromium.org",
@@ -18449,6 +18459,24 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-08",
+          "author": "sadym@chromium.org",
+          "hash": "da1355b3fc",
+          "subject": "[chromium-bidi] Speed up pointer actions in input.performActions"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "sadym@chromium.org",
+          "hash": "579fb95a4e",
+          "subject": "[chromium-bidi] Fix element clip screenshot in scrolled viewport"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "yezhizhenjiakang@gmail.com",
+          "hash": "bf76bc7e35",
+          "subject": "wdspec: Change subtests ordering for invalid perform actions tests (#63277)"
+        },
         {
           "date": "2026-10-04",
           "author": "miketaylr@chromium.org",
@@ -18673,6 +18701,18 @@
       "specrepo": "https://github.com/w3c/webdriver-bidi",
       "speclog": [
         {
+          "date": "2026-10-08",
+          "author": "jdescottes@mozilla.com",
+          "hash": "f922e6a",
+          "subject": "fix: update is to string/is to avoid build warnings (#1175)"
+        },
+        {
+          "date": "2026-10-08",
+          "author": "jdescottes@mozilla.com",
+          "hash": "0e9b114",
+          "subject": "fix: Rename script.EvaluateResult to script.EvaluationResult to avoid name clash (#1172)"
+        },
+        {
           "date": "2026-09-30",
           "author": "hbenl@evandor.de",
           "hash": "1777521",
@@ -18787,12 +18827,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -18825,12 +18859,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -18863,12 +18891,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -18901,12 +18923,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -18939,12 +18955,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -18977,12 +18987,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19015,12 +19019,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19053,12 +19051,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19091,12 +19083,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19129,12 +19115,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19167,12 +19147,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19205,12 +19179,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19243,12 +19211,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19281,12 +19243,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19319,12 +19275,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19357,12 +19307,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19395,12 +19339,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19433,12 +19371,6 @@
           "author": "3479527+lexaknyazev@users.noreply.github.com",
           "hash": "e55ed012f",
           "subject": "WEBGL_shader_pixel_local_storage: Update tests (#3790)"
-        },
-        {
-          "date": "2026-08-11",
-          "author": "68449066+zijiehe-google-com@users.noreply.github.com",
-          "hash": "e18dbb32f",
-          "subject": "Wait for first video frame in texture-srgb-upload.html (#3788)"
         }
       ],
       "testlog": []
@@ -19464,6 +19396,12 @@
       "href": "https://gpuweb.github.io/gpuweb/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-10-08",
+          "author": "dsinclair@chromium.org",
+          "hash": "f797f17b",
+          "subject": "Fix bindless typos (#11048)"
+        },
         {
           "date": "2026-09-23",
           "author": "16504129+sagudev@users.noreply.github.com",
@@ -19739,12 +19677,6 @@
           "author": "wei4.wang@intel.com",
           "hash": "e5c6f33944",
           "subject": "[WebNN] Reject conv2d/pool2d/convTranspose2d strides, dilations and filters that exceed the usable extent"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "mingming1.xu@intel.com",
-          "hash": "cc56ec6f03",
-          "subject": "WebNN: Emit resample2d output sizes to ORT to avoid shape divergence"
         }
       ]
     },
@@ -19889,6 +19821,12 @@
       "specrepo": "https://github.com/w3c/webrtc-stats",
       "speclog": [
         {
+          "date": "2026-10-06",
+          "author": "carine@w3.org",
+          "hash": "b56a683",
+          "subject": "Update webrtc-stats.js"
+        },
+        {
           "date": "2026-10-02",
           "author": "philipp.hancke@googlemail.com",
           "hash": "cf333ad",
@@ -19960,12 +19898,6 @@
           "author": "cthomp@chromium.org",
           "hash": "3de9d775d7",
           "subject": "Support targetAddressSpace in WebSocket constructor"
-        },
-        {
-          "date": "2026-08-12",
-          "author": "cthomp@chromium.org",
-          "hash": "530ee022a1",
-          "subject": "Implement WebSocket constructor option bag"
         }
       ]
     },
@@ -20307,14 +20239,7 @@
       "name": "WebXR Layers API",
       "href": "https://immersive-web.github.io/layers/",
       "specrepo": "https://github.com/immersive-web/layers",
-      "speclog": [
-        {
-          "date": "2026-08-11",
-          "author": "cabanier@meta.com",
-          "hash": "20ed339",
-          "subject": "Define destroyed layer lifecycle"
-        }
-      ],
+      "speclog": [],
       "testlog": [],
       "testpolicy": "https://github.com/immersive-web/layers/blob/HEAD/README.md"
     },
@@ -20323,6 +20248,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-10-08",
+          "author": "dsinclair@chromium.org",
+          "hash": "f797f17b",
+          "subject": "Fix bindless typos (#11048)"
+        },
         {
           "date": "2026-09-23",
           "author": "16504129+sagudev@users.noreply.github.com",
