@@ -1,7 +1,7 @@
 {
   "days": 56,
-  "since": "2026-08-30T14:09:20.279Z",
-  "until": "2026-10-26T14:09:20.279Z",
+  "since": "2026-08-31T13:08:00.844Z",
+  "until": "2026-10-27T13:08:00.844Z",
   "specs": [
     {
       "name": "Accelerometer",
@@ -122,6 +122,18 @@
       "href": "https://w3c.github.io/manifest/",
       "specrepo": "https://github.com/w3c/manifest",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "marcos@marcosc.com",
+          "hash": "d943bfe",
+          "subject": "Reflect the application context in the `display-mode` media feature (#1218)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "marcos@marcosc.com",
+          "hash": "ef2240e",
+          "subject": "chore: update the Chromium bug tracker link in the PR template (#1256)"
+        },
         {
           "date": "2026-10-16",
           "author": "294026+dmurph@users.noreply.github.com",
@@ -314,6 +326,12 @@
       "specrepo": "https://github.com/WICG/capability-delegation",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "294026+dmurph@users.noreply.github.com",
+          "hash": "b42d887",
+          "subject": "Add .pr-preview.json so PRs get rendered preview/diff links"
+        },
+        {
           "date": "2026-10-07",
           "author": "294026+dmurph@users.noreply.github.com",
           "hash": "27c6ab3",
@@ -424,6 +442,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "pdr@chromium.org",
+          "hash": "572be6c6d6",
+          "subject": "Invalidate descendants when forced stacking context reasons change"
+        },
         {
           "date": "2026-10-20",
           "author": "emilio@crisal.io",
@@ -778,6 +802,72 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "pdr@chromium.org",
+          "hash": "572be6c6d6",
+          "subject": "Invalidate descendants when forced stacking context reasons change"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "mrobinson@igalia.com",
+          "hash": "e619a17896",
+          "subject": "layout: Create non-transform stacking contexts with `PrimitiveFlags::default`"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "mrobinson@igalia.com",
+          "hash": "3e7ed2531b",
+          "subject": "layout: Do not paint collapsed box fragments"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "hyowon@igalia.com",
+          "hash": "5c478262a3",
+          "subject": "Match .class selectors on elements in unknown XML namespaces"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "hyowon@igalia.com",
+          "hash": "b78f759548",
+          "subject": "Fix before-as-flex-container WPT test"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "225a0ae402",
+          "subject": "Deflake orthogonal-parent-shrink-to-fit-* by waiting for Ahem (#63464)"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "lcdavid@google.com",
+          "hash": "d5375db28b",
+          "subject": "[scroll-snap] Apply the multicol scroll origin to ::column snap areas"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "kojii@chromium.org",
+          "hash": "84dd53268b",
+          "subject": "[iframe] Lock ICB size only for responsive axis"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "obrufau@igalia.com",
+          "hash": "3440698d99",
+          "subject": "layout: Account for percentage quirk during intrinsic sizing (part 2)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "jfernandez@igalia.com",
+          "hash": "d4b721171c",
+          "subject": "The background shorthand serialization should omit initial values (#62502)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "sammy.gill@apple.com",
+          "hash": "1b551baf20",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=322683 (#63144)"
+        },
         {
           "date": "2026-10-26",
           "author": "obrufau@igalia.com",
@@ -4029,30 +4119,6 @@
           "author": "johannes.odland@nrk.no",
           "hash": "5e59630a71",
           "subject": "CSS: test punctuation and whitespace categories that should be included in ::first-letter"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "7e755825e0",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=291164 (#62299)"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "antti@apple.com",
-          "hash": "995f066702",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321585 (#62309)"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "antti@apple.com",
-          "hash": "fc50769c3f",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=321592 (#62308)"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "d4e04ca383",
-          "subject": "[css-color] test `NaN` and `Infinity`'s in hue components (#60924)"
         }
       ]
     },
@@ -4146,6 +4212,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-26",
+          "author": "sammy.gill@apple.com",
+          "hash": "1b551baf20",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=322683 (#63144)"
+        },
+        {
           "date": "2026-09-30",
           "author": "celestepan@microsoft.com",
           "hash": "7b205c0606",
@@ -4191,6 +4263,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "sammy.gill@apple.com",
+          "hash": "1b551baf20",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=322683 (#63144)"
+        },
         {
           "date": "2026-10-17",
           "author": "fantasai.bugs@inkedblade.net",
@@ -4382,6 +4460,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "jfernandez@igalia.com",
+          "hash": "d4b721171c",
+          "subject": "The background shorthand serialization should omit initial values (#62502)"
+        },
         {
           "date": "2026-10-22",
           "author": "hyowon@igalia.com",
@@ -4686,6 +4770,18 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-27",
+          "author": "chris@w3.org",
+          "hash": "1da0d9fb6",
+          "subject": "[css-color-4] Clarified setting \"colorful\" components to zero when changing a powerless hue component to a missing component, #14531"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "11521496+romainmenke@users.noreply.github.com",
+          "hash": "81ee91c4c",
+          "subject": "[css-color-4] Add sample JavaScript for powerless to missing handling (#14674)"
+        },
+        {
           "date": "2026-10-26",
           "author": "11521496+romainmenke@users.noreply.github.com",
           "hash": "001f0eff4",
@@ -4948,24 +5044,6 @@
           "author": "chris@w3.org",
           "hash": "b21951b07",
           "subject": "[css-color-4] Clarify that relative colorimetric is good for gradients, while perceptual is for photographic images #14051"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "chris@w3.org",
-          "hash": "37cc7367a",
-          "subject": "[css-color-4][editorial] wpt"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "chris@w3.org",
-          "hash": "11836b6c4",
-          "subject": "[css-color-4][editorial] Update changes"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "chris@w3.org",
-          "hash": "6590213d4",
-          "subject": "[css-color-4] Explain relationship between progress and quantities, in color interpolation. Define linear interpolation precisely. #14201"
         }
       ],
       "testlog": [
@@ -5100,12 +5178,6 @@
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "a6218de354",
           "subject": "Fix malformed markup in CSS WPTs (#61789)"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "11521496+romainmenke@users.noreply.github.com",
-          "hash": "d4e04ca383",
-          "subject": "[css-color] test `NaN` and `Infinity`'s in hue components (#60924)"
         }
       ]
     },
@@ -5181,6 +5253,12 @@
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
+        {
+          "date": "2026-10-27",
+          "author": "eric@meyerweb.com",
+          "hash": "e405e564c",
+          "subject": "[css-conditional-5] Add `matchContainer()` and `ContainerQueryList` interface (#13551)"
+        },
         {
           "date": "2026-10-08",
           "author": "fantasai.bugs@inkedblade.net",
@@ -5330,12 +5408,6 @@
           "author": "ffiori@microsoft.com",
           "hash": "7efa3ab5de",
           "subject": "Add missing closing angle brackets to CSS WPT tags"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "52317531+Ahmad-S792@users.noreply.github.com",
-          "hash": "7e755825e0",
-          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=291164 (#62299)"
         }
       ]
     },
@@ -5621,6 +5693,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "pdr@chromium.org",
+          "hash": "572be6c6d6",
+          "subject": "Invalidate descendants when forced stacking context reasons change"
+        },
         {
           "date": "2026-10-25",
           "author": "zalan@apple.com",
@@ -5908,12 +5986,6 @@
           "author": "chris@w3.org",
           "hash": "3f0173752",
           "subject": "[css-fonts-4] Bring palette-mix() in line with color-mix(), allowing a list of one or more palettes rather than just two palettes #14452"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "helmut@januschka.com",
-          "hash": "5d2c11741",
-          "subject": "[css-fonts-4] Use the ital axis when matching font-style: italic #12836"
         }
       ],
       "testlog": [
@@ -6044,6 +6116,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "sammy.gill@apple.com",
+          "hash": "1b551baf20",
+          "subject": "WebKit export of https://bugs.webkit.org/show_bug.cgi?id=322683 (#63144)"
+        },
         {
           "date": "2026-10-25",
           "author": "yanlingwang@microsoft.com",
@@ -7684,6 +7762,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-27",
+          "author": "hyowon@igalia.com",
+          "hash": "b78f759548",
+          "subject": "Fix before-as-flex-container WPT test"
+        },
+        {
           "date": "2026-10-25",
           "author": "antti@apple.com",
           "hash": "21f66aa05b",
@@ -7914,6 +7998,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "lcdavid@google.com",
+          "hash": "d5375db28b",
+          "subject": "[scroll-snap] Apply the multicol scroll origin to ::column snap areas"
+        },
         {
           "date": "2026-10-23",
           "author": "vmpstr@chromium.org",
@@ -8236,6 +8326,18 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-27",
+          "author": "kojii@chromium.org",
+          "hash": "84dd53268b",
+          "subject": "[iframe] Lock ICB size only for responsive axis"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "obrufau@igalia.com",
+          "hash": "3440698d99",
+          "subject": "layout: Account for percentage quirk during intrinsic sizing (part 2)"
+        },
+        {
           "date": "2026-10-26",
           "author": "obrufau@igalia.com",
           "hash": "3d98b9b722",
@@ -8507,6 +8609,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-27",
+          "author": "mrobinson@igalia.com",
+          "hash": "3e7ed2531b",
+          "subject": "layout: Do not paint collapsed box fragments"
+        },
+        {
           "date": "2026-10-16",
           "author": "zalan@apple.com",
           "hash": "8cef50955a",
@@ -8573,7 +8681,26 @@
       "href": "https://drafts.csswg.org/css-text/",
       "specrepo": "https://github.com/w3c/csswg-drafts",
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "33d168d9c",
+          "subject": "[css-text-4][editorial] Changes section #13789"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "6dbb905c3",
+          "subject": "[css-text-4] Add back full value space of text-spacing-trim #13789"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "fantasai.bugs@inkedblade.net",
+          "hash": "06088e7d6",
+          "subject": "[css-text-4] Clarify text-spacing: insert | replace #13774"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-10-23",
@@ -8731,6 +8858,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "mrobinson@igalia.com",
+          "hash": "e619a17896",
+          "subject": "layout: Create non-transform stacking contexts with `PrimitiveFlags::default`"
+        },
         {
           "date": "2026-10-19",
           "author": "zalan@apple.com",
@@ -9333,6 +9466,12 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "225a0ae402",
+          "subject": "Deflake orthogonal-parent-shrink-to-fit-* by waiting for Ahem (#63464)"
+        },
         {
           "date": "2026-10-25",
           "author": "zalan@apple.com",
@@ -10933,6 +11072,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-26",
+          "author": "649348+MattiasBuelens@users.noreply.github.com",
+          "hash": "0b4e081202",
+          "subject": "Expect DataView.prototype.{byteLength,byteOffset} not to throw when out of bounds (#5137)"
+        },
+        {
           "date": "2026-10-08",
           "author": "pchimento@igalia.com",
           "hash": "2e0a567628",
@@ -11014,6 +11159,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "annevk@annevk.nl",
+          "hash": "58bd525e77",
+          "subject": "Clean up TextResourceDecoder's ContentType and EncodingSource"
+        },
         {
           "date": "2026-10-13",
           "author": "choiwonik91@gmail.com",
@@ -11744,12 +11895,6 @@
           "author": "35911232+shannonbooth@users.noreply.github.com",
           "hash": "6089fa1",
           "subject": "Make a request's reserved client always be an environment"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "35911232+shannonbooth@users.noreply.github.com",
-          "hash": "98d3fac",
-          "subject": "Editorial: align embedder policy link text with HTML"
         }
       ],
       "testlog": [
@@ -12699,6 +12844,66 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "01cb245c0a",
+          "subject": "Check that the boxes exist before comparing them right after a change"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "e17d541395",
+          "subject": "Test option and optgroup boxes in base appearance select elements"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "b93db7e180",
+          "subject": "A <select> whose form state is restored keeps showing the old option"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "annevk@annevk.nl",
+          "hash": "c243db3331",
+          "subject": "A frame that a replace navigation moves to another process has no navigation API entries"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "gastonr@microsoft.com",
+          "hash": "79d042b864",
+          "subject": "Automate drag and drop remove/ tests"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "masonf@chromium.org",
+          "hash": "08f19ee263",
+          "subject": "Harden Element attribute mutation methods against re-entrant changes"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "nrosenthal@chromium.org",
+          "hash": "41a91b97e0",
+          "subject": "Use the dimension attribute aspect ratio for srcset source selection"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "helmut@januschka.com",
+          "hash": "7269b0c6fb",
+          "subject": "Clear selection on range slider press to fix slider drag"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "helmut@januschka.com",
+          "hash": "0b07911862",
+          "subject": "Fix inconsistent subpixel snapping in checkbox painting"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "pdr@chromium.org",
+          "hash": "ac7939c9e8",
+          "subject": "[html-in-canvas] Fix filter dirty bit clearing"
+        },
         {
           "date": "2026-10-26",
           "author": "jarhar@chromium.org",
@@ -14684,12 +14889,6 @@
           "author": "masonf@chromium.org",
           "hash": "f520e6dadd",
           "subject": "Change ::interest-button to use proposed anchor positioning"
-        },
-        {
-          "date": "2026-08-30",
-          "author": "annevk@annevk.nl",
-          "hash": "81841cc6e2",
-          "subject": "Remove SharedWorkerGlobalScope onconnect test"
         }
       ]
     },
@@ -15488,6 +15687,12 @@
       "href": "https://immersive-web.github.io/model-element/",
       "specrepo": "https://github.com/immersive-web/model-element",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "cabanier@gmail.com",
+          "hash": "32f65de",
+          "subject": "Define model poster loading and fallback behavior (#170)"
+        },
         {
           "date": "2026-10-20",
           "author": "cabanier@gmail.com",
@@ -16308,6 +16513,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-10-26",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "253f2fc78a",
+          "subject": "Consolidate Link header target URL and PMI redirect WPT files (#64053)"
+        },
+        {
           "date": "2026-10-22",
           "author": "blink-w3c-test-autoroller@chromium.org",
           "hash": "8b6ae3f6ca",
@@ -16370,7 +16581,14 @@
       "href": "https://w3c.github.io/performance-timeline/",
       "specrepo": "https://github.com/w3c/performance-timeline",
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "canaltinova@gmail.com",
+          "hash": "9dadc5e",
+          "subject": "Only count dropped entries that should have been buffered"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-10-20",
@@ -16966,6 +17184,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-27",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "c861cd3a61",
+          "subject": "[Sanitizer] Sanitize is= attribute on document element. (#63592)"
+        },
+        {
           "date": "2026-10-23",
           "author": "nrosenthal@chromium.org",
           "hash": "2bd2d93eff",
@@ -17096,12 +17320,6 @@
           "author": "nrosenthal@chromium.org",
           "hash": "bb5b8a99a4",
           "subject": "TT: call createParserOptions before createHTML"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "keithamus@users.noreply.github.com",
-          "hash": "9656d33f73",
-          "subject": "sanitizer-api: Add edge case tests for javascript URIs (#62062)"
         }
       ]
     },
@@ -17320,6 +17538,12 @@
       "speclog": [],
       "testlog": [
         {
+          "date": "2026-10-27",
+          "author": "huangs@chromium.org",
+          "hash": "cd8bb9af3e",
+          "subject": "[Blink] Fix layout lifecycle crash on gesture long-press"
+        },
+        {
           "date": "2026-09-30",
           "author": "obrufau@igalia.com",
           "hash": "e9a2d4865b",
@@ -17384,6 +17608,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "hyowon@igalia.com",
+          "hash": "5c478262a3",
+          "subject": "Match .class selectors on elements in unknown XML namespaces"
+        },
         {
           "date": "2026-10-25",
           "author": "sakhapov@chromium.org",
@@ -17904,6 +18134,36 @@
       "testpolicy": "https://github.com/w3c/csswg-drafts/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-27",
+          "author": "k_dubost@apple.com",
+          "hash": "0206c206",
+          "subject": "fix #249 - synthesize a viewBox for SVG used as an image"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "k_dubost@apple.com",
+          "hash": "0a07be36",
+          "subject": "fix #1217 - SVGLength value setter keeps the unit type"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "k_dubost@apple.com",
+          "hash": "750343a1",
+          "subject": "fix #1212 - textPath is laid out again when its referenced shape changes"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "k_dubost@apple.com",
+          "hash": "b092f450",
+          "subject": "fix #1216 - one px is one user unit"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "k_dubost@apple.com",
+          "hash": "2bda4146",
+          "subject": "fix #1210 - Script setting an invalid value: initial value, no exception"
+        },
+        {
           "date": "2026-10-19",
           "author": "k_dubost@apple.com",
           "hash": "e059fbdc",
@@ -18007,6 +18267,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "helmut@januschka.com",
+          "hash": "c1197659b9",
+          "subject": "SVG text: keep combining marks with their base character"
+        },
         {
           "date": "2026-10-25",
           "author": "ffiori@microsoft.com",
@@ -18648,6 +18914,12 @@
       "testpolicy": "https://github.com/w3c/web-performance/blob/HEAD/CONTRIBUTING.md",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "barrypollard@google.com",
+          "hash": "a22eeb4",
+          "subject": "Container Timing is now in WebPerfWG not WICG (#27)"
+        },
+        {
           "date": "2026-09-16",
           "author": "barrypollard@google.com",
           "hash": "b84c8a8",
@@ -18682,12 +18954,6 @@
           "author": "barrypollard@google.com",
           "hash": "cd363e3",
           "subject": "Convert to Bikeshed (#20)"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "iclelland@chromium.org",
-          "hash": "e7bd634",
-          "subject": "Correct LOAF spec link (#19)"
         }
       ],
       "testlog": []
@@ -19052,6 +19318,12 @@
           "author": "49305434+daniel-montalvo@users.noreply.github.com",
           "hash": "a46a5749",
           "subject": "Chore: Enable stricter tooling -- enable respec validator and some specprod validators (#2928)"
+        },
+        {
+          "date": "2026-10-16",
+          "author": "Kate.Zhao@thomsonreuters.com",
+          "hash": "b62cfce3",
+          "subject": "HTML-AAM: Map image maps to ATK_ROLE_IMAGE_MAP"
         },
         {
           "date": "2026-10-15",
@@ -19835,6 +20107,18 @@
       "specrepo": "https://github.com/WebAudio/web-audio-api",
       "speclog": [
         {
+          "date": "2026-10-27",
+          "author": "mjwilson@chromium.org",
+          "hash": "9f4b40ad",
+          "subject": "Remove expected-errs.txt and fail compile.sh on any bikeshed error"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "mjwilson@chromium.org",
+          "hash": "c073ee0e",
+          "subject": "Add Michael Wilson as editor"
+        },
+        {
           "date": "2026-09-09",
           "author": "hongchan.choi@gmail.com",
           "hash": "cb8b688e",
@@ -19941,6 +20225,42 @@
       "specrepo": "https://github.com/w3c/webauthn",
       "speclog": [
         {
+          "date": "2026-10-27",
+          "author": "kenrb@chromium.org",
+          "hash": "d135304",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "kenrb@chromium.org",
+          "hash": "9a8bc4f",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "kenrb@chromium.org",
+          "hash": "69ddaef",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "kenrb@chromium.org",
+          "hash": "6300145",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-27",
+          "author": "kenrb@chromium.org",
+          "hash": "0cbd462",
+          "subject": "Update conditional-ui-without-autofill.md"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "acomminos@meta.com",
+          "hash": "69b8b46",
+          "subject": "Add explainer for Embedded Credential Requests"
+        },
+        {
           "date": "2026-10-05",
           "author": "kenrb@chromium.org",
           "hash": "c1943b9",
@@ -20033,6 +20353,18 @@
       "href": "https://w3c.github.io/webcodecs/",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -20253,6 +20585,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -20338,6 +20682,18 @@
       "href": "https://w3c.github.io/webcodecs/alaw_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -20425,6 +20781,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -20510,6 +20878,18 @@
       "href": "https://w3c.github.io/webcodecs/avc_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -20597,6 +20977,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -20682,6 +21074,18 @@
       "href": "https://w3c.github.io/webcodecs/flac_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -20769,6 +21173,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -20854,6 +21270,18 @@
       "href": "https://w3c.github.io/webcodecs/mp3_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -20941,6 +21369,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -21026,6 +21466,18 @@
       "href": "https://w3c.github.io/webcodecs/pcm_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -21113,6 +21565,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -21198,6 +21662,18 @@
       "href": "https://w3c.github.io/webcodecs/vorbis_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -21285,6 +21761,18 @@
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
+        {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
           "hash": "5784501",
@@ -21370,6 +21858,18 @@
       "href": "https://w3c.github.io/webcodecs/vp9_codec_registration.html",
       "specrepo": "https://github.com/w3c/webcodecs",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "phil@base-art.net",
+          "hash": "2b849bb",
+          "subject": "Disallow zero bitrate values for VideoEncoderConfig (#984)"
+        },
+        {
+          "date": "2026-10-26",
+          "author": "eugene@chromium.org",
+          "hash": "b26d374",
+          "subject": "Fix editorial typos in AudioData constructor and timestamp getter"
+        },
         {
           "date": "2026-10-20",
           "author": "eugene@chromium.org",
@@ -21558,6 +22058,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-27",
+          "author": "jonathan-j-lee@users.noreply.github.com",
+          "hash": "e6d594d06f",
+          "subject": "[chromium-bidi] Fix lost channel messages sent right before navigation (#64239)"
+        },
         {
           "date": "2026-10-25",
           "author": "sadym@chromium.org",
@@ -21935,12 +22441,6 @@
           "author": "julio@gitstart.com",
           "hash": "9cd0258382",
           "subject": "DevTools: Honor desktop viewport overrides on Android"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "lmoura@igalia.com",
-          "hash": "2cd714381f",
-          "subject": "[wdspec] Add tests on releasing actions with modifiers (#62227)"
         }
       ]
     },
@@ -22838,6 +23338,12 @@
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
         {
+          "date": "2026-10-26",
+          "author": "dox.jin@gmail.com",
+          "hash": "688f043e",
+          "subject": "Fix editorial issues in the WebGPU and WGSL specifications (#11072)"
+        },
+        {
           "date": "2026-10-21",
           "author": "16504129+sagudev@users.noreply.github.com",
           "hash": "0ba4e226",
@@ -22922,7 +23428,14 @@
       "name": "WebHID API",
       "href": "https://wicg.github.io/webhid/",
       "specrepo": "https://github.com/WICG/webhid",
-      "speclog": [],
+      "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "43574523+rob-pitkin@users.noreply.github.com",
+          "hash": "6b0ee7c",
+          "subject": "Convert specification to Bikeshed and update to WHATWG Living Standard"
+        }
+      ],
       "testlog": [
         {
           "date": "2026-09-30",
@@ -22991,12 +23504,6 @@
           "author": "annevk@annevk.nl",
           "hash": "916a5d8",
           "subject": "Editorial: list ArrayBuffer first in BufferSource"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "annevk@annevk.nl",
-          "hash": "8f18262",
-          "subject": "Editorial: use the exclusive range where the range can be empty"
         }
       ],
       "testlog": [
@@ -23096,6 +23603,12 @@
         }
       ],
       "testlog": [
+        {
+          "date": "2026-10-26",
+          "author": "plaztiksyke@gmail.com",
+          "hash": "ffc4686d11",
+          "subject": "WebNN: cover full-range int32 values and produced copies (#63663)"
+        },
         {
           "date": "2026-10-15",
           "author": "feng.dai@intel.com",
@@ -23541,18 +24054,6 @@
           "author": "mt@lowentropy.net",
           "hash": "73f8e17",
           "subject": "nit"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "mt@lowentropy.net",
-          "hash": "8142b55",
-          "subject": "Wrap the exportKeyingMaterial definition"
-        },
-        {
-          "date": "2026-08-31",
-          "author": "mt@lowentropy.net",
-          "hash": "2eb4093",
-          "subject": "Reword the notes on atomic writes"
         }
       ],
       "testlog": [
@@ -23800,6 +24301,12 @@
       ],
       "testlog": [
         {
+          "date": "2026-10-26",
+          "author": "blink-w3c-test-autoroller@chromium.org",
+          "hash": "a50a958a6e",
+          "subject": "WebXR: Support projection layers without layers feature enabled (#62943)"
+        },
+        {
           "date": "2026-10-19",
           "author": "svillar@igalia.com",
           "hash": "bfb760e9e2",
@@ -23933,6 +24440,12 @@
       "href": "https://gpuweb.github.io/gpuweb/wgsl/",
       "specrepo": "https://github.com/gpuweb/gpuweb",
       "speclog": [
+        {
+          "date": "2026-10-26",
+          "author": "dox.jin@gmail.com",
+          "hash": "688f043e",
+          "subject": "Fix editorial issues in the WebGPU and WGSL specifications (#11072)"
+        },
         {
           "date": "2026-10-21",
           "author": "16504129+sagudev@users.noreply.github.com",
