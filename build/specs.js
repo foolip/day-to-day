@@ -154,6 +154,12 @@ async function main() {
       continue;
     }
 
+    // some specs (e.g., ISO standards) have no nightly version
+    if (!spec.nightly) {
+      console.warn(`Ignoring ${spec.url} (no nightly)`);
+      continue;
+    }
+
     const entry = completeEntry({
       id: spec.series.shortname,
       name: spec.title,
